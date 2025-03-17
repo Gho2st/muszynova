@@ -12,11 +12,11 @@ export default function Contact() {
   return (
     <>
       <div className="px-6 xl:px-44 py-20">
-        <h1 className="text-center text-6xl text-customGold font-bold mb-20">
+        <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-20">
           Skontakuj się z nami!
         </h1>
         <section>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid xl:grid-cols-3 gap-10">
             <Card
               link="/o-nas"
               icon={<CiLocationOn />}
@@ -71,9 +71,9 @@ export default function Contact() {
           </div>
         </section>
       </div>
-      <section className="px-6 xl:px-44 py-20">
-        <div className="flex gap-16">
-          <div className="w-1/3">
+      <section className="px-6 xl:px-44 pt-0 xl:pt-20 py-20">
+        <div className="flex flex-col xl:flex-row gap-16">
+          <div className="xl:w-1/3">
             <Image
               src="/kontakt.webp"
               width={100}
@@ -82,7 +82,7 @@ export default function Contact() {
               alt=""
             />
           </div>
-          <div className="w-1/2">
+          <div className="xl:w-1/2">
             <h2 className="text-4xl font-semibold">Formularz kontaktowy</h2>
           </div>
         </div>
