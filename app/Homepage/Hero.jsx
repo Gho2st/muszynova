@@ -16,7 +16,7 @@ export default function Hero() {
         </span>
         <div className="">
           <Image
-            src="/muszynova.webp"
+            src="/logo-nova.webp"
             alt="Muszynova Logo"
             layout="responsive"
             width={100}
