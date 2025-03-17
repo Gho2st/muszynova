@@ -19,10 +19,10 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <div className="grid grid-cols-2">
-        <div className="p-16 pt-20">
-          <h1 className="text-6xl font-bold">Restauracja Muszynova</h1>
-          <p className="mt-10">
+      <div className="grid xl:grid-cols-2">
+        <div className="px-6 xl:p-16 pt-20">
+          <h1 className="text-5xl xl:text-6xl font-bold">Restauracja Muszynova</h1>
+          <p className="mb-10 xl:mb-0 mt-10">
             Stawiamy na jakość, na odkrywanie smaków na novo. <br></br>{" "}
             <br></br>
             Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z
@@ -43,8 +43,8 @@ export default function Page() {
         </div>
       </div>
       {/* 2 */}
-      <div className="grid grid-cols-2">
-        <div>
+      <div className="flex flex-col-reverse xl:flex-row">
+        <div className="xl:w-1/2">
           <Image
             src={"/restauracja/r2.webp"}
             height={100}
@@ -53,8 +53,8 @@ export default function Page() {
             alt=""
           />
         </div>
-        <div className="p-16 pt-20">
-          <h2 className="text-6xl text-center font-bold">Tu poznasz Menu</h2>
+        <div className="xl:w-1/2 px-6 py-20 xl:py-0 xl:p-16 pt-20">
+          <h2 className="text-5xl xl:text-6xl text-center font-bold">Tu poznasz Menu</h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
             <Button text="Karta Menu" link="/menu.pdf" />
             <Button text="Karta Napojów" link="/karta-napojów.pdf" />
@@ -63,10 +63,10 @@ export default function Page() {
       </div>
       <Restaurant />
       <section className="px-6 xl:px-44 py-20">
-        <h2 className="text-6xl font-bold text-center mb-20">
+        <h2 className="text-5xl xl:text-6xl font-bold text-center mb-20">
           Zorganizuj z nami na novo
         </h2>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid xl:grid-cols-3 gap-10">
           <Card
             icon={<BiSolidParty />}
             title="Imprezy, jubileusze, spotkania"
