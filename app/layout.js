@@ -2,7 +2,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Nav from "./UI/Nav/Nav";
 import Footer from "./UI/Footer/Footer";
-
 const font = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -16,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <body className={`${font.className}`}>
+      <body className={`${font.className} pt-24`}>
         <Nav />
         {children}
         <Footer />

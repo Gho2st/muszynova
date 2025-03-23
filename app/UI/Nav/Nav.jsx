@@ -5,50 +5,44 @@ import Image from "next/image";
 import Link from "next/link";
 import SalesButton from "../Buttons/SalesButton";
 import { IoIosArrowDown } from "react-icons/io";
+import SalesButton2 from "../Buttons/SalesButton2";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isParkDropdownOpen, setIsParkDropdownOpen] = useState(false);
-  const [isOfferDropdownOpen, setIsOfferDropdownOpen] = useState(false);
-  const [timeoutId, setTimeoutId] = useState(null); // Dodajemy stan do śledzenia timeoutu
+  const [timeoutId, setTimeoutId] = useState(null);
 
-  const handleMenuToggle = () => setIsOpen(!isOpen);
+  // Toggle handlers
+  const handleMenuToggle = () => setIsOpen((prev) => !prev);
+  const handleParkDropdownToggle = () => setIsParkDropdownOpen((prev) => !prev);
 
-  const handleParkDropdownToggle = () =>
-    setIsParkDropdownOpen(!isParkDropdownOpen);
-
-  const handleOfferDropdownToggle = () =>
-    setIsOfferDropdownOpen(!isOfferDropdownOpen);
-
-  // Funkcje do obsługi hover
+  // Dropdown hover handlers
   const openParkDropdown = () => {
-    if (timeoutId) clearTimeout(timeoutId); // Czyścimy timeout, jeśli istnieje
+    if (timeoutId) clearTimeout(timeoutId);
     setIsParkDropdownOpen(true);
   };
 
   const closeParkDropdown = () => {
-    const id = setTimeout(() => setIsParkDropdownOpen(false), 500); // Zwiększamy opóźnienie do 500ms
+    const id = setTimeout(() => setIsParkDropdownOpen(false), 500);
     setTimeoutId(id);
   };
 
+  // Body overflow control
   useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+    document.body.classList.toggle("overflow-hidden", isOpen);
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
 
+  // Animation variants
   const menuVariants = {
     open: {
       opacity: 1,
-      y: 0,
+      x: 0,
       transition: { duration: 0.3, ease: "easeInOut" },
     },
     closed: {
       opacity: 0,
-      y: -20,
+      x: "-100%",
       transition: { duration: 0.3, ease: "easeInOut" },
     },
   };
@@ -66,42 +60,48 @@ export default function Nav() {
     },
   };
 
-  return (
-    <nav className="relative mx-auto bg-black">
-      <div className="flex px-6 xl:px-24 2xl:px-24 xl:pb-2 items-center justify-between">
-        <Link href="/">
-          <div className="w-2/3 xl:w-2/6">
-            <Image
-              src="/Muszynova-mobile-logo.webp"
-              width={50}
-              height={50}
-              layout="responsive"
-              alt="Logo Muszynova"
-              className="block"
-            />
-          </div>
-        </Link>
-        <div className="hidden space-x-8 text-white text-md font-light lg:flex items-center">
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/o-nas"
-          >
-            O Nas
-          </Link>
+  // Park dropdown items
+  const parkItems = [
+    { href: "/park", label: "Park" },
+    { href: "/park/silownia", label: "Siłownia" },
+    { href: "/park/fitness", label: "Fitness" },
+    { href: "/park/hala-sportowa", label: "Hala Sportowa" },
+    { href: "/park/mini-kregielnia", label: "Mini Kręgielnia" },
+    { href: "/park/scianka-wspinaczkowa", label: "Ścianka Wspinaczkowa" },
+    { href: "/park/sala-zabaw", label: "Sala Zabaw" },
+    { href: "/park/squash", label: "Squash" },
+    { href: "/park/wypozyczalnia-rowerow", label: "Wypożyczalnia Rowerów" },
+    { href: "/park/sala-gier", label: "Sala Gier" },
+  ];
 
-          {/* Dropdown dla Parku Rekreacyjno-Sportowego */}
+  return (
+    <nav className="relative bg-black">
+      {/* Top Bar with Logo and Hamburger */}
+      <div className="fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-4 xl:px-8 bg-black">
+        {/* Logo */}
+        <Link href="/" className="relative h-24 w-24">
+          <Image
+            src="/Muszynova-mobile-logo.webp"
+            fill
+            alt="Logo Muszynova"
+            className="object-contain"
+            sizes="(max-width: 768px) 100px, 150px"
+            priority
+          />
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden items-center text-sm font-light text-white lg:flex lg:gap-6">
+          <NavLink href="/o-nas">O Nas</NavLink>
+
+          {/* Park Dropdown */}
           <div
-            className="relative group"
+            className="group relative"
             onMouseEnter={openParkDropdown}
             onMouseLeave={closeParkDropdown}
           >
             <div className="flex items-center">
-              <Link
-                href="/park-rekreacyjno-sportowy"
-                className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out whitespace-nowrap"
-              >
-                Park Rekreacyjno-Sportowy
-              </Link>
+              <NavLink href="/park">Park Rekreacyjno-Sportowy</NavLink>
               <button
                 onClick={handleParkDropdownToggle}
                 className="ml-1 focus:outline-none"
@@ -117,143 +117,76 @@ export default function Nav() {
             <AnimatePresence>
               {isParkDropdownOpen && (
                 <motion.div
+                  variants={dropdownVariants}
                   initial="closed"
                   animate="open"
                   exit="closed"
-                  variants={dropdownVariants}
-                  className="absolute left-0 mt-2 w-60 bg-black text-white rounded-md shadow-lg z-40 top-full"
-                  onMouseEnter={openParkDropdown} // Utrzymuje dropdown otwarty, gdy kursor jest nad nim
-                  onMouseLeave={closeParkDropdown} // Zamyka z opóźnieniem po opuszczeniu
+                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg max-h-64 overflow-y-auto"
+                  onMouseEnter={openParkDropdown}
+                  onMouseLeave={closeParkDropdown}
                 >
-                  <Link
-                    href="/park-rekreacyjno-sportowy/silownia"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Siłownia
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/fitness"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Fitness
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/hala-sportowa"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Hala Sportowa
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/mini-kregielnia"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Mini Kręgielnia
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/scianka-wspinaczkowa"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Ścianka Wspinaczkowa
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/sala-zabaw"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Sala Zabaw
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/squash"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Squash
-                  </Link>
-                  <Link
-                    href="/park-rekreacyjno-sportowy/wypozyczalnia-rowerow"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Wypożyczalnia Rowerów
-                  </Link>
-
-                  <Link
-                    href="/park-rekreacyjno-sportowy/sala-gier"
-                    className="block px-4 py-2 hover:bg-gray-800"
-                  >
-                    Sala Gier
-                  </Link>
+                  {parkItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block px-4 py-2 hover:bg-gray-800"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/restauracja"
-          >
-            Restauracja
-          </Link>
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/cennik"
-          >
-            Cennik
-          </Link>
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/zajecia-grupowe"
-          >
-            Zajęcia Grupowe
-          </Link>
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/galeria"
-          >
-            Galeria
-          </Link>
-          <Link
-            className="hover:text-[#C4966C] transition-colors duration-300 ease-in-out"
-            href="/kontakt"
-          >
-            Kontakt
-          </Link>
+          <NavLink href="/restauracja">Restauracja</NavLink>
+          <NavLink href="/cennik">Cennik</NavLink>
+          <NavLink href="/zajecia-grupowe">Zajęcia Grupowe</NavLink>
+          <NavLink href="/galeria">Galeria</NavLink>
+          <NavLink href="/kontakt">Kontakt</NavLink>
           <SalesButton
             text="Strefa Klienta"
             link="https://muszynova.oos.pl/customer/login"
           />
         </div>
+
+        {/* Hamburger Button */}
         <button
-          id="menu-btn"
-          className={`block hamburger lg:hidden focus:outline-none ${
-            isOpen ? "open" : ""
-          }`}
-          type="button"
-          aria-label={
-            isOpen ? "Zamknij menu nawigacyjne" : "Otwórz menu nawigacyjne"
-          }
-          aria-expanded={isOpen}
+          className={`hamburger lg:hidden ${isOpen ? "open" : ""}`}
           onClick={handleMenuToggle}
+          aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
+          aria-expanded={isOpen}
         >
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
+          <span className="hamburger-top" />
+          <span className="hamburger-middle" />
+          <span className="hamburger-bottom" />
         </button>
       </div>
+
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            key="menu"
-            id="menu"
+            variants={menuVariants}
             initial="closed"
             animate="open"
             exit="closed"
-            variants={menuVariants}
-            className="absolute p-6 pt-4 bg-black w-full h-screen text-white top-20 z-30"
+            className="fixed inset-0 z-40 bg-white text-black overflow-y-auto mt-16"
           >
-            <div className="flex flex-col items-center justify-center w-full text-lg space-y-6 font-semibold">
-              <Link href="/o-nas">O Nas</Link>
-              <div className="w-full text-center">
+            <div className="pt-20 px-10 pb-6 flex flex-col  text-sm font-medium min-h-screen">
+              <Link
+                href="/o-nas"
+                className="border-b border-gray-300 py-3"
+                onClick={handleMenuToggle}
+              >
+                O Nas
+              </Link>
+
+              {/* Mobile Park Dropdown */}
+              <div className="w-full">
                 <button
                   onClick={handleParkDropdownToggle}
-                  className="flex items-center justify-center w-full hover:text-[#C4966C]"
+                  className="flex w-full hover:text-[#C4966C] border-b border-gray-300 py-3"
                   aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
                 >
                   Park Rekreacyjno-Sportowy
@@ -266,42 +199,79 @@ export default function Nav() {
                 <AnimatePresence>
                   {isParkDropdownOpen && (
                     <motion.div
+                      variants={dropdownVariants}
                       initial="closed"
                       animate="open"
                       exit="closed"
-                      variants={dropdownVariants}
-                      className="w-full mt-2 space-y-4 text-white"
+                      className="mt-3 pl-4   text-black"
                     >
-                      <Link
-                        href="/park-rekreacyjno-sportowy/atrakcje"
-                        className="block"
-                      >
-                        Park
-                      </Link>
-                      <Link
-                        href="/park-rekreacyjno-sportowy/godziny"
-                        className="block"
-                      >
-                        Godziny Otwarcia
-                      </Link>
-                      <Link
-                        href="/park-rekreacyjno-sportowy/regulamin"
-                        className="block"
-                      >
-                        Regulamin
-                      </Link>
+                      {parkItems.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block border-b border-gray-300 py-3"
+                          onClick={handleMenuToggle}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              <Link href="/restauracja">Restauracja</Link>
-              <Link href="/cennik">Cennik</Link>
-              <div className="h-[0.1rem] w-full bg-gray-300"></div>
-              <SalesButton text="Strefa Klienta" link="/" />
+
+              <Link
+                className="border-b border-gray-300 py-3"
+                href="/restauracja"
+                onClick={handleMenuToggle}
+              >
+                Restauracja
+              </Link>
+              <Link
+                className="border-b border-gray-300 py-3"
+                href="/cennik"
+                onClick={handleMenuToggle}
+              >
+                Cennik
+              </Link>
+              <Link
+                className="border-b border-gray-300 py-3"
+                href="/zajecia-grupowe"
+                onClick={handleMenuToggle}
+              >
+                Zajęcia Grupowe
+              </Link>
+              <Link
+                className="border-b border-gray-300 py-3"
+                href="/galeria"
+                onClick={handleMenuToggle}
+              >
+                Galeria
+              </Link>
+              <Link
+                className="border-b border-gray-300 py-3 mb-6"
+                href="/kontakt"
+                onClick={handleMenuToggle}
+              >
+                Kontakt
+              </Link>
+              <SalesButton2 text="Strefa Klienta" link="/" />
             </div>
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
+  );
+}
+
+// Reusable NavLink component
+function NavLink({ href, children }) {
+  return (
+    <Link
+      href={href}
+      className="whitespace-nowrap transition-colors duration-300 hover:text-[#C4966C]"
+    >
+      {children}
+    </Link>
   );
 }

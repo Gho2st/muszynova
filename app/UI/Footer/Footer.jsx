@@ -14,20 +14,8 @@ export default function Footer() {
     });
   };
   return (
-    <footer className="relative bg-cover bg-center text-white ">
-      <div
-        className="relative min-h-[80vh] xl:h-132 bg-cover bg-center z-1 opacity-[0.09] "
-        style={{
-          backgroundImage: "url('/tlo.png')",
-          backgroundSize: "50%", // Zmniejsza tło do 50% oryginalnego rozmiaru
-          backgroundPosition: "center", // Upewnia się, że tło jest wyśrodkowane
-        }}
-      ></div>
-      {/* Lekko zielona warstwa */}
-      <div className="absolute inset-0 bg-[#13322B]   "></div>
-      {/* jasniejsza wersja #1D493E */}
-      {/* Tekst na wierzchu */}
-      <div className="absolute inset-0 flex flex-col gap-16 items-center justify-center z-10">
+    <footer className="relative bg-customGreen text-white ">
+      <div className=" flex flex-col gap-16 items-center justify-center z-10">
         <span className=" text-4xl font-bold mt-20 mb-10 ">Porozmawiajmy</span>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 text-lg">
           <li>
@@ -50,15 +38,24 @@ export default function Footer() {
         <div className="">
           <h3 className="text-xl">Nasze Social Media</h3>
           <div className="flex mt-5 justify-center gap-5 text-xl">
-            <div className="border-2 border-yellow-500 p-2 rounded-2xl">
-              <FaFacebookF className="text-customGold" />
-            </div>
-            <div className="border-2 border-yellow-500 p-2 rounded-2xl">
+            <Link
+              href={"https://www.facebook.com/Parkmuszynova"}
+              className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
+            >
+              <FaFacebookF className="text-customGold  " />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/muszynova/"}
+              className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
+            >
               <FaInstagram className="text-customGold" />
-            </div>
-            <div className="border-2 border-yellow-500 p-2 rounded-2xl">
+            </Link>
+            <Link
+              href={"https://g.co/kgs/YAoG1YE"}
+              className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
+            >
               <FaGoogle className="text-customGold" />
-            </div>
+            </Link>
           </div>
         </div>
         <span className="mb-20">

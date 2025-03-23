@@ -21,7 +21,9 @@ export default function Page() {
     <>
       <div className="grid xl:grid-cols-2">
         <div className="px-6 xl:p-16 pt-20">
-          <h1 className="text-5xl xl:text-6xl font-bold">Restauracja Muszynova</h1>
+          <h1 className="text-5xl xl:text-6xl font-bold">
+            Restauracja Muszynova
+          </h1>
           <p className="mb-10 xl:mb-0 mt-10">
             Stawiamy na jakość, na odkrywanie smaków na novo. <br></br>{" "}
             <br></br>
@@ -53,8 +55,10 @@ export default function Page() {
             alt=""
           />
         </div>
-        <div className="xl:w-1/2 px-6 py-20 xl:py-0 xl:p-16 pt-20">
-          <h2 className="text-5xl xl:text-6xl text-center font-bold">Tu poznasz Menu</h2>
+        <div className="xl:w-1/2 px-6 py-20  xl:p-16 pt-20">
+          <h2 className="text-5xl xl:text-6xl text-center font-bold">
+            Tu poznasz Menu
+          </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
             <Button text="Karta Menu" link="/menu.pdf" />
             <Button text="Karta Napojów" link="/karta-napojów.pdf" />
