@@ -17,7 +17,7 @@ export default function Contact() {
           Skontakuj się z nami!
         </h1>
         <section>
-          <div className="grid xl:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <Card
               link="/o-nas"
               icon={<CiLocationOn />}
@@ -73,8 +73,8 @@ export default function Contact() {
         </section>
       </div>
       <section className="px-6 xl:px-44 pt-0 xl:pt-20 py-20">
-        <div className="flex flex-col xl:flex-row gap-16">
-          <div className="xl:w-1/3">
+        <div className="flex flex-col md:flex-row  gap-8 xl:gap-16">
+          <div className=" sm:w-1/2 xl:w-1/3 ">
             <Image
               src="/kontakt.webp"
               width={100}

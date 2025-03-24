@@ -16,7 +16,7 @@ export default function Cennik() {
         <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-20">
           Cennik
         </h1>
-        <div className=" xl:px-24 flex justify-center">
+        <div className=" xl:px-24 xl:flex xl:justify-center">
           <div className="xl:w-2/3">
             <Image
               src="/cennik/cennik.webp"

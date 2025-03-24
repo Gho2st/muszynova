@@ -91,7 +91,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center font-light text-white lg:flex lg:gap-6">
+        <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
           <NavLink href="/o-nas">O Nas</NavLink>
 
           {/* Park Dropdown */}
@@ -152,7 +152,7 @@ export default function Nav() {
 
         {/* Hamburger Button */}
         <button
-          className={`hamburger lg:hidden ${isOpen ? "open" : ""}`}
+          className={`hamburger xl:hidden ${isOpen ? "open" : ""}`}
           onClick={handleMenuToggle}
           aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
           aria-expanded={isOpen}
