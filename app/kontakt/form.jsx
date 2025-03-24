@@ -84,7 +84,9 @@ export default function Form() {
     <>
       {formSubmitted ? (
         <div className="mt-10 lg:mt-20 ">
-          <span className="text-2xl font-semibold text-customGold">Dziękujęmy za przesłanie formularza!</span>
+          <span className="text-2xl font-semibold text-customGold">
+            Dziękujęmy za przesłanie formularza!
+          </span>
           <p className="font-light text-lg mt-6 ">
             Postaramy się odpowiedzieć tak szybko, jak to możliwe.
           </p>
@@ -160,7 +162,14 @@ export default function Form() {
               ref={recaptchaRef}
               sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo" // Wstaw swój Site Key
             />
-            <SubmitButton isSending={isSending} />
+            <button
+              type="submit"
+              disabled={isSending}
+              className="bg-customGold text-lg text-white cursor-pointer font-medium whitespace-nowrap flex justify-center items-center gap-2 p-4 clip-custom hover:clip-reverse 
+            transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            >
+              {isSending ? "Wysyłanie..." : "Wyślij wiadomość!"}
+            </button>
           </div>
         </form>
       )}
