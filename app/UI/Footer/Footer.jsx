@@ -102,7 +102,7 @@ export default function Footer() {
         </span>
       </div>
       {showArrow && (
-        <span className="fixed bg-[#C4966C] rounded-lg p-1 text-4xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10">
+        <span className="fixed bg-[#C4966C] shadow-2xl rounded-lg p-1 text-4xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10">
           <IoIosArrowUp onClick={scrollToTop} className="cursor-pointer" />
         </span>
       )}
