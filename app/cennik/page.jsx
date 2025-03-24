@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "",
+  title: "Cennik Parku Rekreacyjno Sportowego - Muszynova",
   alternates: {
     canonical: "https://muszynova.pl/cennik",
   },
-
-  description: "",
+  description:
+    "Poznaj aktualny cennik usług i produktów oferowanych przez Muszynova. Sprawdź szczegóły i wybierz najlepszą ofertę dla siebie!",
 };
 
 export default function Cennik() {

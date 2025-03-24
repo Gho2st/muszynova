@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Galeria - Muszynova",
+  alternates: {
+    canonical: "https://muszynova.pl/galeria",
+  },
+  description:
+    "Zapraszamy do galerii Muszynova! Zobacz zdjęcia parku i restauracji, które ukazują piękno i wyjątkowy klimat naszego miejsca.",
+};
+
 export default function Galeria() {
   return (
     <>

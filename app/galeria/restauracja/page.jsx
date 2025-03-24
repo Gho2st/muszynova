@@ -1,83 +1,21 @@
-"use client";
+import ImagesR from "./Images";
 
-import { useEffect, useState, useRef } from "react";
-import LightGallery from "lightgallery/react";
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-thumbnail.css";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import Image from "next/image";
+export const metadata = {
+  title: "Galeria Restauracji - Muszynova",
+  alternates: {
+    canonical: "https://muszynova.pl/galeria/restauracja",
+  },
+  description:
+    "Odkryj galerię zdjęć restauracji Muszynova. Zobacz wyjątkowe wnętrza pełne elegancji, apetyczne dania przygotowane z pasją oraz niepowtarzalną atmosferę, która zachwyca gości i sprawia, że każda wizyta staje się niezapomniana!",
+};
 
 export default function GalleryRestaurant() {
-  const lightboxRef = useRef(null);
-  const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  // Ustawienia dla urządzeń mobilnych
-  const mobileSettings = {
-    controls: true, // Wyłączone strzałki nawigacyjne
-    showCloseIcon: true, // Włączona ikona zamykania "X"
-    download: false, // Wyłączony przycisk pobierania
-    counter: true, // Licznik zdjęć (opcjonalne, domyślnie true)
-    swipeToClose: true, // Zamykanie przez przesunięcie (domyślnie true)
-  };
-  useEffect(() => {
-    async function fetchImages() {
-      try {
-        const response = await fetch("/api/get_images/restauracja");
-        if (!response.ok) {
-          throw new Error(`Błąd pobierania zdjęć: ${response.status}`);
-        }
-        const data = await response.json();
-        setImages(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchImages();
-  }, []);
-
   return (
     <div className="px-6 xl:px-24 py-16 xl:py-20 ">
       <h1 className="text-4xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
         Galeria Restauracji
       </h1>
-
-      {loading && <p className="text-center text-lg">Ładowanie zdjęć...</p>}
-      {error && <p className="text-center text-red-500">Błąd: {error}</p>}
-
-      {!loading && !error && images.length > 0 && (
-        <LightGallery
-          selector=".gallery-item"
-          speed={500}
-          plugins={[lgThumbnail]}
-          mobileSettings={mobileSettings}
-          onInit={(detail) => {
-            lightboxRef.current = detail.instance;
-          }}
-        >
-          <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-5 mx-auto max-w-6xl">
-            {images.map((src, index) => (
-              <a
-                key={index}
-                href={src}
-                className="gallery-item block overflow-hidden shadow-md aspect-square transition-all ease-in-out duration-300 hover:scale-105"
-              >
-                <Image
-                  src={src}
-                  alt={`Zdjęcie parku ${index + 1}`}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                />
-              </a>
-            ))}
-          </div>
-        </LightGallery>
-      )}
+      <ImagesR />
     </div>
   );
 }
