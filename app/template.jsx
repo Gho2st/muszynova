@@ -12,7 +12,7 @@ export default function Template({ children }) {
         key={pathname} // Unikalny klucz zmienia się przy każdej zmianie trasy
         initial={{ opacity: 0 }} // Stan początkowy (wejście)
         animate={{ opacity: 1 }} // Stan docelowy (po zamontowaniu)
-        exit={{ opacity: 0 }} // Stan przy odmontowaniu (wyjście)
+        // exit={{ opacity: 0 }} // Stan przy odmontowaniu (wyjście)
         transition={{ ease: "easeInOut", duration: 0.75 }} // Ustawienia animacji
       >
         {children}
