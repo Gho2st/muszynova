@@ -91,7 +91,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center text-sm font-light text-white lg:flex lg:gap-6">
+        <div className="hidden items-center font-light text-white lg:flex lg:gap-6">
           <NavLink href="/o-nas">O Nas</NavLink>
 
           {/* Park Dropdown */}

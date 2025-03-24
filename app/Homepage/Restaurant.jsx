@@ -22,7 +22,7 @@ export default function Restaurant() {
         {/* left container */}
         <div className="text-right flex flex-col gap-16">
           {/* lokalne skladniki */}
-          <div className="translate-x-[4rem]">
+          <div className="xl:translate-x-[4rem]">
             <div className="flex items-center justify-end gap-10">
               <Image
                 src={"/restauracja/mleko-ser.webp"}
@@ -56,7 +56,7 @@ export default function Restaurant() {
             </p>
           </div>
           {/* NOve standardy */}
-          <div className="translate-x-[4rem]">
+          <div className="xl:translate-x-[4rem]">
             <div className="flex items-center justify-end gap-10">
               <Image
                 src={"/restauracja/5gwiazdek.webp"}
@@ -85,7 +85,7 @@ export default function Restaurant() {
         {/* PRAWO */}
         <div className="text-right flex flex-col gap-16">
           {/* zdrowszy wybor */}
-          <div className="translate-x-[-4rem]">
+          <div className="xl:translate-x-[-4rem]">
             <div className="flex items-center flex-row-reverse  gap-10">
               <Image
                 src={"/restauracja/pizza.webp"}
@@ -119,7 +119,7 @@ export default function Restaurant() {
             </p>
           </div>
           {/* imprezy okolicznosciowe*/}
-          <div className="translate-x-[-4rem]">
+          <div className="xl:translate-x-[-4rem]">
             <div className="flex items-center flex-row-reverse  gap-10">
               <Image
                 src={"/restauracja/tort.webp"}

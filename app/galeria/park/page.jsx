@@ -33,8 +33,8 @@ export default function GalleryRestaurant() {
   }, []);
 
   return (
-    <main className="px-6 xl:px-24 py-20 pb-32">
-      <h1 className="text-6xl font-bold text-customGold text-center mb-20">
+    <main className="px-6 xl:px-24 py-16 xl:py-20 xl:pb-32">
+      <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-20">
         Galeria Parku
       </h1>
 

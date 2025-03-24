@@ -8,10 +8,11 @@ import { LuWeight } from "react-icons/lu";
 import Image from "next/image";
 import Map from "../UI/Map/Map";
 import Card from "../UI/Card";
+import Form from "./form";
 export default function Contact() {
   return (
     <>
-      <div className="px-6 xl:px-44 py-20">
+      <div className="px-6 xl:px-44 py-16 xl:py-20">
         <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-20">
           Skontakuj się z nami!
         </h1>
@@ -84,6 +85,7 @@ export default function Contact() {
           </div>
           <div className="xl:w-1/2">
             <h2 className="text-4xl font-semibold">Formularz kontaktowy</h2>
+            <Form />
           </div>
         </div>
       </section>

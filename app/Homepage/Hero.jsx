@@ -14,13 +14,13 @@ export default function Hero() {
         <span className="mb-6 mt-32 xl:mt-0 text-3xl md:text-5xl xl:w-1/2 xl:leading-snug font-extrabold text-center uppercase">
           Witaj w Muszynova! Food & Fun do odkrycia na
         </span>
-        <div className="w-1/2">
+        <div className="xl:w-1/2">
           <Image
             src="/logo-nova.webp"
             alt="Muszynova Logo"
             layout="responsive"
-            width={100}
-            height={100}
+            width={400}
+            height={400}
           />
         </div>
       </div>
