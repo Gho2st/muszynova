@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { useRef } from "react";
-import SubmitButton from "../UI/Buttons/SubmitButton";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
