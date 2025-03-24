@@ -20,8 +20,8 @@ export default function Silownia() {
   return (
     <>
       {/* hero */}
-      <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-20 xl:pl-16">
+      <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
+        <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">Siłownia</h1>
           <p className="mt-10">
             Jeżeli pragniesz skutecznie poprawić swoją kondycję i osiągnąć formę
@@ -38,7 +38,7 @@ export default function Silownia() {
             />
           </div>
         </div>
-        <div className="mt-16 xl:mt-0 xl:w-2/3">
+        <div className="xl:w-3/5 flex justify-center items-center">
           <Image
             src="/park/silownia/s1.webp"
             width={100}

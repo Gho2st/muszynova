@@ -21,8 +21,8 @@ export default function Scianka() {
   return (
     <>
       {/* hero */}
-      <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-20 xl:pl-16">
+      <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
+        <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">
             Ścianka Wspinaczkowa
           </h1>
@@ -41,7 +41,7 @@ export default function Scianka() {
             />
           </div>
         </div>
-        <div className="mt-16 xl:mt-0 xl:w-2/3">
+        <div className="xl:w-3/5 flex justify-center items-center">
           <Image
             src="/park/scianka-wspinaczkowa/s2.webp"
             width={100}
@@ -82,7 +82,7 @@ export default function Scianka() {
               doświadczenia każdego wspinacza.
             </p>
           </div>
-          <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
+          <div className="xl:w-3/4 grid md:grid-cols-2 xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<FaPeopleGroup />}
               title={"Zajęcia grupowe"}
@@ -109,13 +109,13 @@ export default function Scianka() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/scianka-wspinaczkowa/s1.webp"
-              layout="fill" // Wypełnia kontener rodzica
-              objectFit="cover" // Przycina obraz, aby wypełnić kontener
+              layout="fill"
+              objectFit="cover"
               alt="Mini kręgielnia - zdjęcie 1"
             />
           </div>

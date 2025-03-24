@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Galeria() {
   return (
     <>
-      <section className="px-6 xl:px-24 py-16 xl:py-20 pb-32">
-        <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-20">
+      <section className="px-6 xl:px-24 py-16 xl:py-20 ">
+        <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-16 xl:mb-20">
           Galeria
         </h1>
-        <div className="flex flex-col sm:flex-row justify-center gap-x-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-x-10 gap-y-10 sm:gap-y-0">
           <Link
             className="w-3/3 sm:w-1/3 hover:scale-105 transition-all ease-in-out duration-300"
             href={"/galeria/park"}

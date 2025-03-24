@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Restaurant() {
   return (
     <section className="bg-[#C4966C] px-6 xl:px-44 py-20 text-white overflow-x-hidden">
-      <h2 className="text-5xl text-center font-extrabold text-white mb-6">
+      <h2 className="text-4xl xl:text-5xl text-center font-extrabold text-white mb-6">
         Restauracja Muszynova
       </h2>
       <div className="text-white text-center xl:w-4/5 mx-auto">

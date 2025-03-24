@@ -21,7 +21,7 @@ export default function About() {
     <>
       {/* hero */}
       <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-20 xl:pl-16">
+        <div className="xl:w-1/3 px-6 xl:p-16 pt-16 xl:pt-20 xl:pl-16">
           <h1 className="text-4xl xl:text-6xl font-bold">
             Czym jest <span className="text-customGold">Muszynova? </span>
           </h1>
@@ -114,7 +114,7 @@ export default function About() {
               icon={<MdOutlineSportsCricket />}
               title={"Fun - sport i rozrywka"}
               buttonText={"Park Rekreacyjno Sportowy"}
-              link="/park-rekreacyjno-sportowy"
+              link="/park"
               bgColor="bg-black"
               text="Aktywne spędzanie wolnego czasu na novo, z frajdą. Zachęcamy do
                 ruchu od najmłodszych lat, jesteśmy do tego przygotowani. Cztery

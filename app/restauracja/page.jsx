@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <>
       <div className="grid xl:grid-cols-2">
-        <div className="px-6 xl:p-16 pt-20">
+        <div className="px-6 xl:p-16 pt-16 xl:pt-20">
           <h1 className="text-5xl xl:text-6xl font-bold">
             Restauracja Muszynova
           </h1>

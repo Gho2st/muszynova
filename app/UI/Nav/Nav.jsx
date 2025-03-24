@@ -121,7 +121,8 @@ export default function Nav() {
                   initial="closed"
                   animate="open"
                   exit="closed"
-                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg max-h-64 overflow-y-auto"
+                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg "
+                  // mozna dodac max-h-64 i overflow-y-auto zeby troche skrocic dla designu
                   onMouseEnter={openParkDropdown}
                   onMouseLeave={closeParkDropdown}
                 >

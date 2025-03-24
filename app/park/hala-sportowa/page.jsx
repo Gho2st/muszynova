@@ -20,8 +20,8 @@ export default function Hala() {
   return (
     <>
       {/* hero */}
-      <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-20 xl:pl-16">
+      <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
+        <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">Hala Sportowa</h1>
           <p className="mt-10">
             Nasza hala sportowa to miejsce, gdzie sport staje się pasją, a ruch
@@ -52,7 +52,7 @@ export default function Hala() {
       {/* more section */}
       <section className="px-6 xl:px-24 xl:py-20">
         <div className="flex flex-col-reverse xl:flex-row justify-between xl:mb-10">
-          <div className="w-2/3 xl:w-1/5 mx-auto xl:mx-0">
+          <div className="xl:w-3/5 flex justify-center items-center">
             <Image
               src={"/logo2.webp"}
               width={100}

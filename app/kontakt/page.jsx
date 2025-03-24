@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <div className="px-6 xl:px-44 py-16 xl:py-20">
-        <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-20">
+        <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-16 xl:mb-20">
           Skontakuj się z nami!
         </h1>
         <section>

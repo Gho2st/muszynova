@@ -11,7 +11,7 @@ export default function Home() {
       <About />
       <Services />
       <Restaurant />
-      <VirtualToor />
+      {/* <VirtualToor /> */}
     </>
   );
 }
