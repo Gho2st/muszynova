@@ -121,8 +121,7 @@ export default function Nav() {
                   initial="closed"
                   animate="open"
                   exit="closed"
-                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg "
-                  // mozna dodac max-h-64 i overflow-y-auto zeby troche skrocic dla designu
+                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg"
                   onMouseEnter={openParkDropdown}
                   onMouseLeave={closeParkDropdown}
                 >
@@ -131,6 +130,7 @@ export default function Nav() {
                       key={item.href}
                       href={item.href}
                       className="block px-4 py-2 hover:bg-gray-800"
+                      onClick={() => setIsParkDropdownOpen(false)}
                     >
                       {item.label}
                     </Link>
@@ -174,7 +174,7 @@ export default function Nav() {
             exit="closed"
             className="fixed inset-0 z-40 bg-white text-black overflow-y-auto mt-16"
           >
-            <div className="pt-20 px-10 pb-6 flex flex-col  text-sm font-medium min-h-screen">
+            <div className="pt-20 px-10 pb-6 flex flex-col text-sm font-medium min-h-screen">
               <Link
                 href="/o-nas"
                 className="border-b border-gray-300 py-3"
@@ -204,14 +204,17 @@ export default function Nav() {
                       initial="closed"
                       animate="open"
                       exit="closed"
-                      className="mt-3 pl-4   text-black"
+                      className="mt-3 pl-4 text-black"
                     >
                       {parkItems.map((item) => (
                         <Link
                           key={item.href}
                           href={item.href}
                           className="block border-b border-gray-300 py-3"
-                          onClick={handleMenuToggle}
+                          onClick={() => {
+                            handleMenuToggle(); // Zamknij menu mobilne
+                            setIsParkDropdownOpen(false); // Zwiń dropdown
+                          }}
                         >
                           {item.label}
                         </Link>

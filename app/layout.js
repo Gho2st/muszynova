@@ -16,9 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body className={`${font.className} pt-24`}>
-        <Nav />
-        {children}
-        <Footer />
+        <main>
+          <Nav />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

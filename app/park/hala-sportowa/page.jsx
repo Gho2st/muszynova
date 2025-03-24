@@ -52,7 +52,7 @@ export default function Hala() {
       {/* more section */}
       <section className="px-6 xl:px-24 xl:py-20">
         <div className="flex flex-col-reverse xl:flex-row justify-between xl:mb-10">
-          <div className="xl:w-3/5 flex justify-center items-center">
+          <div className="w-2/3 xl:w-1/5 mx-auto xl:mx-0">
             <Image
               src={"/logo2.webp"}
               width={100}

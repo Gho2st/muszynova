@@ -18,12 +18,12 @@ export default function Restaurant() {
           drinka.
         </p>
       </div>
-      <div className="grid xl:grid-cols-3 mt-24 gap-16">
+      <div className="grid lg:grid-cols-3 mt-24 gap-16">
         {/* left container */}
-        <div className="text-right flex flex-col gap-16">
+        <div className="lg:text-right flex flex-col gap-16">
           {/* lokalne skladniki */}
           <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center justify-end gap-10">
+            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
               <Image
                 src={"/restauracja/mleko-ser.webp"}
                 width={100}
@@ -39,7 +39,7 @@ export default function Restaurant() {
           </div>
           {/* dzieciece smaki */}
           <div>
-            <div className="flex items-center justify-end gap-10">
+            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
               <Image
                 src={"/restauracja/lody.webp"}
                 width={100}
@@ -57,7 +57,7 @@ export default function Restaurant() {
           </div>
           {/* NOve standardy */}
           <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center justify-end gap-10">
+            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
               <Image
                 src={"/restauracja/5gwiazdek.webp"}
                 width={100}
@@ -86,7 +86,7 @@ export default function Restaurant() {
         <div className="text-right flex flex-col gap-16">
           {/* zdrowszy wybor */}
           <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse  gap-10">
+            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
               <Image
                 src={"/restauracja/pizza.webp"}
                 width={100}
@@ -103,7 +103,7 @@ export default function Restaurant() {
           </div>
           {/* dla doroslych */}
           <div>
-            <div className="flex items-center flex-row-reverse  gap-10">
+            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
               <Image
                 src={"/restauracja/kawa.webp"}
                 width={100}
@@ -120,7 +120,7 @@ export default function Restaurant() {
           </div>
           {/* imprezy okolicznosciowe*/}
           <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse  gap-10">
+            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
               <Image
                 src={"/restauracja/tort.webp"}
                 width={100}

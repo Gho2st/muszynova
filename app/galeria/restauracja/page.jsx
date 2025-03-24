@@ -13,6 +13,14 @@ export default function GalleryRestaurant() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Ustawienia dla urządzeń mobilnych
+  const mobileSettings = {
+    controls: true, // Wyłączone strzałki nawigacyjne
+    showCloseIcon: true, // Włączona ikona zamykania "X"
+    download: false, // Wyłączony przycisk pobierania
+    counter: true, // Licznik zdjęć (opcjonalne, domyślnie true)
+    swipeToClose: true, // Zamykanie przez przesunięcie (domyślnie true)
+  };
   useEffect(() => {
     async function fetchImages() {
       try {
@@ -33,7 +41,7 @@ export default function GalleryRestaurant() {
   }, []);
 
   return (
-    <main className="px-6 xl:px-24 py-16 xl:py-20 ">
+    <div className="px-6 xl:px-24 py-16 xl:py-20 ">
       <h1 className="text-4xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
         Galeria Restauracji
       </h1>
@@ -46,6 +54,7 @@ export default function GalleryRestaurant() {
           selector=".gallery-item"
           speed={500}
           plugins={[lgThumbnail]}
+          mobileSettings={mobileSettings}
           onInit={(detail) => {
             lightboxRef.current = detail.instance;
           }}
@@ -69,6 +78,6 @@ export default function GalleryRestaurant() {
           </div>
         </LightGallery>
       )}
-    </main>
+    </div>
   );
 }

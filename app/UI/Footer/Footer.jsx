@@ -4,19 +4,51 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [showArrow, setShowArrow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // Sprawdzamy, czy jesteśmy na dole strony
+      const isAtBottom = currentScrollY + windowHeight >= documentHeight - 10; // -10 dla marginesu błędu
+
+      // Pokazuj strzałkę, gdy przewijamy w górę lub jesteśmy na dole
+      if ((currentScrollY < lastScrollY && currentScrollY > 50) || isAtBottom) {
+        setShowArrow(true);
+      } else {
+        setShowArrow(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Czyszczenie listenera przy odmontowaniu komponentu
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <footer className="relative bg-customGreen text-white ">
-      <div className=" flex flex-col gap-16 items-center justify-center z-10">
-        <span className=" text-4xl font-bold mt-20 mb-10 ">Porozmawiajmy</span>
+    <footer className="bg-customGreen text-white">
+      <div className="flex flex-col gap-16 items-center justify-center z-10">
+        <span className="text-4xl font-bold mt-20 mb-10">Porozmawiajmy</span>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 text-lg">
           <li>
             <span className="text-customGold font-semibold">Adres: </span>
@@ -31,7 +63,7 @@ export default function Footer() {
             biuro@muszynova.pl
           </li>
           <li>
-            <span className="text-customGold font-semibold">Otwarte: </span>{" "}
+            <span className="text-customGold font-semibold">Otwarte: </span>
             11:00 - 21:00
           </li>
         </ul>
@@ -42,7 +74,7 @@ export default function Footer() {
               href={"https://www.facebook.com/Parkmuszynova"}
               className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
             >
-              <FaFacebookF className="text-customGold  " />
+              <FaFacebookF className="text-customGold" />
             </Link>
             <Link
               href={"https://www.instagram.com/muszynova/"}
@@ -64,14 +96,15 @@ export default function Footer() {
             className="hover:text-green-500 font-bold"
             href={"https://www.domiweb.pl/"}
           >
-            {" "}
             Domiweb
           </Link>
         </span>
       </div>
-      <span className="absolute bg-[#C4966C] rounded-lg p-1 text-4xl text-black bottom-32 right-6 xl:bottom-16 xl:right-10 z-10">
-        <IoIosArrowUp onClick={scrollToTop} className="cursor-pointer" />
-      </span>
+      {showArrow && (
+        <span className="fixed bg-[#C4966C] rounded-lg p-1 text-4xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10">
+          <IoIosArrowUp onClick={scrollToTop} className="cursor-pointer" />
+        </span>
+      )}
     </footer>
   );
 }
