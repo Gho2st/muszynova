@@ -72,6 +72,7 @@ export default function Nav() {
     { href: "/park/squash", label: "Squash" },
     { href: "/park/wypozyczalnia-rowerow", label: "Wypożyczalnia Rowerów" },
     { href: "/park/sala-gier", label: "Sala Gier" },
+    { href: "/park/sala-multimedialna", label: "Sala Multimedialna" },
   ];
 
   return (

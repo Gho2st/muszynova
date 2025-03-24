@@ -9,7 +9,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 export const metadata = {
   title: "Mini Kręgielnia Muszynova - Muszyna",
   alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/mini-kregielnia",
+    canonical: "https://muszynova.pl/park/mini-kregielnia",
   },
 
   description:

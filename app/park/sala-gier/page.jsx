@@ -9,7 +9,7 @@ import { GiCyberEye } from "react-icons/gi";
 export const metadata = {
   title: "Sala Gier Muszynova - Rozrywka w Muszynie",
   alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/sala-gier",
+    canonical: "https://muszynova.pl/park/sala-gier",
   },
 
   description:

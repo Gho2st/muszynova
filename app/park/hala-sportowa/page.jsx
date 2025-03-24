@@ -9,7 +9,7 @@ import { TbBowling } from "react-icons/tb";
 export const metadata = {
   title: "Hala Sportowa Muszynova - Muszyna",
   alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/hala-sportowa",
+    canonical: "https://muszynova.pl/park/hala-sportowa",
   },
 
   description:

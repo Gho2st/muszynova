@@ -14,7 +14,7 @@ export default function About() {
             alt=""
           />
         </div>
-        <div className="mt-12 xl:w-1/2 xl:p-16">
+        <div className="mt-12 xl:mt-0 xl:w-1/2 xl:p-16">
           <h1 className="text-customGold font-bold text-3xl xl:text-4xl">
             Sport i Fun dla małych i dużych na nOvym poziomie
           </h1>

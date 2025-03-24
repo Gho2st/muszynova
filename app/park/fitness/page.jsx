@@ -9,7 +9,7 @@ import { MdSportsGymnastics } from "react-icons/md";
 export const metadata = {
   title: "Fitness Muszynova - Zajęcia w Muszynie",
   alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/fitness",
+    canonical: "https://muszynova.pl/park/fitness",
   },
 
   description:
@@ -21,8 +21,8 @@ export default function Fitness() {
     <>
       {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
-      <div className="xl:w-2/5 px-6 xl:p-16 ">
-      <h1 className="text-4xl xl:text-6xl font-bold">Fitness </h1>
+        <div className="xl:w-2/5 px-6 xl:p-16 ">
+          <h1 className="text-4xl xl:text-6xl font-bold">Fitness </h1>
           <p className="mt-10">
             Zajęcia fitness w Parku Muszynova zostały stworzone z myślą o
             zdrowiu, dobrej kondycji i radości z aktywności fizycznej. Bez
