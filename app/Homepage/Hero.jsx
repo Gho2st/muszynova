@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-export default function Hero() {
+export default function Hero({ t }) {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center"
@@ -12,7 +11,7 @@ export default function Hero() {
       {/* Treść i obraz w jednym kontenerze */}
       <div className="relative z-20 flex flex-col items-center xl:justify-center min-h-screen text-white gap-4">
         <span className="mb-6 mt-32 xl:mt-0 text-3xl md:text-5xl xl:w-1/2 xl:leading-snug font-extrabold text-center uppercase">
-          Witaj w Muszynova! Food & Fun do odkrycia na
+          {t("welcome")}
         </span>
         <div className="xl:w-1/2">
           <Image

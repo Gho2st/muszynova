@@ -1,0 +1,127 @@
+{
+    "nav": {
+        "links": {
+            "link1": "O Nas",
+            "link2": "Restauracja",
+            "link3": "Cennik",
+            "link4": "Zajęcia Grupowe",
+            "link5": "Galeria",
+            "link6": "Kontakt",
+            "park": "Park Rekreacyjno-Sportowy"
+        },
+        "parkItems": {
+            "park": "Park",
+            "gym": "Siłownia",
+            "fitness": "Fitness",
+            "sportshall": "Hala Sportowa",
+            "minibowling": "Mini Kręgielnia",
+            "squash": "Squash",
+            "multimediaroom": "Sala Multimedialna",
+            "climbingwall": "Ścianka Wspinaczkowa",
+            "gamesroom": "Sala Gier",
+            "playroom": "Sala Zabaw",
+            "bikerental": "Wypożyczalnia Rowerów"
+        },
+        "button": "Strefa Klienta"
+    },
+    "footer": {
+        "header": "Porozmawiajmy",
+        "info": {
+            "info1": {
+                "address": "Adres",
+                "text": "Muszyna ul. Złockie 77c, 33-370"
+            },
+            "info2": {
+                "address": "Telefon",
+                "text": "+48 509 445 000"
+            },
+            "info3": {
+                "address": "Adres",
+                "text": "biuro@muszynova.pl"
+            },
+            "info4": {
+                "address": "Otwarte",
+                "text": "11:00 - 21:00"
+            }
+        },
+        "social": "Nasze Social Media"
+    },
+    "hero": {
+        "welcome": "Witaj w Muszynova! Food & Fun do odkrycia na"
+    },
+    "about": {
+        "header": "Sport i Fun dla małych i dużych na nOvym poziomie",
+        "button": "Wirtualny Spacer",
+        "text": "Czy istnieje obiekt, w którym każdy może być sobą i spędzać czas tak, jak lubi? Taka myśl przyświecała nam, gdy projektowaliśmy Muszynova. Aby każdy czuł się komfortowo. Z myślą o najmłodszych, nastolatkach i dorosłych, rodzinach i singlach, przyjezdnych i mieszkańcach oraz grupach zorganizowanych powstał nasz Park Rekreacyjno – Sportowy. Otwieramy drzwi do rozrywki i aktywności na nowym poziomie jakości."
+    },
+    "services": {
+        "header": "Nasze Strefy Sportowe i Relaksacyjne",
+        "cards": {
+            "1": {
+                "header": "Strefa Active Sport",
+                "text1": "Ścianka Wspinaczkowa",
+                "text2": "Hala Sportowa",
+                "text3": "Squash",
+                "text4": "Wypozyczalnia rowerów"
+            },
+            "2": {
+                "header": "Strefa Fun & Kids",
+                "text1": "Mini Kręgielnia",
+                "text2": "Sala Zabaw Dla Dzieci",
+                "text3": "Sala Gier",
+                "text4": "Sala Multimedialna"
+            },
+            "3": {
+                "header": "Strefa Fitness Sport",
+                "text1": "Siłownia",
+                "text2": "Fitness"
+            },
+            "4": {
+                "header": "Strefa Relax Sport",
+                "text1": "Wyspecjolizowane Gabinety Trenerskie",
+                "text2": "Masaż i Odnowa"
+            }
+        }
+    },
+    "restaurant": {
+        "header": "Restauracja Muszynova",
+        "header2": "Stawiamy na novą jakość, na odkrywanie beskidzkich smaków na novo",
+        "text": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na drinka.",
+        "items": {
+            "item1": {
+                "header": "Lokalne Składniki",
+                "text": "Promujemy smaki beskidziej kuchni. Odkrywamy na nOvo dodając współczesnego twistu."
+            },
+            "item2": {
+                "header": "Dziecięce Smaki",
+                "text": "Myślimy o najmłodszych, aby mieli frajdę z czasu u nas. Wybawione chętniej zjedzą posiłek. Ulubione frytki? A czemu by nie z batatów. Rozpieszczamy kubki smakowe i uczymy dobrych nawyków. Na zdrowie."
+            },
+            "item3": {
+                "header": "NOve standardy",
+                "text": "Pyszne jedzenie, zdrowszy wybór, ale i komfortowa atmosfera. Przyjemność odkrywana na nOvo także z przebywania w pięknym wnętrzu o loftowym charakterze."
+            },
+            "item4": {
+                "header": "Zdrowszy wybór",
+                "text": "Pizza może być zdrowszym wyborem, jeśli postawimy na pełnoziarnistą mąkę. Nie tylko jedz, smakuj, ale i Odżywiaj się z nami."
+            },
+            "item5": {
+                "header": "Dla dorosłych",
+                "text": "Pyszna kawa, ale i co nieco z procentami. Lekka sałatka, a może przyjemny kawałek domowego deseru. Idealne miejsce do posiedzenia przy książce, czy też miłego spędzenia wieczoru z ukochaną osobą."
+            },
+            "item6": {
+                "header": "Imprezy okolicznościowe",
+                "text": "Osobna sala na zorganizowanie przyjęcia z atrakcjami dla najmłodszych. W końcu dorośli porozmawiają przy stole, a dzieci… obiecujemy, że dla wszystkich zapewniamy food & fun."
+            }
+        }
+    },
+    "metadata": {
+        "homepage": {
+            "title": "Muszynova - Park Rekreacyjno-Sportowy i Restauracja w Muszynie",
+            "description": "Odkryj Muszynovą – park rekreacyjno-sportowy z siłownią, ścianką wspinaczkową, squash i więcej. Zjedz zdrowo w Restauracji Muszynova z beskidzkimi smakami!"
+        },
+        "contact": {
+            "title": "Muszynova - Kontakt - Park i Restauracja w Muszynie",
+            "description": "Skontaktuj się z Muszynova! Park rekreacyjno-sportowy i Restauracja w Muszynie – ul. Złockie 77c, tel. +48 509 445 000, biuro@muszynova.pl."
+        }
+    }
+}

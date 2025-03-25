@@ -1,56 +1,60 @@
+import createNextIntlPlugin from "next-intl/plugin";
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/park-rekreacyjno-sportowy", // Stary URL
-        destination: "/park", // Nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/park-rekreacyjno-sportowy",
+        destination: "/park",
+        permanent: true,
       },
       {
-        source: "/silownia", // Stary URL
-        destination: "/park/silownia", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/silownia",
+        destination: "/park/silownia",
+        permanent: true,
       },
       {
-        source: "/fitness", // Stary URL
-        destination: "/park/fitness", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/fitness",
+        destination: "/park/fitness",
+        permanent: true,
       },
       {
-        source: "/sala-zabaw", // Stary URL
-        destination: "/park/sala-zabaw", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/sala-zabaw",
+        destination: "/park/sala-zabaw",
+        permanent: true,
       },
       {
-        source: "/sala-gier", // Stary URL
-        destination: "/park/sala-gier", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/sala-gier",
+        destination: "/park/sala-gier",
+        permanent: true,
       },
       {
-        source: "/sala-multimedialna", // Stary URL
-        destination: "/park/sala-multimedialna", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/sala-multimedialna",
+        destination: "/park/sala-multimedialna",
+        permanent: true,
       },
       {
-        source: "/mini-kregielnia", // Stary URL
-        destination: "/park/mini-kregielnia", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/mini-kregielnia",
+        destination: "/park/mini-kregielnia",
+        permanent: true,
       },
       {
-        source: "/scianka-wspinaczkowa", // Stary URL
-        destination: "/park/wspinaczkowa", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/scianka-wspinaczkowa",
+        destination: "/park/wspinaczkowa",
+        permanent: true,
       },
       {
-        source: "/squash", // Stary URL
-        destination: "/park/squash", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/squash",
+        destination: "/park/squash",
+        permanent: true,
       },
       {
-        source: "/hala-sportowa", // Stary URL
-        destination: "/park/hala-sportowa", // Kolejny nowy URL
-        permanent: true, // Stałe przekierowanie (301)
+        source: "/hala-sportowa",
+        destination: "/park/hala-sportowa",
+        permanent: true,
       },
     ];
   },
@@ -60,4 +64,4 @@ const nextConfig = {
   reactStrictMode: false,
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

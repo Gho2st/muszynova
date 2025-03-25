@@ -6,11 +6,44 @@ import Link from "next/link";
 import SalesButton from "../Buttons/SalesButton";
 import { IoIosArrowDown } from "react-icons/io";
 import SalesButton2 from "../Buttons/SalesButton2";
+import LocaleSwitcher from "../LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isParkDropdownOpen, setIsParkDropdownOpen] = useState(false);
   const [timeoutId, setTimeoutId] = useState(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const scrollThreshold = 120; // Dopiero po przewinięciu 100px navbar może znikać
+  const hideDelay = 20; // Minimalna różnica w px, zanim navbar zacznie znikać
+  const t = useTranslations("nav");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      // Jeśli użytkownik jest blisko góry strony, zawsze pokazujemy navbar
+      if (scrollY < scrollThreshold) {
+        setIsVisible(true);
+      }
+      // Jeśli przewinął w dół o więcej niż hideDelay, chowamy navbar
+      else if (scrollY > lastScrollY + hideDelay) {
+        setIsVisible(false);
+      }
+      // Jeśli przewija w górę o więcej niż hideDelay, pokazujemy navbar
+      else if (scrollY < lastScrollY - hideDelay) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   // Toggle handlers
   const handleMenuToggle = () => setIsOpen((prev) => !prev);
@@ -62,23 +95,27 @@ export default function Nav() {
 
   // Park dropdown items
   const parkItems = [
-    { href: "/park", label: "Park" },
-    { href: "/park/silownia", label: "Siłownia" },
-    { href: "/park/fitness", label: "Fitness" },
-    { href: "/park/hala-sportowa", label: "Hala Sportowa" },
-    { href: "/park/mini-kregielnia", label: "Mini Kręgielnia" },
-    { href: "/park/scianka-wspinaczkowa", label: "Ścianka Wspinaczkowa" },
-    { href: "/park/sala-zabaw", label: "Sala Zabaw" },
-    { href: "/park/squash", label: "Squash" },
-    { href: "/park/wypozyczalnia-rowerow", label: "Wypożyczalnia Rowerów" },
-    { href: "/park/sala-gier", label: "Sala Gier" },
-    { href: "/park/sala-multimedialna", label: "Sala Multimedialna" },
+    { href: "/park", label: t("parkItems.park") },
+    { href: "/park/silownia", label: t("parkItems.gym") },
+    { href: "/park/fitness", label: t("parkItems.fitness") },
+    { href: "/park/hala-sportowa", label: t("parkItems.sportshall") },
+    { href: "/park/mini-kregielnia", label: t("parkItems.minibowling") },
+    { href: "/park/scianka-wspinaczkowa", label: t("parkItems.climbingwall") },
+    { href: "/park/sala-zabaw", label: t("parkItems.playroom") },
+    { href: "/park/squash", label: t("parkItems.squash") },
+    { href: "/park/wypozyczalnia-rowerow", label: t("parkItems.bikerental") },
+    { href: "/park/sala-gier", label: t("parkItems.gamesroom") },
+    { href: "/park/sala-multimedialna", label: t("parkItems.multimediaroom") },
   ];
 
   return (
     <nav className="relative bg-black">
       {/* Top Bar with Logo and Hamburger */}
-      <div className="fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-4 xl:px-8 bg-black">
+      <div
+        className={`fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-4 xl:px-8 bg-black transition-transform duration-500 ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         {/* Logo */}
         <Link href="/" className="relative h-24 w-24">
           <Image
@@ -90,10 +127,9 @@ export default function Nav() {
             priority
           />
         </Link>
-
         {/* Desktop Navigation */}
         <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
-          <NavLink href="/o-nas">O Nas</NavLink>
+          <NavLink href="/o-nas">{t("links.link1")}</NavLink>
 
           {/* Park Dropdown */}
           <div
@@ -102,7 +138,7 @@ export default function Nav() {
             onMouseLeave={closeParkDropdown}
           >
             <div className="flex items-center">
-              <NavLink href="/park">Park Rekreacyjno-Sportowy</NavLink>
+              <NavLink href="/park">{t("links.park")}</NavLink>
               <button
                 onClick={handleParkDropdownToggle}
                 className="ml-1 focus:outline-none"
@@ -141,28 +177,35 @@ export default function Nav() {
             </AnimatePresence>
           </div>
 
-          <NavLink href="/restauracja">Restauracja</NavLink>
-          <NavLink href="/cennik">Cennik</NavLink>
-          <NavLink href="/zajecia-grupowe">Zajęcia Grupowe</NavLink>
-          <NavLink href="/galeria">Galeria</NavLink>
-          <NavLink href="/kontakt">Kontakt</NavLink>
+          <NavLink href="/restauracja">{t("links.link2")}</NavLink>
+          <NavLink href="/cennik">{t("links.link3")}</NavLink>
+          <NavLink href="/zajecia-grupowe">{t("links.link4")}</NavLink>
+          <NavLink href="/galeria">{t("links.link5")}</NavLink>
+          <NavLink href="/kontakt">{t("links.link6")}</NavLink>
+          <LocaleSwitcher />
           <SalesButton
-            text="Strefa Klienta"
+            text={t("button")}
             link="https://muszynova.oos.pl/customer/login"
           />
         </div>
-
         {/* Hamburger Button */}
-        <button
-          className={`hamburger xl:hidden ${isOpen ? "open" : ""}`}
-          onClick={handleMenuToggle}
-          aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
-          aria-expanded={isOpen}
+        <div
+          className={`flex gap-5 items-center xl:hidden ${
+            isOpen ? "open" : ""
+          }`}
         >
-          <span className="hamburger-top" />
-          <span className="hamburger-middle" />
-          <span className="hamburger-bottom" />
-        </button>
+          <LocaleSwitcher />
+          <button
+            className="hamburger"
+            onClick={handleMenuToggle}
+            aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
+            aria-expanded={isOpen}
+          >
+            <span className="hamburger-top" />
+            <span className="hamburger-middle" />
+            <span className="hamburger-bottom" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

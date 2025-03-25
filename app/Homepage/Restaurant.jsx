@@ -1,22 +1,14 @@
 import Image from "next/image";
 
-export default function Restaurant() {
+export default function Restaurant({ t }) {
   return (
     <section className="bg-[#C4966C] px-6 xl:px-44 py-20 text-white overflow-x-hidden">
       <h2 className="text-4xl xl:text-5xl text-center font-extrabold text-white mb-6">
-        Restauracja Muszynova
+        {t("header")}
       </h2>
       <div className="text-white text-center xl:w-4/5 mx-auto">
-        <p className="text-lg xl:text-xl font-semibold mb-6">
-          Stawiamy na novą jakość, na odkrywanie beskidzkich smaków na novo
-        </p>
-        <p className="font-light xl:text-lg">
-          Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z
-          regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko?
-          Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś
-          miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na
-          drinka.
-        </p>
+        <p className="text-lg xl:text-xl font-semibold mb-6">{t("header2")}</p>
+        <p className="font-light xl:text-lg">{t("text")}</p>
       </div>
       <div className="grid lg:grid-cols-3 mt-24 gap-16">
         {/* left container */}
@@ -30,12 +22,11 @@ export default function Restaurant() {
                 height={100}
                 alt=""
               />
-              <h3 className="text-3xl font-semibold">Lokalne Składniki</h3>
+              <h3 className="text-3xl font-semibold">
+                {t("items.item1.header")}
+              </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Promujemy smaki beskidziej kuchni. Odkrywamy na nOvo dodając
-              współczesnego twistu.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item1.text")}</p>
           </div>
           {/* dzieciece smaki */}
           <div>
@@ -46,14 +37,11 @@ export default function Restaurant() {
                 height={100}
                 alt=""
               />
-              <h3 className="text-3xl font-semibold">Dziecięce Smaki</h3>
+              <h3 className="text-3xl font-semibold">
+                {t("items.item2.header")}
+              </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Myślimy o najmłodszych, aby mieli frajdę z czasu u nas. Wybawione
-              chętniej zjedzą posiłek. Ulubione frytki? A czemu by nie z
-              batatów. Rozpieszczamy kubki smakowe i uczymy dobrych nawyków. Na
-              zdrowie.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item2.text")}</p>
           </div>
           {/* NOve standardy */}
           <div className="xl:translate-x-[4rem]">
@@ -64,13 +52,11 @@ export default function Restaurant() {
                 height={100}
                 alt=""
               />
-              <h3 className="text-3xl font-semibold">NOve standardy</h3>
+              <h3 className="text-3xl font-semibold">
+                {t("items.item3.header")}
+              </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Pyszne jedzenie, zdrowszy wybór, ale i komfortowa atmosfera.
-              Przyjemność odkrywana na nOvo także z przebywania w pięknym
-              wnętrzu o loftowym charakterze.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item3.text")}</p>
           </div>
         </div>
         <div className="flex justify-center items-center">
@@ -93,13 +79,11 @@ export default function Restaurant() {
                 height={100}
                 alt=""
               />
-              <h3 className="text-3xl font-semibold">Zdrowszy wybór</h3>
+              <h3 className="text-3xl font-semibold">
+                {t("items.item4.header")}
+              </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Pizza może być zdrowszym wyborem, jeśli postawimy na
-              pełnoziarnistą mąkę. Nie tylko jedz, smakuj, ale i Odżywiaj się z
-              nami.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item4.text")}</p>
           </div>
           {/* dla doroslych */}
           <div>
@@ -110,13 +94,11 @@ export default function Restaurant() {
                 height={100}
                 alt=""
               />
-              <h3 className="text-3xl font-semibold">Dla dorosłych</h3>
+              <h3 className="text-3xl font-semibold">
+                {t("items.item5.header")}
+              </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Pyszna kawa, ale i co nieco z procentami. Lekka sałatka, a może
-              przyjemny kawałek domowego deseru. Idealne miejsce do posiedzenia
-              przy książce, czy też miłego spędzenia wieczoru z ukochaną osobą.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item5.text")}</p>
           </div>
           {/* imprezy okolicznosciowe*/}
           <div className="xl:translate-x-[-4rem]">
@@ -128,14 +110,10 @@ export default function Restaurant() {
                 alt=""
               />
               <h3 className="text-3xl font-semibold">
-                Imprezy okolicznościowe
+                {t("items.item6.header")}
               </h3>
             </div>
-            <p className="font-light mt-5 ">
-              Osobna sala na zorganizowanie przyjęcia z atrakcjami dla
-              najmłodszych. W końcu dorośli porozmawiają przy stole, a dzieci…
-              obiecujemy, że dla wszystkich zapewniamy food & fun.
-            </p>
+            <p className="font-light mt-5 ">{t("items.item6.text")}</p>
           </div>
         </div>
       </div>

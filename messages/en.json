@@ -1,0 +1,127 @@
+{
+    "nav": {
+        "links": {
+            "link1": "About Us",
+            "link2": "Restaurant",
+            "link3": "Pricing",
+            "link4": "Group Classes",
+            "link5": "Gallery",
+            "link6": "Contact",
+            "park": "Recreational-Sports Park"
+        },
+        "parkItems": {
+            "park": "Park",
+            "gym": "Gym",
+            "fitness": "Fitness",
+            "sportshall": "Sports Hall",
+            "minibowling": "Mini Bowling",
+            "squash": "Squash",
+            "multimediaroom": "Multimedia Room",
+            "climbingwall": "Climbing Wall",
+            "gamesroom": "Game Room",
+            "playroom": "Playroom",
+            "bikerental": "Bike Rental"
+        },
+        "button": "Client Zone"
+    },
+    "footer": {
+        "header": "Let’s Talk",
+        "info": {
+            "info1": {
+                "address": "Address",
+                "text": "Muszyna, Złockie 77c St., 33-370"
+            },
+            "info2": {
+                "address": "Phone",
+                "text": "+48 509 445 000"
+            },
+            "info3": {
+                "address": "Email",
+                "text": "biuro@muszynova.pl"
+            },
+            "info4": {
+                "address": "Open",
+                "text": "11:00 AM - 9:00 PM"
+            }
+        },
+        "social": "Our Social Media"
+    },
+    "hero": {
+        "welcome": "Welcome to Muszynova! Food & Fun to discover on"
+    },
+    "about": {
+        "header": "Sport and Fun for young and old at a nOvy level",
+        "button": "Virtual Tour",
+        "text": "Is there a facility where everyone can be themselves and spend time the way they like? This was our idea when we designed Muszynova. To make everyone feel comfortable. With the youngest, teenagers and adults, families and singles, visitors and residents and organized groups in mind, our Recreation and Sports Park was created. We open the door to entertainment and activity at a new level of quality."
+    },
+    "services": {
+        "header": "Our Sports and Relaxation Zones",
+        "cards": {
+            "1": {
+                "header": "Active Sport Zone",
+                "text1": "Climbing Wall",
+                "text2": "Sports Hall",
+                "text3": "Squash",
+                "text4": "Bike Rental"
+            },
+            "2": {
+                "header": "Fun & Kids Zone",
+                "text1": "Mini Bowling",
+                "text2": "Children's Playroom",
+                "text3": "Game Room",
+                "text4": "Multimedia Room"
+            },
+            "3": {
+                "header": "Fitness Sport Zone",
+                "text1": "Gym",
+                "text2": "Fitness"
+            },
+            "4": {
+                "header": "Relax Sport Zone",
+                "text1": "Specialized Training Studios",
+                "text2": "Massage and Recovery"
+            }
+        }
+    },
+    "restaurant": {
+        "header": "Muszynova Restaurant",
+        "header2": "We Focus on New Quality, Rediscovering Beskid Flavors in a Fresh Way",
+        "text": "A restaurant offering healthy and light cuisine. A concise menu with regional accents brings Beskid flavors closer. Light? Yes! Comforting? We’re no strangers to pizza either. Something nice for everyone—we cater to kids, teens, and adults alike, inviting you for a drink.",
+        "items": {
+            "item1": {
+                "header": "Local Ingredients",
+                "text": "We promote the flavors of Beskid cuisine. We rediscover them anew, adding a modern twist."
+            },
+            "item2": {
+                "header": "Kids’ Favorites",
+                "text": "We think of the little ones, ensuring they enjoy their time with us. Happy kids are more eager to eat. Favorite fries? Why not sweet potato fries? We delight taste buds and teach healthy habits. To your health!"
+            },
+            "item3": {
+                "header": "New Standards",
+                "text": "Delicious food, healthier choices, and a cozy atmosphere. Pleasure rediscovered anew, not just in dining but also in enjoying a beautiful, loft-style interior."
+            },
+            "item4": {
+                "header": "Healthier Choices",
+                "text": "Pizza can be a healthier option with whole-grain flour. Don’t just eat—savor and nourish yourself with us."
+            },
+            "item5": {
+                "header": "For Adults",
+                "text": "Great coffee, a touch of alcohol, a light salad, or a delightful piece of homemade dessert. The perfect spot to relax with a book or spend a pleasant evening with a loved one."
+            },
+            "item6": {
+                "header": "Special Events",
+                "text": "A separate room for hosting celebrations with attractions for the youngest guests. Adults can chat at the table while kids… we promise food & fun for everyone."
+            }
+        }
+    },
+    "metadata": {
+        "homepage": {
+            "title": "Muszynova - Recreational-Sports Park and Restaurant in Muszyna",
+            "description": "Discover Muszynova – a recreational-sports park with a gym, climbing wall, squash, and more. Eat healthy at Muszynova Restaurant with Beskid flavors!"
+        },
+        "contact": {
+            "title": "Muszynova - Contact - Park & Restaurant in Muszyna",
+            "description": "Contact Muszynova! Recreational-sports park & restaurant in Muszyna – Złockie 77c St., +48 509 445 000, biuro@muszynova.pl."
+        }
+    }
+}

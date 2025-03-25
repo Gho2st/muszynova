@@ -5,11 +5,13 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [showArrow, setShowArrow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const t = useTranslations("footer");
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -48,28 +50,36 @@ export default function Footer() {
   return (
     <footer className="bg-customGreen text-white">
       <div className="flex flex-col gap-16 items-center justify-center z-10">
-        <span className="text-4xl font-bold mt-20">Porozmawiajmy</span>
+        <span className="text-4xl font-bold mt-20"> {t("header")}</span>
         <div className="h-1 w-2/5 bg-customGold mb-10"></div>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 text-lg">
           <li>
-            <span className="text-customGold font-semibold">Adres: </span>
-            33-370 Muszyna Złockie 77c
+            <span className="text-customGold font-semibold">
+              {t("info.info1.address")}:{" "}
+            </span>
+            {t("info.info1.text")}
           </li>
           <li>
-            <span className="text-customGold font-semibold">Telefon: </span>
+            <span className="text-customGold font-semibold">
+              {t("info.info2.address")}:{" "}
+            </span>
             <Link href={"tel:48509445000"}>+48 509 445 000 </Link>
           </li>
           <li>
-            <span className="text-customGold font-semibold">Email: </span>
+            <span className="text-customGold font-semibold">
+              {t("info.info3.address")}:{" "}
+            </span>
             biuro@muszynova.pl
           </li>
           <li>
-            <span className="text-customGold font-semibold">Otwarte: </span>
+            <span className="text-customGold font-semibold">
+              {t("info.info4.address")}:{" "}
+            </span>
             11:00 - 21:00
           </li>
         </ul>
         <div className="">
-          <h3 className="text-xl">Nasze Social Media</h3>
+          <h3 className="text-xl">{t("social")}</h3>
           <div className="flex mt-5 justify-center gap-5 text-xl">
             <Link
               href={"https://www.facebook.com/Parkmuszynova"}
@@ -92,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
         <span className="mb-20">
-          © {currentYear} Muszynova | Realizacja:{" "}
+          © {currentYear} Muszynova &{" "}
           <Link
             className="hover:text-green-500 font-bold"
             href={"https://www.domiweb.pl/"}

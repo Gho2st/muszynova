@@ -1,0 +1,368 @@
+#: locale=pl
+
+## Action
+
+### URL
+LinkBehaviour_E8198609_C557_8D77_41E7_91C433C0B893.source = http://www.loremipsum.com
+LinkBehaviour_5B3E66A0_5424_0BC7_419C_F0E11B55707D.source = http://www.loremipsum.com
+WebFrame_245FE213_17C4_1F0B_41A4_D9A473C556C8.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.6369736021034!2d20.88189507680099!3d49.36789116471624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e77eeeb758d49%3A0x12e520475cfb56c6!2sPark%20Muszynova!5e1!3m2!1spl!2spl!4v1717431632111!5m2!1spl!2spl
+WebFrame_245FE213_17C4_1F0B_41A4_D9A473C556C8_mobile.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.6369736021034!2d20.88189507680099!3d49.36789116471624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e77eeeb758d49%3A0x12e520475cfb56c6!2sPark%20Muszynova!5e1!3m2!1spl!2spl!4v1717431632111!5m2!1spl!2spl
+LinkBehaviour_00F121BA_22AD_526D_4181_36FB65E4CC82.source = https://www.spaceryidron.pl
+LinkBehaviour_00F761C3_22AD_5223_41BF_4D0BB38DBFFA.source = https://www.spaceryidron.pl
+LinkBehaviour_00F771C6_22AD_5225_41B5_C01CC5779BEF.source = https://www.spaceryidron.pl
+LinkBehaviour_00F441C8_22AD_522D_41A1_54FA459739B6.source = https://www.spaceryidron.pl
+LinkBehaviour_008A41CB_22AD_5223_41BA_A8D44DDFCEC2.source = https://www.spaceryidron.pl
+LinkBehaviour_0088A1CE_22AD_5225_4173_3FC502D59A98.source = https://www.spaceryidron.pl
+LinkBehaviour_008FE1D2_22AD_523D_41B0_D0F1BC25D957.source = https://www.spaceryidron.pl
+LinkBehaviour_008ED1D5_22AD_5227_41B0_E5751DA5E80A.source = https://www.spaceryidron.pl
+LinkBehaviour_008FC1D8_22AD_522D_41AE_AB512604498D.source = https://www.spaceryidron.pl
+LinkBehaviour_008D01DB_22AD_5223_41B7_26537C29BD24.source = https://www.spaceryidron.pl
+LinkBehaviour_008CE1DE_22AD_5225_41B7_1552B8C56600.source = https://www.spaceryidron.pl
+LinkBehaviour_008DC1E1_22AD_521F_418D_37FFF742AE73.source = https://www.spaceryidron.pl
+LinkBehaviour_008071E4_22AD_55E5_4179_E23E26F41CFA.source = https://www.spaceryidron.pl
+LinkBehaviour_008301E7_22AD_55E3_419A_8C668D92C515.source = https://www.spaceryidron.pl
+LinkBehaviour_008071EA_22AD_55ED_41BA_13272BE9A4C2.source = https://www.spaceryidron.pl
+LinkBehaviour_0084A1ED_22AD_55E7_41B4_C0980A2D839A.source = https://www.spaceryidron.pl
+LinkBehaviour_0087A1F0_22AD_55FD_41BE_69037C56126E.source = https://www.spaceryidron.pl
+LinkBehaviour_008481F4_22AD_55E5_41BD_3EA034FD8944.source = https://www.spaceryidron.pl
+LinkBehaviour_009BD1FC_22AD_55E5_41AD_1686CC21A411.source = https://www.spaceryidron.pl
+LinkBehaviour_0085E1FF_22AD_55E3_419F_A853DBE103EF.source = https://www.spaceryidron.pl
+LinkBehaviour_009AC202_22AD_561D_41B5_B9339270E72B.source = https://www.spaceryidron.pl
+LinkBehaviour_009BC205_22AD_5627_41B8_005802CDA821.source = https://www.spaceryidron.pl
+LinkBehaviour_0098F208_22AD_562D_41B3_5D5B95923D66.source = https://www.spaceryidron.pl
+LinkBehaviour_0099E20B_22AD_5623_41BD_91E1FFE26070.source = https://www.spaceryidron.pl
+LinkBehaviour_009C620E_22AD_5625_41B0_C5D8186139E0.source = https://www.spaceryidron.pl
+LinkBehaviour_009F6211_22AD_563F_41BE_31415893224C.source = https://www.spaceryidron.pl
+LinkBehaviour_009C6214_22AD_5624_41A8_AFF5AF0E3A60.source = https://www.spaceryidron.pl
+LinkBehaviour_009D4218_22AD_562D_41BF_3FBCAE56DA56.source = https://www.spaceryidron.pl
+LinkBehaviour_0091921B_22AD_5623_41AF_D4CC77EFB9C8.source = https://www.spaceryidron.pl
+LinkBehaviour_0090A21E_22AD_5625_4177_24748C92CCE2.source = https://www.spaceryidron.pl
+LinkBehaviour_0090B220_22AD_561C_41A6_17964F82B066.source = https://www.spaceryidron.pl
+LinkBehaviour_00919223_22AD_561C_41BF_24B46ED3597A.source = https://www.spaceryidron.pl
+LinkBehaviour_0096C226_22AD_5664_41AE_4B01D7BF8577.source = https://www.spaceryidron.pl
+LinkBehaviour_0094E229_22AD_566C_41BC_628367783120.source = https://www.spaceryidron.pl
+LinkBehaviour_00ABC231_22AD_567C_41A6_F85DE8FE7021.source = https://www.spaceryidron.pl
+LinkBehaviour_00AAD235_22AD_5664_41BA_03F3E40C9591.source = https://www.spaceryidron.pl
+LinkBehaviour_00AA3238_22AD_566C_41C0_D1A489DE4016.source = https://www.spaceryidron.pl
+LinkBehaviour_00AB323B_22AD_566C_41A2_71607B187300.source = https://www.spaceryidron.pl
+LinkBehaviour_00A8723D_22AD_5664_41A7_41DD89C7BC6B.source = https://www.spaceryidron.pl
+LinkBehaviour_00F031B5_22AD_5267_41B2_435F67CEF01D.source = https://www.spaceryidron.pl
+LinkBehaviour_00F071B8_22AD_526D_41B0_E6A27D006FF5.source = https://www.spaceryidron.pl
+LinkBehaviour_00ADF246_22AD_5624_4191_3C9CCE245074.source = https://www.spaceryidron.pl
+LinkBehaviour_00A2E249_22AD_562C_41B5_55D489F286D3.source = https://www.spaceryidron.pl
+LinkBehaviour_00A3C24C_22AD_5624_41A1_CD6F6A6DCF5E.source = https://www.spaceryidron.pl
+LinkBehaviour_00A0124F_22AD_5624_4198_F6AD2321246C.source = https://www.spaceryidron.pl
+LinkBehaviour_00A0D252_22AD_563C_41B5_9FE860347A37.source = https://www.spaceryidron.pl
+LinkBehaviour_00A72255_22AD_5624_41AE_13909084EE76.source = https://www.spaceryidron.pl
+LinkBehaviour_00A66258_22AD_562C_41B7_AF941915E102.source = https://www.spaceryidron.pl
+LinkBehaviour_00A7525B_22AD_562C_41B8_E306B824CEB3.source = https://www.spaceryidron.pl
+LinkBehaviour_00BBA25E_22AD_5624_419B_ED63E4081EAB.source = https://www.spaceryidron.pl
+LinkBehaviour_00BA8261_22AD_561C_41BC_A37E5F6819FD.source = https://www.spaceryidron.pl
+LinkBehaviour_00BB8264_22AD_56E4_41A8_93EDA5CEA30A.source = https://www.spaceryidron.pl
+LinkBehaviour_00BEC26D_22AD_56E4_41B4_0635EC1664AE.source = https://www.spaceryidron.pl
+LinkBehaviour_00B93270_22AD_56FC_41BF_CBB3DF6B8555.source = https://www.spaceryidron.pl
+LinkBehaviour_00B92273_22AD_56FC_41B5_0999C2F842AD.source = https://www.spaceryidron.pl
+LinkBehaviour_00BE0275_22AD_56E4_41B2_7802AF112910.source = https://www.spaceryidron.pl
+LinkBehaviour_00BDB278_22AD_56ED_41BA_6EB397E83B83.source = https://www.spaceryidron.pl
+LinkBehaviour_00BC027C_22AD_56E4_41B6_3D1F162A655E.source = https://www.spaceryidron.pl
+LinkBehaviour_00B0B27F_22AD_56E4_41B3_64F00A0FE960.source = https://www.spaceryidron.pl
+LinkBehaviour_00B3F282_22AD_561C_41BD_61AFC0D5A045.source = https://www.spaceryidron.pl
+LinkBehaviour_00B0F285_22AD_5624_41A7_0DAA6E63C122.source = https://www.spaceryidron.pl
+LinkBehaviour_00B73288_22AD_562C_41AF_4E8689669355.source = https://www.spaceryidron.pl
+LinkBehaviour_00B6328C_22AD_5624_4172_8E6A766A2FFC.source = https://www.spaceryidron.pl
+LinkBehaviour_3CC0F8D8_22E3_5237_41B6_A9C811C5BD2A.source = https://www.spaceryidron.pl
+LinkBehaviour_00B7328F_22AD_5624_4176_8FDEDA508703.source = https://www.spaceryidron.pl
+LinkBehaviour_004A5291_22AD_563F_4198_C31FD4DFFEE7.source = https://www.spaceryidron.pl
+LinkBehaviour_00B5B294_22AD_5625_41C1_1A828336C6B0.source = https://www.spaceryidron.pl
+LinkBehaviour_004A9296_22AD_5625_41BB_217D774735F3.source = https://www.spaceryidron.pl
+LinkBehaviour_004BD299_22AD_562F_41A9_0A51EF33AF05.source = https://www.spaceryidron.pl
+LinkBehaviour_0048829D_22AD_5627_41B5_27BB19433B89.source = https://www.spaceryidron.pl
+LinkBehaviour_0049E2A0_22AD_561D_41B7_80B583DBCE60.source = https://www.spaceryidron.pl
+LinkBehaviour_004C02A8_22AD_566D_41AB_03E34C644A92.source = https://www.spaceryidron.pl
+LinkBehaviour_004E72AB_22AD_5663_41C0_1696BFBB86FE.source = https://www.spaceryidron.pl
+LinkBehaviour_004C52AF_22AD_5663_41BC_661A3BBE5829.source = https://www.spaceryidron.pl
+LinkBehaviour_0040F2B2_22AD_567D_41BF_CCF1159AD882.source = https://www.spaceryidron.pl
+LinkBehaviour_0043C2B5_22AD_5667_41BB_79DA2B11C5F0.source = https://www.spaceryidron.pl
+LinkBehaviour_0040D2B8_22AD_566D_41BC_F2DB17542014.source = https://www.spaceryidron.pl
+LinkBehaviour_004702BB_22AD_5663_41B8_0269799D1048.source = https://www.spaceryidron.pl
+LinkBehaviour_004142BE_22AD_5665_41B1_3DFC701D6077.source = https://www.spaceryidron.pl
+LinkBehaviour_004792C1_22AD_561F_4163_4DD84989F1D1.source = https://www.spaceryidron.pl
+LinkBehaviour_004482C3_22AD_5623_41AD_DA385B687793.source = https://www.spaceryidron.pl
+LinkBehaviour_0045B2C6_22AD_5625_41A6_0A50348E25D7.source = https://www.spaceryidron.pl
+LinkBehaviour_00AE4240_22AD_561C_41A3_BC7F51F687AB.source = https://www.spaceryidron.pl
+LinkBehaviour_00AF4243_22AD_561C_41B8_61866E6F3D64.source = https://www.spaceryidron.pl
+LinkBehaviour_F4E4D500_C578_8F75_41A4_B8BB02D57170.source = https://www.spaceryidron.pl
+
+## Hotspot
+
+### Tooltip
+HotspotMapOverlayArea_CB9ED9B0_C4D8_8695_41D6_D3B602886828.toolTip = HALA SPORTOWA
+HotspotMapOverlayArea_D5E067CC_C4C8_8A8C_41DE_4F23EA597BF1.toolTip = MINI KRĘGIELNIA
+HotspotPanoramaOverlayArea_DBBCF593_C4DF_8E94_41E1_846C4E7D790E.toolTip = PARKING
+HotspotPanoramaOverlayArea_E411FF2B_C4D9_9B8B_41D1_81CF3559AC53.toolTip = PARKING
+HotspotMapOverlayArea_CB8DF9F8_C4D9_8695_41B1_D7705A16F229.toolTip = POKÓJ MAMY Z DZIECKIEM
+HotspotMapOverlayArea_CB9E117F_C4C9_878B_41B4_BFA300670274.toolTip = RECEPCJA
+HotspotMapOverlayArea_CBFCBFD4_C4C9_9A9C_41CE_4493E3B02742.toolTip = RECEPCJA
+HotspotMapOverlayArea_CBC43D40_C4C8_BFF4_41E0_72A3E8FA93BA.toolTip = SALA FITNESS
+HotspotMapOverlayArea_CA798031_C4D8_8594_41E1_2D3DE9D4C485.toolTip = SALA GIER
+HotspotMapOverlayArea_CA3DFF1C_C4D8_9B8C_41E6_62DF9D182350.toolTip = SALA MUTIMEDIALNA
+HotspotMapOverlayArea_CBAC442B_C4C9_8D8B_41CD_503D8CE77CE8.toolTip = SALA NOVA
+HotspotMapOverlayArea_CA2BC0B8_C4D8_8695_41E0_DCA317224962.toolTip = SALA RODZINNA
+HotspotMapOverlayArea_CB1C3AE0_C4DB_9AB5_4179_11D3405F99A0.toolTip = SALA ZABAW
+HotspotMapOverlayArea_CBEE2534_C4C8_8F9C_41CD_C0224F86E9C2.toolTip = SIŁOWNIA
+HotspotMapOverlayArea_CA657270_C4CB_8595_41D7_F3C44B3E206C.toolTip = SQUASH
+HotspotMapOverlayArea_CB8D6984_C4D9_877D_41C0_C53AE561A1E7.toolTip = SQUASH
+HotspotMapOverlayArea_ADC50AC0_B05E_3BE6_41D0_55DDF181D4F2.toolTip = SZATNIA
+HotspotMapOverlayArea_CBDBF244_C4C8_85FC_41E2_07E4F24B9DB1.toolTip = SZATNIA DAMSKA
+HotspotMapOverlayArea_CBD32064_C4C8_85BC_41DC_22A1AAC486CC.toolTip = SZATNIA MĘSKA
+HotspotMapOverlayArea_CBF2500C_C4D8_858C_41DD_55E15AF8AE22.toolTip = TOALETY
+HotspotMapOverlayArea_CB91D262_C4C9_85B5_41DF_86962092DCBE.toolTip = TOALETY
+HotspotMapOverlayArea_CBAB1343_C4C9_8BFB_41D7_7367073DAE8A.toolTip = ŚCIANKA WSPINACZKOWA
+
+## Media
+
+### Floorplan
+
+### Image
+imlevel_3DEC7344_2A90_C3B4_4164_904955E9C84B.url = media/map_ACE095C7_B042_49EA_41D3_59F028636811_pl_0.jpg
+imlevel_3DEC5344_2A90_C3B4_41B0_C9CA91854CDA.url = media/map_ACE095C7_B042_49EA_41D3_59F028636811_pl_1.jpg
+imlevel_3DECA344_2A90_C3B4_41BE_8F7E1F403B4B.url = media/map_ACE095C7_B042_49EA_41D3_59F028636811_pl_2.jpg
+imlevel_3DEF9327_2A90_C3F4_41BD_5529BBA84023.url = media/map_ACFF9486_B042_4E6A_41CA_0396C103B3F9_pl_0.jpg
+imlevel_3DEFE327_2A90_C3F4_41C1_9DEE378A8615.url = media/map_ACFF9486_B042_4E6A_41CA_0396C103B3F9_pl_1.jpg
+imlevel_3DEFF327_2A90_C3F4_41B4_57C480B65854.url = media/map_ACFF9486_B042_4E6A_41CA_0396C103B3F9_pl_2.jpg
+imlevel_3DEEE311_2A90_C3AC_41AC_47FEF31B27CC.url = media/map_AD4AE2C3_B042_4BEA_41DE_F5A810E8901F_pl_0.jpg
+imlevel_3DEEC311_2A90_C3AC_41C4_5707C6405F74.url = media/map_AD4AE2C3_B042_4BEA_41DE_F5A810E8901F_pl_1.jpg
+imlevel_3DEED311_2A90_C3AC_41BB_1D684E19CD2A.url = media/map_AD4AE2C3_B042_4BEA_41DE_F5A810E8901F_pl_2.jpg
+
+### Subtitle
+panorama_72C3AEFF_62ED_7A86_41D3_A21EF9DB965B.subtitle = I PIĘTRO
+panorama_72C06DD3_62F3_5E9F_41D6_2E396820EE1B.subtitle = I PIĘTRO
+panorama_72C3AD9C_62ED_5E8A_41D6_B3E1AE6E1B68.subtitle = I PIĘTRO
+panorama_72C1E91E_62F2_C789_41CB_59B515D9FE18.subtitle = I PIĘTRO
+panorama_72C79222_62F3_45B9_41B9_28D90ADA17FF.subtitle = I PIĘTRO
+panorama_72C095EC_62F3_CE89_41CE_9B547F1A4244.subtitle = I PIĘTRO
+panorama_72C0F0F7_62ED_4687_41D4_FA932AF32B64.subtitle = I PIĘTRO
+panorama_72C0A95F_62EE_C786_41D3_FD0C36131F3C.subtitle = I PIĘTRO
+panorama_72D3BC13_62ED_5D9E_4186_2100AFF059BC.subtitle = I PIĘTRO
+panorama_72C03836_62ED_C599_41D6_5863C3D42297.subtitle = I PIĘTRO
+panorama_72C0BB41_62EE_BBFA_41C1_5FBD21903BA9.subtitle = I PIĘTRO
+panorama_72C0C1B4_62F3_C699_41D6_8C7E81A3476A.subtitle = II PIĘTRO
+panorama_72C7ED86_62F2_BF79_4170_96D136577CC8.subtitle = II PIĘTRO
+panorama_72C02A6E_62F3_C589_41B2_5D52E5482F97.subtitle = II PIĘTRO
+panorama_72C6B414_62F3_4D98_41CC_F52AF9E67CBF.subtitle = II PIĘTRO
+panorama_72C0DD3F_62F3_DF87_41CD_5A0E0096C0DF.subtitle = II PIĘTRO
+panorama_72C0C370_62F3_CB98_41CC_81DF6606D833.subtitle = II PIĘTRO
+panorama_E4E06BF2_C4D8_FA95_41E2_841A9EAE1E01.subtitle = KRĘGIELNIA
+panorama_E4A82038_C4D8_8595_41DA_14653C4025AC.subtitle = KRĘGIELNIA
+panorama_72C2E469_62EF_CD8D_41B9_58F1621902C3.subtitle = KRĘGIELNIA
+panorama_72FE5E52_62EF_5D9F_41B7_BA7097A323E9.subtitle = KRĘGIELNIA
+panorama_72C0ACA0_62EF_5EBB_41C5_D8B50EACD08C.subtitle = PARTER
+panorama_718471A9_61F2_C82B_41D6_14BB6611C53A.subtitle = PARTER
+panorama_70FECA73_61FD_584C_41D7_208755ECD008.subtitle = PARTER
+panorama_72C11DAE_62EE_BE87_41B0_7A9F3388E24D.subtitle = PARTER
+panorama_72C0F7B5_62EE_CA9A_41C8_6824C59580F2.subtitle = PIĘTRO I
+panorama_72C79B3F_62F3_5B87_41B3_8254A9CA1A74.subtitle = PIĘTRO II
+panorama_72C05E2F_62ED_DD86_41C4_79045CE6D8E2.subtitle = POKÓJ MAMY Z DZIECKIEM
+panorama_72C006A5_62F3_4ABB_419B_34EDFEECCAE9.subtitle = SALA FITNESS
+panorama_72C04F7A_62F3_BB89_41D0_C8FA40A0A54E.subtitle = SALA FITNESS
+panorama_72C13EB8_62EE_DA8A_41D4_7DE5E001AEFE.subtitle = SALA GIER
+panorama_72C0E052_62EE_C59E_41D8_2DD0B8B0F17D.subtitle = SALA GIER
+panorama_72C139BA_62EF_468F_41D6_D424A9D5071B.subtitle = SALA GIMNASTYCZNA
+panorama_72C13B1D_62EF_7B85_41D2_63A79A2BA1E9.subtitle = SALA GIMNASTYCZNA
+panorama_72C0579A_62F2_CA89_41D2_05AA825D615F.subtitle = SALA MULTIMEDIALNA
+panorama_72C053FE_62F2_CA89_41BE_C416EF4DDAF7.subtitle = SALA MULTIMEDIALNA
+panorama_72C02243_62ED_45FE_41B5_4AABE888077D.subtitle = SALA MULTIMEDIALNA
+panorama_72C1F7AE_62EF_CA87_41C3_BA1E2EE5EF1C.subtitle = SALA NOVA
+panorama_72C3340A_62ED_4D8E_41C1_29E752E6717B.subtitle = SALA RODZINNA
+panorama_72C0D1E9_62ED_C68A_41C1_2F3960A47180.subtitle = SALA RODZINNA
+panorama_72C0733B_62ED_CB8E_41B3_2114DF40A34D.subtitle = SALA RODZINNA
+panorama_72C05455_62ED_CD9A_41D3_C7CAF3ADEE35.subtitle = SALA RODZINNA
+panorama_72C35769_62ED_4B8A_41D6_00C6AE215F14.subtitle = SALA ZABAW
+panorama_A52FB668_B0C2_4AA6_41E4_10B28A6ECD44.subtitle = SIŁOWNIA
+panorama_72C0EB33_62F2_BB9E_41D3_2E9A457A3DF8.subtitle = SIŁOWNIA
+panorama_72C0BD16_62F2_DF86_41BD_41441D8F8C51.subtitle = SIŁOWNIA
+panorama_A5551A82_B0C2_5A6A_41B6_FF895265E093.subtitle = SIŁOWNIA
+panorama_72C1F184_62F3_4779_41C7_091BF2294456.subtitle = SIŁOWNIA
+panorama_72C0E96D_62ED_4785_4190_54BD6E90BB35.subtitle = SIŁOWNIA
+panorama_72C05739_62F3_4B8B_41A6_D014F2FCBAB5.subtitle = SQUASH
+panorama_72C0CEC2_62F3_BAF9_41C3_7F7A58BC4358.subtitle = SQUASH
+panorama_72C02FB5_62F3_5A98_41CC_F8E3A53C81C0.subtitle = SQUASH
+panorama_72C143A5_62EF_4A85_41D7_7E01827D8407.subtitle = SZATNIA
+panorama_72C152A6_62EF_4A86_41B5_0B8A095601F1.subtitle = SZATNIA
+panorama_72C7E644_62F2_CDF9_41B8_D4456DE1A7D2.subtitle = SZATNIA DAMSKA
+panorama_72C7AF61_62F2_DBB8_41BD_E79F3404B007.subtitle = SZATNIA DAMSKA
+panorama_72C740AE_62F2_C688_41D8_6EE728F1DB15.subtitle = SZATNIA MĘSKA
+panorama_72C799DC_62F2_C688_41A3_9C1BB018EFCA.subtitle = SZATNIA MĘSKA
+panorama_72C0B518_62EF_4F8A_41CC_C3809F1599F4.subtitle = SZTANIA
+panorama_72C1E36C_62F3_4B89_41A6_54E33B437FDC.subtitle = TOALETA
+panorama_7313A591_62EF_4E9D_41B3_A18FA7AEB024.subtitle = TOALETY
+panorama_72C01574_62F3_4F99_41C3_61A808F42E4E.subtitle = ŁAZIENKA
+panorama_72C07C68_62F3_7D89_41C5_87B8226C9F3E.subtitle = ŁAZIENKA
+panorama_72CDDD71_62EF_FF9A_41D7_873200EF70D9.subtitle = ŁAZIENKA
+panorama_72C13F0A_62EF_DB8E_41CE_85D195C54F0F.subtitle = ŁAZIENKA
+panorama_72C13034_62EF_459B_41D1_2ACBEA50F7FD.subtitle = ŁAZIENKA
+panorama_72C78804_62F2_C579_41A2_688323654941.subtitle = ŁAZIENKA
+panorama_6991B14D_7B95_737B_4192_FDB51C23DCFD.subtitle = ŁAZIENKA
+panorama_72C3764B_62ED_4D8E_41C6_824C24F8DAD4.subtitle = ŁAZIENKA
+
+### Title
+panorama_72C095EC_62F3_CE89_41CE_9B547F1A4244.label = DO 1111111MUSZYNOVAR0020041_HDRspaceryidron-Standard
+panorama_72C2E469_62EF_CD8D_41B9_58F1621902C3.label = KRĘGIELNIA
+panorama_E4E06BF2_C4D8_FA95_41E2_841A9EAE1E01.label = MINI KRĘGIELNIA
+panorama_5BA8CC98_541C_7FC7_41D3_C8C1A65EA82F.label = MUSZYNOVA
+panorama_5FDDAE02_541C_1ACB_41B1_2585CE341CF6.label = MUSZYNOVAR0020003_HDRspaceryidron-Standard (1)
+panorama_72FE5E52_62EF_5D9F_41B7_BA7097A323E9.label = MUSZYNOVAR0020004spaceryidron-Standard
+panorama_72CDDD71_62EF_FF9A_41D7_873200EF70D9.label = MUSZYNOVAR0020005_HDRspaceryidron-Standard
+panorama_E4A82038_C4D8_8595_41DA_14653C4025AC.label = MUSZYNOVAR0020005_HDRspaceryidron-Standard (1)
+panorama_72C13F0A_62EF_DB8E_41CE_85D195C54F0F.label = MUSZYNOVAR0020006_HDRspaceryidron-Standard
+panorama_72C13034_62EF_459B_41D1_2ACBEA50F7FD.label = MUSZYNOVAR0020007_HDRspaceryidron-Standard
+panorama_72C152A6_62EF_4A86_41B5_0B8A095601F1.label = MUSZYNOVAR0020008_HDRspaceryidron-Standard
+panorama_72C0B518_62EF_4F8A_41CC_C3809F1599F4.label = MUSZYNOVAR0020010_HDRspaceryidron-Standard
+panorama_72C0ACA0_62EF_5EBB_41C5_D8B50EACD08C.label = MUSZYNOVAR0020010_HDRspaceryidron-Standard (1)
+panorama_72C11DAE_62EE_BE87_41B0_7A9F3388E24D.label = MUSZYNOVAR0020011_HDRspaceryidron-Standard (1)
+panorama_72C0A95F_62EE_C786_41D3_FD0C36131F3C.label = MUSZYNOVAR0020013_HDRspaceryidron-Standard
+panorama_72C0E052_62EE_C59E_41D8_2DD0B8B0F17D.label = MUSZYNOVAR0020013_HDRspaceryidron-Standard (1)
+panorama_72C0BB41_62EE_BBFA_41C1_5FBD21903BA9.label = MUSZYNOVAR0020014_HDRspaceryidron-Standard
+panorama_72C3764B_62ED_4D8E_41C6_824C24F8DAD4.label = MUSZYNOVAR0020016_HDRspaceryidron-Standard (1)
+panorama_72C0D1E9_62ED_C68A_41C1_2F3960A47180.label = MUSZYNOVAR0020018_HDRspaceryidron-Standard
+panorama_72C0733B_62ED_CB8E_41B3_2114DF40A34D.label = MUSZYNOVAR0020019_HDRspaceryidron-Standard
+panorama_72C05455_62ED_CD9A_41D3_C7CAF3ADEE35.label = MUSZYNOVAR0020020_HDRspaceryidron-Standard
+panorama_72D3BC13_62ED_5D9E_4186_2100AFF059BC.label = MUSZYNOVAR0020022_HDRspaceryidron-Standard
+panorama_72C0F0F7_62ED_4687_41D4_FA932AF32B64.label = MUSZYNOVAR0020023_HDRspaceryidron-Standard
+panorama_72C02243_62ED_45FE_41B5_4AABE888077D.label = MUSZYNOVAR0020024_HDRspaceryidron-Standard
+panorama_72C0EB33_62F2_BB9E_41D3_2E9A457A3DF8.label = MUSZYNOVAR0020025_HDRspaceryidron-Standard (1)
+panorama_72C0BD16_62F2_DF86_41BD_41441D8F8C51.label = MUSZYNOVAR0020026_HDRspaceryidron-Standard (1)
+panorama_72C0579A_62F2_CA89_41D2_05AA825D615F.label = MUSZYNOVAR0020027_HDRspaceryidron-Standard
+panorama_A5551A82_B0C2_5A6A_41B6_FF895265E093.label = MUSZYNOVAR0020027_HDRspaceryidron-Standard (1)
+panorama_72C1E91E_62F2_C789_41CB_59B515D9FE18.label = MUSZYNOVAR0020028_HDRspaceryidron-Standard
+panorama_A52FB668_B0C2_4AA6_41E4_10B28A6ECD44.label = MUSZYNOVAR0020028_HDRspaceryidron-Standard (1)
+panorama_72C1F184_62F3_4779_41C7_091BF2294456.label = MUSZYNOVAR0020029_HDRspaceryidron-Standard (1)
+panorama_72C07C68_62F3_7D89_41C5_87B8226C9F3E.label = MUSZYNOVAR0020031_HDRspaceryidron-Standard
+panorama_72C01574_62F3_4F99_41C3_61A808F42E4E.label = MUSZYNOVAR0020032_HDRspaceryidron-Standard
+panorama_72C06DD3_62F3_5E9F_41D6_2E396820EE1B.label = MUSZYNOVAR0020033_HDRspaceryidron-Standard
+panorama_72C04F7A_62F3_BB89_41D0_C8FA40A0A54E.label = MUSZYNOVAR0020035_HDRspaceryidron-Standard
+panorama_72C0189B_62F3_C68F_41BD_1E73D23F2586.label = MUSZYNOVAR0020036_HDRspaceryidron-Standard
+panorama_72C0C1B4_62F3_C699_41D6_8C7E81A3476A.label = MUSZYNOVAR0020037_HDRspaceryidron-Standard
+panorama_72C02A6E_62F3_C589_41B2_5D52E5482F97.label = MUSZYNOVAR0020038_HDRspaceryidron-Standard
+panorama_72C0C370_62F3_CB98_41CC_81DF6606D833.label = MUSZYNOVAR0020039_HDRspaceryidron-Standard
+panorama_72C0DD3F_62F3_DF87_41CD_5A0E0096C0DF.label = MUSZYNOVAR0020040spaceryidron-Standard
+panorama_72C0CEC2_62F3_BAF9_41C3_7F7A58BC4358.label = MUSZYNOVAR0020042_HDRspaceryidron-Standard
+panorama_72C05739_62F3_4B8B_41A6_D014F2FCBAB5.label = MUSZYNOVAR0020043_HDRspaceryidron-Standard
+panorama_72C79222_62F3_45B9_41B9_28D90ADA17FF.label = MUSZYNOVAR0020046_HDRspaceryidron-Standard
+panorama_72C6B414_62F3_4D98_41CC_F52AF9E67CBF.label = MUSZYNOVAR0020048_HDRspaceryidron-Standard
+panorama_72C7ED86_62F2_BF79_4170_96D136577CC8.label = MUSZYNOVAR0020049_HDRspaceryidron-Standard
+panorama_72C7AF61_62F2_DBB8_41BD_E79F3404B007.label = MUSZYNOVAR0020051_HDRspaceryidron-Standard
+panorama_72C78804_62F2_C579_41A2_688323654941.label = MUSZYNOVAR0020052_HDRspaceryidron-Standard
+panorama_6991B14D_7B95_737B_4192_FDB51C23DCFD.label = MUSZYNOVAR0020052_HDRspaceryidron-Standard — kopia
+map_AD4AE2C3_B042_4BEA_41DE_F5A810E8901F.label = PARTER
+panorama_30078499_22AE_D2EB_41AD_EF7929E64A71.label = PARTER
+map_ACFF9486_B042_4E6A_41CA_0396C103B3F9.label = PIETRO 2
+map_ACE095C7_B042_49EA_41D3_59F028636811.label = PIETRO1
+panorama_72C0F7B5_62EE_CA9A_41C8_6824C59580F2.label = PIĘTRO I
+panorama_72C79B3F_62F3_5B87_41B3_8254A9CA1A74.label = PIĘTRO II
+panorama_72C05E2F_62ED_DD86_41C4_79045CE6D8E2.label = POKÓJ MAMY Z DZIECKIEM
+panorama_315B281D_229D_5206_41B6_35367EFF214B.label = RECEPCJA
+panorama_2C1B08E4_226F_F286_41B7_F9405D3748B5.label = RESTAURACJA
+panorama_72C006A5_62F3_4ABB_419B_34EDFEECCAE9.label = SALA FITNESS
+panorama_72C13EB8_62EE_DA8A_41D4_7DE5E001AEFE.label = SALA GIER
+panorama_72C139BA_62EF_468F_41D6_D424A9D5071B.label = SALA GIMNASTYCZNA
+panorama_72C13B1D_62EF_7B85_41D2_63A79A2BA1E9.label = SALA GIMNASTYCZNA
+panorama_72C053FE_62F2_CA89_41BE_C416EF4DDAF7.label = SALA MULTIMEDIALNA
+panorama_2C1BE6FD_226F_DE87_419F_CB209BAD2864.label = SALA NOVA
+panorama_72C1F7AE_62EF_CA87_41C3_BA1E2EE5EF1C.label = SALA NOVA
+panorama_72C3340A_62ED_4D8E_41C1_29E752E6717B.label = SALA RODZINNA
+panorama_72C35769_62ED_4B8A_41D6_00C6AE215F14.label = SALA ZABAW
+panorama_72C0E96D_62ED_4785_4190_54BD6E90BB35.label = SIŁOWNIA
+panorama_72C02FB5_62F3_5A98_41CC_F8E3A53C81C0.label = SQUASH
+panorama_72C143A5_62EF_4A85_41D7_7E01827D8407.label = SZATNIA DAMSKA
+panorama_72C7E644_62F2_CDF9_41B8_D4456DE1A7D2.label = SZATNIA DAMSKA
+panorama_72C740AE_62F2_C688_41D8_6EE728F1DB15.label = SZATNIA MĘSKA
+panorama_72C799DC_62F2_C688_41A3_9C1BB018EFCA.label = SZATNIA MĘSKA
+panorama_72C1E36C_62F3_4B89_41A6_54E33B437FDC.label = TOALETA
+panorama_7313A591_62EF_4E9D_41B3_A18FA7AEB024.label = TOALETY
+panorama_72C3AD9C_62ED_5E8A_41D6_B3E1AE6E1B68.label = do kregielni
+panorama_72C03836_62ED_C599_41D6_5863C3D42297.label = do sali zabaw 1
+panorama_72C3AEFF_62ED_7A86_41D3_A21EF9DB965B.label = do sali zabaw 2
+panorama_70FECA73_61FD_584C_41D7_208755ECD008.label = nowa
+panorama_718471A9_61F2_C82B_41D6_14BB6611C53A.label = nowa
+panorama_3362E43B_226F_3183_41A5_1231EC70BC44.label = nowa
+panorama_32DC3A9F_2265_56D7_41BF_8F079FE12597.label = nowa
+panorama_33B711CE_2265_52B8_418E_69E6F00B51B9.label = nowa
+panorama_2C1BDB41_226F_D7FE_41C0_CCB23E7B9677.label = nowa
+panorama_2C1BD18C_226F_D286_41AE_5E50DA3A2E1C.label = nowa
+panorama_2C1AEDF2_226F_329D_41A4_A549723E6A58.label = nowa
+panorama_32DCC37A_2265_3659_41B0_5CE5B926CA31.label = nowa
+panorama_32DD14DC_2265_D259_41B8_A20A040A692E.label = nowa
+panorama_2C1A705C_226F_F186_41B1_DF4CE1674351.label = nowa
+
+## Right Click Menu
+
+### Text
+PlayerMenuItem_39D7582D_2A90_CDF4_41B2_277ED8052C43.label = realizacja: spaceryidron.pl
+
+## Skin
+
+### Button
+Button_33E0F47E_11C1_A20D_419F_BB809AD89259_mobile.label = CONTACT
+Button_1830D20E_17B1_6AC3_4198_688BED36E073.label = CONTACT
+Button_33E0F47E_11C1_A20D_419F_BB809AD89259.label = CONTACT
+Button_1830D20E_17B1_6AC3_4198_688BED36E073_mobile.label = CONTACT
+Button_03D37B27_0C7A_63B3_41A1_89572D8C8762_mobile.label = HOUSE INFO
+Button_03D37B27_0C7A_63B3_41A1_89572D8C8762.label = HOUSE INFO
+Button_1CA392FC_0C0A_2295_41A3_18DEA65FB6AD_mobile.label = LOKALIZACJA
+Button_1CA392FC_0C0A_2295_41A3_18DEA65FB6AD.label = LOKALIZACJA
+Button_1FDDCF4A_0C0A_23FD_417A_1C14E098FDFD.label = PANORAMY
+Button_1FDDCF4A_0C0A_23FD_417A_1C14E098FDFD_mobile.label = PANORAMY
+Button_1FE4B611_0C0A_256F_418E_EA27E66F8360_mobile.label = PARTER
+Button_1FE4B611_0C0A_256F_418E_EA27E66F8360.label = PARTER
+Button_1EBF3282_0C0A_1D6D_4190_52FC7F8C00A5_mobile.label = PHOTOALBUM
+Button_1EBF3282_0C0A_1D6D_4190_52FC7F8C00A5.label = PHOTOALBUM
+Button_ADA80B81_B07E_3A66_41C6_52D4736F7608_mobile.label = PIĘTRO I
+Button_ADA80B81_B07E_3A66_41C6_52D4736F7608.label = PIĘTRO I
+Button_ADD349A5_B07E_39AE_41D2_731EED117551.label = PIĘTRO II
+Button_ADD349A5_B07E_39AE_41D2_731EED117551_mobile.label = PIĘTRO II
+Button_386DE8AA_17CC_0B05_41B5_DE879E1001C4_mobile.label = lorem ipsum
+Button_386DE8AA_17CC_0B05_41B5_DE879E1001C4.label = lorem ipsum
+
+### Image
+Image_16B75461_1B87_4970_41B9_4F94F65FB1C1_mobile.url = skin/Image_16B75461_1B87_4970_41B9_4F94F65FB1C1_mobile_pl.jpg
+Image_16B75461_1B87_4970_41B9_4F94F65FB1C1.url = skin/Image_16B75461_1B87_4970_41B9_4F94F65FB1C1_pl.jpg
+Image_182FD4E7_17B7_EF41_41AA_D495544C1972_mobile.url = skin/Image_182FD4E7_17B7_EF41_41AA_D495544C1972_mobile_pl.jpg
+Image_182FD4E7_17B7_EF41_41AA_D495544C1972.url = skin/Image_182FD4E7_17B7_EF41_41AA_D495544C1972_pl.jpg
+Image_9511127C_9B79_D2C1_41D8_D080B87BFD84_mobile.url = skin/Image_9511127C_9B79_D2C1_41D8_D080B87BFD84_mobile_pl.png
+Image_9511127C_9B79_D2C1_41D8_D080B87BFD84.url = skin/Image_9511127C_9B79_D2C1_41D8_D080B87BFD84_pl.png
+Image_E59049B0_C53F_8694_41CE_15461ED6B0B4_mobile.url = skin/Image_E59049B0_C53F_8694_41CE_15461ED6B0B4_mobile_pl.png
+Image_E59049B0_C53F_8694_41CE_15461ED6B0B4.url = skin/Image_E59049B0_C53F_8694_41CE_15461ED6B0B4_pl.png
+Image_EF203915_C558_879F_41CF_F4B0CEB9AAF6_mobile.url = skin/Image_EF203915_C558_879F_41CF_F4B0CEB9AAF6_mobile_pl.png
+Image_EF203915_C558_879F_41CF_F4B0CEB9AAF6.url = skin/Image_EF203915_C558_879F_41CF_F4B0CEB9AAF6_pl.png
+
+### Label
+Label_0B130419_16A3_7FB3_41A4_E5F9FA0AC39B.text = {{SUBTITLE}}
+Label_0B130419_16A3_7FB3_41A4_E5F9FA0AC39B_mobile.text = {{SUBTITLE}}
+
+### Multiline Text
+HTMLText_386DF8AA_17CC_0B05_41AE_D7BDB2970D08.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:8.420000000000002vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:8.42vh;font-family:'Bebas Neue Bold';">___</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.359999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.36vh;font-family:'Oswald';"><B>LOREM IPSUM</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:2.3vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:2.3000000000000003vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:2.3vh;font-family:'Oswald Regular';">Dolor sit amet, consectetur adipiscing elit. Nunc porttitor ac nulla vitae bibendum.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.64vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.64vh;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.64vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.64vh;">Integer gravida dui quis euismod placerat. Maecenas quis accumsan ipsum. Aliquam gravida velit at dolor mollis, quis luctus mauris vulputate. Proin condimentum id nunc sed sollicitudin.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_386DF8AA_17CC_0B05_41AE_D7BDB2970D08_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:8.420000000000002vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:8.42vh;font-family:'Bebas Neue Bold';">___</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.359999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.36vh;font-family:'Oswald';"><B>LOREM IPSUM</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:2.3vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:2.3000000000000003vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:2.3vh;font-family:'Oswald Regular';">Dolor sit amet, consectetur adipiscing elit. Nunc porttitor ac nulla vitae bibendum.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.64vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.64vh;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.64vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.64vh;">Integer gravida dui quis euismod placerat. Maecenas quis accumsan ipsum. Aliquam gravida velit at dolor mollis, quis luctus mauris vulputate. Proin condimentum id nunc sed sollicitudin.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.64vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_AC4A2957_B07F_C6EA_41E1_C9568851097F.html = <div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:3.61vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_ACF12C0F_B07F_DE7A_41E2_F9202EE46893.html = <div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:3.61vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_ACEC0AD1_B07F_DBE6_41DB_351521B08807.html = <div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:3.61vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_20ECF7A3_174C_050A_41A5_0B8AD2C6B179_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:3.61vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:3.61vh;font-family:'Oswald';"><B>PHOTOALBUM/</B></SPAN></SPAN></DIV></div>
+HTMLText_20ECF7A3_174C_050A_41A5_0B8AD2C6B179.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:3.61vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:3.61vh;font-family:'Oswald';"><B>PHOTOALBUM/</B></SPAN></SPAN></DIV></div>
+HTMLText_1830E20E_17B1_6AC3_419B_A422A7600CB2_mobile.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:4.92vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:4.92vh;font-family:'Oswald';"><B>______</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.359999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.36vh;font-family:'Oswald';"><B>LOREM IPSUM</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:2.3vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:2.3000000000000003vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:2.3vh;font-family:'Oswald Regular';"><B>Dolor sit amet, consectetur adipiscing elit. Nunc porttitor ac nulla vitae.</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.75vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>www.loremipsum.com</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>info@loremipsum.com</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Tlf.: +11 111 111 111</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Address line 1</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Address line 2</B></SPAN></SPAN></DIV></div>
+HTMLText_1830E20E_17B1_6AC3_419B_A422A7600CB2.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:4.92vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:4.92vh;font-family:'Oswald';"><B>______</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.359999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.36vh;font-family:'Oswald';"><B>LOREM IPSUM</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:2.3vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:2.3000000000000003vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ff361b;font-size:2.3vh;font-family:'Oswald Regular';"><B>Dolor sit amet, consectetur adipiscing elit. Nunc porttitor ac nulla vitae.</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.75vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:0.77vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>www.loremipsum.com</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>info@loremipsum.com</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Tlf.: +11 111 111 111</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Address line 1</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.750000000000001vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.75vh;font-family:'Oswald';"><B>Address line 2</B></SPAN></SPAN></DIV></div>
+HTMLText_2792D64D_17CC_071F_4198_A70438B191B7.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:3.61vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vh;font-family:'Poppins';"><B>LOKALIZACJA</B></SPAN></SPAN></DIV></div>
+HTMLText_3811C7E8_17DC_0505_4199_1B551680AC34.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:3.61vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vh;font-family:'Poppins';"><B>PANORAMY</B></SPAN></SPAN></DIV></div>
+
+### Tooltip
+Image_E59049B0_C53F_8694_41CE_15461ED6B0B4_mobile.toolTip = HOME
+Image_E59049B0_C53F_8694_41CE_15461ED6B0B4.toolTip = HOME
+IconButton_E5E91E17_C538_7D9B_41B7_3EB057554D79.toolTip = POWRÓT
+IconButton_E5E91E17_C538_7D9B_41B7_3EB057554D79_mobile.toolTip = POWRÓT
+
+## Tour
+
+### Description
+tour.description = spaceryidron.pl
+
+### Title
+tour.name = MUSZYNOVA
