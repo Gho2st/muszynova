@@ -567,11 +567,83 @@
     "metadata": {
         "homepage": {
             "title": "Muszynova - Rekreačno-športový park a reštaurácia v Muszyne",
-            "description": "Objavte Muszynova – rekreačno-športový park s posilňovňou, lezeckou stenou, squashom a ďalšími aktivitami. Zdravé jedlo v Reštaurácii Muszynova s beskydskými chuťami!"
+            "description": "Objavte Muszynovu – rekreačno-športový park s posilňovňou, lezeckou stenou, squashom a ďalšími aktivitami. Vychutnajte si zdravé jedlo v reštaurácii Muszynova s beskydskými príchuťami!"
         },
         "contact": {
             "title": "Muszynova - Kontakt - Park a reštaurácia v Muszyne",
-            "description": "Kontaktujte Muszynova! Rekreačno-športový park a reštaurácia v Muszyne – ul. Złockie 77c, tel. +48 509 445 000, biuro@muszynova.pl."
+            "description": "Kontaktujte Muszynovu! Rekreačno-športový park a reštaurácia v Muszyne – ul. Złockie 77c, tel. +48 509 445 000, biuro@muszynova.pl."
+        },
+        "aboutus": {
+            "title": "O nás - Muszynova v Muszyne",
+            "description": "Spoznajte Muszynovu – moderný rekreačno-športový park a reštauráciu v Muszyne. Ponúkame šport, zábavu a beskydské chute pre každého!"
+        },
+        "park": {
+            "title": "Rekreačno-športový park Muszynova - Aktivity v Muszyne",
+            "description": "Rekreačno-športový park Muszynova v Muszyne – posilňovňa, fitness, squash, bicykle, športová hala, herňa. Zábava a šport pre každého!"
+        },
+        "gym": {
+            "title": "Posilňovňa Muszynova - Tréningy a permanentky v Muszyne",
+            "description": "Posilňovňa Muszynova v Muszyne – moderné vybavenie, osobní tréneri, tréningové plány a permanentky. Zlepšite si kondíciu a dosiahnite svoje ciele!"
+        },
+        "fitness": {
+            "title": "Fitness Muszynova - Aktivity v Muszyne",
+            "description": "Fitness v Muszynova – aktivity pre deti a dospelých v Muszyne. Osobné a skupinové tréningy, pilates – zlepšite si kondíciu a užívajte si pohyb!"
+        },
+        "squash": {
+            "title": "Squash Muszynova - Kurt v Muszyne",
+            "description": "Squash v Muszynova – jediný profesionálny kurt v Muszyne. Hrajte 7 dní v týždni, rezervujte online, zlepšite si kondíciu a užívajte si dynamickú hru!"
+        },
+        "multimediaroom": {
+            "title": "Multimediálna miestnosť Muszynova – Moderná zábava v Muszyne",
+            "description": "Objavte modernú multimediálnu miestnosť v Muszynovej! Interaktívne hry, virtuálna realita a nezabudnuteľná zábava pre celú rodinu. Pozrite sa, čo na vás čaká!"
+        },
+        "gameroom": {
+            "title": "Herná miestnosť Muszynova - Zábava v Muszyne",
+            "description": "Herná miestnosť Muszynova v Muszyne – biliard, stolný futbal, vzdušný hokej, stolný tenis pre každého. Aktívna zábava, súťaž a hra – navštívte nás!"
+        },
+        "climbingwall": {
+            "title": "Lezecká stena Muszynova",
+            "description": "Lezecká stena Muszynova v Muszyne – bezpečné skupinové a individuálne lekcie, pre školy. Lezenie pre deti a dospelých na všetkých úrovniach!"
+        },
+        "minibowling": {
+            "title": "Mini kugelná Muszynova - Muszyna",
+            "description": "Mini kugelná Muszynova v Muszyne – zábava pre deti, dospelých a skupiny. Narodeniny, teambuilding, bowling v priateľskej atmosfére – vyskúšajte nás!"
+        },
+        "playroom": {
+            "title": "Herná pre deti Muszynova - Muszyna",
+            "description": "Herná pre deti Muszynova v Muszyne – pre deti: detské ihrisko, animácie, narodeniny, hry. Bezpečná starostlivosť počas tréningu rodičov – radosť a rozvoj!"
+        },
+        "bikerental": {
+            "title": "Požičovňa bicyklov Muszynova",
+            "description": "Požičovňa bicyklov Muszynova v Muszyne – bicykle pre každého, miestne trasy, 7 dní v týždni. Objavujte región aktívne – pozrite si cenník!"
+        },
+        "sportshall": {
+            "title": "Športová hala Muszynova - Muszyna",
+            "description": "Športová hala Muszynova v Muszyne – prenájom, tímové hry: basketbal, volejbal, bedminton. Ponuka pre školy a športových nadšencov!"
+        },
+        "restaurant": {
+            "title": "Reštaurácia Muszynova - Chute Beskýd v Muszyne",
+            "description": "Reštaurácia Muszynova v Muszyne – regionálna beskydská kuchyňa, pizza, nápoje, podujatia, konferencie. Chutne a moderne – navštívte nás!"
+        },
+        "pricing": {
+            "title": "Cenník rekreačno-športového parku - Muszynova",
+            "description": "Spoznajte aktuálny cenník služieb a produktov ponúkaných Muszynovou. Pozrite si detaily a vyberte si najlepšiu ponuku pre vás!"
+        },
+        "groupclasses": {
+            "title": "Skupinové aktivity Muszynova - Muszyna",
+            "description": "Skupinové aktivity v Muszynova – fitness, lezenie, squash a ďalšie v Muszyne. Pridajte sa k skupinovým tréningom a užívajte si tímové aktivity!"
+        },
+        "gallery": {
+            "title": "Galéria - Muszynova",
+            "description": "Pozývame vás do galérie Muszynova! Pozrite si fotografie parku a reštaurácie, ktoré ukazujú krásu a jedinečnú atmosféru nášho miesta."
+        },
+        "parkgallery": {
+            "title": "Galéria rekreačno-športového parku - Muszynova",
+            "description": "Pozývame vás do galérie rekreačno-športového parku Muszynova. Pozrite si priestory na aktívny oddych, športové atrakcie a krásu prírody!"
+        },
+        "restaurantgallery": {
+            "title": "Galéria reštaurácie - Muszynova",
+            "description": "Objavte fotogalériu reštaurácie Muszynova. Pozrite si jedinečné interiéry plné elegancie, chutné jedlá pripravené s vášňou a neopakovateľnú atmosféru, ktorá očarí hostí a urobí každú návštevu nezabudnuteľnou!"
         }
     }
 }

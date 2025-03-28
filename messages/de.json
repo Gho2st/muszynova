@@ -566,12 +566,84 @@
     },
     "metadata": {
         "homepage": {
-            "title": "Muszynova - Freizeit- und Sportpark sowie Restaurant in Muszyna",
-            "description": "Entdecke Muszynova – ein Freizeit- und Sportpark mit Fitnessstudio, Kletterwand, Squash und mehr. Genieße gesundes Essen im Restaurant Muszynova mit beskidzischen Aromen!"
+            "title": "Muszynova - Freizeit- und Sportpark & Restaurant in Muszyna",
+            "description": "Entdecken Sie Muszynova – ein Freizeit- und Sportpark mit Fitnessstudio, Kletterwand, Squash und mehr. Genießen Sie gesunde Speisen im Restaurant Muszynova mit Beskiden-Aromen!"
         },
         "contact": {
             "title": "Muszynova - Kontakt - Park und Restaurant in Muszyna",
-            "description": "Kontaktiere Muszynova! Freizeit- und Sportpark sowie Restaurant in Muszyna – ul. Złockie 77c, Tel. +48 509 445 000, biuro@muszynova.pl."
+            "description": "Kontaktieren Sie Muszynova! Freizeit- und Sportpark sowie Restaurant in Muszyna – Złockie 77c Straße, Tel. +48 509 445 000, biuro@muszynova.pl."
+        },
+        "aboutus": {
+            "title": "Über uns - Muszynova in Muszyna",
+            "description": "Lernen Sie Muszynova kennen – ein moderner Freizeit- und Sportpark sowie Restaurant in Muszyna. Wir bieten Sport, Unterhaltung und Beskiden-Aromen für alle!"
+        },
+        "park": {
+            "title": "Freizeit- und Sportpark Muszynova - Aktivitäten in Muszyna",
+            "description": "Freizeit- und Sportpark Muszynova in Muszyna – Fitnessstudio, Fitness, Squash, Fahrräder, Sporthalle, Spielzimmer. Unterhaltung und Sport für alle!"
+        },
+        "gym": {
+            "title": "Fitnessstudio Muszynova - Training und Abos in Muszyna",
+            "description": "Fitnessstudio Muszynova in Muszyna – modernes Equipment, Personal Trainer, Trainingspläne und Abos. Verbessern Sie Ihre Fitness und erreichen Sie Ihre Ziele!"
+        },
+        "fitness": {
+            "title": "Fitness Muszynova - Kurse in Muszyna",
+            "description": "Fitness bei Muszynova – Kurse für Kinder und Erwachsene in Muszyna. Personal- und Gruppentraining, Pilates – verbessern Sie Ihre Fitness und genießen Sie Bewegung!"
+        },
+        "squash": {
+            "title": "Squash Muszynova - Platz in Muszyna",
+            "description": "Squash bei Muszynova – der einzige professionelle Platz in Muszyna. Spielen Sie 7 Tage die Woche, buchen Sie online, verbessern Sie Ihre Fitness und genießen Sie ein dynamisches Spiel!"
+        },
+        "multimediaroom": {
+            "title": "Multimediaroom Muszynova – Moderne Unterhaltung in Muszyna",
+            "description": "Entdecken Sie den modernen Multimediaroom bei Muszynova! Interaktive Spiele, virtuelle Realität und unvergessliche Unterhaltung für die ganze Familie. Schauen Sie, was Sie erwartet!"
+        },
+        "gameroom": {
+            "title": "Spielhalle Muszynova - Unterhaltung in Muszyna",
+            "description": "Spielhalle Muszynova in Muszyna – Billard, Tischfußball, Airhockey, Tischtennis für alle. Aktive Unterhaltung, Wettbewerb und Spaß – besuchen Sie uns!"
+        },
+        "climbingwall": {
+            "title": "Kletterwand Muszynova",
+            "description": "Kletterwand Muszynova in Muszyna – sichere Gruppen- und Einzelkurse, für Schulen. Klettern für Kinder und Erwachsene auf jedem Niveau!"
+        },
+        "minibowling": {
+            "title": "Mini-Bowling Muszynova - Muszyna",
+            "description": "Mini-Bowling Muszynova in Muszyna – Spaß für Kinder, Erwachsene und Gruppen. Geburtstage, Teambuilding, Bowling in freundlicher Atmosphäre – schauen Sie vorbei!"
+        },
+        "playroom": {
+            "title": "Spielzimmer Muszynova - Muszyna",
+            "description": "Spielzimmer Muszynova in Muszyna – für Kinder: Klettergerüst, Animationen, Geburtstage, Spiele. Sichere Betreuung während des Trainings der Eltern – Freude und Entwicklung!"
+        },
+        "bikerental": {
+            "title": "Fahrradverleih Muszynova",
+            "description": "Fahrradverleih Muszynova in Muszyna – Fahrräder für alle, lokale Routen, 7 Tage die Woche. Erkunden Sie die Region aktiv – schauen Sie sich unsere Preise an!"
+        },
+        "sportshall": {
+            "title": "Sporthalle Muszynova - Muszyna",
+            "description": "Sporthalle Muszynova in Muszyna – Vermietung, Mannschaftsspiele: Basketball, Volleyball, Badminton. Angebot für Schulen und Sportbegeisterte!"
+        },
+        "restaurant": {
+            "title": "Restaurant Muszynova - Beskiden-Aromen in Muszyna",
+            "description": "Restaurant Muszynova in Muszyna – regionale Beskiden-Küche, Pizza, Getränke, Veranstaltungen, Konferenzen. Lecker und modern – besuchen Sie uns!"
+        },
+        "pricing": {
+            "title": "Preisliste des Freizeit- und Sportparks - Muszynova",
+            "description": "Entdecken Sie die aktuelle Preisliste für Dienstleistungen und Produkte bei Muszynova. Schauen Sie sich die Details an und wählen Sie das beste Angebot für sich aus!"
+        },
+        "groupclasses": {
+            "title": "Gruppenkurse Muszynova - Muszyna",
+            "description": "Gruppenkurse bei Muszynova – Fitness, Klettern, Squash und mehr in Muszyna. Nehmen Sie an Gruppentrainings teil und genießen Sie Teamaktivitäten!"
+        },
+        "gallery": {
+            "title": "Galerie - Muszynova",
+            "description": "Willkommen in der Galerie von Muszynova! Sehen Sie sich Fotos des Parks und Restaurants an, die die Schönheit und einzigartige Atmosphäre unseres Ortes zeigen."
+        },
+        "parkgallery": {
+            "title": "Galerie des Freizeit- und Sportparks - Muszynova",
+            "description": "Willkommen in der Galerie des Freizeit- und Sportparks Muszynova. Sehen Sie sich Bereiche für aktive Erholung, sportliche Attraktionen und die Schönheit der Natur an!"
+        },
+        "restaurantgallery": {
+            "title": "Galerie des Restaurants - Muszynova",
+            "description": "Entdecken Sie die Fotogalerie des Restaurants Muszynova. Sehen Sie elegante Innenräume, köstliche Gerichte, die mit Leidenschaft zubereitet wurden, und eine einzigartige Atmosphäre, die die Gäste begeistert und jeden Besuch unvergesslich macht!"
         }
     }
 }
