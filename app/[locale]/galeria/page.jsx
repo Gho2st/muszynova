@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,11 +12,12 @@ export const metadata = {
 };
 
 export default function Galeria() {
+  const t = useTranslations("gallery");
   return (
     <>
       <section className="px-6 xl:px-24 py-16 xl:py-20 ">
         <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-16 xl:mb-20">
-          Galeria
+          {t("header")}
         </h1>
         <div className="flex flex-col sm:flex-row justify-center gap-x-10 gap-y-10 sm:gap-y-0">
           <Link

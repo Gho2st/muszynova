@@ -25,7 +25,7 @@
         "button": "Client Zone"
     },
     "footer": {
-        "header": "Let’s Talk",
+        "header": "Let’s Talk!",
         "info": {
             "info1": {
                 "address": "Address",
@@ -57,6 +57,7 @@
     "services": {
         "header": "Our Sports and Relaxation Zones",
         "cards": {
+            "button": "Explore",
             "1": {
                 "header": "Active Sport Zone",
                 "text1": "Climbing Wall",
@@ -106,12 +107,461 @@
             },
             "item5": {
                 "header": "For Adults",
-                "text": "Great coffee, a touch of alcohol, a light salad, or a delightful piece of homemade dessert. The perfect spot to relax with a book or spend a pleasant evening with a loved one."
+                "text": "Great coffee, a touch of alcohol, a light salad, or a delightful piece of homemade dessert? The perfect spot to relax with a book or spend a pleasant evening with a loved one."
             },
             "item6": {
                 "header": "Special Events",
                 "text": "A separate room for hosting celebrations with attractions for the youngest guests. Adults can chat at the table while kids… we promise food & fun for everyone."
             }
+        }
+    },
+    "virtualtour": {
+        "header": "Virtual Tour"
+    },
+    "aboutus": {
+        "header": "What is",
+        "header2": "What Makes Us Unique?",
+        "text": "Muszynova – the name is a creative blend of the location 'Muszyna' and the word 'modern' in an international spelling, as we are open to everyone. It’s a promise, an invitation to rediscover the well-known resort in a 'new' way. In a fresh edition, with a new standard, for both young and old, we welcome local residents and tourists, individually or in groups. Active, delicious, uncompromising – that’s our new approach. A modern park and restaurant invite you to spend time in Muszyna differently, the way you like it. Rediscover the world of food and fun, surrounded by the beautiful nature of the Beskid Sądecki region.",
+        "button": "Gallery",
+        "cards": {
+            "text": "Muszyna is a well-known and beloved spa town that has been developing dynamically in recent years, attracting tourists from all over the world. This charming resort, nestled in the Beskid Sądecki region, captivates with its nature and numerous attractions, including sensory gardens, historic landmarks, mountain and cycling trails, as well as mineral water springs.",
+            "card1": {
+                "header": "Muszyna - Location",
+                "button": "Contact",
+                "text": "In peace, with a view of green forests, right by the trail, with the distant sound of the Poprad River. That’s how you’ll spend your time with us – a new quality of interiors, paired with the beautiful surroundings of the Beskid region."
+            },
+            "card2": {
+                "header": "Food – Restaurant",
+                "button": "Restaurant",
+                "text": "A concise menu in a modern style with a Beskid touch. Light, nourishing, for kids and adults alike. Delicious coffee, drinks, and for kids, familiar favorites like pizza and desserts in a healthier version. With us, you can also host celebrations with attractions."
+            },
+            "card3": {
+                "header": "New Standards",
+                "button": "Recreational-Sports Park",
+                "text": "Active leisure time in a new way, with fun. We encourage movement from an early age and are well-prepared for it. Four modernly equipped activity zones with facilities await professional athletes, juniors, families, and individual users."
+            }
+        }
+    },
+    "park": {
+        "header": "Recreational-Sports Park",
+        "text": "For us, activity means variety. So that everyone can enjoy it, spend their time well, however they like, regardless of skill level or sports discipline. We’re ready for both fun and intense workouts – for the young and old, amateurs and professionals. Professional equipment, modern facilities in a beautiful interior – all of this awaits you at Muszynova. Come and discover!",
+        "button": "Read More",
+        "header2": "What Makes Us Unique?",
+        "cards": {
+            "text": "Muszyna is a well-known and beloved spa town that has been developing dynamically in recent years, attracting tourists from all over the world. This charming resort, nestled in the Beskid Sądecki region, captivates with its nature and numerous attractions, including sensory gardens, historic landmarks, mountain and cycling trails, as well as mineral water springs.",
+            "card1": {
+                "header": "Sports Hall",
+                "text": "With a certified, multi-layered Gerflor Teraflex sports surface. We invite you to play team sports: indoor football, volleyball, basketball, handball, badminton, as well as gymnastics.",
+                "button": "Sports Hall"
+            },
+            "card2": {
+                "header": "Mini Bowling",
+                "text": "Equipped with two bowling lanes. We’ve also included a relaxation area in the bowling room for users waiting to start their game.",
+                "button": "Mini Bowling"
+            },
+            "card3": {
+                "header": "Climbing Wall",
+                "text": "Designed for both amateurs and professionals. Our structure is a modern space with geometric shapes and protrusions, covering 90 m². The wall’s size allows three people to use it simultaneously, featuring 6 top-rope belay points and 18 individual belay points.",
+                "button": "Climbing Wall"
+            },
+            "card4": {
+                "header": "Children’s Playroom",
+                "text": "Equipped with a play structure where children can enjoy numerous attractions: mazes, tunnels, ladders, a slide, and ball pits. Additionally, the playroom has a dedicated toddler area with soft poufs, a ball pit, and manipulative-sensory boards, allowing the youngest to both play and learn.",
+                "button": "Playroom"
+            },
+            "card5": {
+                "header": "Squash Court",
+                "text": "Built in accordance with WSF (World Squash Federation) guidelines. The courts are designed for both team competitions and relaxation through individual training.",
+                "button": "Squash"
+            },
+            "card6": {
+                "header": "Bike Rental",
+                "text": "With a diverse range of bikes and accessories for children and adults who prefer spending time outdoors. You’ll find men’s, women’s, and children’s bikes, as well as essential gear for safe riding.",
+                "button": "Bike Rental"
+            },
+            "card7": {
+                "header": "Table Tennis Room",
+                "text": "Equipped with two tables for a favorite activity of both young and old – the popular game of ping pong. This attraction is suitable for people of all ages.",
+                "button": "Game Room"
+            },
+            "card8": {
+                "header": "Gym",
+                "text": "Allows for a comprehensive circuit training session. You’ll find high-quality, certified, and safe equipment. The cardio zone includes treadmills, electromagnetic training bikes, rowing machines, elliptical trainers, and steppers.",
+                "button": "Gym"
+            },
+            "card9": {
+                "header": "Fitness Room",
+                "text": "The fitness room enables comprehensive circuit and cardio training. Equipped with treadmills, electromagnetic training bikes, rowing machines, elliptical trainers, and steppers – all for your fitness and health.",
+                "button": "Fitness"
+            },
+            "card10": {
+                "header": "Multimedia Room",
+                "text": "Equipped with a PlayStation console and a virtual reality (VR) system, the multimedia room is a place where gamers can immerse themselves in fascinating virtual worlds. Whether someone prefers fast-paced action games or exploratory VR adventures, our room offers complete freedom of entertainment choice.",
+                "button": "Multimedia Room"
+            }
+        }
+    },
+    "gym": {
+        "header": "Gym",
+        "header2": "What Makes Us Unique?",
+        "text1": "If you want to effectively improve your fitness and achieve your goals with the support of qualified staff, our gym in Muszyna is the perfect place for you.",
+        "text2": "You’ll find high-quality equipment – certified and safe for users. Depending on your training plan and preferences, we offer a free weights zone, a machines zone, and a cardio zone.",
+        "button": "Purchase a Pass",
+        "cards": {
+            "header": "Gym",
+            "text": "We provide access to modern equipment and employ experienced trainers who are ready to tailor a training plan specifically to your needs. Thanks to this personalized approach and our staff’s expertise, you’ll easily achieve your desired results. We believe that together we can create a plan that meets your expectations and motivates you to train regularly while maintaining a healthy lifestyle.",
+            "card1": {
+                "header": "Consultation",
+                "text": "If you’re unsure how to start, our experienced trainers will conduct a consultation with you, thoroughly analyzing your goals, training history, and any physical limitations. They’ll show you how to properly use all the available equipment.",
+                "button": "Contact"
+            },
+            "card2": {
+                "header": "Training Plan",
+                "text": "Our trainers can create a personalized training plan tailored to your individual needs and goals. They’ll take a comprehensive approach, considering both your current abilities and fitness aspirations, so you can achieve optimal results.",
+                "button": "Group Classes"
+            },
+            "card3": {
+                "header": "Personal Training",
+                "text": "We also offer personal training sessions, during which a trainer will personally explain how to perform each exercise correctly. With this personalized approach, your training will become even more effective, and you’ll receive detailed guidance on technique, intensity, and progression.",
+                "button": "About Us"
+            }
+        }
+    },
+    "fitness": {
+        "header": "Fitness",
+        "header2": "What Makes Us Unique?",
+        "text1": "Fitness classes at Muszynova Park were created with health, good condition, and the joy of physical activity in mind. Regardless of your skill level, age, or training goals, we have something for everyone.",
+        "text2": "Our instructors are ready to guide you through various forms of activity, from high-intensity, energetic sessions to static, relaxing Pilates classes.",
+        "button": "Group Classes",
+        "cards": {
+            "header": "Fitness Classes",
+            "text": "Our fitness instructors offer workouts that vary in intensity, use of additional weights, or other equipment. Depending on whether you want to improve your endurance or focus on building and strengthening muscles, you can choose the type of training yourself. Beyond burning calories and overall body strengthening, fitness is above all about having fun!",
+            "card1": {
+                "header": "Kids’ Classes",
+                "text": "We invite the youngest to discover the joy of movement and a healthy lifestyle together at Muszynova. Our classes for children develop physical fitness and foster positive habits that will benefit their health and condition in the future.",
+                "button": "Playroom"
+            },
+            "card2": {
+                "header": "Adult Classes",
+                "text": "For our adult participants, Muszynova offers a variety of fitness classes tailored to different skill levels, helping you maintain good physical shape while also providing a moment of relaxation and escape from daily stress.",
+                "button": "Pricing"
+            },
+            "card3": {
+                "header": "Individual Training",
+                "text": "Our experienced personal trainers work with each client, tailoring a training plan to their individual needs, skills, and ambitions. Individual training allows you to focus on specific areas such as improving strength, weight loss, increasing flexibility, or overall fitness enhancement.",
+                "button": "Contact"
+            }
+        }
+    },
+    "sportshall": {
+        "header": "Sports Hall",
+        "header2": "What Makes Us Unique?",
+        "text1": "Our sports hall is a place where sport becomes a passion, and movement is a way to promote health and develop skills. It’s a space that offers excellent conditions for practicing various sports disciplines while inspiring an active lifestyle and friendly competition.",
+        "text2": "The sports hall is a facility with a court that can serve as a basketball, volleyball, badminton, or handball court. It’s a vibrant place that creates ideal conditions for both professional athletes and sports enthusiasts.",
+        "button": "Contact",
+        "cards": {
+            "header": "Sports Hall",
+            "text": "At Muszynova, we warmly invite you to use our sports hall, where movement becomes a pleasure, and sport is not just physical activity but also a shared passion. Join us and discover the joy of staying active!",
+            "card1": {
+                "header": "Hall Rental",
+                "text": "Renting our sports hall guarantees professional infrastructure, flexible scheduling, and the support of experienced staff. We ensure that every event takes place in a friendly atmosphere, maintaining high standards of safety and comfort.",
+                "button": "Pricing"
+            },
+            "card2": {
+                "header": "Team Sports",
+                "text": "Our hall is adapted for various sports disciplines such as basketball, volleyball, handball, and badminton. The flexibility of the space allows us to adjust the hall’s setup to specific needs, ensuring we can meet diverse expectations.",
+                "button": "Gallery"
+            },
+            "card3": {
+                "header": "Offer for Schools",
+                "text": "Our sports hall was created to support physical activity and a healthy lifestyle among students. It’s possible to rent the hall for school classes or extracurricular activities.",
+                "button": "About Us"
+            }
+        }
+    },
+    "minibowling": {
+        "header": "Mini Bowling",
+        "header2": "What Makes Us Unique?",
+        "text1": "Mini bowling is a fantastic form of entertainment that brings joy to both children and adults. Smaller pins, a shorter distance, but the same dose of fun – all of this awaits mini bowling enthusiasts at our recreational center.",
+        "text2": "Mini bowling doesn’t require special skills, making it accessible to everyone. It’s also a great option for spending time with friends or family, encouraging healthy competition and shared fun.",
+        "button": "Book Now",
+        "cards": {
+            "header": "Mini Bowling",
+            "text": "At Muszynova, we warmly invite you to our modern bowling alley, where a great atmosphere, modern facilities, and enthusiastic staff create the perfect conditions to enjoy this classic yet thrilling game. Let every throw be a reason for smiles and good fun!",
+            "card1": {
+                "header": "Bowling for Kids",
+                "text": "Bowling isn’t just a game for adults – it’s also a fantastic form of entertainment for the little ones. Colorful pins catch children’s attention, creating a dynamic and joyful atmosphere. It’s great fun and a way to develop motor skills, precision, and teamwork with peers.",
+                "button": "Contact"
+            },
+            "card2": {
+                "header": "Birthdays",
+                "text": "Bowling is a perfect way to organize an active party that will delight both young children and older guests.",
+                "button": "Contact"
+            },
+            "card3": {
+                "header": "Groups",
+                "text": "We offer the opportunity to organize dynamic group activities. It’s a great option for companies, schools, or groups of friends looking for an engaging and team-building way to spend time together.",
+                "button": "Restaurant"
+            }
+        }
+    },
+    "climbingwall": {
+        "header": "Climbing Wall",
+        "header2": "What Makes Us Unique?",
+        "text1": "The climbing wall is a perfect year-round activity. It inspires you to reach new heights and overcome your own limitations.",
+        "text2": "Our climbing wall offers unforgettable experiences for climbers of all skill levels, from those just starting their climbing journey to seasoned enthusiasts.",
+        "button": "Book Now",
+        "cards": {
+            "header": "Climbing Wall",
+            "text": "Safety is our priority. The solid construction of the wall and professional safety measures ensure that every climber can focus on reaching new heights without worrying about their safety. Our climbing wall offers a variety of routes tailored to the skills and experience of each climber.",
+            "card1": {
+                "header": "Group Classes",
+                "text": "We invite you to join our group climbing wall classes. Our sessions are designed for various skill levels, adapting to the abilities and experience of each participant.",
+                "button": "Group Classes"
+            },
+            "card2": {
+                "header": "Individual Classes",
+                "text": "Our experienced instructors will tailor the program to your skill level, personal goals, and learning pace. This allows you to focus on the specific aspects of climbing that matter most to you. It’s also an ideal option for those who value privacy and want to concentrate on their own progress.",
+                "button": "Pricing"
+            },
+            "card3": {
+                "header": "Offer for Schools and Groups",
+                "text": "For schools, we offer educational classes where students can develop climbing skills under the watchful eye of experienced instructors. It’s a great opportunity to improve physical fitness, foster teamwork skills, and build confidence.",
+                "button": "Contact"
+            }
+        }
+    },
+    "playground": {
+        "header": "Playroom",
+        "header2": "What Makes Us Unique?",
+        "text1": "The children’s playroom is a space designed especially for the little ones, allowing them to play and spend active time in a safe environment. In this room, children have access to a variety of attractions that bring them joy and fun.",
+        "text2": "They can enjoy creative activities and other forms of entertainment. The playroom ensures that every child feels comfortable and has the opportunity to interact with their peers. It’s a perfect place where kids can develop their social skills, share with others, and collaborate in a group.",
+        "button": "About Us",
+        "cards": {
+            "header": "You Train While Your Child Plays Under Our Caregivers’ Supervision.",
+            "text": "Organize a birthday party at Muszynova. We provide excellent conditions and a range of attractions to make this day even more special. We offer spacious rooms perfect for hosting a birthday party, themed decorations, and entertainers. For the youngest, we provide animations, games, and contests. For older children, we have a wide range of attractions, such as mini bowling, a multimedia room, or a gaming zone.",
+            "card1": {
+                "header": "Childcare",
+                "text": "While you focus on an intense workout, we ensure safe and joyful playtime for your child. In a specially designed play area, under the supervision of a caregiver, your child can enjoy all the attractions and have a great time. We make sure every child feels comfortable and can actively spend time in a safe environment.",
+                "button": "Contact"
+            },
+            "card2": {
+                "header": "Entertainers",
+                "text": "Our entertainers will ensure the kids’ time is filled with smiles. We organize creative games, contests, and arts and crafts activities tailored to the children’s age and interests. Safety and the well-being of the children are our priority, so you can rest assured that your child is under the constant care of qualified professionals who will take care of every detail to create a day full of positive experiences and joy.",
+                "button": "See the Restaurant"
+            },
+            "card3": {
+                "header": "Jungle Gym",
+                "text": "We are a new venue in our area offering a modern jungle gym for children. It’s a specially designed space where your little ones can explore, play, and develop their skills through interaction with elements tailored to their age. Our innovative jungle gym concept guarantees that children will have a unique opportunity to gain new skills through play in a safe and friendly environment.",
+                "button": "Gallery"
+            }
+        }
+    },
+    "squash": {
+        "header": "Squash",
+        "header2": "What Makes Us Unique?",
+        "text1": "Our squash court is a place where enthusiasts of this dynamic sport will find everything they need for an exciting game.",
+        "text2": "Equipped with a professional court, our space is designed for both experienced players and those just starting their squash journey. Come, dive into the fast-paced game of squash, and experience unforgettable emotions!",
+        "button": "Pricing",
+        "cards": {
+            "header": "Squash",
+            "text": "Take on the challenge and try your hand at squash – a dynamic and increasingly popular sport that originated from tennis. It’s an intense game that delivers an adrenaline rush while also improving mobility and fitness. It’s not only an effective conditioning workout but also a great opportunity to burn a lot of calories. By playing squash, you’re not just having fun – you’re actively taking care of your health and physical condition.",
+            "card1": {
+                "header": "The Only One in the Area",
+                "text": "A unique squash court offering unforgettable experiences. The only space of its kind in Muszyna and the surrounding area!",
+                "button": "About Us"
+            },
+            "card2": {
+                "header": "Online Booking",
+                "text": "Book your squash court with just a few clicks through our online reservation system, saving you time.",
+                "button": "Book Now"
+            },
+            "card3": {
+                "header": "7 Days a Week",
+                "text": "We invite you to use our squash court 7 days a week. Call us at 509 445 000 or book online.",
+                "button": "Contact"
+            }
+        }
+    },
+    "bikerental": {
+        "header": "Bike Rental",
+        "header2": "What Makes Us Unique?",
+        "text1": "Our bike rental is the perfect spot for outdoor activity enthusiasts. We offer a wide selection of bikes – from city to mountain models – for both children and adults.",
+        "text2": "Rent a bike and explore the picturesque trails of Muszyna and its surroundings, enjoying the beauty of nature. It’s a great way to stay active and enjoy leisure time, regardless of your experience!",
+        "button": "Pricing",
+        "cards": {
+            "header": "Bike Rental",
+            "text": "At Muszynova, we offer modern bikes in excellent condition, tailored to various trails and needs. Rent a bike and set off on an adventure – from leisurely rides to challenging mountain trails. It’s not just a way to stay active, but also an opportunity to explore the region in an eco-friendly way!",
+            "card1": {
+                "header": "Local Trails",
+                "text": "Discover Muszyna and its surroundings by bike – we recommend the best trails for both beginner and advanced cyclists!",
+                "button": "About Us"
+            },
+            "card2": {
+                "header": "Wide Selection",
+                "text": "Rent the perfect bike for you – we have city bikes, mountain bikes, children’s bikes, and accessories like helmets and child seats.",
+                "button": "Pricing"
+            },
+            "card3": {
+                "header": "7 Days a Week",
+                "text": "Our bike rental is open 7 days a week. Call us at 509 445 000 and start your cycling adventure!",
+                "button": "Contact"
+            }
+        }
+    },
+    "gameroom": {
+        "header": "Game Room",
+        "header2": "What Makes Us Unique?",
+        "text1": "At Muszynova Park, we wanted to create a place where you can compete and have fun with your friends. For fans of strategy and precision, we offer a professional billiards table and table tennis tables where you can improve your concentration and hand-eye coordination skills. Additionally, for those who enjoy fast-paced and thrilling games, we’ve prepared a foosball table and an air hockey table.",
+        "text2": "A friendly atmosphere, modern equipment, and excellent entertainment ensure that the time spent at Muszynova is not only active but also incredibly enjoyable. We invite you to discover the fascinating world in a new way.",
+        "button": "Pricing",
+        "cards": {
+            "header": "Game Room",
+            "text": "In our game room, you’ll find attractions that provide unforgettable moments, whether you’re playing solo or with friends and family. The professional billiards table offers the chance to compete and hone your skills, creating an atmosphere of sporting passion. Meanwhile, the foosball and air hockey tables immerse players in a world of excitement and fast-paced action. At Muszynova, we focus not only on physical activity but also on the overall enjoyment of your time at our recreational center. We invite you to explore the fascinating world of games and fun at Muszynova!",
+            "card1": {
+                "header": "Billiards",
+                "text": "Billiards is not only great fun but also an excellent way to develop concentration, precision, and strategic planning skills. Playing billiards allows you to build strategies and tactics. Regardless of your skill level, billiards is accessible to everyone while offering excitement for both amateurs and professionals.",
+                "button": "Contact"
+            },
+            "card2": {
+                "header": "Foosball",
+                "text": "Foosball perfectly combines competition and fun, making every game an unforgettable experience for all participants.",
+                "button": "Contact"
+            },
+            "card3": {
+                "header": "Air Hockey",
+                "text": "Air hockey, also known as table hockey, is an electrifying game that brings competition to a flat table surface. Played with special pucks and paddles, it offers fast-paced, reflex-driven gameplay and thrilling matches full of excitement.",
+                "button": "Contact"
+            }
+        }
+    },
+    "multimediaroom": {
+        "header": "Multimedia Room",
+        "header2": "What Makes Us Unique?",
+        "text1": "The heart of our multimedia room is the latest PlayStation, where we provide access to the best games and entertainment for console gaming fans.",
+        "text2": "From thrilling adventures to exciting sports matches, there’s something for everyone. All of this can be enjoyed on comfortable bean bags, creating the perfect setting to immerse yourself in the world of virtual entertainment.",
+        "button": "Pricing",
+        "cards": {
+            "header": "Multimedia Room",
+            "text": "Equipped with a PlayStation console and a virtual reality (VR) system, the multimedia room is a place where gamers can dive into fascinating virtual worlds. Whether someone prefers fast-paced action games or exploratory VR adventures, our room offers complete freedom of entertainment choice.",
+            "card1": {
+                "header": "PlayStation",
+                "text": "We invite you to our modern multimedia room, where the world of PlayStation becomes a true adventure! The latest games, unforgettable emotions, and unparalleled experiences in virtual entertainment await you.",
+                "button": "Contact"
+            },
+            "card2": {
+                "header": "VR",
+                "text": "We invite you to discover a new dimension of entertainment in our unique multimedia room with virtual reality (VR). It’s a place where the boundaries of reality blend with fantasy, creating unforgettable experiences.",
+                "button": "Contact"
+            },
+            "card3": {
+                "header": "Birthdays",
+                "text": "Plan a special birthday in our fantastic multimedia room, where every moment becomes an unforgettable adventure! You don’t have to worry about the organization – our team will take care of every detail, so you can focus solely on enjoying the moment.",
+                "button": "Contact"
+            }
+        }
+    },
+    "restaurantpage": {
+        "header": "Muszynova Restaurant",
+        "header2": "Discover Our Menu",
+        "header3": "Organize with Us in a New Way",
+        "text1": "We focus on quality, on discovering flavors in a new way.",
+        "text2": "A restaurant offering a healthy and light menu. A concise selection with regional accents in our dishes brings you closer to Beskid cuisine. Light? Yes! Comfort food? We’ve got pizza too. Something for everyone – we cater to children, teens, and adults alike, inviting you for a drink.",
+        "button": "Menu",
+        "button2": "Drinks Menu",
+        "cards": {
+            "card1": {
+                "header": "Parties, Anniversaries, Gatherings",
+                "text": "Muszynova Restaurant – discover flavors and have great fun. We ensure the perfect combination: good times, good company, in a great place. We provide a comfortable venue for organizing parties and events – family and social gatherings, anniversaries, corporate banquets, team-building events, communions, or weddings. Organize with us and discover a new quality.",
+                "button": "About Us"
+            },
+            "card2": {
+                "header": "Shows, Exhibitions, Fairs",
+                "text": "We have two comfortable rooms with a combined area of over 250 square meters. Both rooms can host two independent events simultaneously. Additionally, we have a sports hall available, where we organize sports events as well as exhibitions, shows, fairs, or concerts. It’s a place for you to discover.",
+                "button": "Gallery"
+            },
+            "card3": {
+                "header": "Conferences, Business Meetings",
+                "text": "We invite business clients to organize conferences. Next to the restaurant, we have the Nova Room – modern and air-conditioned. It features a projector displaying images up to 15 square meters. The equipment includes fully professional audio-video cabling, allowing for quick and efficient setup with external devices. Comfortable and modern.",
+                "button": "Contact"
+            }
+        }
+    },
+    "pricing": {
+        "header": "Pricing"
+    },
+    "groupclasses": {
+        "header": "Group Classes"
+    },
+    "gallery": {
+        "header": "Gallery",
+        "restaurant": "Restaurant",
+        "header2": "Restaurant Gallery",
+        "park": "Park",
+        "header3": "Park Gallery"
+    },
+    "contact": {
+        "header": "Contact Us",
+        "cards": {
+            "card1": {
+                "header": "Address",
+                "text1": "33-370 Muszyna Złockie 77c",
+                "text2": "The facility is owned by:",
+                "text3": "Firma Handlowa Mikulec",
+                "text4": "NIP 7341518138",
+                "button": "About Us"
+            },
+            "card2": {
+                "header": "Reception",
+                "text1": "biuro@muszynova.pl",
+                "text2": "+48 509 445 000 Muszynova Park",
+                "text3": "+48 509 825 000 Muszynova Restaurant",
+                "button": "Gallery"
+            },
+            "card3": {
+                "header": "Group Bookings, Special Events",
+                "text1": "Grzegorz Ziółko, Manager",
+                "text2": "manager@muszynova.pl",
+                "text3": "tel: +48 509 445 000",
+                "button": "Group Classes"
+            },
+            "card4": {
+                "header": "Muszynova Restaurant",
+                "text1": "Opening Hours",
+                "text2": "Monday - Wednesday CLOSED",
+                "text3": "Thursday - Friday 12:00 PM - 8:00 PM",
+                "text4": "Saturday - Sunday 12:00 PM - 9:00 PM",
+                "button": "Restaurant"
+            },
+            "card5": {
+                "header": "Muszynova Park",
+                "text1": "Opening Hours",
+                "text2": "Monday - Friday 4:00 PM - 8:00 PM",
+                "text3": "Saturday - Sunday 11:00 AM - 9:00 PM",
+                "button": "Recreational-Sports Park"
+            },
+            "card6": {
+                "header": "Gym",
+                "text1": "Opening Hours",
+                "text2": "Monday - Friday 8:00 AM - 8:00 PM",
+                "text3": "Saturday - Sunday 11:00 AM - 9:00 PM",
+                "button": "Gym"
+            }
+        },
+        "form": {
+            "header": "Contact Form",
+            "label1": "Full Name",
+            "label2": "Your Email",
+            "label3": "Your Message",
+            "placeholder1": "Enter Your Full Name",
+            "placeholder2": "Enter Your Email",
+            "placeholder3": "Write Your Message...",
+            "button": "Send Message",
+            "sending": "Sending...",
+            "message1": "Thank You for Submitting the Form!",
+            "message2": "We’ll Get Back to You as Soon as Possible.",
+            "error": "Please fill in all required fields.",
+            "error2": "Please confirm that you are not a robot before submitting."
         }
     },
     "metadata": {

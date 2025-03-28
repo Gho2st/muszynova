@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import ImagesR from "./Images";
 
 export const metadata = {
@@ -10,10 +11,11 @@ export const metadata = {
 };
 
 export default function GalleryPark() {
+  const t = useTranslations("gallery");
   return (
     <div className="px-6 xl:px-24 py-16 xl:py-20 ">
       <h1 className="text-4xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
-        Galeria Parku
+        {t("header3")}
       </h1>
       <ImagesR />
     </div>

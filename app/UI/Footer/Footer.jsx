@@ -63,7 +63,9 @@ export default function Footer() {
             <span className="text-customGold font-semibold">
               {t("info.info2.address")}:{" "}
             </span>
-            <Link href={"tel:48509445000"}>+48 509 445 000 </Link>
+            <Link className="hover:text-neutral-400 transition-all duration-500" href={"tel:48509445000"}>
+              +48 509 445 000{" "}
+            </Link>
           </li>
           <li>
             <span className="text-customGold font-semibold">
@@ -104,7 +106,7 @@ export default function Footer() {
         <span className="mb-20">
           © {currentYear} Muszynova &{" "}
           <Link
-            className="hover:text-green-500 font-bold"
+            className="hover:text-green-500 transition-all duration-500 font-bold"
             href={"https://www.domiweb.pl/"}
           >
             Domiweb

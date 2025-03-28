@@ -5,6 +5,7 @@ import Card from "@/app/UI/Card";
 import { CiLocationOn } from "react-icons/ci";
 import { LuSchool } from "react-icons/lu";
 import { TbBowling } from "react-icons/tb";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "Hala Sportowa Muszynova - Muszyna",
@@ -17,25 +18,19 @@ export const metadata = {
 };
 
 export default function Hala() {
+  const t = useTranslations("sportshall");
+
   return (
     <>
       {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
-          <h1 className="text-4xl xl:text-6xl font-bold">Hala Sportowa</h1>
+          <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mt-10">
-            Nasza hala sportowa to miejsce, gdzie sport staje się pasją, a ruch
-            to sposób na zdrowie i rozwijanie umiejętności. To przestrzeń, która
-            oferuje doskonałe warunki do uprawiania różnorodnych dyscyplin
-            sportowych, ale także inspiruje do aktywnego trybu życia i wspólnej
-            rywalizacji. <br></br> <br></br> Hala sportowa jest obiektem, który
-            posiada boisko mogące spełniać funkcje, boiska do koszykówki,
-            siatkówki, badmintona czy piłki ręcznej. To miejsce, które tętni
-            energią i stwarza doskonałe warunki dla zawodników, jak i amatorów
-            sportu.
+            {t("text1")} <br></br> <br></br> {t("text2")}
           </p>
           <div className="mt-10">
-            <Button text="Kontakt" link="/kontakt" />
+            <Button text={t("button")} link="/kontakt" />
           </div>
         </div>
         <div className="mt-16 xl:mt-0 xl:w-2/3">
@@ -63,44 +58,39 @@ export default function Hala() {
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
             <h2 className="text-4xl xl:text-6xl text-customGold text-center font-bold">
-              Co nas wyróżnia?
+              {t("header2")}
             </h2>
           </div>
         </div>
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-1/4 pr-10 xl:mr-2 mt-20 xl:mt-0">
-            <h3 className="text-4xl font-semibold">Hala Sportowa</h3>
-            <p className="mt-10">
-              W Muszynova serdecznie zapraszamy do skorzystania z naszej hali
-              sportowej, gdzie ruch staje się przyjemnością, a sport to nie
-              tylko aktywność fizyczna, ale także wspólna pasja. <br></br>
-              <br></br> Dołącz do nas i odkryj radość z ruchu!
-            </p>
+            <h3 className="text-4xl font-semibold">{t("cards.header")}</h3>
+            <p className="mt-10">{t("cards.text")}</p>
           </div>
           <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<CiLocationOn />}
-              title={"Wynajem hali"}
+              title={t("cards.card1.header")}
               link="/cennik"
-              buttonText={"Cennik"}
+              buttonText={t("cards.card1.button")}
               bgColor="bg-black"
-              text="Wynajem naszej hali sportowej to gwarancja profesjonalnej infrastruktury, elastyczności harmonogramu oraz wsparcia doświadczonych pracowników. Dbamy o to, aby każde wydarzenie odbyło się w przyjaznej atmosferze z zachowaniem wysokich standardów bezpieczeństwa i komfortu."
+              text={t("cards.card1.text")}
             />
             <Card
               icon={<TbBowling />}
-              title={"Gry zespołowe"}
+              title={t("cards.card2.header")}
               link="/galeria"
-              buttonText={"Galeria"}
+              buttonText={t("cards.card2.button")}
               bgColor="bg-black"
-              text="Nasza sala dostosowana jest do różnych dyscyplin sportowych, takich jak koszykówka, siatkówka, piłka ręczna, badminton. Elastyczność przestrzeni pozwala dostosować ustawienie sali do konkretnych potrzeb, co sprawia, że jesteśmy gotowi sprostać różnym oczekiwaniom."
+              text={t("cards.card2.text")}
             />
             <Card
               icon={<LuSchool />}
               link="/o-nas"
-              title={"Oferta dla szkół"}
-              buttonText={"O Nas"}
+              title={t("cards.card3.header")}
+              buttonText={t("cards.card3.button")}
               bgColor="bg-black"
-              text="Nasza hala sportowa została stworzona z myślą o wspieraniu aktywności fizycznej i zdrowego stylu życia wśród uczniów. Istnieje możliwość wynajęcia sali pod zajęcia szkolne lub poza lekcyjne."
+              text={t("cards.card3.text")}
             />
           </div>
         </div>

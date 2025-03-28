@@ -5,6 +5,7 @@ import Card from "@/app/UI/Card";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import { TbBowling } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "Mini Kręgielnia Muszynova - Muszyna",
@@ -17,25 +18,22 @@ export const metadata = {
 };
 
 export default function Kregielnia() {
+  const t = useTranslations("minibowling");
+
   return (
     <>
       {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
-          <h1 className="text-4xl xl:text-6xl font-bold">Mini Kręgielnia</h1>
+          <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mt-10">
-            Mini kręgielnia to świetna forma rozrywki, która przynosi radość
-            zarówno dzieciom, jak i dorosłym. Pomniejszone kręgle, mniejszy
-            dystans, ale ta sama dawka zabawy – to wszystko czeka na entuzjastów
-            mini kręgli w naszym centrum rekreacyjnym. Mini Kręgielnia nie
-            wymaga specjalnych umiejętności, co sprawia, że jest dostępna dla
-            każdego. To także świetna opcja na spędzenie czasu w gronie
-            przyjaciół czy rodziny, zachęcając do zdrowej rywalizacji i
-            wzajemnej zabawy.
+            {t("text1")} <br></br>
+            <br></br>
+            {t("text2")}
           </p>
           <div className="mt-10">
             <Button
-              text="Zarezerwuj"
+              text={t("button")}
               link="https://muszynova.oos.pl/reservations"
             />
           </div>
@@ -65,47 +63,39 @@ export default function Kregielnia() {
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
             <h2 className="text-4xl xl:text-6xl text-customGold text-center font-bold">
-              Co nas wyróżnia?
+              {t("header2")}
             </h2>
           </div>
         </div>
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-1/4 pr-10 xl:mr-2 mt-20 xl:mt-0">
-            <h3 className="text-4xl font-semibold">Mini Kręgielnia</h3>
-            <p className="mt-10">
-              W Muszynova serdecznie zapraszamy do naszej nowoczesnej kręgielni,
-              gdzie doskonała atmosfera, nowoczesne zaplecze oraz entuzjastyczny
-              personel tworzą idealne warunki do cieszenia się tą klasyczną, a
-              jednocześnie emocjonującą grą. Niech każdy rzut stanie się
-              pretekstem do uśmiechu i dobrej zabawy!
-            </p>
+            <h3 className="text-4xl font-semibold">{t("cards.header")}</h3>
+            <p className="mt-10">{t("cards.text")}</p>
           </div>
           <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<TbBowling />}
-              title={"Kręgle dla dzieci"}
-              buttonText={"Kontakt"}
+              title={t("cards.card1.header")}
+              buttonText={t("cards.card1.button")}
               bgColor="bg-black"
               link="/o-nas"
-              text="Kręgle to nie tylko gra dla dorosłych, ale także doskonała forma rozrywki dla najmłodszych. Kolorowe kręgle przyciągają uwagę dzieci, tworząc przy tym dynamiczną i radosną atmosferę. To świetna zabawa, i sposób na rozwijanie umiejętności motorycznych, precyzji oraz współpracy z rówieśnikami."
+              text={t("cards.card1.text")}
             />
             <Card
               icon={<LiaBirthdayCakeSolid />}
-              title={"Urodziny"}
-              buttonText={"Kontakt"}
+              title={t("cards.card2.header")}
+              buttonText={t("cards.card2.button")}
               bgColor="bg-black"
               link="/kontakt"
-              text="Kręgle to doskonały sposób na zorganizowanie aktywnego przyjęcia, które zadowoli zarówno maluchy, jak i starszych gości.
-"
+              text={t("cards.card2.text")}
             />
             <Card
               icon={<FaPeopleGroup />}
-              title={"Grupy"}
-              buttonText={"Restauracja"}
+              title={t("cards.card3.header")}
+              buttonText={t("cards.card3.button")}
               bgColor="bg-black"
               link="/restauracja"
-              text="Oferujemy możliwość zorganizowania dynamicznych zajęć grupowych. To doskonała opcja dla firm, szkół, czy grup przyjaciół, poszukujących atrakcyjnej i integracyjnej formy spędzenia czasu.
-"
+              text={t("cards.card3.text")}
             />
           </div>
         </div>

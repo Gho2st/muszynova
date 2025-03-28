@@ -5,6 +5,7 @@ import Card from "@/app/UI/Card";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineSportsTennis } from "react-icons/md";
 import { TbClock24 } from "react-icons/tb";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "Squash Muszynova - Kort w Muszynie",
@@ -17,24 +18,20 @@ export const metadata = {
 };
 
 export default function Squash() {
+  const t = useTranslations("squash");
   return (
     <>
       {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
-          <h1 className="text-4xl xl:text-6xl font-bold">Squash </h1>
+          <h1 className="text-4xl xl:text-6xl font-bold"> {t("header")}</h1>
           <p className="mt-10">
-            Nasza sala squash to miejsce, gdzie pasjonaci tego dynamicznego
-            sportu znajdą wszystko, czego potrzebują do ekscytującej rozgrywki.{" "}
+            {t("text1")}
             <br></br> <br></br>
-            Wyposażona w profesjonalny kort, nasza sala stworzona jest zarówno
-            dla doświadczonych graczy, jak i dla tych, którzy dopiero zaczynają
-            swoją przygodę ze squashem.<br></br> <br></br> Przyjdź, zanurz się w
-            intensywnym tempie gry w squash’a i doświadczaj niezapomnianych
-            emocji!
+            {t("text2")}
           </p>
           <div className="mt-10">
-            <Button text="Cennik" link={"/cennik"} />
+            <Button text={t("button")} link={"/cennik"} />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
@@ -62,48 +59,39 @@ export default function Squash() {
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
             <h2 className="text-4xl xl:text-6xl text-customGold text-center font-bold">
-              Co nas wyróżnia?
+              {t("header2")}
             </h2>
           </div>
         </div>
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-1/4 pr-10 xl:mr-2 mt-20 xl:mt-0">
-            <h3 className="text-4xl font-semibold">Squash</h3>
-            <p className="mt-10">
-              Przyjmij wyzwanie i spróbuj swoich sił w squashu – dynamicznej i
-              coraz bardziej popularnej dyscyplinie sportowej, która wywodzi się
-              z tenisa. To intensywna gra, która dostarcza adrenaliny, ale
-              pozwala również poprawić sprawność ruchową i kondycję. <br></br>
-              <br></br> To nie tylko efektywny trening kondycyjny, ale także
-              doskonała okazja do spalenia dużej ilości kalorii. Grając w
-              squash’a nie tylko dobrze się bawisz ale aktywnie dbasz o swoje
-              zdrowie i kondycję fizyczną.
-            </p>
+            <h3 className="text-4xl font-semibold"> {t("cards.header")}</h3>
+            <p className="mt-10">{t("cards.text")}</p>
           </div>
           <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<CiLocationOn />}
-              title={"Jedyna w okolicy"}
-              buttonText={"O Nas"}
+              title={t("cards.card1.header")}
+              buttonText={t("cards.card1.button")}
               link="o-nas"
               bgColor="bg-black"
-              text="Wyjątkowa sala do squash’a, zapewniająca niezapomniane wrażenia. Jedyna tego typu przestrzeń w Muszynie i okolicy!"
+              text={t("cards.card1.text")}
             />
             <Card
               icon={<MdOutlineSportsTennis />}
-              title={"Rezerwacja online"}
-              buttonText={"Rezerwuj"}
+              title={t("cards.card2.header")}
+              buttonText={t("cards.card2.button")}
               bgColor="bg-black"
               link="https://muszynova.oos.pl/reservations"
-              text="Zarezerwuj swój kort do squash’a, dzięki rezerwacji online zaledwie kilkoma kliknięciami, oszczędzając czas."
+              text={t("cards.card2.text")}
             />
             <Card
               icon={<TbClock24 />}
-              title={"7 dni w tygodniu"}
-              buttonText={"Kontakt"}
+              title={t("cards.card3.header")}
+              buttonText={t("cards.card3.button")}
               bgColor="bg-black"
               link="/kontakt"
-              text="Zapraszamy do korzystania z naszej sali squash 7 dni w tygodniu. Zadzwoń pod numer 509 445 000 lub zarezerwuj online."
+              text={t("cards.card3.text")}
             />
           </div>
         </div>

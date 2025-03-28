@@ -10,6 +10,7 @@ import Card from "../../UI/Card";
 import Form from "./form";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -28,64 +29,82 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Contact() {
+  const t = useTranslations("contact");
   return (
     <>
       <div className="px-6 xl:px-44 py-16 xl:py-20">
         <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-16 xl:mb-20">
-          Skontakuj się z nami!
+          {t("header")}
         </h1>
         <section>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <Card
               link="/o-nas"
               icon={<CiLocationOn />}
-              title={"Adres"}
-              buttonText={"O Nas"}
-              text="33-370 Muszyna Złockie 77c <br></br> Właścicielem obiektu jest:
-                <br></br>
-                Firma Handlowa Mikulec <br></br> NIP 7341518138"
+              title={t("cards.card1.header")}
+              buttonText={t("cards.card1.button")}
+              text={[
+                t("cards.card1.text1"),
+                t("cards.card1.text2"),
+                t("cards.card1.text3"),
+                t("cards.card1.text4"),
+              ].join(" <br /> ")}
             />
             <Card
               link="/galeria"
               icon={<BsTelephone />}
-              title={"Recepcja"}
-              buttonText={"Galeria"}
-              text="biuro@muszynova.pl +48 509 445 000 <br></br> Park Muszynova +48
-                509 825 000 <br></br>
-                Restauracja Muszynova"
+              title={t("cards.card2.header")}
+              buttonText={t("cards.card2.button")}
+              text={[
+                t("cards.card2.text1"),
+                t("cards.card2.text2"),
+                t("cards.card2.text3"),
+              ].join(" <br /> ")}
             />
             <Card
               link="/zajecia-grupowe"
               icon={<BiSolidParty />}
-              title={"Rezerwacje grupowe, imprezy okolicznościowe"}
-              buttonText={"Zajęcia Grupowe"}
-              text="Grzegorz Ziółko, <br></br>Manager manager@muszynova.pl <br></br>
-                tel.: +48 509 445 000"
+              title={t("cards.card3.header")}
+              buttonText={t("cards.card3.button")}
+              text={[
+                t("cards.card3.text1"),
+                t("cards.card3.text2"),
+                t("cards.card3.text3"),
+              ].join(" <br /> ")}
             />
             <Card
               link="/restauracja"
               icon={<IoPizzaOutline />}
-              title={"Restauracja Muszynova"}
-              buttonText={"Restauracja"}
-              text=" Godziny Otwarcia <br></br> Poniedziałek - Środa NIECZYNNE
-                <br></br> Czwartek - Piątek 12:00 - 20:00<br></br>Sobota -
-                Niedziela 12:00 - 21:00"
+              title={t("cards.card4.header")}
+              buttonText={t("cards.card4.button")}
+              text={[
+                t("cards.card4.text1"),
+                t("cards.card4.text2"),
+                t("cards.card4.text3"),
+                t("cards.card4.text4"),
+              ].join(" <br /> ")}
             />
             <Card
               link="/park-rekreacyjno-sportowy"
               icon={<MdOutlineSportsCricket />}
-              title={"Park Muszynova"}
-              buttonText={"Park Rekreacyjno Sportowy"}
-              text="Godziny Otwarcia <br></br> Poniedziałek - Piątek 16:00 - 20:00
-                <br></br> Sobota - Niedziela 11:00 - 21:00"
+              title={t("cards.card5.header")}
+              buttonText={t("cards.card5.button")}
+              text={[
+                t("cards.card5.text1"),
+                t("cards.card5.text2"),
+                t("cards.card5.text3"),
+              ].join(" <br /> ")}
             />
             <Card
               link="/park-rekreacyjno-sportowy/silownia"
               icon={<LuWeight />}
-              title={"Siłownia"}
-              buttonText={"Siłownia"}
-              text="Godziny Otwarcia <br></br> Poniedziałek - Piątek 8:00 - 20:00
-                <br></br> Sobota - Niedziela 11:00 - 21:00"
+              title={t("cards.card6.header")}
+              buttonText={t("cards.card6.button")}
+              text={[
+                t("cards.card6.text1"),
+                t("cards.card6.text2"),
+                t("cards.card6.text3"),
+              ].join(" <br /> ")}
             />
           </div>
         </section>
@@ -102,7 +121,7 @@ export default function Contact() {
             />
           </div>
           <div className="xl:w-1/2">
-            <h2 className="text-4xl font-semibold">Formularz kontaktowy</h2>
+            <h2 className="text-4xl font-semibold">{t("form.header")}</h2>
             <Form />
           </div>
         </div>

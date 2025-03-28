@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -14,6 +15,7 @@ export default function Form() {
   const [formError, setFormError] = useState(null);
   const [errorFields, setErrorFields] = useState([]);
   const recaptchaRef = useRef(null); // Ref dla reCAPTCHA
+  const t = useTranslations("contact");
 
   // Funkcja walidacji pól formularza
   function validateForm(data) {
@@ -37,14 +39,14 @@ export default function Form() {
     if (isSending) return;
 
     if (!validateForm(formData)) {
-      setFormError("Proszę uzupełnij wszystkie wymagane pola.");
+      setFormError(t("form.error"));
       return;
     }
 
     // Pobranie tokena reCAPTCHA
     const recaptchaToken = recaptchaRef.current.getValue();
     if (!recaptchaToken) {
-      setFormError("Proszę zaznacz, że nie jesteś robotem przed wysłaniem.");
+      setFormError(t("form.error2"));
       return;
     }
 
@@ -84,11 +86,9 @@ export default function Form() {
       {formSubmitted ? (
         <div className="mt-10 lg:mt-20 ">
           <span className="text-2xl font-semibold text-customGold">
-            Dziękujęmy za przesłanie formularza!
+            {t("form.message1")}
           </span>
-          <p className="font-light text-lg mt-6 ">
-            Postaramy się odpowiedzieć tak szybko, jak to możliwe.
-          </p>
+          <p className="font-light text-lg mt-6 ">{t("form.message2")}</p>
         </div>
       ) : (
         <form className="mt-10" onSubmit={sendMail}>
@@ -97,7 +97,7 @@ export default function Form() {
               htmlFor="fullName"
               className="text-sm text-neutral-900  font-medium"
             >
-              * Imię i Nazwisko
+              * {t("form.label1")}
             </label>
             <input
               id="fullName"
@@ -105,7 +105,7 @@ export default function Form() {
               type="text"
               onChange={handleChange}
               value={formData.fullName}
-              placeholder="Wpisz swoję Imię i Nazwisko"
+              placeholder={t("form.placeholder1")}
               style={{
                 border: errorFields.includes("fullName")
                   ? "1px solid red"
@@ -120,7 +120,7 @@ export default function Form() {
               htmlFor="email"
               className="text-sm text-neutral-700  font-medium"
             >
-              * Twój email
+              * {t("form.label2")}
             </label>
             <input
               id="email"
@@ -128,7 +128,7 @@ export default function Form() {
               type="email"
               onChange={handleChange}
               value={formData.email}
-              placeholder="Wpisz swój email"
+              placeholder={t("form.placeholder2")}
               style={{
                 border: errorFields.includes("email") ? "1px solid red" : "0",
               }}
@@ -140,13 +140,13 @@ export default function Form() {
               htmlFor="text"
               className="text-sm text-neutral-700  font-medium"
             >
-              * Twoja Wiadomość
+              * {t("form.label3")}
             </label>
             <textarea
               id="text"
               name="text"
               value={formData.text}
-              placeholder="Napisz wiadomość..."
+              placeholder={t("form.placeholder3")}
               onChange={handleChange}
               style={{
                 border: errorFields.includes("text") ? "1px solid red" : "0",
@@ -167,7 +167,7 @@ export default function Form() {
               className="bg-customGold text-lg text-white cursor-pointer font-medium whitespace-nowrap flex justify-center items-center gap-2 p-4 clip-custom hover:clip-reverse 
             transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
-              {isSending ? "Wysyłanie..." : "Wyślij wiadomość!"}
+              {isSending ? t("form.sending") : t("form.button")}
             </button>
           </div>
         </form>

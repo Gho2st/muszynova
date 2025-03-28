@@ -25,7 +25,7 @@
         "button": "Strefa Klienta"
     },
     "footer": {
-        "header": "Porozmawiajmy",
+        "header": "Porozmawiajmy!",
         "info": {
             "info1": {
                 "address": "Adres",
@@ -36,7 +36,7 @@
                 "text": "+48 509 445 000"
             },
             "info3": {
-                "address": "Adres",
+                "address": "Email",
                 "text": "biuro@muszynova.pl"
             },
             "info4": {
@@ -57,6 +57,7 @@
     "services": {
         "header": "Nasze Strefy Sportowe i Relaksacyjne",
         "cards": {
+            "button": "Odkrywam",
             "1": {
                 "header": "Strefa Active Sport",
                 "text1": "Ścianka Wspinaczkowa",
@@ -85,8 +86,8 @@
     },
     "restaurant": {
         "header": "Restauracja Muszynova",
-        "header2": "Stawiamy na novą jakość, na odkrywanie beskidzkich smaków na novo",
-        "text": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na drinka.",
+        "header2": "Stawiamy na novą jakość oraz na odkrywanie beskidzkich smaków na novo",
+        "text": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież. Dorosłych zapraszamy na drinka.",
         "items": {
             "item1": {
                 "header": "Lokalne Składniki",
@@ -106,12 +107,459 @@
             },
             "item5": {
                 "header": "Dla dorosłych",
-                "text": "Pyszna kawa, ale i co nieco z procentami. Lekka sałatka, a może przyjemny kawałek domowego deseru. Idealne miejsce do posiedzenia przy książce, czy też miłego spędzenia wieczoru z ukochaną osobą."
+                "text": "Pyszna kawa, ale i co nieco z procentami. Lekka sałatka, a może przyjemny kawałek domowego deseru? Idealne miejsce do posiedzenia przy książce, czy też miłego spędzenia wieczoru z ukochaną osobą."
             },
             "item6": {
                 "header": "Imprezy okolicznościowe",
                 "text": "Osobna sala na zorganizowanie przyjęcia z atrakcjami dla najmłodszych. W końcu dorośli porozmawiają przy stole, a dzieci… obiecujemy, że dla wszystkich zapewniamy food & fun."
             }
+        }
+    },
+    "virtualtour": {
+        "header": "Wirtualny Spacer"
+    },
+    "aboutus": {
+        "header": "Czym jest",
+        "header2": "Co nas wyróżnia?",
+        "text": "Muszynova – nazwa to fantazyjne połączenia lokalizacji „Muszyna” ze słowem „nowoczesny” w zapisie międzynarodowym, bo jesteśmy otwarci na wszystkich. Tym samym jest to obietnica, zaproszenie do odkrywania znanego kurortu niejako „na novo”. W nowym wydaniu, w nowym standardzie, dla małych i dużych, zapraszamy lokalnych mieszkańców i turystów, indywidualnie i grupowo. Aktywnie, pysznie, bez kompromisów, to nasze nove podejście. Nowoczesny Park i Restauracja zapraszają do spędzania czasu w Muszynie inaczej, tak jak lubisz Ty. Odkrywaj na nowo świat food i fun, w otoczeniu pięknej przyrody Beskidu Sądeckiego.",
+        "button": "Galeria",
+        "cards": {
+            "text": "Muszyna to znana i lubiana miejscowość uzdrowiskowa, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
+            "card1": {
+                "header": "Muszyna - lokalizacja",
+                "button": "Kontakt",
+                "text": "W ciszy, z widokiem na zieleń lasów, tuż przy szlaku, z szumem rzeki Poprad w oddali. Tak spędzisz u nas czas, to nova jakość wnętrza, ale i piękne otoczenie Beskidu."
+            },
+            "card2": {
+                "header": "Food – restauracja",
+                "button": "Restauracja",
+                "text": "Krótka karta dań w novoczesnym wydaniu z beskidzką nutą. Lekko, odżywczo, dla dzieci i dla dorosłych. Pyszna kawa, drinki, a dla dzieci znane i lubiane pizze, desery w zdrowszym wydaniu. Z nami także urządzisz uroczystości z atrakcjami."
+            },
+            "card3": {
+                "header": "NOve standardy",
+                "button": "Park Rekreacyjno Sportowy",
+                "text": "Aktywne spędzanie wolnego czasu na novo, z frajdą. Zachęcamy do ruchu od najmłodszych lat, jesteśmy do tego przygotowani. Cztery nowocześnie wyposażone strefy aktywności wraz z zapleczem czekają na sportowców zawodowych, juniorów, rodziny i użytkowników indywidualnych."
+            }
+        }
+    },
+    "park": {
+        "header": "Park rekreacyjno-sportowy",
+        "text": "Aktywność to dla nas różnorodność. Tak, aby każdy czerpał z niej fun, dobrze spędzał czas, tak jak lubi, niezależnie od poziomu zaawansowania, czy też dyscypliny sportowej. Jesteśmy przygotowani na rozrywkę, jak i wyciskanie siódmych potów. Przez małych i dużych, amatorów i zawodowców. Profesjonalne sprzęty, nowoczesne zaplecze w pięknym wnętrzu – to wszystko czeka na Ciebie w Muszynova. A Ty odkrywaj!",
+        "button": "Czytaj Więcej",
+        "header2": "Co nas wyróżnia?",
+        "cards": {
+            "text": "Muszyna to znana i lubiana miejscowość uzdrowiskowa, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
+            "card1": {
+                "header": "Hala Sportowa",
+                "text": "z certyfikowaną, wielowarstwową nawierzchnią sportową Gerflor Teraflex. Zapraszamy do gry w sporty zespołowe: piłkę nożną halową, siatkówkę, koszykówkę, piłkę ręczną oraz badmintona, a także gimnastykę.",
+                "button": "Hala Sportowa"
+            },
+            "card2": {
+                "header": "Mini kręgielnia",
+                "text": "wyposażona w dwa tory do gry. W pomieszczeniu kręgielni zadbaliśmy również o strefę relaksu dla użytkowników oczekujących na rozpoczęcie gry.",
+                "button": "Mini kręgielnia"
+            },
+            "card3": {
+                "header": "Ścianka wspinaczkowa",
+                "text": "przewidziana zarówno dla amatorów, jak i profesjonalistów. Nasza konstrukcja to nowoczesna przestrzeń z bryłami geometrycznymi i uwypukleniami o powierzchni 90 m². Gabaryty ścianki pozwalają na korzystanie z niej trzech osób równocześnie. Posiada 6 punktów asekuracji górnej, 18 punktów asekuracji indywidualnej.",
+                "button": "Ścianka wspinaczkowa"
+            },
+            "card4": {
+                "header": "Sala zabaw dla dzieci",
+                "text": "wyposażona w konstrukcje zabawową, w której na dzieci czekają liczne atrakcje: labirynty, tunele, drabinki, zjeżdżalnia, piłeczki. Ponadto w sali zabaw wydzielona została strefa malucha zaopatrzona w miękkie pufy, basen z kulkami oraz tablice manipulacyjno – sensoryczne pozwalające najmłodszym zarówno na zabawę jak i naukę.",
+                "button": "Sala Zabaw"
+            },
+            "card5": {
+                "header": "Sala do squasha",
+                "text": "wykonaną zgodnie z wytycznymi WSF (Światowa Federacja Squasha). Korty zostały przygotowane w sposób pozwalający zarówno na zespołową rywalizację jak również na relaks poprzez trening indywidualny.",
+                "button": "Squash"
+            },
+            "card6": {
+                "header": "Wypożyczalnia rowerów",
+                "text": "z przekrojowym zestawem rowerów oraz akcesoriów dla dzieci i dorosłych preferujących spędzanie czasu na świeżym powietrzu. Znajdziesz w niej rowery męskie, damskie i dziecięce, a także osprzęt niezbędny do bezpiecznej jazdy.",
+                "button": "Wypożyczalnia rowerów"
+            },
+            "card7": {
+                "header": "Sala do tenisa stołowego",
+                "text": "wyposażonego w dwa stoły do ulubionej dyscypliny małych i dużych, czyli popularnej gry w ping ponga. Atrakcja przeznaczona jest dla osób w różnym przedziale wiekowym.",
+                "button": "Sala Gier"
+            },
+            "card8": {
+                "header": "Siłownia",
+                "text": "pozwala na przeprowadzenie kompleksowego treningu obwodowego. Znajdziesz w niej wysokiej jakości sprzęt – atestowany i bezpieczny dla użytkowników. Strefa cardio to bieżnie, rowery treningowe elektromagnetyczne, ergometry wioślarskie, orbitreki elektromagnetyczne, steppery.",
+                "button": "Siłownia"
+            },
+            "card9": {
+                "header": "Sala Fitness",
+                "text": "Sala fitness umożliwia przeprowadzenie kompleksowego treningu obwodowego i cardio. Wyposażona w bieżnie, rowery treningowe elektromagnetyczne, ergometry wioślarskie, orbitreki elektromagnetyczne oraz steppery – wszystko dla Twojej kondycji i zdrowia. ",
+                "button": "Fitness"
+            },
+            "card10": {
+                "header": "Sala Multimedialna",
+                "text": "Wyposażona w konsolę PlayStation oraz system wirtualnej rzeczywistości (VR), sala multimedialna to miejsce, gdzie gracze mogą zanurzyć się w fascynujące światy wirtualne. Bez względu na to, czy ktoś preferuje dynamiczne gry akcji czy też eksploracyjne przygody w VR, nasza sala umożliwia pełną swobodę wyboru rozrywki. ",
+                "button": "Sala Multimedialna"
+            }
+        }
+    },
+    "gym": {
+        "header": "Siłownia",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Jeżeli pragniesz skutecznie poprawić swoją kondycję i osiągnąć formę przy wsparciu wykwalifikowanej kadry, to nasza siłownia w Muszynie jest idealnym miejscem dla Ciebie.",
+        "text2": "Znajdziesz w niej wysokiej jakości sprzęt – atestowany i bezpieczny dla użytkowników. W zależności od planu treningowego i upodobań dostępna jest strefa wolnych ciężarów, strefa z maszynami oraz strefa cardio.",
+        "button": "Zakup Karnetu",
+        "cards": {
+            "header": "Siłownia",
+            "text": "Oferujemy dostęp do nowoczesnych urządzeń, ale także zatrudniamy doświadczonych trenerów, którzy są gotowi dostosować plan treningowy specjalnie do Twoich potrzeb. Dzięki temu spersonalizowanemu podejściu oraz fachowej wiedzy naszego personelu, z łatwością osiągniesz pożądane rezultaty. Wierzymy, że wspólnie możemy stworzyć plan, który spełni Twoje oczekiwania i dostarczy Ci motywacji do systematycznych treningów i utrzymania zdrowego stylu życia.",
+            "card1": {
+                "header": "Konsultacja",
+                "text": "Jeżeli nie wiesz jak zacząć, Nasi doświadczeni trenerzy przeprowadzą z Tobą konsultację, dokładnie analizując Twoje cele, historię treningową oraz ewentualne ograniczenia fizyczne. Pokażą Ci, jak prawidłowo korzystać ze wszystkich dostępnych sprzętów.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Plan Treningowy",
+                "text": "Trenerzy mogą ułożyć dla Ciebie spersonalizowany plan treningowy, dostosowany do Twoich indywidualnych potrzeb i celów. Zapewnią kompleksowe podejście, uwzględniając zarówno Twoje obecne umiejętności, jak i aspiracje fitnessowe, abyś mógł osiągnąć optymalne rezultaty.",
+                "button": "Zajęcia Grupowe"
+            },
+            "card3": {
+                "header": "Trening Personalny",
+                "text": "Oferujemy również treningi personalne, podczas których trener osobiście wyjaśni jak prawidłowo wykonywać każde ćwiczenie. Dzięki temu spersonalizowanemu podejściu, trening stanie się jeszcze bardziej efektywny, a Ty zdobędziesz szczegółowe wskazówki dotyczące techniki, intensywności i progresji.",
+                "button": "O Nas"
+            }
+        }
+    },
+    "fitness": {
+        "header": "Fitness",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Zajęcia fitness w Parku Muszynova zostały stworzone z myślą o zdrowiu, dobrej kondycji i radości z aktywności fizycznej. Bez względu na poziom zaawansowania, wiek czy cel treningowy, mamy coś dla każdego.",
+        "text2": "Nasi instruktorzy są gotowi poprowadzić Cię przez różnorodne formy aktywności, począwszy od energetycznych zajęć o wysokiej intensywności po statyczne, relaksujące sesje pilatesu.",
+        "button": "Zajęcia Grupowe",
+        "cards": {
+            "header": "Zajęcia Fitness",
+            "text": "Instruktorzy fitness oferują nam treningi różniące się od siebie intensywnością, wykorzystaniem dodatkowego obciążenia czy innego sprzętu. Rodzaj treningu, w zależności od tego, czy chcemy poprawić swoją wydolność, czy skupić się na rozbudowaniu i zwiększeniu siły mięśni, możemy wybrać samodzielnie. Poza spalaniem kalorii i ogólnym wzmocnieniem ciała, fitness to przede wszystkim dobra zabawa!",
+            "card1": {
+                "header": "Zajęcia Kids",
+                "text": "Zapraszamy najmłodszych do wspólnego odkrywania radości z ruchu i zdrowego stylu życia w Muszynova. Nasze zajęcia dla dzieci rozwijają sprawność fizyczną oraz kształtują pozytywne nawyki, które będą korzystne dla ich zdrowia i dobrej kondycji w przyszłości.",
+                "button": "Sala Zabaw"
+            },
+            "card2": {
+                "header": "Zajęcia dla dorosłych",
+                "text": "Dla naszych dorosłych uczestników, w Muszynova przygotowaliśmy różnorodne i dostosowane do różnych poziomów zaawansowania zajęcia fitness, które pomogą w utrzymaniu dobrej formy fizycznej, ale także staną się chwilą relaksu i ucieczki od codziennego stresu...",
+                "button": "Cennik"
+            },
+            "card3": {
+                "header": "Treningi indywidualne",
+                "text": "Nasi doświadczeni trenerzy personalni pracują z każdym klientem, dostosowując plan treningowy do indywidualnych potrzeb, umiejętności i ambicji. Treningi indywidualne pozwalają skupić się na konkretnej dziedzinie, takiej jak poprawa siły, redukcja wagi, zwiększenie elastyczności czy też ogólne polepszenie sprawności.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "sportshall": {
+        "header": "Hala Sportowa",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Nasza hala sportowa to miejsce, gdzie sport staje się pasją, a ruch to sposób na zdrowie i rozwijanie umiejętności. To przestrzeń, która oferuje doskonałe warunki do uprawiania różnorodnych dyscyplin sportowych, ale także inspiruje do aktywnego trybu życia i wspólnej rywalizacji.",
+        "text2": "Hala sportowa jest obiektem, który posiada boisko mogące spełniać funkcje, boiska do koszykówki, siatkówki, badmintona czy piłki ręcznej. To miejsce, które tętni energią i stwarza doskonałe warunki dla zawodników, jak i amatorów sportu.",
+        "button": "Kontakt",
+        "cards": {
+            "header": "Hala Sportowa",
+            "text": "W Muszynova serdecznie zapraszamy do skorzystania z naszej hali sportowej, gdzie ruch staje się przyjemnością, a sport to nie tylko aktywność fizyczna, ale także wspólna pasja. Dołącz do nas i odkryj radość z ruchu!",
+            "card1": {
+                "header": "Wynajem hali",
+                "text": "Wynajem naszej hali sportowej to gwarancja profesjonalnej infrastruktury, elastyczności harmonogramu oraz wsparcia doświadczonych pracowników. Dbamy o to, aby każde wydarzenie odbyło się w przyjaznej atmosferze z zachowaniem wysokich standardów bezpieczeństwa i komfortu.",
+                "button": "Cennik"
+            },
+            "card2": {
+                "header": "Gry zespołowe",
+                "text": "Nasza sala dostosowana jest do różnych dyscyplin sportowych, takich jak koszykówka, siatkówka, piłka ręczna, badminton. Elastyczność przestrzeni pozwala dostosować ustawienie sali do konkretnych potrzeb, co sprawia, że jesteśmy gotowi sprostać różnym oczekiwaniom.",
+                "button": "Galeria"
+            },
+            "card3": {
+                "header": "Oferta dla szkół",
+                "text": "Nasza hala sportowa została stworzona z myślą o wspieraniu aktywności fizycznej i zdrowego stylu życia wśród uczniów. Istnieje możliwość wynajęcia sali pod zajęcia szkolne lub poza lekcyjne.",
+                "button": "O Nas"
+            }
+        }
+    },
+    "minibowling": {
+        "header": "Mini kręgielnia",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Mini kręgielnia to świetna forma rozrywki, która przynosi radość zarówno dzieciom, jak i dorosłym. Pomniejszone kręgle, mniejszy dystans, ale ta sama dawka zabawy – to wszystko czeka na entuzjastów mini kręgli w naszym centrum rekreacyjnym.",
+        "text2": "Mini Kręgielnia nie wymaga specjalnych umiejętności, co sprawia, że jest dostępna dla każdego. To także świetna opcja na spędzenie czasu w gronie przyjaciół czy rodziny, zachęcając do zdrowej rywalizacji i wzajemnej zabawy.",
+        "button": "Zarezerwuj",
+        "cards": {
+            "header": "Mini Kręgielnia",
+            "text": "W Muszynova serdecznie zapraszamy do naszej nowoczesnej kręgielni, gdzie doskonała atmosfera, nowoczesne zaplecze oraz entuzjastyczny personel tworzą idealne warunki do cieszenia się tą klasyczną, a jednocześnie emocjonującą grą. Niech każdy rzut stanie się pretekstem do uśmiechu i dobrej zabawy!",
+            "card1": {
+                "header": "Kręgle dla dzieci",
+                "text": "Kręgle to nie tylko gra dla dorosłych, ale także doskonała forma rozrywki dla najmłodszych. Kolorowe kręgle przyciągają uwagę dzieci, tworząc przy tym dynamiczną i radosną atmosferę. To świetna zabawa, i sposób na rozwijanie umiejętności motorycznych, precyzji oraz współpracy z rówieśnikami.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Urodziny",
+                "text": "Kręgle to doskonały sposób na zorganizowanie aktywnego przyjęcia, które zadowoli zarówno maluchy, jak i starszych gości.",
+                "button": "Kontakt"
+            },
+            "card3": {
+                "header": "Grupy",
+                "text": "Oferujemy możliwość zorganizowania dynamicznych zajęć grupowych. To doskonała opcja dla firm, szkół, czy grup przyjaciół, poszukujących atrakcyjnej i integracyjnej formy spędzenia czasu.",
+                "button": "Restauracja"
+            }
+        }
+    },
+    "climbingwall": {
+        "header": "Ścianka Wspinaczkowa",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Ścianka wspinaczkowa to idealna aktywność dostępna przez cały rok. Inspiruje do zdobywania nowych wysokości i pokonywania własnych ograniczeń.",
+        "text2": "Nasza ścianka wspinaczkowa oferuje niezapomniane doświadczenia dla wspinaczy o różnym stopniu zaawansowania, zarówno dla tych, którzy zaczynają swoją przygodę ze wspinaczką, jak i dla doświadczonych entuzjastów.",
+        "button": "Zarezerwuj",
+        "cards": {
+            "header": "Ścianka Wspinaczkowa",
+            "text": "Bezpieczeństwo jest u nas priorytetem. Solidna konstrukcja ściany oraz profesjonalne zabezpieczenia sprawiają, że każdy wspinacz może skupić się na zdobywaniu kolejnych metrów bez obaw o swoje bezpieczeństwo. Nasza ścianka wspinaczkowa oferuje różnorodne trasy, dopasowane do umiejętności i doświadczenia każdego wspinacza.",
+            "card1": {
+                "header": "Zajęcia grupowe",
+                "text": "Zapraszamy do udziału w naszych zajęciach grupowych na ściance wspinaczkowej. Nasze zajęcia stworzone są z myślą o różnych poziomach zaawansowania, dostosowując się do umiejętności i doświadczenia każdego uczestnika.",
+                "button": "Zajęcia Grupowe"
+            },
+            "card2": {
+                "header": "Zajęcia indywidualne",
+                "text": "Nasi doświadczeni instruktorzy dostosują program zajęć do Twojego poziomu zaawansowania, indywidualnych celów oraz tempa nauki. Dzięki temu będziesz mógł skupić się na konkretnych aspektach wspinaczki, które są dla Ciebie najważniejsze. To także idealna opcja dla tych, którzy cenią sobie prywatność i chcą skoncentrować się na własnym postępie.",
+                "button": "Cennik"
+            },
+            "card3": {
+                "header": "Oferta dla szkół i grup",
+                "text": "Dla szkół oferujemy edukacyjne zajęcia, gdzie uczniowie mogą zdobywać umiejętności wspinaczkowe pod czujnym okiem doświadczonych instruktorów. To doskonała okazja do rozwijania sprawności fizycznej, kształtowania umiejętności team worku i budowania pewności siebie.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "playground": {
+        "header": "Sala Zabaw",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Sala zabaw dla dzieci to przestrzeń stworzona specjalnie dla najmłodszych, aby mogły się bawić i spędzać aktywnie czas w bezpiecznym otoczeniu. W takiej sali dzieci mają dostęp do różnorodnych atrakcji, które zapewniają im radość i zabawę",
+        "text2": "Mogą korzystać z kreatywnych zajęć oraz innych form rozrywki. W sali zabaw dba się o to, aby każde dziecko czuło się komfortowo i miało możliwość interakcji z innymi rówieśnikami. To doskonałe miejsce, gdzie maluchy mogą rozwijać swoje umiejętności społeczne, dzielić się z innymi oraz współpracować w grupie.",
+        "button": "O Nas",
+        "cards": {
+            "header": "Ty ćwiczysz a Twoje dziecko bawi się pod okiem naszych opiekunów.",
+            "text": "Zorganizuj urodziny w Muszynova. Zapewniamy doskonałe warunki oraz dostarczamy szereg atrakcji, aby uczynić ten dzień jeszcze bardziej wyjątkowym. Do dyspozycji mamy przestronne sale, idealne do organizacji urodzinowego przyjęcia, dekoracje tematyczne oraz animatorki. Dla najmłodszych zapewnimy animacje, gry i konkursy. Dla starszych dzieci posiadamy bogatą ofertę atrakcji, takich jak mini kręgielnia, sala multimedialna czy strefa gier.",
+            "card1": {
+                "header": "Opieka",
+                "text": "Podczas gdy Ty skupiasz się na intensywnym treningu, zapewniamy bezpieczną i pełną radości zabawę dla Twojego dziecka. W specjalnie przystosowanej strefie zabaw, pod okiem opiekuna, Twoje dziecko może korzystać z wszelkich atrakcji i bawić się na całego. Dbamy o to, aby każde dziecko czuło się komfortowo i miało możliwość aktywnego spędzania czasu w bezpiecznym otoczeniu.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Animatorki",
+                "text": "Nasze animatorki sprawią, że czas maluchów będzie pełen uśmiechu. Organizujemy kreatywne gry, konkursy i zajęcia plastyczne, dostosowane do wieku i zainteresowań dzieciaków. Bezpieczeństwo i dobre samopoczucie dzieci są dla nas priorytetem, dlatego możesz być pewien/a, że Twoje dziecko będzie pod stałą opieką wykwalifikowanych profesjonalistek, które zadbają o każdy detal, by zorganizować dzień pełen pozytywnych wrażeń i radości.",
+                "button": "Zobacz Restaurację"
+            },
+            "card3": {
+                "header": "Małpi Gaj",
+                "text": "Jesteśmy nowym miejscem w naszym rejonie, które oferuje nowoczesny małpi gaj dla dzieci. To specjalnie stworzona przestrzeń, w której Wasze pociechy mogą odkrywać, bawić się i rozwijać swoje umiejętności poprzez interakcję z elementami specjalnie dostosowanymi do ich wieku. Nasza innowacyjna koncepcja małpiego gaju to gwarancja, że dzieci będą miały niepowtarzalną okazję do zdobywania nowych umiejętności poprzez zabawę w bezpiecznym i przyjaznym środowisku.",
+                "button": "Galeria"
+            }
+        }
+    },
+    "squash": {
+        "header": "Squash",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Nasza sala squash to miejsce, gdzie pasjonaci tego dynamicznego sportu znajdą wszystko, czego potrzebują do ekscytującej rozgrywki.",
+        "text2": "Wyposażona w profesjonalny kort, nasza sala stworzona jest zarówno dla doświadczonych graczy, jak i dla tych, którzy dopiero zaczynają swoją przygodę ze squashem. Przyjdź, zanurz się w intensywnym tempie gry w squash’a i doświadczaj niezapomnianych emocji!",
+        "button": "Cennik",
+        "cards": {
+            "header": "Squash",
+            "text": "Przyjmij wyzwanie i spróbuj swoich sił w squashu – dynamicznej i coraz bardziej popularnej dyscyplinie sportowej, która wywodzi się z tenisa. To intensywna gra, która dostarcza adrenaliny, ale pozwala również poprawić sprawność ruchową i kondycję. To nie tylko efektywny trening kondycyjny, ale także doskonała okazja do spalenia dużej ilości kalorii. Grając w squash’a nie tylko dobrze się bawisz ale aktywnie dbasz o swoje zdrowie i kondycję fizyczną.",
+            "card1": {
+                "header": "Jedyna w okolicy",
+                "text": "Wyjątkowa sala do squash’a, zapewniająca niezapomniane wrażenia. Jedyna tego typu przestrzeń w Muszynie i okolicy!",
+                "button": "O Nas"
+            },
+            "card2": {
+                "header": "Rezerwacja online",
+                "text": "Zarezerwuj swój kort do squash’a, dzięki rezerwacji online zaledwie kilkoma kliknięciami, oszczędzając czas.",
+                "button": "Rezerwuj"
+            },
+            "card3": {
+                "header": "7 dni w tygodniu",
+                "text": "Zapraszamy do korzystania z naszej sali squash 7 dni w tygodniu. Zadzwoń pod numer 509 445 000 lub zarezerwuj online.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "bikerental": {
+        "header": "Wypożyczalnia Rowerów",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Nasza wypożyczalnia rowerów to idealne miejsce dla miłośników aktywności na świeżym powietrzu. Oferujemy szeroki wybór rowerów – od miejskich po górskie – dla dzieci i dorosłych.",
+        "text2": "Wypożycz rower i odkrywaj malownicze trasy Muszyny i okolic, ciesząc się pięknem natury. To świetny sposób na aktywny wypoczynek dla każdego, niezależnie od doświadczenia!",
+        "button": "Cennik",
+        "cards": {
+            "header": "Wypożyczalnia Rowerów",
+            "text": "W Muszynova oferujemy nowoczesne rowery w doskonałym stanie, dostosowane do różnych tras i potrzeb. Wypożycz rower i ruszaj na przygodę – od spokojnych przejażdżek po wymagające szlaki górskie. To nie tylko sposób na aktywność, ale także okazja do zwiedzania regionu w ekologicznym stylu!",
+            "card1": {
+                "header": "Lokalne trasy",
+                "text": "Odkrywaj Muszynę i okolice na rowerze – polecamy najlepsze trasy dla początkujących i zaawansowanych rowerzystów!",
+                "button": "O Nas"
+            },
+            "card2": {
+                "header": "Szeroki wybór",
+                "text": "Wypożycz rower idealny dla Ciebie – mamy modele miejskie, górskie, dziecięce i akcesoria, jak kaski czy foteliki.",
+                "button": "Cennik"
+            },
+            "card3": {
+                "header": "7 dni w tygodniu",
+                "text": "Nasza wypożyczalnia jest otwarta 7 dni w tygodniu. Zadzwoń na 509 445 000 i ruszaj na rowerową przygodę!",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "gameroom": {
+        "header": "Sala Gier",
+        "header2": "Co nas wyróżnia?",
+        "text1": "W Parku Muszynova pragnęliśmy stworzyć miejsce gdzie razem ze swoimi przyjaciółmi, możecie rywalizować i dobrze się bawić. Dla miłośników strategii i precyzji oferujemy profesjonalny stół bilardowy oraz stoły do tenisa stołowego, na których możecie poprawić swoje umiejętności koncentracji czy koordynacji wzrokowo-ruchowej. Dodatkowo, dla tych, którzy cenią szybkie i emocjonujące rozgrywki, przygotowaliśmy stół do piłkarzyków i air hockey’a.",
+        "text2": "Przyjazna atmosfera, nowoczesne wyposażenie i doskonała rozrywka sprawią, że czas spędzony w Muszynova będzie nie tylko aktywny, ale także niezwykle przyjemny. Zapraszamy do odkrywania fascynującego świata na noVo.",
+        "button": "Cennik",
+        "cards": {
+            "header": "Sala Gier",
+            "text": "W naszej sali gier znajdziesz atrakcje, które dostarczą niezapomnianych chwil zarówno indywidualnie, jak i w gronie przyjaciół czy rodziny. Profesjonalny stół do bilarda daje możliwość rywalizacji i doskonalenia swoich umiejętności, tworząc atmosferę sportowej pasji. Stoliki do piłkarzyków i air hockey’a, z kolei, przenoszą graczy w świat emocji i szybkiej akcji. W Muszynova kładziemy nacisk nie tylko na aktywność fizyczną, ale także na całościową przyjemność z czasu spędzonego w naszym centrum rekreacyjnym. Zapraszamy do odkrywania fascynującego świata gier i zabaw w Muszynova!",
+            "card1": {
+                "header": "Bilard",
+                "text": "Bilard to doskonała zabawa, ale także świetny sposób na rozwijanie koncentracji, precyzji i umiejętności strategicznego planowania. Gra w bilard umożliwia budowanie strategii i taktyki. Bez względu na poziom zaawansowania, bilard jest dostępny dla wszystkich, a jednocześnie może dostarczyć emocji zarówno amatorom, jak i zawodowcom.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Piłkarzyki",
+                "text": "Piłkarzyki doskonale łączą elementy współzawodnictwa i zabawy, sprawiając, że każda rozgrywka staje się niezapomnianym doświadczeniem dla wszystkich uczestników.",
+                "button": "Kontakt"
+            },
+            "card3": {
+                "header": "Cymbergaj",
+                "text": "Cymbergaj, znany także jako air hockey, to elektryzująca gra, która przenosi rywalizację na płaską powierzchnię stołu. Rozgrywana przy użyciu specjalnych krążków i rączek, oferuje szybkie tempo, refleksyjną grę oraz pełne emocji zmagania.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "multimediaroom": {
+        "header": "Sala Multimedialna",
+        "header2": "Co nas wyróżnia?",
+        "text1": "Serce naszej sali multimedialnej stanowi najnowsze PlayStation, gdzie zapewniamy dostęp do najlepszych gier i rozrywek dla fanów konsolowej zabawy.",
+        "text2": "Od ekscytujących przygód po emocjonujące rozgrywki sportowe, każdy znajdzie coś dla siebie. A to wszystko na wygodnych pufach, które stwarzają idealne warunki do zanurzenia się w świat wirtualnej rozrywki.",
+        "button": "Cennik",
+        "cards": {
+            "header": "Sala Multimedialna",
+            "text": "Wyposażona w konsolę PlayStation oraz system wirtualnej rzeczywistości (VR), sala multimedialna to miejsce, gdzie gracze mogą zanurzyć się w fascynujące światy wirtualne. Bez względu na to, czy ktoś preferuje dynamiczne gry akcji czy też eksploracyjne przygody w VR, nasza sala umożliwia pełną swobodę wyboru rozrywki.",
+            "card1": {
+                "header": "PlayStation",
+                "text": "Zapraszamy Cię do naszej nowoczesnej sali multimedialnej, gdzie świat PlayStation staje się prawdziwą przygodą! Czekają na Ciebie najnowsze gry, niezapomniane emocje i niezrównane doznania w świecie wirtualnej rozrywki.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "VR",
+                "text": "Zapraszamy Cię do odkrycia nowego wymiaru rozrywki w naszej wyjątkowej sali multimedialnej z wirtualną rzeczywistością (VR). To miejsce, gdzie granice rzeczywistości zlewają się z fantazją, tworząc niezapomniane doświadczenia.",
+                "button": "Kontakt"
+            },
+            "card3": {
+                "header": "Urodziny",
+                "text": "Zaplanuj wyjątkowe urodziny w naszej fantastycznej sali multimedialnej, gdzie każdy moment staje się niezapomnianą przygodą! Nie musisz się martwić o organizację – nasz zespół zadba o każdy detal, abyś mógł skoncentrować się wyłącznie na cieszeniu się chwilą.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "restaurantpage": {
+        "header": "Restauracja Muszynova",
+        "header2": "Tu poznasz Menu",
+        "header3": "Zorganizuj z nami na novo",
+        "text1": "Stawiamy na jakość, na odkrywanie smaków na novo.",
+        "text2": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na drinka.",
+        "button": "Karta Menu",
+        "button2": "Karta Napojów",
+        "cards": {
+            "card1": {
+                "header": "Imprezy, jubileusze, spotkania",
+                "text": "Restauracja Muszynova – odkrywaj smaki, ale i miej dobry fun. Dbamy o połączenie idealne, dobry czas, dobre towarzystwo, w dobrym miejscu. Zapewniamy komfortowe miejsce na organizację imprez i eventów – spotkania rodzinne i towarzyskie, jubileusze i rocznice, bankiety firmowe, integracyjne, czy tez komunie oraz wesela organizuj z nami. Odkryj novą jakość.",
+                "button": "O Nas"
+            },
+            "card2": {
+                "header": "Pokazy, wystawy, targi",
+                "text": "Posiadamy komfortove dwie sale o łącznej powierzchni ponad 250 m. Na obydwóch salach mogą się odbywać dwie niezależne imprezy. Dodatkowo do dyspozycji mamy jeszcze halę sportową, na której organizujemy wydarzenia sportowe, ale także wystawy, pokazy, targi czy też koncerty. To miejsce do odkrycia przez Ciebie.",
+                "button": "Galeria"
+            },
+            "card3": {
+                "header": "Konferencje, spotkania biznesowe",
+                "text": "Klientów biznesowych zapraszamy do organizowania konferencji. Obok restauracji mamy salę Novą – novoczesną i klimatyzowaną. Znajduje się w niej rzutniki wyświetlający obraz o powierzchni nawet 15 m kw. Osprzęt posiada w pełni profesjonalne okablowanie audio-video co daje możliwość szybkiej i sprawnej instalacji z urządzeniem zewnętrznym. Komfortovo, novocześnie.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "pricing": {
+        "header": "Cennik"
+    },
+    "groupclasses": {
+        "header": "Zajęcia Grupowe"
+    },
+    "gallery": {
+        "header": "Galeria",
+        "restaurant": "Restauracja",
+        "header2": "Galeria Restauracji",
+        "park": "Park",
+        "header3": "Galeria Parku"
+    },
+    "contact": {
+        "header": "Skontaktuj się z nami",
+        "cards": {
+            "card1": {
+                "header": "Adres",
+                "text1": "33-370 Muszyna Złockie 77c",
+                "text2": "Właścicielem obiektu jest:",
+                "text3": "Firma Handlowa Mikulec",
+                "text4": "NIP 7341518138",
+                "button": "O Nas"
+            },
+            "card2": {
+                "header": "Recepcja",
+                "text1": "biuro@muszynova.pl",
+                "text2": "+48 509 445 000 Park Muszynova",
+                "text3": "+48 509 825 000 Restauracja Muszynova",
+                "button": "Galeria"
+            },
+            "card3": {
+                "header": "Rezerwacje grupowe, imprezy okolicznościowe",
+                "text1": "Grzegorz Ziółko, Manager",
+                "text2": "manager@muszynova.pl",
+                "text3": "tel: +48 509 445 000",
+                "button": "Zajęcia Grupowe"
+            },
+            "card4": {
+                "header": "Restauracja Muszynova",
+                "text1": "Godziny Otwarcia",
+                "text2": "Poniedziałek - Środa NIECZYNNE",
+                "text3": "Czwartek - Piątek 12:00 - 20:00",
+                "text4": "Sobota - Niedziela 12:00 - 21:00",
+                "button": "Restauracja"
+            },
+            "card5": {
+                "header": "Park Muszynova",
+                "text1": "Godziny Otwarcia",
+                "text2": "Poniedziałek - Piątek 16:00 - 20:00",
+                "text3": "Sobota - Niedziela 11:00 - 21:00",
+                "button": "Park Rekreacyjno Sportowy"
+            },
+            "card6": {
+                "header": "Siłownia",
+                "text1": "Godziny Otwarcia",
+                "text2": "Poniedziałek - Piątek 8:00 - 20:00",
+                "text3": "Sobota - Niedziela 11:00 - 21:00",
+                "button": "Siłownia"
+            }
+        },
+        "form": {
+            "header": "Formularz Kontaktowy",
+            "label1": "Imię i nazwisko",
+            "label2": "Twój email",
+            "label3": "Twoja wiadomość",
+            "placeholder1": "Wpisz swoje Imię i Nazwisko",
+            "placeholder2": "Wpisz swój email",
+            "placeholder3": "Napisz wiadomość...",
+            "button": "Wyślij wiadomość",
+            "sending": "Wysyłanie...",
+            "message1": "Dziękujęmy za przesłanie formularza!",
+            "message2": "Postaramy się odpowiedzieć tak szybko, jak to możliwe."
         }
     },
     "metadata": {

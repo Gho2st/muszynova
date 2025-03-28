@@ -5,7 +5,7 @@ import Card from "@/app/UI/Card";
 import { MdSportsGymnastics } from "react-icons/md";
 import { PiWall } from "react-icons/pi";
 import { FaPeopleGroup } from "react-icons/fa6";
-
+import { useTranslations } from "next-intl";
 export const metadata = {
   title: "Ścianka Wspinaczkowa Muszynova",
   alternates: {
@@ -18,25 +18,20 @@ export const metadata = {
 };
 
 export default function Scianka() {
+  const t = useTranslations("climbingwall");
+
   return (
     <>
       {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
-          <h1 className="text-4xl xl:text-6xl font-bold">
-            Ścianka Wspinaczkowa
-          </h1>
+          <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mt-10">
-            Ścianka wspinaczkowa to idealna aktywność dostępna przez cały rok.
-            Inspiruje do zdobywania nowych wysokości i pokonywania własnych
-            ograniczeń. <br></br> <br></br> Nasza ścianka wspinaczkowa oferuje
-            niezapomniane doświadczenia dla wspinaczy o różnym stopniu
-            zaawansowania, zarówno dla tych, którzy zaczynają swoją przygodę ze
-            wspinaczką, jak i dla doświadczonych entuzjastów.
+            {t("text1")} <br></br> <br></br> {t("text2")}
           </p>
           <div className="mt-10">
             <Button
-              text="Zarezerwuj"
+              text={t("button")}
               link={"https://muszynova.oos.pl/reservations"}
             />
           </div>
@@ -66,46 +61,39 @@ export default function Scianka() {
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
             <h2 className="text-4xl xl:text-6xl text-customGold text-center font-bold">
-              Co nas wyróżnia?
+              {t("header2")}
             </h2>
           </div>
         </div>
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-1/4 pr-10 xl:mr-2 mt-20 xl:mt-0">
-            <h3 className="text-4xl font-semibold">Ścianka Wspinaczkowa</h3>
-            <p className="mt-10">
-              Bezpieczeństwo jest u nas priorytetem. Solidna konstrukcja ściany
-              oraz profesjonalne zabezpieczenia sprawiają, że każdy wspinacz
-              może skupić się na zdobywaniu kolejnych metrów bez obaw o swoje
-              bezpieczeństwo. <br></br> <br></br> Nasza ścianka wspinaczkowa
-              oferuje różnorodne trasy, dopasowane do umiejętności i
-              doświadczenia każdego wspinacza.
-            </p>
+            <h3 className="text-4xl font-semibold"> {t("cards.header")}</h3>
+            <p className="mt-10">{t("cards.text")}</p>
           </div>
           <div className="xl:w-3/4 grid md:grid-cols-2 xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<FaPeopleGroup />}
-              title={"Zajęcia grupowe"}
-              buttonText={"Zajęcia Grupowe"}
+              title= {t("cards.card1.header")}
+              buttonText={t("cards.card1.button")}
               link="/zajecia-grupowe"
               bgColor="bg-black"
-              text="Zapraszamy do udziału w naszych zajęciach grupowych na ściance wspinaczkowej. Nasze zajęcia stworzone są z myślą o różnych poziomach zaawansowania, dostosowując się do umiejętności i doświadczenia każdego uczestnika."
+              text={t("cards.card1.text")}
             />
             <Card
               icon={<MdSportsGymnastics />}
-              title={"Zajęcia indywidualne"}
-              buttonText={"Cennik"}
+              title={t("cards.card2.header")}
+              buttonText={t("cards.card2.button")}
               link="/cennik"
               bgColor="bg-black"
-              text="Nasi doświadczeni instruktorzy dostosują program zajęć do Twojego poziomu zaawansowania, indywidualnych celów oraz tempa nauki. Dzięki temu będziesz mógł skupić się na konkretnych aspektach wspinaczki, które są dla Ciebie najważniejsze. To także idealna opcja dla tych, którzy cenią sobie prywatność i chcą skoncentrować się na własnym postępie."
+              text={t("cards.card2.text")}
             />
             <Card
               icon={<PiWall />}
-              title={"Oferta dla szkół i grup"}
-              buttonText={"Kontakt"}
+              title={t("cards.card3.header")}
+              buttonText={t("cards.card3.button")}
               link="/kontakt"
               bgColor="bg-black"
-              text="Dla szkół oferujemy edukacyjne zajęcia, gdzie uczniowie mogą zdobywać umiejętności wspinaczkowe pod czujnym okiem doświadczonych instruktorów. To doskonała okazja do rozwijania sprawności fizycznej, kształtowania umiejętności team worku i budowania pewności siebie."
+              text={t("cards.card3.text")}
             />
           </div>
         </div>

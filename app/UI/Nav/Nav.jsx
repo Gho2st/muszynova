@@ -224,7 +224,7 @@ export default function Nav() {
                 className="border-b border-gray-300 py-3"
                 onClick={handleMenuToggle}
               >
-                O Nas
+                {t("links.link1")}
               </Link>
 
               {/* Mobile Park Dropdown */}
@@ -234,7 +234,7 @@ export default function Nav() {
                   className="flex w-full hover:text-[#C4966C] border-b border-gray-300 py-3"
                   aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
                 >
-                  Park Rekreacyjno-Sportowy
+                  {t("links.park")}
                   <IoIosArrowDown
                     className={`ml-2 transition-transform duration-300 ${
                       isParkDropdownOpen ? "rotate-180" : ""
@@ -273,37 +273,37 @@ export default function Nav() {
                 href="/restauracja"
                 onClick={handleMenuToggle}
               >
-                Restauracja
+                {t("links.link2")}
               </Link>
               <Link
                 className="border-b border-gray-300 py-3"
                 href="/cennik"
                 onClick={handleMenuToggle}
               >
-                Cennik
+                {t("links.link3")}
               </Link>
               <Link
                 className="border-b border-gray-300 py-3"
                 href="/zajecia-grupowe"
                 onClick={handleMenuToggle}
               >
-                Zajęcia Grupowe
+                {t("links.link4")}
               </Link>
               <Link
                 className="border-b border-gray-300 py-3"
                 href="/galeria"
                 onClick={handleMenuToggle}
               >
-                Galeria
+                {t("links.link5")}
               </Link>
               <Link
                 className="border-b border-gray-300 py-3 mb-6"
                 href="/kontakt"
                 onClick={handleMenuToggle}
               >
-                Kontakt
+                {t("links.link6")}
               </Link>
-              <SalesButton2 text="Strefa Klienta" link="/" />
+              <SalesButton2 text={t("button")} link="/" />
             </div>
           </motion.div>
         )}

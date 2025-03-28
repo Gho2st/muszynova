@@ -1,9 +1,12 @@
+import { useTranslations } from "next-intl";
+
 export default function Zajecia() {
+  const t = useTranslations("groupclasses");
   return (
     <>
       <section className="px-6 xl:px-24 py-16 xl:py-20">
         <h1 className="text-center text-5xl xl:text-6xl mb-16 xl:mb-20 font-bold text-customGold">
-          Grafik zajęć
+          {t("header")}
         </h1>
         <div className="flex justify-center">
           <iframe

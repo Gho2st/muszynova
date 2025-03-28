@@ -44,7 +44,7 @@ export default function Services({ t }) {
           </ul>
           <div className="flex items-center justify-center">
             <Button
-              text="Odkrywam"
+              text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
               link=""
@@ -76,7 +76,7 @@ export default function Services({ t }) {
           </ul>
           <div className="flex items-center justify-center">
             <Button
-              text="Odkrywam"
+              text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
               link=""
@@ -100,7 +100,7 @@ export default function Services({ t }) {
           </ul>
           <div className="flex items-center justify-center">
             <Button
-              text="Odkrywam"
+              text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
               link=""
@@ -124,7 +124,7 @@ export default function Services({ t }) {
           </ul>
           <div className="flex items-center justify-center">
             <Button
-              text="Odkrywam"
+              text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
               link=""

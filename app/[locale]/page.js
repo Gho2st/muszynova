@@ -28,6 +28,7 @@ export default function Home() {
   const tabout = useTranslations("about");
   const tservices = useTranslations("services");
   const trestaurant = useTranslations("restaurant");
+  const tvirtual = useTranslations("virtualtour");
 
   return (
     <>
@@ -35,7 +36,7 @@ export default function Home() {
       <About t={tabout} />
       <Services t={tservices} />
       <Restaurant t={trestaurant} />
-      <VirtualTour />
+      <VirtualTour t={tvirtual} />
     </>
   );
 }
