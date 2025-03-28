@@ -137,7 +137,7 @@
             },
             "card3": {
                 "header": "NOve standardy",
-                "button": "Park Rekreacyjno Sportowy",
+                "button": "Park",
                 "text": "Aktywne spędzanie wolnego czasu na novo, z frajdą. Zachęcamy do ruchu od najmłodszych lat, jesteśmy do tego przygotowani. Cztery nowocześnie wyposażone strefy aktywności wraz z zapleczem czekają na sportowców zawodowych, juniorów, rodziny i użytkowników indywidualnych."
             }
         }
@@ -291,7 +291,7 @@
             "card1": {
                 "header": "Kręgle dla dzieci",
                 "text": "Kręgle to nie tylko gra dla dorosłych, ale także doskonała forma rozrywki dla najmłodszych. Kolorowe kręgle przyciągają uwagę dzieci, tworząc przy tym dynamiczną i radosną atmosferę. To świetna zabawa, i sposób na rozwijanie umiejętności motorycznych, precyzji oraz współpracy z rówieśnikami.",
-                "button": "Kontakt"
+                "button": "Galeria"
             },
             "card2": {
                 "header": "Urodziny",
@@ -414,19 +414,19 @@
         "header2": "Co nas wyróżnia?",
         "text1": "W Parku Muszynova pragnęliśmy stworzyć miejsce gdzie razem ze swoimi przyjaciółmi, możecie rywalizować i dobrze się bawić. Dla miłośników strategii i precyzji oferujemy profesjonalny stół bilardowy oraz stoły do tenisa stołowego, na których możecie poprawić swoje umiejętności koncentracji czy koordynacji wzrokowo-ruchowej. Dodatkowo, dla tych, którzy cenią szybkie i emocjonujące rozgrywki, przygotowaliśmy stół do piłkarzyków i air hockey’a.",
         "text2": "Przyjazna atmosfera, nowoczesne wyposażenie i doskonała rozrywka sprawią, że czas spędzony w Muszynova będzie nie tylko aktywny, ale także niezwykle przyjemny. Zapraszamy do odkrywania fascynującego świata na noVo.",
-        "button": "Cennik",
+        "button": "About Us",
         "cards": {
             "header": "Sala Gier",
             "text": "W naszej sali gier znajdziesz atrakcje, które dostarczą niezapomnianych chwil zarówno indywidualnie, jak i w gronie przyjaciół czy rodziny. Profesjonalny stół do bilarda daje możliwość rywalizacji i doskonalenia swoich umiejętności, tworząc atmosferę sportowej pasji. Stoliki do piłkarzyków i air hockey’a, z kolei, przenoszą graczy w świat emocji i szybkiej akcji. W Muszynova kładziemy nacisk nie tylko na aktywność fizyczną, ale także na całościową przyjemność z czasu spędzonego w naszym centrum rekreacyjnym. Zapraszamy do odkrywania fascynującego świata gier i zabaw w Muszynova!",
             "card1": {
                 "header": "Bilard",
                 "text": "Bilard to doskonała zabawa, ale także świetny sposób na rozwijanie koncentracji, precyzji i umiejętności strategicznego planowania. Gra w bilard umożliwia budowanie strategii i taktyki. Bez względu na poziom zaawansowania, bilard jest dostępny dla wszystkich, a jednocześnie może dostarczyć emocji zarówno amatorom, jak i zawodowcom.",
-                "button": "Kontakt"
+                "button": "Galeria"
             },
             "card2": {
                 "header": "Piłkarzyki",
                 "text": "Piłkarzyki doskonale łączą elementy współzawodnictwa i zabawy, sprawiając, że każda rozgrywka staje się niezapomnianym doświadczeniem dla wszystkich uczestników.",
-                "button": "Kontakt"
+                "button": "Cennik"
             },
             "card3": {
                 "header": "Cymbergaj",
@@ -440,19 +440,19 @@
         "header2": "Co nas wyróżnia?",
         "text1": "Serce naszej sali multimedialnej stanowi najnowsze PlayStation, gdzie zapewniamy dostęp do najlepszych gier i rozrywek dla fanów konsolowej zabawy.",
         "text2": "Od ekscytujących przygód po emocjonujące rozgrywki sportowe, każdy znajdzie coś dla siebie. A to wszystko na wygodnych pufach, które stwarzają idealne warunki do zanurzenia się w świat wirtualnej rozrywki.",
-        "button": "Cennik",
+        "button": "O Nas",
         "cards": {
             "header": "Sala Multimedialna",
             "text": "Wyposażona w konsolę PlayStation oraz system wirtualnej rzeczywistości (VR), sala multimedialna to miejsce, gdzie gracze mogą zanurzyć się w fascynujące światy wirtualne. Bez względu na to, czy ktoś preferuje dynamiczne gry akcji czy też eksploracyjne przygody w VR, nasza sala umożliwia pełną swobodę wyboru rozrywki.",
             "card1": {
                 "header": "PlayStation",
                 "text": "Zapraszamy Cię do naszej nowoczesnej sali multimedialnej, gdzie świat PlayStation staje się prawdziwą przygodą! Czekają na Ciebie najnowsze gry, niezapomniane emocje i niezrównane doznania w świecie wirtualnej rozrywki.",
-                "button": "Kontakt"
+                "button": "Galeria"
             },
             "card2": {
                 "header": "VR",
                 "text": "Zapraszamy Cię do odkrycia nowego wymiaru rozrywki w naszej wyjątkowej sali multimedialnej z wirtualną rzeczywistością (VR). To miejsce, gdzie granice rzeczywistości zlewają się z fantazją, tworząc niezapomniane doświadczenia.",
-                "button": "Kontakt"
+                "button": "Cennik"
             },
             "card3": {
                 "header": "Urodziny",
@@ -538,7 +538,7 @@
                 "text1": "Godziny Otwarcia",
                 "text2": "Poniedziałek - Piątek 16:00 - 20:00",
                 "text3": "Sobota - Niedziela 11:00 - 21:00",
-                "button": "Park Rekreacyjno Sportowy"
+                "button": "Park"
             },
             "card6": {
                 "header": "Siłownia",
@@ -559,7 +559,9 @@
             "button": "Wyślij wiadomość",
             "sending": "Wysyłanie...",
             "message1": "Dziękujęmy za przesłanie formularza!",
-            "message2": "Postaramy się odpowiedzieć tak szybko, jak to możliwe."
+            "message2": "Postaramy się odpowiedzieć tak szybko, jak to możliwe.",
+            "error": "Proszę uzupełnij wszystkie wymagane pola.",
+            "error2": "Proszę zaznacz, że nie jesteś robotem przed wysłaniem."
         }
     },
     "metadata": {
@@ -570,6 +572,78 @@
         "contact": {
             "title": "Muszynova - Kontakt - Park i Restauracja w Muszynie",
             "description": "Skontaktuj się z Muszynova! Park rekreacyjno-sportowy i Restauracja w Muszynie – ul. Złockie 77c, tel. +48 509 445 000, biuro@muszynova.pl."
+        },
+        "aboutus": {
+            "title": "O Nas - Muszynova w Muszynie",
+            "description": "Poznaj Muszynova – nowoczesny park rekreacyjno-sportowy i restauracja w Muszynie. Oferujemy sport, rozrywkę i beskidzkie smaki dla każdego!"
+        },
+        "park": {
+            "title": "Park Rekreacyjno-Sportowy Muszynova - Aktywność w Muszynie",
+            "description": "Park Rekreacyjno-Sportowy Muszynova w Muszynie – siłownia, fitness, squash, rowery, hala sportowa, sala zabaw. Rozrywka i sport dla każdego!"
+        },
+        "gym": {
+            "title": "Siłownia Muszynova - Treningi i Karnety w Muszynie",
+            "description": "Siłownia Muszynova w Muszynie – nowoczesny sprzęt, trenerzy personalni, plany treningowe i karnety. Popraw kondycję i osiągnij cele fitness!"
+        },
+        "fitness": {
+            "title": "Fitness Muszynova - Zajęcia w Muszynie",
+            "description": "Fitness w Muszynova – zajęcia dla dzieci i dorosłych w Muszynie. Treningi personalne, grupowe, pilates – popraw kondycję i ciesz się ruchem!"
+        },
+        "squash": {
+            "title": "Squash Muszynova - Kort w Muszynie",
+            "description": "Squash w Muszynova – jedyny profesjonalny kort w Muszynie. Graj 7 dni w tygodniu, rezerwuj online, popraw kondycję i ciesz się dynamiczną grą!"
+        },
+        "multimediaroom": {
+            "title": "Sala Multimedialna Muszynova – Nowoczesna Rozrywka w Muszynie",
+            "description": "Odkryj nowoczesną Salę Multimedialną w Muszynovej! Interaktywne gry, wirtualna rzeczywistość i niezapomniana rozrywka dla całej rodziny. Sprawdź, co na Ciebie czeka!"
+        },
+        "gameroom": {
+            "title": "Sala Gier Muszynova - Rozrywka w Muszynie",
+            "description": "Sala Gier Muszynova w Muszynie – bilard, piłkarzyki, cymbergaj, tenis stołowy dla każdego. Aktywna rozrywka, rywalizacja i zabawa – odwiedź nas!"
+        },
+        "climbingwall": {
+            "title": "Ścianka Wspinaczkowa Muszynova",
+            "description": "Ścianka Wspinaczkowa Muszynova w Muszynie – bezpieczne zajęcia grupowe, indywidualne, dla szkół. Wspinaczka dla dzieci i dorosłych na każdym poziomie!"
+        },
+        "minibowling": {
+            "title": "Mini Kręgielnia Muszynova - Muszyna",
+            "description": "Mini Kręgielnia Muszynova w Muszynie – zabawa dla dzieci, dorosłych, grup. Urodziny, integracje, kręgle w przyjaznej atmosferze – sprawdź nas!"
+        },
+        "playroom": {
+            "title": "Sala Zabaw Muszynova - Muszyna",
+            "description": "Sala Zabaw Muszynova w Muszynie – dla dzieci: małpi gaj, animacje, urodziny, gry. Bezpieczna opieka podczas treningu rodziców – radość i rozwój!"
+        },
+        "bikerental": {
+            "title": "Wypożyczalnia Rowerów Muszynova",
+            "description": "Wypożyczalnia Rowerów Muszynova w Muszynie – rowery dla każdego, trasy w okolicy, 7 dni w tygodniu. Odkrywaj region aktywnie – sprawdź cennik!"
+        },
+        "sportshall": {
+            "title": "Hala Sportowa Muszynova - Muszyna",
+            "description": "Hala Sportowa Muszynova w Muszynie – wynajem, gry zespołowe: koszykówka, siatkówka, badminton. Oferta dla szkół i pasjonatów sportu!"
+        },
+        "restaurant": {
+            "title": "Restauracja Muszynova - Smaki Beskidu w Muszynie",
+            "description": "Restauracja Muszynova w Muszynie – regionalna kuchnia beskidzka, pizza, napoje, imprezy, konferencje. Smacznie i nowocześnie – odwiedź nas!"
+        },
+        "pricing": {
+            "title": "Cennik Parku Rekreacyjno Sportowego - Muszynova",
+            "description": "Poznaj aktualny cennik usług i produktów oferowanych przez Muszynova. Sprawdź szczegóły i wybierz najlepszą ofertę dla siebie!"
+        },
+        "groupclasses": {
+            "title": "Zajęcia Grupowe Muszynova - Muszyna",
+            "description": "Zajęcia grupowe w Muszynova – fitness, wspinaczka, squash i więcej w Muszynie. Dołącz do grupowych treningów i ciesz się aktywnością w zespole!"
+        },
+        "gallery": {
+            "title": "Galeria - Muszynova",
+            "description": "Zapraszamy do galerii Muszynova! Zobacz zdjęcia parku i restauracji, które ukazują piękno i wyjątkowy klimat naszego miejsca."
+        },
+        "parkgallery": {
+            "title": "Galeria Parku Rekreacyjno-Sportowego - Muszynova",
+            "description": "Zapraszamy do galerii parku rekreacyjno-sportowego Muszynova. Zobacz tereny do aktywnego wypoczynku, sportowe atrakcje i piękno przyrody!"
+        },
+        "restaurantgallery": {
+            "title": "Galeria Restauracji - Muszynova",
+            "description": "Odkryj galerię zdjęć restauracji Muszynova. Zobacz wyjątkowe wnętrza pełne elegancji, apetyczne dania przygotowane z pasją oraz niepowtarzalną atmosferę, która zachwyca gości i sprawia, że każda wizyta staje się niezapomniana!"
         }
     }
 }

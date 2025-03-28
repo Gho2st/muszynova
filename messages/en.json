@@ -137,7 +137,7 @@
             },
             "card3": {
                 "header": "New Standards",
-                "button": "Recreational-Sports Park",
+                "button": "Park",
                 "text": "Active leisure time in a new way, with fun. We encourage movement from an early age and are well-prepared for it. Four modernly equipped activity zones with facilities await professional athletes, juniors, families, and individual users."
             }
         }
@@ -291,7 +291,7 @@
             "card1": {
                 "header": "Bowling for Kids",
                 "text": "Bowling isn’t just a game for adults – it’s also a fantastic form of entertainment for the little ones. Colorful pins catch children’s attention, creating a dynamic and joyful atmosphere. It’s great fun and a way to develop motor skills, precision, and teamwork with peers.",
-                "button": "Contact"
+                "button": "Gallery"
             },
             "card2": {
                 "header": "Birthdays",
@@ -414,19 +414,19 @@
         "header2": "What Makes Us Unique?",
         "text1": "At Muszynova Park, we wanted to create a place where you can compete and have fun with your friends. For fans of strategy and precision, we offer a professional billiards table and table tennis tables where you can improve your concentration and hand-eye coordination skills. Additionally, for those who enjoy fast-paced and thrilling games, we’ve prepared a foosball table and an air hockey table.",
         "text2": "A friendly atmosphere, modern equipment, and excellent entertainment ensure that the time spent at Muszynova is not only active but also incredibly enjoyable. We invite you to discover the fascinating world in a new way.",
-        "button": "Pricing",
+        "button": "O Nas",
         "cards": {
             "header": "Game Room",
             "text": "In our game room, you’ll find attractions that provide unforgettable moments, whether you’re playing solo or with friends and family. The professional billiards table offers the chance to compete and hone your skills, creating an atmosphere of sporting passion. Meanwhile, the foosball and air hockey tables immerse players in a world of excitement and fast-paced action. At Muszynova, we focus not only on physical activity but also on the overall enjoyment of your time at our recreational center. We invite you to explore the fascinating world of games and fun at Muszynova!",
             "card1": {
                 "header": "Billiards",
                 "text": "Billiards is not only great fun but also an excellent way to develop concentration, precision, and strategic planning skills. Playing billiards allows you to build strategies and tactics. Regardless of your skill level, billiards is accessible to everyone while offering excitement for both amateurs and professionals.",
-                "button": "Contact"
+                "button": "Gallery"
             },
             "card2": {
                 "header": "Foosball",
                 "text": "Foosball perfectly combines competition and fun, making every game an unforgettable experience for all participants.",
-                "button": "Contact"
+                "button": "Pricing"
             },
             "card3": {
                 "header": "Air Hockey",
@@ -440,19 +440,19 @@
         "header2": "What Makes Us Unique?",
         "text1": "The heart of our multimedia room is the latest PlayStation, where we provide access to the best games and entertainment for console gaming fans.",
         "text2": "From thrilling adventures to exciting sports matches, there’s something for everyone. All of this can be enjoyed on comfortable bean bags, creating the perfect setting to immerse yourself in the world of virtual entertainment.",
-        "button": "Pricing",
+        "button": "About Us",
         "cards": {
             "header": "Multimedia Room",
             "text": "Equipped with a PlayStation console and a virtual reality (VR) system, the multimedia room is a place where gamers can dive into fascinating virtual worlds. Whether someone prefers fast-paced action games or exploratory VR adventures, our room offers complete freedom of entertainment choice.",
             "card1": {
                 "header": "PlayStation",
                 "text": "We invite you to our modern multimedia room, where the world of PlayStation becomes a true adventure! The latest games, unforgettable emotions, and unparalleled experiences in virtual entertainment await you.",
-                "button": "Contact"
+                "button": "Gallery"
             },
             "card2": {
                 "header": "VR",
                 "text": "We invite you to discover a new dimension of entertainment in our unique multimedia room with virtual reality (VR). It’s a place where the boundaries of reality blend with fantasy, creating unforgettable experiences.",
-                "button": "Contact"
+                "button": "Pricing"
             },
             "card3": {
                 "header": "Birthdays",
@@ -538,7 +538,7 @@
                 "text1": "Opening Hours",
                 "text2": "Monday - Friday 4:00 PM - 8:00 PM",
                 "text3": "Saturday - Sunday 11:00 AM - 9:00 PM",
-                "button": "Recreational-Sports Park"
+                "button": "Park"
             },
             "card6": {
                 "header": "Gym",
@@ -566,12 +566,84 @@
     },
     "metadata": {
         "homepage": {
-            "title": "Muszynova - Recreational-Sports Park and Restaurant in Muszyna",
-            "description": "Discover Muszynova – a recreational-sports park with a gym, climbing wall, squash, and more. Eat healthy at Muszynova Restaurant with Beskid flavors!"
+            "title": "Muszynova - Recreational and Sports Park & Restaurant in Muszyna",
+            "description": "Discover Muszynova – a recreational and sports park with a gym, climbing wall, squash, and more. Enjoy healthy dining at Muszynova Restaurant with Beskid flavors!"
         },
         "contact": {
-            "title": "Muszynova - Contact - Park & Restaurant in Muszyna",
-            "description": "Contact Muszynova! Recreational-sports park & restaurant in Muszyna – Złockie 77c St., +48 509 445 000, biuro@muszynova.pl."
+            "title": "Muszynova - Contact - Park and Restaurant in Muszyna",
+            "description": "Contact Muszynova! Recreational and Sports Park and Restaurant in Muszyna – Złockie 77c St., tel. +48 509 445 000, biuro@muszynova.pl."
+        },
+        "aboutus": {
+            "title": "About Us - Muszynova in Muszyna",
+            "description": "Learn about Muszynova – a modern recreational and sports park and restaurant in Muszyna. We offer sports, entertainment, and Beskid flavors for everyone!"
+        },
+        "park": {
+            "title": "Muszynova Recreational and Sports Park - Activities in Muszyna",
+            "description": "Muszynova Recreational and Sports Park in Muszyna – gym, fitness, squash, bikes, sports hall, playroom. Entertainment and sports for everyone!"
+        },
+        "gym": {
+            "title": "Muszynova Gym - Training and Passes in Muszyna",
+            "description": "Muszynova Gym in Muszyna – modern equipment, personal trainers, training plans, and passes. Improve your fitness and achieve your goals!"
+        },
+        "fitness": {
+            "title": "Muszynova Fitness - Classes in Muszyna",
+            "description": "Fitness at Muszynova – classes for kids and adults in Muszyna. Personal and group training, pilates – improve your fitness and enjoy movement!"
+        },
+        "squash": {
+            "title": "Muszynova Squash - Court in Muszyna",
+            "description": "Squash at Muszynova – the only professional court in Muszyna. Play 7 days a week, book online, improve your fitness, and enjoy a dynamic game!"
+        },
+        "multimediaroom": {
+            "title": "Muszynova Multimedia Room – Modern Entertainment in Muszyna",
+            "description": "Discover the modern Multimedia Room at Muszynova! Interactive games, virtual reality, and unforgettable entertainment for the whole family. See what awaits you!"
+        },
+        "gameroom": {
+            "title": "Muszynova Game Room - Entertainment in Muszyna",
+            "description": "Muszynova Game Room in Muszyna – billiards, foosball, air hockey, table tennis for everyone. Active entertainment, competition, and fun – visit us!"
+        },
+        "climbingwall": {
+            "title": "Muszynova Climbing Wall",
+            "description": "Muszynova Climbing Wall in Muszyna – safe group and individual classes, for schools. Climbing for kids and adults at all levels!"
+        },
+        "minibowling": {
+            "title": "Muszynova Mini Bowling - Muszyna",
+            "description": "Muszynova Mini Bowling in Muszyna – fun for kids, adults, and groups. Birthdays, team-building, bowling in a friendly atmosphere – check us out!"
+        },
+        "playroom": {
+            "title": "Muszynova Playroom - Muszyna",
+            "description": "Muszynova Playroom in Muszyna – for kids: jungle gym, animations, birthdays, games. Safe childcare during parents’ training – joy and development!"
+        },
+        "bikerental": {
+            "title": "Muszynova Bike Rental",
+            "description": "Muszynova Bike Rental in Muszyna – bikes for everyone, local trails, 7 days a week. Explore the region actively – check our pricing!"
+        },
+        "sportshall": {
+            "title": "Muszynova Sports Hall - Muszyna",
+            "description": "Muszynova Sports Hall in Muszyna – rentals, team games: basketball, volleyball, badminton. Offer for schools and sports enthusiasts!"
+        },
+        "restaurant": {
+            "title": "Muszynova Restaurant - Beskid Flavors in Muszyna",
+            "description": "Muszynova Restaurant in Muszyna – regional Beskid cuisine, pizza, drinks, events, conferences. Delicious and modern – visit us!"
+        },
+        "pricing": {
+            "title": "Pricing for Muszynova Recreational and Sports Park",
+            "description": "Discover the current pricing for services and products at Muszynova. Check the details and choose the best offer for you!"
+        },
+        "groupclasses": {
+            "title": "Muszynova Group Classes - Muszyna",
+            "description": "Group classes at Muszynova – fitness, climbing, squash, and more in Muszyna. Join group training and enjoy team activities!"
+        },
+        "gallery": {
+            "title": "Gallery - Muszynova",
+            "description": "Welcome to the Muszynova gallery! See photos of the park and restaurant, showcasing the beauty and unique atmosphere of our place."
+        },
+        "parkgallery": {
+            "title": "Muszynova Recreational and Sports Park Gallery",
+            "description": "Welcome to the Muszynova Recreational and Sports Park gallery. See areas for active leisure, sports attractions, and the beauty of nature!"
+        },
+        "restaurantgallery": {
+            "title": "Muszynova Restaurant Gallery",
+            "description": "Discover the Muszynova Restaurant photo gallery. See elegant interiors, appetizing dishes prepared with passion, and a unique atmosphere that delights guests and makes every visit unforgettable!"
         }
     }
 }

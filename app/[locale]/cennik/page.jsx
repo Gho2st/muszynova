@@ -1,14 +1,24 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Cennik Parku Rekreacyjno Sportowego - Muszynova",
-  alternates: {
-    canonical: "https://muszynova.pl/cennik",
-  },
-  description:
-    "Poznaj aktualny cennik usług i produktów oferowanych przez Muszynova. Sprawdź szczegóły i wybierz najlepszą ofertę dla siebie!",
-};
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.pricing" });
+
+  const path = routing.pathnames["/cennik"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Cennik() {
   const t = useTranslations("pricing");

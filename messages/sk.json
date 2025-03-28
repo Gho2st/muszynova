@@ -1,0 +1,577 @@
+{
+    "nav": {
+        "links": {
+            "link1": "O nás",
+            "link2": "Reštaurácia",
+            "link3": "Cenník",
+            "link4": "Skupinové aktivity",
+            "link5": "Galéria",
+            "link6": "Kontakt",
+            "park": "Rekreačno-športový park"
+        },
+        "parkItems": {
+            "park": "Park",
+            "gym": "Posilňovňa",
+            "fitness": "Fitness",
+            "sportshall": "Športová hala",
+            "minibowling": "Mini bowling",
+            "squash": "Squash",
+            "multimediaroom": "Multimediálna miestnosť",
+            "climbingwall": "Lezecká stena",
+            "gamesroom": "Herná miestnosť",
+            "playroom": "Detská herňa",
+            "bikerental": "Požičovňa bicyklov"
+        },
+        "button": "Klientska zóna"
+    },
+    "footer": {
+        "header": "Poďme sa porozprávať!",
+        "info": {
+            "info1": {
+                "address": "Adresa",
+                "text": "Muszyna ul. Złockie 77c, 33-370"
+            },
+            "info2": {
+                "address": "Telefón",
+                "text": "+48 509 445 000"
+            },
+            "info3": {
+                "address": "Email",
+                "text": "biuro@muszynova.pl"
+            },
+            "info4": {
+                "address": "Otváracie hodiny",
+                "text": "11:00 - 21:00"
+            }
+        },
+        "social": "Naše sociálne siete"
+    },
+    "hero": {
+        "welcome": "Vitaj v Muszynova! Food & Fun na objavovanie na"
+    },
+    "about": {
+        "header": "Šport a zábava pre malých aj veľkých na nOvej úrovni",
+        "button": "Virtuálna prehliadka",
+        "text": "Existuje miesto, kde môže byť každý sám sebou a tráviť čas tak, ako má rád? Táto myšlienka nás sprevádzala pri navrhovaní Muszynova. Aby sa každý cítil pohodlne. S myšlienkou na najmenších, tínedžerov a dospelých, rodiny a jednotlivcov, návštevníkov aj miestnych obyvateľov, ako aj organizované skupiny, vznikol náš Rekreačno-športový park. Otvárame dvere zábave a aktivite na novej úrovni kvality."
+    },
+    "services": {
+        "header": "Naše športové a relaxačné zóny",
+        "cards": {
+            "button": "Objavujem",
+            "1": {
+                "header": "Zóna Active Sport",
+                "text1": "Lezecká stena",
+                "text2": "Športová hala",
+                "text3": "Squash",
+                "text4": "Požičovňa bicyklov"
+            },
+            "2": {
+                "header": "Zóna Fun & Kids",
+                "text1": "Mini bowling",
+                "text2": "Detská herňa",
+                "text3": "Herná miestnosť",
+                "text4": "Multimediálna miestnosť"
+            },
+            "3": {
+                "header": "Zóna Fitness Sport",
+                "text1": "Posilňovňa",
+                "text2": "Fitness"
+            },
+            "4": {
+                "header": "Zóna Relax Sport",
+                "text1": "Špecializované trénerské kabinety",
+                "text2": "Masáže a regenerácia"
+            }
+        }
+    },
+    "restaurant": {
+        "header": "Reštaurácia Muszynova",
+        "header2": "Staviame na nOvú kvalitu a objavovanie beskydských chutí na novo",
+        "text": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež. Dospelých pozývame na drink.",
+        "items": {
+            "item1": {
+                "header": "Lokálne suroviny",
+                "text": "Podporujeme chute beskydskej kuchyne. Objavujeme na nOvo a pridávame moderný šmrnc."
+            },
+            "item2": {
+                "header": "Detské chute",
+                "text": "Myslíme na najmenších, aby mali radosť z času u nás. Vybláznené deti radi zjedia jedlo. Obľúbené hranolky? A prečo nie zo sladkých zemiakov. Rozmaznávame chuťové poháriky a učíme dobrým návykom. Na zdravie."
+            },
+            "item3": {
+                "header": "NOvé štandardy",
+                "text": "Chutné jedlo, zdravší výber, ale aj pohodlná atmosféra. Potešenie objavované na nOvo aj z pobytu v krásnom interiéri s loftovým charakterom."
+            },
+            "item4": {
+                "header": "Zdravší výber",
+                "text": "Pizza môže byť zdravšou voľbou, ak použijeme celozrnnú múku. Nejedz len, vychutnávaj, ale aj sa s nami vyživuj."
+            },
+            "item5": {
+                "header": "Pre dospelých",
+                "text": "Chutná káva, ale aj niečo s percentami. Ľahký šalát, alebo príjemný kúsok domáceho dezertu? Ideálne miesto na posedenie pri knihe alebo príjemný večer s milovanou osobou."
+            },
+            "item6": {
+                "header": "Oslavy a podujatia",
+                "text": "Samostatná sála na zorganizovanie oslavy s atrakciami pre najmenších. Dospelí si konečne pokračujú pri stole a deti… sľubujeme, že pre všetkých zabezpečíme food & fun."
+            }
+        }
+    },
+    "virtualtour": {
+        "header": "Virtuálna prehliadka"
+    },
+    "aboutus": {
+        "header": "Čo je Muszynova?",
+        "header2": "Čím sa odlišujeme?",
+        "text": "Muszynova – názov je fantazijnou kombináciou lokality „Muszyna“ so slovom „moderný“ v medzinárodnom zápise, pretože sme otvorení pre všetkých. Zároveň je to prísľub, pozvanie na objavovanie známeho kúpeľného mestečka akoby „na novo“. V novom prevedení, v novom štandarde, pre malých aj veľkých, pozývame miestnych obyvateľov a turistov, jednotlivo aj skupinovo. Aktívne, chutne, bez kompromisov – to je náš nový prístup. Moderný park a reštaurácia vás pozývajú stráviť čas v Muszyne inak, tak, ako to máte radi. Objavte znova svet jedla a zábavy v krásnom prírodnom prostredí Beskidu Sądeckého.",
+        "button": "Galéria",
+        "cards": {
+            "text": "Muszyna je známe a obľúbené kúpeľné mestečko, ktoré sa v posledných rokoch mimoriadne dynamicky rozvíja a priťahuje turistov z rôznych kútov sveta. Toto očarujúce kúpeľné miesto, obklopené Beskidom Sądeckým, očarí prírodou a množstvom atrakcií, medzi ktoré patria napríklad zmyslové záhrady, historické pamiatky, horské a cyklistické trasy, ako aj pramene minerálnej vody.",
+            "card1": {
+                "header": "Muszyna - lokalita",
+                "button": "Kontakt",
+                "text": "V tichu, s výhľadom na zeleň lesov, priamo pri trase, s vzdialeným šumom rieky Poprad. Tak u nás strávite čas – je to nová kvalita interiéru, ale aj krásne okolie Beskidu."
+            },
+            "card2": {
+                "header": "Jedlo – reštaurácia",
+                "button": "Reštaurácia",
+                "text": "Krátky jedálny lístok v modernom prevedení s beskydským nádychom. Ľahko, výživne, pre deti aj dospelých. Chutná káva, drinky, a pre deti obľúbené pizze, dezerty v zdravšom prevedení. S nami si môžete zorganizovať aj oslavy s atrakciami."
+            },
+            "card3": {
+                "header": "NOvé štandardy",
+                "button": "Park",
+                "text": "Aktívne trávenie voľného času na novo, so zábavou. Podporujeme pohyb od najmenšieho veku a sme na to pripravení. Štyri moderne vybavené zóny aktivity spolu so zázemím čakajú na profesionálnych športovcov, juniorov, rodiny a jednotlivcov."
+            }
+        }
+    },
+    "park": {
+        "header": "Rekreačno-športový park",
+        "text": "Aktivita je pre nás rozmanitosť. Tak, aby si z nej každý mohol vziať zábavu, dobre stráviť čas, ako má rád, bez ohľadu na úroveň pokročilosti či športovú disciplínu. Sme pripravení na zábavu aj na poriadny tréning. Pre malých aj veľkých, amatérov aj profesionálov. Profesionálne vybavenie, moderné zázemie v krásnom interiéri – to všetko na vás čaká v Muszynova. A vy objavujte!",
+        "button": "Čítať viac",
+        "header2": "Čím sa odlišujeme?",
+        "cards": {
+            "text": "Muszyna je známe a obľúbené kúpeľné mestečko, ktoré sa v posledných rokoch mimoriadne dynamicky rozvíja a priťahuje turistov z rôznych kútov sveta. Toto očarujúce kúpeľné miesto, obklopené Beskidom Sądeckým, očarí prírodou a množstvom atrakcií, medzi ktoré patria napríklad zmyslové záhrady, historické pamiatky, horské a cyklistické trasy, ako aj pramene minerálnej vody.",
+            "card1": {
+                "header": "Športová hala",
+                "text": "s certifikovaným, viacvrstvovým športovým povrchom Gerflor Teraflex. Pozývame vás na tímové športy: halový futbal, volejbal, basketbal, hádzanú a bedminton, ako aj na gymnastiku.",
+                "button": "Športová hala"
+            },
+            "card2": {
+                "header": "Mini bowling",
+                "text": "vybavený dvoma dráhami na hru. V priestoroch bowlingu sme mysleli aj na relaxačnú zónu pre používateľov čakajúcich na začiatok hry.",
+                "button": "Mini bowling"
+            },
+            "card3": {
+                "header": "Lezecká stena",
+                "text": "určená pre amatérov aj profesionálov. Naša konštrukcia je moderný priestor s geometrickými tvarmi a vyvýšeninami s plochou 90 m². Rozmery steny umožňujú jej súčasné využitie trom osobám. Má 6 horných istiacich bodov a 18 individuálnych istiacich bodov.",
+                "button": "Lezecká stena"
+            },
+            "card4": {
+                "header": "Detská herňa",
+                "text": "vybavená hracou konštrukciou, v ktorej na deti čakajú rôzne atrakcie: labyrinty, tunely, rebríky, šmýkačka, loptičky. Okrem toho je v herni vyčlenená zóna pre najmenších, vybavená mäkkými vankúšmi, bazénom s loptičkami a manipulačno-senzorickými tabuľami, ktoré umožňujú najmenším hrať sa aj učiť.",
+                "button": "Detská herňa"
+            },
+            "card5": {
+                "header": "Miestnosť na squash",
+                "text": "vyrobená v súlade s pokynmi WSF (Svetová federácia squashe). Kurty sú pripravené tak, aby umožňovali tímovú súťaž aj relax prostredníctvom individuálneho tréningu.",
+                "button": "Squash"
+            },
+            "card6": {
+                "header": "Požičovňa bicyklov",
+                "text": "s rôznorodou ponukou bicyklov a príslušenstva pre deti a dospelých, ktorí preferujú trávenie času na čerstvom vzduchu. Nájdete tu pánske, dámske a detské bicykle, ako aj vybavenie potrebné na bezpečnú jazdu.",
+                "button": "Požičovňa bicyklov"
+            },
+            "card7": {
+                "header": "Miestnosť na stolný tenis",
+                "text": "vybavená dvoma stolmi na obľúbenú disciplínu malých aj veľkých – populárnu hru v pingpongu. Atrakcia je určená pre osoby rôznych vekových kategórií.",
+                "button": "Herná miestnosť"
+            },
+            "card8": {
+                "header": "Posilňovňa",
+                "text": "umožňuje komplexný kruhový tréning. Nájdete tu vysokokvalitné vybavenie – certifikované a bezpečné pre používateľov. Kardio zóna zahŕňa bežecké pásy, elektromagnetické tréningové bicykle, veslovacie trenažéry, elektromagnetické eliptické trenažéry a steppery.",
+                "button": "Posilňovňa"
+            },
+            "card9": {
+                "header": "Fitness miestnosť",
+                "text": "Fitness miestnosť umožňuje komplexný kruhový a kardio tréning. Vybavená bežeckými pásmi, elektromagnetickými tréningovými bicyklami, veslovacími trenažérmi, elektromagnetickými eliptickými trenažérmi a stepperm – všetko pre vašu kondíciu a zdravie.",
+                "button": "Fitness"
+            },
+            "card10": {
+                "header": "Multimediálna miestnosť",
+                "text": "Vybavená konzolou PlayStation a systémom virtuálnej reality (VR), multimediálna miestnosť je miesto, kde sa hráči môžu ponoriť do fascinujúcich virtuálnych svetov. Bez ohľadu na to, či niekto preferuje dynamické akčné hry alebo objavné dobrodružstvá vo VR, naša miestnosť ponúka úplnú slobodu výberu zábavy.",
+                "button": "Multimediálna miestnosť"
+            }
+        }
+    },
+    "gym": {
+        "header": "Posilňovňa",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Ak túžite efektívne zlepšiť svoju kondíciu a dosiahnuť formu s podporou kvalifikovaného tímu, naša posilňovňa v Muszyne je pre vás ideálnym miestom.",
+        "text2": "Nájdete tu vysokokvalitné vybavenie – certifikované a bezpečné pre používateľov. Podľa vášho tréningového plánu a preferencií je k dispozícii zóna s voľnými činkami, zóna so strojmi a kardio zóna.",
+        "button": "Kúpiť permanentku",
+        "cards": {
+            "header": "Posilňovňa",
+            "text": "Ponúkame prístup k moderným zariadeniam, ale zamestnávame aj skúsených trénerov, ktorí sú pripravení prispôsobiť tréningový plán špeciálne vašim potrebám. Vďaka tomuto personalizovanému prístupu a odborným znalostiam nášho personálu ľahko dosiahnete požadované výsledky. Veríme, že spoločne môžeme vytvoriť plán, ktorý splní vaše očakávania a poskytne vám motiváciu na pravidelné tréningy a udržanie zdravého životného štýlu.",
+            "card1": {
+                "header": "Konzultácia",
+                "text": "Ak neviete, kde začať, naši skúsení tréneri s vami absolvujú konzultáciu, podrobne analyzujúc vaše ciele, tréningovú históriu a prípadné fyzické obmedzenia. Ukážu vám, ako správne používať všetky dostupné zariadenia.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Tréningový plán",
+                "text": "Tréneri vám môžu vytvoriť personalizovaný tréningový plán prispôsobený vašim individuálnym potrebám a cieľom. Zabezpečia komplexný prístup, zohľadňujúc vaše aktuálne schopnosti aj fitness ambície, aby ste mohli dosiahnuť optimálne výsledky.",
+                "button": "Skupinové aktivity"
+            },
+            "card3": {
+                "header": "Osobný tréning",
+                "text": "Ponúkame aj osobné tréningy, počas ktorých vám tréner osobne vysvetlí, ako správne vykonávať každé cvičenie. Vďaka tomuto personalizovanému prístupu bude váš tréning ešte efektívnejší a získate podrobné pokyny týkajúce sa techniky, intenzity a progresie.",
+                "button": "O nás"
+            }
+        }
+    },
+    "fitness": {
+        "header": "Fitness",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Fitness aktivity v Parku Muszynova boli vytvorené s ohľadom na zdravie, dobrú kondíciu a radosť z fyzickej aktivity. Bez ohľadu na úroveň pokročilosti, vek či tréningový cieľ, máme niečo pre každého.",
+        "text2": "Naši inštruktori sú pripravení viesť vás cez rôzne formy aktivity, od energických vysoko intenzívnych cvičení až po statické, relaxačné pilatesové lekcie.",
+        "button": "Skupinové aktivity",
+        "cards": {
+            "header": "Fitness aktivity",
+            "text": "Naši fitness inštruktori ponúkajú tréningy, ktoré sa líšia intenzitou, použitím dodatočného zaťaženia či iného vybavenia. Typ tréningu si môžete vybrať sami, podľa toho, či chcete zlepšiť svoju vytrvalosť, alebo sa zamerať na budovanie a posilnenie svalov. Okrem spaľovania kalórií a celkového posilnenia tela je fitness predovšetkým o zábave!",
+            "card1": {
+                "header": "Aktivity pre deti",
+                "text": "Pozývame najmenších, aby spoločne objavovali radosť z pohybu a zdravého životného štýlu v Muszynova. Naše aktivity pre deti rozvíjajú fyzickú zdatnosť a formujú pozitívne návyky, ktoré budú prospešné pre ich zdravie a kondíciu v budúcnosti.",
+                "button": "Detská herňa"
+            },
+            "card2": {
+                "header": "Aktivity pre dospelých",
+                "text": "Pre našich dospelých účastníkov sme v Muszynova pripravili rôznorodé fitness aktivity prispôsobené rôznym úrovniam pokročilosti, ktoré vám pomôžu udržať si dobrú fyzickú formu, ale zároveň budú chvíľou relaxu a úniku od každodenného stresu.",
+                "button": "Cenník"
+            },
+            "card3": {
+                "header": "Individuálne tréningy",
+                "text": "Naši skúsení osobní tréneri pracujú s každým klientom, prispôsobujúc tréningový plán individuálnym potrebám, schopnostiam a ambíciám. Individuálne tréningy vám umožnia zamerať sa na konkrétnu oblasť, ako je zlepšenie sily, redukcia hmotnosti, zvýšenie flexibility alebo celkové zlepšenie zdatnosti.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "sportshall": {
+        "header": "Športová hala",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Naša športová hala je miesto, kde sa šport stáva vášňou a pohyb je spôsobom na zdravie a rozvoj zručností. Je to priestor, ktorý ponúka výborné podmienky na rôzne športové disciplíny, ale zároveň inšpiruje k aktívnemu životnému štýlu a tímovej súťaži.",
+        "text2": "Športová hala je objekt s ihriskom, ktoré môže slúžiť ako ihrisko na basketbal, volejbal, bedminton či hádzanú. Je to miesto plné energie, ktoré vytvára ideálne podmienky pre profesionálnych športovcov aj amatérov.",
+        "button": "Kontakt",
+        "cards": {
+            "header": "Športová hala",
+            "text": "V Muszynova vás srdečne pozývame, aby ste využili našu športovú halu, kde sa pohyb stáva potešením a šport je nielen fyzickou aktivitou, ale aj spoločnou vášňou. Pridajte sa k nám a objavte radosť z pohybu!",
+            "card1": {
+                "header": "Prenájom haly",
+                "text": "Prenájom našej športovej haly je zárukou profesionálnej infraštruktúry, flexibility harmonogramu a podpory skúsených zamestnancov. Dbáme na to, aby každé podujatie prebehlo v priateľskej atmosfére s dodržaním vysokých štandardov bezpečnosti a pohodlia.",
+                "button": "Cenník"
+            },
+            "card2": {
+                "header": "Tímové hry",
+                "text": "Naša hala je prispôsobená na rôzne športové disciplíny, ako sú basketbal, volejbal, hádzaná, bedminton. Flexibilita priestoru umožňuje prispôsobiť usporiadanie haly konkrétnym potrebám, čo znamená, že sme pripravení splniť rôzne očakávania.",
+                "button": "Galéria"
+            },
+            "card3": {
+                "header": "Ponuka pre školy",
+                "text": "Naša športová hala bola vytvorená s cieľom podporovať fyzickú aktivitu a zdravý životný štýl medzi žiakmi. Je možné prenajať si halu na školské alebo mimoškolské aktivity.",
+                "button": "O nás"
+            }
+        }
+    },
+    "minibowling": {
+        "header": "Mini bowling",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Mini bowling je skvelou formou zábavy, ktorá prináša radosť deťom aj dospelým. Menšie kolky, kratšia vzdialenosť, ale rovnaká dávka zábavy – to všetko čaká na nadšencov mini bowlingu v našom rekreačnom centre.",
+        "text2": "Mini bowling nevyžaduje špeciálne zručnosti, čo ho robí dostupným pre každého. Je to aj skvelá príležitosť stráviť čas s priateľmi alebo rodinou, podporujúc zdravú súťaživosť a vzájomnú zábavu.",
+        "button": "Rezervovať",
+        "cards": {
+            "header": "Mini bowling",
+            "text": "V Muszynova vás srdečne pozývame do nášho moderného bowlingu, kde výborná atmosféra, moderné zázemie a nadšený personál vytvárajú ideálne podmienky na užívanie si tejto klasickej, no zároveň vzrušujúcej hry. Nech je každý hod príležitosťou na úsmev a dobrú zábavu!",
+            "card1": {
+                "header": "Bowling pre deti",
+                "text": "Bowling nie je len hrou pre dospelých, ale aj skvelou formou zábavy pre najmenších. Farebné kolky priťahujú pozornosť detí a vytvárajú dynamickú a radostnú atmosféru. Je to skvelá zábava a spôsob, ako rozvíjať motorické zručnosti, presnosť a spoluprácu s rovesníkmi.",
+                "button": "Galéria"
+            },
+            "card2": {
+                "header": "Narodeniny",
+                "text": "Bowling je výborným spôsobom, ako zorganizovať aktívnu oslavu, ktorá poteší malých aj starších hostí.",
+                "button": "Kontakt"
+            },
+            "card3": {
+                "header": "Skupiny",
+                "text": "Ponúkame možnosť zorganizovať dynamické skupinové aktivity. Je to skvelá voľba pre firmy, školy alebo skupiny priateľov, ktoré hľadajú atraktívnu a integračnú formu trávenia času.",
+                "button": "Reštaurácia"
+            }
+        }
+    },
+    "climbingwall": {
+        "header": "Lezecká stena",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Lezecká stena je ideálnou aktivitou dostupnou celoročne. Inšpiruje k zdolávaniu nových výšok a prekonávaniu vlastných limitov.",
+        "text2": "Naša lezecká stena ponúka nezabudnuteľné zážitky pre lezcov rôznych úrovní pokročilosti, od tých, ktorí začínajú svoje dobrodružstvo s lezením, až po skúsených nadšencov.",
+        "button": "Rezervovať",
+        "cards": {
+            "header": "Lezecká stena",
+            "text": "Bezpečnosť je u nás prioritou. Pevná konštrukcia steny a profesionálne zabezpečenie umožňujú každému lezcovi sústrediť sa na zdolávanie ďalších metrov bez obáv o svoje bezpečie. Naša lezecká stena ponúka rôznorodé trasy prispôsobené zručnostiam a skúsenostiam každého lezca.",
+            "card1": {
+                "header": "Skupinové aktivity",
+                "text": "Pozývame vás na naše skupinové aktivity na lezeckej stene. Naše lekcie sú vytvorené s ohľadom na rôzne úrovne pokročilosti, prispôsobujúc sa zručnostiam a skúsenostiam každého účastníka.",
+                "button": "Skupinové aktivity"
+            },
+            "card2": {
+                "header": "Individuálne aktivity",
+                "text": "Naši skúsení inštruktori prispôsobia program lekcií vašej úrovni pokročilosti, individuálnym cieľom a tempu učenia. Vďaka tomu sa budete môcť sústrediť na konkrétne aspekty lezenia, ktoré sú pre vás najdôležitejšie. Je to aj ideálna voľba pre tých, ktorí si cenia súkromie a chcú sa sústrediť na vlastný pokrok.",
+                "button": "Cenník"
+            },
+            "card3": {
+                "header": "Ponuka pre školy a skupiny",
+                "text": "Pre školy ponúkame vzdelávacie aktivity, kde žiaci môžu získavať lezecké zručnosti pod dohľadom skúsených inštruktorov. Je to skvelá príležitosť na rozvoj fyzickej zdatnosti, formovanie tímových zručností a budovanie sebadôvery.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "playground": {
+        "header": "Detská herňa",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Detská herňa je priestor vytvorený špeciálne pre najmenších, aby sa mohli hrať a aktívne tráviť čas v bezpečnom prostredí. V takejto herni majú deti prístup k rôznym atrakciám, ktoré im prinášajú radosť a zábavu.",
+        "text2": "Môžu využívať kreatívne aktivity a iné formy zábavy. V detskej herni dbáme na to, aby sa každé dieťa cítilo pohodlne a malo príležitosť na interakciu s rovesníkmi. Je to ideálne miesto, kde môžu malí rozvíjať svoje sociálne zručnosti, zdieľať s ostatnými a spolupracovať v skupine.",
+        "button": "O nás",
+        "cards": {
+            "header": "Vy cvičíte a vaše dieťa sa hrá pod dohľadom našich opatrovateľov.",
+            "text": "Zorganizujte narodeniny v Muszynova. Zabezpečujeme výborné podmienky a ponúkame množstvo atrakcií, aby bol tento deň ešte výnimočnejší. K dispozícii máme priestranné sály, ideálne na organizáciu narodeninovej oslavy, tematické dekorácie a animátorky. Pre najmenších zabezpečíme animácie, hry a súťaže. Pre staršie deti máme bohatú ponuku atrakcií, ako mini bowling, multimediálna miestnosť či herná zóna.",
+            "card1": {
+                "header": "Starostlivosť",
+                "text": "Kým sa vy sústredíte na intenzívny tréning, my zabezpečíme bezpečnú a radostnú zábavu pre vaše dieťa. V špeciálne prispôsobenej herni, pod dohľadom opatrovateľa, môže vaše dieťa využívať všetky atrakcie a hrať sa naplno. Dbáme na to, aby sa každé dieťa cítilo pohodlne a mohlo aktívne tráviť čas v bezpečnom prostredí.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Animátorky",
+                "text": "Naše animátorky zabezpečia, aby čas detí bol plný úsmevov. Organizujeme kreatívne hry, súťaže a výtvarné aktivity prispôsobené veku a záujmom detí. Bezpečnosť a pohoda detí sú pre nás prioritou, takže si môžete byť istí, že vaše dieťa bude pod stálou starostlivosťou kvalifikovaných profesionálok, ktoré sa postarajú o každý detail, aby zorganizovali deň plný pozitívnych zážitkov a radosti.",
+                "button": "Pozrieť reštauráciu"
+            },
+            "card3": {
+                "header": "Džungľa",
+                "text": "Sme novým miestom v našom regióne, ktoré ponúka modernú džungľu pre deti. Je to špeciálne vytvorený priestor, kde môžu vaše ratolesti objavovať, hrať sa a rozvíjať svoje zručnosti prostredníctvom interakcie s prvkami prispôsobenými ich veku. Naša inovatívna koncepcia džungle zaručuje, že deti budú mať jedinečnú príležitosť získavať nové zručnosti prostredníctvom hry v bezpečnom a priateľskom prostredí.",
+                "button": "Galéria"
+            }
+        }
+    },
+    "squash": {
+        "header": "Squash",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Naša squashová miestnosť je miesto, kde nadšenci tohto dynamického športu nájdu všetko, čo potrebujú na vzrušujúcu hru.",
+        "text2": "Vybavená profesionálnym kurtom, naša miestnosť je vytvorená pre skúsených hráčov aj pre tých, ktorí s squashom iba začínajú. Príďte, ponorte sa do intenzívneho tempa hry v squashi a zažite nezabudnuteľné emócie!",
+        "button": "Cenník",
+        "cards": {
+            "header": "Squash",
+            "text": "Prijmite výzvu a vyskúšajte si squash – dynamickú a čoraz populárnejšiu športovú disciplínu, ktorá vychádza z tenisu. Je to intenzívna hra, ktorá prináša adrenalín, ale zároveň umožňuje zlepšiť pohyblivosť a kondíciu. Nie je to len efektívny kondičný tréning, ale aj skvelá príležitosť spáliť veľké množstvo kalórií. Hraním squashe sa nielen dobre bavíte, ale aj aktívne staráte o svoje zdravie a fyzickú kondíciu.",
+            "card1": {
+                "header": "Jedinečná v okolí",
+                "text": "Výnimočná squashová miestnosť, ktorá zaručuje nezabudnuteľné zážitky. Jediný priestor tohto typu v Muszyne a okolí!",
+                "button": "O nás"
+            },
+            "card2": {
+                "header": "Online rezervácia",
+                "text": "Rezervujte si svoj squashový kurt pomocou online rezervácie len pár kliknutiami, čím ušetríte čas.",
+                "button": "Rezervovať"
+            },
+            "card3": {
+                "header": "7 dní v týždni",
+                "text": "Pozývame vás využívať našu squashovú miestnosť 7 dní v týždni. Zavolajte na číslo 509 445 000 alebo rezervujte online.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "bikerental": {
+        "header": "Požičovňa bicyklov",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Naša požičovňa bicyklov je ideálnym miestom pre milovníkov aktivity na čerstvom vzduchu. Ponúkame široký výber bicyklov – od mestských po horské – pre deti aj dospelých.",
+        "text2": "Požičajte si bicykel a objavujte malebné trasy Muszyny a okolia, užívajúc si krásu prírody. Je to skvelý spôsob aktívneho oddychu pre každého, bez ohľadu na skúsenosti!",
+        "button": "Cenník",
+        "cards": {
+            "header": "Požičovňa bicyklov",
+            "text": "V Muszynova ponúkame moderné bicykle vo výbornom stave, prispôsobené rôznym trasám a potrebám. Požičajte si bicykel a vydajte sa na dobrodružstvo – od pokojných jázd po náročné horské trasy. Je to nielen spôsob aktivity, ale aj príležitosť spoznávať región ekologickým spôsobom!",
+            "card1": {
+                "header": "Lokálne trasy",
+                "text": "Objavujte Muszynu a okolie na bicykli – odporúčame najlepšie trasy pre začiatočníkov aj pokročilých cyklistov!",
+                "button": "O nás"
+            },
+            "card2": {
+                "header": "Široký výber",
+                "text": "Požičajte si bicykel ideálny pre vás – máme mestské, horské, detské modely a príslušenstvo, ako prilby či sedačky.",
+                "button": "Cenník"
+            },
+            "card3": {
+                "header": "7 dní v týždni",
+                "text": "Naša požičovňa je otvorená 7 dní v týždni. Zavolajte na 509 445 000 a vydajte sa na cyklistické dobrodružstvo!",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "gameroom": {
+        "header": "Herná miestnosť",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "V Parku Muszynova sme chceli vytvoriť miesto, kde môžete spolu s priateľmi súťažiť a dobre sa baviť. Pre milovníkov stratégie a presnosti ponúkame profesionálny biliardový stôl a stoly na stolný tenis, kde si môžete zlepšiť koncentráciu a vizuálno-motorickú koordináciu. Navyše, pre tých, ktorí obľubujú rýchle a vzrušujúce hry, sme pripravili stôl na stolný futbal a air hockey.",
+        "text2": "Priateľská atmosféra, moderné vybavenie a výborná zábava zabezpečia, že čas strávený v Muszynova bude nielen aktívny, ale aj mimoriadne príjemný. Pozývame vás objavovať fascinujúci svet na nOvo.",
+        "button": "O nás",
+        "cards": {
+            "header": "Herná miestnosť",
+            "text": "V našej herni nájdete atrakcie, ktoré poskytnú nezabudnuteľné chvíle, či už individuálne, alebo s priateľmi a rodinou. Profesionálny biliardový stôl ponúka príležitosť na súťaž a zdokonaľovanie zručností, vytvárajúc atmosféru športovej vášne. Stoly na stolný futbal a air hockey zase prenášajú hráčov do sveta emócií a rýchlej akcie. V Muszynova kladieme dôraz nielen na fyzickú aktivitu, ale aj na celkové potešenie z času stráveného v našom rekreačnom centre. Pozývame vás objavovať fascinujúci svet hier a zábavy v Muszynova!",
+            "card1": {
+                "header": "Biliard",
+                "text": "Biliard je skvelou zábavou, ale aj výborným spôsobom na rozvoj koncentrácie, presnosti a strategického plánovania. Hra v biliarde umožňuje budovať stratégie a taktiky. Bez ohľadu na úroveň pokročilosti je biliard dostupný pre všetkých a zároveň môže priniesť emócie amatérom aj profesionálom.",
+                "button": "Galéria"
+            },
+            "card2": {
+                "header": "Stolný futbal",
+                "text": "Stolný futbal skvele kombinuje súťaživosť a zábavu, čím robí každú hru nezabudnuteľným zážitkom pre všetkých účastníkov.",
+                "button": "Cenník"
+            },
+            "card3": {
+                "header": "Air hockey",
+                "text": "Air hockey, známy aj ako stolný hokej, je elektrizujúcou hrou, ktorá prináša súťaživosť na rovnú plochu stola. Hrá sa pomocou špeciálnych puky a rúčok, ponúka rýchle tempo, reflexnú hru a súboje plné emócií.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "multimediaroom": {
+        "header": "Multimediálna miestnosť",
+        "header2": "Čím sa odlišujeme?",
+        "text1": "Srdcom našej multimediálnej miestnosti je najnovší PlayStation, kde poskytujeme prístup k najlepším hrám a zábave pre fanúšikov konzolového hrania.",
+        "text2": "Od vzrušujúcich dobrodružstiev po napínavé športové zápasy – každý si tu nájde niečo pre seba. A to všetko na pohodlných sedacích vakoch, ktoré vytvárajú ideálne podmienky na ponorenie sa do sveta virtuálnej zábavy.",
+        "button": "O nás",
+        "cards": {
+            "header": "Multimediálna miestnosť",
+            "text": "Vybavená konzolou PlayStation a systémom virtuálnej reality (VR), multimediálna miestnosť je miesto, kde sa hráči môžu ponoriť do fascinujúcich virtuálnych svetov. Bez ohľadu na to, či niekto preferuje dynamické akčné hry alebo objavné dobrodružstvá vo VR, naša miestnosť ponúka úplnú slobodu výberu zábavy.",
+            "card1": {
+                "header": "PlayStation",
+                "text": "Pozývame vás do našej modernej multimediálnej miestnosti, kde sa svet PlayStation stáva skutočným dobrodružstvom! Čakajú na vás najnovšie hry, nezabudnuteľné emócie a jedinečné zážitky vo svete virtuálnej zábavy.",
+                "button": "Galéria"
+            },
+            "card2": {
+                "header": "VR",
+                "text": "Pozývame vás objavovať nový rozmer zábavy v našej jedinečnej multimediálnej miestnosti s virtuálnou realitou (VR). Je to miesto, kde sa hranice reality spájajú s fantáziou, vytvárajúc nezabudnuteľné zážitky.",
+                "button": "Cenník"
+            },
+            "card3": {
+                "header": "Narodeniny",
+                "text": "Naplánujte výnimočné narodeniny v našej fantastickej multimediálnej miestnosti, kde sa každý moment stane nezabudnuteľným dobrodružstvom! Nemusíte sa starať o organizáciu – náš tím sa postará o každý detail, aby ste sa mohli sústrediť iba na užívanie si chvíle.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "restaurantpage": {
+        "header": "Reštaurácia Muszynova",
+        "header2": "Tu spoznáte menu",
+        "header3": "Zorganizujte s nami na novo",
+        "text1": "Staviame na kvalitu, na objavovanie chutí na novo.",
+        "text2": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež, ale aj dospelých, pozývajúc na drink.",
+        "button": "Jedálny lístok",
+        "button2": "Nápojový lístok",
+        "cards": {
+            "card1": {
+                "header": "Oslavy, výročia, stretnutia",
+                "text": "Reštaurácia Muszynova – objavujte chute, ale aj sa dobre bavte. Dbáme na ideálnu kombináciu: dobrý čas, dobrá spoločnosť, na dobrom mieste. Poskytujeme pohodlné miesto na organizáciu osláv a podujatí – rodinné a priateľské stretnutia, výročia, firemné bankety, integračné podujatia, prvé sväté prijímania či svadby organizujte s nami. Objavte nOvú kvalitu.",
+                "button": "O nás"
+            },
+            "card2": {
+                "header": "Výstavy, prehliadky, trhy",
+                "text": "Máme k dispozícii dve pohodlné sály s celkovou plochou viac ako 250 m². V oboch sálach môžu prebiehať dve nezávislé podujatia. Okrem toho máme k dispozícii aj športovú halu, kde organizujeme športové podujatia, ale aj výstavy, prehliadky, trhy či koncerty. Je to miesto, ktoré čaká na vaše objavenie.",
+                "button": "Galéria"
+            },
+            "card3": {
+                "header": "Konferencie, obchodné stretnutia",
+                "text": "Obchodných klientov pozývame na organizovanie konferencií. Vedľa reštaurácie máme sálu Nova – modernú a klimatizovanú. Nachádza sa v nej projektor premietajúci obraz s plochou až 15 m². Vybavenie má plne profesionálne audio-video káble, čo umožňuje rýchlu a efektívnu inštaláciu s externým zariadením. Pohodlne, moderne.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "pricing": {
+        "header": "Cenník"
+    },
+    "groupclasses": {
+        "header": "Skupinové aktivity"
+    },
+    "gallery": {
+        "header": "Galéria",
+        "restaurant": "Reštaurácia",
+        "header2": "Galéria reštaurácie",
+        "park": "Park",
+        "header3": "Galéria parku"
+    },
+    "contact": {
+        "header": "Kontaktujte nás",
+        "cards": {
+            "card1": {
+                "header": "Adresa",
+                "text1": "33-370 Muszyna Złockie 77c",
+                "text2": "Vlastníkom objektu je:",
+                "text3": "Firma Handlowa Mikulec",
+                "text4": "NIP 7341518138",
+                "button": "O nás"
+            },
+            "card2": {
+                "header": "Recepcia",
+                "text1": "biuro@muszynova.pl",
+                "text2": "+48 509 445 000 Park Muszynova",
+                "text3": "+48 509 825 000 Reštaurácia Muszynova",
+                "button": "Galéria"
+            },
+            "card3": {
+                "header": "Skupinové rezervácie, oslavy",
+                "text1": "Grzegorz Ziółko, Manažér",
+                "text2": "manager@muszynova.pl",
+                "text3": "tel: +48 509 445 000",
+                "button": "Skupinové aktivity"
+            },
+            "card4": {
+                "header": "Reštaurácia Muszynova",
+                "text1": "Otváracie hodiny",
+                "text2": "Pondelok - Streda ZATVORENÉ",
+                "text3": "Štvrtok - Piatok 12:00 - 20:00",
+                "text4": "Sobota - Nedeľa 12:00 - 21:00",
+                "button": "Reštaurácia"
+            },
+            "card5": {
+                "header": "Park Muszynova",
+                "text1": "Otváracie hodiny",
+                "text2": "Pondelok - Piatok 16:00 - 20:00",
+                "text3": "Sobota - Nedeľa 11:00 - 21:00",
+                "button": "Park"
+            },
+            "card6": {
+                "header": "Posilňovňa",
+                "text1": "Otváracie hodiny",
+                "text2": "Pondelok - Piatok 8:00 - 20:00",
+                "text3": "Sobota - Nedeľa 11:00 - 21:00",
+                "button": "Posilňovňa"
+            }
+        },
+        "form": {
+            "header": "Kontaktný formulár",
+            "label1": "Meno a priezvisko",
+            "label2": "Váš email",
+            "label3": "Vaša správa",
+            "placeholder1": "Zadajte svoje meno a priezvisko",
+            "placeholder2": "Zadajte svoj email",
+            "placeholder3": "Napíšte správu...",
+            "button": "Odoslať správu",
+            "sending": "Odosiela sa...",
+            "message1": "Ďakujeme za odoslanie formulára!",
+            "message2": "Budeme sa snažiť odpovedať čo najskôr.",
+            "error": "Prosím, vyplňte všetky povinné polia.",
+            "error2": "Prosím, potvrďte, že nie ste robot pred odoslaním."
+        }
+    },
+    "metadata": {
+        "homepage": {
+            "title": "Muszynova - Rekreačno-športový park a reštaurácia v Muszyne",
+            "description": "Objavte Muszynova – rekreačno-športový park s posilňovňou, lezeckou stenou, squashom a ďalšími aktivitami. Zdravé jedlo v Reštaurácii Muszynova s beskydskými chuťami!"
+        },
+        "contact": {
+            "title": "Muszynova - Kontakt - Park a reštaurácia v Muszyne",
+            "description": "Kontaktujte Muszynova! Rekreačno-športový park a reštaurácia v Muszyne – ul. Złockie 77c, tel. +48 509 445 000, biuro@muszynova.pl."
+        }
+    }
+}

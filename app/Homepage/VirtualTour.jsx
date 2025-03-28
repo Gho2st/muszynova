@@ -1,6 +1,6 @@
 const VirtualTour = ({ t }) => {
   return (
-    <section className=" px-6 xl:px-44 py-20">
+    <section id="virtual-tour" className=" px-6 xl:px-44 py-20">
       <h2 className="text-4xl xl:text-6xl font-extrabold  mb-24 text-center">
         {t("header")}
       </h2>

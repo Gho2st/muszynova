@@ -7,16 +7,27 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { FaHandsHelping } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Sala Zabaw Muszynova - Muszyna",
-  alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/sala-zabaw",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Sala Zabaw Muszynova w Muszynie – dla dzieci: małpi gaj, animacje, urodziny, gry. Bezpieczna opieka podczas treningu rodziców – radość i rozwój!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.playroom",
+  });
 
+  const path = routing.pathnames["/park/sala-zabaw"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 export default function Sala() {
   const t = useTranslations("playground");
 

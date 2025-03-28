@@ -7,15 +7,24 @@ import { MdOutlinePeopleAlt } from "react-icons/md";
 import { MdSportsGymnastics } from "react-icons/md";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Fitness Muszynova - Zajęcia w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park/fitness",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Fitness w Muszynova – zajęcia dla dzieci i dorosłych w Muszynie. Treningi personalne, grupowe, pilates – popraw kondycję i ciesz się ruchem!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.fitness" });
+
+  const path = routing.pathnames["/park/fitness"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Fitness() {
   const t = useTranslations("fitness");

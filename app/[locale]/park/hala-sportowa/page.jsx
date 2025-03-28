@@ -7,15 +7,24 @@ import { LuSchool } from "react-icons/lu";
 import { TbBowling } from "react-icons/tb";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Hala Sportowa Muszynova - Muszyna",
-  alternates: {
-    canonical: "https://muszynova.pl/park/hala-sportowa",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Hala Sportowa Muszynova w Muszynie – wynajem, gry zespołowe: koszykówka, siatkówka, badminton. Oferta dla szkół i pasjonatów sportu!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.sportshall" });
+
+  const path = routing.pathnames["/park/hala-sportowa"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Hala() {
   const t = useTranslations("sportshall");

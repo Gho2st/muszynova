@@ -23,7 +23,7 @@ export default function About({ t }) {
             text={t("button")}
             bgColor="bg-[#C4966C]"
             textColor="text-white"
-            link=""
+            link="/#virtual-tour"
           />
         </div>
       </div>

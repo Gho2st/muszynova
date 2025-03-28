@@ -7,15 +7,27 @@ import { MdOutlineSportsTennis } from "react-icons/md";
 import { TbClock24 } from "react-icons/tb";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Squash Muszynova - Kort w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/squash",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Squash w Muszynova – jedyny profesjonalny kort w Muszynie. Graj 7 dni w tygodniu, rezerwuj online, popraw kondycję i ciesz się dynamiczną grą!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.squash",
+  });
+
+  const path = routing.pathnames["/park/squash"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Squash() {
   const t = useTranslations("squash");

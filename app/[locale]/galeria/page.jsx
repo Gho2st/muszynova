@@ -2,14 +2,24 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Galeria - Muszynova",
-  alternates: {
-    canonical: "https://muszynova.pl/galeria",
-  },
-  description:
-    "Zapraszamy do galerii Muszynova! Zobacz zdjęcia parku i restauracji, które ukazują piękno i wyjątkowy klimat naszego miejsca.",
-};
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.gallery" });
+
+  const path = routing.pathnames["/galeria"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Galeria() {
   const t = useTranslations("gallery");

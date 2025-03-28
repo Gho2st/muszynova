@@ -14,15 +14,24 @@ import Card from "../../UI/Card";
 import { useTranslations } from "next-intl";
 import { FaPlaystation } from "react-icons/fa";
 
-export const metadata = {
-  title: "Park Rekreacyjno-Sportowy Muszynova - Aktywność w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Park Rekreacyjno-Sportowy Muszynova w Muszynie – siłownia, fitness, squash, rowery, hala sportowa, sala zabaw. Rozrywka i sport dla każdego!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.park" });
+
+  const path = routing.pathnames["/park"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Park() {
   const t = useTranslations("park");

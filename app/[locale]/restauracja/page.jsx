@@ -6,16 +6,24 @@ import { BiSolidParty } from "react-icons/bi";
 import { FaRegCalendar } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-export const metadata = {
-  title: "Restauracja Muszynova - Smaki Beskidu w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/restauracja",
-  },
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.restaurant" });
 
-  description:
-    "Restauracja Muszynova w Muszynie – regionalna kuchnia beskidzka, pizza, napoje, imprezy, konferencje. Smacznie i nowocześnie – odwiedź nas!",
-};
+  const path = routing.pathnames["/restauracja"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Page() {
   const t = useTranslations("restaurantpage");

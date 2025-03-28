@@ -7,15 +7,27 @@ import { FaPlaystation } from "react-icons/fa";
 import { FaBirthdayCake } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Sala Multimedialna Muszynova – Nowoczesna Rozrywka w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park/sala-multimedialna",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Odkryj nowoczesną Salę Multimedialną w Muszynovej! Interaktywne gry, wirtualna rzeczywistość i niezapomniana rozrywka dla całej rodziny. Sprawdź, co na Ciebie czeka!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.multimediaroom",
+  });
+
+  const path = routing.pathnames["/park/sala-multimedialna"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Multi() {
   const t = useTranslations("multimediaroom");
@@ -30,7 +42,7 @@ export default function Multi() {
             <br></br> {t("text2")}
           </p>
           <div className="mt-10">
-            <Button text={t("button")} link="/cennik" />
+            <Button text={t("button")} link="/o-nas" />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
@@ -72,14 +84,14 @@ export default function Multi() {
               icon={<FaPlaystation />}
               title={t("cards.card1.header")}
               buttonText={t("cards.card1.button")}
-              link="/kontakt"
+              link="/galeria"
               bgColor="bg-black"
               text={t("cards.card1.text")}
             />
             <Card
               icon={<BsHeadsetVr />}
               title={t("cards.card2.header")}
-              link=""
+              link="/cennik"
               buttonText={t("cards.card2.button")}
               bgColor="bg-black"
               text={t("cards.card2.text")}
@@ -88,7 +100,7 @@ export default function Multi() {
               icon={<FaBirthdayCake />}
               title={t("cards.card3.header")}
               buttonText={t("cards.card3.button")}
-              link=""
+              link="/kontakt"
               bgColor="bg-black"
               text={t("cards.card3.text")}
             />

@@ -6,17 +6,27 @@ import { MdSportsGymnastics } from "react-icons/md";
 import { PiWall } from "react-icons/pi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
-export const metadata = {
-  title: "Ścianka Wspinaczkowa Muszynova",
-  alternates: {
-    canonical:
-      "https://muszynova.pl/park-rekreacyjno-sportowy/scianka-wspinaczkowa",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Ścianka Wspinaczkowa Muszynova w Muszynie – bezpieczne zajęcia grupowe, indywidualne, dla szkół. Wspinaczka dla dzieci i dorosłych na każdym poziomie!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.climbingwall",
+  });
 
+  const path = routing.pathnames["/park/scianka-wspinaczkowa"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 export default function Scianka() {
   const t = useTranslations("climbingwall");
 
@@ -73,7 +83,7 @@ export default function Scianka() {
           <div className="xl:w-3/4 grid md:grid-cols-2 xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<FaPeopleGroup />}
-              title= {t("cards.card1.header")}
+              title={t("cards.card1.header")}
               buttonText={t("cards.card1.button")}
               link="/zajecia-grupowe"
               bgColor="bg-black"

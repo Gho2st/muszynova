@@ -47,7 +47,7 @@ export default function Services({ t }) {
               text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
-              link=""
+              link="/park"
             />
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function Services({ t }) {
               text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
-              link=""
+              link="/park"
             />
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function Services({ t }) {
               text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
-              link=""
+              link="/park"
             />
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function Services({ t }) {
               text={t("cards.button")}
               bgColor="bg-[#C4966C]"
               textColor="text-white"
-              link=""
+              link="/park"
             />
           </div>
         </div>

@@ -7,15 +7,27 @@ import { IoGitNetworkOutline } from "react-icons/io5";
 import Button from "@/app/UI/Buttons/Button";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Siłownia Muszynova - Treningi i Karnety w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park-rekreacyjno-sportowy/silownia",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Siłownia Muszynova w Muszynie – nowoczesny sprzęt, trenerzy personalni, plany treningowe i karnety. Popraw kondycję i osiągnij cele fitness!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.gym",
+  });
+
+  const path = routing.pathnames["/park/silownia"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Silownia() {
   const t = useTranslations("gym");

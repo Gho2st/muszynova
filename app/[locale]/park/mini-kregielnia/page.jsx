@@ -7,15 +7,24 @@ import { TbBowling } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Mini Kręgielnia Muszynova - Muszyna",
-  alternates: {
-    canonical: "https://muszynova.pl/park/mini-kregielnia",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Mini Kręgielnia Muszynova w Muszynie – zabawa dla dzieci, dorosłych, grup. Urodziny, integracje, kręgle w przyjaznej atmosferze – sprawdź nas!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.minibowling" });
+
+  const path = routing.pathnames["/park/mini-kregielnia"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Kregielnia() {
   const t = useTranslations("minibowling");
@@ -78,7 +87,7 @@ export default function Kregielnia() {
               title={t("cards.card1.header")}
               buttonText={t("cards.card1.button")}
               bgColor="bg-black"
-              link="/o-nas"
+              link="/galeria"
               text={t("cards.card1.text")}
             />
             <Card

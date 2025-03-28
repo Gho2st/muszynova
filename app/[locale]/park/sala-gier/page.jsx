@@ -7,16 +7,27 @@ import { IoIosFootball } from "react-icons/io";
 import { GiCyberEye } from "react-icons/gi";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Sala Gier Muszynova - Rozrywka w Muszynie",
-  alternates: {
-    canonical: "https://muszynova.pl/park/sala-gier",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Sala Gier Muszynova w Muszynie – bilard, piłkarzyki, cymbergaj, tenis stołowy dla każdego. Aktywna rozrywka, rywalizacja i zabawa – odwiedź nas!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.gameroom",
+  });
 
+  const path = routing.pathnames["/park/sala-gier"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 export default function Gry() {
   const t = useTranslations("gameroom");
   return (
@@ -30,7 +41,7 @@ export default function Gry() {
             <br></br> <br></br> {t("text2")}
           </p>
           <div className="mt-10">
-            <Button text={t("button")} link="/cennik" />
+            <Button text={t("button")} link="/o-nas" />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
@@ -72,14 +83,14 @@ export default function Gry() {
               icon={<TbCrystalBall />}
               title={t("cards.card1.header")}
               buttonText={t("cards.card1.button")}
-              link=""
+              link="/galeria"
               bgColor="bg-black"
               text={t("cards.card1.text")}
             />
             <Card
               icon={<IoIosFootball />}
               title={t("cards.card2.header")}
-              link=""
+              link="/cennik"
               buttonText={t("cards.card2.button")}
               bgColor="bg-black"
               text={t("cards.card2.text")}
@@ -88,7 +99,7 @@ export default function Gry() {
               icon={<GiCyberEye />}
               title={t("cards.card3.header")}
               buttonText={t("cards.card3.button")}
-              link=""
+              link="/kontakt"
               bgColor="bg-black"
               text={t("cards.card3.text")}
             />

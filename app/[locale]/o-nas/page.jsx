@@ -9,21 +9,21 @@ import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
-// export async function generateMetadata({ params }) {
-//   const resolvedParams = await params;
-//   const { locale } = resolvedParams;
-//   const t = await getTranslations({ locale, namespace: "metadata.aboutus" });
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "metadata.aboutus" });
 
-//   const path = routing.pathnames["/kontakt"][locale]; // Pobieramy ścieżkę dla języka
-//   const canonicalUrl = `https://muszynova.pl/${locale}`; // Dodajemy prefix języka
-//   return {
-//     title: t("title"),
-//     description: t("description"),
-//     alternates: {
-//       canonical: canonicalUrl,
-//     },
-//   };
-// }
+  const path = routing.pathnames["/o-nas"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function About() {
   const t = useTranslations("aboutus");
@@ -96,7 +96,7 @@ export default function About() {
             <Card
               icon={<MdOutlineSportsCricket />}
               title={t("cards.card3.header")}
-              buttonText={t("cards.card1.button")}
+              buttonText={t("cards.card3.button")}
               link="/park"
               bgColor="bg-black"
               text={t("cards.card3.text")}

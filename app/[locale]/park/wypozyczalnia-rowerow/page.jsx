@@ -7,16 +7,27 @@ import { FaBicycle } from "react-icons/fa"; // Ikona roweruimport { TbClock24 } 
 import { TbClock24 } from "react-icons/tb";
 import { useTranslations } from "next-intl";
 
-export const metadata = {
-  title: "Wypożyczalnia Rowerów Muszynova",
-  alternates: {
-    canonical:
-      "https://muszynova.pl/park-rekreacyjno-sportowy/wypozyczalnia-rowerow",
-  },
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
-  description:
-    "Wypożyczalnia Rowerów Muszynova w Muszynie – rowery dla każdego, trasy w okolicy, 7 dni w tygodniu. Odkrywaj region aktywnie – sprawdź cennik!",
-};
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.bikerental",
+  });
+
+  const path = routing.pathnames["/park/wypozyczalnia-rowerow"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Wypozyczalnia() {
   const t = useTranslations("bikerental");

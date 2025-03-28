@@ -1,4 +1,25 @@
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.groupclasses",
+  });
+
+  const path = routing.pathnames["/zajecia-grupowe"][locale]; // Pobieramy ścieżkę dla języka
+  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
+}
 
 export default function Zajecia() {
   const t = useTranslations("groupclasses");
