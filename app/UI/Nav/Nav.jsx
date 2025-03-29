@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import SalesButton from "../Buttons/SalesButton";
 import { IoIosArrowDown } from "react-icons/io";
 import SalesButton2 from "../Buttons/SalesButton2";

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { FaShoppingBasket } from "react-icons/fa";
 
 export default function SalesButton(props) {
