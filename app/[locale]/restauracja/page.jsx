@@ -40,7 +40,7 @@ export default function Page() {
     <>
       <div className="grid xl:grid-cols-2">
         <div className="px-6 xl:p-16 pt-16 xl:pt-20">
-          <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
+          <h1 className="text-4xl xl:text-5xl font-bold">{t("header")}</h1>
           <p className="mb-10 xl:mb-0 mt-10">
             {t("text1")}
             <br></br>
@@ -70,13 +70,13 @@ export default function Page() {
           />
         </div>
         <div className="xl:w-1/2 px-6 py-20  xl:p-16 pt-20">
-          <h2 className="text-4xl xl:text-6xl text-center font-bold">
+          <h2 className="text-4xl xl:text-5xl text-center font-bold">
             {t("header2")}
           </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
             <Button
               text={t("button")}
-              link={`${process.env.NEXT_PUBLIC_BASE_URL}/menu.pdf`}
+              link="https://muszynova.vercel.app/menu.pdf"
             />
             <Button text={t("button2")} link="/karta-napojów.pdf" />
           </div>
@@ -84,7 +84,7 @@ export default function Page() {
       </div>
       <Restaurant t={r} />
       <section className="px-6 xl:px-44 py-20">
-        <h2 className="text-4xl xl:text-6xl font-bold text-center mb-20">
+        <h2 className="text-4xl xl:text-5xl font-bold text-center mb-20">
           {t("header3")}
         </h2>
         <div className="grid xl:grid-cols-3 gap-10">

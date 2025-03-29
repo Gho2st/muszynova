@@ -93,7 +93,7 @@ export default function Contact() {
               ].join(" <br /> ")}
             />
             <Card
-              link="/park-rekreacyjno-sportowy"
+              link="/park"
               icon={<MdOutlineSportsCricket />}
               title={t("cards.card5.header")}
               buttonText={t("cards.card5.button")}
@@ -104,7 +104,7 @@ export default function Contact() {
               ].join(" <br /> ")}
             />
             <Card
-              link="/park-rekreacyjno-sportowy/silownia"
+              link="/park/silownia"
               icon={<LuWeight />}
               title={t("cards.card6.header")}
               buttonText={t("cards.card6.button")}
