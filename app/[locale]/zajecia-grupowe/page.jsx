@@ -31,7 +31,7 @@ export default function Zajecia() {
   return (
     <>
       <section className="px-6 xl:px-24 py-16 xl:py-20">
-        <h1 className="text-center text-4xl xl:text-6xl mb-16 xl:mb-20 font-bold text-customGold">
+        <h1 className="text-center text-3xl xl:text-6xl mb-16 xl:mb-20 font-bold text-customGold break-words">
           {t("header")}
         </h1>
         <div className="flex justify-center">
