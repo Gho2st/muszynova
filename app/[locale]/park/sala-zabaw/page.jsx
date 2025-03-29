@@ -53,7 +53,7 @@ export default function Sala() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Zabawki, stół, krzesła w sali zabaw w Muszynie"
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Sala() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -108,34 +108,34 @@ export default function Sala() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <Image
             src="/park/sala-zabaw/s1.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Tor przeszkód dla dzieci"
           />
           <Image
             src="/park/sala-zabaw/s2.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Zabawki, stół, krzesła w sali zabaw"
           />
           <Image
             src="/park/sala-zabaw/s3.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Mata do zabawy, a na niej zabawki dla dzieci"
           />
           <Image
             src="/park/sala-zabaw/s4.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Kolorowe, zabawki dla dzieci"
           />
         </section>
       </section>

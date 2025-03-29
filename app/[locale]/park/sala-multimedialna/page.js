@@ -51,7 +51,7 @@ export default function Multi() {
             width={100}
             height={100}
             layout="responsive"
-            alt="obrazek przedstawiający chłopca grającego na playstation przed telewizorem w Muszynova"
+            alt="Chłopiec trzymający w ręku pada do playstation 5"
           />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Multi() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -106,14 +106,14 @@ export default function Multi() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/sala-multimedialna/1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Chłopiec trzymający w ręku pada do playstation 5"
             />
           </div>
           <div className="relative w-full h-132">
@@ -121,7 +121,7 @@ export default function Multi() {
               src="/park/sala-multimedialna/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Chłopiec siedzący przed telewizorem grający w grę sportową na konsoli do gier"
             />
           </div>
         </section>

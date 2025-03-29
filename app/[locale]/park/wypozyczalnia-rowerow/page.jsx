@@ -52,7 +52,7 @@ export default function Wypozyczalnia() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie"
           />
         </div>
       </div>
@@ -107,14 +107,14 @@ export default function Wypozyczalnia() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/wypozyczalnia/w1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie"
             />
           </div>
           <div className="relative w-full h-132">
@@ -122,7 +122,7 @@ export default function Wypozyczalnia() {
               src="/park/wypozyczalnia/w2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Recepcja z wygodną kanapą na tle schodów w Muszynova"
             />
           </div>
         </section>

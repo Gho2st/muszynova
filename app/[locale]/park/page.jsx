@@ -53,7 +53,7 @@ export default function Park() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Zdjęcie z zewnątrz parku rekreacyjno sportowego Muszynova"
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Park() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">

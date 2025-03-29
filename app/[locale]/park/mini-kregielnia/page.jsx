@@ -53,7 +53,7 @@ export default function Kregielnia() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Dzieci podające sobie kule do kręgiel stojące na torze"
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Kregielnia() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -108,14 +108,14 @@ export default function Kregielnia() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/mini-kregielnia/k1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Dzieci podające sobie kule do kręgiel stojące na torze"
             />
           </div>
           <div className="relative w-full h-132">
@@ -123,7 +123,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Dwa podświetlone tory do kręgiel"
             />
           </div>
           <div className="relative w-full h-132">
@@ -131,7 +131,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 3"
+              alt="Stojące kręgle"
             />
           </div>
           <div className="relative w-full h-132">
@@ -139,7 +139,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k3.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 4"
+              alt="Całość mini kręgielni w Muszynova"
             />
           </div>
         </section>

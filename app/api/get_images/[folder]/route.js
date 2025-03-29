@@ -3,7 +3,8 @@ import path from "path";
 import { NextResponse } from "next/server";
 
 export async function GET(req, { params }) {
-  const { folder } = params; // Pobranie nazwy folderu z URL
+  const resolvedParams = await params;
+  const { folder } = resolvedParams; // Pobranie nazwy folderu z URL
   const imagesDir = path.join(process.cwd(), "public/galeria", folder);
 
   try {

@@ -48,7 +48,7 @@ export default function About() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Zdjęcie przedstawiające obiekt Muszynova z zewnątrz na tle pięknej natury"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function About() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">

@@ -20,7 +20,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/mleko-ser.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Obrazek przedstawiający mleko i ser"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item1.header")}
@@ -35,7 +35,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/lody.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Lody w Wafelku"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item2.header")}
@@ -50,7 +50,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/5gwiazdek.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="5 gwiazdek"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item3.header")}
@@ -65,7 +65,7 @@ export default function Restaurant({ t }) {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Sałatka w słoiku nowocześnie podana"
           />
         </div>
         {/* PRAWO */}
@@ -77,7 +77,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/pizza.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Kawałek pizzy"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item4.header")}
@@ -92,7 +92,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/kawa.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Kawa z bitą śmietaną"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item5.header")}
@@ -107,7 +107,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/tort.webp"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Porcja pysznego tortu"
               />
               <h3 className="text-3xl font-semibold">
                 {t("items.item6.header")}

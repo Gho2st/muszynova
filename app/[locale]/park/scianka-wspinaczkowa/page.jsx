@@ -52,7 +52,7 @@ export default function Scianka() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Ścianka wspinaczkowa z kolorowymi elementami w Muszynie"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Scianka() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -114,7 +114,7 @@ export default function Scianka() {
               src="/park/scianka-wspinaczkowa/s1.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Dziewczynka wspinająca się z zabezpieczeniem po ściance wspinaczkowej"
             />
           </div>
           <div className="relative w-full h-132">
@@ -122,7 +122,7 @@ export default function Scianka() {
               src="/park/scianka-wspinaczkowa/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Ścianka wspinaczkowa z kolorowymi elementami w Muszynie"
             />
           </div>
         </section>

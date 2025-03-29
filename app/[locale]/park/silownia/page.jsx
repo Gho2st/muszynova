@@ -54,7 +54,7 @@ export default function Silownia() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Siłownia ze sprzętem, maszynami, hantlami"
           />
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function Silownia() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -109,34 +109,34 @@ export default function Silownia() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <Image
             src="/park/silownia/s1.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Siłownia ze sprzętem, maszynami, hantlami"
           />
           <Image
             src="/park/silownia/s2.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Bieżnie, orbitreki, suwnice, ławeczki do wyciskania"
           />
           <Image
             src="/park/silownia/s3.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Hantle o różnym ciężarze"
           />
           <Image
             src="/park/silownia/s4.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Profesjonalne ławeczki do ćwiczeń"
           />
         </section>
       </section>

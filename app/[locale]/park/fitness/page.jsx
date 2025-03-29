@@ -49,7 +49,7 @@ export default function Fitness() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Zdjęcie Sali do Fitness z zielonymi kulami gimnastycznymi i matami"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Fitness() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -104,14 +104,14 @@ export default function Fitness() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/fitness/f1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Zdjęcie z zajęć Fitness"
             />
           </div>
           <div className="relative w-full h-132">
@@ -119,7 +119,7 @@ export default function Fitness() {
               src="/park/fitness/f2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Zdjęcie sali wewnątrz"
             />
           </div>
           <div className="relative w-full h-132">
@@ -127,7 +127,7 @@ export default function Fitness() {
               src="/park/fitness/f3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Zdjęcie sali wewnątrz 2"
             />
           </div>
           <div className="relative w-full h-132">
@@ -135,7 +135,7 @@ export default function Fitness() {
               src="/park/fitness/f4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Zdjęcie z zajęć Fitness z instruktorem"
             />
           </div>
         </section>

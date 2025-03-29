@@ -46,7 +46,7 @@ export default function Page() {
             height={100}
             width={100}
             layout="responsive"
-            alt=""
+            alt="Sala w resturacji w Muszynie z ciepłym światłem"
           />
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function Page() {
             height={100}
             width={100}
             layout="responsive"
-            alt=""
+            alt="Popisowe danie szefa kuchni Muszynova"
           />
         </div>
         <div className="xl:w-1/2 px-6 py-20  xl:p-16 pt-20">

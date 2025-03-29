@@ -48,7 +48,7 @@ export default function Hala() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Hala sportowa z boiskiem do siatkówki"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function Hala() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -103,34 +103,34 @@ export default function Hala() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <Image
             src="/park/hala-sportowa/h1.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Hala sportowa wewnątrz"
           />
           <Image
             src="/park/hala-sportowa/h2.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Ścianka wspinaczkową na hali sportowej"
           />
           <Image
             src="/park/hala-sportowa/h3.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Dwa stoły do tenisa stołowego na hali"
           />
           <Image
             src="/park/hala-sportowa/h4.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Ludzie grający w siatkówkę na hali sportowej w Muszynova"
           />
         </section>
       </section>

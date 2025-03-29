@@ -1,106 +1,246 @@
 export default function sitemap() {
+  const baseUrl = "https://muszynova.pl";
+
   return [
     {
-      url: "https://muszynova.pl/",
+      url: `${baseUrl}/pl`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en`,
+          sk: `${baseUrl}/sk`,
+          de: `${baseUrl}/de`,
+          ua: `${baseUrl}/ua`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/o-nas",
+      url: `${baseUrl}/pl/o-nas`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/about-us`,
+          sk: `${baseUrl}/sk/o-nas`,
+          de: `${baseUrl}/de/uber-uns`,
+          ua: `${baseUrl}/ua/pro-nas`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/galeria",
+      url: `${baseUrl}/pl/park`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park`,
+          sk: `${baseUrl}/sk/park`,
+          de: `${baseUrl}/de/park`,
+          ua: `${baseUrl}/ua/park`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/galeria/park",
+      url: `${baseUrl}/pl/park/silownia`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/gym`,
+          sk: `${baseUrl}/sk/park/posilnovna`,
+          de: `${baseUrl}/de/park/fitnessstudio`,
+          ua: `${baseUrl}/ua/park/trenazhernyi-zal`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/galeria/restauracja",
+      url: `${baseUrl}/pl/park/fitness`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/fitness`,
+          sk: `${baseUrl}/sk/park/fitness`,
+          de: `${baseUrl}/de/park/fitness`,
+          ua: `${baseUrl}/ua/park/fitnes`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/galeria/cennik",
+      url: `${baseUrl}/pl/park/hala-sportowa`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/sports-hall`,
+          sk: `${baseUrl}/sk/park/sportova-hala`,
+          de: `${baseUrl}/de/park/sporthalle`,
+          ua: `${baseUrl}/ua/park/sportyvnyi-zal`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/galeria/kontakt",
+      url: `${baseUrl}/pl/park/mini-kregielnia`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/mini-bowling`,
+          sk: `${baseUrl}/sk/park/mini-kugeľna`,
+          de: `${baseUrl}/de/park/mini-bowling`,
+          ua: `${baseUrl}/ua/park/mini-boulinh`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/restauracja",
+      url: `${baseUrl}/pl/park/scianka-wspinaczkowa`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/climbing-wall`,
+          sk: `${baseUrl}/sk/park/lezecka-stena`,
+          de: `${baseUrl}/de/park/kletterwand`,
+          ua: `${baseUrl}/ua/park/skeledrom`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park",
+      url: `${baseUrl}/pl/park/sala-zabaw`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/playroom`,
+          sk: `${baseUrl}/sk/park/herna-pre-deti`,
+          de: `${baseUrl}/de/park/spielzimmer`,
+          ua: `${baseUrl}/ua/park/dytiacha-ihrova-kimnata`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/fitness",
+      url: `${baseUrl}/pl/park/squash`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/squash`,
+          sk: `${baseUrl}/sk/park/squash`,
+          de: `${baseUrl}/de/park/squash`,
+          ua: `${baseUrl}/ua/park/skvosh`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/hala-sportowa",
+      url: `${baseUrl}/pl/park/wypozyczalnia-rowerow`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/bike-rental`,
+          sk: `${baseUrl}/sk/park/požičovňa-bicyklov`,
+          de: `${baseUrl}/de/park/fahrradverleih`,
+          ua: `${baseUrl}/ua/park/prokat-velosypediv`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/mini-kregielnia",
+      url: `${baseUrl}/pl/park/sala-gier`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/game-room`,
+          sk: `${baseUrl}/sk/park/herna`,
+          de: `${baseUrl}/de/park/spielhalle`,
+          ua: `${baseUrl}/ua/park/ihrova-zala`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/sala-gier",
+      url: `${baseUrl}/pl/park/sala-multimedialna`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/park/multimedia-room`,
+          sk: `${baseUrl}/sk/park/multimedialna-miestnosť`,
+          de: `${baseUrl}/de/park/multimediaroom`,
+          ua: `${baseUrl}/ua/park/multymediyna-zala`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/scianka-wspinaczkowa",
+      url: `${baseUrl}/pl/galeria`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/gallery`,
+          sk: `${baseUrl}/sk/galeria`,
+          de: `${baseUrl}/de/galerie`,
+          ua: `${baseUrl}/ua/halereya`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/silownia",
+      url: `${baseUrl}/pl/galeria/park`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/gallery/park`,
+          sk: `${baseUrl}/sk/galeria/park`,
+          de: `${baseUrl}/de/galerie/park`,
+          ua: `${baseUrl}/ua/halereya/park`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/squash",
+      url: `${baseUrl}/pl/galeria/restauracja`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/gallery/restaurant`,
+          sk: `${baseUrl}/sk/galeria/restauracia`,
+          de: `${baseUrl}/de/galerie/restaurant`,
+          ua: `${baseUrl}/ua/halereya/restoran`,
+        },
+      },
     },
     {
-      url: "https://muszynova.pl/park/wypozyczalnia-rowerow",
+      url: `${baseUrl}/pl/restauracja`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/restaurant`,
+          sk: `${baseUrl}/sk/restauracia`,
+          de: `${baseUrl}/de/restaurant`,
+          ua: `${baseUrl}/ua/restoran`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/pl/cennik`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/pricing`,
+          sk: `${baseUrl}/sk/cennik`,
+          de: `${baseUrl}/de/preisliste`,
+          ua: `${baseUrl}/ua/tsiny`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/pl/zajecia-grupowe`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/group-classes`,
+          sk: `${baseUrl}/sk/skupinove-aktivity`,
+          de: `${baseUrl}/de/gruppenkurse`,
+          ua: `${baseUrl}/ua/hrupovi-zanyattya`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/pl/kontakt`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/contact`,
+          sk: `${baseUrl}/sk/kontakt`,
+          de: `${baseUrl}/de/kontakt`,
+          ua: `${baseUrl}/ua/kontakty`,
+        },
+      },
     },
   ];
 }

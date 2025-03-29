@@ -52,7 +52,7 @@ export default function Squash() {
             width={100}
             height={100}
             layout="responsive"
-            alt=""
+            alt="Profesjonalna sala o certyfikowanych wymiarach do Squasha"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Squash() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="Logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -107,14 +107,14 @@ export default function Squash() {
             />
           </div>
         </div>
-        <section className="grid grid-cols-2 pt-20 gap-10">
+        <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
             {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/squash/s1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Mini kręgielnia - zdjęcie 1"
+              alt="Profesjonalna sala o certyfikowanych wymiarach do Squasha"
             />
           </div>
           <div className="relative w-full h-132">
@@ -122,7 +122,7 @@ export default function Squash() {
               src="/park/squash/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Sala do Squasha na tle z rakietą i piłeczką"
             />
           </div>
           <div className="relative w-full h-132">
@@ -130,7 +130,7 @@ export default function Squash() {
               src="/park/squash/s3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Rakieta i piłeczka na sali do squasha"
             />
           </div>
           <div className="relative w-full h-132">
@@ -138,7 +138,7 @@ export default function Squash() {
               src="/park/squash/s4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Mini kręgielnia - zdjęcie 2"
+              alt="Rakieta i piłeczka na sali do squasha"
             />
           </div>
         </section>
