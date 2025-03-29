@@ -645,5 +645,15 @@
             "title": "Muszynova Restaurant Gallery",
             "description": "Discover the Muszynova Restaurant photo gallery. See elegant interiors, appetizing dishes prepared with passion, and a unique atmosphere that delights guests and makes every visit unforgettable!"
         }
+    },
+    "notfound": {
+        "title": "404 - Page Not Found",
+        "text": "PS: This often happens due to a typo in the URL or if the page has moved to a slightly different address...",
+        "button": "Home Page"
+    },
+    "error": {
+        "title": "Something Went Wrong!",
+        "text": "We're sorry, there was an issue. Please try again later or contact us if the problem persists.",
+        "button": "Try Again"
     }
 }

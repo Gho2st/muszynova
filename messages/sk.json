@@ -645,5 +645,15 @@
             "title": "Galéria reštaurácie - Muszynova",
             "description": "Objavte fotogalériu reštaurácie Muszynova. Pozrite si jedinečné interiéry plné elegancie, chutné jedlá pripravené s vášňou a neopakovateľnú atmosféru, ktorá očarí hostí a urobí každú návštevu nezabudnuteľnou!"
         }
+    },
+    "notfound": {
+        "title": "404 - Stránka nenájdená",
+        "text": "PS: To sa často stáva kvôli preklepu v URL alebo ak bola stránka presunutá na trochu inú adresu...",
+        "button": "Hlavná stránka"
+    },
+    "error": {
+        "title": "Niečo sa pokazilo!",
+        "text": "Ospravedlňujeme sa, vyskytol sa problém. Skúste to znova neskôr alebo nás kontaktujte, ak sa problém bude opakovať.",
+        "button": "Skúsiť znova"
     }
 }

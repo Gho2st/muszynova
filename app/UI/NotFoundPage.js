@@ -1,15 +1,8 @@
-"use client";
-
-import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import Button from "../UI/Buttons/Button";
+import Button from "./Buttons/Button";
 
-export default function Error({ error, reset }) {
-  const t = useTranslations("error");
-
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
+export default function NotFoundPage() {
+  const t = useTranslations("notfound");
 
   return (
     <section className="px-6 xl:px-20 py-32 text-center">

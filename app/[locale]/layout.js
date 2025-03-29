@@ -1,10 +1,10 @@
 import { Poppins } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import Nav from "../UI/Nav/Nav";
 import Footer from "../UI/Footer/Footer";
+import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 
 const font = Poppins({

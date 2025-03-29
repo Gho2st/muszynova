@@ -645,5 +645,15 @@
             "title": "Galeria Restauracji - Muszynova",
             "description": "Odkryj galerię zdjęć restauracji Muszynova. Zobacz wyjątkowe wnętrza pełne elegancji, apetyczne dania przygotowane z pasją oraz niepowtarzalną atmosferę, która zachwyca gości i sprawia, że każda wizyta staje się niezapomniana!"
         }
+    },
+    "notfound": {
+        "title": "404 - Strona nie znaleziona",
+        "text": "PS: Często dzieje się tak przy literówce w adresie URL lub w przypadku gdy strona zmieniła adres na troszkę inny...",
+        "button": "Strona Główna"
+    },
+    "error": {
+        "title": "Coś poszło nie tak!",
+        "text": "Przepraszamy, wystąpił problem. Spróbuj ponownie później lub skontaktuj się z nami, jeśli problem będzie się powtarzał.",
+        "button": "Spróbuj ponownie"
     }
 }
