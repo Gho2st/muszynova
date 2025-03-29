@@ -32,7 +32,7 @@ export default function GalleryRestaurant() {
   const t = useTranslations("gallery");
   return (
     <div className="px-6 xl:px-24 py-16 xl:py-20 ">
-      <h1 className="text-4xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
+      <h1 className="text-3xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
         {t("header2")}
       </h1>
       <ImagesR />

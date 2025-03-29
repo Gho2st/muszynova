@@ -30,7 +30,7 @@ export default function Cennik() {
   return (
     <>
       <section className="py-16 xl:py-20 bg-black xl:bg-white">
-        <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-16 xl:mb-20">
+        <h1 className="text-3xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
           {t("header")}
         </h1>
         <div className=" xl:px-24 xl:flex xl:justify-center">

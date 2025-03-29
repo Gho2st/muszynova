@@ -31,7 +31,7 @@ export default function Galeria() {
   return (
     <>
       <section className="px-6 xl:px-24 py-16 xl:py-20 ">
-        <h1 className="text-5xl xl:text-6xl font-bold text-customGold text-center mb-16 xl:mb-20">
+        <h1 className="text-3xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
           {t("header")}
         </h1>
         <div className="flex flex-col sm:flex-row justify-center gap-x-10 gap-y-10 sm:gap-y-0">
