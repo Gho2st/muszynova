@@ -70,18 +70,21 @@ export default function Page() {
           />
         </div>
         <div className="xl:w-1/2 px-6 py-20  xl:p-16 pt-20">
-          <h2 className="text-5xl xl:text-6xl text-center font-bold">
+          <h2 className="text-4xl xl:text-6xl text-center font-bold">
             {t("header2")}
           </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
-            <Button text={t("button")} link="/menu.pdf" />
+            <Button
+              text={t("button")}
+              link={`${process.env.NEXT_PUBLIC_BASE_URL}/menu.pdf`}
+            />
             <Button text={t("button2")} link="/karta-napojów.pdf" />
           </div>
         </div>
       </div>
       <Restaurant t={r} />
       <section className="px-6 xl:px-44 py-20">
-        <h2 className="text-5xl xl:text-6xl font-bold text-center mb-20">
+        <h2 className="text-4xl xl:text-6xl font-bold text-center mb-20">
           {t("header3")}
         </h2>
         <div className="grid xl:grid-cols-3 gap-10">
