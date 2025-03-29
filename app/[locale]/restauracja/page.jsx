@@ -8,6 +8,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import MenuButton from "@/app/UI/Buttons/MenuButton";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -74,10 +75,7 @@ export default function Page() {
             {t("header2")}
           </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
-            <Button
-              text={t("button")}
-              link="https://muszynova.vercel.app/menu.pdf"
-            />
+            <MenuButton text={t("button")} link="/menu.pdf" />
             <Button text={t("button2")} link="/karta-napojów.pdf" />
           </div>
         </div>
