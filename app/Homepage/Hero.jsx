@@ -10,7 +10,7 @@ export default function Hero({ t }) {
 
       {/* Treść i obraz w jednym kontenerze */}
       <div className="relative z-20 flex flex-col items-center min-h-screen text-white gap-4">
-        <span className="mb-6 mt-10   text-3xl md:text-5xl xl:w-1/2 xl:leading-snug font-extrabold text-center uppercase">
+        <span className="mb-6 mt-4 md:mt-10 text-3xl md:text-5xl xl:w-1/2 xl:leading-snug font-extrabold text-center uppercase">
           {t("welcome")}
         </span>
         <div className="xl:w-1/2">
