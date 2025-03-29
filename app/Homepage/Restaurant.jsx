@@ -10,12 +10,12 @@ export default function Restaurant({ t }) {
         <p className="text-lg xl:text-xl font-semibold mb-6">{t("header2")}</p>
         <p className="font-light xl:text-lg">{t("text")}</p>
       </div>
-      <div className="grid lg:grid-cols-3 mt-24 gap-16">
+      <div className="grid lg:grid-cols-3 mt-24 gap-16 ">
         {/* left container */}
         <div className="lg:text-right flex flex-col gap-16">
           {/* lokalne skladniki */}
           <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
+            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
               <Image
                 src={"/restauracja/mleko-ser.webp"}
                 width={100}
@@ -30,7 +30,7 @@ export default function Restaurant({ t }) {
           </div>
           {/* dzieciece smaki */}
           <div>
-            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
+            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
               <Image
                 src={"/restauracja/lody.webp"}
                 width={100}
@@ -38,14 +38,14 @@ export default function Restaurant({ t }) {
                 alt="Lody w Wafelku"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">
-              {t("items.item2.header")}
+                {t("items.item2.header")}
               </h3>
             </div>
             <p className="font-light mt-5 ">{t("items.item2.text")}</p>
           </div>
           {/* NOve standardy */}
           <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center lg:justify-end gap-5 md:gap-10">
+            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
               <Image
                 src={"/restauracja/5gwiazdek.webp"}
                 width={100}
@@ -53,7 +53,7 @@ export default function Restaurant({ t }) {
                 alt="5 gwiazdek"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">
-              {t("items.item3.header")}
+                {t("items.item3.header")}
               </h3>
             </div>
             <p className="font-light mt-5 ">{t("items.item3.text")}</p>
@@ -72,7 +72,7 @@ export default function Restaurant({ t }) {
         <div className="text-right flex flex-col gap-16">
           {/* zdrowszy wybor */}
           <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
+            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 xl:gap-10">
               <Image
                 src={"/restauracja/pizza.webp"}
                 width={100}
@@ -80,14 +80,14 @@ export default function Restaurant({ t }) {
                 alt="Kawałek pizzy"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">
-              {t("items.item4.header")}
+                {t("items.item4.header")}
               </h3>
             </div>
             <p className="font-light mt-5 ">{t("items.item4.text")}</p>
           </div>
           {/* dla doroslych */}
           <div>
-            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
+            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 x,:gal-10">
               <Image
                 src={"/restauracja/kawa.webp"}
                 width={100}
@@ -95,14 +95,14 @@ export default function Restaurant({ t }) {
                 alt="Kawa z bitą śmietaną"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">
-              {t("items.item5.header")}
+                {t("items.item5.header")}
               </h3>
             </div>
             <p className="font-light mt-5 ">{t("items.item5.text")}</p>
           </div>
           {/* imprezy okolicznosciowe*/}
           <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse gap-5 md:gap-10">
+            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 xl:gap-10">
               <Image
                 src={"/restauracja/tort.webp"}
                 width={100}
@@ -110,7 +110,7 @@ export default function Restaurant({ t }) {
                 alt="Porcja pysznego tortu"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">
-              {t("items.item6.header")}
+                {t("items.item6.header")}
               </h3>
             </div>
             <p className="font-light mt-5 ">{t("items.item6.text")}</p>

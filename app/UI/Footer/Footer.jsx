@@ -50,7 +50,7 @@ export default function Footer() {
   return (
     <footer className="px-6 bg-customGreen text-white">
       <div className="flex flex-col gap-16 items-center justify-center z-10">
-        <span className="text-4xl font-bold mt-20"> {t("header")}</span>
+        <span className="text-4xl text-center font-bold mt-20"> {t("header")}</span>
         <div className="h-1 w-2/5 bg-customGold mb-10"></div>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 text-lg">
           <li>
