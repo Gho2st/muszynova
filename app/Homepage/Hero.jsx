@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Hero({ t }) {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center"
+      className="px-3 relative min-h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/Muszynova-hotel.jpg')" }}
     >
       {/* Overlay */}
