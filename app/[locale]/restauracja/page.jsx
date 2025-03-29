@@ -40,7 +40,7 @@ export default function Page() {
     <>
       <div className="grid xl:grid-cols-2">
         <div className="px-6 xl:p-16 pt-16 xl:pt-20">
-          <h1 className="text-5xl xl:text-6xl font-bold">{t("header")}</h1>
+          <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mb-10 xl:mb-0 mt-10">
             {t("text1")}
             <br></br>
