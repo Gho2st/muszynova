@@ -18,7 +18,12 @@ export async function generateMetadata({ params }) {
   });
 
   const path = routing.pathnames["/park/scianka-wspinaczkowa"][locale]; // Pobieramy ścieżkę dla języka
-  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const canonicalUrl =
+    locale === "pl"
+      ? `https://muszynova.pl${path}`
+      : `https://muszynova.pl/${locale}${path}`;
+
   return {
     title: t("title"),
     description: t("description"),

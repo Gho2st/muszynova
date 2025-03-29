@@ -11,7 +11,12 @@ export async function generateMetadata({ params }) {
   });
 
   const path = routing.pathnames["/zajecia-grupowe"][locale]; // Pobieramy ścieżkę dla języka
-  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const canonicalUrl =
+    locale === "pl"
+      ? `https://muszynova.pl${path}`
+      : `https://muszynova.pl/${locale}${path}`;
+
   return {
     title: t("title"),
     description: t("description"),
@@ -26,7 +31,7 @@ export default function Zajecia() {
   return (
     <>
       <section className="px-6 xl:px-24 py-16 xl:py-20">
-        <h1 className="text-center text-5xl xl:text-6xl mb-16 xl:mb-20 font-bold text-customGold">
+        <h1 className="text-center text-4xl xl:text-6xl mb-16 xl:mb-20 font-bold text-customGold">
           {t("header")}
         </h1>
         <div className="flex justify-center">

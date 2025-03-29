@@ -3,7 +3,7 @@ export default function sitemap() {
 
   return [
     {
-      url: `${baseUrl}/pl`,
+      url: `${baseUrl}`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -15,7 +15,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/o-nas`,
+      url: `${baseUrl}/o-nas`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -27,7 +27,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park`,
+      url: `${baseUrl}/park`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -39,7 +39,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/silownia`,
+      url: `${baseUrl}/park/silownia`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -51,7 +51,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/fitness`,
+      url: `${baseUrl}/park/fitness`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -63,7 +63,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/hala-sportowa`,
+      url: `${baseUrl}/park/hala-sportowa`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -87,7 +87,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/scianka-wspinaczkowa`,
+      url: `${baseUrl}/park/scianka-wspinaczkowa`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -99,7 +99,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/sala-zabaw`,
+      url: `${baseUrl}/park/sala-zabaw`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -111,7 +111,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/squash`,
+      url: `${baseUrl}/park/squash`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -123,7 +123,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/wypozyczalnia-rowerow`,
+      url: `${baseUrl}/park/wypozyczalnia-rowerow`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -135,7 +135,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/sala-gier`,
+      url: `${baseUrl}/park/sala-gier`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -147,7 +147,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/sala-multimedialna`,
+      url: `${baseUrl}/park/sala-multimedialna`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -159,7 +159,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/galeria`,
+      url: `${baseUrl}/galeria`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -171,7 +171,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/galeria/park`,
+      url: `${baseUrl}/galeria/park`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -183,7 +183,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/galeria/restauracja`,
+      url: `${baseUrl}/galeria/restauracja`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -195,7 +195,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/restauracja`,
+      url: `${baseUrl}/restauracja`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -207,7 +207,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/cennik`,
+      url: `${baseUrl}/cennik`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -219,7 +219,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/zajecia-grupowe`,
+      url: `${baseUrl}/zajecia-grupowe`,
       lastModified: new Date(),
       alternates: {
         languages: {
@@ -231,7 +231,7 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/kontakt`,
+      url: `${baseUrl}/kontakt`,
       lastModified: new Date(),
       alternates: {
         languages: {

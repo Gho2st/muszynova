@@ -12,8 +12,12 @@ export async function generateMetadata({ params }) {
   const { locale } = resolvedParams;
   const t = await getTranslations({ locale, namespace: "metadata.homepage" });
 
-  const path = routing.pathnames["/"][locale]; // Pobieramy ścieżkę dla języka
-  const canonicalUrl = `https://muszynova.pl/${locale}`; // Dodajemy prefix języka
+  const defaultLocale = "pl"; // Ustaw domyślny język
+  const canonicalUrl =
+    locale === defaultLocale
+      ? "https://muszynova.pl"
+      : `https://muszynova.pl/${locale}`;
+
   return {
     title: t("title"),
     description: t("description"),

@@ -15,10 +15,18 @@ import { useTranslations } from "next-intl";
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const { locale } = resolvedParams;
-  const t = await getTranslations({ locale, namespace: "metadata.contact" });
+  const t = await getTranslations({
+    locale,
+    namespace: "metadata.contact",
+  });
 
   const path = routing.pathnames["/kontakt"][locale]; // Pobieramy ścieżkę dla języka
-  const canonicalUrl = `https://muszynova.pl/${locale}${path}`; // Dodajemy prefix języka, np. "/pl/kontakt"
+  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const canonicalUrl =
+    locale === "pl"
+      ? `https://muszynova.pl${path}`
+      : `https://muszynova.pl/${locale}${path}`;
+
   return {
     title: t("title"),
     description: t("description"),
@@ -33,7 +41,7 @@ export default function Contact() {
   return (
     <>
       <div className="px-6 xl:px-44 py-16 xl:py-20">
-        <h1 className="text-center text-5xl xl:text-6xl text-customGold font-bold mb-16 xl:mb-20">
+        <h1 className="text-center text-4xl xl:text-5xl text-customGold font-bold mb-16 xl:mb-20">
           {t("header")}
         </h1>
         <section>

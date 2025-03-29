@@ -7,7 +7,7 @@ export const routing = defineRouting({
 
   // Domyślny język, gdy żaden nie pasuje
   defaultLocale: "pl",
-
+  localePrefix: "as-needed", // lub 'as-needed', w zależności od potrzeb
   // Tłumaczenie ścieżek dla każdego języka
   pathnames: {
     "/": {
