@@ -15,10 +15,10 @@ export const metadata = {
   // Open Graph
   openGraph: {
     type: "website",
-    url: "https://muszynova.pl/",
+    url: "https://muszynova.vercel.app/",
     title: "Muszynova",
     description: "Sport and Fun for young and old at a nOvy level",
-    images: "/opengraph-image.png",
+    images: "https://muszynova.vercel.app/opengraph-image.png",
   },
 };
 
