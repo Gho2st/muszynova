@@ -49,9 +49,11 @@ export default function Footer() {
 
   return (
     <footer className="px-6 bg-customGreen text-white">
-      <div className="flex flex-col gap-16 items-center justify-center z-10">
-        <span className="text-4xl text-center font-bold mt-20"> {t("header")}</span>
-        <div className="h-1 w-2/5 bg-customGold mb-10"></div>
+      <div className="flex flex-col gap-10 xl:gap-16 items-center justify-center z-10">
+        <span className="text-4xl text-center font-bold mt-14 xl:mt-20">
+          {t("header")}
+        </span>
+        <div className="h-1 w-2/5 bg-customGold mb-4 xl:mb-10"></div>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 text-lg">
           <li>
             <span className="text-customGold font-semibold">
@@ -63,7 +65,10 @@ export default function Footer() {
             <span className="text-customGold font-semibold">
               {t("info.info2.address")}:{" "}
             </span>
-            <Link className="hover:text-neutral-400 transition-all duration-500" href={"tel:48509445000"}>
+            <Link
+              className="hover:text-neutral-400 transition-all duration-500"
+              href={"tel:48509445000"}
+            >
               +48 509 445 000{" "}
             </Link>
           </li>
