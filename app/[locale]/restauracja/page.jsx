@@ -76,7 +76,7 @@ export default function Page() {
           </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
             <MenuButton text={t("button")} link="/menu.pdf" />
-            <Button text={t("button2")} link="/karta-napojów.pdf" />
+            <MenuButton text={t("button2")} link="/karta-napojów.pdf" />
           </div>
         </div>
       </div>
