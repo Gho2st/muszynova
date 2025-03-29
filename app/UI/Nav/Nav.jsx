@@ -15,27 +15,20 @@ export default function Nav() {
   const [timeoutId, setTimeoutId] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const scrollThreshold = 120; // Dopiero po przewinięciu 100px navbar może znikać
-  const hideDelay = 20; // Minimalna różnica w px, zanim navbar zacznie znikać
+  const scrollThreshold = 120;
+  const hideDelay = 20;
   const t = useTranslations("nav");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      // Jeśli użytkownik jest blisko góry strony, zawsze pokazujemy navbar
       if (scrollY < scrollThreshold) {
         setIsVisible(true);
-      }
-      // Jeśli przewinął w dół o więcej niż hideDelay, chowamy navbar
-      else if (scrollY > lastScrollY + hideDelay) {
+      } else if (scrollY > lastScrollY + hideDelay) {
         setIsVisible(false);
-      }
-      // Jeśli przewija w górę o więcej niż hideDelay, pokazujemy navbar
-      else if (scrollY < lastScrollY - hideDelay) {
+      } else if (scrollY < lastScrollY - hideDelay) {
         setIsVisible(true);
       }
-
       setLastScrollY(scrollY);
     };
 
@@ -45,11 +38,9 @@ export default function Nav() {
     };
   }, [lastScrollY]);
 
-  // Toggle handlers
   const handleMenuToggle = () => setIsOpen((prev) => !prev);
   const handleParkDropdownToggle = () => setIsParkDropdownOpen((prev) => !prev);
 
-  // Dropdown hover handlers
   const openParkDropdown = () => {
     if (timeoutId) clearTimeout(timeoutId);
     setIsParkDropdownOpen(true);
@@ -60,40 +51,21 @@ export default function Nav() {
     setTimeoutId(id);
   };
 
-  // Body overflow control
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", isOpen);
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
 
-  // Animation variants
   const menuVariants = {
-    open: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.3, ease: "easeInOut" },
-    },
-    closed: {
-      opacity: 0,
-      x: "-100%",
-      transition: { duration: 0.3, ease: "easeInOut" },
-    },
+    open: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeInOut" } },
+    closed: { opacity: 0, x: "-100%", transition: { duration: 0.3, ease: "easeInOut" } },
   };
 
   const dropdownVariants = {
-    open: {
-      opacity: 1,
-      height: "auto",
-      transition: { duration: 0.25, ease: "easeOut" },
-    },
-    closed: {
-      opacity: 0,
-      height: 0,
-      transition: { duration: 0.25, ease: "easeIn" },
-    },
+    open: { opacity: 1, height: "auto", transition: { duration: 0.25, ease: "easeOut" } },
+    closed: { opacity: 0, height: 0, transition: { duration: 0.25, ease: "easeIn" } },
   };
 
-  // Park dropdown items
   const parkItems = [
     { href: "/park", label: t("parkItems.park") },
     { href: "/park/silownia", label: t("parkItems.gym") },
@@ -110,101 +82,116 @@ export default function Nav() {
 
   return (
     <nav className="relative bg-black">
-      {/* Top Bar with Logo and Hamburger */}
+      {/* Top Bar */}
       <div
         className={`fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-4 xl:px-8 bg-black transition-transform duration-500 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        {/* Logo */}
-        <Link href="/" className="relative h-24 w-24">
-          <Image
-            src="/Muszynova-mobile-logo.webp"
-            fill
-            alt="Logo Muszynova"
-            className="object-contain"
-            sizes="(max-width: 768px) 100px, 150px"
-            priority
-          />
-        </Link>
-        {/* Desktop Navigation */}
-        <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
-          <NavLink href="/o-nas">{t("links.link1")}</NavLink>
+        {/* Lewa strona: Logo Muszynova i Logo UE */}
+        <div className="flex items-center">
+          <Link href="/" className="relative h-24 w-24">
+            <Image
+              src="/Muszynova-mobile-logo.webp"
+              fill
+              alt="Logo Muszynova"
+              className="object-contain"
+              sizes="(max-width: 768px) 100px, 150px"
+              priority
+            />
+          </Link>
+          <div className="hidden xl:block relative h-12 w-24">
+            <Image
+              src="/unia.webp"
+              fill
+              alt="Logo Unii Europejskiej"
+              className="object-contain"
+            />
+          </div>
+        </div>
 
-          {/* Park Dropdown */}
-          <div
-            className="group relative"
-            onMouseEnter={openParkDropdown}
-            onMouseLeave={closeParkDropdown}
-          >
-            <div className="flex items-center">
-              <NavLink href="/park">{t("links.park")}</NavLink>
-              <button
-                onClick={handleParkDropdownToggle}
-                className="ml-1 focus:outline-none"
-                aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
-              >
-                <IoIosArrowDown
-                  className={`transition-transform duration-300 ${
-                    isParkDropdownOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-            </div>
-            <AnimatePresence>
-              {isParkDropdownOpen && (
-                <motion.div
-                  variants={dropdownVariants}
-                  initial="closed"
-                  animate="open"
-                  exit="closed"
-                  className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg"
-                  onMouseEnter={openParkDropdown}
-                  onMouseLeave={closeParkDropdown}
+        {/* Prawa strona: Nawigacja, LocaleSwitcher, SalesButton, Hamburger */}
+        <div className="flex items-center gap-6">
+          {/* Desktop Navigation */}
+          <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
+            <NavLink href="/o-nas">{t("links.link1")}</NavLink>
+
+            {/* Park Dropdown */}
+            <div
+              className="group relative"
+              onMouseEnter={openParkDropdown}
+              onMouseLeave={closeParkDropdown}
+            >
+              <div className="flex items-center">
+                <NavLink href="/park">{t("links.park")}</NavLink>
+                <button
+                  onClick={handleParkDropdownToggle}
+                  className="ml-1 focus:outline-none"
+                  aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
                 >
-                  {parkItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block px-4 py-2 hover:bg-gray-800"
-                      onClick={() => setIsParkDropdownOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  <IoIosArrowDown
+                    className={`transition-transform duration-300 ${
+                      isParkDropdownOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+              <AnimatePresence>
+                {isParkDropdownOpen && (
+                  <motion.div
+                    variants={dropdownVariants}
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg"
+                    onMouseEnter={openParkDropdown}
+                    onMouseLeave={closeParkDropdown}
+                  >
+                    {parkItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="block px-4 py-2 hover:bg-gray-800"
+                        onClick={() => setIsParkDropdownOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <NavLink href="/restauracja">{t("links.link2")}</NavLink>
+            <NavLink href="/cennik">{t("links.link3")}</NavLink>
+            <NavLink href="/zajecia-grupowe">{t("links.link4")}</NavLink>
+            <NavLink href="/galeria">{t("links.link5")}</NavLink>
+            <NavLink href="/kontakt">{t("links.link6")}</NavLink>
+            <LocaleSwitcher />
+            <SalesButton
+              text={t("button")}
+              link="https://muszynova.oos.pl/customer/login"
+            />
           </div>
 
-          <NavLink href="/restauracja">{t("links.link2")}</NavLink>
-          <NavLink href="/cennik">{t("links.link3")}</NavLink>
-          <NavLink href="/zajecia-grupowe">{t("links.link4")}</NavLink>
-          <NavLink href="/galeria">{t("links.link5")}</NavLink>
-          <NavLink href="/kontakt">{t("links.link6")}</NavLink>
-          <LocaleSwitcher />
-          <SalesButton
-            text={t("button")}
-            link="https://muszynova.oos.pl/customer/login"
-          />
-        </div>
-        {/* Hamburger Button */}
-        <div
-          className={`flex gap-5 items-center xl:hidden ${
-            isOpen ? "open" : ""
-          }`}
-        >
-          <LocaleSwitcher />
-          <button
-            className="hamburger"
-            onClick={handleMenuToggle}
-            aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
-            aria-expanded={isOpen}
+          {/* Hamburger Button (Mobile) */}
+          <div
+            className={`flex items-center gap-5 xl:hidden ${
+              isOpen ? "open" : ""
+            }`}
           >
-            <span className="hamburger-top" />
-            <span className="hamburger-middle" />
-            <span className="hamburger-bottom" />
-          </button>
+            <LocaleSwitcher />
+            <button
+              className="hamburger"
+              onClick={handleMenuToggle}
+              aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
+              aria-expanded={isOpen}
+            >
+              <span className="hamburger-top" />
+              <span className="hamburger-middle" />
+              <span className="hamburger-bottom" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -256,8 +243,8 @@ export default function Nav() {
                           href={item.href}
                           className="block border-b border-gray-300 py-3"
                           onClick={() => {
-                            handleMenuToggle(); // Zamknij menu mobilne
-                            setIsParkDropdownOpen(false); // Zwiń dropdown
+                            handleMenuToggle();
+                            setIsParkDropdownOpen(false);
                           }}
                         >
                           {item.label}
@@ -312,7 +299,6 @@ export default function Nav() {
   );
 }
 
-// Reusable NavLink component
 function NavLink({ href, children }) {
   return (
     <Link
