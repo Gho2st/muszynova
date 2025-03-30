@@ -301,6 +301,13 @@ export default function Nav() {
                 {t("links.link5")}
               </Link>
               <Link
+                className="border-b border-gray-300 py-3"
+                href="/partnerzy"
+                onClick={handleMenuToggle}
+              >
+                {t("links.link7")}
+              </Link>
+              <Link
                 className="border-b border-gray-300 py-3 mb-6"
                 href="/kontakt"
                 onClick={handleMenuToggle}

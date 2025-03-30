@@ -31,8 +31,8 @@ export default function Partners() {
   const t = useTranslations("partners");
 
   return (
-    <section className="px-6 xl:px-44 py-16 xl:py-24">
-      <h1 className="text-center text-3xl xl:text-5xl mb-16 xl:mb-32 font-bold text-customGold break-words">
+    <section className="px-6 md:px-20 xl:px-44 py-16 xl:py-24">
+      <h1 className="text-center text-3xl xl:text-5xl mb-16 md:mb-24 xl:mb-32 font-bold text-customGold break-words">
         {t("title")}
       </h1>
       <div className="mt-16 flex flex-col gap-32">
