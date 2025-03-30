@@ -7,6 +7,7 @@
             "link4": "Zajęcia Grupowe",
             "link5": "Galeria",
             "link6": "Kontakt",
+            "link7": "Partnerzy",
             "park": "Park"
         },
         "parkItems": {
@@ -564,6 +565,61 @@
             "error2": "Proszę zaznacz, że nie jesteś robotem przed wysłaniem."
         }
     },
+    "partners": {
+        "title": "Nasi Partnerzy",
+        "muszyna": {
+            "header": "Miasto i Gmina Uzdrowiskowa Muszyna",
+            "text": "Muszyna posiada status miejscowości uzdrowiskowej z licznymi odwiertami i rozlewniami wód mineralnych. Znajdują się tam pijalnie wody mineralnej, sanatoria uzdrowiskowe, baseny oraz parki."
+        },
+        "academy": {
+            "header": "Akademia Top Kids Muszyna",
+            "text": "W pełni profesjonalna akademia piłkarska z własną, rozbudowaną bazą sportową."
+        },
+        "muks": {
+            "header": "Muks Mineralni Krynica- Zdrój",
+            "text": "Współdziałanie z władzami sportowymi, państwowymi, samorządowym i związkowymi w celu zapewnienia członkom właściwych warunków do uprawiania sportu"
+        },
+        "alpina": {
+            "header": "Alpina Sport & Spa",
+            "text": "Ośrodek Sportu i Rekreacji ALPINA SPORT to miejsce, w którym odpoczniesz i zregenerujesz siły do dalszej nauki i pracy."
+        },
+        "kolejarz": {
+            "header": "Dom Wczasowy Kolejarz Muszyna Złockie",
+            "text": "Położenie ośrodka w jednym z najpiękniejszych rejonów Polski wraz z wygodną bazą noclegową i bogatą ofertą sportowo rekreacyjną."
+        },
+        "hospital": {
+            "header": "20 Wojskowy Szpital Uzdrowiskowo-Rehabilitacyjny",
+            "text": "Obiekt 20 Wojskowy Szpital Uzdrowiskowo-Rehabilitacyjny SPZOZ w Krynicy-Zdroju znajduje się w miejscowości Krynica-Zdrój. Odległość ważnych miejsc od obiektu: Ruiny zamku w Muszynie – 12 km, Wierchomla Train Station – 33 km."
+        },
+        "artur": {
+            "header": "Artur Ziółko",
+            "text": "Sukces jest sumą małych wysiłków powtarzanych dzień po dniu. Spraw, aby to dzisiejszy dzień był tym pierwszym na drodze do osiągnięcia wielkich celów."
+        },
+        "activ": {
+            "header": "Activ & Vital Fizjoterapia Uroginekologiczna",
+            "text": "Gabinet Activ&Vital powstał z myślą o kobietach na każdym etapie życia , począwszy od bolesnego miesiączkowania, poprzez terapię okołoporodową skończywszy na profilaktyce oraz leczeniu zaburzeń obszaru miednicy mniejszej."
+        },
+        "relaks": {
+            "header": "Dom Relaksu “Na Wzgórzu”",
+            "text": "Dom Relaksu „Na Wzgórzu” w Muszynie to idealne miejsce na wypoczynek w uzdrowiskowej scenerii. Oferujemy wyjątkowe atrakcje, które zapewnią relaks i regenerację w ciszy i spokoju."
+        },
+        "revita": {
+            "header": "Sanatorium Revita",
+            "text": "Usytuowane w przepięknej dolinie Muszyny,  Sanatorium Revita stanowi idealne połączenie spokoju natury z leczniczą mocą tutejszych wód mineralnych."
+        },
+        "aquapark": {
+            "header": "AquaPark Lipany",
+            "text": "Aquapark Lipany to najnowszy termalny park wodny na Słowacji i jedyny umiejscowiony z górach – w miasteczku Lipany. Park wodny zlokalizowany jest pomiędzy Popradem a Preszowem, raptem 22 km od granicy z Polską i 40 km od Krynicy-Zdroju."
+        },
+        "krynica": {
+            "header": "Krynica-Zdrój",
+            "text": "Miasto położone jest w Beskidzie Sądeckim, w dolinie potoku Kryniczanka i jego dopływów. Krynicę otaczają wzgórza Góry Parkowej, Krzyżowej, Jasiennika. Miasto leży na terenie Popradzkiego Parku Krajobrazowego, stanowi bazę wypadową w okoliczne góry."
+        },
+        "hotel": {
+            "header": "Hotel Muszyna ***",
+            "text": "Hotel Muszyna*** powstał w 2010 roku w malowniczej dolinie Muszyny-Złockiego, sercu Beskidu Sądeckiego, otulony przepięknymi krajobrazami Popradzkiego Parku Krajobrazowego"
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Park Rekreacyjno-Sportowy i Restauracja w Muszynie",
@@ -644,6 +700,10 @@
         "restaurantgallery": {
             "title": "Galeria Restauracji - Muszynova",
             "description": "Odkryj galerię zdjęć restauracji Muszynova. Zobacz wyjątkowe wnętrza pełne elegancji, apetyczne dania przygotowane z pasją oraz niepowtarzalną atmosferę, która zachwyca gości i sprawia, że każda wizyta staje się niezapomniana!"
+        },
+        "partners": {
+            "title": "Nasi Partnerzy | Muszyna, Krynica-Zdrój i więcej",
+            "description": "Poznaj naszych partnerów: uzdrowiska, hotele, akademie sportowe i atrakcje w Muszynie, Krynicy-Zdroju i okolicach Beskidu Sądeckiego."
         }
     },
     "notfound": {

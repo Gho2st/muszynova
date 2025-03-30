@@ -150,6 +150,13 @@ export const routing = defineRouting({
       de: "/kontakt",
       ua: "/kontakty",
     },
+    "/partnerzy": {
+      pl: "/partnerzy",
+      en: "/partners",
+      sk: "/partneri",
+      de: "/partner",
+      ua: "/партнери",
+    },
   },
 });
 

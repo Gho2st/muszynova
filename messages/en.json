@@ -7,6 +7,7 @@
             "link4": "Group Classes",
             "link5": "Gallery",
             "link6": "Contact",
+            "link7": "Partners",
             "park": "Recreational-Sports Park"
         },
         "parkItems": {
@@ -564,6 +565,61 @@
             "error2": "Please confirm that you are not a robot before submitting."
         }
     },
+    "partners": {
+        "title": "Our Partners",
+        "muszyna": {
+            "header": "Muszyna Town and Spa Commune",
+            "text": "Muszyna, a recognized spa town, is renowned for its numerous mineral water springs and bottling plants. It features mineral water tasting rooms, sanatoriums, swimming pools, and picturesque parks."
+        },
+        "academy": {
+            "header": "Top Kids Muszyna Academy",
+            "text": "A fully professional football academy with a modern and extensive sports facility."
+        },
+        "muks": {
+            "header": "MUKS Mineralni Krynica-Zdrój",
+            "text": "Collaboration with sports, governmental, local, and union authorities to provide members with optimal conditions for practicing sports."
+        },
+        "alpina": {
+            "header": "Alpina Sport & Spa",
+            "text": "The Alpina Sport & Spa Recreation Center is the perfect place to unwind and recharge for further study or work."
+        },
+        "kolejarz": {
+            "header": "Kolejarz Holiday Home Muszyna Złockie",
+            "text": "Located in one of Poland’s most beautiful regions, this center offers comfortable accommodations and a rich sports and recreational program."
+        },
+        "hospital": {
+            "header": "20th Military Spa and Rehabilitation Hospital",
+            "text": "Located in Krynica-Zdrój, the 20th Military Spa and Rehabilitation Hospital SPZOZ is 12 km from the Muszyna castle ruins and 33 km from Wierchomla Train Station."
+        },
+        "artur": {
+            "header": "Artur Ziółko",
+            "text": "Success is the sum of small efforts repeated day after day. Make today the first step toward achieving great goals."
+        },
+        "activ": {
+            "header": "Activ & Vital Urogynecological Physiotherapy",
+            "text": "The Activ & Vital clinic was created for women at every stage of life, addressing issues from painful menstruation to perinatal therapy, and offering prevention and treatment for pelvic floor disorders."
+        },
+        "relaks": {
+            "header": "Relax House 'On the Hill'",
+            "text": "Relax House 'On the Hill' in Muszyna is the perfect spot for a getaway in a spa-like setting, offering unique attractions for relaxation and rejuvenation."
+        },
+        "revita": {
+            "header": "Revita Sanatorium",
+            "text": "Nestled in the charming Muszyna valley, Revita Sanatorium blends the peace of nature with the healing power of local mineral waters."
+        },
+        "aquapark": {
+            "header": "AquaPark Lipany",
+            "text": "AquaPark Lipany, the newest thermal water park in Slovakia and the only one located in the mountains, lies in Lipany. Situated between Poprad and Prešov, it’s just 22 km from the Polish border and 40 km from Krynica-Zdrój."
+        },
+        "krynica": {
+            "header": "Krynica-Zdrój",
+            "text": "Located in the Beskid Sądecki mountains in the Kryniczanka stream valley, Krynica is surrounded by Parkowa, Krzyżowa, and Jasiennik hills. Within the Poprad Landscape Park, it serves as a gateway to nearby mountains."
+        },
+        "hotel": {
+            "header": "Hotel Muszyna ***",
+            "text": "Opened in 2010 in the scenic Muszyna-Złockie valley in the heart of Beskid Sądecki, Hotel Muszyna*** is surrounded by the stunning landscapes of the Poprad Landscape Park."
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Recreational and Sports Park & Restaurant in Muszyna",
@@ -644,6 +700,10 @@
         "restaurantgallery": {
             "title": "Muszynova Restaurant Gallery",
             "description": "Discover the Muszynova Restaurant photo gallery. See elegant interiors, appetizing dishes prepared with passion, and a unique atmosphere that delights guests and makes every visit unforgettable!"
+        },
+        "partners": {
+            "title": "Our Partners | Muszyna, Krynica-Zdrój & More",
+            "description": "Discover our partners: spas, hotels, sports academies, and attractions in Muszyna, Krynica-Zdrój, and the Beskid Sądecki region."
         }
     },
     "notfound": {

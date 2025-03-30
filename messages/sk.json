@@ -7,6 +7,7 @@
             "link4": "Skupinové aktivity",
             "link5": "Galéria",
             "link6": "Kontakt",
+            "link7": "Partneri",
             "park": "Rekreačno-športový park"
         },
         "parkItems": {
@@ -564,6 +565,61 @@
             "error2": "Prosím, potvrďte, že nie ste robot pred odoslaním."
         }
     },
+    "partners": {
+        "title": "Naši partneri",
+        "muszyna": {
+            "header": "Mesto a kúpeľná obec Muszyna",
+            "text": "Muszyna, uznávaná kúpeľná obec, je známa početnými prameňmi a plniarňami minerálnych vôd. Nachádzajú sa tu pitné pavilóny, sanatóriá, bazény a malebné parky."
+        },
+        "academy": {
+            "header": "Akadémia Top Kids Muszyna",
+            "text": "Plne profesionálna futbalová akadémia s moderným a rozšíreným športovým zázemím."
+        },
+        "muks": {
+            "header": "MUKS Mineralni Krynica-Zdrój",
+            "text": "Spolupráca so športovými, štátnymi, samosprávnymi a zväzovými orgánmi na zabezpečení optimálnych podmienok pre športovanie členov."
+        },
+        "alpina": {
+            "header": "Alpina Sport & Spa",
+            "text": "Športové a rekreačné centrum Alpina Sport & Spa je ideálnym miestom na oddych a načerpanie síl pred ďalším štúdiom alebo prácou."
+        },
+        "kolejarz": {
+            "header": "Rekreačný dom Kolejarz Muszyna Złockie",
+            "text": "Nachádza sa v jednej z najkrajších oblastí Poľska a ponúka pohodlné ubytovanie spolu s bohatým športovo-rekreačným programom."
+        },
+        "hospital": {
+            "header": "20. vojenská kúpeľná a rehabilitačná nemocnica",
+            "text": "20. vojenská kúpeľná a rehabilitačná nemocnica SPZOZ v Krynici-Zdrój je vzdialená 12 km od ruín hradu v Muszyni a 33 km od železničnej stanice Wierchomla."
+        },
+        "artur": {
+            "header": "Artur Ziółko",
+            "text": "Úspech je súčtom malých úsilí opakovaných deň čo deň. Nech je dnešný deň prvým krokom k dosiahnutiu veľkých cieľov."
+        },
+        "activ": {
+            "header": "Activ & Vital Urogynekologická fyzioterapia",
+            "text": "Ambulancia Activ & Vital bola vytvorená pre ženy v každej fáze života – od zmiernenia bolestivej menštruácie, cez perinatálnu terapiu až po prevenciu a liečbu porúch panvového dna."
+        },
+        "relaks": {
+            "header": "Dom oddychu 'Na vrchu'",
+            "text": "Dom oddychu 'Na vrchu' v Muszyni je ideálnym miestom na relax v kúpeľnej atmosfére s jedinečnými atrakciami pre odpočinok a regeneráciu."
+        },
+        "revita": {
+            "header": "Sanatórium Revita",
+            "text": "Sanatórium Revita, situované v krásnom údolí Muszyny, spája pokoj prírody s liečivou silou miestnych minerálnych vôd."
+        },
+        "aquapark": {
+            "header": "AquaPark Lipany",
+            "text": "AquaPark Lipany je najnovší termálny vodný park na Slovensku a jediný v horách, nachádzajúci sa v meste Lipany. Leží medzi Popradom a Prešovom, iba 22 km od poľskej hranice a 40 km od Krynice-Zdrój."
+        },
+        "krynica": {
+            "header": "Krynica-Zdrój",
+            "text": "Mesto leží v Beskide Sądeckom v údolí potoka Kryniczanka, obklopené vrchmi Parkowa, Krzyżowa a Jasiennik. Na území Popradského krajinného parku slúži ako východiskový bod do okolitých hôr."
+        },
+        "hotel": {
+            "header": "Hotel Muszyna ***",
+            "text": "Hotel Muszyna*** bol otvorený v roku 2010 v malebnom údolí Muszyna-Złockie v srdci Beskidu Sądeckého, obklopený nádhernou krajinou Popradského krajinného parku."
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Rekreačno-športový park a reštaurácia v Muszyne",
@@ -644,6 +700,10 @@
         "restaurantgallery": {
             "title": "Galéria reštaurácie - Muszynova",
             "description": "Objavte fotogalériu reštaurácie Muszynova. Pozrite si jedinečné interiéry plné elegancie, chutné jedlá pripravené s vášňou a neopakovateľnú atmosféru, ktorá očarí hostí a urobí každú návštevu nezabudnuteľnou!"
+        },
+        "partners": {
+            "title": "Naši Partneri | Muszyna, Krynica-Zdrój a viac",
+            "description": "Spoznajte našich partnerov: kúpele, hotely, športové akadémie a atrakcie v Muszyni, Krynici-Zdroji a regióne Beskid Sądecki."
         }
     },
     "notfound": {

@@ -242,5 +242,17 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/partnerzy`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/partners`,
+          sk: `${baseUrl}/sk/partneri`,
+          de: `${baseUrl}/de/partner`,
+          ua: `${baseUrl}/ua/партнери`,
+        },
+      },
+    },
   ];
 }

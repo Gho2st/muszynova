@@ -57,13 +57,29 @@ export default function Nav() {
   }, [isOpen]);
 
   const menuVariants = {
-    open: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeInOut" } },
-    closed: { opacity: 0, x: "-100%", transition: { duration: 0.3, ease: "easeInOut" } },
+    open: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3, ease: "easeInOut" },
+    },
+    closed: {
+      opacity: 0,
+      x: "-100%",
+      transition: { duration: 0.3, ease: "easeInOut" },
+    },
   };
 
   const dropdownVariants = {
-    open: { opacity: 1, height: "auto", transition: { duration: 0.25, ease: "easeOut" } },
-    closed: { opacity: 0, height: 0, transition: { duration: 0.25, ease: "easeIn" } },
+    open: {
+      opacity: 1,
+      height: "auto",
+      transition: { duration: 0.25, ease: "easeOut" },
+    },
+    closed: {
+      opacity: 0,
+      height: 0,
+      transition: { duration: 0.25, ease: "easeIn" },
+    },
   };
 
   const parkItems = [
@@ -167,6 +183,7 @@ export default function Nav() {
             <NavLink href="/zajecia-grupowe">{t("links.link4")}</NavLink>
             <NavLink href="/galeria">{t("links.link5")}</NavLink>
             <NavLink href="/kontakt">{t("links.link6")}</NavLink>
+            <NavLink href="/partnerzy">{t("links.link7")}</NavLink>
             <LocaleSwitcher />
             <SalesButton
               text={t("button")}
