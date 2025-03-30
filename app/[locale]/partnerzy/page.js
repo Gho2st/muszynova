@@ -29,6 +29,21 @@ export async function generateMetadata({ params }) {
 
 export default function Partners() {
   const t = useTranslations("partners");
+  // Tablica linków dla partnerów
+  const partnerLinks = {
+    muszyna: "https://muszyna.pl",
+    academy: "https://www.topkids-muszyna.pl/",
+    alpina: "https://www.alpinasport.pl/",
+    kolejarz: "https://www.dwkolejarz.pl/",
+    hospital: "https://20wszur.pl/",
+    artur: "https://trenerodadoz.pl/",
+    activ: "https://activ-vital.pl/",
+    relaks: "https://muszyna-domnawzgorzu.pl/",
+    revita: "https://sanatorium-revita.pl/",
+    aquapark: "https://www.aquaparklipany.eu/language/pl/home-1/",
+    krynica: "https://www.krynica-zdroj.pl/",
+    hotel: "https://hotelmuszyna.eu/",
+  };
 
   return (
     <section className="px-6 md:px-20 xl:px-44 py-16 xl:py-24">
@@ -56,6 +71,7 @@ export default function Partners() {
             f={t}
             t={t.raw(partner)}
             index={index}
+            link={partnerLinks[partner]} // Przekazujemy link
           />
         ))}
       </div>

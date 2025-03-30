@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function PartnerItem({ t, index, partner }) {
+export default function PartnerItem({ t, index, partner, link }) {
   const image = `${partner}.png`;
   console.log(image);
   return (
@@ -10,9 +11,11 @@ export default function PartnerItem({ t, index, partner }) {
       }`}
     >
       <div className="md:w-3/5">
-        <h2 className="text-xl md:text-2xl mb-10 underline md:underline-offset-[1rem]">
-          {t.header}
-        </h2>
+        <Link href={link} className=" ">
+          <h2 className="text-xl  inline-block hover:text-yellow-600 duration-300 transition-all md:text-2xl mb-10 underline md:underline-offset-[1rem]">
+            {t.header}
+          </h2>
+        </Link>
         <p className="font-light">{t.text}</p>
       </div>
       <div className="w-3/5 sm:w-2/5 md:w-1/5">
