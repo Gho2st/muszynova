@@ -67,7 +67,7 @@ export default function Footer() {
               {t("info.info2.address")}:{" "}
             </span>
             <Link
-              className="hover:text-neutral-400 transition-all duration-500"
+              className="hover:text-neutral-400 transition-all duration-500 underline"
               href={"tel:48509445000"}
             >
               +48 509 445 000{" "}
