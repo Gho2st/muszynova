@@ -81,7 +81,7 @@ export default function Fitness() {
           </div>
         </div>
         <div className="flex flex-col-reverse xl:flex-row">
-          <div className="xl:w-1/4 pr-10 xl:mr-2 mt-20 xl:mt-0">
+          <div className="xl:w-1/4 xl:pr-10 xl:mr-2 mt-20 xl:mt-0">
             <h3 className="text-4xl font-semibold"> {t("cards.header")}</h3>
             <p className="mt-10">{t("cards.text")}</p>
           </div>
