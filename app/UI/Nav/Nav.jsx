@@ -16,7 +16,7 @@ export default function Nav() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const scrollThreshold = 95;
-  const hideDelay = 10;
+  const hideDelay = 5;
   const t = useTranslations("nav");
 
   useEffect(() => {
