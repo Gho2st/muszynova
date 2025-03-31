@@ -41,7 +41,7 @@ export default function Contact() {
   return (
     <>
       <div className="px-6 xl:px-44 py-16 xl:py-20">
-        <h1 className="text-center text-3xl xl:text-5xl text-customGold font-bold mb-16 xl:mb-20 break-words">
+        <h1 className="text-center text-4xl xl:text-5xl text-customGold font-bold mb-16 xl:mb-20 break-words">
           {t("header")}
         </h1>
         <section>

@@ -182,8 +182,8 @@ export default function Nav() {
             <NavLink href="/cennik">{t("links.link3")}</NavLink>
             <NavLink href="/zajecia-grupowe">{t("links.link4")}</NavLink>
             <NavLink href="/galeria">{t("links.link5")}</NavLink>
-            <NavLink href="/kontakt">{t("links.link6")}</NavLink>
             <NavLink href="/partnerzy">{t("links.link7")}</NavLink>
+            <NavLink href="/kontakt">{t("links.link6")}</NavLink>
             <LocaleSwitcher />
             <SalesButton
               text={t("button")}
