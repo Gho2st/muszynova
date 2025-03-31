@@ -14,8 +14,8 @@ import Button from "../UI/Buttons/Button";
 
 export default function Services({ t }) {
   return (
-    <section className="bg-dark px-6 xl:px-44 py-20 overflow-x-hidden">
-      <h2 className="text-4xl  xl:text-5xl font-extrabold text-white mb-24 text-center break-words">
+    <section className="bg-dark px-6 xl:px-44 py-16 xl:py-20 overflow-x-hidden">
+      <h2 className="text-4xl  xl:text-5xl font-extrabold text-white mb-16 xl:mb-24 text-center break-words">
         {t("header")}
       </h2>
       <div className="grid xl:grid-cols-2 xl:p-10 gap-10">

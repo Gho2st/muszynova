@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Restaurant({ t }) {
   return (
-    <section className="bg-[#C4966C] px-6 xl:px-44 py-20 text-white overflow-x-hidden">
+    <section className="bg-[#C4966C] px-6 xl:px-44 py-16 xl:py-20 text-white overflow-x-hidden">
       <h2 className="text-4xl xl:text-5xl text-center font-extrabold text-white mb-6">
         {t("header")}
       </h2>
