@@ -15,8 +15,8 @@ export default function Nav() {
   const [timeoutId, setTimeoutId] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const scrollThreshold = 120;
-  const hideDelay = 20;
+  const scrollThreshold = 90;
+  const hideDelay = 15;
   const t = useTranslations("nav");
 
   useEffect(() => {
@@ -97,10 +97,10 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="relative bg-black">
+    <nav className="relative">
       {/* Top Bar */}
       <div
-        className={`fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-4 xl:px-8 bg-black transition-transform duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-1 2xl:py-4 xl:px-8 bg-black transition-transform duration-500 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >

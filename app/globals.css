@@ -31,7 +31,10 @@
     @apply bg-[#C4966C];
   }
   .bg-customGreen {
-    @apply bg-[#13322B];
+    @apply bg-[#135042];
+  }
+  .bg-dark {
+    @apply bg-[#333333];
   }
 }
 
