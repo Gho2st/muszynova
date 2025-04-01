@@ -30,7 +30,7 @@ export default function Zajecia() {
   const t = useTranslations("groupclasses");
   return (
     <>
-      <section className="px-6 xl:px-24 py-16 xl:py-20 overflow-x-hidden">
+      <section className="px-6 xl:px-24 py-16 xl:py-20 2xl:py-32 overflow-x-hidden">
         <h1 className="text-center text-3xl xl:text-5xl mb-16 xl:mb-20 font-bold text-customGold break-words">
           {t("header")}
         </h1>

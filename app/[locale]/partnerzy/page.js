@@ -46,7 +46,7 @@ export default function Partners() {
   };
 
   return (
-    <section className="px-6 md:px-20 xl:px-44 py-16 xl:py-24">
+    <section className="px-6 md:px-20 xl:px-44 py-16 xl:py-20 2xl:py-32">
       <h1 className="text-center text-3xl xl:text-5xl mb-16 md:mb-24 xl:mb-32 font-bold text-customGold break-words">
         {t("title")}
       </h1>

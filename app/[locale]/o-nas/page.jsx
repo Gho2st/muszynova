@@ -40,7 +40,7 @@ export default function About() {
     <>
       {/* hero */}
       <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-16 xl:pt-20 xl:pl-16">
+        <div className="xl:w-1/3 px-6 xl:p-16 pt-16 xl:pt-24 2xl:pt-32 xl:pl-16">
           <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold">
             {t("header")} <br></br>
             <span className="text-customGold"> Muszynova? </span>

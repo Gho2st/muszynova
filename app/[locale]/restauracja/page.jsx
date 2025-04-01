@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <>
       <div className="grid xl:grid-cols-2">
-        <div className="px-6 xl:p-16 pt-16 xl:pt-20">
+        <div className="px-6 xl:p-16 pt-16 xl:pt-20 2xl:pt-32">
           <h1 className="text-4xl xl:text-5xl font-bold">{t("header")}</h1>
           <p className="mb-10 xl:mb-0 mt-10">
             {t("text1")}
@@ -70,7 +70,7 @@ export default function Page() {
             alt="Popisowe danie szefa kuchni Muszynova"
           />
         </div>
-        <div className="xl:w-1/2 px-6 py-20  xl:p-16 pt-20">
+        <div className="xl:w-1/2 px-6 py-20  xl:p-16 2xl:pt-32">
           <h2 className="text-4xl xl:text-5xl text-center font-bold">
             {t("header2")}
           </h2>

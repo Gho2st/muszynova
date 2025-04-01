@@ -40,7 +40,7 @@ export default function Contact() {
   const t = useTranslations("contact");
   return (
     <>
-      <div className="px-6 xl:px-44 py-16 xl:py-20">
+      <div className="px-6 xl:px-44 py-16 xl:py-20 2xl:py-32">
         <h1 className="text-center text-4xl xl:text-5xl text-customGold font-bold mb-16 xl:mb-20 break-words">
           {t("header")}
         </h1>

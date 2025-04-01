@@ -30,7 +30,7 @@ export default function Galeria() {
   const t = useTranslations("gallery");
   return (
     <>
-      <section className="px-6 xl:px-24 py-16 xl:py-20 ">
+      <section className="px-6 xl:px-24 py-16 xl:py-20 2xl:py-32 ">
         <h1 className="text-4xl xl:text-5xl font-bold text-customGold text-center mb-16 xl:mb-20">
           {t("header")}
         </h1>
