@@ -24,7 +24,7 @@ function createEmailTemplate({ text, fullName, email }) {
         <hr style="border: 1px solid #ddd; margin: 20px 0;">
         
         <p style="font-size: 14px; color: #888; text-align: center;">
-          Ta wiadomość została wysłana z formularza kontaktowego na stronie DomiWeb.
+          Ta wiadomość została wysłana z formularza kontaktowego na stronie Muszynova.
         </p>
       </div>
     </div>
@@ -96,7 +96,7 @@ export async function POST(request) {
       from: process.env.NODEMAILER_EMAIL,
       to: "domiweb.biuro@gmail.com",
       replyTo: email, // Adres e-mail klienta podany w formularzu
-      subject: "Email ze strony DomiWeb od klienta",
+      subject: "Email ze strony Muszynova od klienta",
       html: createEmailTemplate(fields),
     };
 
