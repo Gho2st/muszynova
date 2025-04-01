@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaGoogle } from "react-icons/fa";
+import { IoLogoGoogle } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -87,7 +88,7 @@ export default function Footer() {
           </li>
         </ul>
         <div className="">
-          <h3 className="text-xl">{t("social")}</h3>
+          <h3 className="text-xl text-center">{t("social")}</h3>
           <div className="flex mt-5 justify-center gap-5 text-xl">
             <Link
               href={"https://www.facebook.com/Parkmuszynova"}
@@ -105,7 +106,13 @@ export default function Footer() {
               href={"https://g.co/kgs/YAoG1YE"}
               className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
             >
-              <FaGoogle className="text-customGold" />
+              <IoLogoGoogle className="text-customGold" />
+            </Link>
+            <Link
+              href={"https://www.tiktok.com/@park.muszynova"}
+              className="border-2 border-yellow-500 transition-all duration-200 hover:scale-110 p-2 rounded-2xl"
+            >
+              <FaTiktok className="text-customGold" />
             </Link>
           </div>
         </div>
