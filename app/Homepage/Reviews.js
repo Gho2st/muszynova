@@ -40,19 +40,19 @@ export default function Reviews() {
   };
 
   return (
-    <section className="py-16 xl:py-24 px-6 xl:px-32" id="opinie">
+    <section className="py-16 xl:py-24 2xl:py-32 px-6 xl:px-32 2xl:px-44" id="opinie">
       <div className="mx-auto text-center">
-        <h2 className="text-3xl xl:text-4xl font-bold">
+        <h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-bold">
           {t("header2")} <span className="text-customGold">166</span>{" "}
           {t("header")} <span className="text-customGold">4.8/5!</span>
         </h2>
-        <p className="mt-10 xl:mt-12 xl:text-lg leading-relaxed">{t("text")}</p>
+        <p className="mt-10 xl:mt-12 xl:text-lg 2xl:px-16 2xl:mt-16 2xl:mb-24 leading-relaxed">{t("text")}</p>
 
         <div className="mt-12 xl:mt-14">
           <Slider {...settings} className="w-[90%] xl:w-[100%] mx-auto">
             {reviews.map((review, index) => (
               <div key={index} className="p-3 xl:p-4">
-                <div className="bg-white p-6 shadow-lg rounded-xl text-center flex flex-col items-center">
+                <div className="bg-white p-6 shadow-lg 2xl:shadow-xl rounded-xl text-center flex flex-col items-center">
                   <div className="flex">
                     <Stars />
                   </div>
