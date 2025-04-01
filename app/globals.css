@@ -97,8 +97,13 @@ body {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
+/* slider */
 .slick-prev:before,
 .slick-next:before {
   color: #C4966C !important;
   font-size: 1.5rem !important;
+}
+
+.slick-dots{
+  bottom: -40px !important;
 }
