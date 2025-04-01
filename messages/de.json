@@ -620,6 +620,41 @@
             "text": "Das 2010 eröffnete Hotel Muszyna*** liegt im malerischen Muszyna-Złockie-Tal im Herzen des Beskid Sądecki, umgeben von den beeindruckenden Landschaften des Poprad-Landschaftsparks."
         }
     },
+    "reviews": {
+        "header": "zufriedene Kunden! Bewertung ",
+        "header2": "Mehr als",
+        "text": "Willkommen bei Muszynova – einem Ort, an dem Eleganz auf exzellenten Geschmack trifft. Genießen Sie köstliche Gerichte, von saftigen Burgern bis hin zu exquisiten Tatar und süßen Desserts, begleitet von erfrischenden Getränken. Unser höflicher Service und die ruhige Atmosphäre sorgen dafür, dass jeder Besuch ein Moment der Entspannung und Freude wird. Verbringen Sie einen schönen Nachmittag mit Ihren Lieben und entdecken Sie, warum unsere Gäste immer wieder zurückkehren!",
+        "cards": {
+            "1": {
+                "name": "Mariolka Pyrz",
+                "text": "Ein sehr elegantes Restaurant. Leckeres Tatar, sehr gute Pizzen und ausgezeichnete Desserts. Ein sehr schöner Ort zum Entspannen. Sehr zu empfehlen 👍"
+            },
+            "2": {
+                "name": "Amelia",
+                "text": "Der Service war höflich und immer lächelnd, was eine angenehme Atmosphäre schuf. Der Ort ist ruhig, ideal zum Entspannen. Der Burger war köstlich und saftig, und der Aperol erfrischend und perfekt ausbalanciert."
+            },
+            "3": {
+                "name": "Beata Sękowska",
+                "text": "Ein großartiger Ort, um einen schönen Nachmittag mit Freunden zu verbringen. Sehr gute Getränke. Angenehmer Service."
+            },
+            "4": {
+                "name": "AK K.",
+                "text": "Ein schöner und neuer Spielraum für kleine und mittlere Kinder, es gibt sogar ein Stillzimmer und Wickeltische! Toller Preis und schönes Innenraum."
+            },
+            "5": {
+                "name": "Bolek Lolek",
+                "text": "Leckerer Schnitzel. Insgesamt ein sehr gepflegter und sauberer Ort. Kletterwand, Kinderzimmer, Spielzimmer, alles neu."
+            },
+            "6": {
+                "name": "Monika Sam",
+                "text": "Ein tolles neues Lokal, freundliche Leute, sehr netter Service, Sauberkeit im gesamten Gebäude. Das Fitnessstudio ist gut ausgestattet und die Trainer sind sehr hilfsbereit. Sehr zu empfehlen. 🤩🤩🤩🤩🤩🤩"
+            },
+            "7": {
+                "name": "Magda Thomas",
+                "text": "Das neueste lokale Juwel. Sehr nette, freundliche Atmosphäre. Professioneller Service, tolle Instruktoren. Interessantes Angebot und erschwingliche Preise. Auf jeden Fall einen regelmäßigen Besuch wert."
+            }
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Freizeit- und Sportpark & Restaurant in Muszyna",

@@ -620,6 +620,41 @@
             "text": "Hotel Muszyna*** bol otvorený v roku 2010 v malebnom údolí Muszyna-Złockie v srdci Beskidu Sądeckého, obklopený nádhernou krajinou Popradského krajinného parku."
         }
     },
+    "reviews": {
+        "header": "spokojní zákazníci! Hodnotenie ",
+        "header2": "Viac ako",
+        "text": "Vitajte v Muszynovej – mieste, kde sa elegancia stretáva s vynikajúcou chuťou. Užite si chutné jedlá, od šťavnatých burgerov po vynikajúce tatary a sladké dezerty, spolu s osviežujúcimi nápojmi. Naša zdvorilá obsluha a pokojná atmosféra zabezpečia, že každá návšteva bude chvíľou relaxu a potešenia. Strávte príjemné popoludnie so svojimi blízkymi a objavte, prečo sa naši hostia vracajú po viac!",
+        "cards": {
+            "1": {
+                "name": "Mariolka Pyrz",
+                "text": "Veľmi elegantná reštaurácia. Chutný tatarák, veľmi dobré pizzerinky a vynikajúce dezerty. Veľmi príjemné miesto na oddych. Odporúčam 👍"
+            },
+            "2": {
+                "name": "Amelia",
+                "text": "Obsluha bola zdvorilá a vždy usmiata, čo vytvorilo príjemnú atmosféru. Miesto je pokojné, ideálne na relaxáciu. Burger bol vynikajúci a šťavnatý, Aperol osviežujúci a dokonale vyvážený."
+            },
+            "3": {
+                "name": "Beata Sękowska",
+                "text": "Skvelé miesto na strávenie príjemného popoludnia s priateľmi. Veľmi dobré drinky. Príjemná obsluha."
+            },
+            "4": {
+                "name": "AK K.",
+                "text": "Krásna a nová herňa pre malých a stredných detí, dokonca je tu aj miestnosť na kŕmenie a prebaľovacie stoly! Skvelá cena a pekné prostredie."
+            },
+            "5": {
+                "name": "Bolek Lolek",
+                "text": "Vynikajúci rezeň. Celkovo veľmi dobre udržiavané a čisté miesto. Lezecká stena, detská izba, herňa, všetko nové."
+            },
+            "6": {
+                "name": "Monika Sam",
+                "text": "Skvelé nové miesto, príjemní ľudia, veľmi milá obsluha, čistota v celom objekte. Posilňovňa je vybavená super a tréneri sú veľmi nápomocní. Určite odporúčam. 🤩🤩🤩🤩🤩🤩"
+            },
+            "7": {
+                "name": "Magda Thomas",
+                "text": "Najnovší lokálny skvost. Veľmi príjemná, priateľská atmosféra. Profesionálna obsluha, skvelí inštruktori. Zaujímavá ponuka a dostupné ceny. Určite stojí za pravidelnú návštevu."
+            }
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Rekreačno-športový park a reštaurácia v Muszyne",

@@ -620,6 +620,41 @@
             "text": "Hotel Muszyna*** powstał w 2010 roku w malowniczej dolinie Muszyny-Złockiego, sercu Beskidu Sądeckiego, otulony przepięknymi krajobrazami Popradzkiego Parku Krajobrazowego"
         }
     },
+    "reviews": {
+        "header": "zadowolonych klientów! Ocena ",
+        "header2": "Ponad",
+        "text": "Zapraszamy do Muszynovej – miejsca, gdzie elegancja spotyka się z wyśmienitym smakiem. Delektuj się pysznymi daniami, od soczystych burgerów po wykwintne tatary i słodkie desery, w towarzystwie orzeźwiających drinków. Nasza uprzejma obsługa i spokojna atmosfera sprawią, że każda wizyta będzie chwilą relaksu i przyjemności. Spędź miłe popołudnie z bliskimi i odkryj, dlaczego nasi goście wracają po więcej!",
+        "cards": {
+            "1": {
+                "name": "Mariolka Pyrz",
+                "text": "Bardzo elegancka restauracja. Pyszny tatar, bardzo dobre pizzerinki, bardzo dobre desery. Bardzo miło można odpocząć. Polecam 👍"
+            },
+            "2": {
+                "name": "Amelia",
+                "text": "Obsługa była uprzejma i zawsze uśmiechnięta, co stworzyło miłą atmosferę. Miejsce jest spokojne, idealne do relaksu. Burger był przepyszny i soczysty, a Aperol orzeźwiający i świetnie skomponowany"
+            },
+            "3": {
+                "name": "Beata Sękowska",
+                "text": "Super miejsce na spędzenie miłego popołudnia ze znajomymi. Bardzo dobre drinki. Przyjemna obsługa"
+            },
+            "4": {
+                "name": "AK K.",
+                "text": "Piękna i nowa sala zabaw dla malutkich i średnich dzieciaków, jest nawet pokój do karmienia i przewijaki! Super cenowo i ładnie w środku"
+            },
+            "5": {
+                "name": "bolek lolek",
+                "text": "Przepyszny schabowy. Ogólnie miejsce bardzo zadbane i czyste. Ścianka wspinaczkowa sala dla dzieci sala gier wszystko nowe"
+            },
+            "6": {
+                "name": "Monika Sam",
+                "text": "Super nowe miejsce przyjemni ludzie bardzo miła obsługa czysto w calym budynku. Siłownia wyposażona super i pomocni trenerzy .polecam serdecznie. 🤩🤩🤩🤩🤩🤩"
+            },
+            "7": {
+                "name": "Magda Thomas",
+                "text": "Najnowsza lokalna perełka. Bardzo miła, przyjazna atmosfera. Profesjonalna obsługa, świetni instruktorzy. Ciekawa oferta i przystępne ceny. Warto regularnie odwiedzać."
+            }
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Park Rekreacyjno-Sportowy i Restauracja w Muszynie",

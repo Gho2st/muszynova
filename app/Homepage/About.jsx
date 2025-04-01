@@ -18,7 +18,7 @@ export default function About({ t }) {
           <h1 className="text-customGold font-bold text-3xl xl:text-4xl">
             {t("header")}
           </h1>
-          <p className="my-10 text-lg font-light">{t("text")}</p>
+          <p className="my-10 xl:text-lg font-light">{t("text")}</p>
           <Button
             text={t("button")}
             bgColor="bg-[#C4966C]"

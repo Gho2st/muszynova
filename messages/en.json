@@ -620,6 +620,41 @@
             "text": "Opened in 2010 in the scenic Muszyna-Złockie valley in the heart of Beskid Sądecki, Hotel Muszyna*** is surrounded by the stunning landscapes of the Poprad Landscape Park."
         }
     },
+    "reviews": {
+        "header": "satisfied customers! Rating ",
+        "header2": "Over",
+        "text": "Welcome to Muszynova – a place where elegance meets exquisite taste. Enjoy delicious dishes, from juicy burgers to exquisite tartares and sweet desserts, paired with refreshing drinks. Our polite service and calm atmosphere will make every visit a moment of relaxation and pleasure. Spend a lovely afternoon with your loved ones and discover why our guests keep coming back for more!",
+        "cards": {
+            "1": {
+                "name": "Mariolka Pyrz",
+                "text": "A very elegant restaurant. Delicious tartar, very good pizzas, and excellent desserts. A very nice place to relax. Highly recommend 👍"
+            },
+            "2": {
+                "name": "Amelia",
+                "text": "The service was polite and always smiling, creating a nice atmosphere. The place is calm, perfect for relaxation. The burger was delicious and juicy, and the Aperol refreshing and perfectly balanced."
+            },
+            "3": {
+                "name": "Beata Sękowska",
+                "text": "A great place to spend a lovely afternoon with friends. Very good drinks. Pleasant service."
+            },
+            "4": {
+                "name": "AK K.",
+                "text": "A beautiful and new playroom for small and medium-sized children, there’s even a nursing room and changing tables! Great value and a nice interior."
+            },
+            "5": {
+                "name": "Bolek Lolek",
+                "text": "Delicious schnitzel. Overall, a very well-maintained and clean place. Climbing wall, kids' room, game room, everything is new."
+            },
+            "6": {
+                "name": "Monika Sam",
+                "text": "A fantastic new place with friendly people, very nice service, and cleanliness throughout the building. The gym is well-equipped, and the trainers are helpful. Highly recommend. 🤩🤩🤩🤩🤩🤩"
+            },
+            "7": {
+                "name": "Magda Thomas",
+                "text": "The latest local gem. Very nice, friendly atmosphere. Professional service, great instructors. Interesting offer and affordable prices. Definitely worth visiting regularly."
+            }
+        }
+    },
     "metadata": {
         "homepage": {
             "title": "Muszynova - Recreational and Sports Park & Restaurant in Muszyna",

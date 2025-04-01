@@ -51,9 +51,9 @@ export default function Footer() {
   return (
     <footer className="px-6 bg-customGreen text-white">
       <div className="flex flex-col gap-10 xl:gap-16 items-center justify-center z-10">
-        <span className="text-3xl xl:text-4xl text-center font-bold mt-14 xl:mt-20">
+        <h2 className="text-3xl xl:text-4xl text-center font-bold mt-14 xl:mt-20">
           {t("header")}
-        </span>
+        </h2>
 
         <div className="h-1 w-2/5 bg-customGold mb-4 xl:mb-10"></div>
         <ul className="flex flex-col xl:flex-row text-center gap-4 xl:gap-20 xl:text-lg">

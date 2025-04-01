@@ -96,3 +96,9 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #C4966C !important;
+  font-size: 1.5rem !important;
+}
