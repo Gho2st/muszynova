@@ -18,7 +18,7 @@ export default function LocaleSwitcher() {
   const localeFlags = {
     pl: "🇵🇱", // Polska
     en: "🇬🇧", // Angielski
-    de: "🇩🇪", // Niemiecki
+    // de: "🇩🇪", // Niemiecki
     ua: "🇺🇦", // Ukraiński
     sk: "🇸🇰", // Słowacki
   };
