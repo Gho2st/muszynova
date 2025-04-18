@@ -7,6 +7,7 @@ import { LuWeight } from "react-icons/lu";
 import Image from "next/image";
 import Map from "../../UI/Map/Map";
 import Card from "../../UI/Card";
+import Card2 from "@/app/UI/Card2";
 import Form from "./form";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -80,39 +81,38 @@ export default function Contact() {
                 t("cards.card3.text3"),
               ].join(" <br /> ")}
             />
-            <Card
+            <Card2
               link="/restauracja"
               icon={<IoPizzaOutline />}
               title={t("cards.card4.header")}
+              hours={t("cards.card5.text1")}
               buttonText={t("cards.card4.button")}
               text={[
-                t("cards.card4.text1"),
                 t("cards.card4.text2") + ": 12:00 - 20:00",
                 t("cards.card4.text3") + ": 12:00 - 21:00",
               ].join(" <br /> ")}
             />
-            <Card
+            <Card2
               link="/park"
               icon={<MdOutlineSportsCricket />}
               title={t("cards.card5.header")}
+              hours={t("cards.card5.text1")}
               buttonText={t("cards.card5.button")}
               text={[
-                t("cards.card5.text1"),
                 t("cards.card5.text2") + ": 11:00 - 20:00",
                 t("cards.card5.text3") + ": 11:00 - 21:00",
               ].join(" <br /> ")}
             />
-            <Card
+            <Card2
               link="/park/silownia"
               icon={<LuWeight />}
               title={t("cards.card6.header")}
+              hours={t("cards.card6.text1")}
               buttonText={t("cards.card6.button")}
               text={[
-                t("cards.card6.text1"),
                 t("cards.card6.hours"),
                 t("cards.card6.hours2") + ": ",
                 t("cards.card6.text2") + ": 8:00 - 12:00",
-                t("cards.card6.hours3"),
               ].join(" <br /> ")}
             />
           </div>
