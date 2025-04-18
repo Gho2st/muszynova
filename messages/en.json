@@ -41,8 +41,8 @@
                 "text": "biuro@muszynova.pl"
             },
             "info4": {
-                "address": "Open",
-                "text": "11:00 AM - 9:00 PM"
+                "address": "Opening Hours",
+                "text": "See"
             }
         },
         "social": "Our Social Media"
@@ -529,23 +529,24 @@
             "card4": {
                 "header": "Muszynova Restaurant",
                 "text1": "Opening Hours",
-                "text2": "Monday - Wednesday CLOSED",
-                "text3": "Thursday - Friday 12:00 PM - 8:00 PM",
-                "text4": "Saturday - Sunday 12:00 PM - 9:00 PM",
+                "text2": "Sunday - Thursday",
+                "text3": "Friday - Saturday",
                 "button": "Restaurant"
             },
             "card5": {
                 "header": "Muszynova Park",
                 "text1": "Opening Hours",
-                "text2": "Monday - Friday 4:00 PM - 8:00 PM",
-                "text3": "Saturday - Sunday 11:00 AM - 9:00 PM",
+                "text2": "Sunday - Thursday",
+                "text3": "Friday - Saturday",
                 "button": "Park"
             },
             "card6": {
                 "header": "Gym",
                 "text1": "Opening Hours",
-                "text2": "Monday - Friday 8:00 AM - 8:00 PM",
-                "text3": "Saturday - Sunday 11:00 AM - 9:00 PM",
+                "text2": "Monday - Friday",
+                "hours": "Open during park operating hours",
+                "hours2": "For holders of active passes with club cards",
+                "hours3": "Through the back entrance from the parking side",
                 "button": "Gym"
             }
         },

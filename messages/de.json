@@ -42,7 +42,7 @@
             },
             "info4": {
                 "address": "Öffnungszeiten",
-                "text": "11:00 - 21:00"
+                "text": "Ansehen"
             }
         },
         "social": "Unsere sozialen Medien"
@@ -529,23 +529,24 @@
             "card4": {
                 "header": "Restaurant Muszynova",
                 "text1": "Öffnungszeiten",
-                "text2": "Montag - Mittwoch GESCHLOSSEN",
-                "text3": "Donnerstag - Freitag 12:00 - 20:00",
-                "text4": "Samstag - Sonntag 12:00 - 21:00",
+                "text2": "Sonntag - Donnerstag",
+                "text3": "Freitag - Samstag",
                 "button": "Restaurant"
             },
             "card5": {
                 "header": "Park Muszynova",
                 "text1": "Öffnungszeiten",
-                "text2": "Montag - Freitag 16:00 - 20:00",
-                "text3": "Samstag - Sonntag 11:00 - 21:00",
+                "text2": "Sonntag - Donnerstag",
+                "text3": "Freitag - Samstag",
                 "button": "Park"
             },
             "card6": {
                 "header": "Fitnessstudio",
                 "text1": "Öffnungszeiten",
-                "text2": "Montag - Freitag 8:00 - 20:00",
-                "text3": "Samstag - Sonntag 11:00 - 21:00",
+                "text2": "Montag – Freitag",
+                "hours": "Geöffnet während der Parköffnungszeiten",
+                "hours2": "Für Inhaber aktiver Pässe mit Clubkarten",
+                "hours3": "Durch den Hintereingang auf der Parkplatzseite",
                 "button": "Fitnessstudio"
             }
         },

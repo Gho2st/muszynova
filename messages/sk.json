@@ -42,7 +42,7 @@
             },
             "info4": {
                 "address": "Otváracie hodiny",
-                "text": "11:00 - 21:00"
+                "text": "Zobraziť"
             }
         },
         "social": "Naše sociálne siete"
@@ -529,23 +529,24 @@
             "card4": {
                 "header": "Reštaurácia Muszynova",
                 "text1": "Otváracie hodiny",
-                "text2": "Pondelok - Streda ZATVORENÉ",
-                "text3": "Štvrtok - Piatok 12:00 - 20:00",
-                "text4": "Sobota - Nedeľa 12:00 - 21:00",
+                "text2": "Nedeľa - Štvrtok",
+                "text3": "Piatok - Sobota",
                 "button": "Reštaurácia"
             },
             "card5": {
                 "header": "Park Muszynova",
                 "text1": "Otváracie hodiny",
-                "text2": "Pondelok - Piatok 16:00 - 20:00",
-                "text3": "Sobota - Nedeľa 11:00 - 21:00",
+                "text2": "Nedeľa - Štvrtok",
+                "text3": "Piatok - Sobota",
                 "button": "Park"
             },
             "card6": {
                 "header": "Posilňovňa",
                 "text1": "Otváracie hodiny",
-                "text2": "Pondelok - Piatok 8:00 - 20:00",
-                "text3": "Sobota - Nedeľa 11:00 - 21:00",
+                "text2": "Pondelok – Piatok",
+                "hours": "Otvorené počas otváracích hodín parku",
+                "hours2": "Pre držiteľov aktívnych permanentiek s klubovými kartami",
+                "hours3": "Zadným vchodom zo strany parkoviska",
                 "button": "Posilňovňa"
             }
         },

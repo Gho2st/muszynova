@@ -84,7 +84,7 @@ export default function Footer() {
             <span className="text-customGold font-semibold">
               {t("info.info4.address")}:{" "}
             </span>
-            11:00 - 21:00
+            <Link className="underline" href="/kontakt">{t("info.info4.text")}</Link>
           </li>
         </ul>
         <div className="">

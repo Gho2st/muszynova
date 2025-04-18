@@ -41,8 +41,8 @@
                 "text": "biuro@muszynova.pl"
             },
             "info4": {
-                "address": "Otwarte",
-                "text": "11:00 - 21:00"
+                "address": "Godziny Otwarcia",
+                "text": "Zobacz"
             }
         },
         "social": "Nasze Social Media"
@@ -529,23 +529,24 @@
             "card4": {
                 "header": "Restauracja Muszynova",
                 "text1": "Godziny Otwarcia",
-                "text2": "Poniedziałek - Środa NIECZYNNE",
-                "text3": "Czwartek - Piątek 12:00 - 20:00",
-                "text4": "Sobota - Niedziela 12:00 - 21:00",
+                "text2": "Niedziela - Czwartek",
+                "text3": "Piątek - Sobota",
                 "button": "Restauracja"
             },
             "card5": {
                 "header": "Park Muszynova",
                 "text1": "Godziny Otwarcia",
-                "text2": "Poniedziałek - Piątek 16:00 - 20:00",
-                "text3": "Sobota - Niedziela 11:00 - 21:00",
+                "text2": "Niedziela - Czwartek",
+                "text3": "Piątek - Sobota",
                 "button": "Park"
             },
             "card6": {
                 "header": "Siłownia",
                 "text1": "Godziny Otwarcia",
-                "text2": "Poniedziałek - Piątek 8:00 - 20:00",
-                "text3": "Sobota - Niedziela 11:00 - 21:00",
+                "text2": "Poniedziałek - Piątek",
+                "hours": "Czynna w godzinach otwarcia parku",
+                "hours2": "Dla posiadaczy aktywnych karnetów wraz z kartami klubowymi",
+                "hours3": "Tylnym wejściem od strony parkingu",
                 "button": "Siłownia"
             }
         },
