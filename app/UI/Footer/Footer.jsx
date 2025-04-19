@@ -84,7 +84,9 @@ export default function Footer() {
             <span className="text-customGold font-semibold">
               {t("info.info4.address")}:{" "}
             </span>
-            <Link className="underline" href="/kontakt">{t("info.info4.text")}</Link>
+            <Link className="underline" href="/kontakt">
+              {t("info.info4.text")}
+            </Link>
           </li>
         </ul>
         <div className="">
@@ -116,15 +118,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <span className="mb-20">
-          © {currentYear} Muszynova &{" "}
-          <Link
-            className="hover:text-green-500 transition-all duration-500 font-bold"
-            href={"https://www.domiweb.pl/"}
-          >
-            Domiweb
-          </Link>
-        </span>
+        <span className="mb-20">© {currentYear} Muszynova & </span>
       </div>
       {showArrow && (
         <span className="fixed bg-[#C4966C] shadow-2xl rounded-lg p-1 text-4xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10">
