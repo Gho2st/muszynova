@@ -34,7 +34,6 @@ export default function Home() {
   const tservices = useTranslations("services");
   const trestaurant = useTranslations("restaurant");
   const tvirtual = useTranslations("virtualtour");
-  const treviews = useTranslations("reviews");
 
   return (
     <>
