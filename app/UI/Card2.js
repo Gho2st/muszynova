@@ -56,6 +56,7 @@ export default function Card2({
       <p className="mt-5 text-gray-300 font-light flex-grow">
         {renderTextWithTelLinks(textLines)}
       </p>
+      <span></span>
       <div className="mt-10 flex justify-center">
         <Button text={buttonText} link={link} />
       </div>
