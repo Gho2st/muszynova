@@ -26,7 +26,7 @@ const VirtualTour = () => {
         ) : (
           <button
             onClick={handleLoadIframe}
-            className="px-6 py-3 bg-customGold cursor-pointer text-white font-semibold rounded-lg ransition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            className="text-lg font-medium whitespace-nowrap flex justify-center items-center gap-2 p-4 bg-customGold cursor-pointer text-white  clip-custom hover:clip-reverse transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             {t("button")}
           </button>
