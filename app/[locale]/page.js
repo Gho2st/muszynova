@@ -42,7 +42,7 @@ export default function Home() {
       <Services t={tservices} />
       <Reviews  />
       <Restaurant t={trestaurant} />
-      <VirtualTour t={tvirtual} />
+      <VirtualTour />
     </>
   );
 }

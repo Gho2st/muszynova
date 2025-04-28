@@ -117,7 +117,8 @@
         }
     },
     "virtualtour": {
-        "header": "Virtual Tour"
+        "header": "Virtual Tour",
+        "button": "Load Virtual Tour"
     },
     "aboutus": {
         "header": "What is",

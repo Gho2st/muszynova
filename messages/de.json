@@ -117,7 +117,8 @@
         }
     },
     "virtualtour": {
-        "header": "Virtueller Rundgang"
+        "header": "Virtueller Rundgang",
+        "button": "Virtuellen Rundgang laden"
     },
     "aboutus": {
         "header": "Was ist",

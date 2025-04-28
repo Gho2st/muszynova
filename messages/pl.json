@@ -117,7 +117,8 @@
         }
     },
     "virtualtour": {
-        "header": "Wirtualny Spacer"
+        "header": "Wirtualny Spacer",
+        "button":"Załaduj wirtualny spacer"
     },
     "aboutus": {
         "header": "Czym jest",

@@ -117,7 +117,8 @@
         }
     },
     "virtualtour": {
-        "header": "Virtuálna prehliadka"
+        "header": "Virtuálna prehliadka",
+        "button": "Načítať virtuálnu prehliadku"
     },
     "aboutus": {
         "header": "Čo je",
