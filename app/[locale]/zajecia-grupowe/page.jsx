@@ -36,7 +36,7 @@ export default function Zajecia() {
         </h1>
         <div className="flex justify-center">
           <iframe
-            title="Kalendarz zajęć Muszynova"
+            title={t("alt")}
             style={{
               width: "1600px",
               height: "800px",

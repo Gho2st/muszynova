@@ -547,6 +547,10 @@
         "text2": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež, ale aj dospelých, pozývajúc na drink.",
         "button": "Jedálny lístok",
         "button2": "Nápojový lístok",
+        "alt": {
+            "1": "Reštauračná sála Muszynova s atmosférickým osvetlením",
+            "2": "Špeciálne jedlo šéfkuchára Muszynova"
+        },
         "cards": {
             "card1": {
                 "header": "Oslavy, výročia, stretnutia",
@@ -566,20 +570,27 @@
         }
     },
     "pricing": {
-        "header": "Cenník"
+        "header": "Cenník",
+        "alt": "Cenník Rekreačno-športového parku Muszynova v Muszyna"
     },
     "groupclasses": {
-        "header": "Skupinové aktivity"
+        "header": "Skupinové aktivity",
+        "alt": "Kalendár aktivít Muszynova"
     },
     "gallery": {
         "header": "Galéria",
         "restaurant": "Reštaurácia",
         "header2": "Galéria reštaurácie",
         "park": "Park",
-        "header3": "Galéria parku"
+        "header3": "Galéria parku",
+        "alt": {
+            "1": "Areál Muszynova - pohľad z výšky",
+            "2": "Jedálny lístok umiestnený na stole v reštaurácii Muszynova"
+        }
     },
     "contact": {
         "header": "Kontaktujte nás!",
+        "alt": "Vizitka Rekreačno-športového parku Muszynova s informáciami",
         "cards": {
             "card1": {
                 "header": "Adresa",

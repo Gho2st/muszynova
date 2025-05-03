@@ -55,7 +55,7 @@ export default function Page() {
             height={100}
             width={100}
             layout="responsive"
-            alt="Sala w resturacji w Muszynie z ciepłym światłem"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Page() {
             height={100}
             width={100}
             layout="responsive"
-            alt="Popisowe danie szefa kuchni Muszynova"
+            alt={t("alt.2")}
           />
         </div>
         <div className="xl:w-1/2 px-6 py-20  xl:p-16 2xl:pt-32">

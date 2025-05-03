@@ -45,7 +45,7 @@ export default function Galeria() {
                 width={100}
                 height={100}
                 layout="responsive"
-                alt="Obiekt Muszynova z lotu ptaka"
+                alt={t("alt.1")}
               />
             </div>
           </Link>
@@ -59,7 +59,7 @@ export default function Galeria() {
                 width={100}
                 height={100}
                 layout="responsive"
-                alt="Karta Menu umiejscowiona na stole w restauracji Muszynova"
+                alt={t("alt.2")}
               />
             </div>
           </Link>

@@ -110,7 +110,7 @@ export default function ImagesP() {
               >
                 <Image
                   src={src}
-                  alt={`Zdjęcie parku ${index + 1}`}
+                  alt={`${index + 1}`}
                   width={500}
                   height={500}
                   className="w-full h-full object-cover"

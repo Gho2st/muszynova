@@ -37,7 +37,7 @@ export default function Cennik() {
           <div className="xl:w-2/3">
             <Image
               src="/cennik/cennik.webp"
-              alt="Cennik Parku Rekreacyjno Sportowego Muszynova w Muszynie"
+              alt={t("alt")}
               width={100}
               height={100}
               layout="responsive"

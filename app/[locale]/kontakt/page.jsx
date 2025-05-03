@@ -126,7 +126,7 @@ export default function Contact() {
               width={100}
               height={100}
               layout="responsive"
-              alt="Wizytówka Parku Rekreacyjno Sportowego Muszynova z informacjami"
+              alt={t("alt")}
             />
           </div>
           <div className="xl:w-1/2">

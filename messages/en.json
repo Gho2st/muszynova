@@ -547,6 +547,10 @@
         "text2": "A restaurant offering a healthy and light menu. A concise selection with regional accents in our dishes brings you closer to Beskid cuisine. Light? Yes! Comfort food? We’ve got pizza too. Something for everyone – we cater to children, teens, and adults alike, inviting you for a drink.",
         "button": "Menu",
         "button2": "Drinks Menu",
+        "alt": {
+            "1": "Muszynova restaurant hall with atmospheric lighting",
+            "2": "Signature dish of Muszynova's head chef"
+        },
         "cards": {
             "card1": {
                 "header": "Parties, Anniversaries, Gatherings",
@@ -566,13 +570,19 @@
         }
     },
     "pricing": {
-        "header": "Pricing"
+        "header": "Pricing",
+        "alt": "Price list of Muszynova Recreational and Sports Park in Muszyna"
     },
     "groupclasses": {
-        "header": "Group Classes"
+        "header": "Group Classes",
+        "alt": "Muszynova activity schedule"
     },
     "gallery": {
         "header": "Gallery",
+        "alt": {
+            "1": "Muszynova facility - aerial view",
+            "2": "Menu card placed on a table at Muszynova restaurant"
+        },
         "restaurant": "Restaurant",
         "header2": "Restaurant Gallery",
         "park": "Park",
@@ -580,6 +590,7 @@
     },
     "contact": {
         "header": "Contact Us!",
+        "alt": "Business card of Muszynova Recreational and Sports Park with contact information",
         "cards": {
             "card1": {
                 "header": "Address",

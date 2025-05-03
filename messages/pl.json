@@ -547,6 +547,10 @@
         "text2": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na drinka.",
         "button": "Karta Menu",
         "button2": "Karta Napojów",
+        "alt": {
+            "1": "Sala restauracyjna Muszynova z klimatycznym oświetleniem",
+            "2": "Popisowe danie szefa kuchni Muszynova"
+        },
         "cards": {
             "card1": {
                 "header": "Imprezy, jubileusze, spotkania",
@@ -566,20 +570,27 @@
         }
     },
     "pricing": {
-        "header": "Cennik"
+        "header": "Cennik",
+        "alt": "Cennik Parku Rekreacyjno Sportowego Muszynova w Muszynie"
     },
     "groupclasses": {
-        "header": "Zajęcia Grupowe"
+        "header": "Zajęcia Grupowe",
+        "alt": "Kalendarz zajęć Muszynova"
     },
     "gallery": {
         "header": "Galeria",
         "restaurant": "Restauracja",
         "header2": "Galeria Restauracji",
         "park": "Park",
-        "header3": "Galeria Parku"
+        "header3": "Galeria Parku",
+        "alt": {
+            "1": "Obiekt Muszynova z lotu ptaka",
+            "2": "Karta Menu umiejscowiona na stole w restauracji Muszynova"
+        }
     },
     "contact": {
         "header": "Skontaktuj się z nami!",
+        "alt": "Wizytówka Parku Rekreacyjno Sportowego Muszynova z informacjami",
         "cards": {
             "card1": {
                 "header": "Adres",
