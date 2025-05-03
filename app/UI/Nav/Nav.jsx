@@ -110,7 +110,7 @@ export default function Nav() {
             <Image
               src="/Muszynova-mobile-logo.webp"
               fill
-              alt="Logo Muszynova"
+              alt={t("alt.2")}
               className="object-contain"
               sizes="(max-width: 768px) 100px, 150px"
               priority
@@ -120,7 +120,7 @@ export default function Nav() {
             <Image
               src="/unia.webp"
               fill
-              alt="Logo Unii Europejskiej"
+              alt={t("alt.1")}
               className="object-contain"
             />
           </div>

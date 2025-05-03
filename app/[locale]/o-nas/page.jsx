@@ -56,7 +56,7 @@ export default function About() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Zdjęcie przedstawiające obiekt Muszynova z zewnątrz na tle pięknej natury"
+            alt={t("alt.1")}
           />
         </div>
       </div>

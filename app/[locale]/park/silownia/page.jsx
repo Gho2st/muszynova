@@ -58,7 +58,7 @@ export default function Silownia() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Siłownia ze sprzętem, maszynami, hantlami"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -119,28 +119,28 @@ export default function Silownia() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Siłownia ze sprzętem, maszynami, hantlami"
+            alt={t("alt.1")}
           />
           <Image
             src="/park/silownia/s2.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Bieżnie, orbitreki, suwnice, ławeczki do wyciskania"
+            alt={t("alt.2")}
           />
           <Image
             src="/park/silownia/s3.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Hantle o różnym ciężarze"
+            alt={t("alt.3")}
           />
           <Image
             src="/park/silownia/s4.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Profesjonalne ławeczki do ćwiczeń"
+            alt={t("alt.4")}
           />
         </section>
       </section>

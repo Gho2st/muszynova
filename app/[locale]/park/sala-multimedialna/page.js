@@ -56,7 +56,7 @@ export default function Multi() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Chłopiec trzymający w ręku pada do playstation 5"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function Multi() {
               src="/park/sala-multimedialna/1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Chłopiec trzymający w ręku pada do playstation 5"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -126,7 +126,7 @@ export default function Multi() {
               src="/park/sala-multimedialna/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Chłopiec siedzący przed telewizorem grający w grę sportową na konsoli do gier"
+              alt={t("alt.2")}
             />
           </div>
         </section>

@@ -57,7 +57,7 @@ export default function Fitness() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Zdjęcie Sali do Fitness z zielonymi kulami gimnastycznymi i matami"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function Fitness() {
               src="/park/fitness/f1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Zdjęcie z zajęć Fitness"
+              alt={t("alt.2")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -127,7 +127,7 @@ export default function Fitness() {
               src="/park/fitness/f2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Zdjęcie sali wewnątrz"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -135,7 +135,7 @@ export default function Fitness() {
               src="/park/fitness/f3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Zdjęcie sali wewnątrz 2"
+              alt={t("alt.3")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -143,7 +143,7 @@ export default function Fitness() {
               src="/park/fitness/f4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Zdjęcie z zajęć Fitness z instruktorem"
+              alt={t("alt.4")}
             />
           </div>
         </section>

@@ -57,7 +57,7 @@ export default function Squash() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Profesjonalna sala o certyfikowanych wymiarach do Squasha"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function Squash() {
               src="/park/squash/s1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Profesjonalna sala o certyfikowanych wymiarach do Squasha"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -127,7 +127,7 @@ export default function Squash() {
               src="/park/squash/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Sala do Squasha na tle z rakietą i piłeczką"
+              alt={t("alt.2")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -135,7 +135,7 @@ export default function Squash() {
               src="/park/squash/s3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Rakieta i piłeczka na sali do squasha"
+              alt={t("alt.3")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -143,7 +143,7 @@ export default function Squash() {
               src="/park/squash/s4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Rakieta i piłeczka na sali do squasha"
+              alt={t("alt.4")}
             />
           </div>
         </section>

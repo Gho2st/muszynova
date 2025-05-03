@@ -58,7 +58,7 @@ export default function Sala() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Zabawki, stół, krzesła w sali zabaw w Muszynie"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -119,28 +119,28 @@ export default function Sala() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Tor przeszkód dla dzieci"
+            alt={t("alt.2")}
           />
           <Image
             src="/park/sala-zabaw/s2.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Zabawki, stół, krzesła w sali zabaw"
+            alt={t("alt.1")}
           />
           <Image
             src="/park/sala-zabaw/s3.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Mata do zabawy, a na niej zabawki dla dzieci"
+            alt={t("alt.3")}
           />
           <Image
             src="/park/sala-zabaw/s4.webp"
             width={100}
             height={100}
             layout="responsive"
-            alt="Kolorowe, zabawki dla dzieci"
+            alt={t("alt.4")}
           />
         </section>
       </section>

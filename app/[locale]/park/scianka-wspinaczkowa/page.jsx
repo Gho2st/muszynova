@@ -57,7 +57,7 @@ export default function Scianka() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Ścianka wspinaczkowa z kolorowymi elementami w Muszynie"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function Scianka() {
               src="/park/scianka-wspinaczkowa/s1.webp"
               layout="fill"
               objectFit="cover"
-              alt="Dziewczynka wspinająca się z zabezpieczeniem po ściance wspinaczkowej"
+              alt={t("alt.2")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -127,7 +127,7 @@ export default function Scianka() {
               src="/park/scianka-wspinaczkowa/s2.webp"
               layout="fill"
               objectFit="cover"
-              alt="Ścianka wspinaczkowa z kolorowymi elementami w Muszynie"
+              alt={t("alt.1")}
             />
           </div>
         </section>

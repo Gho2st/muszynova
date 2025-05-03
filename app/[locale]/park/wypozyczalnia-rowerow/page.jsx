@@ -57,7 +57,7 @@ export default function Wypozyczalnia() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Wypozyczalnia() {
               width={100}
               height={100}
               layout="responsive"
-              alt=""
+              alt="logo Muszynova"
             />
           </div>
           <div className="flex xl:w-3/4 justify-center items-center">
@@ -119,7 +119,7 @@ export default function Wypozyczalnia() {
               src="/park/wypozyczalnia/w1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -127,7 +127,7 @@ export default function Wypozyczalnia() {
               src="/park/wypozyczalnia/w2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Recepcja z wygodną kanapą na tle schodów w Muszynova"
+              alt={t("alt.2")}
             />
           </div>
         </section>

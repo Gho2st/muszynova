@@ -61,7 +61,7 @@ export default function Kregielnia() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Dzieci podające sobie kule do kręgiel stojące na torze"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -123,7 +123,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Dzieci podające sobie kule do kręgiel stojące na torze"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -131,7 +131,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Dwa podświetlone tory do kręgiel"
+              alt={t("alt.2")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -139,7 +139,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Stojące kręgle"
+              alt={t("alt.3")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -147,7 +147,7 @@ export default function Kregielnia() {
               src="/park/mini-kregielnia/k3.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Całość mini kręgielni w Muszynova"
+              alt={t("alt.4")}
             />
           </div>
         </section>

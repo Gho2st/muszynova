@@ -55,7 +55,7 @@ export default function Gry() {
             width={100}
             height={100}
             layout="responsive"
-            alt="Stół do Cymbergaja a w tle piłkarzyki oraz stół do tenisa stołowego"
+            alt={t("alt.1")}
           />
         </div>
       </div>
@@ -117,7 +117,7 @@ export default function Gry() {
               src="/park/sala-gier/s1.webp"
               layout="fill" // Wypełnia kontener rodzica
               objectFit="cover" // Przycina obraz, aby wypełnić kontener
-              alt="Stół do cymbergaja"
+              alt={t("alt.1")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -125,7 +125,7 @@ export default function Gry() {
               src="/park/sala-gier/s2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Jasne pomieszczenie z piłkarzykami i cymbergajem"
+              alt={t("alt.2")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -133,7 +133,7 @@ export default function Gry() {
               src="/park/sala-gier/s3.webp"
               layout="fill"
               objectFit="cover"
-              alt="Piłkarzyki"
+              alt={t("alt.3")}
             />
           </div>
           <div className="relative w-full h-132">
@@ -141,7 +141,7 @@ export default function Gry() {
               src="/park/sala-gier/s4.webp"
               layout="fill"
               objectFit="cover"
-              alt="Stół do bilarda w sali gier w Muszynova"
+              alt={t("alt.4")}
             />
           </div>
         </section>
