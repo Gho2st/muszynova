@@ -52,6 +52,9 @@
     },
     "about": {
         "header": "Sport i Fun dla małych i dużych na nOvym poziomie",
+        "alt": {
+            "1": "Hala Sportowa"
+        },
         "button": "Wirtualny Spacer",
         "text": "Czy istnieje obiekt, w którym każdy może być sobą i spędzać czas tak, jak lubi? Taka myśl przyświecała nam, gdy projektowaliśmy Muszynova. Aby każdy czuł się komfortowo. Z myślą o najmłodszych, nastolatkach i dorosłych, rodzinach i singlach, przyjezdnych i mieszkańcach oraz grupach zorganizowanych powstał nasz Park Rekreacyjno – Sportowy. Otwieramy drzwi do rozrywki i aktywności na nowym poziomie jakości."
     },
@@ -89,6 +92,15 @@
         "header": "Restauracja Muszynova",
         "header2": "Stawiamy na novą jakość oraz na odkrywanie beskidzkich smaków na novo",
         "text": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież. Dorosłych zapraszamy na drinka.",
+        "alt": {
+            "1": "Nowocześnie podana sałatka warzywna do obiadu",
+            "2": "Mleko i ser",
+            "3": "Lody w wafelku",
+            "4": "5 gwiazdek",
+            "5": "Kawałek pizzy",
+            "6": "Kawa z bitą śmietaną w kubku",
+            "7": "Porcja przyzdobionego tortu"
+        },
         "items": {
             "item1": {
                 "header": "Lokalne Składniki",
@@ -118,7 +130,7 @@
     },
     "virtualtour": {
         "header": "Wirtualny Spacer",
-        "button":"Załaduj wirtualny spacer"
+        "button": "Załaduj wirtualny spacer"
     },
     "aboutus": {
         "header": "Czym jest",

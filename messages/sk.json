@@ -52,6 +52,9 @@
     },
     "about": {
         "header": "Šport a zábava pre malých aj veľkých na nOvej úrovni",
+        "alt": {
+            "1": "Športová hala"
+        },
         "button": "Virtuálna prehliadka",
         "text": "Existuje miesto, kde môže byť každý sám sebou a tráviť čas tak, ako má rád? Táto myšlienka nás sprevádzala pri navrhovaní Muszynova. Aby sa každý cítil pohodlne. S myšlienkou na najmenších, tínedžerov a dospelých, rodiny a jednotlivcov, návštevníkov aj miestnych obyvateľov, ako aj organizované skupiny, vznikol náš Rekreačno-športový park. Otvárame dvere zábave a aktivite na novej úrovni kvality."
     },
@@ -89,6 +92,15 @@
         "header": "Reštaurácia Muszynova",
         "header2": "Staviame na nOvú kvalitu a objavovanie beskydských chutí na novo",
         "text": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež. Dospelých pozývame na drink.",
+        "alt": {
+            "1": "Modernne podávaná zeleninová šalát na večeru",
+            "2": "Mlieko a syr",
+            "3": "Zmrzlina v obálke",
+            "4": "5 hviezdičiek",
+            "5": "Kúsok pizze",
+            "6": "Káva so šľahačkou v hrnčeku",
+            "7": "Porcia ozdobeného tortu"
+        },
         "items": {
             "item1": {
                 "header": "Lokálne suroviny",

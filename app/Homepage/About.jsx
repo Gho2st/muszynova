@@ -11,7 +11,7 @@ export default function About({ t }) {
             width={100}
             height={100}
             layout="responsive"
-            alt="Hala Sportowa"
+            alt={t("alt.1")}
           />
         </div>
         <div className="mt-12 xl:mt-0 xl:w-1/2 xl:p-16">

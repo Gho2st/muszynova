@@ -52,6 +52,9 @@
     },
     "about": {
         "header": "Sport and Fun for young and old at a nOvy level",
+        "alt": {
+            "1": "Sports Hall"
+        },
         "button": "Virtual Tour",
         "text": "Is there a facility where everyone can be themselves and spend time the way they like? This was our idea when we designed Muszynova. To make everyone feel comfortable. With the youngest, teenagers and adults, families and singles, visitors and residents and organized groups in mind, our Recreation and Sports Park was created. We open the door to entertainment and activity at a new level of quality."
     },
@@ -89,6 +92,15 @@
         "header": "Muszynova Restaurant",
         "header2": "We Focus on New Quality, Rediscovering Beskid Flavors in a Fresh Way",
         "text": "A restaurant offering healthy and light cuisine. A concise menu with regional accents brings Beskid flavors closer. Light? Yes! Comforting? We’re no strangers to pizza either. Something nice for everyone—we cater to kids, teens, and adults alike, inviting you for a drink.",
+        "alt": {
+            "1": "Modern-style vegetable salad served for dinner",
+            "2": "Milk and cheese",
+            "3": "Ice cream in a wafer cone",
+            "4": "5 stars",
+            "5": "Slice of pizza",
+            "6": "Coffee with whipped cream in a cup",
+            "7": "Slice of decorated cake"
+        },
         "items": {
             "item1": {
                 "header": "Local Ingredients",

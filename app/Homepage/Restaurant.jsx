@@ -20,7 +20,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/mleko-ser.webp"}
                 width={100}
                 height={100}
-                alt="Obrazek przedstawiający mleko i ser"
+                alt="Mleko i ser"
               />
               <h3 className="text-xl md:text-3xl font-semibold">
                 {t("items.item1.header")}
@@ -35,7 +35,7 @@ export default function Restaurant({ t }) {
                 src={"/restauracja/lody.webp"}
                 width={100}
                 height={100}
-                alt="Lody w Wafelku"
+                alt={t("alt.1")}
               />
               <h3 className="text-xl md:text-3xl font-semibold">
                 {t("items.item2.header")}
@@ -65,7 +65,7 @@ export default function Restaurant({ t }) {
             width={100}
             height={100}
             layout="responsive"
-            alt="Sałatka w słoiku nowocześnie podana"
+            alt={t("alt.1")}
           />
         </div>
         {/* PRAWO */}
