@@ -2,9 +2,9 @@ import BlogCard from "../UI/BlogCard";
 
 export default function Blog({ t }) {
   return (
-    <section className="py-16 xl:py-20 px-6">
+    <section className="px-6 md:px-16 2xl:px-20 py-16 xl:py-20 ">
       <div className="flex flex-col">
-        <div className="mt-12 xl:mt-0 mb-24">
+        <div className="mb-10 xl:mb-24">
           <h2 className="text-customGold font-bold text-3xl md:text-4xl">
             {t("header")}
           </h2>
