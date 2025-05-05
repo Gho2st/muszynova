@@ -2,14 +2,14 @@ import BlogCard from "../UI/BlogCard";
 
 export default function Blog({ t }) {
   return (
-    <section className="py-24 px-6 xl:px-20">
+    <section className="py-16 xl:py-20 px-6">
       <div className="flex flex-col">
         <div className="mt-12 xl:mt-0 mb-24">
-          <h2 className="text-customGold font-bold text-3xl xl:text-4xl">
+          <h2 className="text-customGold font-bold text-3xl md:text-4xl">
             {t("header")}
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-20">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-20">
           <BlogCard
             header={t("posts.1.header")}
             text={t("posts.1.text")}
