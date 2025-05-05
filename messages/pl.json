@@ -12,6 +12,7 @@
             "link5": "Galeria",
             "link6": "Kontakt",
             "link7": "Partnerzy",
+            "link8": "Blog",
             "park": "Park"
         },
         "parkItems": {
@@ -160,6 +161,78 @@
                 "header": "NOve standardy",
                 "button": "Park",
                 "text": "Aktywne spędzanie wolnego czasu na novo, z frajdą. Zachęcamy do ruchu od najmłodszych lat, jesteśmy do tego przygotowani. Cztery nowocześnie wyposażone strefy aktywności wraz z zapleczem czekają na sportowców zawodowych, juniorów, rodziny i użytkowników indywidualnych."
+            }
+        }
+    },
+    "cta": {
+        "header": "Zapraszamy do Parku Rekreacyjno-Sportowego Muszynova!",
+        "text": "Po zwiedzaniu Muszyny zapraszamy do naszego Parku Rekreacyjno-Sportowego <strong>Muszynova</strong>, który oferuje mnóstwo atrakcji dla każdego! Znajdziecie tu halę sportową z nawierzchnią do gry w piłkę nożną, siatkówkę czy koszykówkę, ściankę wspinaczkową, squasha, salę zabaw dla dzieci z labiryntami i zjeżdżalniami, wypożyczalnię rowerów oraz siłownię i salę fitness. To idealne miejsce, by aktywnie spędzić czas z rodziną, przyjaciółmi czy indywidualnie. Nasza restauracja serwuje lekkie dania z regionalnymi akcentami, a dla dzieci przygotowaliśmy specjalne atrakcje. Odwiedź nas i odkryj rozrywkę na <strong>nowym poziomie!</strong>",
+        "button": "Zarezerwuj teraz"
+    },
+    "blog": {
+        "header": "Poczytaj więcej na naszym blogu",
+        "header2": "Nasz Blog",
+        "header3": "Nasze Artykuły",
+        "button": "Czytaj więcej",
+        "posts": {
+            "1": {
+                "header": "Co zobaczyć w Muszynie? 10 najlepszych atrakcji",
+                "text": "Muszyna, malownicze uzdrowisko w Beskidzie Sądeckim, położone w Dolinie Popradu, to idealne miejsce na wypoczynek dla miłośników natury, historii i aktywnego spędzania czasu. Znana z leczniczych wód mineralnych, bogatej historii i pięknych krajobrazów, przyciąga turystów przez cały rok. Przygotowaliśmy dla Was listę 10 najlepszych atrakcji, które sprawią, że pokochacie to miejsce. A na końcu zapraszamy do odwiedzenia naszego Parku Rekreacyjno-Sportowego Muszynova, gdzie czeka na Was mnóstwo rozrywki!",
+                "header2": "Przyroda i relaks w Muszynie",
+                "header3": "Dlaczego warto odwiedzić Muszynę?",
+                "list": {
+                    "1": "1. Ogrody Sensoryczne (Ogrody Zmysłów) - to największa atrakcja Muszyny, położona na stokach Suchej Góry. Podzielone na strefy – zdrowia, zapachów, dźwięku, smaku i dotyku – oferują terapeutyczne doznania dla wszystkich zmysłów. Spacer wśród pachnących ziół, szumiących strumieni i kolorowych roślin to idealny sposób na relaks. Na szczycie znajduje się wieża widokowa z panoramicznym widokiem na Beskid Sądecki i Tatry w pogodne dni.",
+                    "2": "2. Ogrody Biblijne - Przy kościele św. Józefa Oblubieńca NMP znajdują się Ogrody Biblijne – miejsce refleksji i spokoju. Zaprojektowane z myślą o medytacji, prezentują sceny z Pisma Świętego w kreatywny sposób, np. staw przypominający historię Mojżesza czy drzewo figowe symbolizujące raj. Wstęp jest bezpłatny, a obok znajduje się źródło wody mineralnej „Maryja”.",
+                    "3": "3. Ruiny Zamku (Góra Baszta) - Ruiny średniowiecznego zamku na wzgórzu Baszta to jeden z najstarszych zabytków Muszyny. Zbudowany w XIV wieku, pełnił funkcję warowni Państwa Muszyńskiego. Choć pozostały tylko fragmenty murów, z tego miejsca roztacza się piękny widok na dolinę Popradu. W maju odbywają się tu nabożeństwa majowe przy figurze Matki Bożej.",
+                    "4": "4. Muzeum Regionalne Państwa Muszyńskiego - W zrekonstruowanym zajeździe z XVII wieku mieści się Muzeum Regionalne, które przybliża historię Muszyny, kulturę Łemków i dzieje Państwa Muszyńskiego. Znajdziecie tu eksponaty związane z handlem winem, rzemiosłem i lokalnymi tradycjami. To świetne miejsce, by poznać bogatą przeszłość regionu.",
+                    "5": "5. Kościół św. Józefa Oblubieńca NMP - Barokowy kościół z przełomu XVII i XVIII wieku to perła architektury Muszyny. W jego wnętrzu znajduje się gotycka rzeźba Matki Bożej z Dzieciątkiem oraz renesansowe tabernakulum. Obok kościoła warto zobaczyć zabytkowy mur i dzwonnicę z 1803 roku.",
+                    "6": "6. Park Zdrojowy Zapopradzie - to idealne miejsce dla rodzin i osób szukających relaksu. Znajdują się tu baseny odkryte, lodowisko (zimą), skatepark oraz ścieżki spacerowe. To centrum rekreacji, które tętni życiem przez cały rok.",
+                    "7": "7. Pijalnie Wód Mineralnych - Muszyna słynie z wód mineralnych, takich jak „Muszynianka”. Pijalnie, m.in. „Milusia” czy „Cechini”, oferują możliwość spróbowania wód o właściwościach leczniczych. To nieodłączny element wizyty w uzdrowisku, łączący zdrowie z przyjemnością.",
+                    "8": "8. Szlaki Turystyczne i Rowerowe - Muszyna to raj dla miłośników aktywnego wypoczynku. Szlaki piesze, np. na Jaworzynę Krynicką, oraz trasy rowerowe w Beskidzie Sądeckim oferują zapierające dech widoki. Popularne trasy rowerowe znajdziesz w okolicach Złockiego.",
+                    "9": "9. Spływy Popradem - Rzeka Poprad to idealne miejsce na kajakarstwo górskie lub rafting. Spływy pontonowe o różnym stopniu trudności, od rodzinnych po ekstremalne, zapewniają niezapomniane emocje. To świetna atrakcja dla osób szukających adrenaliny.",
+                    "10": "10. Wieża Widokowa na Górze Malnik - Oddana do użytku w 2023 roku, 40-metrowa wieża widokowa na górze Malnik to nowa atrakcja Muszyny. Oferuje spektakularne widoki na Beskid Sądecki i okoliczne pasma górskie. To idealne miejsce na krótką wycieczkę i podziwianie krajobrazów."
+                },
+                "alt": {
+                    "1": "Ludzie na szlaku górskim w Muszynie",
+                    "2": "Piękny widok na góry w Muszynie",
+                    "3": "Znaki z informacjami o szlakach",
+                    "4": "Mapa szlaków turystycznych w Muszynie, Krynicy"
+                }
+            },
+            "2": {
+                "header": "Najlepsze szlaki turystyczne w Muszynie - odkryj Beskid Sądecki",
+                "text": "Muszyna, położona w sercu Beskidu Sądeckiego, to idealna baza wypadowa dla miłośników górskich wędrówek. Otoczona malowniczymi dolinami Popradu, lasami i szczytami, oferuje szlaki turystyczne o różnym stopniu trudności – od spacerowych tras dla rodzin po wymagające pętle dla doświadczonych piechurów. Poniżej przedstawiamy najlepsze szlaki w okolicach Muszyny, które pozwolą Ci odkryć piękno tego regionu. Na koniec zapraszamy do Parku Rekreacyjno-Sportowego Muszynova, gdzie po wędrówce czeka na Was aktywny relaks i regionalne smaki!",
+                "header2": "Dlaczego Muszyna to raj dla turystów?",
+                "header3": "Najlepsze szlaki turystyczne w Muszynie",
+                "list": {
+                    "1": "1. Szlak na Górę Malnik – punkt widokowy dla każdego Długość: ok. 4,5 km (pętla) Czas przejścia: ok. 1,5 h Poziom trudności: Łatwy Opis: Góra Malnik (726 m n.p.m.) to jeden z najlepszych punktów widokowych w Muszynie, idealny dla początkujących i rodzin. Żółty szlak zaczyna się w centrum Muszyny, prowadzi obok starego cmentarza żydowskiego i wspina się na szczyt, gdzie w 2023 roku otwarto 40-metrową wieżę widokową. Z wieży roztacza się panorama na Beskid Sądecki, a przy dobrej pogodzie widać nawet Tatry. Trasa jest krótka, dobrze oznakowana i oferuje łagodne podejścia.",
+                    "2": "2. Szlak na Jaworzynę Krynicką – klasyka Beskidu Sądeckiego Długość: ok. 9 km (z Muszyny do Złockiego, dalej na szczyt) Czas przejścia: ok. 3-4 h w jedną stronę Poziom trudności: Średni/Wymagający Opis: Zielony szlak z Muszyny przez Złockie na Jaworzynę Krynicką (1114 m n.p.m.) to obowiązkowy punkt dla miłośników gór. Po drodze mijasz pijalnię wód mineralnych „Cechini” i cerkiew św. Dymitra w Złockiem, która jest częścią Szlaku Architektury Drewnianej. Szlak prowadzi przez lasy i polany, a na szczycie czeka schronisko PTTK oraz widoki na Tatry, Pieniny i Beskid Niski. Dla mniej wprawionych istnieje opcja skrócenia trasy, korzystając z kolejki gondolowej z Krynicy-Zdroju.",
+                    "3": "3. Pętla „Szlak Sadzonego Jaja” – spacer z historią Długość: ok. 8 km (pętla) Czas przejścia: ok. 2,5-3 h Poziom trudności: Łatwy Opis: Ta malownicza trasa z Muszyny do Złockiego, zwana „Szlakiem Sadzonego Jaja”, prowadzi przez Koziejówkę (636 m n.p.m.) i Bazę Namiotową Złockie. Szlak zaczyna się przy ulicy 21 Stycznia, przechodzi obok źródła św. Anny i wspina się na grzbiet pasma. Po drodze mijasz rezerwat przyrody Las Lipowy Obrożyska, a w Złockiem – cerkiew św. Dymitra. To idealna trasa dla rodzin, łącząca naturę z historią Łemków.",
+                    "4": "4. Szlak do Bacówki nad Wierchomlą – widoki i sielanka Długość: ok. 2,5 km (z Wierchomli Małej, w jedną stronę) Czas przejścia: ok. 1 h w jedną stronę Poziom trudności: Łatwy Opis: Czarny szlak z Wierchomli Małej (ok. 10 km od Muszyny) do Bacówki nad Wierchomlą to krótka, ale niezwykle malownicza trasa, szczególnie polecana rodzinom z dziećmi. Z polany przy bacówce roztaczają się widoki na Tatry, Pieniny i Pasmo Radziejowej. Schronisko słynie z klimatycznej atmosfery i pysznych regionalnych potraw. Można podjechać samochodem pod wyciąg narciarski, by skrócić trasę.",
+                    "5": "5. Ścieżka przyrodnicza do Czarnej Młaki – ukryty skarb Długość: ok. 4 km (pętla z Powroźnika) Czas przejścia: ok. 1,5-2 h Poziom trudności: Łatwy Opis: Czarna Młaka, położona na stokach Czarnych Garbów, to unikatowy staw osuwiskowy, chroniony jako pomnik przyrody. Żółty szlak z Powroźnika (ok. 5 km od Muszyny) prowadzi przez las, co czyni trasę idealną na upalne dni. Na miejscu znajdziesz pomosty widokowe i altanę do odpoczynku. To spokojna trasa, rzadko uczęszczana, doskonała dla osób szukających ciszy i kontaktu z naturą."
+                },
+                "alt": {
+                    "1": "Zamek w Muszynie z basztą i punktem widokowym",
+                    "2": "Ogrody Biblijne w Muszynie",
+                    "3": "Spływ Popradem",
+                    "4": "Rynek w Muszynie"
+                }
+            },
+            "3": {
+                "header": "Jak spędzić weekend w Muszynie? Plan na idealny wypad",
+                "text": "Muszyna, urokliwe uzdrowisko w Beskidzie Sądeckim, to doskonałe miejsce na weekendowy wypad. Położona w Dolinie Popradu, oferuje połączenie relaksu, aktywności na łonie natury, bogatej historii i regionalnych smaków. Przygotowaliśmy dla Ciebie plan na idealny weekend w Muszynie, który pozwoli odkryć największe atrakcje miasta i okolic. Na deser zapraszamy do naszego Parku Rekreacyjno-Sportowego Muszynova, gdzie czeka na Ciebie mnóstwo rozrywki! Oto propozycja na dwa dni pełne wrażeń.",
+                "header2": "Dlaczego Muszyna na weekend?",
+                "header3": "Najlepsze szlaki turystyczne w Muszynie",
+                "list": {
+                    "1": "Dzień 1: Relaks i historia - Zacznij weekend od spaceru po Ogrodach Sensorycznych na stokach Suchej Góry, gdzie zrelaksujesz się wśród pachnących ziół i szumiących strumieni, podziwiając Beskid Sądecki z wieży widokowej. Następnie odwiedź ruiny średniowiecznego zamku na Górze Baszta, skąd roztacza się widok na dolinę Popradu. Zjedz obiad w Karczmie nad Popradem, próbując pierogów z bryndzą lub pstrąga. Po posiłku udaj się do Ogrodów Biblijnych przy kościele św. Józefa, by w ciszy podziwiać aranżacje inspirowane Pismem Świętym i spróbować wody ze źródła „Maryja”. Zajrzyj też do pijalni „Milusia”, by skosztować leczniczej „Muszynianki”. Dzień zakończ spacerem po Parku Zdrojowym Zapopradzie, pełnym ścieżek i stawów, a na kolację wybierz Restaurację Muszynova, gdzie czekają regionalne smaki.",
+                    "2": "Dzień 2: Natura i aktywność - Drugi dzień zacznij od wędrówki na Górę Malnik, gdzie łatwy szlak prowadzi do wieży widokowej z 2023 roku z panoramą Beskidu Sądeckiego. Potem przeżyj przygodę na rodzinnym spływie pontonowym Popradem, organizowanym przez Poprad Rafting. Po spływie zjedz obiad w Gospodzie u Krakowiaka w Złockiem, smakując żurek łemkowski lub domowe dania. Następnie odwiedź Muzeum Regionalne w XVII-wiecznym zajeździe, by poznać historię Muszyny i kulturę Łemków. Spędź chwilę w centrum na zakup pamiątek lub kawę w Cafe Muszyna. Weekend zakończ w Parku Rekreacyjno-Sportowym Muszynova, gdzie możesz zagrać w siatkówkę, spróbować wspinaczki na ściance, wypożyczyć rower lub poćwiczyć na siłowni. Dzieci pokochają salę zabaw z labiryntami i zjeżdżalniami. Na kolację wybierz restaurację parku z regionalnymi daniami."
+                },
+                "alt": {
+                    "1": "Napis I Love Muszyna",
+                    "2": "Ogrody Biblijne",
+                    "3": "Unikatowa główna uliczka w Muszynie",
+                    "4": "Widok na Zamek w Muszynie"
+                }
             }
         }
     },
@@ -831,6 +904,22 @@
         "partners": {
             "title": "Nasi Partnerzy | Muszyna, Krynica-Zdrój i więcej",
             "description": "Poznaj naszych partnerów: uzdrowiska, hotele, akademie sportowe i atrakcje w Muszynie, Krynicy-Zdroju i okolicach Beskidu Sądeckiego."
+        },
+        "blog": {
+            "title": "Blog - Muszynova",
+            "description": "Odkryj najnowsze wpisy na blogu Muszynova – inspiracje, porady i przewodniki turystyczne dla osób planujących wypoczynek w Muszynie i okolicach."
+        },
+        "muszyna-10-najlepszych-atrakcji": {
+            "title": "Top 10 najlepszych atrakcji w Muszynie",
+            "description": "Poznaj 10 najciekawszych atrakcji Muszyny – od ogrodów tematycznych po historyczne zamki. Idealna lista na każdą porę roku."
+        },
+        "muszyna-najlepsze-szlaki-turystyczne": {
+            "title": "Najlepsze Szlaki Turystyczne w Muszynie",
+            "description": "Sprawdź najlepsze szlaki turystyczne w Muszynie – propozycje tras pieszych, widokowych i rodzinnych. Dla początkujących i zaawansowanych."
+        },
+        "jak-spedzic-weekend-w-muszynie": {
+            "title": "Jak spędzić weekend w Muszynie",
+            "description": "Zaplanuj idealny weekend w Muszynie – atrakcje, aktywności i lokalne smaki, które sprawią, że pokochasz to miejsce."
         }
     },
     "notfound": {

@@ -157,6 +157,30 @@ export const routing = defineRouting({
       // de: "/partner",
       ua: "/партнери",
     },
+    "/blog": {
+      pl: "/blog",
+      en: "/blog",
+      sk: "/blog",
+      ua: "/блог",
+    },
+    "/blog/muszyna-10-najlepszych-atrakcji": {
+      pl: "/blog/muszyna-10-najlepszych-atrakcji",
+      en: "/blog/muszyna-10-best-attractions",
+      sk: "/blog/muszyna-10-najlepsich-atrakcii",
+      ua: "/блог/мушина-10-найкращих-атракцій",
+    },
+    "/blog/muszyna-najlepsze-szlaki-turystyczne": {
+      pl: "/blog/muszyna-najlepsze-szlaki-turystyczne",
+      en: "/blog/muszyna-best-hiking-trails",
+      sk: "/blog/muszyna-najlepsie-turisticke-trasy",
+      ua: "/блог/мушина-найкращі-туристичні-маршрути",
+    },
+    "/blog/jak-spedzic-weekend-w-muszynie": {
+      pl: "/blog/jak-spedzic-weekend-w-muszynie",
+      en: "/blog/how-to-spend-a-weekend-in-muszyna",
+      sk: "/blog/ako-stravit-vikend-v-musyne",
+      ua: "/блог/як-провести-вихідні-в-мушині",
+    },
   },
 });
 

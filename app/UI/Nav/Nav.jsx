@@ -131,6 +131,7 @@ export default function Nav() {
           {/* Desktop Navigation */}
           <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
             <NavLink href="/o-nas">{t("links.link1")}</NavLink>
+            <NavLink href="/blog">{t("links.link8")}</NavLink>
 
             {/* Park Dropdown */}
             <div

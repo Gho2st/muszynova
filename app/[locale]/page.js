@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import VirtualTour from "../Homepage/VirtualTour";
 import Reviews from "../Homepage/Reviews";
+import Blog from "../Homepage/Blog";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -31,17 +32,18 @@ export async function generateMetadata({ params }) {
 export default function Home() {
   const thero = useTranslations("hero");
   const tabout = useTranslations("about");
+  const tblog = useTranslations("blog");
   const tservices = useTranslations("services");
   const trestaurant = useTranslations("restaurant");
-  const tvirtual = useTranslations("virtualtour");
 
   return (
     <>
       <Hero t={thero} />
       <About t={tabout} />
       <Services t={tservices} />
-      <Reviews  />
+      <Reviews />
       <Restaurant t={trestaurant} />
+      <Blog t={tblog} />
       <VirtualTour />
     </>
   );

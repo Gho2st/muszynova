@@ -100,10 +100,26 @@ body {
 /* slider */
 .slick-prev:before,
 .slick-next:before {
-  color: #C4966C !important;
+  color: #c4966c !important;
   font-size: 1.5rem !important;
 }
 
-.slick-dots{
+.slick-dots {
   bottom: -40px !important;
+}
+
+/* the slides */
+.slick-slide {
+  margin: 0 10px;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+  padding: 1rem 0;
 }
