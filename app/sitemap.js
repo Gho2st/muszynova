@@ -254,5 +254,50 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog`,
+          sk: `${baseUrl}/sk/blog`,
+          ua: `${baseUrl}/ua/блог`,
+        },
+      },
+    },
+
+    {
+      url: `${baseUrl}/blog/muszyna-10-najlepszych-atrakcji`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/muszyna-10-best-attractions`,
+          sk: `${baseUrl}/sk/blog/muszyna-10-najlepsich-atrakcii`,
+          ua: `${baseUrl}/ua/блог/мушина-10-найкращих-атракцій`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/blog/muszyna-najlepsze-szlaki-turystyczne`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/muszyna-best-hiking-trails`,
+          sk: `${baseUrl}/sk/blog/muszyna-najlepsie-turisticke-trasy`,
+          ua: `${baseUrl}/ua/блог/мушина-найкращі-туристичні-маршрути`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/blog/jak-spedzic-weekend-w-muszynie`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/how-to-spend-a-weekend-in-muszyna`,
+          sk: `${baseUrl}/sk/blog/ako-stravit-vikend-v-musyne`,
+          ua: `${baseUrl}/ua/блог/як-провести-вихідні-в-мушині`,
+        },
+      },
+    },
   ];
 }
