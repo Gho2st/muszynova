@@ -4,6 +4,7 @@ import BlogCard from "@/app/UI/BlogCard";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import Header from "@/app/UI/Header";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -32,26 +33,29 @@ export async function generateMetadata({ params }) {
 export default function Blog() {
   const t = useTranslations("blog");
   return (
-    <section className="px-6 xl:px-24 py-16 xl:py-20 2xl:py-32 ">
-      <h1 className="text-4xl xl:text-5xl mb-16 font-semibold">{t("header2")}</h1>
-      <LineHeader text={t("header3")} />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 xl:mt-24 gap-10 xl:gap-20">
-        <BlogCard
-          header={t("posts.1.header")}
-          text={t("posts.1.text")}
-          link="/blog/muszyna-10-najlepszych-atrakcji"
-        />
-        <BlogCard
-          header={t("posts.2.header")}
-          text={t("posts.2.text")}
-          link="/blog/muszyna-najlepsze-szlaki-turystyczne"
-        />
-        <BlogCard
-          header={t("posts.3.header")}
-          text={t("posts.3.text")}
-          link="/blog/jak-spedzic-weekend-w-muszynie"
-        />
-      </div>
-    </section>
+    <>
+      {" "}
+      <Header text={t("header2")} />
+      <section className="px-6 xl:px-24 py-16 xl:py-20 2xl:py-32 ">
+        <LineHeader text={t("header3")} />
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 xl:mt-24 gap-10 xl:gap-20">
+          <BlogCard
+            header={t("posts.1.header")}
+            text={t("posts.1.text")}
+            link="/blog/muszyna-10-najlepszych-atrakcji"
+          />
+          <BlogCard
+            header={t("posts.2.header")}
+            text={t("posts.2.text")}
+            link="/blog/muszyna-najlepsze-szlaki-turystyczne"
+          />
+          <BlogCard
+            header={t("posts.3.header")}
+            text={t("posts.3.text")}
+            link="/blog/jak-spedzic-weekend-w-muszynie"
+          />
+        </div>
+      </section>
+    </>
   );
 }
