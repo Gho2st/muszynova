@@ -38,7 +38,7 @@ export default function Blog() {
       <Header text={t("header2")} />
       <section className="px-6 xl:px-24 py-16 xl:py-20 2xl:py-32 ">
         <LineHeader text={t("header3")} />
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 xl:mt-24 gap-10 xl:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 xl:mt-24 gap-10 xl:gap-14 2xl:gap-20">
           <BlogCard
             header={t("posts.1.header")}
             text={t("posts.1.text")}

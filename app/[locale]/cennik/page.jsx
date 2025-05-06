@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import ButtonGreen from "@/app/UI/Buttons/ButtonGreen";
+import Header from "@/app/UI/Header";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -29,10 +31,13 @@ export default function Cennik() {
   const t = useTranslations("pricing");
   return (
     <>
-      <section className="py-16 xl:py-20 2xl:py-32 bg-black xl:bg-white">
-        <h1 className="text-4xl xl:text-5xl  font-bold text-customGold text-center mb-10 xl:mb-20">
-          {t("header")}
-        </h1>
+      <Header text={t("header")} />
+      <section className="py-16 xl:py-20 bg-black xl:bg-white">
+        <div className="flex flex-col sm:flex-row gap-10 justify-center items-center mb-16">
+          <ButtonGreen text={t("button")} link="/seniorzy.pdf" />
+          <ButtonGreen text={t("button2")} link="/szkoly-przedszkola.pdf" />
+        </div>
+
         <div className=" xl:px-24 xl:flex xl:justify-center">
           <div className="xl:w-2/3">
             <Image

@@ -644,7 +644,9 @@
     },
     "pricing": {
         "header": "Pricing",
-        "alt": "Price list of Muszynova Recreational and Sports Park in Muszyna"
+        "alt": "Price list of Muszynova Recreational and Sports Park in Muszyna",
+        "button": "Offer for Seniors",
+        "button2": "Offer for Schools and Kindergartens"
     },
     "groupclasses": {
         "header": "Group Classes",

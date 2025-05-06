@@ -644,7 +644,9 @@
     },
     "pricing": {
         "header": "Cenník",
-        "alt": "Cenník Rekreačno-športového parku Muszynova v Muszyna"
+        "alt": "Cenník Rekreačno-športového parku Muszynova v Muszyna",
+        "button": "Ponuka pre seniorov",
+        "button2": "Ponuka pre školy a materské školy"
     },
     "groupclasses": {
         "header": "Skupinové aktivity",

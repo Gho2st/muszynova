@@ -644,7 +644,9 @@
     },
     "pricing": {
         "header": "Cennik",
-        "alt": "Cennik Parku Rekreacyjno Sportowego Muszynova w Muszynie"
+        "alt": "Cennik Parku Rekreacyjno Sportowego Muszynova w Muszynie",
+        "button": "Oferta dla Seniorów",
+        "button2": "Oferta dla szkół i przedszkoli"
     },
     "groupclasses": {
         "header": "Zajęcia Grupowe",
