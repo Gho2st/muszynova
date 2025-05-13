@@ -166,7 +166,7 @@
     },
     "cta": {
         "header": "Pozývame vás do Rekreačno-Športového Parku Muszynova!",
-        "text": "Po prehliadke Muszyny vás srdečne pozývame do nášho Rekreačno-Športového Parku <strong>Muszynova</strong>, ktorý ponúka množstvo atrakcií pre každého! Nájdete tu športovú halu s povrchom vhodným na futbal, volejbal či basketbal, lezeckú stenu, squash, detskú herňu s labyrintmi a šmýkačkami, požičovňu bicyklov, ako aj posilňovňu a fitness miestnosť. Je to ideálne miesto na aktívne trávenie času s rodinou, priateľmi alebo individuálne. Naša reštaurácia podáva ľahké jedlá s regionálnymi prvkami a pre deti sme pripravili špeciálne atrakcie. Navštívte nás a objavte zábavu na <strong>novej úrovni!</strong>",
+        "text": "Po prehliadke vás srdečne pozývame do nášho Rekreačno-Športového Parku <strong>Muszynova</strong>, ktorý ponúka množstvo atrakcií pre každého! Nájdete tu športovú halu s povrchom vhodným na futbal, volejbal či basketbal, lezeckú stenu, squash, detskú herňu s labyrintmi a šmýkačkami, požičovňu bicyklov, ako aj posilňovňu a fitness miestnosť. Je to ideálne miesto na aktívne trávenie času s rodinou, priateľmi alebo individuálne. Naša reštaurácia podáva ľahké jedlá s regionálnymi prvkami a pre deti sme pripravili špeciálne atrakcie. Navštívte nás a objavte zábavu na <strong>novej úrovni!</strong>",
         "button": "Rezervujte teraz"
     },
     "blog": {
@@ -232,6 +232,22 @@
                     "2": "Biblické záhrady",
                     "3": "Unikátna hlavná ulica v Muszyne",
                     "4": "Výhľad na hrad v Muszyne"
+                }
+            },
+            "4": {
+                "header": "Aktívna dovolenka v Sadeckých Beskydách",
+                "text": "Okolie Muszyny a Krynicy-Zdrój je miestom, kde sa príroda stretáva s kultúrou a aktívny oddych sa spája s relaxom. Splav Popradu, cyklotúra po trase Velo Krynica alebo prechádzka po promenáde v Krynici sú len niektoré z možností, ktoré tento región ponúka. Navštív Muszynu, využite ponuku požičovne bicyklov Muszynova a objav Sadecké Beskydy na vlastnú päsť!",
+                "header2": "Prečo Muszyna na víkend?",
+                "header3": "Okolie Muszyny a Krynicy je rajom pre milovníkov aktivity",
+                "list": {
+                    "1": "Turistické a cyklistické trasy – Relax a história – Sadecké Beskydy ponúkajú množstvo turistických trás rôznej náročnosti. Z Muszyny sa oplatí vybrať po zelenej značke na Jaworzynu Krynickú (1114 m n. m.), odkiaľ je nádherný výhľad na Beskydy a za jasného počasia aj na Tatry. Trasa vedie cez rezerváciu 'Lipový les Obrožyska' a ruiny hradu v Muszyne, čo z nej robí nielen prírodné, ale aj historické dobrodružstvo. Pre cyklistov je ideálnou voľbou trasa Velo Krynica, približne 12 km dlhá, vedúca z Krynicy cez Powroźnik do Muszyny. Trasa je pohodlná a oddelená od cestnej premávky, čo ju robí bezpečnou aj pre rodiny s deťmi. V Krynici sú dostupné požičovne bicyklov vrátane elektrických, ktoré uľahčujú jazdu do kopcov.",
+                    "2": "Splav na Poprade – Príroda a pohyb – Rieka Poprad, pretekajúca cez Muszynu, je ideálnym miestom na splavovanie kajakom alebo raftom. Splav z Muszyny do Żegiestowa (cca 10 km) trvá približne 2 hodiny a je pokojný, takže vhodný pre začiatočníkov aj rodiny. Malebná krajina Popradskej doliny, zalesnené kopce a pokojný tok rieky zaručujú nezabudnuteľný zážitok. Organizátori splavov, ako sú miestne firmy v Muszyne, zabezpečujú výstroj a spätnú dopravu, čo zaručuje pohodlie a bezpečnosť. Po splave odporúčame pokračovať v aktívnom dni v Muszyne! Požičajte si bicykel v jednej z miestnych požičovní, ako je Muszynova, a objavte čarovné cyklotrasy v okolí. Populárna trasa z Muszyny do Krynicy vedie popri Poprade a umožňuje si vychutnať krásy beskydskej krajiny. Požičovňa Muszynova ponúka klasické aj elektrické bicykle, ktoré sú ideálne pre tých, ktorí hľadajú pohodlie v mierne kopcovitom teréne. Po ceste sa môžete zastaviť v Muszyne, oddýchnuť si v Zmyslových záhradách alebo ochutnať miestne špeciality v jednej z regionálnych krčiem."
+                },
+                "alt": {
+                    "1": "Lúka Konieczna",
+                    "2": "Veľký vodopád",
+                    "3": "Kaplnka pod Jaworzynkou",
+                    "4": "Diabolský kameň na Jaworzynie Krynickej"
                 }
             }
         }
@@ -922,6 +938,10 @@
         "jak-spedzic-weekend-w-muszynie": {
             "title": "Ako stráviť víkend v Muszyne",
             "description": "Naplánujte si dokonalý víkend v Muszyne – atrakcie, aktivity a miestne chute, ktoré si zamilujete."
+        },
+        "aktywny-wypoczynek-w-beskidzie-sadeckim": {
+            "title": "Aktívna dovolenka v Muszyne a Krynici-Zdrój – Sadecké Beskydy",
+            "description": "Objavte čaro Sadeckých Beskýd! Splav rieky Poprad, cyklotrasy Velo Krynica, horské túry a relax v Muszyne. Ideálne miesto na víkend plný aktivity a prírody."
         }
     },
     "notfound": {

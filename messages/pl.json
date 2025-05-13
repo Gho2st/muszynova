@@ -166,7 +166,7 @@
     },
     "cta": {
         "header": "Zapraszamy do Parku Rekreacyjno-Sportowego Muszynova!",
-        "text": "Po zwiedzaniu Muszyny zapraszamy do naszego Parku Rekreacyjno-Sportowego <strong>Muszynova</strong>, który oferuje mnóstwo atrakcji dla każdego! Znajdziecie tu halę sportową z nawierzchnią do gry w piłkę nożną, siatkówkę czy koszykówkę, ściankę wspinaczkową, squasha, salę zabaw dla dzieci z labiryntami i zjeżdżalniami, wypożyczalnię rowerów oraz siłownię i salę fitness. To idealne miejsce, by aktywnie spędzić czas z rodziną, przyjaciółmi czy indywidualnie. Nasza restauracja serwuje lekkie dania z regionalnymi akcentami, a dla dzieci przygotowaliśmy specjalne atrakcje. Odwiedź nas i odkryj rozrywkę na <strong>nowym poziomie!</strong>",
+        "text": "Po zwiedzaniu zapraszamy do naszego Parku Rekreacyjno-Sportowego <strong>Muszynova</strong>, który oferuje mnóstwo atrakcji dla każdego! Znajdziecie tu halę sportową z nawierzchnią do gry w piłkę nożną, siatkówkę czy koszykówkę, ściankę wspinaczkową, squasha, salę zabaw dla dzieci z labiryntami i zjeżdżalniami, wypożyczalnię rowerów oraz siłownię i salę fitness. To idealne miejsce, by aktywnie spędzić czas z rodziną, przyjaciółmi czy indywidualnie. Nasza restauracja serwuje lekkie dania z regionalnymi akcentami, a dla dzieci przygotowaliśmy specjalne atrakcje. Odwiedź nas i odkryj rozrywkę na <strong>nowym poziomie!</strong>",
         "button": "Zarezerwuj teraz"
     },
     "blog": {
@@ -232,6 +232,22 @@
                     "2": "Ogrody Biblijne",
                     "3": "Unikatowa główna uliczka w Muszynie",
                     "4": "Widok na Zamek w Muszynie"
+                }
+            },
+            "4": {
+                "header": "Aktywny wypoczynek w Beskidzie Sądeckim",
+                "text": "Okolice Muszyny i Krynicy-Zdroju to miejsca, gdzie natura spotyka się z kulturą, a aktywny wypoczynek przeplata z relaksem. Spływ Popradem, rowerowa przejażdżka szlakiem Velo Krynica czy spacer po deptaku w Krynicy to tylko niektóre z możliwości, jakie oferuje ten region. Odwiedź Muszynę, skorzystaj z oferty wypożyczalni rowerów Muszynova i odkryj Beskid Sądecki na własną rękę!",
+                "header2": "Dlaczego Muszyna na weekend?",
+                "header3": "Okolice Muszyny i Krynicy to raj dla miłośników aktywności",
+                "list": {
+                    "1": "Szlaki piesze i rowerowe - Relaks i historia - Beskid Sądecki oferuje mnóstwo szlaków turystycznych o różnym stopniu trudności. Z Muszyny warto wybrać się zielonym szlakiem na Jaworzynę Krynicką (1114 m n.p.m.), skąd rozpościera się zapierająca dech panorama na Beskidy, a nawet Tatry w pogodne dni. Trasa ta prowadzi przez rezerwat „Las Lipowy Obrożyska” i ruiny zamku w Muszynie, co czyni ją nie tylko przyrodniczą, ale i historyczną przygodą. Dla rowerzystów idealnym wyborem będzie szlak Velo Krynica, liczący około 12 km, który prowadzi z Krynicy przez Powroźnik do Muszyny. Trasa jest komfortowa, odseparowana od ruchu samochodowego, co sprawia, że jest bezpieczna także dla rodzin z dziećmi. W Krynicy dostępne są wypożyczalnie rowerów, w tym elektrycznych, które ułatwiają pokonywanie wzniesień.",
+                    "2": "Spływy Popradem - Natura i aktywność - Rzeka Poprad, przepływająca przez Muszynę, to doskonałe miejsce na spływy kajakowe lub pontonowe. Spływ z Muszyny do Żegiestowa (ok. 10 km) trwa około 2 godzin i jest łagodny, co czyni go idealnym dla początkujących oraz rodzin. Malownicze krajobrazy Doliny Popradu, zalesione wzgórza i spokojny nurt rzeki sprawiają, że to niezapomniana przygoda. Organizatorzy spływów, tacy jak lokalne firmy w Muszynie, zapewniają sprzęt i transport powrotny, co gwarantuje komfort i bezpieczeństwo. Po zakończeniu spływu zachęcamy do kontynuowania aktywnego dnia w Muszynie! Wypożycz rowery w jednej z lokalnych wypożyczalni, takich jak Muszynova, i odkryj urokliwe trasy rowerowe w okolicy. Popularna trasa z Muszyny do Krynicy prowadzi wzdłuż Popradu i pozwala cieszyć się pięknem beskidzkich krajobrazów. Wypożyczalnia Muszynova oferuje zarówno rowery tradycyjne, jak i elektryczne, które są idealne dla osób szukających wygody na lekko pagórkowatym terenie. Po drodze możesz zatrzymać się w Muszynie, by odpocząć w Ogrodach Sensorycznych lub skosztować lokalnych specjałów w jednej z regionalnych karczm."
+                },
+                "alt": {
+                    "1": "Hala Konieczna",
+                    "2": "Wodospad Wielki",
+                    "3": "Kapliczka pod Jaworzynką",
+                    "4": "Kamień Diabelski na Jaworzynie Krynickiej"
                 }
             }
         }
@@ -922,6 +938,10 @@
         "jak-spedzic-weekend-w-muszynie": {
             "title": "Jak spędzić weekend w Muszynie",
             "description": "Zaplanuj idealny weekend w Muszynie – atrakcje, aktywności i lokalne smaki, które sprawią, że pokochasz to miejsce."
+        },
+        "aktywny-wypoczynek-w-beskidzie-sadeckim": {
+            "title": "Aktywny wypoczynek w Muszynie i Krynicy-Zdroju – Beskid Sądecki",
+            "description": "Odkryj uroki Beskidu Sądeckiego! Spływy Popradem, trasy rowerowe Velo Krynica, wędrówki po górach i relaks w Muszynie. Idealne miejsce na weekend pełen aktywności i natury."
         }
     },
     "notfound": {

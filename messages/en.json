@@ -166,7 +166,7 @@
     },
     "cta": {
         "header": "Welcome to the Muszynova Recreation and Sports Park!",
-        "text": "After exploring Muszyna, we invite you to our <strong>Muszynova</strong> Recreation and Sports Park, which offers plenty of attractions for everyone! You'll find a sports hall with surfaces for playing football, volleyball, or basketball, a climbing wall, squash courts, a children's playroom with mazes and slides, a bike rental, a gym, and a fitness room. It's the perfect place to spend active time with family, friends, or on your own. Our restaurant serves light dishes with regional accents, and we've prepared special attractions for children. Visit us and discover entertainment at a <strong>new level!</strong>",
+        "text": "After exploring, we invite you to our <strong>Muszynova</strong> Recreation and Sports Park, which offers plenty of attractions for everyone! You'll find a sports hall with surfaces for playing football, volleyball, or basketball, a climbing wall, squash courts, a children's playroom with mazes and slides, a bike rental, a gym, and a fitness room. It's the perfect place to spend active time with family, friends, or on your own. Our restaurant serves light dishes with regional accents, and we've prepared special attractions for children. Visit us and discover entertainment at a <strong>new level!</strong>",
         "button": "Book now"
     },
     "blog": {
@@ -232,6 +232,22 @@
                     "2": "Biblical Gardens",
                     "3": "Unique main street in Muszyna",
                     "4": "View of Muszyna Castle"
+                }
+            },
+            "4": {
+                "header": "Active Holiday in the Beskid Sądecki",
+                "text": "The areas around Muszyna and Krynica-Zdrój are places where nature meets culture, and active leisure blends with relaxation. Rafting on the Poprad River, cycling along the Velo Krynica route, or strolling along Krynica's promenade are just a few of the opportunities this region offers. Visit Muszyna, take advantage of Muszynova bike rentals, and discover Beskid Sądecki on your own!",
+                "header2": "Why Muszyna for the weekend?",
+                "header3": "The surroundings of Muszyna and Krynica are a paradise for activity lovers",
+                "list": {
+                    "1": "Hiking and cycling trails – Relaxation and history – Beskid Sądecki offers many tourist trails of varying difficulty. From Muszyna, it's worth taking the green trail to Jaworzyna Krynicka (1114 m a.s.l.), offering a breathtaking panorama of the Beskids and even the Tatras on clear days. The route goes through the 'Obrożyska Lime Forest' reserve and the ruins of the Muszyna castle, making it a natural and historical adventure. For cyclists, the Velo Krynica trail, about 12 km long, is an ideal choice. It leads from Krynica through Powroźnik to Muszyna. The route is comfortable and separated from car traffic, making it safe even for families with children. In Krynica, you’ll find bike rentals, including electric ones that make it easier to tackle hills.",
+                    "2": "Rafting on the Poprad – Nature and activity – The Poprad River flowing through Muszyna is a perfect spot for kayaking or pontoon rafting. The trip from Muszyna to Żegiestów (about 10 km) takes around 2 hours and is gentle, ideal for beginners and families. Picturesque landscapes of the Poprad Valley, forested hills, and the calm river current make it an unforgettable adventure. Local companies in Muszyna organize the rafting, providing equipment and return transport for comfort and safety. After the rafting trip, continue your active day in Muszyna! Rent a bike from local rentals like Muszynova and explore scenic cycling routes. The popular route from Muszyna to Krynica runs along the Poprad River and showcases the beauty of the Beskid landscape. Muszynova offers both traditional and electric bikes, perfect for those seeking comfort on gently hilly terrain. Along the way, stop in Muszyna to relax in the Sensory Gardens or enjoy local specialties at one of the regional inns."
+                },
+                "alt": {
+                    "1": "Konieczna Pasture",
+                    "2": "Wielki Waterfall",
+                    "3": "Chapel under Jaworzynka",
+                    "4": "Devil's Stone on Jaworzyna Krynicka"
                 }
             }
         }
@@ -922,6 +938,10 @@
         "jak-spedzic-weekend-w-muszynie": {
             "title": "How to Spend a Weekend in Muszyna",
             "description": "Plan the perfect weekend in Muszyna – attractions, activities, and local flavours that will make you fall in love with the region."
+        },
+        "aktywny-wypoczynek-w-beskidzie-sadeckim": {
+            "title": "Active Holiday in Muszyna and Krynica-Zdrój – Beskid Sądecki",
+            "description": "Discover the beauty of Beskid Sądecki! Rafting on the Poprad River, Velo Krynica bike trails, mountain hikes, and relaxation in Muszyna. The perfect place for an active and nature-filled weekend."
         }
     },
     "notfound": {
