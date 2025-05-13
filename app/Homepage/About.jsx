@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Button from "../UI/Buttons/Button";
+import FacebookFeed from "../UI/Facebook";
 
 export default function About({ t }) {
   return (
-    <section className="py-20 px-6">
+    <section className="py-16 xl:py-20 px-6">
       <div className="xl:flex">
         <div className="xl:w-1/2 xl:p-16">
           <Image
@@ -26,6 +27,10 @@ export default function About({ t }) {
             link="/#virtual-tour"
           />
         </div>
+      </div>
+      {/* AKTUALNOSCI */}
+      <div className="">
+        <FacebookFeed />
       </div>
     </section>
   );
