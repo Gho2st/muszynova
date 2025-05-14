@@ -8,7 +8,7 @@ export default function BackgroundList({
 }) {
   return (
     <div
-      className={`flex flex-col text-center md:p-10 ${bgColor} md:w-3/4 mx-auto rounded-2xl p-4 py-10  ${className}`}
+      className={`flex flex-col text-center md:p-10 ${bgColor} lg:w-3/4 mx-auto rounded-2xl p-4 py-10  ${className}`}
     >
       <h3
         className={`text-2xl xl:text-3xl mb-8 md:mb-12 font-semibold leading-snug ${textColor}`}
