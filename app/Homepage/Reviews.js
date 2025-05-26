@@ -52,7 +52,7 @@ export default function Reviews() {
           <Slider {...settings} className="w-[90%] xl:w-[100%] mx-auto">
             {reviews.map((review, index) => (
               <div key={index} className="p-3 xl:p-4">
-                <div className="bg-white p-6 shadow-lg 2xl:shadow-xl rounded-xl text-center flex flex-col items-center">
+                <div className="bg-white p-6 px-3 sm:px-6 shadow-lg 2xl:shadow-xl rounded-xl text-center flex flex-col items-center">
                   <div className="flex">
                     <Stars />
                   </div>
