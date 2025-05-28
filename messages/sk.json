@@ -63,6 +63,16 @@
         "button": "Virtuálna prehliadka",
         "text": "Existuje miesto, kde môže byť každý sám sebou a tráviť čas tak, ako má rád? Táto myšlienka nás sprevádzala pri navrhovaní Muszynova. Aby sa každý cítil pohodlne. S myšlienkou na najmenších, tínedžerov a dospelých, rodiny a jednotlivcov, návštevníkov aj miestnych obyvateľov, ako aj organizované skupiny, vznikol náš Rekreačno-športový park. Otvárame dvere zábave a aktivite na novej úrovni kvality."
     },
+    "facebook": {
+        "header": "Najnovšie",
+        "span": "príspevky",
+        "header2": "z Facebooku",
+        "cta": "Navštívte náš profil",
+        "loading": "Načítavajú sa príspevky...",
+        "error": "Žiadne dostupné príspevky",
+        "error2": "Chýba obsah príspevku",
+        "cta2": "Zobraziť celý príspevok na Facebooku"
+    },
     "services": {
         "header": "Naše športové a relaxačné zóny",
         "cards": {

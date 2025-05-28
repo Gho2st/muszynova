@@ -63,6 +63,16 @@
         "button": "Wirtualny Spacer",
         "text": "Czy istnieje obiekt, w którym każdy może być sobą i spędzać czas tak, jak lubi? Taka myśl przyświecała nam, gdy projektowaliśmy Muszynova. Aby każdy czuł się komfortowo. Z myślą o najmłodszych, nastolatkach i dorosłych, rodzinach i singlach, przyjezdnych i mieszkańcach oraz grupach zorganizowanych powstał nasz Park Rekreacyjno – Sportowy. Otwieramy drzwi do rozrywki i aktywności na nowym poziomie jakości."
     },
+    "facebook": {
+        "header": "Najnowsze",
+        "span": "posty",
+        "header2": "z Facebooka",
+        "cta": "Odwiedź nasz profil",
+        "loading": "Wczytywanie postów...",
+        "error": "Brak dostępnych postów",
+        "error2": "Brak treści posta",
+        "cta2": "Zobacz całość na Facebooku"
+    },
     "services": {
         "header": "Nasze Strefy Sportowe i Relaksacyjne",
         "cards": {

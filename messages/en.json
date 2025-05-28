@@ -63,6 +63,16 @@
         "button": "Virtual Tour",
         "text": "Is there a facility where everyone can be themselves and spend time the way they like? This was our idea when we designed Muszynova. To make everyone feel comfortable. With the youngest, teenagers and adults, families and singles, visitors and residents and organized groups in mind, our Recreation and Sports Park was created. We open the door to entertainment and activity at a new level of quality."
     },
+    "facebook": {
+        "header": "Latest",
+        "span": "posts",
+        "header2": "from Facebook",
+        "cta": "Visit our profile",
+        "loading": "Loading posts...",
+        "error": "No posts available",
+        "error2": "No post content",
+        "cta2": "View full post on Facebook"
+    },
     "services": {
         "header": "Our Sports and Relaxation Zones",
         "cards": {
