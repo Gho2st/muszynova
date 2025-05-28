@@ -41,7 +41,7 @@ export default function FacebookPosts() {
   return (
     <section className="pb-16 xl:pb-32 px-4 xl:px-20 2xl:px-44">
       <div className="text-center mb-8">
-        <h2 className="text-3xl xl:text-5xl font-semibold mb-4 md:mb-10">
+        <h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-4 md:mb-10">
           {t("header")}{" "}
           <span className="text-blue-600 font-bold">{t("span")}</span>{" "}
           {t("header2")}
