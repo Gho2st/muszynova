@@ -62,7 +62,7 @@ export default function FacebookPosts() {
       ) : posts.length === 0 ? (
         <p className="text-center text-gray-600">{t("error")}</p>
       ) : (
-        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-16">
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-12">
           {posts.map((post) => {
             const imageUrl =
               post.attachments?.data?.[0]?.media?.image?.src ?? null;
@@ -75,7 +75,7 @@ export default function FacebookPosts() {
                 className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col"
               >
                 {imageUrl && (
-                  <div className="relative w-full h-84 xl:h-96">
+                  <div className="relative w-full h-84 xl:h-112">
                     <Image
                       src={imageUrl}
                       alt="Zdjęcie z posta"
@@ -84,18 +84,18 @@ export default function FacebookPosts() {
                     />
                   </div>
                 )}
-                <div className="p-4 flex-1 flex flex-col justify-between">
+                <div className="p-4 flex-1 flex flex-col">
                   <p className="text-gray-800 my-4">
                     {truncateText(post.message || t("error2"), 35)}
                   </p>
-                  <div className="text-sm text-gray-500 mb-2">
-                    {new Date(post.created_time).toLocaleString()}
+                  <div className="text-sm text-gray-500 mt-auto self-end">
+                    {new Date(post.created_time).toLocaleDateString("pl-PL")}
                   </div>
                   <a
                     href={postUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline font-medium text-sm"
+                    className="text-blue-600 hover:underline font-medium text-sm mt-2"
                   >
                     {t("cta2")} →
                   </a>
