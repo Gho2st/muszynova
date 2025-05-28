@@ -47,7 +47,7 @@ export default function FacebookPosts() {
           {t("header2")}
         </h2>
         <a
-          href="https://www.facebook.com/wesolewygibasy"
+          href="https://www.facebook.com/Parkmuszynova/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors mt-2 mb-10"
