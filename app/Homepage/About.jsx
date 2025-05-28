@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "../UI/Buttons/Button";
-import FacebookFeed from "../UI/Facebook";
 
 export default function About({ t }) {
   return (
@@ -27,10 +26,6 @@ export default function About({ t }) {
             link="/#virtual-tour"
           />
         </div>
-      </div>
-      {/* AKTUALNOSCI */}
-      <div className="">
-        <FacebookFeed />
       </div>
     </section>
   );

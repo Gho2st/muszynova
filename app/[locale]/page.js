@@ -8,6 +8,7 @@ import { getTranslations } from "next-intl/server";
 import VirtualTour from "../Homepage/VirtualTour";
 import Reviews from "../Homepage/Reviews";
 import Blog from "../Homepage/Blog";
+import FacebookPosts from "../Homepage/FacebookPosts";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -40,6 +41,7 @@ export default function Home() {
     <>
       <Hero t={thero} />
       <About t={tabout} />
+      <FacebookPosts />
       <Services t={tservices} />
       <Reviews />
       <Restaurant t={trestaurant} />
