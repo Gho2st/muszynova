@@ -39,7 +39,7 @@ export default function FacebookPosts() {
   }, []);
 
   return (
-    <section className="pb-16 xl:pb-32 px-6 xl:px-32 2xl:px-44">
+    <section className="pb-16 xl:pb-32 px-4 xl:px-20 2xl:px-44">
       <div className="text-center mb-8">
         <h2 className="text-3xl xl:text-5xl font-semibold mb-4 md:mb-10">
           {t("header")}{" "}
@@ -62,7 +62,7 @@ export default function FacebookPosts() {
       ) : posts.length === 0 ? (
         <p className="text-center text-gray-600">{t("error")}</p>
       ) : (
-        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-16">
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-16">
           {posts.map((post) => {
             const imageUrl =
               post.attachments?.data?.[0]?.media?.image?.src ?? null;
