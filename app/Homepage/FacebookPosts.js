@@ -85,7 +85,7 @@ export default function FacebookPosts() {
                   </div>
                 )}
                 <div className="p-4 flex-1 flex flex-col justify-between">
-                  <p className="text-gray-800 mb-4">
+                  <p className="text-gray-800 my-4">
                     {truncateText(post.message || t("error2"), 35)}
                   </p>
                   <div className="text-sm text-gray-500 mb-2">
