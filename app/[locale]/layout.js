@@ -21,6 +21,10 @@ export const metadata = {
     description: "Sport and Fun for young and old at a nOvy level",
     images: "https://muszynova.pl/opengraph-image.png",
   },
+  other: {
+    // Tu możesz wstrzyknąć własne tagi do <head>
+    preload: `<link rel="preload" as="image" href="/Muszynova-hotel.webp" type="image/webp" />`,
+  },
 };
 
 export default async function LocaleLayout({ children, params }) {

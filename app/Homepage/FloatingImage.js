@@ -29,6 +29,7 @@ export default function FloatingImage({ src, alt, width, height }) {
         layout="responsive"
         width={width}
         height={height}
+        priority // <- DODAJ!
       />
     </motion.div>
   );
