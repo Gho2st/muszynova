@@ -7,7 +7,7 @@ export default function About({ t }) {
       <div className="xl:flex">
         <div className="xl:w-1/2 xl:p-16">
           <Image
-            src={"/about.jpg"}
+            src={"/about.webp"}
             width={100}
             height={100}
             layout="responsive"

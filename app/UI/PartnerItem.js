@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function PartnerItem({ t, index, partner, link }) {
-  const image = `${partner}.png`;
+  const image = `${partner}.webp`;
 //   console.log(image);
   return (
     <article

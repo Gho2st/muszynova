@@ -20,7 +20,7 @@ const VirtualTour = () => {
         <div
           className="absolute inset-0 bg-gray-200"
           style={{
-            backgroundImage: "url('/virtual2.png')",
+            backgroundImage: "url('/virtual.webp')",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

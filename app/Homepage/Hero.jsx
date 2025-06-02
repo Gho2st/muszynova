@@ -4,7 +4,7 @@ export default function Hero({ t }) {
   return (
     <div
       className="px-3 pt-20 relative min-h-screen max-h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/Muszynova-hotel.jpg')" }}
+      style={{ backgroundImage: "url('/Muszynova-hotel.webp')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#13322B]/30 z-10" />

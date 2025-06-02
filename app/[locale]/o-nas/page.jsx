@@ -52,7 +52,7 @@ export default function About() {
         </div>
         <div className="mt-16 xl:mt-0 xl:w-2/3">
           <Image
-            src="/Muszynova-hotel.jpg"
+            src="/Muszynova-hotel.webp"
             width={100}
             height={100}
             layout="responsive"
