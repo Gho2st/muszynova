@@ -119,14 +119,14 @@ export default function Page() {
             icon={<FaPeopleGroup />}
             title={t("cards.card5.header")}
             buttonText={t("cards.card5.button")}
-            link="/kontakt"
+            link="/menu.pdf"
             text={t("cards.card5.text")}
           />
           <Card
             icon={<FaPeopleGroup />}
             title={t("cards.card6.header")}
             buttonText={t("cards.card6.button")}
-            link="/kontakt"
+            link="/park"
             text={t("cards.card6.text")}
           />
         </div>
