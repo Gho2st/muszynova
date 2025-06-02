@@ -1,18 +1,17 @@
 import FloatingImage from "./FloatingImage";
-import Image from "next/image";
 
 export default function Hero({ t }) {
   return (
     <div className="relative min-h-screen max-h-screen overflow-hidden">
-      {/* Optymalizowany obraz tła z Next.js Image */}
-      <Image
+      {/* Zwykły <img> jako tło */}
+      <img
         src="/Muszynova-hotel.webp"
         alt="Muszynova Hotel Background"
-        fill
-        priority
-        className="object-cover z-0"
-        quality={80} // zmień, jeśli obraz jest duży
-        sizes="100vw"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        loading="eager"
+        fetchPriority="high"
+        width={1920}
+        height={1080}
       />
 
       {/* Overlay */}
