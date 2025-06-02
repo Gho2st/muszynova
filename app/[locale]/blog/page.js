@@ -59,6 +59,11 @@ export default function Blog() {
             text={t("posts.4.text")}
             link="/blog/aktywny-wypoczynek-w-beskidzie-sadeckim"
           />
+          <BlogCard
+            header={t("posts.5.header")}
+            text={t("posts.5.text")}
+            link="/blog/historia-squasha"
+          />
         </div>
       </section>
     </>

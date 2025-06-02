@@ -108,6 +108,27 @@ export default function Page() {
             link="/kontakt"
             text={t("cards.card3.text")}
           />
+          <Card
+            icon={<FaPeopleGroup />}
+            title={t("cards.card4.header")}
+            buttonText={t("cards.card4.button")}
+            link="/kontakt"
+            text={t("cards.card4.text")}
+          />
+          <Card
+            icon={<FaPeopleGroup />}
+            title={t("cards.card5.header")}
+            buttonText={t("cards.card5.button")}
+            link="/kontakt"
+            text={t("cards.card5.text")}
+          />
+          <Card
+            icon={<FaPeopleGroup />}
+            title={t("cards.card6.header")}
+            buttonText={t("cards.card6.button")}
+            link="/kontakt"
+            text={t("cards.card6.text")}
+          />
         </div>
       </section>
     </>

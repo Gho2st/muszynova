@@ -104,9 +104,9 @@
         }
     },
     "restaurant": {
-        "header": "Reštaurácia Muszynova",
-        "header2": "Staviame na nOvú kvalitu a objavovanie beskydských chutí na novo",
-        "text": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež. Dospelých pozývame na drink.",
+        "header": "Najlepšia reštaurácia v Muszine",
+        "header2": "Staviame na novej kvalite a objavujeme beskydské chute nanovo",
+        "text": "Hľadáte výnimočné miesto na kulinársky zážitok v Muszine alebo v okolí Nového Sadu? Reštaurácia Muszynova vás pozýva objaviť beskydské chute v modernom prevedení. Je to ideálne miesto na rodinný obed, romantickú večeru, slávnostnú udalosť alebo pracovné stretnutie. Ponúkame výnimočnú atmosféru, zdravé a ľahké jedlá a profesionálny servis.",
         "alt": {
             "1": "Modernne podávaná zeleninová šalát na večeru",
             "2": "Mlieko a syr",
@@ -258,6 +258,28 @@
                     "2": "Veľký vodopád",
                     "3": "Kaplnka pod Jaworzynkou",
                     "4": "Diabolský kameň na Jaworzynie Krynickej"
+                }
+            },
+            "5": {
+                "header": "Squash – šport s triedou. Spoznajte jeho históriu a prečo sa oplatí ho vyskúšať",
+                "text": "Vedeli ste, že squash je jeden z najrýchlejších a najintenzívnejších raketových športov na svete? Hra, ktorá sa dnes spája s moderným životným štýlom, má svoje korene v 19. storočí!",
+                "header2": "Prečo si squash získal svet?",
+                "header3": "Stručná história squashu",
+                "list": {
+                    "1": "Začiatky v Anglicku – squash vznikol v elitných britských školách (napr. Harrow School) okolo roku 1830, keď si študenti všimli, že loptička sa po náraze o stenu sploští – odtiaľ názov.",
+                    "2": "Rozvoj športu – postupne sa squash rozšíril do športových klubov po celom svete, najmä v anglicky hovoriacich krajinách.",
+                    "3": "Medzinárodné uznanie – v 20. storočí vznikli prvé federácie (napr. World Squash Federation) a squash sa stal profesionálnym športom.",
+                    "4": "Malý priestor, veľká akcia – hra sa odohráva na malom kurte, ale intenzita je extrémne vysoká.",
+                    "5": "Šport pre zaneprázdnených – ideálny na rýchly, efektívny tréning po práci – 30 minút stačí na poriadne spotenie!",
+                    "6": "Dostupnosť – jednoduché pravidlá, ľahké učenie pre začiatočníkov a pritom veľká taktická hĺbka.",
+                    "7": "Squash v číslach (pre milovníkov faktov): Viac ako 20 miliónov hráčov na svete. Profesionálny hráč zabehne počas zápasu až 5 km za 45 minút. Loptička môže dosiahnuť rýchlosť až 270 km/h!",
+                    "8": "Prečo hrať squash v Muszynova? Moderné kurty s vynikajúcim osvetlením a ventiláciou. Možnosť rekreačnej hry alebo tréningov s inštruktorom. Rakety a loptičky sú k dispozícii na mieste – príďte, zahrajte si a zamilujte sa!"
+                },
+                "alt": {
+                    "1": "Profesionálny squashový kurt s certifikovanými rozmermi",
+                    "2": "Squashová hala s raketou a loptičkou v popredí",
+                    "3": "Squashová raketa a loptička na kurte",
+                    "4": "Squashový kurt s vybavením – raketa a loptička"
                 }
             }
         }
@@ -642,8 +664,8 @@
         "header": "Reštaurácia Muszynova",
         "header2": "Tu spoznáte menu",
         "header3": "Zorganizujte s nami na novo",
-        "text1": "Staviame na kvalitu, na objavovanie chutí na novo.",
-        "text2": "Reštaurácia ponúka zdravé a ľahké menu. Krátky jedálny lístok s regionálnymi akcentmi v jedlách priblíži beskydskú kuchyňu. Ľahko? Áno! Pohodlne? Ani pizza nám nie je cudzia. Pre každého niečo príjemné, staráme sa o deti, mládež, ale aj dospelých, pozývajúc na drink.",
+        "text1": "V reštaurácii Muszynova objavujeme beskydské chute v modernom prevedení. Naše menu ponúka starostlivo vybrané, zdravé a ľahké jedlá pripravené z lokálnych surovín. Krátky, ale premyslený výber s regionálnymi akcentmi vám priblíži bohatstvo beskydskej kuchyne.",
+        "text2": "Staviame na jednoduchosť, chuť a kvalitu – bez kompromisov. Hľadáte ľahký obed, rodinné jedlo alebo niečo chutné na večer? U nás si nájde niečo každý – deti, mládež aj dospelí. Máme niečo pre milovníkov klasiky aj moderných interpretácií – vrátane zdravšej verzie pizze. Nejde len o jedlo – je to miesto na stretnutia, oddych a zábavu. A čo tak drink alebo domáci dezert na záver dňa? V Muszynovej sa postaráme o váš vkus aj čas.",
         "button": "Jedálny lístok",
         "button2": "Nápojový lístok",
         "alt": {
@@ -665,6 +687,21 @@
                 "header": "Konferencie, obchodné stretnutia",
                 "text": "Obchodných klientov pozývame na organizovanie konferencií. Vedľa reštaurácie máme sálu Nova – modernú a klimatizovanú. Nachádza sa v nej projektor premietajúci obraz s plochou až 15 m². Vybavenie má plne profesionálne audio-video káble, čo umožňuje rýchlu a efektívnu inštaláciu s externým zariadením. Pohodlne, moderne.",
                 "button": "Kontakt"
+            },
+            "card4": {
+                "header": "Zdravá beskydská kuchyňa – blízko Noweho Sączu",
+                "text": "Muszynova je reštaurácia, ktorá sa zameriava na zdravie a ľahkosť. Naše menu obsahuje čerstvé, lokálne suroviny a regionálne inšpirácie, ktoré potešia hostí z Muszyny, Noweho Sączu a okolia. Príďte ochutnať zdravé jedlá a vychutnať si beskydskú atmosféru v útulnom interiéri.",
+                "button": "Trasa"
+            },
+            "card5": {
+                "header": "Rodinné obedy a detské menu",
+                "text": "V Muszynovej myslíme na celú rodinu. Naše detské menu spája zdravé suroviny s chutnými jedlami, ktoré deti milujú. Pohodlné a priateľské prostredie priťahuje rodiny z Noweho Sączu a okolia na spoločné stolovanie.",
+                "button": "Pozrieť menu"
+            },
+            "card6": {
+                "header": "Výnimočné večery s drinkom a hudbou",
+                "text": "Nádherný interiér, loftová atmosféra, náladové osvetlenie a pohodlie robia z Muszynovej ideálne miesto na dlhší pobyt. Skvelé na kávové stretnutia, romantické večery alebo chvíle oddychu pri chutnom jedle.",
+                "button": "Parkovanie"
             }
         }
     },
@@ -952,6 +989,10 @@
         "aktywny-wypoczynek-w-beskidzie-sadeckim": {
             "title": "Aktívna dovolenka v Muszyne a Krynici-Zdrój – Sadecké Beskydy",
             "description": "Objavte čaro Sadeckých Beskýd! Splav rieky Poprad, cyklotrasy Velo Krynica, horské túry a relax v Muszyne. Ideálne miesto na víkend plný aktivity a prírody."
+        },
+        "historia-squasha": {
+            "title": "História squashu – ako vznikol tento dynamický šport",
+            "description": "Objavte fascinujúcu históriu squashu – od britských škôl až po svetové kurty. Zistite, prečo si tento elitný šport získal popularitu a prečo by ste ho mali vyskúšať!"
         }
     },
     "notfound": {

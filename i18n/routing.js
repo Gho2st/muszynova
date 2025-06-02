@@ -167,6 +167,12 @@ export const routing = defineRouting({
       sk: "/blog/aktivna-dovolenka-v-beskydach-sadeckych",
       ua: "/blog/aktyvnyi-vidpochynok-v-beskydi-sadetskomu",
     },
+    "/blog/historia-squasha": {
+      pl: "/blog/historia-squasha",
+      en: "/blog/history-of-squash",
+      sk: "/blog/historia-squasha",
+      ua: "/blog/istoriia-skvoshu",
+    },
   },
 });
 

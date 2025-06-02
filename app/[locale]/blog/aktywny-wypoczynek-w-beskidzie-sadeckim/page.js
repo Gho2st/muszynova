@@ -44,7 +44,7 @@ export default function Aktywnie() {
       <Header text={t("header")} />
       <div className="flex md:w-3/4 mx-auto justify-center md:mt-16 h-[700px] ">
         <Image
-          src="/blog/aktywny/1.jpg"
+          src="/blog/aktywny/1.webp"
           width={500}
           height={500}
           layout="responsive"
@@ -66,19 +66,19 @@ export default function Aktywnie() {
         <Gallery
           images={[
             {
-              url: "/blog/aktywny/1.jpg",
+              url: "/blog/aktywny/1.webp",
               alt: t("alt.1"),
             },
             {
-              url: "/blog/aktywny/2.jpg",
+              url: "/blog/aktywny/2.webp",
               alt: t("alt.2"),
             },
             {
-              url: "/blog/aktywny/3.jpg",
+              url: "/blog/aktywny/3.webp",
               alt: t("alt.3"),
             },
             {
-              url: "/blog/aktywny/4.jpg",
+              url: "/blog/aktywny/4.webp",
               alt: t("alt.4"),
             },
           ]}

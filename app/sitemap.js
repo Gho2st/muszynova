@@ -289,5 +289,16 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog/historia-squasha`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/history-of-squash`,
+          sk: `${baseUrl}/sk/blog/historia-squasha`,
+          ua: `${baseUrl}/ua/blog/istoriia-skvoshu`,
+        },
+      },
+    },
   ];
 }

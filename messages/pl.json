@@ -104,9 +104,9 @@
         }
     },
     "restaurant": {
-        "header": "Restauracja Muszynova",
+        "header": "Najlepsza Restauracja w Muszynie",
         "header2": "Stawiamy na novą jakość oraz na odkrywanie beskidzkich smaków na novo",
-        "text": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież. Dorosłych zapraszamy na drinka.",
+        "text": "Szukasz wyjątkowego miejsca na kulinarną ucztę w Muszynie lub okolicach Nowego Sącza? Restauracja Muszynova zaprasza do odkrycia beskidzkich smaków w nowoczesnym wydaniu. To idealna przestrzeń na rodzinny obiad, romantyczną kolację, imprezę okolicznościową czy spotkanie biznesowe. Oferujemy wyjątkową atmosferę, zdrowe i lekkie dania oraz profesjonalną obsługę.",
         "alt": {
             "1": "Nowocześnie podana sałatka warzywna do obiadu",
             "2": "Mleko i ser",
@@ -258,6 +258,28 @@
                     "2": "Wodospad Wielki",
                     "3": "Kapliczka pod Jaworzynką",
                     "4": "Kamień Diabelski na Jaworzynie Krynickiej"
+                }
+            },
+            "5": {
+                "header": "Squash – sport z klasą. Poznaj jego historię i dlaczego warto go spróbować",
+                "text": "Czy wiedziałeś, że squash to jeden z najszybszych i najbardziej intensywnych sportów rakietowych na świecie? Gra, która dziś kojarzy się z nowoczesnym stylem życia, ma swoje korzenie jeszcze w XIX wieku!",
+                "header2": "Dlaczego squash zdobył świat?",
+                "header3": "Krótka historia squasha",
+                "list": {
+                    "1": "Początki w Anglii – squash narodził się w elitarnych szkołach brytyjskich (m.in. Harrow School) ok. 1830 roku, gdy uczniowie zauważyli, że piłka „squashuje się” (spłaszcza) po uderzeniu o ścianę – stąd nazwa.",
+                    "2": "Rozwój dyscypliny – z czasem squash zyskiwał popularność w klubach sportowych na całym świecie, szczególnie w krajach anglosaskich.",
+                    "3": "Międzynarodowe uznanie – w XX wieku powstały pierwsze federacje (np. World Squash Federation), a squash stał się sportem zawodowym.",
+                    "4": "Mało miejsca, dużo akcji – do gry potrzeba niewielkiego kortu, a intensywność i tempo są naprawdę wysokie.",
+                    "5": "Sport dla zapracowanych – idealny na szybki, efektywny trening po pracy – 30 minut wystarczy, by się porządnie zmęczyć!",
+                    "6": "Dostępność – proste zasady, łatwość nauki na poziomie amatorskim, a jednocześnie ogromna głębia taktyczna.",
+                    "7": "Squash w liczbach (dla fanów ciekawostek): Ponad 20 milionów graczy na świecie. W meczu zawodowym zawodnik może przebiec nawet 5 km w 45 minut. Piłka squashowa osiąga prędkość nawet 270 km/h!",
+                    "8": "Dlaczego warto zagrać w squasha w Muszynova? Nowoczesne korty z doskonałym oświetleniem i wentylacją. Możliwość gry rekreacyjnej lub zapisania się na zajęcia z instruktorem. Dostępność rakiet i piłek na miejscu – przyjdź, zagraj, zakochaj się!"
+                },
+                "alt": {
+                    "1": "Profesjonalna sala o certyfikowanych wymiarach do Squasha",
+                    "2": "Sala do Squasha na tle z rakietą i piłeczką",
+                    "3": "Rakieta i piłeczka na sali do squasha",
+                    "4": "Sala do squasha z rakietą i piłeczką"
                 }
             }
         }
@@ -641,9 +663,9 @@
     "restaurantpage": {
         "header": "Restauracja Muszynova",
         "header2": "Tu poznasz Menu",
-        "header3": "Zorganizuj z nami na novo",
-        "text1": "Stawiamy na jakość, na odkrywanie smaków na novo.",
-        "text2": "Restauracja oferująca zdrowe i lekkie menu. Niewielka karta, z regionalnymi akcentami w daniach przybliży kuchnię beskidzką. Lekko? Tak! Komfortowo? Również pizza nie jest nam obca. Dla każdego coś miłego, dbamy o dzieci, młodzież, jak ale i dorosłych, zapraszając na drinka.",
+        "header3": "Muszynova to dobry wybór!",
+        "text1": "W Restauracji Muszynova odkrywamy beskidzkie smaki w nowoczesnym wydaniu. Nasze menu to starannie wyselekcjonowane, zdrowe i lekkie dania, przygotowywane z lokalnych składników. Krótka, ale dopracowana karta dań z regionalnymi akcentami pozwala lepiej poznać bogactwo kuchni Beskidów.",
+        "text2": "Stawiamy na prostotę, smak i jakość – bez kompromisów. Szukasz lekkiego obiadu, rodzinnego posiłku czy czegoś pysznego na wieczór? U nas każdy znajdzie coś dla siebie: dzieci, młodzież, dorośli. Mamy coś dla miłośników klasyki i nowoczesnych interpretacji – również dla fanów pizzy w zdrowszej wersji. Zapraszamy nie tylko na jedzenie – to miejsce stworzone do spotkań, relaksu i dobrej zabawy. A może drink lub domowy deser na zakończenie dnia? W Muszynovej zadbamy o Twój smak i Twój czas.",
         "button": "Karta Menu",
         "button2": "Karta Napojów",
         "alt": {
@@ -665,6 +687,21 @@
                 "header": "Konferencje, spotkania biznesowe",
                 "text": "Klientów biznesowych zapraszamy do organizowania konferencji. Obok restauracji mamy salę Novą – novoczesną i klimatyzowaną. Znajduje się w niej rzutniki wyświetlający obraz o powierzchni nawet 15 m kw. Osprzęt posiada w pełni profesjonalne okablowanie audio-video co daje możliwość szybkiej i sprawnej instalacji z urządzeniem zewnętrznym. Komfortovo, novocześnie.",
                 "button": "Kontakt"
+            },
+            "card4": {
+                "header": "Zdrowa kuchnia beskidzka – blisko Nowego Sącza",
+                "text": "Muszynova to restauracja stawiająca na zdrowie i lekkość. Nasze menu to świeże, lokalne składniki i regionalne inspiracje, które zadowolą zarówno mieszkańców Muszyny, jak i gości z Nowego Sącza oraz okolic. Przyjedź, spróbuj zdrowych dań i poczuj beskidzki klimat w komfortowym wnętrzu.",
+                "button": "Dojazd"
+            },
+            "card5": {
+                "header": "Rodzinne obiady i menu dla dzieci",
+                "text": "W Muszynovej dbamy o całe rodziny. Nasze menu dla dzieci łączy zdrowe składniki z pysznymi smakami, które pokochają najmłodsi. Komfortowe i przyjazne wnętrze sprawia, że rodziny z Nowego Sącza i okolic chętnie nas odwiedzają na wspólne posiłki.",
+                "button": "Poznaj menu"
+            },
+            "card6": {
+                "header": "Wyjątkowe wieczory z drinkiem i muzyką",
+                "text": "Zachwycająca aranżacja wnętrz, loftowy klimat, nastrojowe oświetlenie i komfortowe warunki sprawiają, że w Muszynovej chce się zostać dłużej. To przestrzeń idealna na spotkania przy kawie, romantyczne wieczory czy po prostu – chwile relaksu przy dobrym jedzeniu.",
+                "button": "Park"
             }
         }
     },
@@ -952,6 +989,10 @@
         "aktywny-wypoczynek-w-beskidzie-sadeckim": {
             "title": "Aktywny wypoczynek w Muszynie i Krynicy-Zdroju – Beskid Sądecki",
             "description": "Odkryj uroki Beskidu Sądeckiego! Spływy Popradem, trasy rowerowe Velo Krynica, wędrówki po górach i relaks w Muszynie. Idealne miejsce na weekend pełen aktywności i natury."
+        },
+        "historia-squasha": {
+            "title": "Historia squasha – skąd się wziął ten dynamiczny sport?",
+            "description": "Poznaj fascynującą historię squasha – od brytyjskich szkół po światowe korty. Dowiedz się, jak ten elitarny sport zdobył popularność i dlaczego warto go spróbować!"
         }
     },
     "notfound": {

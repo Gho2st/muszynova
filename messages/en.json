@@ -104,9 +104,9 @@
         }
     },
     "restaurant": {
-        "header": "Muszynova Restaurant",
-        "header2": "We Focus on New Quality, Rediscovering Beskid Flavors in a Fresh Way",
-        "text": "A restaurant offering healthy and light cuisine. A concise menu with regional accents brings Beskid flavors closer. Light? Yes! Comforting? We’re no strangers to pizza either. Something nice for everyone—we cater to kids, teens, and adults alike, inviting you for a drink.",
+        "header": "The Best Restaurant in Muszyna",
+        "header2": "We’re setting a new standard and rediscovering the flavors of the Beskids – the novo way",
+        "text": "Looking for a unique place to enjoy a culinary experience in Muszyna or near Nowy Sącz? Muszynova Restaurant invites you to discover the flavors of the Beskids with a modern twist. It's the perfect spot for a family lunch, romantic dinner, special celebration, or business meeting. We offer a unique atmosphere, healthy and light dishes, and professional service.",
         "alt": {
             "1": "Modern-style vegetable salad served for dinner",
             "2": "Milk and cheese",
@@ -258,6 +258,28 @@
                     "2": "Wielki Waterfall",
                     "3": "Chapel under Jaworzynka",
                     "4": "Devil's Stone on Jaworzyna Krynicka"
+                }
+            },
+            "5": {
+                "header": "Squash – A Sport with Class. Discover Its History and Why You Should Try It",
+                "text": "Did you know that squash is one of the fastest and most intense racket sports in the world? A game now associated with a modern lifestyle actually dates back to the 19th century!",
+                "header2": "Why Has Squash Conquered the World?",
+                "header3": "A Brief History of Squash",
+                "list": {
+                    "1": "Origins in England – squash was born in elite British schools (e.g. Harrow School) around 1830, when students noticed the ball 'squashed' against the wall – hence the name.",
+                    "2": "Sport development – over time, squash gained popularity in sports clubs worldwide, especially in English-speaking countries.",
+                    "3": "International recognition – in the 20th century, the first federations emerged (e.g. World Squash Federation), and squash became a professional sport.",
+                    "4": "Small space, big action – squash courts are compact, but the pace and intensity are extremely high.",
+                    "5": "Perfect for busy people – an efficient workout after work, 30 minutes is enough to really sweat!",
+                    "6": "Accessibility – easy to learn at an amateur level, but also rich in tactical depth.",
+                    "7": "Squash in numbers (for fun fact lovers): Over 20 million players worldwide. In a professional match, players may run up to 5 km in 45 minutes. The squash ball can reach speeds up to 270 km/h!",
+                    "8": "Why play squash at Muszynova? Modern courts with excellent lighting and ventilation. Recreational play or sessions with an instructor. Equipment rental available – just come, play, and fall in love!"
+                },
+                "alt": {
+                    "1": "Professional squash court with certified dimensions",
+                    "2": "Squash court with racket and ball in the foreground",
+                    "3": "Squash racket and ball on court",
+                    "4": "Squash court setup with racket and ball"
                 }
             }
         }
@@ -642,8 +664,8 @@
         "header": "Muszynova Restaurant",
         "header2": "Discover Our Menu",
         "header3": "Organize with Us in a New Way",
-        "text1": "We focus on quality, on discovering flavors in a new way.",
-        "text2": "A restaurant offering a healthy and light menu. A concise selection with regional accents in our dishes brings you closer to Beskid cuisine. Light? Yes! Comfort food? We’ve got pizza too. Something for everyone – we cater to children, teens, and adults alike, inviting you for a drink.",
+        "text1": "At Muszynova Restaurant, we bring Beskid flavors to life in a modern style. Our menu features carefully selected, healthy and light dishes made from local ingredients. A short yet refined selection with regional accents helps you discover the richness of Beskid cuisine.",
+        "text2": "We focus on simplicity, flavor, and quality – with no compromises. Looking for a light lunch, a family meal, or something delicious for the evening? Everyone will find something at our place – kids, teens, and adults. From traditional tastes to modern twists – including healthier versions of pizza. It's more than just food – it's a space for meetings, relaxation, and fun. Maybe a drink or a homemade dessert to end the day? At Muszynova, we take care of your taste and your time.",
         "button": "Menu",
         "button2": "Drinks Menu",
         "alt": {
@@ -665,6 +687,21 @@
                 "header": "Conferences, Business Meetings",
                 "text": "We invite business clients to organize conferences. Next to the restaurant, we have the Nova Room – modern and air-conditioned. It features a projector displaying images up to 15 square meters. The equipment includes fully professional audio-video cabling, allowing for quick and efficient setup with external devices. Comfortable and modern.",
                 "button": "Contact"
+            },
+            "card4": {
+                "header": "Healthy Beskid Cuisine – Near Nowy Sącz",
+                "text": "Muszynova is a restaurant focused on health and lightness. Our menu features fresh, local ingredients and regional inspirations that will satisfy guests from Muszyna, Nowy Sącz, and beyond. Come visit, try our healthy dishes, and enjoy the Beskid atmosphere in a cozy interior.",
+                "button": "Directions"
+            },
+            "card5": {
+                "header": "Family Dinners and Kids' Menu",
+                "text": "At Muszynova, we care for the whole family. Our kids' menu combines healthy ingredients with delicious flavors that children love. A comfortable and friendly interior makes families from Nowy Sącz and nearby towns feel right at home during shared meals.",
+                "button": "Explore the Menu"
+            },
+            "card6": {
+                "header": "Evenings with Drinks & Music",
+                "text": "Charming interiors, loft atmosphere, ambient lighting, and comfort make Muszynova the perfect place to stay longer. Ideal for coffee meetups, romantic evenings, or simply relaxing with delicious food.",
+                "button": "Parking"
             }
         }
     },
@@ -952,6 +989,10 @@
         "aktywny-wypoczynek-w-beskidzie-sadeckim": {
             "title": "Active Holiday in Muszyna and Krynica-Zdrój – Beskid Sądecki",
             "description": "Discover the beauty of Beskid Sądecki! Rafting on the Poprad River, Velo Krynica bike trails, mountain hikes, and relaxation in Muszyna. The perfect place for an active and nature-filled weekend."
+        },
+        "historia-squasha": {
+            "title": "The History of Squash – How This Dynamic Sport Began",
+            "description": "Discover the fascinating history of squash – from British schools to global courts. Learn how this elite sport gained worldwide popularity and why you should give it a try!"
         }
     },
     "notfound": {
