@@ -14,16 +14,19 @@ export default function Blog({ t }) {
             header={t("posts.1.header")}
             text={t("posts.1.text")}
             link="/blog/muszyna-10-najlepszych-atrakcji"
+            button={t("posts.1.button")}
           />
           <BlogCard
             header={t("posts.2.header")}
             text={t("posts.2.text")}
             link="/blog/muszyna-najlepsze-szlaki-turystyczne"
+            button={t("posts.2.button")}
           />
           <BlogCard
             header={t("posts.3.header")}
             text={t("posts.3.text")}
             link="/blog/jak-spedzic-weekend-w-muszynie"
+            button={t("posts.3.button")}
           />
         </div>
       </div>
