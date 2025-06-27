@@ -208,6 +208,11 @@
                     "2": "Krásny výhľad na hory v Muszyne",
                     "3": "Informačné tabule o trasách",
                     "4": "Mapa turistických trás v Muszyne a Krynici"
+                },
+                "cta": {
+                    "header": "Spoznaj Muszynu s Muszynovou",
+                    "text": "Chceš naozaj zažiť atmosféru Muszyny? Po objavovaní atrakcií zavítaj do Rekreačno-športového parku Muszynova – čakajú ťa bicykle, squash, posilňovňa, atrakcie pre deti aj regionálna kuchyňa. Všetko na jednom mieste!",
+                    "button": "Pozri si ponuku Muszynova"
                 }
             },
             "2": {
@@ -228,6 +233,11 @@
                     "2": "Biblické záhrady v Muszyne",
                     "3": "Splavovanie rieky Poprad",
                     "4": "Námestie v Muszyne"
+                },
+                "cta": {
+                    "header": "Vyraz na trasu s Muszynovou",
+                    "text": "Plánuješ horský výlet? Začni v Muszynova – požičaj si bicykel, využij mapy, naplánuj trasu a po návrate si oddýchni v našom parku. U nás sa aktívny oddych začína pohodlne a bez stresu.",
+                    "button": "Požičaj si výbavu a vyraz!"
                 }
             },
             "3": {
@@ -245,6 +255,11 @@
                     "2": "Biblické záhrady",
                     "3": "Unikátna hlavná ulica v Muszyne",
                     "4": "Výhľad na hrad v Muszyne"
+                },
+                "cta": {
+                    "header": "Víkend plný zážitkov? Iba s Muszynova",
+                    "text": "Naplánuj si nezabudnuteľný víkend s pomocou Muszynova! Ponúkame bicykle, squash, rodinné atrakcie a chutnú kuchyňu – všetko na jednom mieste. U nás je aktívny oddych jednoduchý – priamo v Muszyne.",
+                    "button": "Naplánuj si víkend s Muszynova"
                 }
             },
             "4": {
@@ -262,6 +277,11 @@
                     "2": "Veľký vodopád",
                     "3": "Kaplnka pod Jaworzynkou",
                     "4": "Diabolský kameň na Jaworzynie Krynickej"
+                },
+                "cta": {
+                    "header": "Naplánuj si aktívny víkend v Beskydách (Sądecki)",
+                    "text": "Chceš spojiť relax s pohybom na čerstvom vzduchu? Beskid Sądecki je ideálne miesto na víkendový výlet. Využi požičovňu Muszynova, objav malebné turistické a cyklotrasy a zaži nezabudnuteľný splav rieky Poprad. Neváhaj – rezervuj si svoj aktívny oddych ešte dnes!",
+                    "button": "Rezervuj teraz"
                 }
             },
             "5": {
@@ -285,6 +305,33 @@
                     "2": "Squashová hala s raketou a loptičkou v popredí",
                     "3": "Squashová raketa a loptička na kurte",
                     "4": "Squashový kurt s vybavením – raketa a loptička"
+                },
+                "cta": {
+                    "header": "Zahraj si squash v Muszynova",
+                    "text": "Moderné kurty, skvelé podmienky a požičovňa vybavenia priamo na mieste – či hráš rekreačne, alebo chceš vyskúšať niečo nové, Muszynova je ideálne miesto na športový reset!",
+                    "button": "Rezervuj si kurt v Muszynova"
+                }
+            },
+            "6": {
+                "header": "Na bicykli cez Muszynu",
+                "text": "Je niečo lepšie ako spojiť aktívny oddych s horskou krajinou, liečivou klímou a štipkou dobrodružstva? Ak snívaš o dni plnom pohybu, čerstvého vzduchu a nádherných výhľadov, cyklovýlet v okolí Muszyny je skvelou voľbou. A to najlepšie? Všetko začína tu – v požičovni bicyklov Muszynova, odkiaľ vyrazíš na trasu bez stresu a s perfektne nastaveným vybavením.",
+                "header2": "Prečo objavovať Muszynu na bicykli?",
+                "header3": "TOP 3 cyklotrasy z Muszyny",
+                "button": "Objavuj Muszynu na bicykli",
+                "list": {
+                    "1": "1. Turistický okruh Muszyny Dĺžka: cca 30 km Úroveň: stredná Čas: cca 4 hodiny Trasa vedie dolinami Muszynky a Szczawného potoka, okolo výhľadových bodov a malebných dediniek. Ideálna na pol dňa pre tých, ktorí majú aspoň základnú kondíciu.",
+                    "2": "2. Karpatská cyklotrasa (úsek Leluchów–Wierchomla) Dĺžka: cca 25 km Úroveň: ľahká Čas: 2–3 hodiny Malebná trasa pozdĺž rieky Poprad – skvelá pre rodiny a začiatočníkov. Po ceste sú odpočívadlá a niekoľko minerálnych prameňov.",
+                    "3": "3. Velo Krynica – z Krynice-Zdrój do Muszyny Dĺžka: cca 11 km Úroveň: veľmi ľahká Pohodlná asfaltová cesta – ideálna pre začínajúcich cyklistov. Začni v Krynici a skonči v Muszyne, späť môžeš ísť vlakom alebo urobiť okruh cez Powroźnik.",
+                    "4": "Požičovňa bicyklov Muszynova – vyraz bez starostí! Nemáš vlastný bicykel? Nechceš ho brať na dovolenku? Muszynova má plne vybavenú požičovňu pri Športovo-rekreačnom parku. Vhodné pre turistov, kúpeľných hostí, rodiny s deťmi aj MTB nadšencov. V ponuke: trekingové a horské bicykle, detské sedačky, prilby, doplnky mapy trás a pomoc s plánovaním výletu priaznivé ceny: prenájom na hodiny alebo celý deň bicykle pravidelne servisované a prispôsobené výške",
+                    "5": "Cykloobjavy – čo uvidíš po ceste? Záhrady zmyslov a biblické záhrady Chrám sv. Jakuba v Powroźniku (UNESCO) zrúcaniny hradu v Muszyne a výhľadové plošiny malebné minerálne pramene lávky cez Poprad, lúky, lesy a rieky Skvelý spôsob ako spoznať región – bez zhonu a v kontakte s prírodou."
+                },
+                "alt": {
+                    "1": "Viacero bicyklov pred Rekreačno-športovým parkom Muszynova v Muszyne"
+                },
+                "cta": {
+                    "header": "Tvoje cyklo dobrodružstvo začína v Muszynova",
+                    "text": "Nemáš bicykel? Nevadí! Požičovňa Muszynova ponúka moderné bicykle a všetko, čo potrebuješ na výlet – pohodlne, bezpečne a s radosťou. Objav Beskid Sądecki zo sedla!",
+                    "button": "Požičaj si bicykel v Muszynova"
                 }
             }
         }
@@ -998,6 +1045,10 @@
         "historia-squasha": {
             "title": "História squashu – ako vznikol tento dynamický šport",
             "description": "Objavte fascinujúcu históriu squashu – od britských škôl až po svetové kurty. Zistite, prečo si tento elitný šport získal popularitu a prečo by ste ho mali vyskúšať!"
+        },
+        "rowerem-przez-muszyne": {
+            "title": "Na bicykli cez Muszynu – trasy, výhľady a požičovňa Muszynova",
+            "description": "Objavte najkrajšie cyklotrasy v okolí Muszyny a využite požičovňu Muszynova - kvalitné bicykle, pomoc pri plánovaní a aktívny oddych bez starostí."
         }
     },
     "notfound": {

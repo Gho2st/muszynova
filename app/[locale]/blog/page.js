@@ -68,6 +68,12 @@ export default function Blog() {
             link="/blog/historia-squasha"
             button={t("posts.5.button")}
           />
+          <BlogCard
+            header={t("posts.6.header")}
+            text={t("posts.6.text")}
+            link="/blog/rowerem-przez-muszyne"
+            button={t("posts.6.button")}
+          />
         </div>
       </section>
     </>

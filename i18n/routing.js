@@ -173,6 +173,12 @@ export const routing = defineRouting({
       sk: "/blog/historia-squasha",
       ua: "/blog/istoriia-skvoshu",
     },
+    "/blog/rowerem-przez-muszyne": {
+      pl: "/blog/rowerem-przez-muszyne",
+      en: "/blog/cycling-through-muszyna",
+      sk: "/blog/na-bicykli-cez-muszynu",
+      ua: "/blog/na-velosypedi-cherez-muzhynu",
+    },
   },
 });
 

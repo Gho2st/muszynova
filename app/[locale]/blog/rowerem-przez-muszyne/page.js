@@ -14,11 +14,10 @@ export async function generateMetadata({ params }) {
   const { locale } = resolvedParams;
   const t = await getTranslations({
     locale,
-    namespace: "metadata.jak-spedzic-weekend-w-muszynie",
+    namespace: "metadata.rowerem-przez-muszyne",
   });
 
-  const path =
-    routing.pathnames["/blog/jak-spedzic-weekend-w-muszynie"][locale]; // Pobieramy ścieżkę dla języka
+  const path = routing.pathnames["/blog/rowerem-przez-muszyne"][locale]; // Pobieramy ścieżkę dla języka
   // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
   const canonicalUrl =
     locale === "pl"
@@ -35,16 +34,22 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Muszyna() {
-  const t = useTranslations("blog.posts.3");
+  const t = useTranslations("blog.posts.6");
 
-  const customItems = [t("list.1"), t("list.2")];
+  const customItems = [
+    t("list.1"),
+    t("list.2"),
+    t("list.3"),
+    t("list.4"),
+    t("list.5"),
+  ];
 
   return (
     <>
       <Header text={t("header")} />
       <div className="flex md:w-3/4 mx-auto justify-center md:mt-16 h-[700px] ">
         <Image
-          src="/blog/weekend/1.webp"
+          src="/park/wypozyczalnia/w1.webp"
           width={500}
           height={500}
           layout="responsive"
@@ -61,34 +66,12 @@ export default function Muszyna() {
           <BackgroundList title={t("header3")} items={customItems} />
         </div>
         <CtaLink
-          link="/park"
+          link="/park/wypozyczalnia-rowerow"
           button={t("cta.button")}
           header={t("cta.header")}
           text={t("cta.text")}
         />
       </section>
-      <div>
-        <Gallery
-          images={[
-            {
-              url: "/blog/weekend/1.webp",
-              alt: t("alt.1"),
-            },
-            {
-              url: "/blog/weekend/2.webp",
-              alt: t("alt.2"),
-            },
-            {
-              url: "/blog/weekend/3.webp",
-              alt: t("alt.3"),
-            },
-            {
-              url: "/blog/weekend/4.webp",
-              alt: t("alt.4"),
-            },
-          ]}
-        />
-      </div>
     </>
   );
 }

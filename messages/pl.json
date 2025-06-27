@@ -208,6 +208,11 @@
                     "2": "Piękny widok na góry w Muszynie",
                     "3": "Znaki z informacjami o szlakach",
                     "4": "Mapa szlaków turystycznych w Muszynie, Krynicy"
+                },
+                "cta": {
+                    "header": "Poznaj Muszynę z Muszynova",
+                    "text": "Chcesz naprawdę poczuć klimat Muszyny? Po zwiedzaniu atrakcji zajrzyj do Parku Rekreacyjno-Sportowego Muszynova – tu czekają na Ciebie rowery, squash, siłownia, atrakcje dla dzieci i regionalna kuchnia. Wszystko w jednym miejscu!",
+                    "button": "Sprawdź ofertę Muszynova"
                 }
             },
             "2": {
@@ -228,6 +233,11 @@
                     "2": "Ogrody Biblijne w Muszynie",
                     "3": "Spływ Popradem",
                     "4": "Rynek w Muszynie"
+                },
+                "cta": {
+                    "header": "Wyrusz na szlak z Muszynova",
+                    "text": "Planujesz górską wyprawę? Zacznij od Muszynova – wypożycz rower, skorzystaj z map, zaplanuj trasę i zrelaksuj się po powrocie w naszym parku. U nas aktywny wypoczynek zaczyna się wygodnie i bez stresu.",
+                    "button": "Wypożycz sprzęt i ruszaj!"
                 }
             },
             "3": {
@@ -245,6 +255,11 @@
                     "2": "Ogrody Biblijne",
                     "3": "Unikatowa główna uliczka w Muszynie",
                     "4": "Widok na Zamek w Muszynie"
+                },
+                "cta": {
+                    "header": "Weekend pełen atrakcji? Tylko z Muszynova",
+                    "text": "Zaplanuj niezapomniany weekend z pomocą Muszynova! Oferujemy rowery, squash, atrakcje rodzinne i smaczną kuchnię w jednym miejscu. Ułatwiamy aktywny wypoczynek – bezpośrednio w Muszynie.",
+                    "button": "Zaplanuj weekend z Muszynova"
                 }
             },
             "4": {
@@ -262,6 +277,11 @@
                     "2": "Wodospad Wielki",
                     "3": "Kapliczka pod Jaworzynką",
                     "4": "Kamień Diabelski na Jaworzynie Krynickiej"
+                },
+                "cta": {
+                    "header": "Zaplanuj aktywny weekend w Beskidzie Sądeckim",
+                    "text": "Chcesz połączyć relaks z aktywnością na świeżym powietrzu? Beskid Sądecki to idealne miejsce na weekendowy wypad. Skorzystaj z wypożyczalni Muszynova, odkryj malownicze szlaki piesze i rowerowe oraz przeżyj niezapomniany spływ Popradem. Nie zwlekaj — zarezerwuj swój aktywny wypoczynek już dziś!",
+                    "button": "Zarezerwuj teraz"
                 }
             },
             "5": {
@@ -285,6 +305,33 @@
                     "2": "Sala do Squasha na tle z rakietą i piłeczką",
                     "3": "Rakieta i piłeczka na sali do squasha",
                     "4": "Sala do squasha z rakietą i piłeczką"
+                },
+                "cta": {
+                    "header": "Zagraj w squasha w Muszynova",
+                    "text": "Nowoczesne korty, świetne warunki i wypożyczalnia sprzętu na miejscu – niezależnie czy grasz rekreacyjnie, czy chcesz spróbować czegoś nowego, Muszynova to idealne miejsce na sportowy reset!",
+                    "button": "Zarezerwuj kort w Muszynova"
+                }
+            },
+            "6": {
+                "header": "Rowerem przez Muszynę",
+                "text": "Czy jest coś lepszego niż połączenie aktywnego wypoczynku z górskimi krajobrazami, uzdrowiskowym klimatem i nutą przygody? Jeśli marzy Ci się dzień pełen ruchu, świeżego powietrza i pięknych widoków, rowerowa wyprawa po okolicach Muszyny to strzał w dziesiątkę. A najlepsze? Wszystko zaczyna się tu – w wypożyczalni rowerów Muszynova, skąd wyruszysz w trasę bez stresu i z idealnie dopasowanym sprzętem.",
+                "header2": "Dlaczego warto zwiedzać Muszynę na rowerze?",
+                "header3": "TOP 3 trasy rowerowe z Muszyny",
+                "button": "Odkrywaj Muszynę na rowerze",
+                "list": {
+                    "1": "1. Turystyczna Pętla Muszyńska Długość: ok. 30 km Poziom: średni Czas: ok. 4 godziny Trasa biegnie przez doliny Muszynki i Szczawnego Potoku, zahaczając o liczne punkty widokowe i urokliwe wsie. To idealna propozycja na półdniową wyprawę dla osób z podstawową kondycją.",
+                    "2": "2. Karpacki Szlak Rowerowy (odcinek Leluchów–Wierchomla) Długość: ok. 25 km Poziom: łatwy Czas: 2–3 godziny Malownicza trasa poprowadzona doliną Popradu – świetna dla rodzin i początkujących. Wzdłuż szlaku czekają punkty odpoczynkowe i kilka źródeł wód mineralnych.",
+                    "3": "3. Velo Krynica – z Krynicy-Zdroju do Muszyny Długość: ok. 11 km Poziom: bardzo łatwy Ta wygodna, asfaltowa ścieżka to idealna propozycja dla początkujących rowerzystów. Możesz zacząć trasę w Krynicy i zakończyć ją w Muszynie, wracając np. pociągiem lub robiąc pętlę przez Powroźnik.",
+                    "4": "Wypożyczalnia Rowerów Muszynova – ruszaj bez zbędnego sprzętu! Nie masz własnego roweru? A może nie chcesz go wozić na wakacje? Muszynova oferuje w pełni wyposażoną wypożyczalnię rowerów, tuż przy Parku Sportowo-Rekreacyjnym. To wygodne rozwiązanie dla każdego – turysty, kuracjusza, rodziny z dziećmi czy pasjonata MTB. W ofercie: rowery trekkingowe, górskie i dziecięce foteliki, kaski i akcesoria mapy tras rowerowych i pomoc w planowaniu trasy korzystne ceny: możliwość wypożyczenia na godziny lub cały dzień rowery regularnie serwisowane i dopasowywane do wzrostu użytkownika",
+                    "5": "Rowerowe odkrycia – co zobaczysz po drodze? Ogrody Zmysłów i Ogrody Biblijne Cerkiew św. Jakuba w Powroźniku (UNESCO) ruiny zamku w Muszynie i platformy widokowe malownicze źródła wód mineralnych kładki nad Popradem, łąki, lasy i rzeki To doskonały sposób, by połączyć zdrowy wysiłek z poznawaniem regionu – bez pośpiechu, blisko natury."
+                },
+                "alt": {
+                    "1": "Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie"
+                },
+                "cta": {
+                    "header": "Twoja rowerowa przygoda zaczyna się w Muszynova",
+                    "text": "Nie masz roweru? Mamy to! Wypożyczalnia Muszynova oferuje nowoczesne rowery i wszystko, czego potrzebujesz, by ruszyć w trasę – komfortowo, bezpiecznie i z frajdą. Odkryj Beskid Sądecki z siodełka!",
+                    "button": "Wypożycz rower w Muszynova"
                 }
             }
         }
@@ -998,6 +1045,10 @@
         "historia-squasha": {
             "title": "Historia squasha – skąd się wziął ten dynamiczny sport?",
             "description": "Poznaj fascynującą historię squasha – od brytyjskich szkół po światowe korty. Dowiedz się, jak ten elitarny sport zdobył popularność i dlaczego warto go spróbować!"
+        },
+        "rowerem-przez-muszyne": {
+            "title": "Rowerem przez Muszynę – trasy, widoki i wypożyczalnia Muszynova",
+            "description": "Poznaj najpiękniejsze trasy rowerowe w okolicach Muszyny i skorzystaj z wypożyczalni Muszynova - idealny sprzęt, pomoc w planowaniu trasy i aktywny wypoczynek bez stresu."
         }
     },
     "notfound": {

@@ -68,7 +68,12 @@ export default function HistoriaSquasha() {
         <div className="mt-16">
           <BackgroundList title={t("header3")} items={customItems} />
         </div>
-        <CtaLink />
+        <CtaLink
+          link="/park/squash"
+          button={t("cta.button")}
+          header={t("cta.header")}
+          text={t("cta.text")}
+        />
       </section>
       <div>
         <Gallery

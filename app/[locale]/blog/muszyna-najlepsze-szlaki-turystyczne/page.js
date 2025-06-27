@@ -66,7 +66,12 @@ export default function Muszyna() {
         <div className="mt-16">
           <BackgroundList title={t("header3")} items={customItems} />
         </div>
-        <CtaLink />
+        <CtaLink
+          link="/park"
+          button={t("cta.button")}
+          header={t("cta.header")}
+          text={t("cta.text")}
+        />
       </section>
       <div>
         <Gallery
@@ -76,16 +81,16 @@ export default function Muszyna() {
               alt: t("alt.1"),
             },
             {
-                url: "/blog/szlaki-turystyczne/2.webp",
-                alt: t("alt.2"),
+              url: "/blog/szlaki-turystyczne/2.webp",
+              alt: t("alt.2"),
             },
             {
-                url: "/blog/szlaki-turystyczne/3.webp",
-                alt: t("alt.3"),
+              url: "/blog/szlaki-turystyczne/3.webp",
+              alt: t("alt.3"),
             },
             {
-                url: "/blog/szlaki-turystyczne/4.webp",
-                alt: t("alt.4"),
+              url: "/blog/szlaki-turystyczne/4.webp",
+              alt: t("alt.4"),
             },
           ]}
         />

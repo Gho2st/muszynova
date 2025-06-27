@@ -208,6 +208,11 @@
                     "2": "Beautiful mountain view in Muszyna",
                     "3": "Trail information signs",
                     "4": "Map of tourist trails in Muszyna and Krynica"
+                },
+                "cta": {
+                    "header": "Discover Muszyna with Muszynova",
+                    "text": "Want to truly feel the atmosphere of Muszyna? After exploring the attractions, visit the Muszynova Recreation and Sports Park – here you'll find bikes, squash, a gym, kids' activities, and regional cuisine. All in one place!",
+                    "button": "Check out Muszynova's offer"
                 }
             },
             "2": {
@@ -228,6 +233,11 @@
                     "2": "Biblical Gardens in Muszyna",
                     "3": "Poprad River rafting",
                     "4": "Muszyna Market Square"
+                },
+                "cta": {
+                    "header": "Hit the trail with Muszynova",
+                    "text": "Planning a mountain adventure? Start at Muszynova – rent a bike, use the maps, plan your route, and relax in our park after your ride. With us, active rest begins comfortably and stress-free.",
+                    "button": "Rent your gear and go!"
                 }
             },
             "3": {
@@ -245,6 +255,11 @@
                     "2": "Biblical Gardens",
                     "3": "Unique main street in Muszyna",
                     "4": "View of Muszyna Castle"
+                },
+                "cta": {
+                    "header": "A weekend full of attractions? Only with Muszynova",
+                    "text": "Plan an unforgettable weekend with Muszynova! We offer bikes, squash, family-friendly attractions, and delicious food – all in one place. We make active relaxation easy – right in the heart of Muszyna.",
+                    "button": "Plan your weekend with Muszynova"
                 }
             },
             "4": {
@@ -262,6 +277,11 @@
                     "2": "Wielki Waterfall",
                     "3": "Chapel under Jaworzynka",
                     "4": "Devil's Stone on Jaworzyna Krynicka"
+                },
+                "cta": {
+                    "header": "Plan an active weekend in the Beskid Sądecki",
+                    "text": "Looking to combine relaxation with outdoor adventure? The Beskid Sądecki is the perfect destination for a weekend getaway. Use the Muszynova rental service, explore scenic hiking and cycling trails, and enjoy an unforgettable rafting trip on the Poprad River. Don’t wait — book your active escape today!",
+                    "button": "Book now"
                 }
             },
             "5": {
@@ -285,6 +305,33 @@
                     "2": "Squash court with racket and ball in the foreground",
                     "3": "Squash racket and ball on court",
                     "4": "Squash court setup with racket and ball"
+                },
+                "cta": {
+                    "header": "Play squash at Muszynova",
+                    "text": "Modern courts, great conditions, and on-site equipment rental – whether you're playing for fun or trying something new, Muszynova is the perfect place for a sporty reset!",
+                    "button": "Book a court at Muszynova"
+                }
+            },
+            "6": {
+                "header": "Cycling through Muszyna",
+                "text": "Is there anything better than combining active relaxation with mountain landscapes, a health resort climate, and a touch of adventure? If you're dreaming of a day full of activity, fresh air, and beautiful views, a cycling trip around Muszyna is a perfect choice. And the best part? It all starts here – at the Muszynova bike rental, where you can begin your ride stress-free with perfectly fitted equipment.",
+                "header2": "Why explore Muszyna by bike?",
+                "header3": "TOP 3 cycling routes from Muszyna",
+                "button": "Discover Muszyna by bike",
+                "list": {
+                    "1": "1. Muszyna Tourist Loop Length: approx. 30 km Level: intermediate Time: approx. 4 hours The route runs through the valleys of Muszynka and Szczawny Potok, passing scenic viewpoints and charming villages. Ideal for a half-day trip with moderate fitness.",
+                    "2": "2. Carpathian Cycling Trail (Leluchów–Wierchomla segment) Length: approx. 25 km Level: easy Time: 2–3 hours A scenic route along the Poprad valley – perfect for families and beginners. Rest stops and several mineral springs await along the way.",
+                    "3": "3. Velo Krynica – from Krynica-Zdrój to Muszyna Length: approx. 11 km Level: very easy This comfortable asphalt path is ideal for beginner cyclists. You can start in Krynica and finish in Muszyna, returning by train or making a loop through Powroźnik.",
+                    "4": "Muszynova Bike Rental – hit the trail without extra gear! Don’t have your own bike? Don’t want to bring it on holiday? Muszynova offers a fully equipped rental spot right by the Sports and Recreation Park. Perfect for tourists, spa visitors, families with kids, or MTB enthusiasts. Available: trekking and mountain bikes, child seats, helmets, accessories route maps and planning help affordable prices: rent by the hour or full day bikes regularly serviced and adjusted to your height",
+                    "5": "Cycling discoveries – what will you see along the way? Gardens of Senses and Biblical Gardens St. James Church in Powroźnik (UNESCO) ruins of the Muszyna castle and scenic platforms picturesque mineral springs footbridges over the Poprad River, meadows, forests, and streams It’s a perfect way to explore the region – slowly and close to nature."
+                },
+                "alt": {
+                    "1": "Multiple bicycles in front of the Muszynova Recreation and Sports Park in Muszyna"
+                },
+                "cta": {
+                    "header": "Your cycling adventure begins at Muszynova",
+                    "text": "No bike? No problem! Muszynova Rental offers modern bikes and everything you need to ride – comfortably, safely, and with joy. Discover Beskid Sądecki from the saddle!",
+                    "button": "Rent a bike at Muszynova"
                 }
             }
         }
@@ -998,6 +1045,10 @@
         "historia-squasha": {
             "title": "The History of Squash – How This Dynamic Sport Began",
             "description": "Discover the fascinating history of squash – from British schools to global courts. Learn how this elite sport gained worldwide popularity and why you should give it a try!"
+        },
+        "rowerem-przez-muszyne": {
+            "title": "Cycling through Muszyna – routes, views & Muszynova bike rental",
+            "description": "Discover the best cycling routes around Muszyna and rent your perfect bike at Muszynova - quality gear, route planning support, and stress-free outdoor fun."
         }
     },
     "notfound": {

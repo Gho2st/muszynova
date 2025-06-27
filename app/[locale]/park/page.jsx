@@ -57,7 +57,7 @@ export default function Park() {
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
           <Image
-            src="/Muszynova-hotel.jpg"
+            src="/Muszynova-hotel.webp"
             width={100}
             height={100}
             layout="responsive"

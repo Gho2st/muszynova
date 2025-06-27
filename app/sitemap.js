@@ -300,5 +300,16 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog/rowerem-przez-muszyne`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/cycling-through-muszyna`,
+          sk: `${baseUrl}/sk/blog/na-bicykli-cez-muszynu`,
+          ua: `${baseUrl}/ua/blog/na-velosypedi-cherez-muzhynu`,
+        },
+      },
+    },
   ];
 }
