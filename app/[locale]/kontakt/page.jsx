@@ -88,8 +88,9 @@ export default function Contact() {
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card4.button")}
               text={[
-                t("cards.card4.text2") + ": 12:00 - 20:00",
-                t("cards.card4.text3") + ": 12:00 - 21:00",
+                t("cards.card4.text2") + ": 12:00 - 21:00",
+                t("cards.card4.text3") + ": 12:00 - 22:00",
+                t("cards.card4.text4"),
               ].join(" <br /> ")}
             />
             <Card2
@@ -99,8 +100,8 @@ export default function Contact() {
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card5.button")}
               text={[
-                t("cards.card5.text2") + ": 11:00 - 20:00",
-                t("cards.card5.text3") + ": 11:00 - 21:00",
+                t("cards.card5.text2") + ": 11:00 - 21:00",
+                t("cards.card5.text3") + ": 11:00 - 22:00",
               ].join(" <br /> ")}
             />
             <Card2
@@ -112,7 +113,7 @@ export default function Contact() {
               text={[
                 t("cards.card6.hours"),
                 t("cards.card6.hours2") + ": ",
-                t("cards.card6.text2") + ": 8:00 - 12:00",
+                t("cards.card6.text2") + ": 8:00 - 11:00",
               ].join(" <br /> ")}
             />
           </div>
