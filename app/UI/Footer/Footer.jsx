@@ -7,9 +7,9 @@ import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
   const [showArrow, setShowArrow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const t = useTranslations("footer");
@@ -118,7 +118,16 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <span className="mb-20">© {currentYear} Muszynova</span>
+        <div className="">
+          <Image
+            src={"/unia.webp"}
+            height={120}
+            width={120}
+            className="rounded-xl"
+            alt="Logo - Unia Europejska"
+          />
+        </div>
+        <span className="mb-20">© Muszynova</span>
       </div>
       {showArrow && (
         <span className="fixed bg-[#C4966C] shadow-2xl rounded-lg p-1 text-4xl text-white bottom-6 right-6 xl:bottom-16 xl:right-10 z-10">

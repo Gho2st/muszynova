@@ -82,9 +82,12 @@ export default function Page() {
       </div>
       <Restaurant t={r} />
       <section className="px-6 xl:px-44 py-20">
-        <h2 className="text-4xl xl:text-5xl font-bold text-center mb-20">
+        <h2 className="text-4xl xl:text-5xl font-bold text-center mb-10">
           {t("header3")}
         </h2>
+        <div className="flex justify-center mb-16">
+          <Button text={t("button3")} link={"/galeria/restauracja"} />
+        </div>
         <div className="grid xl:grid-cols-3 gap-10">
           <Card
             icon={<BiSolidParty />}
