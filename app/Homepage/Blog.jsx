@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/routing";
 import BlogCard from "../UI/BlogCard";
 
 export default function Blog({ t }) {
@@ -6,7 +7,10 @@ export default function Blog({ t }) {
       <div className="flex flex-col">
         <div className="mb-10 xl:mb-24">
           <h2 className="text-customGold font-bold text-3xl md:text-4xl">
-            {t("header")}
+            {t("header")}{" "}
+            <Link className="underline" href={"/blog"}>
+              {t("link")}
+            </Link>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-14 2xl:gap-20">

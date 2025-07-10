@@ -180,7 +180,8 @@
         "button": "Zarezerwuj teraz"
     },
     "blog": {
-        "header": "Poczytaj więcej na naszym blogu",
+        "header": "Poczytaj więcej na naszym",
+        "link": "blogu",
         "header2": "Nasz Blog",
         "header3": "Nasze Artykuły",
         "button": "Czytaj więcej",
@@ -332,6 +333,28 @@
                     "header": "Twoja rowerowa przygoda zaczyna się w Muszynova",
                     "text": "Nie masz roweru? Mamy to! Wypożyczalnia Muszynova oferuje nowoczesne rowery i wszystko, czego potrzebujesz, by ruszyć w trasę – komfortowo, bezpiecznie i z frajdą. Odkryj Beskid Sądecki z siodełka!",
                     "button": "Wypożycz rower w Muszynova"
+                }
+            },
+            "7": {
+                "header": "Zanurz się w zdrowiu - Muszyńskie wody mineralne",
+                "text": "Muszyna to nie tylko malownicze krajobrazy i górskie szlaki – to także źródło zdrowia płynące prosto z natury. Wody mineralne z tutejszych źródeł znane są z wyjątkowych właściwości prozdrowotnych, a ich regularne spożywanie wspiera odporność, poprawia trawienie i działa korzystnie na układ nerwowy. Spacer po Parku Zdrojowym z kubkiem świeżej wody w ręku to prawdziwa przyjemność, która jednocześnie wzmacnia organizm.",
+                "header2": "Dlaczego muszyńska woda to naturalne lekarstwo?",
+                "header3": "TOP 3 źródła wód mineralnych w Muszynie",
+                "button": "Poznaj moc muszyńskiej wody",
+                "list": {
+                    "1": "1. Źródło Milusia Lokalizacja: Park Zdrojowy, obok Pijalni Antoni Woda: średniozmineralizowana, z wysoką zawartością magnezu i wapnia. Idealna dla osób zestresowanych i przemęczonych. Smak łagodny, lekko słonawy.",
+                    "2": "2. Źródło Grunwald Lokalizacja: ul. Ogrodowa, dolna część Parku Zapopradzie Woda: niskozmineralizowana, wspomaga przemianę materii i działa moczopędnie. Często wybierana przez osoby na diecie oczyszczającej.",
+                    "3": "3. Źródło Józef Lokalizacja: przy Ogrodach Zmysłów Woda: wysokozmineralizowana, polecana przy niedoborach minerałów, anemii i problemach z sercem. Ma wyrazisty, lekko żelazisty smak.",
+                    "4": "Woda prosto z natury – zdrowie za darmo Spacerując po Muszynie, co krok natkniesz się na ujęcia wód mineralnych. Pijalnie i źródła są dostępne bezpłatnie, a każda woda ma inny skład i smak. Możesz samodzielnie dobrać tę najlepiej pasującą do Twoich potrzeb – wystarczy butelka i chęć spróbowania.",
+                    "5": "Dodatkowe korzyści: naturalna kuracja bez recepty wspomaganie leczenia nadciśnienia i cukrzycy korzystny wpływ na pracę jelit, żołądka i nerek relaksujący klimat Parku Zdrojowego idealne uzupełnienie spacerów i aktywności fizycznej"
+                },
+                "alt": {
+                    "1": "Wody mineralne Antoni w Muszynie"
+                },
+                "cta": {
+                    "header": "Odkryj źródło zdrowia w sercu Beskidów",
+                    "text": "Nie musisz daleko szukać, by zadbać o zdrowie. W Muszynie wszystko masz na wyciągnięcie ręki – naturalne źródła, czyste powietrze i uzdrowiskowy klimat. Przyjdź do Muszynova, wypij wodę ze źródła, trochę ulubionego sportu i poczujesz różnicę!",
+                    "button": "Spróbuj wód mineralnych z Muszyny"
                 }
             }
         }
@@ -1051,6 +1074,10 @@
         "rowerem-przez-muszyne": {
             "title": "Rowerem przez Muszynę – trasy, widoki i wypożyczalnia Muszynova",
             "description": "Poznaj najpiękniejsze trasy rowerowe w okolicach Muszyny i skorzystaj z wypożyczalni Muszynova - idealny sprzęt, pomoc w planowaniu trasy i aktywny wypoczynek bez stresu."
+        },
+        "muszyna-wody-mineralne": {
+            "title": "Muszyńskie wody mineralne – naturalne źródło zdrowia | Muszynova",
+            "description": "Odkryj zdrowotne właściwości wód mineralnych z Muszyny. Sprawdź, które źródła warto odwiedzić i jak wspierają odporność, trawienie i dobre samopoczucie. Zapraszamy do Muszynova!"
         }
     },
     "notfound": {

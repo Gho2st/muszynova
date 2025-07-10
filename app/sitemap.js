@@ -311,5 +311,16 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog/muszyna-wody-mineralne`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/mineral-waters-of-muszyna`,
+          sk: `${baseUrl}/sk/blog/mineralne-vody-v-muszyni`,
+          ua: `${baseUrl}/ua/blog/mineralni-vody-u-muzhyni`,
+        },
+      },
+    },
   ];
 }

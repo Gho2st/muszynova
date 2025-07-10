@@ -180,7 +180,8 @@
         "button": "Rezervujte teraz"
     },
     "blog": {
-        "header": "Prečítajte si viac na našom blogu",
+        "header": "Prečítajte si viac na našom",
+        "link": "blogu",
         "header2": "Náš blog",
         "header3": "Naše články",
         "button": "Čítať viac",
@@ -332,6 +333,28 @@
                     "header": "Tvoje cyklo dobrodružstvo začína v Muszynova",
                     "text": "Nemáš bicykel? Nevadí! Požičovňa Muszynova ponúka moderné bicykle a všetko, čo potrebuješ na výlet – pohodlne, bezpečne a s radosťou. Objav Beskid Sądecki zo sedla!",
                     "button": "Požičaj si bicykel v Muszynova"
+                }
+            },
+            "7": {
+                "header": "Ponorte sa do zdravia – Minerálne vody z Muszyny",
+                "text": "Muszyna nie je len o malebnej prírode a horských chodníkoch – je to aj prameň zdravia priamo z prírody. Minerálne vody z miestnych prameňov sú známe svojimi výnimočnými liečivými účinkami. Pravidelné pitie podporuje imunitu, zlepšuje trávenie a pozitívne ovplyvňuje nervový systém. Prechádzka kúpeľným parkom s pohárom čerstvej vody v ruke je potešenie, ktoré zároveň posilňuje telo.",
+                "header2": "Prečo je muszyńska voda prírodným liekom?",
+                "header3": "TOP 3 minerálne pramene v Muszyne",
+                "button": "Objavte silu muszyńskej vody",
+                "list": {
+                    "1": "1. Prameň Milusia Miesto: Kúpeľný park, pri pijalni Antoni Voda: stredne mineralizovaná, s vysokým obsahom horčíka a vápnika. Ideálna pre unavených a vystresovaných ľudí. Chuť jemná, mierne slaná.",
+                    "2": "2. Prameň Grunwald Miesto: ulica Ogrodowa, dolná časť parku Zapopradzie Voda: nízko mineralizovaná, podporuje trávenie a pôsobí močopudne. Často vyhľadávaná pri očistných kúrach.",
+                    "3": "3. Prameň Józef Miesto: pri Záhradách zmyslov Voda: vysoko mineralizovaná, odporúčaná pri nedostatku minerálov, anémii a problémoch so srdcom. Výrazná, mierne železitá chuť.",
+                    "4": "Voda priamo z prírody – zdravie zadarmo Pri prechádzke Muszynou natrafíte na pramene na každom kroku. Pijalne a pramene sú dostupné bezplatne a každá voda má iné zloženie a chuť. Stačí fľaša a chuť vyskúšať.",
+                    "5": "Ďalšie výhody: prírodná liečba bez predpisu podpora liečby hypertenzie a cukrovky pozitívne účinky na črevá, žalúdok a obličky relaxačná atmosféra kúpeľného parku ideálne doplnenie prechádzok a fyzickej aktivity"
+                },
+                "alt": {
+                    "1": "Minerálny prameň Antoni v Muszyne"
+                },
+                "cta": {
+                    "header": "Objavte zdroj zdravia v srdci Beskýd",
+                    "text": "Nemusíte chodiť ďaleko, aby ste sa postarali o svoje zdravie. V Muszyne máte všetko – prírodné pramene, čistý vzduch a liečivú klímu. Navštívte Muszynovu, napite sa z prameňa a zažite ten rozdiel!",
+                    "button": "Vyskúšajte minerálne vody z Muszyny"
                 }
             }
         }
@@ -1051,6 +1074,10 @@
         "rowerem-przez-muszyne": {
             "title": "Na bicykli cez Muszynu – trasy, výhľady a požičovňa Muszynova",
             "description": "Objavte najkrajšie cyklotrasy v okolí Muszyny a využite požičovňu Muszynova - kvalitné bicykle, pomoc pri plánovaní a aktívny oddych bez starostí."
+        },
+        "muszyna-wody-mineralne": {
+            "title": "Minerálne vody z Muszyny – Prírodný zdroj zdravia | Muszynova",
+            "description": "Objavte liečivé účinky minerálnych vôd z Muszyny. Zistite, ktoré pramene sa oplatí navštíviť a ako podporujú imunitu, trávenie a celkovú pohodu. Navštívte Muszynova!"
         }
     },
     "notfound": {

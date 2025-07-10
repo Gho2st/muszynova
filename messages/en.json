@@ -180,7 +180,8 @@
         "button": "Book now"
     },
     "blog": {
-        "header": "Read more on our blog",
+        "header": "Read more on our",
+        "link": "blog",
         "header2": "Our Blog",
         "header3": "Our Articles",
         "button": "Read more",
@@ -332,6 +333,28 @@
                     "header": "Your cycling adventure begins at Muszynova",
                     "text": "No bike? No problem! Muszynova Rental offers modern bikes and everything you need to ride – comfortably, safely, and with joy. Discover Beskid Sądecki from the saddle!",
                     "button": "Rent a bike at Muszynova"
+                }
+            },
+            "7": {
+                "header": "Immerse Yourself in Health – Mineral Waters of Muszyna",
+                "text": "Muszyna is not only about picturesque landscapes and mountain trails – it’s also a source of health flowing straight from nature. The mineral waters from local springs are known for their unique health benefits. Regular consumption supports immunity, improves digestion, and benefits the nervous system. A walk through the Spa Park with a cup of fresh water in hand is a true pleasure that strengthens the body.",
+                "header2": "Why is Muszyna’s water a natural remedy?",
+                "header3": "TOP 3 mineral springs in Muszyna",
+                "button": "Discover the power of Muszyna's water",
+                "list": {
+                    "1": "1. Milusia Spring Location: Spa Park, next to Antoni Pump Room Water: medium-mineralized, high in magnesium and calcium. Ideal for stressed and fatigued individuals. Mild, slightly salty taste.",
+                    "2": "2. Grunwald Spring Location: Ogrodowa Street, lower part of Zapopradzie Park Water: low-mineralized, supports metabolism and has diuretic properties. Often chosen by those on a cleansing diet.",
+                    "3": "3. Józef Spring Location: near the Gardens of the Senses Water: highly mineralized, recommended for mineral deficiencies, anemia, and heart problems. Distinct, slightly iron-rich taste.",
+                    "4": "Water straight from nature – health for free While walking through Muszyna, you’ll come across mineral water springs at every turn. Pump rooms and fountains are free to access, and each spring has a different composition and flavor. Just bring a bottle and the curiosity to try.",
+                    "5": "Additional benefits: natural treatment without prescription supports hypertension and diabetes therapy beneficial for intestines, stomach, and kidneys relaxing atmosphere of the Spa Park perfect complement to walking and physical activity"
+                },
+                "alt": {
+                    "1": "Antoni mineral water spring in Muszyna"
+                },
+                "cta": {
+                    "header": "Discover the source of health in the heart of the Beskids",
+                    "text": "You don’t have to look far to care for your health. In Muszyna, you have it all – natural springs, clean air, and a spa-like climate. Visit Muszynova, drink from the spring, enjoy some sport and feel the difference!",
+                    "button": "Try Muszyna’s mineral waters"
                 }
             }
         }
@@ -1051,6 +1074,10 @@
         "rowerem-przez-muszyne": {
             "title": "Cycling through Muszyna – routes, views & Muszynova bike rental",
             "description": "Discover the best cycling routes around Muszyna and rent your perfect bike at Muszynova - quality gear, route planning support, and stress-free outdoor fun."
+        },
+        "muszyna-wody-mineralne": {
+            "title": "Mineral Waters of Muszyna – A Natural Source of Health | Muszynova",
+            "description": "Discover the health benefits of Muszyna’s mineral waters. See which springs are worth visiting and how they support immunity, digestion, and well-being. Visit Muszynova!"
         }
     },
     "notfound": {

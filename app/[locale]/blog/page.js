@@ -74,6 +74,12 @@ export default function Blog() {
             link="/blog/rowerem-przez-muszyne"
             button={t("posts.6.button")}
           />
+          <BlogCard
+            header={t("posts.7.header")}
+            text={t("posts.7.text")}
+            link="/blog/muszyna-wody-mineralne"
+            button={t("posts.7.button")}
+          />
         </div>
       </section>
     </>

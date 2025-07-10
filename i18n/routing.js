@@ -179,6 +179,12 @@ export const routing = defineRouting({
       sk: "/blog/na-bicykli-cez-muszynu",
       ua: "/blog/na-velosypedi-cherez-muzhynu",
     },
+    "/blog/muszyna-wody-mineralne": {
+      pl: "/blog/muszyna-wody-mineralne",
+      en: "/blog/mineral-waters-of-muszyna",
+      sk: "/blog/mineralne-vody-v-muszyni",
+      ua: "/blog/mineralni-vody-u-muzhyni",
+    },
   },
 });
 
