@@ -367,6 +367,22 @@
         "alt": {
             "1": "Rekreačno-športový park Muszynova zvonka s krásnym prírodným pozadím"
         },
+        "active": {
+            "header": "Aktívne, zdravo a s úsmevom",
+            "text1": "Hľadáte miesto, ktoré ponúka <strong>zábavu, šport a relax</strong> na jednom mieste? <strong>Rekreačno-športový park Muszynova</strong> je priestor vytvorený pre ľudí každého veku – rodiny s deťmi, nadšencov tímových športov, milovníkov horských dobrodružstiev a všetkých, ktorí si cenia aktívny životný štýl.",
+            "text2": "Je to ideálne miesto na každodenný tréning, víkendový výlet alebo dlhší pobyt v malebnej <strong>Muszyne</strong> – známom kúpeľnom mestečku v srdci Beskyd Sadeckých. Park spája moderné technológie a športové riešenia s prírodným prostredím – všetko pre pohodlie a rôznorodé aktivity.",
+            "text3": "Nájdete tu <strong>športovú halu</strong> s profesionálnym povrchom, <strong>lezeckú stenu, posilňovňu, fitness miestnosť, mini bowling, detskú herňu, kurty na squash a stolný tenis</strong>, ako aj <strong>VR a multimediálnu zónu</strong>. Pre fanúšikov vonkajších aktivít je pripravená <strong>požičovňa bicyklov</strong>.",
+            "text4": "V <strong>Muszynovej</strong> kladieme dôraz na <strong>aktivitu bez hraníc</strong> – bez ohľadu na vek, úroveň zručností či preferovanú formu pohybu. S nami spojíte radosť s péčou o zdravie, kondíciu a dobrú náladu.",
+            "header2": "Prečo nás navštíviť?",
+            "list": {
+                "1": "Moderná športovo-rekreačná infraštruktúra",
+                "2": "Výborná lokalita v kúpeľnom meste Muszyna",
+                "3": "Attrakcie pre deti, mládež aj dospelých",
+                "4": "Zóny pre relax, rekreáciu a intenzívny tréning",
+                "5": "Profesionálne a bezpečné vybavenie",
+                "6": "Možnosť organizácie podujatí, turnajov a tréningov s trénerom"
+            }
+        },
         "cards": {
             "text": "Muszyna je známe a obľúbené kúpeľné mestečko, ktoré sa v posledných rokoch mimoriadne dynamicky rozvíja a priťahuje turistov z rôznych kútov sveta. Toto očarujúce kúpeľné miesto, obklopené Beskidom Sądeckým, očarí prírodou a množstvom atrakcií, medzi ktoré patria napríklad zmyslové záhrady, historické pamiatky, horské a cyklistické trasy, ako aj pramene minerálnej vody.",
             "card1": {

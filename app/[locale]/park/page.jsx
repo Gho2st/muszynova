@@ -16,6 +16,7 @@ import { FaPlaystation } from "react-icons/fa";
 
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { MdCheckCircle } from "react-icons/md"; // dodaj na górze pliku
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -50,7 +51,7 @@ export default function Park() {
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
-          <p className="mt-10">{t("text")}</p>
+          <p className="mt-10 xl:text-lg">{t("text")}</p>
           <div className="mt-10">
             <Button text={t("button")} link="/o-nas" />
           </div>
@@ -66,10 +67,76 @@ export default function Park() {
         </div>
       </div>
 
+      {/* seo text */}
+
+      <section className="bg-white px-6 xl:px-24 py-16 pt-0 md:pt-16 text-gray-800">
+        <div className="mx-auto">
+          <h2 className="text-4xl xl:text-5xl font-bold text-center text-customGold mb-12">
+            {t("active.header")}
+          </h2>
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>
+              {t.rich("active.text1", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </p>
+
+            <p>
+              {t.rich("active.text2", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </p>
+
+            <p>
+              {t.rich("active.text3", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </p>
+
+            <p>
+              {t.rich("active.text4", {
+                strong: (chunks) => <strong>{chunks}</strong>,
+              })}
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row justify-between items-center mt-12 xl:mt-16">
+            <div>
+              <h3 className="text-2xl 2xl:text-3xl font-semibold text-customGold mb-6 2xl:mb-8">
+                {t("active.header2")}
+              </h3>
+              <ul className="space-y-4 text-lg xl:ml-10">
+                {[
+                  t("active.list.1"),
+                  t("active.list.2"),
+                  t("active.list.3"),
+                  t("active.list.4"),
+                  t("active.list.5"),
+                  t("active.list.6"),
+                ].map((text, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <MdCheckCircle className="text-green-600 text-xl mt-1 shrink-0" />
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="w-2/5  lg:w-1/5 xl:mr-30 mt-12 md:mt-0">
+              <Image
+                src="/park/park.webp"
+                alt="piłka, paletka, gwizdek, rakieta"
+                width={150}
+                height={150}
+                layout="responsive"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* more section */}
       <section className="px-6 xl:px-24 xl:py-20">
         <div className="flex flex-col-reverse xl:flex-row justify-between xl:mb-10">
-          <div className="w-2/3 xl:w-1/5 mx-auto xl:mx-0">
+          <div className="w-2/3 sm:w-1/4 xl:w-1/5 mx-auto xl:mx-0">
             <Image
               src={"/logo2.webp"}
               width={100}

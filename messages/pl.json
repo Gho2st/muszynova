@@ -367,6 +367,22 @@
         "alt": {
             "1": "Park Rekreacyjno Sportowy Muszynova z zewnątrz na tle pięknej natury"
         },
+        "active": {
+            "header": "Aktywnie, zdrowo, z uśmiechem",
+            "text1": "Szukasz miejsca, które oferuje <strong>rozrywkę, sport i relaks</strong> w jednym? <strong>Park Rekreacyjno-Sportowy Muszynova</strong> to przestrzeń stworzona z myślą o osobach w każdym wieku – rodzinach z dziećmi, miłośnikach sportów zespołowych, pasjonatach górskich przygód i tych, którzy cenią aktywny styl życia.",
+            "text2": "To idealne miejsce zarówno na codzienny trening, weekendowy wypad, jak i dłuższy pobyt w malowniczej <strong>Muszynie</strong> – znanym uzdrowisku w sercu Beskidu Sądeckiego. Park łączy nowoczesne rozwiązania technologiczne i sportowe z otoczeniem natury – wszystko po to, by zapewnić komfort i różnorodność aktywności.",
+            "text3": "Znajdziesz tu m.in. <strong>halę sportową</strong> z profesjonalną nawierzchnią, <strong>ściankę wspinaczkową, siłownię, salę fitness, mini kręgielnię, salę zabaw dla dzieci, korty do squasha i tenisa stołowego</strong>, a także <strong>strefę VR</strong> i multimediów. Dla fanów outdooru przygotowaliśmy <strong>wypożyczalnię rowerów</strong>.",
+            "text4": "W <strong>Muszynovej</strong> stawiamy na <strong>aktywność bez ograniczeń</strong> – niezależnie od wieku, poziomu zaawansowania czy preferowanej formy ruchu. Z nami połączysz przyjemność z troską o zdrowie, kondycję i dobre samopoczucie.",
+            "header2": "Dlaczego warto nas odwiedzić?",
+            "list": {
+                "1": "Nowoczesna infrastruktura sportowo-rekreacyjna",
+                "2": "Doskonała lokalizacja w uzdrowiskowej Muszynie",
+                "3": "Atrakcje dla dzieci, młodzieży i dorosłych",
+                "4": "Strefy relaksu, rekreacji i intensywnego treningu",
+                "5": "Profesjonalny i bezpieczny sprzęt",
+                "6": "Możliwość organizacji wydarzeń, turniejów i zajęć z trenerem"
+            }
+        },
         "cards": {
             "text": "Muszyna to znana i lubiana miejscowość uzdrowiskowa, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
             "card1": {
