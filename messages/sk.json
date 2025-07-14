@@ -1,4 +1,33 @@
 {
+    "dofinansowanie": {
+        "header": "Financovanie",
+        "title": "Názov projektu: REKREAČNO-ŠPORTOVÝ PARK „MUSZYNOVA“",
+        "list": {
+            "1": "Realizátor projektu",
+            "a1": "OBCHODNÁ SPOLOČNOSŤ 'MIKULEC' ANDRZEJ MIKULEC",
+            "2": "Hodnota projektu",
+            "a2": "10 054 324,94 PLN",
+            "3": "Financovanie z EÚ:",
+            "a3": "5 237 978,53 PLN",
+            "4": "Vojvodstvo",
+            "a4": "Malopoľské",
+            "5": "Okres",
+            "a5": "Nowosądecki",
+            "6": "Perspektíva",
+            "a6": "2014–2020",
+            "7": "Kategória",
+            "a7": "Turizmus",
+            "8": "Program",
+            "a8": "Regionálny operačný program Malopoľského vojvodstva na roky 2014–2020",
+            "9": "Opatrenie",
+            "a9": "6.3. ROZVOJ VNÚTORNÝCH POTENCIÁLOV REGIÓNU",
+            "10": "Fond",
+            "a10": "Európsky fond regionálneho rozvoja",
+            "11": "Cieľ projektu",
+            "t1": "Zvýšenie konkurencieschopnosti rozšírením ponuky kúpeľov Muszyna v oblasti športových a rekreačných služieb.",
+            "t2": "Projekt sa týka výstavby a vybavenia rekreačno-športového parku v obci Złockie, parcela č. 1674, oblasť kúpeľov Muszyna. Zahŕňa 4 úlohy: 1Výstavba, 2Vybavenie, 3Nepriame náklady, 4Neoprávnené náklady. Úloha 1: objekt s technickou infraštruktúrou, 3 poschodia, architektúra zladená s okolím, jednoduchá forma, vysoká tepelná účinnosť. Prízemie: recepcia, kuchyňa, ihriská, sklady, WC, stolný tenis, požičovňa bicyklov. 1. poschodie: herňa, miestnosť pre deti, TV, technické miestnosti, tréneri, kancelária, squash, šatne. 2. poschodie: posilňovňa, bezpečnostné miestnosti, WC. Pozemok: 8047 m²; zastavaná plocha: 1204,22 m²; úžitková plocha: 2316,83 m²; objem: 11 430 m³; výška: 13,33 m. Energeticky úsporná budova, prístupná pre ZŤP. Úloha 2: nákup kvalitného a bezpečného vybavenia. Úloha 3: riadenie projektu. Úloha 4: neoprávnené náklady. Riešenia reagujú na potrebu rozšírenia turistickej a športovej ponuky počas celého roka."
+        }
+    },
     "nav": {
         "alt": {
             "1": "Logo Európskej únie",
@@ -1094,6 +1123,10 @@
         "muszyna-wody-mineralne": {
             "title": "Minerálne vody z Muszyny – Prírodný zdroj zdravia | Muszynova",
             "description": "Objavte liečivé účinky minerálnych vôd z Muszyny. Zistite, ktoré pramene sa oplatí navštíviť a ako podporujú imunitu, trávenie a celkovú pohodu. Navštívte Muszynova!"
+        },
+        "dofinansowanie": {
+            "title": "Financovanie EÚ – Rekreačno-športový park Muszyna",
+            "description": "Moderný rekreačno-športový park v Muszyne realizovaný s podporou EÚ. Investícia podporuje rozvoj turizmu a kúpeľníctva v regióne."
         }
     },
     "notfound": {

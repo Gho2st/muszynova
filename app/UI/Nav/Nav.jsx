@@ -116,14 +116,16 @@ export default function Nav() {
               priority
             />
           </Link>
-          <div className="hidden xl:block relative h-12 w-24">
-            <Image
-              src="/unia.webp"
-              fill
-              alt={t("alt.1")}
-              className="object-contain"
-            />
-          </div>
+          <Link href={'/dofinansowanie'}>
+            <div className="hidden xl:block relative h-12 w-24">
+              <Image
+                src="/unia.webp"
+                fill
+                alt={t("alt.1")}
+                className="object-contain"
+              />
+            </div>
+          </Link>
         </div>
 
         {/* Prawa strona: Nawigacja, LocaleSwitcher, SalesButton, Hamburger */}

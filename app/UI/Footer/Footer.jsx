@@ -118,7 +118,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="">
+        <Link href={'/dofinansowanie'} className="">
           <Image
             src={"/unia.webp"}
             height={120}
@@ -126,7 +126,7 @@ export default function Footer() {
             className="rounded-xl"
             alt="Logo - Unia Europejska"
           />
-        </div>
+        </Link>
         <span className="mb-20">© Muszynova</span>
       </div>
       {showArrow && (

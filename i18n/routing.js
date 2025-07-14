@@ -137,6 +137,13 @@ export const routing = defineRouting({
       sk: "/partneri",
       ua: "/partneri",
     },
+
+    "/dofinansowanie": {
+      pl: "/dofinansowanie",
+      en: "/funding",
+      sk: "/financovanie",
+      ua: "/finansuvannia",
+    },
     "/blog": {
       pl: "/blog",
       en: "/blog",

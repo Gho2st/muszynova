@@ -234,6 +234,17 @@ export default function sitemap() {
       },
     },
     {
+      url: `${baseUrl}/dofinansowanie`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/funding`,
+          sk: `${baseUrl}/sk/financovanie`,
+          ua: `${baseUrl}/ua/finansuvannia`,
+        },
+      },
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       alternates: {

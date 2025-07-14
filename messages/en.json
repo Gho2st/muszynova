@@ -1,4 +1,33 @@
 {
+    "dofinansowanie": {
+        "header": "Funding",
+        "title": "Project Title: RECREATIONAL-SPORTS PARK 'MUSZYNOVA'",
+        "list": {
+            "1": "Project Implementer",
+            "a1": "TRADING COMPANY 'MIKULEC' ANDRZEJ MIKULEC",
+            "2": "Project Value",
+            "a2": "PLN 10,054,324.94",
+            "3": "EU Funding:",
+            "a3": "PLN 5,237,978.53",
+            "4": "Voivodeship",
+            "a4": "Lesser Poland",
+            "5": "County",
+            "a5": "Nowy Sącz County",
+            "6": "Perspective",
+            "a6": "2014–2020",
+            "7": "Category",
+            "a7": "Tourism",
+            "8": "Program",
+            "a8": "Regional Operational Programme of the Lesser Poland Voivodeship for 2014–2020",
+            "9": "Action",
+            "a9": "6.3. DEVELOPMENT OF INTERNAL POTENTIALS OF THE REGION",
+            "10": "Fund",
+            "a10": "European Regional Development Fund",
+            "11": "Project Objective",
+            "t1": "Increase competitiveness by expanding the Muszyna health resort's offer in the field of sports and recreation services.",
+            "t2": "The project concerns construction and equipment of a sports-recreational park in Złockie, plot no. 1674, Muszyna resort area. It includes 4 tasks: 1Construction, 2Equipment, 3Indirect costs, 4Non-eligible costs. Task 1: a 3-storey sports facility with internal installations, technical infrastructure, and landscaping. Architecture matches surroundings, simple form, good insulation. Ground floor: lobby, restaurant, kitchen, courts, food and sports storage, social rooms, lockers, WC, table tennis, reception, bike rental. 1st floor: playrooms, TV room, technical, coaching and first aid rooms, office, squash, lockers, WC. 2nd floor: gym, guard room, service rooms, lockers, WC. Plot: 8047 m²; building: 1204.22 m²; usable area: 2316.83 m²; volume: 11,430 m³; height: 13.33 m. Energy-efficient design, 25–50% less energy than traditional buildings. Accessible for disabled people. Task 2: purchase of high-standard, safe equipment. Task 3: project management. Task 4: additional non-eligible equipment. Solutions meet identified needs, including year-round tourism and sports offer."
+        }
+    },
     "nav": {
         "alt": {
             "1": "European Union logo",
@@ -1094,6 +1123,10 @@
         "muszyna-wody-mineralne": {
             "title": "Mineral Waters of Muszyna – A Natural Source of Health | Muszynova",
             "description": "Discover the health benefits of Muszyna’s mineral waters. See which springs are worth visiting and how they support immunity, digestion, and well-being. Visit Muszynova!"
+        },
+        "dofinansowanie": {
+            "title": "EU Funding – Recreational and Sports Park Muszyna",
+            "description": "A modern recreational and sports park in Muszyna co-financed by the EU. The investment supports tourism and the region’s spa offer development."
         }
     },
     "notfound": {

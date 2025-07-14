@@ -1,4 +1,33 @@
 {
+    "dofinansowanie": {
+        "header": "Dofinansowanie",
+        "title": "Tytuł Projektu: PARK REKREACYJNO-SPORTOWY „MUSZYNOVA”",
+        "list": {
+            "1": "Realizator Projektu",
+            "a1": "FIRMA HANDLOWA 'MIKULEC' ANDRZEJ MIKULEC",
+            "2": "Wartość projektu",
+            "a2": "10 054 324,94 zł",
+            "3": "Dofinansowanie z UE:",
+            "a3": "5 237 978,53 zł",
+            "4": "Województwo",
+            "a4": "małopolskie",
+            "5": "Powiat",
+            "a5": "nowosądecki",
+            "6": "Perspektywa",
+            "a6": "2014-2020",
+            "7": "Kategoria",
+            "a7": "Turystyka",
+            "8": "Program",
+            "a8": "Regionalny Program Operacyjny Województwa Małopolskiego na lata 2014-2020",
+            "9": "Działanie",
+            "a9": "6.3. ROZWÓJ WEWNĘTRZNYCH POTENCJAŁÓW REGIONU",
+            "10": "Fundusz",
+            "a10": "Europejski Fundusz Rozwoju Regionalnego",
+            "11": "Cel projektu",
+            "t1": "Wzrost konkurencyjności przez rozszerzenie oferty uzdrowiska Muszyna w obszarze usług sportowo-rekreacyjnych.",
+            "t2": "Projekt dotyczy budowy oraz wyposażenia Parku sportoworekreacyjnego. Inwestycja w miejscowości Złockie, nieruchomość nr 1674, obręb uzdrowiska Muszyna. Projekt obejmuje 4 zadania: 1Budowa Parku rekreacyjnosportowego Złockie, 2Wyposażenie Parku rekreacyjnosportowego Złockie, 3Koszty pośrednie, 4Wyposażenie Parku rekreacyjnosportowego Złockie koszty niekwalifik. W ramach zad. 1 powstanie obiekt sportoworekreacyjny z instalacjami wewnętrznymi, infrastrukturą techniczną oraz zagospodarowaniem otoczenia. Budynek wolno stojący, trzy kondygnacyjny, konstrukcją nawiązujący do architekt. obiektów w otoczeniu. Przyjęto prostą konstrukcję architekt. z ograniczoną ilością detali celem zapewnienia wysokich parametrów termicznych. Na parterze znajdą się: hol, restauracja, kuchnia, boiska, magazyny spożywcze, na sprzęt sportowy, pom. socjalne, szatnie, WC, tenis stołowy, recepcja, wypoż. rowerów. Na I piętrze: sala zabaw, zabaw dla dzieci, telewizyjna, pom. techniczne, pom trenerskie i pierwszej pomocy, biuro, squash, szatnie, WC. Na II piętrze: pom. socjalne, ochrony, gospodarcze, siłownia, szatnie, WC. Podstawowe dane dot. inwestycji: pow. działki 8047 m2; pow. zabudowy 1204,22 m, pow. użytkowa: 2316,83 m, kubatura 11430,00 m3, Wysokość budynku 13,33 m. Przyjęte rozwiązania zgodne z najlepszymi praktykami dla tego typu obiektów m.in. nawiązanie do zabudowy otaczającej, prostota formy, funkcjonalność adekwatna do usług. Budynek wykonany w tech. energooszczędnej jako niskoenergetyczny. Zużycie o 2550 mniej energii niż budynki tradycyjne. Obiekt dostępny dla osób niepełnosprawnych. Zadanie 2 dotyczy zakupu wyposażenia pomieszczeń zgodnie z przeznaczeniem spełniającego wysokie standardy jakościowe i bezpieczeństwa użytkowania. Zadanie 3 obejmuje zarządzanie projektem. Zadanie 4 dot. wyposażenie dodatkowego koszty niekwalifik. Przyjęte rozwiązania odpowiadają na zidentyfikowane potrzeby m.in. rozszerzenie oferty uzdrowiska, rozbudowę oferty sportowej całorocznej."
+        }
+    },
     "nav": {
         "alt": {
             "1": "Logo Unii Europejskiej",
@@ -1094,6 +1123,10 @@
         "muszyna-wody-mineralne": {
             "title": "Muszyńskie wody mineralne – naturalne źródło zdrowia | Muszynova",
             "description": "Odkryj zdrowotne właściwości wód mineralnych z Muszyny. Sprawdź, które źródła warto odwiedzić i jak wspierają odporność, trawienie i dobre samopoczucie. Zapraszamy do Muszynova!"
+        },
+        "dofinansowanie": {
+            "title": "Dofinansowanie UE – Park Rekreacyjno-Sportowy Muszyna",
+            "description": "Nowoczesny park rekreacyjno-sportowy w Muszynie realizowany z dofinansowaniem UE. Inwestycja wspiera rozwój turystyki i oferty uzdrowiskowej regionu."
         }
     },
     "notfound": {
