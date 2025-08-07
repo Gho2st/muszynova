@@ -46,6 +46,7 @@ export default function About() {
             <span className="text-customGold"> Muszynova? </span>
           </h1>
           <p className="mt-10">{t("text")}</p>
+          {/* przycisk */}
           <div className="mt-10">
             <Button text={t("button")} link="/galeria" />
           </div>
