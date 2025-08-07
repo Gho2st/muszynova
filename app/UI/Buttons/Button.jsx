@@ -10,7 +10,7 @@ export default function Button({
     <div>
       <button>
         <Link
-          className={` ${textColor} text-lg font-medium whitespace-nowrap flex justify-center items-center gap-2 p-4 clip-custom hover:clip-reverse ${bgColor} 
+          className={` ${textColor} text-lg font-medium  flex justify-center items-center gap-2 p-4 clip-custom hover:clip-reverse ${bgColor} 
           transition-all duration-300 transform hover:scale-105 hover:shadow-lg`} // Animacja i efekty na hover
           href={link}
         >
