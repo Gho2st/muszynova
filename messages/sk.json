@@ -184,6 +184,13 @@
         "alt": {
             "1": "Rekreačno-športový park Muszynova zvonka s krásnym prírodným pozadím"
         },
+        "behind": {
+            "header": "Zákulisie vzniku Muszynova",
+            "p1": "Je možné spojiť aktívny oddych s relaxom v prírode a komfortom moderného priestoru? <strong>Áno! Práve z tejto potreby vznikla Muszynova</strong> – výnimočné miesto na mape Sądeckých Beskýd, vytvorené pre tých, ktorí hľadajú viac než len ubytovanie či ďalšiu atrakciu.",
+            "p2": "Inšpiráciou pre nás bola <strong>Muszyna – kúpeľné mestečko s jedinečnou atmosférou</strong>, obklopené horskými chodníkmi, lesmi a minerálnymi prameňmi. Je to miesto s históriou, ale aj obrovským potenciálom, ktoré si zaslúži moderný a svieži pohľad. Tak sa zrodila Muszynova – spojenie tradície s inováciou, lokálnosti s otvorenosťou svetu.",
+            "p3": "Od začiatku sme vedeli, že chceme vytvoriť niečo viac než športovo-rekreačný komplex. <strong>Chceli sme vytvoriť priestor zážitkov – pre rodiny, turistov, obyvateľov i nadšencov aktívneho životného štýlu.</strong> Preto v Muszynova nájdeš nielen moderné športové zóny a reštauráciu, ale aj filozofiu „na novo“ – založenú na kvalite, prírode a spoločnom trávení času.",
+            "p4": "Dnes je Muszynova viac než len miesto – je to myšlienka. Je to ponuka oddychu na novej úrovni, ktorá spája to najlepšie: <strong>lokálne chute, beskydskú pohostinnosť, fyzickú aktivitu a krásu prírody</strong>. Pozývame vás spoznať Muszynu „na novo“ – očami ľudí, ktorí do tohto miesta vložili svoje srdce."
+        },
         "cards": {
             "text": "Muszyna je známe a obľúbené kúpeľné mestečko, ktoré sa v posledných rokoch mimoriadne dynamicky rozvíja a priťahuje turistov z rôznych kútov sveta. Toto očarujúce kúpeľné miesto, obklopené Beskidom Sądeckým, očarí prírodou a množstvom atrakcií, medzi ktoré patria napríklad zmyslové záhrady, historické pamiatky, horské a cyklistické trasy, ako aj pramene minerálnej vody.",
             "card1": {
