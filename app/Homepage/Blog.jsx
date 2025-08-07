@@ -13,7 +13,7 @@ export default function Blog({ t }) {
             </Link>
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-14 2xl:gap-20">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10 2xl:gap-20">
           <BlogCard
             header={t("posts.1.header")}
             text={t("posts.1.text")}

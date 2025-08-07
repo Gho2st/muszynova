@@ -131,7 +131,7 @@ export default function Nav() {
         {/* Prawa strona: Nawigacja, LocaleSwitcher, SalesButton, Hamburger */}
         <div className="flex items-center gap-6">
           {/* Desktop Navigation */}
-          <div className="hidden items-center font-light text-white xl:flex xl:gap-6">
+          <div className="hidden items-center font-light text-white xl:flex xl:gap-4 2xl:gap-6">
             <NavLink href="/o-nas">{t("links.link1")}</NavLink>
             <NavLink href="/blog">{t("links.link8")}</NavLink>
 

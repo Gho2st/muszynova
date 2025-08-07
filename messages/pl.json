@@ -184,6 +184,13 @@
         "alt": {
             "1": "Park Rekreacyjno Sportowy Muszynova z zewnątrz na tle pięknej natury"
         },
+        "behind": {
+            "header": "Kulisy powstania Muszynovej",
+            "p1": "Czy można połączyć aktywny wypoczynek z relaksem w otoczeniu natury i komfortem nowoczesnej przestrzeni? <strong>Tak! Właśnie z tej potrzeby powstała Muszynova</strong> - wyjątkowe miejsce na mapie Beskidu Sądeckiego, stworzone z myślą o tych, którzy szukają czegoś więcej niż tylko noclegu czy kolejnej atrakcji.",
+            "p2": "Inspiracją dla nas była <strong>Muszyna – uzdrowisko o niezwykłym klimacie</strong>, otoczone górskimi szlakami, lasami i źródłami mineralnymi. To miejsce z historią, ale i ogromnym potencjałem, które zasługuje na nowoczesne, świeże spojrzenie. Tak właśnie narodziła się Muszynova – połączenie tradycji z innowacją, lokalności z otwartością na świat.",
+            "p3": "Od początku wiedzieliśmy, że chcemy stworzyć coś więcej niż kompleks sportowo-rekreacyjny. <strong>Chcieliśmy zbudować przestrzeń doświadczeń – dla rodzin, turystów, mieszkańców i pasjonatów aktywnego trybu życia.</strong> Dlatego w Muszynovej znajdziesz nie tylko nowoczesne strefy sportowe i restaurację, ale też filozofię „na novo” – opartą na jakości, przyrodzie i wspólnym spędzaniu czasu.",
+            "p4": "Dziś Muszynova to coś więcej niż miejsce – to idea. To propozycja wypoczynku na nowym poziomie, który łączy to, co najlepsze: <strong>lokalne smaki, beskidzką gościnność, aktywność fizyczną i piękno przyrody</strong>. Zapraszamy do poznania Muszyny „na novo” – oczami ludzi, którzy włożyli w to miejsce serce."
+        },
         "cards": {
             "text": "Muszyna to znana i lubiana miejscowość uzdrowiskowa, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
             "card1": {
@@ -200,6 +207,11 @@
                 "header": "NOve standardy",
                 "button": "Park",
                 "text": "Aktywne spędzanie wolnego czasu na novo, z frajdą. Zachęcamy do ruchu od najmłodszych lat, jesteśmy do tego przygotowani. Cztery nowocześnie wyposażone strefy aktywności wraz z zapleczem czekają na sportowców zawodowych, juniorów, rodziny i użytkowników indywidualnych."
+            },
+            "card4": {
+                "header": "NOve podejście do wypoczynku",
+                "button": "Galeria",
+                "text": "Łączymy komfort, naturę i aktywność w jednym miejscu. Stawiamy na jakość, kameralność i lokalny klimat, który czuć w każdym detalu – od wystroju wnętrz po smak potraw. Tworzymy przestrzeń, gdzie każdy – niezależnie od wieku – znajdzie coś dla siebie: spokój, inspirację lub porcję zdrowego ruchu. Jesteśmy miejscem, które żyje rytmem Muszyny, ale patrzy na świat nowocześnie – to właśnie nasza NOva jakość."
             }
         }
     },

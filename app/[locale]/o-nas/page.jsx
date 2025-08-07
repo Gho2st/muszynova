@@ -4,6 +4,7 @@ import Map from "../../UI/Map/Map";
 import { CiLocationOn } from "react-icons/ci";
 import { MdFoodBank } from "react-icons/md";
 import { MdOutlineSportsCricket } from "react-icons/md";
+import { MdOutlineWifiChannel } from "react-icons/md";
 import Card from "../../UI/Card";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -40,12 +41,12 @@ export default function About() {
     <>
       {/* hero */}
       <div className="xl:flex pb-20">
-        <div className="xl:w-1/3 px-6 xl:p-16 pt-16 xl:pt-24 2xl:pt-32 xl:pl-16">
+        <div className="xl:w-1/2 2xl:w-1/3 px-6 xl:p-16 pt-16 xl:pt-24 2xl:pt-32 xl:pl-16">
           <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold">
             {t("header")} <br></br>
             <span className="text-customGold"> Muszynova? </span>
           </h1>
-          <p className="mt-10">{t("text")}</p>
+          <p className="mt-10 2xl:text-lg">{t("text")}</p>
           {/* przycisk */}
           <div className="mt-10">
             <Button text={t("button")} link="/galeria" />
@@ -61,6 +62,36 @@ export default function About() {
           />
         </div>
       </div>
+
+      <section className="bg-gray-50 mb-10 md:mb-0 text-center xl:max-w-6xl mx-auto p-10  border-xl">
+        <h2 className="text-4xl 2xl:text-5xl font-semibold text-gray-900">
+          {t("behind.header")}
+        </h2>
+
+        <p className="mt-10 2xl:text-lg text-gray-700 leading-relaxed">
+          {t.rich("behind.p1", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+
+        <p className="mt-6 2xl:text-lg text-gray-700 leading-relaxed">
+          {t.rich("behind.p2", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+
+        <p className="mt-6 2xl:text-lg text-gray-700 leading-relaxed">
+          {t.rich("behind.p3", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+
+        <p className="mt-6 2xl:text-lg text-gray-700 leading-relaxed">
+          {t.rich("behind.p4", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+      </section>
 
       {/* more section */}
       <section className="px-6 xl:px-24 xl:py-20">
@@ -83,9 +114,9 @@ export default function About() {
         <div className="flex flex-col-reverse xl:flex-row">
           <div className="xl:w-1/4 xl:mr-16 mt-20 xl:mt-0">
             <h3 className="text-4xl font-semibold">Muszyna</h3>
-            <p className="mt-10">{t("cards.text")}</p>
+            <p className="mt-10 2xl:text-lg">{t("cards.text")}</p>
           </div>
-          <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
+          <div className="xl:w-3/4 grid xl:grid-cols-2 gap-5 text-white">
             <Card
               icon={<CiLocationOn />}
               title={t("cards.card1.header")}
@@ -110,9 +141,18 @@ export default function About() {
               bgColor="bg-black"
               text={t("cards.card3.text")}
             />
+            <Card
+              icon={<MdOutlineWifiChannel />}
+              title={t("cards.card4.header")}
+              buttonText={t("cards.card4.button")}
+              link="/galeria"
+              bgColor="bg-black"
+              text={t("cards.card4.text")}
+            />
           </div>
         </div>
       </section>
+
       <section className="pt-20">
         <Map />
       </section>
