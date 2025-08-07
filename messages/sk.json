@@ -225,6 +225,7 @@
         "link": "blogu",
         "header2": "Náš blog",
         "header3": "Naše články",
+        "text": "Objavte Muszynu nanovo s Muszynovou! Náš blog je miestom, kde sa delíme o inšpirácie, miestne zaujímavosti, nápady na aktívny oddych a najnovšie udalosti z Rekreačno-športového parku Muszynova. Spoznajte Muszynu zvnútra – očami milovníkov prírody, športu a beskydskej pohostinnosti.",
         "button": "Čítať viac",
         "posts": {
             "1": {
@@ -396,6 +397,28 @@
                     "header": "Objavte zdroj zdravia v srdci Beskýd",
                     "text": "Nemusíte chodiť ďaleko, aby ste sa postarali o svoje zdravie. V Muszyne máte všetko – prírodné pramene, čistý vzduch a liečivú klímu. Navštívte Muszynovu, napite sa z prameňa a zažite ten rozdiel!",
                     "button": "Vyskúšajte minerálne vody z Muszyny"
+                }
+            },
+            "8": {
+                "header": "Mágia Muszyny – miestne legendy a príbehy z údolia Popradu",
+                "text": "Muszyna nie je len kúpeľné mestečko s krásnou prírodou a minerálnymi vodami – je to aj miesto plné dávnych príbehov, tajomstiev a legiend, ktoré sa odovzdávajú z generácie na generáciu. V tieni hôr a šume rieky Poprad sa skrývajú príbehy, ktoré tomuto miestu dodávajú výnimočné čaro. Spoznaj s nami najznámejšie miestne legendy, ktoré už roky fascinujú miestnych i návštevníkov.",
+                "header2": "Stráži duch princeznej stále hradné ruiny?",
+                "header3": "TOP 3 legendy z Muszyny, ktoré by ste mali poznať",
+                "button": "Objav tajomstvá Muszyny",
+                "list": {
+                    "1": "1. Legenda o Bielej panej z muszyńskeho hradu Kedysi na hrade žila princezná, ktorá tragicky zahynula pri obrane svojho ľudu. Hovorí sa, že počas mesačných nocí je stále možné vidieť Bielu paniu, ako sa prechádza po ruinách a stráži dávne tajomstvá a poklady ukryté v podzemí.",
+                    "2": "2. Zakliaty poklad pod vrchom Malnik Podľa legendy je v jednej z jaskýň pod Malnikom ukrytý obrovský poklad – zlato, ktoré patrilo zbojníckemu vodcovi. Nájsť ho však dokáže len ten, kto má čisté srdce a dobré úmysly. Ostatní počujú len ozvenu tajomných hlasov a nevrátia sa tou istou cestou.",
+                    "3": "3. Prameň zamilovaných v Záhradách zmyslov Podľa miestnej povesti sa kedysi pri tomto prameni v doline tajne stretával zamilovaný pár. Ich láska bola zakázaná, no prisahali si vernosť. Dnes mnohí veria, že pitie vody z tohto prameňa prináša šťastie v láske.",
+                    "4": "Magické miesta s dušou Muszyna je plná symbolických miest: staré kaplnky, legendárne kamene, pramene s „mocou“. Počas prechádzky sa oplatí pýtať miestnych – poznajú najlepšie príbehy a radi sa o ne podelia.",
+                    "5": "Prečo poznať miestne legendy? Pretože miestu dodávajú dušu. Keď sa prechádzate Muszynou, všetko má zrazu väčší význam – každá cesta môže ukrývať príbeh, každý strom byť svedkom histórie. Je to skvelý spôsob, ako spojiť oddych s objavovaním kultúry regiónu."
+                },
+                "alt": {
+                    "1": "Hrad v Muszyne na slnečnom svetle"
+                },
+                "cta": {
+                    "header": "Spoznaj Muszynu cez legendy a príbehy",
+                    "text": "Ponorte sa do sveta povestí, duchov a tajomných miest. Navštívte Muszynu, prejdite sa ruinami hradu, navštívte prameň zamilovaných a pocíťte kúzlo, ktoré už stáročia priťahuje ľudí do tohto údolia.",
+                    "button": "Zaži legendy Muszyny na vlastnej koži"
                 }
             }
         }
@@ -1139,6 +1162,10 @@
         "dofinansowanie": {
             "title": "Financovanie EÚ – Rekreačno-športový park Muszyna",
             "description": "Moderný rekreačno-športový park v Muszyne realizovaný s podporou EÚ. Investícia podporuje rozvoj turizmu a kúpeľníctva v regióne."
+        },
+        "lokalne-legendy-i-historie": {
+            "title": "Miestne legendy a príbehy z Muszyny | Blog Muszynova",
+            "description": "Objavte tajomné príbehy z Muszyny – od Bielej pani po ukryté poklady. Spoznajte čaro regiónu cez legendy a miestne rozprávania na blogu Muszynova."
         }
     },
     "notfound": {

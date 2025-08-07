@@ -225,6 +225,7 @@
         "link": "blogu",
         "header2": "Nasz Blog",
         "header3": "Nasze Artykuły",
+        "text": "Odkryj Muszynę na nowo z Muszynovą! Nasz blog to miejsce, w którym dzielimy się inspiracjami, lokalnymi ciekawostkami, pomysłami na aktywny wypoczynek i najnowszymi wydarzeniami z Parku Rekreacyjno-Sportowego Muszynova. Poznaj Muszynę od środka – oczami pasjonatów natury, sportu i beskidzkiej gościnności.",
         "button": "Czytaj więcej",
         "posts": {
             "1": {
@@ -396,6 +397,28 @@
                     "header": "Odkryj źródło zdrowia w sercu Beskidów",
                     "text": "Nie musisz daleko szukać, by zadbać o zdrowie. W Muszynie wszystko masz na wyciągnięcie ręki – naturalne źródła, czyste powietrze i uzdrowiskowy klimat. Przyjdź do Muszynova, wypij wodę ze źródła, trochę ulubionego sportu i poczujesz różnicę!",
                     "button": "Spróbuj wód mineralnych z Muszyny"
+                }
+            },
+            "8": {
+                "header": "Magia Muszyny – lokalne legendy i opowieści z Doliny Popradu",
+                "text": "Muszyna to nie tylko uzdrowisko z pięknymi krajobrazami i mineralnymi wodami – to także miejsce pełne dawnych opowieści, tajemnic i legend przekazywanych z pokolenia na pokolenie. W cieniu gór i w szumie Popradu kryją się historie, które dodają temu miejscu niezwykłego uroku. Poznaj z nami najbardziej znane lokalne legendy, które od lat rozpalają wyobraźnię mieszkańców i turystów.",
+                "header2": "Czy duch księżnej wciąż strzeże ruin zamku?",
+                "header3": "TOP 3 legendy z Muszyny, które warto znać",
+                "button": "Odkryj tajemnice Muszyny",
+                "list": {
+                    "1": "1. Legenda o Białej Damie z zamku w Muszynie Dawno temu na zamku mieszkała księżna, która zginęła tragicznie, broniąc swoich ludzi. Mówi się, że do dziś w księżycowe noce można zobaczyć Białą Damę przechadzającą się po ruinach, strzegąc dawnych sekretów i skarbów ukrytych w podziemiach.",
+                    "2": "2. Zaklęty skarb pod górą Malnik Legenda głosi, że w jednej z jaskiń pod Malnikiem ukryto ogromny skarb – złoto, które należało do zbójnickiego herszta. Ale tylko ten, kto ma czyste serce i dobre intencje, będzie w stanie go znaleźć. Inni słyszą tylko echo tajemniczych głosów i nigdy nie wracają tą samą drogą.",
+                    "3": "3. Źródło zakochanych w Ogrodach Zmysłów Według lokalnej opowieści, dawno temu para zakochanych spotykała się potajemnie przy źródle w dolinie. Choć ich miłość była zakazana, przysięgli sobie wierność przy źródlanej wodzie. Dziś wielu wierzy, że napicie się z tego miejsca przynosi szczęście w miłości.",
+                    "4": "Magiczne miejsca z duszą Muszyna pełna jest symbolicznych miejsc: starych kapliczek, kamieni z legend, źródeł z „mocą”. Spacerując po okolicy, warto pytać mieszkańców – to oni najlepiej znają te opowieści i chętnie się nimi dzielą.",
+                    "5": "Dlaczego warto znać lokalne legendy? Bo nadają miejscu duszę. Spacerując po Muszynie, nagle wszystko staje się głębsze – każda ścieżka może kryć opowieść, każde drzewo być świadkiem historii. To świetny sposób, by połączyć wypoczynek z odkrywaniem kultury regionu."
+                },
+                "alt": {
+                    "1": "Zamek w Muszynie w świetle słońca"
+                },
+                "cta": {
+                    "header": "Poznaj Muszynę przez legendy i opowieści",
+                    "text": "Zanurz się w niezwykły świat podań, duchów i tajemniczych miejsc. Przyjedź do Muszyny, przespaceruj się po ruinach zamku, odwiedź źródło zakochanych i poczuj magię, która od wieków przyciąga ludzi do tej doliny.",
+                    "button": "Odkryj legendy Muszyny na własne oczy"
                 }
             }
         }
@@ -1139,6 +1162,10 @@
         "dofinansowanie": {
             "title": "Dofinansowanie UE – Park Rekreacyjno-Sportowy Muszyna",
             "description": "Nowoczesny park rekreacyjno-sportowy w Muszynie realizowany z dofinansowaniem UE. Inwestycja wspiera rozwój turystyki i oferty uzdrowiskowej regionu."
+        },
+        "lokalne-legendy-i-historie": {
+            "title": "Lokalne legendy i historie Muszyny | Blog Muszynova",
+            "description": "Poznaj tajemnicze opowieści z Muszyny – od Białej Damy po zaklęte skarby. Odkryj magię regionu przez legendy i lokalne historie na blogu Muszynova."
         }
     },
     "notfound": {

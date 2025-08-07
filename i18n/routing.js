@@ -192,6 +192,12 @@ export const routing = defineRouting({
       sk: "/blog/mineralne-vody-v-muszyni",
       ua: "/blog/mineralni-vody-u-muzhyni",
     },
+    "/blog/lokalne-legendy-i-historie": {
+      pl: "/blog/lokalne-legendy-i-historie",
+      en: "/blog/local-legends-and-stories",
+      sk: "/blog/miestne-legendy-a-príbehy",
+      ua: "/blog/mistsevi-lehendy-ta-istoriyi",
+    },
   },
 });
 

@@ -225,6 +225,7 @@
         "link": "blog",
         "header2": "Our Blog",
         "header3": "Our Articles",
+        "text": "Rediscover Muszyna with Muszynova! Our blog is a place where we share inspiration, local insights, ideas for active leisure, and the latest events from the Muszynova Recreational and Sports Park. Discover Muszyna from the inside – through the eyes of nature lovers, sports enthusiasts, and admirers of Beskid hospitality.",
         "button": "Read more",
         "posts": {
             "1": {
@@ -396,6 +397,28 @@
                     "header": "Discover the source of health in the heart of the Beskids",
                     "text": "You don’t have to look far to care for your health. In Muszyna, you have it all – natural springs, clean air, and a spa-like climate. Visit Muszynova, drink from the spring, enjoy some sport and feel the difference!",
                     "button": "Try Muszyna’s mineral waters"
+                }
+            },
+            "8": {
+                "header": "The Magic of Muszyna – Local Legends and Tales from the Poprad Valley",
+                "text": "Muszyna is not only a spa town with beautiful landscapes and mineral waters – it is also a place full of ancient stories, mysteries, and legends passed down through generations. In the shadow of the mountains and the murmur of the Poprad River lie tales that give this place a unique charm. Discover with us the most well-known local legends that have captured the imagination of locals and visitors for years.",
+                "header2": "Does the spirit of the princess still guard the castle ruins?",
+                "header3": "TOP 3 Legends from Muszyna You Should Know",
+                "button": "Discover the Secrets of Muszyna",
+                "list": {
+                    "1": "1. The Legend of the White Lady of Muszyna Castle Long ago, a princess lived in the castle and died tragically defending her people. It is said that on moonlit nights, the White Lady can still be seen wandering among the ruins, guarding old secrets and treasures hidden underground.",
+                    "2": "2. The Cursed Treasure under Mount Malnik According to legend, a great treasure – gold belonging to a bandit leader – is hidden in a cave beneath Malnik. But only someone with a pure heart and good intentions can find it. Others hear only the echo of mysterious voices and never return the same way.",
+                    "3": "3. The Lovers’ Spring in the Sensory Gardens Long ago, a forbidden couple met in secret by a spring in the valley. They swore eternal love by its waters. Today, many believe that drinking from this spring brings happiness in love.",
+                    "4": "Magical Places with Soul Muszyna is full of symbolic sites: old chapels, legendary stones, and springs said to have powers. As you walk around, ask the locals – they know these stories best and are happy to share them.",
+                    "5": "Why Learn Local Legends? Because they give a place its soul. As you walk through Muszyna, everything takes on deeper meaning – every path could tell a story, every tree could be a witness to history. It’s a wonderful way to combine relaxation with discovering the region’s culture."
+                },
+                "alt": {
+                    "1": "Muszyna Castle in the sunlight"
+                },
+                "cta": {
+                    "header": "Discover Muszyna Through Legends and Stories",
+                    "text": "Immerse yourself in a world of legends, spirits, and mysterious places. Come to Muszyna, walk through the castle ruins, visit the Lovers’ Spring, and feel the magic that has drawn people to this valley for centuries.",
+                    "button": "See Muszyna's Legends with Your Own Eyes"
                 }
             }
         }
@@ -1139,6 +1162,10 @@
         "dofinansowanie": {
             "title": "EU Funding – Recreational and Sports Park Muszyna",
             "description": "A modern recreational and sports park in Muszyna co-financed by the EU. The investment supports tourism and the region’s spa offer development."
+        },
+        "lokalne-legendy-i-historie": {
+            "title": "Local Legends and Stories from Muszyna | Muszynova Blog",
+            "description": "Discover the mysterious tales of Muszyna – from the White Lady to hidden treasures. Explore the magic of the region through local legends on the Muszynova blog."
         }
     },
     "notfound": {

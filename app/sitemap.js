@@ -333,5 +333,16 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog/lokalne-legendy-i-historie`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/local-legends-and-stories`,
+          sk: `${baseUrl}/sk/blog/miestne-legendy-a-príbehy`,
+          ua: `${baseUrl}/ua/blog/mistsevi-lehendy-ta-istoriyi`,
+        },
+      },
+    },
   ];
 }
