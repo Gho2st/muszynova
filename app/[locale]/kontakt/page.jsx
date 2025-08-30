@@ -87,11 +87,7 @@ export default function Contact() {
               title={t("cards.card4.header")}
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card4.button")}
-              text={[
-                t("cards.card4.text2") + ": 12:00 - 21:00",
-                t("cards.card4.text3") + ": 12:00 - 22:00",
-                t("cards.card4.text4"),
-              ].join(" <br /> ")}
+              text="pon-nd: 12:00-21:00"
             />
             <Card2
               link="/park"
@@ -99,10 +95,7 @@ export default function Contact() {
               title={t("cards.card5.header")}
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card5.button")}
-              text={[
-                t("cards.card5.text2") + ": 11:00 - 21:00",
-                t("cards.card5.text3") + ": 11:00 - 22:00",
-              ].join(" <br /> ")}
+              text="pn-nd: 11:00-21:00"
             />
             <Card2
               link="/park/silownia"
