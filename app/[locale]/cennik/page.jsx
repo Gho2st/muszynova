@@ -4,9 +4,20 @@ import { routing } from "@/i18n/routing";
 import ButtonGreen from "@/app/UI/Buttons/ButtonGreen";
 import Header from "@/app/UI/Header";
 
+// Stałe dla stylów Tailwind
+const TABLE_HEADER_STYLES =
+  "hidden sm:grid grid-cols-4 bg-gray-100 text-gray-700 font-semibold text-sm sm:text-base py-3 px-4 rounded-t-lg";
+const ROW_STYLES =
+  "flex flex-col sm:grid sm:grid-cols-4 border-b border-gray-200 py-4 px-4 text-sm sm:text-base gap-2 sm:gap-0";
+const SUBSECTION_STYLES =
+  "bg-gray-50 font-bold text-customGreen px-4 py-3 border-b border-gray-200 text-base sm:text-lg";
+const SECTION_TITLE_STYLES =
+  "text-2xl sm:text-3xl font-semibold text-customGold mb-4 border-b border-gray-300 pb-2";
+const CONTAINER_STYLES = "mx-auto px-4 sm:px-6 xl:px-24 max-w-7xl";
+
+// Generowanie metadanych dla strony
 export async function generateMetadata({ params }) {
-  const resolvedParams = await params;
-  const { locale } = resolvedParams;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata.pricing" });
 
   const path = routing.pathnames["/cennik"][locale];
@@ -18,17 +29,17 @@ export async function generateMetadata({ params }) {
   return {
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: { canonical: canonicalUrl },
   };
 }
 
-export default function Cennik() {
+// Główny komponent strony cennika
+export default function PricingPage() {
   const t = useTranslations("pricing");
 
+  // Komponent nagłówka tabeli
   const TableHeader = () => (
-    <div className="hidden sm:grid grid-cols-4 bg-gray-100 text-gray-700 font-semibold text-sm sm:text-base py-3 px-4 rounded-t-lg">
+    <div className={TABLE_HEADER_STYLES}>
       <div>Usługa</div>
       <div>Czas</div>
       <div className="text-center">Pn–Pt</div>
@@ -36,9 +47,9 @@ export default function Cennik() {
     </div>
   );
 
-  const Row = ({ name, time, weekday, weekend, price }) => (
-    <div className="flex flex-col sm:grid sm:grid-cols-4 border-b border-gray-200 py-4 px-4 text-sm sm:text-base gap-2 sm:gap-0">
-      {/* Mobile: Stack name, time, and prices vertically with clear labels */}
+  // Komponent wiersza tabeli
+  const PricingRow = ({ name, time, weekday, weekend, price }) => (
+    <div className={ROW_STYLES}>
       <div className="font-medium text-gray-900 sm:font-normal">{name}</div>
       <div className="text-gray-600">
         <span className="sm:hidden font-medium">Czas: </span>
@@ -52,7 +63,7 @@ export default function Cennik() {
       ) : (
         <>
           <div className="text-gray-700 sm:text-center">
-            <span className="sm:hidden font-medium ">Pn–Pt: </span>
+            <span className="sm:hidden font-medium">Pn–Pt: </span>
             {weekday}
           </div>
           <div className="text-gray-700 sm:text-center">
@@ -64,17 +75,15 @@ export default function Cennik() {
     </div>
   );
 
+  // Komponent podsekcji
   const SubSection = ({ title }) => (
-    <div className="bg-gray-50 font-bold text-customGreen px-4 py-3 border-b border-gray-200 text-base sm:text-lg">
-      {title}
-    </div>
+    <div className={SUBSECTION_STYLES}>{title}</div>
   );
 
+  // Komponent sekcji
   const Section = ({ title, children }) => (
     <div className="mb-12">
-      <h2 className="text-2xl sm:text-3xl font-semibold text-customGold mb-4 border-b border-gray-300 pb-2">
-        {title}
-      </h2>
+      <h2 className={SECTION_TITLE_STYLES}>{title}</h2>
       <div className="rounded-lg border border-gray-200 overflow-hidden">
         <TableHeader />
         <div>{children}</div>
@@ -86,22 +95,23 @@ export default function Cennik() {
     <>
       <Header text={t("header")} />
       <section className="py-12 sm:py-16 xl:py-20 bg-white text-gray-900">
+        {/* Przyciski do pobierania PDF */}
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-12 sm:mb-16">
           <ButtonGreen text={t("button")} link="/seniorzy.pdf" />
           <ButtonGreen text={t("button2")} link="/szkoly-przedszkola.pdf" />
         </div>
 
-        <div className="mx-auto px-4 sm:px-6 xl:px-24 max-w-7xl">
-          {/* Active Sport */}
+        <div className={CONTAINER_STYLES}>
+          {/* Sekcja Active Sport */}
           <Section title="Active Sport">
             <SubSection title="Hala sportowa" />
-            <Row
+            <PricingRow
               name="Sporty drużynowe"
               time="1 h"
               weekday="120 zł"
               weekend="140 zł"
             />
-            <Row
+            <PricingRow
               name="Badminton / Tenis"
               time="1 h"
               weekday="50 zł"
@@ -109,55 +119,72 @@ export default function Cennik() {
             />
 
             <SubSection title="Ścianka wspinaczkowa" />
-            <Row
+            <PricingRow
               name="Karnet 5x na dowolne zajęcia"
               time="5 wejść"
               price="200 zł"
             />
-            <Row
+            <PricingRow
               name="Zajęcia grupowe z operatorem"
               time="1 h"
               price="250 zł"
             />
 
             <SubSection title="Squash" />
-            <Row name="Bilet" time="1 h" weekday="50 zł" weekend="55 zł" />
-            <Row name="Karnet 5x" time="5 × 1 h" price="220 zł" />
+            <PricingRow
+              name="Bilet"
+              time="1 h"
+              weekday="50 zł"
+              weekend="55 zł"
+            />
+            <PricingRow name="Karnet 5x" time="5 × 1 h" price="220 zł" />
 
             <SubSection title="Wypożyczalnia rowerów" />
-            <Row name="Rower górski + osprzęt" time="4 h" price="30 zł" />
-            <Row name="Rower górski + osprzęt" time="doba" price="50 zł" />
-            <Row name="Rower górski + osprzęt" time="tydzień" price="250 zł" />
+            <PricingRow
+              name="Rower górski + osprzęt"
+              time="4 h"
+              price="30 zł"
+            />
+            <PricingRow
+              name="Rower górski + osprzęt"
+              time="doba"
+              price="50 zł"
+            />
+            <PricingRow
+              name="Rower górski + osprzęt"
+              time="tydzień"
+              price="250 zł"
+            />
           </Section>
 
-          {/* Kids & Fun */}
+          {/* Sekcja Kids & Fun */}
           <Section title="Kids & Fun">
             <SubSection title="Sala zabaw + Sala multimedialna" />
-            <Row
+            <PricingRow
               name="Bilet wstępu"
               time="0,5 h"
               weekday="15 zł"
               weekend="20 zł"
             />
-            <Row
+            <PricingRow
               name="Bilet wstępu"
               time="1 h"
               weekday="25 zł"
               weekend="30 zł"
             />
-            <Row
+            <PricingRow
               name="Bilet wstępu"
               time="2 h"
               weekday="35 zł"
               weekend="40 zł"
             />
-            <Row
+            <PricingRow
               name="Bilet wstępu"
               time="bez limitu"
               weekday="50 zł"
               weekend="60 zł"
             />
-            <Row
+            <PricingRow
               name="Karnet 5 wejść po 1 h (dowolność wykorzystania)"
               time="5x 1 h"
               weekday="100 zł"
@@ -165,26 +192,31 @@ export default function Cennik() {
             />
 
             <SubSection title="Sala gier" />
-            <Row name="Bilard" time="1 h" weekday="30 zł" weekend="35 zł" />
-            <Row
+            <PricingRow
+              name="Bilard"
+              time="1 h"
+              weekday="30 zł"
+              weekend="35 zł"
+            />
+            <PricingRow
               name="Tenis stołowy"
               time="1 h"
               weekday="20 zł"
               weekend="25 zł"
             />
-            <Row
+            <PricingRow
               name="Air Hockey"
               time="15 min"
               weekday="12 zł"
               weekend="13 zł"
             />
-            <Row
+            <PricingRow
               name="Piłkarzyki"
               time="15 min"
               weekday="12 zł"
               weekend="13 zł"
             />
-            <Row
+            <PricingRow
               name="Sala gier – wyłączność"
               time="1 h"
               weekday="150 zł"
@@ -192,64 +224,85 @@ export default function Cennik() {
             />
 
             <SubSection title="Mini kręgielnia" />
-            <Row name="1 tor" time="1 h" weekday="45 zł" weekend="55 zł" />
-            <Row
+            <PricingRow
+              name="1 tor"
+              time="1 h"
+              weekday="45 zł"
+              weekend="55 zł"
+            />
+            <PricingRow
               name="1 tor"
               time="2 h (lub 2 tory * 1 h)"
               weekday="80 zł"
               weekend="100 zł"
             />
-            <Row name="Karnet 5 wejść po 1 h" time="5 * 1 h" price="210 zł" />
+            <PricingRow
+              name="Karnet 5 wejść po 1 h"
+              time="5 * 1 h"
+              price="210 zł"
+            />
           </Section>
 
-          {/* Fitness Sport */}
+          {/* Sekcja Fitness Sport */}
           <Section title="Fitness Sport">
             <SubSection title="Siłownia" />
-            <Row
+            <PricingRow
               name="Bilet jednorazowy"
               time="11:00 – 21:00"
               weekday="15 zł"
               weekend="20 zł"
             />
-            <Row name="Karnet 5x OPEN" time="08:00 – 21:00" price="59 zł" />
-            <Row name="Karnet poranny" time="08:00 – 11:00" price="69 zł" />
-            <Row
+            <PricingRow
+              name="Karnet 5x OPEN"
+              time="08:00 – 21:00"
+              price="59 zł"
+            />
+            <PricingRow
+              name="Karnet poranny"
+              time="08:00 – 11:00"
+              price="69 zł"
+            />
+            <PricingRow
               name="Karnet miesięczny OPEN"
               time="bez limitów"
               price="129 zł"
             />
-            <Row
+            <PricingRow
               name="Karnet uczeń/student/senior OPEN"
               time="bez limitów"
               price="109 zł"
             />
 
             <SubSection title="Fitness" />
-            <Row
+            <PricingRow
               name="Bilet jednorazowy"
               time="1 h"
               price="20 zł dzieci / 30 zł dorośli"
             />
-            <Row
+            <PricingRow
               name="Karnet 5 wejść"
               time="5 ×"
               price="80 zł dzieci / 135 zł dorośli"
             />
-            <Row name="OPEN" time="3 × / tydz" price="199 zł" />
+            <PricingRow name="OPEN" time="3 × / tydz" price="199 zł" />
           </Section>
 
-          {/* Wypożyczalnia */}
+          {/* Sekcja Wypożyczalnia */}
           <Section title="Wypożyczalnia">
-            <Row name="Piłka (gry zespołowe)" time="1 h" price="10 zł" />
-            <Row name="Komplet do badmintona" time="1 h" price="10 zł" />
-            <Row name="Komplet do tenisa stołowego" time="1 h" price="5 zł" />
-            <Row name="Piłka do Squash" time="1 h" price="5 zł" />
-            <Row name="Rakieta do Squash" time="1 h" price="5 zł" />
-            <Row name="Komplet do Squash" time="1 h" price="10 zł" />
-            <Row name="Buty wspinaczkowe" time="1,5 h" price="15 zł" />
+            <PricingRow name="Piłka (gry zespołowe)" time="1 h" price="10 zł" />
+            <PricingRow name="Komplet do badmintona" time="1 h" price="10 zł" />
+            <PricingRow
+              name="Komplet do tenisa stołowego"
+              time="1 h"
+              price="5 zł"
+            />
+            <PricingRow name="Piłka do Squash" time="1 h" price="5 zł" />
+            <PricingRow name="Rakieta do Squash" time="1 h" price="5 zł" />
+            <PricingRow name="Komplet do Squash" time="1 h" price="10 zł" />
+            <PricingRow name="Buty wspinaczkowe" time="1,5 h" price="15 zł" />
           </Section>
 
-          {/* Notes: Increased font size and spacing for mobile */}
+          {/* Uwagi i rabaty */}
           <div className="text-sm sm:text-base text-gray-600 mt-10 space-y-3 sm:space-y-2">
             <p>
               <strong>RABAT:</strong> 10 zł za kontynuację karnetów
