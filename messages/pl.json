@@ -1166,6 +1166,10 @@
         "lokalne-legendy-i-historie": {
             "title": "Lokalne legendy i historie Muszyny | Blog Muszynova",
             "description": "Poznaj tajemnicze opowieści z Muszyny – od Białej Damy po zaklęte skarby. Odkryj magię regionu przez legendy i lokalne historie na blogu Muszynova."
+        },
+        "polityka-cookies": {
+            "title": "Nasza Polityka Cookies Muszynova",
+            "description": "Dowiedz się, jak używamy plików cookies na muszynova.pl, aby zapewnić Ci najlepsze doświadczenie, personalizować treści i analizować ruch na stronie. Sprawdź, jak możesz zarządzać ustawieniami cookies!"
         }
     },
     "notfound": {
@@ -1177,5 +1181,110 @@
         "title": "Coś poszło nie tak!",
         "text": "Przepraszamy, wystąpił problem. Spróbuj ponownie później lub skontaktuj się z nami, jeśli problem będzie się powtarzał.",
         "button": "Spróbuj ponownie"
+    },
+    "polityka-cookies": {
+        "header": "Polityka Cookies",
+        "text": "Na stronie stosujemy pliki cookies, aby zapewnić najlepsze doświadczenie użytkownika, wspierać funkcjonalność strony, analizować ruch oraz dostarczać spersonalizowane reklamy. Poniżej wyjaśniamy, jakie cookies stosujemy, w jakim celu i jak możesz nimi zarządzać.",
+        "which": {
+            "header": "Jakie cookies stosujemy?",
+            "list": {
+                "essential": {
+                    "header": "Niezbędne cookies",
+                    "text": "Umożliwiają działanie strony, np. zapamiętują Twoje ustawienia językowe (poprzez Next-Intl) lub umożliwiają korzystanie z funkcji rezerwacji online. Te cookies są niezbędne i nie wymagają Twojej zgody."
+                },
+                "analytics": {
+                    "header": "Analityczne cookies",
+                    "text": "Te cookies są aktywowane tylko po wyrażeniu Twojej zgody poprzez baner cookies.",
+                    "items": {
+                        "ga4": "Google Analytics 4 (via Google Tag Manager): Używamy do analizy ruchu na stronie, np. liczby odwiedzin, czasu spędzonego na stronie czy źródeł odwiedzin. Dane są przekazywane do Google (USA) w celu optymalizacji strony i poprawy jej użyteczności."
+                    }
+                },
+                "advertising": {
+                    "header": "Reklamowe cookies",
+                    "text": "Te cookies są aktywowane tylko po wyrażeniu Twojej zgody poprzez baner cookies.",
+                    "items": {
+                        "googleAds": "Google Ads (via Google Tag Manager): Używamy do dostarczania spersonalizowanych reklam, np. remarketingu, w oparciu o Twoje zachowanie na stronie. Dane są przekazywane do Google (USA) w celu optymalizacji kampanii reklamowych."
+                    }
+                }
+            }
+        },
+        "additional": {
+            "header": "Dodatkowe narzędzia",
+            "text": "Korzystamy z Google Search Console, które nie używa cookies, ale pomaga nam monitorować wydajność strony w wynikach wyszukiwania Google, np. analizować słowa kluczowe i poprawiać SEO."
+        },
+        "how": {
+            "header": "Jak zarządzać cookies?",
+            "text": "Przy pierwszej wizycie na naszej stronie wyświetlamy baner cookies, który pozwala Ci:",
+            "list": {
+                "acceptAll": "Zaakceptować wszystkie cookies, włączając cookies analityczne (Google Analytics 4) i reklamowe (Google Ads).",
+                "rejectNonEssential": "Odrzucić cookies analityczne i reklamowe, co oznacza, że nie będziemy używać Google Analytics 4 ani Google Ads do śledzenia Twojej aktywności.",
+                "customize": "Dostosować ustawienia, wybierając, na które kategorie cookies wyrażasz zgodę (np. tylko reklamowe lub tylko analityczne).",
+                "manage": "Twoje preferencje są zapisywane w pamięci przeglądarki (`localStorage`) i stosowane przy kolejnych wizytach. Możesz zmienić swoje ustawienia w dowolnym momencie, usuwając dane cookies w ustawieniach przeglądarki."
+            },
+            "browsers": {
+                "text": "Możesz także zarządzać cookies w ustawieniach swojej przeglądarki. Oto instrukcje dla popularnych przeglądarek:",
+                "links": {
+                    "chrome": "[Google Chrome](https://support.google.com/chrome/answer/95647)",
+                    "firefox": "[Firefox](https://support.mozilla.org/pl/kb/usuwanie-ciasteczek)",
+                    "safari": "[Safari](https://support.apple.com/pl-pl/guide/safari/sfri11471/mac)",
+                    "edge": "[Microsoft Edge](https://support.microsoft.com/pl-pl/microsoft-edge/usuwanie-plik%C3%B3w-cookie-w-przegl%C4%85darce-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)"
+                }
+            }
+        },
+        "howlong": {
+            "header": "Jak długo przechowujemy cookies?",
+            "text": "Czas przechowywania cookies zależy od ich rodzaju:",
+            "list": {
+                "essential": "Niezbędne cookies: Zazwyczaj wygasają po zakończeniu sesji lub w krótkim czasie (np. kilka dni).",
+                "analytics": "Analityczne cookies: Mogą być przechowywane do 2 lat (np. Google Analytics 4).",
+                "advertising": "Reklamowe cookies: Mogą być przechowywane do 2 lat (np. Google Ads)."
+            }
+        },
+        "transfer": {
+            "header": "Transfer danych do krajów trzecich",
+            "text": "Dane zbierane przez Google Analytics 4, Google Ads (via Google Tag Manager) są przekazywane do USA. Transfer danych jest zgodny z wymogami GDPR, w oparciu o standardowe klauzule umowne (SCC) lub inne zatwierdzone mechanizmy ochrony danych. Więcej informacji znajdziesz w politykach prywatności:",
+            "links": {
+                "google": "[Polityka prywatności Google](https://policies.google.com/privacy)",
+                "microsoft": "[Polityka prywatności Microsoft](https://privacy.microsoft.com/pl-pl/privacystatement)"
+            }
+        },
+        "change": {
+            "header": "Jak zmienić ustawienia zgody?",
+            "text": "Jeśli chcesz zmienić swoje preferencje cookies, wyczyść cookies w ustawieniach przeglądarki, co spowoduje ponowne wyświetlenie banera cookies przy następnej wizycie."
+        },
+        "contact": {
+            "header": "Kontakt",
+            "text": "Jeśli masz pytania dotyczące naszej polityki cookies lub przetwarzania danych, skontaktuj się z nami:"
+        },
+        "banner": {
+            "header": "Zgoda na ciasteczka",
+            "text": "Cześć! Używamy cookies (np. Google Analytics, Google Ads), aby Twoja wizyta na triotravel.pl była jeszcze lepsza – od personalizacji po analizę ruchu. Masz pełną kontrolę nad ustawieniami!",
+            "link": "Dowiedz się więcej",
+            "buttons": {
+                "acceptAll": "Akceptuj wszystko",
+                "customize": "Dostosuj",
+                "rejectAll": "Odrzuć"
+            },
+            "settings": {
+                "header": "Ustawienia cookies",
+                "text": "Możesz wybrać, które cookies chcesz zaakceptować. Niezbędne cookies są zawsze włączone, aby strona działała prawidłowo.",
+                "essential": {
+                    "label": "Niezbędne cookies (zawsze aktywne)",
+                    "description": "Zapewniają działanie strony, np. zapamiętywanie języka."
+                },
+                "analytics": {
+                    "label": "Analityczne cookies",
+                    "description": "Pomagają nam analizować ruch i poprawiać UX (np. Google Analytics)."
+                },
+                "advertising": {
+                    "label": "Reklamowe cookies",
+                    "description": "Umożliwiają personalizację reklam (np. Google Ads)."
+                },
+                "buttons": {
+                    "save": "Zapisz ustawienia",
+                    "cancel": "Anuluj"
+                }
+            }
+        }
     }
 }

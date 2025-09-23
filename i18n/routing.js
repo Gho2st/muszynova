@@ -198,6 +198,12 @@ export const routing = defineRouting({
       sk: "/blog/miestne-legendy-a-príbehy",
       ua: "/blog/mistsevi-lehendy-ta-istoriyi",
     },
+    "/polityka-cookies": {
+      pl: "/polityka-cookies",
+      en: "/cookie-policy",
+      sk: "/pravidla-cookies",
+      ua: "/fayliv-cookie",
+    },
   },
 });
 

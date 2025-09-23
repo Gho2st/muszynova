@@ -1166,6 +1166,10 @@
         "lokalne-legendy-i-historie": {
             "title": "Miestne legendy a príbehy z Muszyny | Blog Muszynova",
             "description": "Objavte tajomné príbehy z Muszyny – od Bielej pani po ukryté poklady. Spoznajte čaro regiónu cez legendy a miestne rozprávania na blogu Muszynova."
+        },
+        "polityka-cookies": {
+            "title": "Naša politika cookies Muszynova",
+            "description": "Zistite, ako používame súbory cookies na muszynova.sk, aby sme vám poskytli najlepšiu skúsenosť, personalizovali obsah a analyzovali návštevnosť stránky. Skontrolujte, ako môžete spravovať nastavenia cookies!"
         }
     },
     "notfound": {
@@ -1177,5 +1181,110 @@
         "title": "Niečo sa pokazilo!",
         "text": "Ospravedlňujeme sa, vyskytol sa problém. Skúste to znova neskôr alebo nás kontaktujte, ak sa problém bude opakovať.",
         "button": "Skúsiť znova"
+    },
+    "polityka-cookies": {
+        "header": "Politika cookies",
+        "text": "Na našej webovej stránke používame súbory cookies, aby sme zabezpečili najlepšiu používateľskú skúsenosť, podporili funkčnosť stránky, analyzovali návštevnosť a poskytovali personalizované reklamy. Nižšie vysvetľujeme, aké cookies používame, na aký účel a ako ich môžete spravovať.",
+        "which": {
+            "header": "Aké cookies používame?",
+            "list": {
+                "essential": {
+                    "header": "Nevyhnutné cookies",
+                    "text": "Umožňujú fungovanie stránky, napr. ukladajú vaše jazykové nastavenia (prostredníctvom Next-Intl) alebo umožňujú využívanie funkcií online rezervácie. Tieto cookies sú nevyhnutné a nevyžadujú váš súhlas."
+                },
+                "analytics": {
+                    "header": "Analytické cookies",
+                    "text": "Tieto cookies sú aktivované iba po udelení vášho súhlasu cez banner cookies.",
+                    "items": {
+                        "ga4": "Google Analytics 4 (cez Google Tag Manager): Používame na analýzu návštevnosti stránky, napr. počtu návštev, času stráveného na stránke alebo zdrojov návštev. Údaje sú prenášané do Google (USA) na optimalizáciu stránky a zlepšenie jej použiteľnosti."
+                    }
+                },
+                "advertising": {
+                    "header": "Reklamné cookies",
+                    "text": "Tieto cookies sú aktivované iba po udelení vášho súhlasu cez banner cookies.",
+                    "items": {
+                        "googleAds": "Google Ads (cez Google Tag Manager): Používame na poskytovanie personalizovaných reklám, napr. remarketingu, na základe vášho správania na stránke. Údaje sú prenášané do Google (USA) na optimalizáciu reklamných kampaní."
+                    }
+                }
+            }
+        },
+        "additional": {
+            "header": "Dodatočné nástroje",
+            "text": "Používame Google Search Console, ktorá nepoužíva cookies, ale pomáha nám monitorovať výkonnosť stránky vo výsledkoch vyhľadávania Google, napr. analyzovať kľúčové slová a zlepšovať SEO."
+        },
+        "how": {
+            "header": "Ako spravovať cookies?",
+            "text": "Pri prvej návšteve našej stránky zobrazujeme banner cookies, ktorý vám umožňuje:",
+            "list": {
+                "acceptAll": "Prijatie všetkých cookies, vrátane analytických (Google Analytics 4) a reklamných (Google Ads).",
+                "rejectNonEssential": "Odmietnuť analytické a reklamné cookies, čo znamená, že nebudeme používať Google Analytics 4 ani Google Ads na sledovanie vašej aktivity.",
+                "customize": "Prispôsobiť nastavenia výberom kategórií cookies, s ktorými súhlasíte (napr. iba reklamné alebo iba analytické).",
+                "manage": "Vaše preferencie sú uložené v pamäti prehliadača (`localStorage`) a uplatňujú sa pri nasledujúcich návštevách. Svoje nastavenia môžete kedykoľvek zmeniť vymazaním cookies v nastaveniach prehliadača."
+            },
+            "browsers": {
+                "text": "Cookies môžete spravovať aj v nastaveniach vášho prehliadača. Tu sú pokyny pre populárne prehliadače:",
+                "links": {
+                    "chrome": "[Google Chrome](https://support.google.com/chrome/answer/95647)",
+                    "firefox": "[Firefox](https://support.mozilla.org/sk/kb/odstranenie-cookies)",
+                    "safari": "[Safari](https://support.apple.com/sk-sk/guide/safari/sfri11471/mac)",
+                    "edge": "[Microsoft Edge](https://support.microsoft.com/sk-sk/microsoft-edge/odstr%C3%A1nenie-s%C3%BAborov-cookie-v-prehliada%C4%8Di-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)"
+                }
+            }
+        },
+        "howlong": {
+            "header": "Ako dlho uchovávame cookies?",
+            "text": "Dĺžka uchovávania cookies závisí od ich typu:",
+            "list": {
+                "essential": "Nevyhnutné cookies: Zvyčajne vypršia po skončení relácie alebo v krátkom čase (napr. niekoľko dní).",
+                "analytics": "Analytické cookies: Môžu byť uchovávané až 2 roky (napr. Google Analytics 4).",
+                "advertising": "Reklamné cookies: Môžu byť uchovávané až 2 roky (napr. Google Ads)."
+            }
+        },
+        "transfer": {
+            "header": "Prenos údajov do tretích krajín",
+            "text": "Údaje zhromažďované cez Google Analytics 4 a Google Ads (cez Google Tag Manager) sú prenášané do USA. Prenos údajov je v súlade s požiadavkami GDPR, na základe štandardných zmluvných doložiek (SCC) alebo iných schválených mechanizmov ochrany údajov. Viac informácií nájdete v politikách ochrany osobných údajov:",
+            "links": {
+                "google": "[Zásady ochrany osobných údajov Google](https://policies.google.com/privacy)",
+                "microsoft": "[Zásady ochrany osobných údajov Microsoft](https://privacy.microsoft.com/sk-sk/privacystatement)"
+            }
+        },
+        "change": {
+            "header": "Ako zmeniť nastavenia súhlasu?",
+            "text": "Ak chcete zmeniť svoje preferencie cookies, vymažte cookies v nastaveniach prehliadača, čo spôsobí opätovné zobrazenie bannera cookies pri ďalšej návšteve."
+        },
+        "contact": {
+            "header": "Kontakt",
+            "text": "Ak máte otázky týkajúce sa našej politiky cookies alebo spracovania údajov, kontaktujte nás:"
+        },
+        "banner": {
+            "header": "Súhlas s cookies",
+            "text": "Ahoj! Používame cookies (napr. Google Analytics, Google Ads), aby tvoja návšteva na triotravel.sk bola ešte lepšia – od personalizácie po analýzu návštevnosti. Máš plnú kontrolu nad nastaveniami!",
+            "link": "Zistiť viac",
+            "buttons": {
+                "acceptAll": "Prijmúť všetko",
+                "customize": "Prispôsobiť",
+                "rejectAll": "Odmietnuť"
+            },
+            "settings": {
+                "header": "Nastavenia cookies",
+                "text": "Môžeš si vybrať, ktoré cookies chceš prijať. Nevyhnutné cookies sú vždy aktívne, aby stránka fungovala správne.",
+                "essential": {
+                    "label": "Nevyhnutné cookies (vždy aktívne)",
+                    "description": "Zabezpečujú fungovanie stránky, napr. zapamätanie jazyka."
+                },
+                "analytics": {
+                    "label": "Analytické cookies",
+                    "description": "Pomáhajú nám analyzovať návštevnosť a zlepšovať UX (napr. Google Analytics)."
+                },
+                "advertising": {
+                    "label": "Reklamné cookies",
+                    "description": "Umožňujú personalizáciu reklám (napr. Google Ads)."
+                },
+                "buttons": {
+                    "save": "Uložiť nastavenia",
+                    "cancel": "Zrušiť"
+                }
+            }
+        }
     }
 }

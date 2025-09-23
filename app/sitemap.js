@@ -344,5 +344,16 @@ export default function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/polityka-cookies`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/cookies-policy`,
+          sk: `${baseUrl}/sk/pravidla-cookies`,
+          ua: `${baseUrl}/ua/fayliv-cookie`,
+        },
+      },
+    },
   ];
 }
