@@ -91,7 +91,7 @@ export default function Cennik() {
           <ButtonGreen text={t("button2")} link="/szkoly-przedszkola.pdf" />
         </div>
 
-        <div className="mx-auto px-4 sm:px-6 xl:px-24 max-w-8xl">
+        <div className="mx-auto px-4 sm:px-6 xl:px-24 max-w-7xl">
           {/* Active Sport */}
           <Section title="Active Sport">
             <SubSection title="Hala sportowa" />
