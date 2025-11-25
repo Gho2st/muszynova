@@ -33,6 +33,7 @@ const PixelTracker = () => {
           `,
         }}
       />
+      {/* pamietaj by dac env */}
       <noscript>
         <Image
           alt="facebook-pixel"
