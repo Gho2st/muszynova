@@ -345,6 +345,28 @@ export default function sitemap() {
       },
     },
     {
+      url: `${baseUrl}/blog/lokalne-legendy-i-historie`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/local-legends-and-stories`,
+          sk: `${baseUrl}/sk/blog/miestne-legendy-a-príbehy`,
+          ua: `${baseUrl}/ua/blog/mistsevi-lehendy-ta-istoriyi`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/blog/krynica-15-najlepszych-atrakcji`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/krynica-zdroj-15-best-attractions`,
+          sk: `${baseUrl}/sk/blog/krynica-15-najlepsich-atrakcii`,
+          ua: `${baseUrl}/ua/blog/krynytsya-15-naikrashchykh-atraktsii`,
+        },
+      },
+    },
+    {
       url: `${baseUrl}/polityka-cookies`,
       lastModified: new Date(),
       alternates: {

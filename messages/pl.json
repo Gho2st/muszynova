@@ -224,16 +224,35 @@
         "header": "Poczytaj więcej na naszym",
         "link": "blogu",
         "header2": "Nasz Blog",
+        "searchPlaceholder": "Szukaj artykułów...",
+        "noArticlesFound": "Nie znaleziono artykułów pasujących do wyszukiwania.",
+        "previousButton": "Poprzednia",
+        "nextButton": "Następna",
+        "readMoreButton": "Czytaj więcej",
         "header3": "Nasze Artykuły",
         "text": "Odkryj Muszynę na nowo z Muszynovą! Nasz blog to miejsce, w którym dzielimy się inspiracjami, lokalnymi ciekawostkami, pomysłami na aktywny wypoczynek i najnowszymi wydarzeniami z Parku Rekreacyjno-Sportowego Muszynova. Poznaj Muszynę od środka – oczami pasjonatów natury, sportu i beskidzkiej gościnności.",
         "button": "Czytaj więcej",
-        "posts": {
+        "recentPosts": {
+            "header": "Ostatnie Wpisy",
+            "button": "Czytaj więcej...",
+            "error": "Brak dostępnych artykułów"
+        },
+        "favourites": {
+            "header": "Wyróżnione",
+            "button": "Czytaj więcej...",
+            "error": "Brak dostępnych artykułów"
+        },
+        "blogPosts": {
             "1": {
-                "header": "Co zobaczyć w Muszynie? 10 najlepszych atrakcji",
+                "title": "Co zobaczyć w Muszynie? 10 najlepszych atrakcji",
                 "text": "Muszyna, malownicze uzdrowisko w Beskidzie Sądeckim, położone w Dolinie Popradu, to idealne miejsce na wypoczynek dla miłośników natury, historii i aktywnego spędzania czasu. Znana z leczniczych wód mineralnych, bogatej historii i pięknych krajobrazów, przyciąga turystów przez cały rok. Przygotowaliśmy dla Was listę 10 najlepszych atrakcji, które sprawią, że pokochacie to miejsce. A na końcu zapraszamy do odwiedzenia naszego Parku Rekreacyjno-Sportowego Muszynova, gdzie czeka na Was mnóstwo rozrywki!",
                 "header2": "Przyroda i relaks w Muszynie",
                 "header3": "Dlaczego warto odwiedzić Muszynę?",
                 "button": "Co zobaczyć w Muszynie?",
+                "meta": {
+                    "title": "Top 10 najlepszych atrakcji w Muszynie",
+                    "description": "Poznaj 10 najciekawszych atrakcji Muszyny – od ogrodów tematycznych po historyczne zamki. Idealna lista na każdą porę roku."
+                },
                 "list": {
                     "1": "1. Ogrody Sensoryczne (Ogrody Zmysłów) - to największa atrakcja Muszyny, położona na stokach Suchej Góry. Podzielone na strefy – zdrowia, zapachów, dźwięku, smaku i dotyku – oferują terapeutyczne doznania dla wszystkich zmysłów. Spacer wśród pachnących ziół, szumiących strumieni i kolorowych roślin to idealny sposób na relaks. Na szczycie znajduje się wieża widokowa z panoramicznym widokiem na Beskid Sądecki i Tatry w pogodne dni.",
                     "2": "2. Ogrody Biblijne - Przy kościele św. Józefa Oblubieńca NMP znajdują się Ogrody Biblijne – miejsce refleksji i spokoju. Zaprojektowane z myślą o medytacji, prezentują sceny z Pisma Świętego w kreatywny sposób, np. staw przypominający historię Mojżesza czy drzewo figowe symbolizujące raj. Wstęp jest bezpłatny, a obok znajduje się źródło wody mineralnej „Maryja”.",
@@ -259,11 +278,15 @@
                 }
             },
             "2": {
-                "header": "Najlepsze szlaki turystyczne w Muszynie - odkryj Beskid Sądecki",
+                "title": "Najlepsze szlaki turystyczne w Muszynie - odkryj Beskid Sądecki",
                 "text": "Muszyna, położona w sercu Beskidu Sądeckiego, to idealna baza wypadowa dla miłośników górskich wędrówek. Otoczona malowniczymi dolinami Popradu, lasami i szczytami, oferuje szlaki turystyczne o różnym stopniu trudności – od spacerowych tras dla rodzin po wymagające pętle dla doświadczonych piechurów. Poniżej przedstawiamy najlepsze szlaki w okolicach Muszyny, które pozwolą Ci odkryć piękno tego regionu. Na koniec zapraszamy do Parku Rekreacyjno-Sportowego Muszynova, gdzie po wędrówce czeka na Was aktywny relaks i regionalne smaki!",
                 "header2": "Dlaczego Muszyna to raj dla turystów?",
                 "header3": "Najlepsze szlaki turystyczne w Muszynie",
                 "button": "Najlepsze szlaki",
+                "meta": {
+                    "title": "Najlepsze Szlaki Turystyczne w Muszynie",
+                    "description": "Sprawdź najlepsze szlaki turystyczne w Muszynie – propozycje tras pieszych, widokowych i rodzinnych. Dla początkujących i zaawansowanych."
+                },
                 "list": {
                     "1": "1. Szlak na Górę Malnik – punkt widokowy dla każdego Długość: ok. 4,5 km (pętla) Czas przejścia: ok. 1,5 h Poziom trudności: Łatwy Opis: Góra Malnik (726 m n.p.m.) to jeden z najlepszych punktów widokowych w Muszynie, idealny dla początkujących i rodzin. Żółty szlak zaczyna się w centrum Muszyny, prowadzi obok starego cmentarza żydowskiego i wspina się na szczyt, gdzie w 2023 roku otwarto 40-metrową wieżę widokową. Z wieży roztacza się panorama na Beskid Sądecki, a przy dobrej pogodzie widać nawet Tatry. Trasa jest krótka, dobrze oznakowana i oferuje łagodne podejścia.",
                     "2": "2. Szlak na Jaworzynę Krynicką – klasyka Beskidu Sądeckiego Długość: ok. 9 km (z Muszyny do Złockiego, dalej na szczyt) Czas przejścia: ok. 3-4 h w jedną stronę Poziom trudności: Średni/Wymagający Opis: Zielony szlak z Muszyny przez Złockie na Jaworzynę Krynicką (1114 m n.p.m.) to obowiązkowy punkt dla miłośników gór. Po drodze mijasz pijalnię wód mineralnych „Cechini” i cerkiew św. Dymitra w Złockiem, która jest częścią Szlaku Architektury Drewnianej. Szlak prowadzi przez lasy i polany, a na szczycie czeka schronisko PTTK oraz widoki na Tatry, Pieniny i Beskid Niski. Dla mniej wprawionych istnieje opcja skrócenia trasy, korzystając z kolejki gondolowej z Krynicy-Zdroju.",
@@ -284,11 +307,15 @@
                 }
             },
             "3": {
-                "header": "Jak spędzić weekend w Muszynie? Plan na idealny wypad",
+                "title": "Jak spędzić weekend w Muszynie? Plan na idealny wypad",
                 "text": "Muszyna, urokliwe uzdrowisko w Beskidzie Sądeckim, to doskonałe miejsce na weekendowy wypad. Położona w Dolinie Popradu, oferuje połączenie relaksu, aktywności na łonie natury, bogatej historii i regionalnych smaków. Przygotowaliśmy dla Ciebie plan na idealny weekend w Muszynie, który pozwoli odkryć największe atrakcje miasta i okolic. Na deser zapraszamy do naszego Parku Rekreacyjno-Sportowego Muszynova, gdzie czeka na Ciebie mnóstwo rozrywki! Oto propozycja na dwa dni pełne wrażeń.",
                 "header2": "Dlaczego Muszyna na weekend?",
                 "header3": "Najlepsze szlaki turystyczne w Muszynie",
                 "button": "Spędź weekend",
+                "meta": {
+                    "title": "Jak spędzić weekend w Muszynie",
+                    "description": "Zaplanuj idealny weekend w Muszynie – atrakcje, aktywności i lokalne smaki, które sprawią, że pokochasz to miejsce."
+                },
                 "list": {
                     "1": "Dzień 1: Relaks i historia - Zacznij weekend od spaceru po Ogrodach Sensorycznych na stokach Suchej Góry, gdzie zrelaksujesz się wśród pachnących ziół i szumiących strumieni, podziwiając Beskid Sądecki z wieży widokowej. Następnie odwiedź ruiny średniowiecznego zamku na Górze Baszta, skąd roztacza się widok na dolinę Popradu. Zjedz obiad w Karczmie nad Popradem, próbując pierogów z bryndzą lub pstrąga. Po posiłku udaj się do Ogrodów Biblijnych przy kościele św. Józefa, by w ciszy podziwiać aranżacje inspirowane Pismem Świętym i spróbować wody ze źródła „Maryja”. Zajrzyj też do pijalni „Milusia”, by skosztować leczniczej „Muszynianki”. Dzień zakończ spacerem po Parku Zdrojowym Zapopradzie, pełnym ścieżek i stawów, a na kolację wybierz Restaurację Muszynova, gdzie czekają regionalne smaki.",
                     "2": "Dzień 2: Natura i aktywność - Drugi dzień zacznij od wędrówki na Górę Malnik, gdzie łatwy szlak prowadzi do wieży widokowej z 2023 roku z panoramą Beskidu Sądeckiego. Potem przeżyj przygodę na rodzinnym spływie pontonowym Popradem, organizowanym przez Poprad Rafting. Po spływie zjedz obiad w Gospodzie u Krakowiaka w Złockiem, smakując żurek łemkowski lub domowe dania. Następnie odwiedź Muzeum Regionalne w XVII-wiecznym zajeździe, by poznać historię Muszyny i kulturę Łemków. Spędź chwilę w centrum na zakup pamiątek lub kawę w Cafe Muszyna. Weekend zakończ w Parku Rekreacyjno-Sportowym Muszynova, gdzie możesz zagrać w siatkówkę, spróbować wspinaczki na ściance, wypożyczyć rower lub poćwiczyć na siłowni. Dzieci pokochają salę zabaw z labiryntami i zjeżdżalniami. Na kolację wybierz restaurację parku z regionalnymi daniami."
@@ -306,11 +333,15 @@
                 }
             },
             "4": {
-                "header": "Aktywny wypoczynek w Beskidzie Sądeckim",
+                "title": "Aktywny wypoczynek w Beskidzie Sądeckim",
                 "text": "Okolice Muszyny i Krynicy-Zdroju to miejsca, gdzie natura spotyka się z kulturą, a aktywny wypoczynek przeplata z relaksem. Spływ Popradem, rowerowa przejażdżka szlakiem Velo Krynica czy spacer po deptaku w Krynicy to tylko niektóre z możliwości, jakie oferuje ten region. Odwiedź Muszynę, skorzystaj z oferty wypożyczalni rowerów Muszynova i odkryj Beskid Sądecki na własną rękę!",
                 "header2": "Dlaczego Muszyna na weekend?",
                 "header3": "Okolice Muszyny i Krynicy to raj dla miłośników aktywności",
                 "button": "Aktywny wypoczynek",
+                "meta": {
+                    "title": "Aktywny wypoczynek w Muszynie i Krynicy-Zdroju – Beskid Sądecki",
+                    "description": "Odkryj uroki Beskidu Sądeckiego! Spływy Popradem, trasy rowerowe Velo Krynica, wędrówki po górach i relaks w Muszynie. Idealne miejsce na weekend pełen aktywności i natury."
+                },
                 "list": {
                     "1": "Szlaki piesze i rowerowe - Relaks i historia - Beskid Sądecki oferuje mnóstwo szlaków turystycznych o różnym stopniu trudności. Z Muszyny warto wybrać się zielonym szlakiem na Jaworzynę Krynicką (1114 m n.p.m.), skąd rozpościera się zapierająca dech panorama na Beskidy, a nawet Tatry w pogodne dni. Trasa ta prowadzi przez rezerwat „Las Lipowy Obrożyska” i ruiny zamku w Muszynie, co czyni ją nie tylko przyrodniczą, ale i historyczną przygodą. Dla rowerzystów idealnym wyborem będzie szlak Velo Krynica, liczący około 12 km, który prowadzi z Krynicy przez Powroźnik do Muszyny. Trasa jest komfortowa, odseparowana od ruchu samochodowego, co sprawia, że jest bezpieczna także dla rodzin z dziećmi. W Krynicy dostępne są wypożyczalnie rowerów, w tym elektrycznych, które ułatwiają pokonywanie wzniesień.",
                     "2": "Spływy Popradem - Natura i aktywność - Rzeka Poprad, przepływająca przez Muszynę, to doskonałe miejsce na spływy kajakowe lub pontonowe. Spływ z Muszyny do Żegiestowa (ok. 10 km) trwa około 2 godzin i jest łagodny, co czyni go idealnym dla początkujących oraz rodzin. Malownicze krajobrazy Doliny Popradu, zalesione wzgórza i spokojny nurt rzeki sprawiają, że to niezapomniana przygoda. Organizatorzy spływów, tacy jak lokalne firmy w Muszynie, zapewniają sprzęt i transport powrotny, co gwarantuje komfort i bezpieczeństwo. Po zakończeniu spływu zachęcamy do kontynuowania aktywnego dnia w Muszynie! Wypożycz rowery w jednej z lokalnych wypożyczalni, takich jak Muszynova, i odkryj urokliwe trasy rowerowe w okolicy. Popularna trasa z Muszyny do Krynicy prowadzi wzdłuż Popradu i pozwala cieszyć się pięknem beskidzkich krajobrazów. Wypożyczalnia Muszynova oferuje zarówno rowery tradycyjne, jak i elektryczne, które są idealne dla osób szukających wygody na lekko pagórkowatym terenie. Po drodze możesz zatrzymać się w Muszynie, by odpocząć w Ogrodach Sensorycznych lub skosztować lokalnych specjałów w jednej z regionalnych karczm."
@@ -328,11 +359,15 @@
                 }
             },
             "5": {
-                "header": "Squash – sport z klasą. Poznaj jego historię i dlaczego warto go spróbować",
+                "title": "Squash – sport z klasą. Poznaj jego historię i dlaczego warto go spróbować",
                 "text": "Czy wiedziałeś, że squash to jeden z najszybszych i najbardziej intensywnych sportów rakietowych na świecie? Gra, która dziś kojarzy się z nowoczesnym stylem życia, ma swoje korzenie jeszcze w XIX wieku!",
                 "header2": "Dlaczego squash zdobył świat?",
                 "header3": "Krótka historia squasha",
                 "button": "Historia squasha",
+                "meta": {
+                    "title": "Historia squasha – skąd się wziął ten dynamiczny sport?",
+                    "description": "Poznaj fascynującą historię squasha – od brytyjskich szkół po światowe korty. Dowiedz się, jak ten elitarny sport zdobył popularność i dlaczego warto go spróbować!"
+                },
                 "list": {
                     "1": "Początki w Anglii – squash narodził się w elitarnych szkołach brytyjskich (m.in. Harrow School) ok. 1830 roku, gdy uczniowie zauważyli, że piłka „squashuje się” (spłaszcza) po uderzeniu o ścianę – stąd nazwa.",
                     "2": "Rozwój dyscypliny – z czasem squash zyskiwał popularność w klubach sportowych na całym świecie, szczególnie w krajach anglosaskich.",
@@ -356,11 +391,15 @@
                 }
             },
             "6": {
-                "header": "Rowerem przez Muszynę",
+                "title": "Rowerem przez Muszynę",
                 "text": "Czy jest coś lepszego niż połączenie aktywnego wypoczynku z górskimi krajobrazami, uzdrowiskowym klimatem i nutą przygody? Jeśli marzy Ci się dzień pełen ruchu, świeżego powietrza i pięknych widoków, rowerowa wyprawa po okolicach Muszyny to strzał w dziesiątkę. A najlepsze? Wszystko zaczyna się tu – w wypożyczalni rowerów Muszynova, skąd wyruszysz w trasę bez stresu i z idealnie dopasowanym sprzętem.",
                 "header2": "Dlaczego warto zwiedzać Muszynę na rowerze?",
                 "header3": "TOP 3 trasy rowerowe z Muszyny",
                 "button": "Odkrywaj Muszynę na rowerze",
+                "meta": {
+                    "title": "Rowerem przez Muszynę – trasy, widoki i wypożyczalnia Muszynova",
+                    "description": "Poznaj najpiękniejsze trasy rowerowe w okolicach Muszyny i skorzystaj z wypożyczalni Muszynova - idealny sprzęt, pomoc w planowaniu trasy i aktywny wypoczynek bez stresu."
+                },
                 "list": {
                     "1": "1. Turystyczna Pętla Muszyńska Długość: ok. 30 km Poziom: średni Czas: ok. 4 godziny Trasa biegnie przez doliny Muszynki i Szczawnego Potoku, zahaczając o liczne punkty widokowe i urokliwe wsie. To idealna propozycja na półdniową wyprawę dla osób z podstawową kondycją.",
                     "2": "2. Karpacki Szlak Rowerowy (odcinek Leluchów–Wierchomla) Długość: ok. 25 km Poziom: łatwy Czas: 2–3 godziny Malownicza trasa poprowadzona doliną Popradu – świetna dla rodzin i początkujących. Wzdłuż szlaku czekają punkty odpoczynkowe i kilka źródeł wód mineralnych.",
@@ -378,11 +417,15 @@
                 }
             },
             "7": {
-                "header": "Zanurz się w zdrowiu - Muszyńskie wody mineralne",
+                "title": "Zanurz się w zdrowiu - Muszyńskie wody mineralne",
                 "text": "Muszyna to nie tylko malownicze krajobrazy i górskie szlaki – to także źródło zdrowia płynące prosto z natury. Wody mineralne z tutejszych źródeł znane są z wyjątkowych właściwości prozdrowotnych, a ich regularne spożywanie wspiera odporność, poprawia trawienie i działa korzystnie na układ nerwowy. Spacer po Parku Zdrojowym z kubkiem świeżej wody w ręku to prawdziwa przyjemność, która jednocześnie wzmacnia organizm.",
                 "header2": "Dlaczego muszyńska woda to naturalne lekarstwo?",
                 "header3": "TOP 3 źródła wód mineralnych w Muszynie",
                 "button": "Poznaj moc muszyńskiej wody",
+                "meta": {
+                    "title": "Muszyńskie wody mineralne – naturalne źródło zdrowia | Muszynova",
+                    "description": "Odkryj zdrowotne właściwości wód mineralnych z Muszyny. Sprawdź, które źródła warto odwiedzić i jak wspierają odporność, trawienie i dobre samopoczucie. Zapraszamy do Muszynova!"
+                },
                 "list": {
                     "1": "1. Źródło Milusia Lokalizacja: Park Zdrojowy, obok Pijalni Antoni Woda: średniozmineralizowana, z wysoką zawartością magnezu i wapnia. Idealna dla osób zestresowanych i przemęczonych. Smak łagodny, lekko słonawy.",
                     "2": "2. Źródło Grunwald Lokalizacja: ul. Ogrodowa, dolna część Parku Zapopradzie Woda: niskozmineralizowana, wspomaga przemianę materii i działa moczopędnie. Często wybierana przez osoby na diecie oczyszczającej.",
@@ -400,11 +443,15 @@
                 }
             },
             "8": {
-                "header": "Magia Muszyny – lokalne legendy i opowieści z Doliny Popradu",
+                "title": "Magia Muszyny – lokalne legendy i opowieści z Doliny Popradu",
                 "text": "Muszyna to nie tylko uzdrowisko z pięknymi krajobrazami i mineralnymi wodami – to także miejsce pełne dawnych opowieści, tajemnic i legend przekazywanych z pokolenia na pokolenie. W cieniu gór i w szumie Popradu kryją się historie, które dodają temu miejscu niezwykłego uroku. Poznaj z nami najbardziej znane lokalne legendy, które od lat rozpalają wyobraźnię mieszkańców i turystów.",
                 "header2": "Czy duch księżnej wciąż strzeże ruin zamku?",
                 "header3": "TOP 3 legendy z Muszyny, które warto znać",
                 "button": "Odkryj tajemnice Muszyny",
+                "meta": {
+                    "title": "Lokalne legendy i historie Muszyny | Blog Muszynova",
+                    "description": "Poznaj tajemnicze opowieści z Muszyny – od Białej Damy po zaklęte skarby. Odkryj magię regionu przez legendy i lokalne historie na blogu Muszynova."
+                },
                 "list": {
                     "1": "1. Legenda o Białej Damie z zamku w Muszynie Dawno temu na zamku mieszkała księżna, która zginęła tragicznie, broniąc swoich ludzi. Mówi się, że do dziś w księżycowe noce można zobaczyć Białą Damę przechadzającą się po ruinach, strzegąc dawnych sekretów i skarbów ukrytych w podziemiach.",
                     "2": "2. Zaklęty skarb pod górą Malnik Legenda głosi, że w jednej z jaskiń pod Malnikiem ukryto ogromny skarb – złoto, które należało do zbójnickiego herszta. Ale tylko ten, kto ma czyste serce i dobre intencje, będzie w stanie go znaleźć. Inni słyszą tylko echo tajemniczych głosów i nigdy nie wracają tą samą drogą.",
@@ -419,6 +466,42 @@
                     "header": "Poznaj Muszynę przez legendy i opowieści",
                     "text": "Zanurz się w niezwykły świat podań, duchów i tajemniczych miejsc. Przyjedź do Muszyny, przespaceruj się po ruinach zamku, odwiedź źródło zakochanych i poczuj magię, która od wieków przyciąga ludzi do tej doliny.",
                     "button": "Odkryj legendy Muszyny na własne oczy"
+                }
+            },
+            "9": {
+                "title": "Co zobaczyć w Krynicy-Zdroju? 15 najlepszych atrakcji, które musisz znać w 2025",
+                "text": "Krynica-Zdrój to nie tylko najsłynniejsze polskie uzdrowisko, to prawdziwa perła Beskidu Sądeckiego, która zachwyca o każdej porze roku. Górskie powietrze, lecznicze wody, deptak pełen życia, stoki narciarskie i widoki, od których zapiera dech – dlatego co roku przyjeżdża tu ponad milion turystów. Przygotowaliśmy dla Ciebie aktualną listę 15 miejsc, które koniecznie musisz zobaczyć. A jeśli szukacie idealnej bazy wypadowej – na końcu podpowiadamy, gdzie zatrzymać się w najlepszej lokalizacji w Krynicy!",
+                "header2": "Najpiękniejsze miejsca i atrakcje Krynicy-Zdroju",
+                "header3": "Dlaczego Krynica-Zdrój wciąż jest numerem 1 w polskich górach?",
+                "button": "Co robić w Krynicy-Zdroju?",
+                "meta": {
+                    "title": "15 najlepszych atrakcji Krynicy-Zdroju 2025 – co warto zobaczyć?",
+                    "description": "Aktualna lista TOP 15 atrakcji Krynicy-Zdroju: Jaworzyna, Sankostrada, Pijalnia, nowe ścieżki rowerowe VeloKrynica i wiele więcej. Idealny plan na weekend i dłuższy urlop."
+                },
+                "list": {
+                    "1": "1. Jaworzyna Krynicka (1114 m) + kolej gondolowa – obowiązkowy punkt programu! Nowoczesna 7,7 km kolejka wozi na szczyt w 7 minut. Na górze: taras widokowy 360° (widać Tatry!), restauracja, ścieżki spacerowe i zimą najlepsze trasy narciarskie w regionie.",
+                    "2": "2. Sankostrada na Górze Krzyżowej – najdłuższy w Polsce całoroczny tor saneczkowy (3000 m zjazdu!). Emocje gwarantowane dla dzieci i dorosłych – działa nawet w deszczu dzięki specjalnemu systemowi.",
+                    "3": "3. Deptak i Pijalnia Główna – serce Krynicy. Piękna architektura, koncerty, kawiarnie z klimatem i możliwość napicia się prosto ze źródła słynnych wód: Zuber, Słotwinka, Jan, Tadeusz.",
+                    "4": "4. Góra Parkowa z kolejką linowo-torową (z 1937 r.!) – zabytek techniki. Na szczycie: Rajskie Ślizgawki (zjeżdżalnia grawitacyjna), plac zabaw, park linowy i punkt widokowy.",
+                    "5": "5. Rajskie Ślizgawki – nowość 2024/2025 – 4 trasy zjazdowe (w tym jedna 800-metrowa!). Idealna zabawa dla rodzin, działa cały rok.",
+                    "6": "6. Muzeum Zabawek „Baśń” – ponad 5000 eksponatów z całego świata. Od starych lalek po klocki Lego z lat 60. – dzieci szaleją, dorośli wracają do dzieciństwa.",
+                    "7": "7. Muzeum Nikifora Krynickiego – obowiązkowe dla miłośników sztuki naiwnej. Prace słynnego łemkowskiego malarza-prymitywisty w pięknej willi „Romanówka”.",
+                    "8": "8. Ławki miłości i Pump Room z muzyką na żywo – wieczorem deptak zamienia się w najromantyczniejsze miejsce w górach. Koncerty, lampki wina i klimat jak z lat 30.",
+                    "9": "9. Szlaki rowerowe VeloKrynica – 12 km nowej asfaltowej trasy z Krynicy do Muszyny wzdłuż potoku. Idealna dla rodzin, hulajnóg i rolkarzy.",
+                    "10": "10. Stoki narciarskie Słotwiny Arena – nowocześniejszy i mniej zatłoczony niż Jaworzyna. 10 km tras, 6-osobowa kanapa, snowpark i wieczorne jazdy przy oświetleniu.",
+                    "11": "11. Centrum Zdrowia i Relaksu w Hotelu Czarny Potok **** – baseny termalne z wodą siarkową, strefa saun, grota solna i zabiegi borowinowe. Najlepsze spa w Krynicy.",
+                    "12": "12. Tor Pumptrack i ścieżki enduro na Górze Krzyżowej – darmowy tor dla rowerzystów i nowa sieć tras enduro (od zielonych do czarnych).",
+                    "13": "13. Krynicki Szlak Drzew – nowa ścieżka edukacyjna w lesie z tablicami o drzewach i ogromnymi rzeźbami owadów. Super dla dzieci.",
+                    "14": "14. Lemko Trail – szlak kultury łemkowskiej: cerkwie w Tyliczu, Powroźniku (UNESCO) i Mochnaczce – 30 min autem od Krynicy.",
+                    "15": "15. Jarmark Krynicki i wydarzenia 2025 – Forum Ekonomiczne, Festiwal Jana Kiepury, Festiwal Biegowy, Sylwester na stoku – sprawdź kalendarz, bo zawsze coś się dzieje!"
+                },
+                "alt": {
+                    "1": "Kolejka gondolowa na Jaworzynę Krynicką zimą"
+                },
+                "cta": {
+                    "header": "Krynica za Tobą? Czas na Muszynova!",
+                    "text": "Tylko 10 km od Krynicy – największy park rekreacyjno-sportowy w Beskidzie Sądeckim! Squash, hala sportowa, rowery, siłownia, pokój zabaw, ścianka wspinaczkowa, kręgle i pyszne jedzenie w jednym miejscu. Płacisz tylko za wybrane atrakcje. Dzieci oszaleją z radości, a Wy w końcu odpoczniecie ;)",
+                    "button": "Jedziemy do Muszynova!"
                 }
             }
         }
@@ -1131,41 +1214,9 @@
             "title": "Blog - Muszynova",
             "description": "Odkryj najnowsze wpisy na blogu Muszynova – inspiracje, porady i przewodniki turystyczne dla osób planujących wypoczynek w Muszynie i okolicach."
         },
-        "muszyna-10-najlepszych-atrakcji": {
-            "title": "Top 10 najlepszych atrakcji w Muszynie",
-            "description": "Poznaj 10 najciekawszych atrakcji Muszyny – od ogrodów tematycznych po historyczne zamki. Idealna lista na każdą porę roku."
-        },
-        "muszyna-najlepsze-szlaki-turystyczne": {
-            "title": "Najlepsze Szlaki Turystyczne w Muszynie",
-            "description": "Sprawdź najlepsze szlaki turystyczne w Muszynie – propozycje tras pieszych, widokowych i rodzinnych. Dla początkujących i zaawansowanych."
-        },
-        "jak-spedzic-weekend-w-muszynie": {
-            "title": "Jak spędzić weekend w Muszynie",
-            "description": "Zaplanuj idealny weekend w Muszynie – atrakcje, aktywności i lokalne smaki, które sprawią, że pokochasz to miejsce."
-        },
-        "aktywny-wypoczynek-w-beskidzie-sadeckim": {
-            "title": "Aktywny wypoczynek w Muszynie i Krynicy-Zdroju – Beskid Sądecki",
-            "description": "Odkryj uroki Beskidu Sądeckiego! Spływy Popradem, trasy rowerowe Velo Krynica, wędrówki po górach i relaks w Muszynie. Idealne miejsce na weekend pełen aktywności i natury."
-        },
-        "historia-squasha": {
-            "title": "Historia squasha – skąd się wziął ten dynamiczny sport?",
-            "description": "Poznaj fascynującą historię squasha – od brytyjskich szkół po światowe korty. Dowiedz się, jak ten elitarny sport zdobył popularność i dlaczego warto go spróbować!"
-        },
-        "rowerem-przez-muszyne": {
-            "title": "Rowerem przez Muszynę – trasy, widoki i wypożyczalnia Muszynova",
-            "description": "Poznaj najpiękniejsze trasy rowerowe w okolicach Muszyny i skorzystaj z wypożyczalni Muszynova - idealny sprzęt, pomoc w planowaniu trasy i aktywny wypoczynek bez stresu."
-        },
-        "muszyna-wody-mineralne": {
-            "title": "Muszyńskie wody mineralne – naturalne źródło zdrowia | Muszynova",
-            "description": "Odkryj zdrowotne właściwości wód mineralnych z Muszyny. Sprawdź, które źródła warto odwiedzić i jak wspierają odporność, trawienie i dobre samopoczucie. Zapraszamy do Muszynova!"
-        },
         "dofinansowanie": {
             "title": "Dofinansowanie UE – Park Rekreacyjno-Sportowy Muszyna",
             "description": "Nowoczesny park rekreacyjno-sportowy w Muszynie realizowany z dofinansowaniem UE. Inwestycja wspiera rozwój turystyki i oferty uzdrowiskowej regionu."
-        },
-        "lokalne-legendy-i-historie": {
-            "title": "Lokalne legendy i historie Muszyny | Blog Muszynova",
-            "description": "Poznaj tajemnicze opowieści z Muszyny – od Białej Damy po zaklęte skarby. Odkryj magię regionu przez legendy i lokalne historie na blogu Muszynova."
         },
         "polityka-cookies": {
             "title": "Nasza Polityka Cookies Muszynova",

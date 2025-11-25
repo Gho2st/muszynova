@@ -198,6 +198,12 @@ export const routing = defineRouting({
       sk: "/blog/miestne-legendy-a-príbehy",
       ua: "/blog/mistsevi-lehendy-ta-istoriyi",
     },
+    "/blog/krynica-15-najlepszych-atrakcji": {
+      pl: "/blog/krynica-15-najlepszych-atrakcji",
+      en: "/blog/krynica-zdroj-15-best-attractions",
+      sk: "/blog/krynica-15-najlepsich-atrakcii",
+      ua: "/blog/krynytsya-15-naikrashchykh-atraktsii",
+    },
     "/polityka-cookies": {
       pl: "/polityka-cookies",
       en: "/cookie-policy",
