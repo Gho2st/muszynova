@@ -7,6 +7,8 @@ import Footer from "../UI/Footer/Footer";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
+import dynamic from "next/dynamic";
+const FacebookPixel = dynamic(import("../UI/FacebookPixel"));
 
 const font = Poppins({
   subsets: ["latin"],
@@ -22,7 +24,6 @@ export const metadata = {
     images: "https://muszynova.pl/opengraph-image.png",
   },
   other: {
-    // Tu możesz wstrzyknąć własne tagi do <head>
     preload: `<link rel="preload" as="image" href="/Muszynova-hotel.webp" type="image/webp" />`,
   },
 };
@@ -39,11 +40,11 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      {/* <GoogleTagManager gtmId="GTM-TR69S642" /> */}
       <body className={`${font.className} pt-24`}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
           <CookieConsent />
+          <FacebookPixel />
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
