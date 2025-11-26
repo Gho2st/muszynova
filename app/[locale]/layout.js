@@ -7,8 +7,7 @@ import Footer from "../UI/Footer/Footer";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
-import dynamic from "next/dynamic";
-const FacebookPixel = dynamic(import("../UI/FacebookPixel"));
+import FacebookPixel from "../UI/FacebookPixel";
 
 const font = Poppins({
   subsets: ["latin"],
