@@ -467,6 +467,42 @@
                     "text": "Ponorte sa do výnimočného sveta povestí, duchov a tajuplných miest. Príďte do Muszyny, prejdite sa po zrúcaninách hradu, navštívte prameň zamilovaných a pocítite mágiu, ktorá už stáročia priťahuje ľudí do tohto údolia.",
                     "button": "Objavte legendy Muszyny na vlastné oči"
                 }
+            },
+            "9": {
+                "title": "Čo vidieť v Krynica-Zdrój? 15 najlepších atrakcií, ktoré musíte poznať v roku 2025",
+                "text": "Krynica-Zdrój nie je len najznámejšie poľské kúpele, je to skutočná perla Beskidu Sądeckého, ktorá očarí v každom ročnom období. Horský vzduch, liečivé minerálne pramene, živá promenáda, lyžiarske svahy a výhľady, pri ktorých sa tají dych – preto sem každý rok príde viac ako milión turistov. Pripravili sme pre vás aktuálny zoznam 15 miest, ktoré určite musíte vidieť. A ak hľadáte ideálnu základňu – na konci vám poradíme, kde sa ubytovať na najlepšom mieste v Kryniei!",
+                "header2": "Najkrajšie miesta a atrakcie Krynice-Zdrój",
+                "header3": "Prečo je Krynica-Zdrój stále jednotkou v poľských horách?",
+                "button": "Čo robiť v Krynica-Zdrój?",
+                "meta": {
+                    "title": "15 najlepších atrakcií Krynice-Zdrój 2025 – čo sa oplatí vidieť?",
+                    "description": "Aktuálny rebríček TOP 15 atrakcií Krynice-Zdrój: Jaworzyna Krynicka, Sankostrada, Hlavná pijalňa, nové cyklistické trasy VeloKrynica a oveľa viac. Ideálny plán na víkend aj dlhšiu dovolenku."
+                },
+                "list": {
+                    "1": "1. Jaworzyna Krynicka (1114 m) + gondola – povinná zastávka! Moderná 7,7 km dlhá gondola vás vyvezie na vrchol za 7 minút. Hore: 360° vyhliadková terasa (vidno aj Tatry!), reštaurácia, turistické chodníky a v zime najlepšie lyžiarske trate v regióne.",
+                    "2": "2. Sankostrada na vrchu Krzyżowa – najdlhšia celoročná sánkarská dráha v Poľsku (3 000 m zjazdu!). Adrenalín zaručený pre deti aj dospelých – funguje aj v daždi vďaka špeciálnemu systému.",
+                    "3": "3. Promenáda a Hlavná pijalňa – srdce Krynice. Nádherná architektúra, koncerty, útulné kaviarne a možnosť napiť sa slávnych minerálok priamo zo zdroja: Zuber, Słotwinka, Jan, Tadeusz.",
+                    "4": "4. Vrch Parkowa s historickou pozemnou lanovkou (z roku 1937!) – technická pamiatka. Hore: Rajské šmykľavky, detské ihrisko, lanový park a vyhliadka.",
+                    "5": "5. Rajské šmykľavky – novinka 2024/2025 – 4 zjazdové dráhy (vrátane jednej 800 m dlhej!). Perfektná zábava pre rodiny, otvorené celý rok.",
+                    "6": "6. Múzeum hračiek „Baśń“ – vyše 5 000 exponátov z celého sveta. Od starých bábik po Lego z 60. rokov – deti šalejú, dospelí sa vracajú do detstva.",
+                    "7": "7. Múzeum Nikifora Krynického – povinnosť pre milovníkov naivného umenia. Diela slávneho lemkovského primitivistu v krásnej vile „Romanówka“.",
+                    "8": "8. Lavičky lásky a pijalňa so živou hudbou – večer sa promenáda mení na najromantickejšie miesto v horách. Koncerty, svetielka, víno a atmosféra ako z 30. rokov.",
+                    "9": "9. Cyklistické trasy VeloKrynica – 12 km novej asfaltovej cesty z Krynice do Muszyny popri potoku. Ideálne pre rodiny, kolobežky aj korčule.",
+                    "10": "10. Lyžiarske svahy Słotwiny Arena – modernejšie a menej preplnené než Jaworzyna. 10 km tratí, 6-sedačková lanovka, snowpark a večerné lyžovanie pri osvetlení.",
+                    "11": "11. Centrum zdravia a relaxu v Hoteli Czarny Potok **** – termálne bazény so sírnou vodou, saunový svet, soľná jaskyňa a rašelinové procedúry. Najlepšie kúpele v Kryniei.",
+                    "12": "12. Pumptrack a enduro trate na vrchu Krzyżowa – bezplatný pumptrack pre cyklistov a nová sieť enduro tratí (od zelených po čierne).",
+                    "13": "13. Krynická cesta stromov – nová náučná lesná cesta s tabuľami o stromoch a obrovskými sochami hmyzu. Super pre deti.",
+                    "14": "14. Lemkovská cesta – chodník lemkovskej kultúry: drevené cerkvi v Tyliczi, Powroźniku (UNESCO) a Mochnaczke – 30 min autom od Krynice.",
+                    "15": "15. Krynický jarmok a podujatia 2025 – Ekonomické fórum, Festival Jana Kiepuru, Bežecký festival, Silvestrovská párty na svahu – pozrite si kalendár, vždy sa niečo deje!"
+                },
+                "alt": {
+                    "1": "Gondola na Jaworzynu Krynicku v zime"
+                },
+                "cta": {
+                    "header": "Krynica hotová? Čas na Muszynova!",
+                    "text": "Len 10 km od Krynice – najväčší rekreačno-športový park v Beskide Sądeckom! Squash, športová hala, bicykle, posilňovňa, detský kútik, lezecká stena, bowling a výborné jedlo na jednom mieste. Platíte len za vybrané atrakcie. Deti budú nadšené a vy si konečne oddýchnete ;)",
+                    "button": "Ideme do Muszynova!"
+                }
             }
         }
     },

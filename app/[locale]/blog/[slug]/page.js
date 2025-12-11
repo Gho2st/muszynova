@@ -112,7 +112,10 @@ export default async function BlogPostPage({ params }) {
           </div>
 
           {backgroundListItems.length > 0 && (
-            <BackgroundList title={data.subtitle2} items={backgroundListItems} />
+            <BackgroundList
+              title={data.subtitle2}
+              items={backgroundListItems}
+            />
           )}
 
           <CtaLink
