@@ -16,7 +16,7 @@ const CookieConsent = () => {
   const handleGTMConsent = (consentState) => {
     if (typeof window !== "undefined") {
       if (consentState.analytics_Storage === "granted") {
-        console.log("CookieConsent: Loading GTM script");
+        // console.log("CookieConsent: Loading GTM script");
         const existingScript = document.getElementById("gtm-script");
         if (existingScript) {
           existingScript.remove();
@@ -32,11 +32,11 @@ const CookieConsent = () => {
           "gtm.start": new Date().getTime(),
           event: "gtm.js",
         });
-        console.log("CookieConsent: GTM initialized");
+        // console.log("CookieConsent: GTM initialized");
       } else {
-        console.log(
-          "CookieConsent: Analytics consent denied, removing GTM script"
-        );
+        // console.log(
+        //   "CookieConsent: Analytics consent denied, removing GTM script"
+        // );
         const existingScript = document.getElementById("gtm-script");
         if (existingScript) {
           existingScript.remove();
@@ -50,23 +50,23 @@ const CookieConsent = () => {
 
   // Sprawdzenie istniejącej zgody
   useEffect(() => {
-    console.log("CookieConsent: Checking localStorage for consent");
+    // console.log("CookieConsent: Checking localStorage for consent");
     const storedConsent = localStorage.getItem("consent");
     if (storedConsent) {
-      console.log("CookieConsent: Found stored consent:", storedConsent);
+      // console.log("CookieConsent: Found stored consent:", storedConsent);
       const parsedConsent = JSON.parse(storedConsent);
       setConsent(parsedConsent);
       handleGTMConsent(parsedConsent);
       setShowBanner(false);
     } else {
-      console.log("CookieConsent: No stored consent, showing banner");
+      // console.log("CookieConsent: No stored consent, showing banner");
       setShowBanner(true);
     }
   }, []);
 
   // Zapis zgody i aktualizacja GTM
   const saveConsent = (newConsent) => {
-    console.log("CookieConsent: Saving consent:", newConsent);
+    // console.log("CookieConsent: Saving consent:", newConsent);
     setConsent(newConsent);
     localStorage.setItem("consent", JSON.stringify(newConsent));
     handleGTMConsent(newConsent);
@@ -106,11 +106,11 @@ const CookieConsent = () => {
   };
 
   if (!showBanner) {
-    console.log("CookieConsent: Banner hidden due to showBanner being false");
+    // console.log("CookieConsent: Banner hidden due to showBanner being false");
     return null;
   }
 
-  console.log("CookieConsent: Rendering banner");
+  // console.log("CookieConsent: Rendering banner");
   return (
     <div className="fixed bottom-0 left-0 right-0 md:bottom-4 md:mx-4 bg-gray-900 text-white p-4 md:p-6 rounded-t-lg md:rounded-lg shadow-xl z-50 transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto text-center">
