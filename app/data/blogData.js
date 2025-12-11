@@ -53,4 +53,10 @@ export const blogPosts = [
     slug: "krynica-15-najlepszych-atrakcji",
     favourite: true,
   },
+  {
+    id: 10,
+    date: "06-12-2025",
+    slug: "odkryj-drewniane-cerkwie-rowerem-w-muszynie",
+    favourite: false,
+  },
 ];

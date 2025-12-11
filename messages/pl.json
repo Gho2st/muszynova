@@ -503,6 +503,34 @@
                     "text": "Tylko 10 km od Krynicy – największy park rekreacyjno-sportowy w Beskidzie Sądeckim! Squash, hala sportowa, rowery, siłownia, pokój zabaw, ścianka wspinaczkowa, kręgle i pyszne jedzenie w jednym miejscu. Płacisz tylko za wybrane atrakcje. Dzieci oszaleją z radości, a Wy w końcu odpoczniecie ;)",
                     "button": "Jedziemy do Muszynova!"
                 }
+            },
+            "10": {
+                "title": "Szlakiem Ikon: Odkryj Drewniane Cerkwie Rowerem z Muszynova!",
+                "text": "Beskid Sądecki to nie tylko góry i wody mineralne, ale i niezwykłe dziedzictwo kulturowe Łemków. Najlepszym sposobem, by poczuć magię tego regionu i zobaczyć jego najpiękniejsze zabytki, jest wycieczka rowerowa! Z dala od głównego ruchu, malowniczymi dolinami, dotrzesz do tajemniczych drewnianych cerkwi, z których jedna jest wpisana na listę UNESCO. Muszynova Park to Twoja idealna baza wypadowa – wsiadaj na rower i ruszaj na szlak!",
+                "header2": "Najpiękniejsze Drewniane Cerkwie Blisko Muszyny i Krynicy",
+                "header3": "Dlaczego Szlak Cerkwi Najlepiej Pokonać Rowerem?",
+                "button": "Wypożycz Rower w Muszynova!",
+                "meta": {
+                    "title": "Rowerem na Szlak Cerkwi UNESCO – Powroźnik, Szczawnik i okolice Muszyny",
+                    "description": "Najciekawsze cerkwie łemkowskie w Dolinie Popradu. Zobacz, jak dojechać rowerem z Muszynovej do Powroźnika (UNESCO) i Szczawnika. Idealna trasa dla rodzin."
+                },
+                "list": {
+                    "1": "1. Cerkiew w Powroźniku (UNESCO) – Obowiązkowy punkt wycieczki! Zaledwie 6 km od Muszyny, jeden z najstarszych i najcenniejszych obiektów drewnianej architektury sakralnej w Polsce, wpisany na Listę Światowego Dziedzictwa UNESCO. Zobacz oryginalny ikonostas z XVIII w.",
+                    "2": "2. Cerkiew w Szczawniku – Malowniczo położona w dolinie potoku, około 10 km od Muszyny. Wyróżnia się prostotą formy i harmonijnym wtopieniem w górski krajobraz. To idealne miejsce na chwilę zadumy i przerwę na szlaku.",
+                    "3": "3. Cerkiew w Krynicy-Zdroju (św. Apostołów Piotra i Pawła) – Jeśli wydłużysz trasę do Krynicy (wzdłuż VeloKrynica!), odwiedź tę piękną świątynię z końca XIX w. Jest nieco nowsza, ale jej wnętrze i rzeźbiony ikonostas robią ogromne wrażenie.",
+                    "4": "4. Cerkiew w Tyliczu (św. Kosmy i Damiana) – Opcja dla wytrwałych rowerzystów. Oddalona nieco dalej, ale warta zobaczenia ze względu na bogate wnętrze i charakterystyczną konstrukcję z trzema wieżami.",
+                    "5": "5. Rowerem, a nie samochodem – Dlaczego? Spokojne drogi i ścieżki (jak VeloKrynica) minimalizują ruch samochodowy. Możesz zatrzymać się w dowolnym momencie, by podziwiać widoki i poczuć górskie powietrze. Jest to też przyjazne dla rodzin!",
+                    "6": "6. Wypożyczalnia Muszynova Park – Nie masz roweru? Żaden problem! U nas znajdziesz rowery górskie, trekkingowe, które bez wysiłku dowiozą Cię pod każdą cerkiew na beskidzkim wzgórzu. Wypożyczamy też foteliki i kaski!",
+                    "7": "7. Regeneracja po wycieczce – Po powrocie do Muszynovej czeka na Ciebie pełen relaks! Zregeneruj mięśnie lub zjedz zasłużony posiłek w Restauracji."
+                },
+                "alt": {
+                    "1": "Rower zaparkowany pod drewnianą cerkwią łemkowską"
+                },
+                "cta": {
+                    "header": "Gotowy na Historyczną Przygodę na Dwóch Kółkach?",
+                    "text": "Zaplanuj swoją wycieczkę już dziś! Rezerwacja roweru w Muszynova to gwarancja sprawnego sprzętu i udanej wyprawy. Odkryj sekrety Doliny Popradu w najlepszym stylu – aktywnym i bliskim natury.",
+                    "button": "Sprawdź ofertę rowerów"
+                }
             }
         }
     },

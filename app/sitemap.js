@@ -367,6 +367,17 @@ export default function sitemap() {
       },
     },
     {
+      url: `${baseUrl}/blog/odkryj-drewniane-cerkwie-rowerem-w-muszynie`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          en: `${baseUrl}/en/blog/discover-wooden-churches-by-bike-in-muszyna`,
+          sk: `${baseUrl}/sk/blog/objavte-drevene-chramy-na-bicykli-v-muszyna`,
+          ua: `${baseUrl}/ua/blog/vidkryi-dereviani-tserkvy-na-velosypedi-v-mushyni`,
+        },
+      },
+    },
+    {
       url: `${baseUrl}/polityka-cookies`,
       lastModified: new Date(),
       alternates: {

@@ -503,6 +503,34 @@
                     "text": "Len 10 km od Krynice – najväčší rekreačno-športový park v Beskide Sądeckom! Squash, športová hala, bicykle, posilňovňa, detský kútik, lezecká stena, bowling a výborné jedlo na jednom mieste. Platíte len za vybrané atrakcie. Deti budú nadšené a vy si konečne oddýchnete ;)",
                     "button": "Ideme do Muszynova!"
                 }
+            },
+            "10": {
+                "title": "Po Stopách Ikon: Objavte Drevené Gréckokatolícke Chrámy na Bicykli s Muszynova!",
+                "text": "Sądecký Beskyd nie sú len hory a minerálne pramene, ale aj výnimočné kultúrne dedičstvo Lemkov. Najlepší spôsob, ako pocítiť čaro tohto regiónu a vidieť jeho najkrajšie pamiatky, je cyklovýlet! Ďaleko od hlavného ruchu, malebnými dolinami sa dostanete k tajomným dreveným chrámom, z ktorých jeden je zapísaný na zozname UNESCO. Muszynova Park je vaša ideálna základňa – nasadnite na bicykel a vyrazte na trať!",
+                "header2": "Najkrajšie Drevené Chrámy v Okolí Muszyny a Krynice",
+                "header3": "Prečo Prejsť Trasu Chrámov Najlepšie na Bicykli?",
+                "button": "Požičajte si Bicykel v Muszynova!",
+                "meta": {
+                    "title": "Na Bicykli po UNESCO Trase Chrámov – Powroźnik, Szczawnik a Okolie Muszyny",
+                    "description": "Najzaujímavejšie lemkovské chrámy v údolí Popradu. Pozrite sa, ako sa na bicykli dostať z Muszynovej do Powroźnika (UNESCO) a Szczawnika. Ideálna trasa pre rodiny."
+                },
+                "list": {
+                    "1": "1. Chrám v Powroźniku (UNESCO) – Povinná zastávka! Len 6 km od Muszyny, jeden z najstarších a najcennejších objektov drevenej sakrálnej architektúry v Poľsku, zapísaný na Zozname svetového dedičstva UNESCO. Obdivujte originálny ikonostas z 18. storočia.",
+                    "2": "2. Chrám v Szczawniku – Malebne položený v údolí potoka, asi 10 km od Muszyny. Vyniká jednoduchosťou tvaru a harmonickým začlenením do horskej krajiny. Ideálne miesto na chvíľu zamyslenia a prestávku na trase.",
+                    "3": "3. Chrám v Krynica-Zdrój (sv. apoštolov Petra a Pavla) – Ak si trasu predĺžite až do Krynice (po VeloKrynica!), navštívte tento krásny chrám z konca 19. storočia. Je o niečo novší, no jeho interiér a vyrezávaný ikonostas urobia veľký dojem.",
+                    "4": "4. Chrám v Tyliczi (sv. Kozmu a Damiána) – Možnosť pre vytrvalejších cyklistov. Je trochu ďalej, ale stojí za to kvôli bohato zdobenému interiéru a charakteristickej trojvežovej konštrukcii.",
+                    "5": "5. Na bicykli, nie autom – Prečo? Tiché cesty a cyklotrasy (ako VeloKrynica) znamenajú minimálnu premávku. Môžete sa kdekoľvek zastaviť, vychutnať si výhľady a nadýchať horského vzduchu. Je to aj vhodné pre rodiny!",
+                    "6": "6. Požičovňa bicyklov Muszynova Park – Nemáte vlastný bicykel? Žiadny problém! Ponúkame horské a trekingové bicykle, s ktorými bez námahy vyjdete ku každému chrámu na beskydských kopcoch. Požičiavame aj detské sedačky a prilby!",
+                    "7": "7. Regenerácia po výlete – Po návrate do Muszynovej na vás čaká plný oddych! Zregenerujte svaly alebo si doprajte zaslúžené jedlo v reštaurácii."
+                },
+                "alt": {
+                    "1": "Bicykel zaparkovaný pri lemkovskom drevenom chráme"
+                },
+                "cta": {
+                    "header": "Pripravený na Historické Dobrodružstvo na Dvoch Kolesách?",
+                    "text": "Naplánujte si výlet už dnes! Rezervácia bicykla v Muszynova je zárukou spoľahlivého vybavenia a vydareného výletu. Objavte tajomstvá údolia Popradu tým najlepším spôsobom – aktívne a blízko prírody.",
+                    "button": "Pozrite si ponuku bicyklov"
+                }
             }
         }
     },

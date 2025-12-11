@@ -204,6 +204,12 @@ export const routing = defineRouting({
       sk: "/blog/krynica-15-najlepsich-atrakcii",
       ua: "/blog/krynytsya-15-naikrashchykh-atraktsii",
     },
+    "/blog/odkryj-drewniane-cerkwie-rowerem-w-muszynie": {
+      pl: "/blog/odkryj-drewniane-cerkwie-rowerem-w-muszynie",
+      en: "/blog/discover-wooden-churches-by-bike-in-muszyna",
+      sk: "/blog/objavte-drevene-chramy-na-bicykli-v-muszyna",
+      ua: "/blog/vidkryi-dereviani-tserkvy-na-velosypedi-v-mushyni",
+    },
     "/polityka-cookies": {
       pl: "/polityka-cookies",
       en: "/cookie-policy",

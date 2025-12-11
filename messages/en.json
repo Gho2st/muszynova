@@ -503,6 +503,34 @@
                     "text": "Only 10 km from Krynica – the largest recreational and sports park in the Beskid Sądecki! Squash, sports hall, bikes, gym, playroom, climbing wall, bowling, and delicious food all in one place. You only pay for the attractions you choose. The kids will go crazy with joy, and you’ll finally get to relax ;)",
                     "button": "Let’s go to Muszynova!"
                 }
+            },
+            "10": {
+                "title": "Follow the Trail of Icons: Discover Wooden Lemko Churches by Bike with Muszynova!",
+                "text": "The Beskid Sądecki is not only mountains and mineral waters, but also the extraordinary cultural heritage of the Lemko people. The best way to feel the magic of this region and see its most beautiful monuments is a cycling trip! Far from the main traffic, along picturesque valleys, you’ll reach mysterious wooden Greek Catholic churches – one of which is on the UNESCO World Heritage List. Muszynova Park is your perfect base – hop on a bike and hit the trail!",
+                "header2": "The Most Beautiful Wooden Churches Near Muszyna and Krynica",
+                "header3": "Why Explore the Church Trail by Bike?",
+                "button": "Rent a Bike at Muszynova!",
+                "meta": {
+                    "title": "By Bike Along the UNESCO Church Trail – Powroźnik, Szczawnik and the Muszyna Area",
+                    "description": "The most interesting Lemko churches in the Poprad Valley. See how to cycle from Muszynova to Powroźnik (UNESCO) and Szczawnik. A perfect family-friendly route."
+                },
+                "list": {
+                    "1": "1. Church in Powroźnik (UNESCO) – A must-see on the trip! Only 6 km from Muszyna, one of the oldest and most valuable examples of wooden sacral architecture in Poland, inscribed on the UNESCO World Heritage List. Admire the original 18th-century iconostasis.",
+                    "2": "2. Church in Szczawnik – Picturesquely situated in a stream valley, about 10 km from Muszyna. It stands out with its simple form and harmonious integration into the mountain landscape. Perfect spot for a moment of reflection and a break on the trail.",
+                    "3": "3. Church in Krynica-Zdrój (St. Apostles Peter and Paul) – If you extend your route to Krynica (along the VeloKrynica trail!), visit this beautiful late-19th-century temple. Slightly newer, but its interior and carved iconostasis are truly impressive.",
+                    "4": "4. Church in Tylicz (St. Cosmas and Damian) – An option for more endurance cyclists. A bit farther away, but worth seeing for its rich interior and characteristic three-tower structure.",
+                    "5": "5. By bike, not by car – Why? Quiet roads and paths (such as VeloKrynica) mean minimal car traffic. You can stop anywhere to enjoy the views and breathe the mountain air. It’s also family-friendly!",
+                    "6": "6. Muszynova Park Bike Rental – Don’t have a bike? No problem! We offer mountain and trekking bikes that will effortlessly take you to every church on the Beskid hills. We also rent child seats and helmets!",
+                    "7": "7. Recovery after the trip – When you return to Muszynova, full relaxation awaits! Recover your muscles or enjoy a well-deserved meal at the Restaurant."
+                },
+                "alt": {
+                    "1": "Bicycle parked next to a Lemko wooden church"
+                },
+                "cta": {
+                    "header": "Ready for a Historical Adventure on Two Wheels?",
+                    "text": "Plan your trip today! Booking a bike at Muszynova guarantees reliable equipment and a successful adventure. Discover the secrets of the Poprad Valley in the best possible way – active and close to nature.",
+                    "button": "Check our bike offer"
+                }
             }
         }
     },
