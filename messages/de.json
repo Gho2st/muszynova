@@ -1,0 +1,1370 @@
+{
+    "dofinansowanie": {
+        "header": "Förderung",
+        "title": "Projekttitel: FREIZEIT- UND SPORTPARK „MUSZYNOVA“",
+        "list": {
+            "1": "Projektdurchführende",
+            "a1": "HANDELSUNTERNEHMEN 'MIKULEC' ANDRZEJ MIKULEC",
+            "2": "Projektwert",
+            "a2": "10.054.324,94 PLN",
+            "3": "EU-Förderung:",
+            "a3": "5.237.978,53 PLN",
+            "4": "Woiwodschaft",
+            "a4": "Kleinpolen",
+            "5": "Kreis",
+            "a5": "Nowy Sącz",
+            "6": "Förderperiode",
+            "a6": "2014-2020",
+            "7": "Kategorie",
+            "a7": "Tourismus",
+            "8": "Programm",
+            "a8": "Regionales Operationelles Programm der Woiwodschaft Kleinpolen für den Zeitraum 2014-2020",
+            "9": "Maßnahme",
+            "a9": "6.3. ENTWICKLUNG DER INNEREN REGIONALPOTENZIALE",
+            "10": "Fonds",
+            "a10": "Europäischer Fonds für regionale Entwicklung",
+            "11": "Projektziel",
+            "t1": "Steigerung der Wettbewerbsfähigkeit durch Erweiterung des Angebots des Kurorts Muszyna im Bereich Sport- und Freizeitdienstleistungen.",
+            "t2": "Das Projekt betrifft den Bau und die Ausstattung eines Sport- und Freizeitparks. Investition im Ort Złockie, Grundstück Nr. 1674, Kurortgebiet Muszyna. Das Projekt umfasst 4 Aufgaben: 1. Bau des Freizeit- und Sportparks Złockie, 2. Ausstattung des Freizeit- und Sportparks Złockie, 3. Indirekte Kosten, 4. Zusätzliche Ausstattung des Freizeit- und Sportparks Złockie, nicht förderfähige Kosten. Im Rahmen von Aufgabe 1 entsteht ein Sport- und Freizeitobjekt mit internen Installationen, technischer Infrastruktur und Umfeldgestaltung. Ein freistehendes, dreigeschossiges Gebäude, dessen Konstruktion an die Architektur der umgebenden Objekte angelehnt ist. Eine einfache architektonische Konstruktion mit begrenzter Detailanzahl wurde gewählt, um hohe thermische Parameter sicherzustellen. Im Erdgeschoss befinden sich: Foyer, Restaurant, Küche, Sportplätze, Lebensmittellager, Sportgerätelager, Sozialräume, Umkleiden, WC, Tischtennis, Rezeption, Fahrradverleih. Im 1. Obergeschoss: Spieleraum, Kinderspielbereich, TV-Raum, Technikraum, Trainer- und Erste-Hilfe-Raum, Büro, Squash, Umkleiden, WC. Im 2. Obergeschoss: Sozialräume, Sicherheitsraum, Wirtschaftsraum, Fitnessraum, Umkleiden, WC. Grundlegende Daten zur Investition: Grundstücksfläche 8047 m²; Bebauungsfläche 1204,22 m², Nutzfläche: 2316,83 m², Kubatur 11430,00 m³, Gebäudehöhe 13,33 m. Die gewählten Lösungen entsprechen den besten Praktiken für diese Art von Objekten, u.a. Anknüpfung an die umgebende Bebauung, Einfachheit der Form, funktionale Angemessenheit für die Dienstleistungen. Das Gebäude wurde in energiesparender Technologie als Niedrigenergiehaus ausgeführt. Verbraucht 25-50% weniger Energie als traditionelle Gebäude. Das Objekt ist für Menschen mit Behinderungen zugänglich. Aufgabe 2 betrifft die Anschaffung der Raumausstattung entsprechend ihrer Bestimmung, die hohe Qualitäts- und Sicherheitsstandards erfüllt. Aufgabe 3 umfasst das Projektmanagement. Aufgabe 4 betrifft zusätzliche Ausstattung, nicht förderfähige Kosten. Die gewählten Lösungen reagieren auf identifizierte Bedürfnisse, u.a. Erweiterung des Kurortangebots, Ausbau des ganzjährigen Sportangebots."
+        }
+    },
+    "nav": {
+        "alt": {
+            "1": "Logo der Europäischen Union",
+            "2": "Logo des Freizeit- und Sportparks Muszynova"
+        },
+        "links": {
+            "link1": "Über Uns",
+            "link2": "Restaurant",
+            "link3": "Preise",
+            "link4": "Gruppenkurse",
+            "link5": "Galerie",
+            "link6": "Kontakt",
+            "link7": "Partner",
+            "link8": "Blog",
+            "park": "Park"
+        },
+        "parkItems": {
+            "park": "Park",
+            "gym": "Fitnessstudio",
+            "fitness": "Fitness",
+            "sportshall": "Sporthalle",
+            "minibowling": "Mini-Bowling",
+            "squash": "Squash",
+            "multimediaroom": "Multimediasaal",
+            "climbingwall": "Kletterwand",
+            "gamesroom": "Spieleraum",
+            "playroom": "Spieleraum",
+            "bikerental": "Fahrradverleih"
+        },
+        "button": "Kundenzone"
+    },
+    "footer": {
+        "header": "Lass uns reden!",
+        "info": {
+            "info1": {
+                "address": "Adresse",
+                "text": "Muszyna ul. Złockie 77c, 33-370"
+            },
+            "info2": {
+                "address": "Telefon",
+                "text": "+48 509 445 000"
+            },
+            "info3": {
+                "address": "E-Mail",
+                "text": "biuro@muszynova.pl"
+            },
+            "info4": {
+                "address": "Öffnungszeiten",
+                "text": "Ansehen"
+            }
+        },
+        "social": "Unsere Social Media"
+    },
+    "hero": {
+        "welcome": "Willkommen in der Muszynova! Food & Fun zu entdecken auf"
+    },
+    "about": {
+        "header": "Sport und Fun für Groß und Klein auf nOvym Niveau",
+        "alt": {
+            "1": "Sporthalle"
+        },
+        "button": "Virtueller Rundgang",
+        "text": "Gibt es ein Objekt, in dem jeder er selbst sein und seine Zeit so verbringen kann, wie er es mag? Dieser Gedanke begleitete uns beim Entwurf der Muszynova. Damit sich jeder wohlfühlt. Mit Blick auf die Kleinsten, Teenager und Erwachsene, Familien und Singles, Besucher und Einheimische sowie organisierte Gruppen entstand unser Freizeit- und Sportpark. Wir öffnen die Tür zu Unterhaltung und Aktivität auf einem neuen Qualitätsniveau."
+    },
+    "facebook": {
+        "header": "Neueste",
+        "span": "Beiträge",
+        "header2": "von Facebook",
+        "cta": "Besuche unser Profil",
+        "loading": "Beiträge werden geladen...",
+        "error": "Keine Beiträge verfügbar",
+        "error2": "Weiterlesen auf dem Portal...",
+        "cta2": "Ganzes auf Facebook ansehen"
+    },
+    "services": {
+        "header": "Unsere Sport- und Entspannungszonen",
+        "cards": {
+            "button": "Entdecken",
+            "1": {
+                "header": "Active Sport Zone",
+                "text1": "Kletterwand",
+                "text2": "Sporthalle",
+                "text3": "Squash",
+                "text4": "Fahrradverleih"
+            },
+            "2": {
+                "header": "Fun & Kids Zone",
+                "text1": "Mini-Bowling",
+                "text2": "Kinderspieleraum",
+                "text3": "Spieleraum",
+                "text4": "Multimediasaal"
+            },
+            "3": {
+                "header": "Fitness Sport Zone",
+                "text1": "Fitnessstudio",
+                "text2": "Fitness"
+            },
+            "4": {
+                "header": "Relax Sport Zone",
+                "text1": "Spezialisierte Trainerräume",
+                "text2": "Massage und Regeneration"
+            }
+        }
+    },
+    "restaurant": {
+        "header": "Das beste Restaurant in Muszyna",
+        "header2": "Wir setzen auf nova Qualität und auf die Entdeckung beskidischer Geschmäcker auf novo",
+        "text": "Suchen Sie einen besonderen Ort für ein kulinarisches Festmahl in Muszyna oder der Umgebung von Nowy Sącz? Das Restaurant Muszynova lädt ein, beskidische Geschmäcker in moderner Interpretation zu entdecken. Es ist der ideale Raum für ein Familienessen, ein romantisches Abendessen, eine Feier oder ein Geschäftstreffen. Wir bieten eine besondere Atmosphäre, gesunde und leichte Gerichte sowie professionellen Service.",
+        "alt": {
+            "1": "Modern servierter Gemüsesalat zum Mittagessen",
+            "2": "Milch und Käse",
+            "3": "Eis in Waffel",
+            "4": "5 Sterne",
+            "5": "Pizzastück",
+            "6": "Kaffee mit Schlagsahne in Tasse",
+            "7": "Portion verzierter Kuchen"
+        },
+        "items": {
+            "item1": {
+                "header": "Lokale Zutaten",
+                "text": "Wir fördern die Geschmäcker der beskidischen Küche. Entdecken wir sie auf nOvo, indem wir einen modernen Twist hinzufügen."
+            },
+            "item2": {
+                "header": "Kindergeschmäcker",
+                "text": "Wir denken an die Kleinsten, damit sie Spaß an der Zeit bei uns haben. Ausgetobt essen sie lieber. Lieblingspommes? Warum nicht aus Süßkartoffeln. Wir verwöhnen die Geschmacksknospen und lehren gute Gewohnheiten. Auf die Gesundheit."
+            },
+            "item3": {
+                "header": "NOve Standards",
+                "text": "Leckeres Essen, gesündere Wahl, aber auch komfortable Atmosphäre. Vergnügen, das auf nOvo auch durch das Verweilen in einem schönen, loftartigen Innenraum entdeckt wird."
+            },
+            "item4": {
+                "header": "Gesündere Wahl",
+                "text": "Pizza kann eine gesündere Wahl sein, wenn wir auf Vollkornmehl setzen. Iss nicht nur, schmecke, sondern ernähre dich auch mit uns."
+            },
+            "item5": {
+                "header": "Für Erwachsene",
+                "text": "Leckerer Kaffee, aber auch etwas mit Prozenten. Leichter Salat oder ein schönes Stück hausgemachten Desserts? Der ideale Ort, um bei einem Buch zu sitzen oder einen schönen Abend mit dem Liebsten zu verbringen."
+            },
+            "item6": {
+                "header": "Anlassfeiern",
+                "text": "Separater Saal für die Organisation einer Feier mit Attraktionen für die Kleinsten. Schließlich können die Erwachsenen am Tisch plaudern und die Kinder... Wir versprechen, dass wir für alle food & fun bieten."
+            }
+        }
+    },
+    "virtualtour": {
+        "header": "Virtueller Rundgang",
+        "button": "Virtuellen Rundgang laden"
+    },
+    "aboutus": {
+        "header": "Was ist",
+        "header2": "Was zeichnet uns aus?",
+        "text": "Muszynova – der Name ist eine fantasievolle Verbindung des Standorts „Muszyna“ mit dem Wort „modern“ in internationaler Schreibweise, denn wir sind offen für alle. Damit ist es ein Versprechen, eine Einladung, den bekannten Kurort gewissermaßen „auf novo“ zu entdecken. In neuer Ausgabe, in neuem Standard, für Groß und Klein, laden wir Einheimische und Touristen, einzeln und in Gruppen ein. Aktiv, lecker, kompromisslos – das ist unser nova Ansatz. Der moderne Park und das Restaurant laden dazu ein, die Zeit in Muszyna anders zu verbringen, so wie du es magst. Entdecke die Welt von food und fun aufs Neue, umgeben von der schönen Natur des Beskid Sądecki.",
+        "button": "Galerie",
+        "alt": {
+            "1": "Freizeit- und Sportpark Muszynova von außen vor schöner Naturkulisse"
+        },
+        "behind": {
+            "header": "Hinter den Kulissen der Entstehung von Muszynova",
+            "p1": "Kann man aktive Erholung mit Entspannung inmitten der Natur und dem Komfort moderner Räumlichkeiten verbinden? <strong>Ja! Genau aus diesem Bedürfnis entstand Muszynova</strong> – ein besonderer Ort auf der Karte des Beskid Sądecki, geschaffen für diejenigen, die mehr suchen als nur eine Unterkunft oder eine weitere Attraktion.",
+            "p2": "Inspiration für uns war <strong>Muszyna – ein Kurort mit außergewöhnlichem Flair</strong>, umgeben von Wanderwegen, Wäldern und Mineralquellen. Ein Ort mit Geschichte, aber auch mit enormem Potenzial, der eine moderne, frische Perspektive verdient. So entstand Muszynova – eine Verbindung von Tradition und Innovation, Lokalität und Weltoffenheit.",
+            "p3": "Von Anfang an wussten wir, dass wir mehr schaffen wollten als einen Sport- und Freizeitkomplex. <strong>Wir wollten einen Erlebnisraum bauen – für Familien, Touristen, Einheimische und Anhänger eines aktiven Lebensstils.</strong> Deshalb findest du in Muszynova nicht nur moderne Sportzonen und ein Restaurant, sondern auch die Philosophie „auf novo“ – basierend auf Qualität, Natur und gemeinsamer Zeit.",
+            "p4": "Heute ist Muszynova mehr als ein Ort – es ist eine Idee. Ein Angebot für Erholung auf neuem Niveau, das das Beste vereint: <strong>lokale Geschmäcker, beskidische Gastfreundschaft, körperliche Aktivität und Naturschönheit</strong>. Wir laden ein, Muszyna „auf novo“ kennenzulernen – durch die Augen von Menschen, die ihr Herz in diesen Ort gesteckt haben."
+        },
+        "cards": {
+            "text": "Muszyna ist ein bekannter und beliebter Kurort, der sich in den letzten Jahren äußerst dynamisch entwickelt und Touristen aus aller Welt anzieht. Dieser malerische Kurort, gelegen im Schutzgebiet des Beskid Sądecki, bezaubert mit Natur sowie vielen Attraktionen, zu denen u.a. Sinnesgärten, jahrhundertealte Denkmäler, Berg- und Radwanderwege sowie Mineralwasserquellen gehören.",
+            "card1": {
+                "header": "Muszyna - Lage",
+                "button": "Kontakt",
+                "text": "In der Stille, mit Blick auf das Grün der Wälder, direkt am Wanderweg, mit dem Rauschen des Flusses Poprad in der Ferne. So verbringst du Zeit bei uns, das ist die nova Qualität des Innenraums, aber auch die schöne Umgebung des Beskid."
+            },
+            "card2": {
+                "header": "Food – Restaurant",
+                "button": "Restaurant",
+                "text": "Eine kurze Speisekarte in novoczesnem Stil mit beskidischer Note. Leicht, nahrhaft, für Kinder und Erwachsene. Leckerer Kaffee, Drinks, und für Kinder bekannte und beliebte Pizzen, Desserts in gesünderer Version. Mit uns organisierst du auch Feierlichkeiten mit Attraktionen."
+            },
+            "card3": {
+                "header": "NOve Standards",
+                "button": "Park",
+                "text": "Aktive Freizeitgestaltung auf novo, mit Spaß. Wir ermutigen zu Bewegung von klein auf, darauf sind wir vorbereitet. Vier modern ausgestattete Aktivitätszonen mit dazugehörigen Einrichtungen warten auf Profisportler, Junioren, Familien und Einzelpersonen."
+            },
+            "card4": {
+                "header": "NOve Ansatz zur Erholung",
+                "button": "Galerie",
+                "text": "Wir verbinden Komfort, Natur und Aktivität an einem Ort. Wir setzen auf Qualität, Gemütlichkeit und lokales Flair, das in jedem Detail spürbar ist – von der Inneneinrichtung bis zum Geschmack der Speisen. Wir schaffen einen Raum, in dem jeder – unabhängig vom Alter – etwas für sich findet: Ruhe, Inspiration oder eine Portion gesunde Bewegung. Wir sind ein Ort, der im Rhythmus von Muszyna lebt, aber modern auf die Welt blickt – das ist genau unsere NOva Qualität."
+            }
+        }
+    },
+    "cta": {
+        "header": "Willkommen im Freizeit- und Sportpark Muszynova!",
+        "text": "Nach dem Besichtigungen laden wir Sie in unseren Freizeit- und Sportpark <strong>Muszynova</strong> ein, der eine Menge Attraktionen für jeden bietet! Hier finden Sie eine Sporthalle mit Bodenbelag für Fußball, Volleyball oder Basketball, eine Kletterwand, Squash, einen Spieleraum für Kinder mit Labyrinthen und Rutschen, einen Fahrradverleih sowie ein Fitnessstudio und einen Fitnessraum. Es ist der ideale Ort, um aktiv Zeit mit der Familie, Freunden oder alleine zu verbringen. Unser Restaurant serviert leichte Gerichte mit regionalen Akzenten, und für Kinder haben wir besondere Attraktionen vorbereitet. Besuchen Sie uns und entdecken Sie Unterhaltung auf <strong>neuem Niveau!</strong>",
+        "button": "Jetzt buchen"
+    },
+    "blog": {
+        "header": "Lies mehr auf unserem",
+        "link": "Blog",
+        "header2": "Unser Blog",
+        "searchPlaceholder": "Artikel suchen...",
+        "noArticlesFound": "Keine Artikel gefunden, die der Suche entsprechen.",
+        "previousButton": "Zurück",
+        "nextButton": "Weiter",
+        "readMoreButton": "Mehr lesen",
+        "header3": "Unsere Artikel",
+        "text": "Entdecke Muszyna aufs Neue mit Muszynova! Unser Blog ist ein Ort, an dem wir Inspirationen, lokale Kuriositäten, Ideen für aktive Erholung und die neuesten Events aus dem Freizeit- und Sportpark Muszynova teilen. Lerne Muszyna von innen kennen – durch die Augen von Natur-, Sport- und beskidischer Gastfreundschaft-Enthusiasten.",
+        "button": "Mehr lesen",
+        "recentPosts": {
+            "header": "Neueste Beiträge",
+            "button": "Mehr lesen...",
+            "error": "Keine Artikel verfügbar"
+        },
+        "favourites": {
+            "header": "Ausgewählt",
+            "button": "Mehr lesen...",
+            "error": "Keine Artikel verfügbar"
+        },
+        "blogPosts": {
+            "1": {
+                "title": "Was gibt es in Muszyna zu sehen? Die 10 besten Attraktionen",
+                "text": "Muszyna, ein malerischer Kurort im Beskid Sądecki, gelegen im Popradtal, ist der ideale Ort für Erholungssuchende, die Natur, Geschichte und aktive Freizeit lieben. Bekannt für ihre Heilwässer, reiche Geschichte und schöne Landschaften, zieht sie das ganze Jahr über Touristen an. Wir haben für Sie eine Liste der 10 besten Attraktionen zusammengestellt, die Sie diesen Ort lieben lassen werden. Und am Ende laden wir Sie ein, unseren Freizeit- und Sportpark Muszynova zu besuchen, wo eine Menge Unterhaltung auf Sie wartet!",
+                "header2": "Natur und Entspannung in Muszyna",
+                "header3": "Warum lohnt sich ein Besuch in Muszyna?",
+                "button": "Was gibt es in Muszyna zu sehen?",
+                "meta": {
+                    "title": "Top 10 der besten Attraktionen in Muszyna",
+                    "description": "Entdecke die 10 interessantesten Attraktionen Muszynas – von Themengärten bis hin zu historischen Burgen. Die perfekte Liste für jede Jahreszeit."
+                },
+                "list": {
+                    "1": "1. Sinnesgärten (Gärten der Sinne) - Das ist die größte Attraktion Muszynas, an den Hängen des Suchej Góra gelegen. Unterteilt in Zonen – Gesundheit, Düfte, Klang, Geschmack und Berührung – bieten sie therapeutische Erfahrungen für alle Sinne. Ein Spaziergang zwischen duftenden Kräutern, rauschenden Bächen und bunten Pflanzen ist die ideale Art zu entspannen. Auf dem Gipfel befindet sich ein Aussichtsturm mit Panoramablick auf den Beskid Sądecki und bei gutem Wetter die Tatra.",
+                    "2": "2. Biblische Gärten - Bei der Kirche des hl. Josef, Bräutigam der Jungfrau Maria, befinden sich die Biblischen Gärten – ein Ort der Besinnung und Ruhe. Für Meditation gestaltet, präsentieren sie kreativ Szenen aus der Heiligen Schrift, z.B. einen Teich, der an die Geschichte Moses erinnert, oder einen Feigenbaum, der das Paradies symbolisiert. Der Eintritt ist frei, daneben befindet sich die Mineralwasserquelle „Maryja“.",
+                    "3": "3. Burgruinen (Góra Baszta) - Die Ruinen einer mittelalterlichen Burg auf dem Hügel Baszta sind eines der ältesten Denkmäler Muszynas. Im 14. Jahrhundert erbaut, diente sie als Festung des Muszyńer Staates. Obwohl nur Mauerfragmente erhalten sind, bietet sich von hier ein schöner Blick auf das Popradtal. Im Mai finden hier Maiandachten an der Statue der Mutter Gottes statt.",
+                    "4": "4. Regionalmuseum des Muszyńer Staates - In einem rekonstruierten Gasthaus aus dem 17. Jahrhundert befindet sich das Regionalmuseum, das die Geschichte Muszynas, die Kultur der Lemken und die Geschichte des Muszyńer Staates näherbringt. Hier finden Sie Exponate zum Weinhandel, Handwerk und lokalen Traditionen. Ein großartiger Ort, um die reiche Vergangenheit der Region kennenzulernen.",
+                    "5": "5. Kirche des hl. Josef, Bräutigam der Jungfrau Maria - Die Barockkirche aus dem 17./18. Jahrhundert ist ein Juwel der Architektur Muszynas. In ihrem Inneren befindet sich eine gotische Skulptur der Muttergottes mit Kind sowie ein renaissancezeitliches Tabernakel. Neben der Kirche lohnt sich die alte Mauer und der Glockenturm von 1803.",
+                    "6": "6. Kurpark Zapopradzie - Der ideale Ort für Familien und Erholungssuchende. Hier gibt es Freibäder, eine Eisbahn (im Winter), einen Skatepark und Spazierwege. Ein Erholungszentrum, das das ganze Jahr über lebendig ist.",
+                    "7": "7. Mineralwasser-Trinkhallen - Muszyna ist berühmt für Mineralwässer wie „Muszynianka“. Trinkhallen wie „Milusia“ oder „Cechini“ bieten die Möglichkeit, Heilwässer zu probieren. Ein unverzichtbares Element eines Kurbesuchs, der Gesundheit mit Vergnügen verbindet.",
+                    "8": "8. Wander- und Radwege - Muszyna ist ein Paradies für Aktivurlauber. Wanderwege, z.B. auf die Jaworzyna Krynicka, sowie Radrouten im Beskid Sądecki bieten atemberaubende Ausblicke. Beliebte Radrouten finden Sie in der Umgebung von Złockie.",
+                    "9": "9. Poprad-Rafting - Der Fluss Poprad ist ideal für Wildwasser-Kajakfahren oder Rafting. Schlauchbootfahrten unterschiedlicher Schwierigkeitsgrade, von familiär bis extrem, bieten unvergessliche Emotionen. Eine großartige Attraktion für Adrenalin-Junkies.",
+                    "10": "10. Aussichtsturm auf dem Malnik Berg - Der 2023 in Betrieb genommene, 40 Meter hohe Aussichtsturm auf dem Malnik Berg ist eine neue Attraktion Muszynas. Er bietet spektakuläre Ausblicke auf den Beskid Sądecki und die umliegenden Gebirgszüge. Der ideale Ort für einen kurzen Ausflug und zum Genießen der Landschaft."
+                },
+                "alt": {
+                    "1": "Menschen auf Bergwanderweg in Muszyna",
+                    "2": "Schöner Bergblick in Muszyna",
+                    "3": "Wegweiser mit Wanderweg-Informationen",
+                    "4": "Wanderkarte der Wanderwege in Muszyna, Krynica"
+                },
+                "cta": {
+                    "header": "Entdecke Muszyna mit Muszynova",
+                    "text": "Willst du das wahre Flair von Muszyna spüren? Nach der Besichtigung der Attraktionen schau im Freizeit- und Sportpark Muszynova vorbei – hier warten Fahrräder, Squash, Fitnessstudio, Attraktionen für Kinder und regionale Küche auf dich. Alles an einem Ort!",
+                    "button": "Angebot von Muszynova prüfen"
+                }
+            },
+            "2": {
+                "title": "Die besten Wanderwege in Muszyna – entdecke den Beskid Sądecki",
+                "text": "Muszyna, im Herzen des Beskid Sądecki gelegen, ist der ideale Ausgangspunkt für Bergwanderungen. Umgeben von malerischen Tälern des Poprad, Wäldern und Gipfeln, bietet es Wanderwege unterschiedlicher Schwierigkeitsgrade – von Spazierwegen für Familien bis hin zu anspruchsvollen Touren für erfahrene Wanderer. Im Folgenden stellen wir die besten Wanderwege in der Umgebung von Muszyna vor, die es Ihnen ermöglichen, die Schönheit dieser Region zu entdecken. Am Ende laden wir Sie in den Freizeit- und Sportpark Muszynova ein, wo nach der Wanderung aktive Entspannung und regionale Geschmäcker auf Sie warten!",
+                "header2": "Warum ist Muszyna ein Paradies für Wanderer?",
+                "header3": "Die besten Wanderwege in Muszyna",
+                "button": "Die besten Wanderwege",
+                "meta": {
+                    "title": "Die besten Wanderwege in Muszyna",
+                    "description": "Prüfe die besten Wanderwege in Muszyna – Vorschläge für Fußwege, Panoramawege und Familienwege. Für Anfänger und Fortgeschrittene."
+                },
+                "list": {
+                    "1": "1. Weg auf den Malnik Berg – Aussichtspunkt für alle Länge: ca. 4,5 km (Rundweg) Gehzeit: ca. 1,5 h Schwierigkeitsgrad: Leicht Beschreibung: Der Malnik Berg (726 m ü. NN) ist einer der besten Aussichtspunkte in Muszyna, ideal für Anfänger und Familien. Der gelbe Weg beginnt im Zentrum Muszynas, führt am alten jüdischen Friedhof vorbei und steigt auf den Gipfel, wo 2023 der 40 Meter hohe Aussichtsturm eröffnet wurde. Vom Turm bietet sich ein Panorama auf den Beskid Sądecki, und bei gutem Wetter sind sogar die Tatra zu sehen. Die Route ist kurz, gut markiert und bietet sanfte Anstiege.",
+                    "2": "2. Weg auf die Jaworzyna Krynicka – Klassiker des Beskid Sądecki Länge: ca. 9 km (von Muszyna nach Złockie, weiter auf den Gipfel) Gehzeit: ca. 3-4 h eine Strecke Schwierigkeitsgrad: Mittel/Anspruchsvoll Beschreibung: Der grüne Weg von Muszyna über Złockie auf die Jaworzyna Krynicka (1114 m ü. NN) ist ein Muss für Bergliebhaber. Unterwegs passierst du die Mineralwasser-Trinkhalle „Cechini“ und die Holzkirche St. Demetrios in Złockie, die Teil der Route der Holzarchitektur ist. Der Weg führt durch Wälder und Lichtungen, und auf dem Gipfel erwartet dich die PTTK-Hütte sowie Ausblicke auf die Tatra, Pieninen und den Niedere Beskiden. Für weniger Geübte besteht die Möglichkeit, die Strecke abzukürzen, indem man die Gondelbahn von Krynica-Zdrój nutzt.",
+                    "3": "3. Runde „Szlak Sadzonego Jaja“ – Spaziergang mit Geschichte Länge: ca. 8 km (Rundweg) Gehzeit: ca. 2,5-3 h Schwierigkeitsgrad: Leicht Beschreibung: Diese malerische Route von Muszyna nach Złockie, genannt „Szlak Sadzonego Jaja“, führt über die Koziejówka (636 m ü. NN) und das Zeltlager Złockie. Der Weg beginnt an der Ulica 21 Stycznia, führt an der Quelle der hl. Anna vorbei und steigt auf den Bergkamm. Unterwegs passierst du das Naturschutzgebiet Lipowy Obrożyska-Wald, und in Złockie die Holzkirche St. Demetrios. Die ideale Route für Familien, die Natur mit lemkischer Geschichte verbindet.",
+                    "4": "4. Weg zur Berghütte Bacówka nad Wierchomlą – Ausblicke und Idylle Länge: ca. 2,5 km (von Wierchomla Mała, eine Strecke) Gehzeit: ca. 1 h eine Strecke Schwierigkeitsgrad: Leicht Beschreibung: Der schwarze Weg von Wierchomla Mała (ca. 10 km von Muszyna) zur Berghütte Bacówka nad Wierchomlą ist eine kurze, aber äußerst malerische Route, besonders für Familien mit Kindern empfohlen. Von der Lichtung bei der Berghütte bieten sich Ausblicke auf die Tatra, Pieninen und das Pasmo Radziejowej. Die Berghütte ist bekannt für ihre gemütliche Atmosphäre und leckere regionale Gerichte. Man kann mit dem Auto bis zur Skiliftstation fahren, um die Strecke zu verkürzen.",
+                    "5": "5. Naturlehrpfad zur Czarna Młaka – versteckter Schatz Länge: ca. 4 km (Rundweg von Powroźnik) Gehzeit: ca. 1,5-2 h Schwierigkeitsgrad: Leicht Beschreibung: Die Czarna Młaka, an den Hängen der Czarny Garb gelegen, ist ein einzigartiger Rutschungssee, der als Naturdenkmal geschützt ist. Der gelbe Weg von Powroźnik (ca. 5 km von Muszyna) führt durch den Wald, was die Route an heißen Tagen ideal macht. Vor Ort gibt es Aussichtsstege und eine Schutzhütte zum Ausruhen. Eine ruhige Route, wenig frequentiert, perfekt für Ruhesuchende und Naturkontakt."
+                },
+                "alt": {
+                    "1": "Burg in Muszyna mit Turm und Aussichtspunkt",
+                    "2": "Biblische Gärten in Muszyna",
+                    "3": "Poprad-Rafting",
+                    "4": "Marktplatz in Muszyna"
+                },
+                "cta": {
+                    "header": "Begib dich auf den Weg mit Muszynova",
+                    "text": "Planst du eine Bergtour? Beginne mit Muszynova – leihe dir ein Fahrrad, nutze die Karten, plane deine Route und entspanne dich nach der Rückkehr in unserem Park. Bei uns beginnt aktive Erholung bequem und stressfrei.",
+                    "button": "Leihe Ausrüstung und los!"
+                }
+            },
+            "3": {
+                "title": "Wie verbringt man ein Wochenende in Muszyna? Plan für den perfekten Kurztrip",
+                "text": "Muszyna, ein malerischer Kurort im Beskid Sądecki, ist ein hervorragender Ort für ein Wochenendausflug. Im Popradtal gelegen, bietet sie eine Kombination aus Entspannung, Aktivität in der Natur, reicher Geschichte und regionalen Geschmäckern. Wir haben für Sie einen Plan für das perfekte Wochenende in Muszyna vorbereitet, der es ermöglicht, die größten Attraktionen der Stadt und Umgebung zu entdecken. Als Dessert laden wir Sie in unseren Freizeit- und Sportpark Muszynova ein, wo eine Menge Unterhaltung auf Sie wartet! Hier ist ein Vorschlag für zwei Tage voller Eindrücke.",
+                "header2": "Warum Muszyna für ein Wochenende?",
+                "header3": "Die besten Wanderwege in Muszyna",
+                "button": "Verbringe das Wochenende",
+                "meta": {
+                    "title": "Wie verbringt man ein Wochenende in Muszyna",
+                    "description": "Plane das perfekte Wochenende in Muszyna – Attraktionen, Aktivitäten und lokale Geschmäcker, die dich diesen Ort lieben lassen werden."
+                },
+                "list": {
+                    "1": "Tag 1: Entspannung und Geschichte - Starte das Wochenende mit einem Spaziergang durch die Sinnesgärten an den Hängen des Suchej Góra, wo du dich unter duftenden Kräutern und rauschenden Bächen entspannst und den Beskid Sądecki vom Aussichtsturm aus bewunderst. Anschließend besuchst du die Ruinen der mittelalterlichen Burg auf dem Góra Baszta, von wo sich ein Blick auf das Popradtal bietet. Mittagessen in der Karczma nad Popradem, probiere Piroggen mit Schafskäse oder Forelle. Nach dem Essen begibst du dich zu den Biblischen Gärten bei der Kirche des hl. Josef, um in Stille die von der Heiligen Schrift inspirierten Arrangements zu bewundern und Wasser aus der Quelle „Maryja“ zu probieren. Schau auch in der Trinkhalle „Milusia“ vorbei, um das heilende „Muszynianka“ zu kosten. Beende den Tag mit einem Spaziergang durch den Kurpark Zapopradzie, voller Wege und Teiche, und zum Abendessen wählst du das Restaurant Muszynova, wo regionale Geschmäcker warten.",
+                    "2": "Tag 2: Natur und Aktivität - Starte den zweiten Tag mit einer Wanderung auf den Malnik Berg, wo ein leichter Weg zum 2023 eröffneten Aussichtsturm mit Panorama auf den Beskid Sądecki führt. Dann erlebe ein Abenteuer bei einer Familien-Schlauchbootfahrt auf dem Poprad, organisiert von Poprad Rafting. Nach der Fahrt isst du in der Gospoda u Krakowiaka in Złockie zu Mittag, probierst lemkische Sauersuppe oder Hausmannskost. Anschließend besuchst du das Regionalmuseum im Gasthaus aus dem 17. Jahrhundert, um die Geschichte Muszynas und die Kultur der Lemken kennenzulernen. Verbringe einen Moment im Zentrum für Souvenirkäufe oder einen Kaffee im Cafe Muszyna. Beende das Wochenende im Freizeit- und Sportpark Muszynova, wo du Volleyball spielen, Klettern an der Kletterwand ausprobieren, ein Fahrrad leihen oder im Fitnessstudio trainieren kannst. Kinder werden den Spieleraum mit Labyrinthen und Rutschen lieben. Zum Abendessen wählst du das Parkrestaurant mit regionalen Gerichten."
+                },
+                "alt": {
+                    "1": "Schriftzug I Love Muszyna",
+                    "2": "Biblische Gärten",
+                    "3": "Einzigartige Hauptgasse in Muszyna",
+                    "4": "Blick auf die Burg in Muszyna"
+                },
+                "cta": {
+                    "header": "Wochenende voller Attraktionen? Nur mit Muszynova",
+                    "text": "Plane ein unvergessliches Wochenende mit Hilfe von Muszynova! Wir bieten Fahrräder, Squash, Familienattraktionen und leckere Küche an einem Ort. Wir erleichtern aktive Erholung – direkt in Muszyna.",
+                    "button": "Plane das Wochenende mit Muszynova"
+                }
+            },
+            "4": {
+                "title": "Aktive Erholung im Beskid Sądecki",
+                "text": "Die Umgebung von Muszyna und Krynica-Zdrój sind Orte, an denen Natur auf Kultur trifft und aktive Erholung sich mit Entspannung abwechselt. Poprad-Rafting, eine Radtour auf der Velo Krynica-Route oder ein Spaziergang auf der Promenade in Krynica sind nur einige der Möglichkeiten, die diese Region bietet. Besuche Muszyna, nutze das Angebot des Fahrradverleihs Muszynova und entdecke den Beskid Sądecki auf eigene Faust!",
+                "header2": "Warum Muszyna für ein Wochenende?",
+                "header3": "Die Umgebung von Muszyna und Krynica ist ein Paradies für Aktivitätsliebhaber",
+                "button": "Aktive Erholung",
+                "meta": {
+                    "title": "Aktive Erholung in Muszyna und Krynica-Zdrój – Beskid Sądecki",
+                    "description": "Entdecke die Reize des Beskid Sądecki! Poprad-Rafting, Radwege Velo Krynica, Bergwanderungen und Entspannung in Muszyna. Der ideale Ort für ein aktives und naturnahes Wochenende."
+                },
+                "list": {
+                    "1": "Wander- und Radwege - Entspannung und Geschichte - Der Beskid Sądecki bietet viele Wanderwege unterschiedlicher Schwierigkeitsgrade. Von Muszyna lohnt sich der grüne Weg auf die Jaworzyna Krynicka (1114 m ü. NN), von der sich ein atemberaubendes Panorama auf die Beskiden und bei gutem Wetter sogar die Tatra bietet. Diese Route führt durch das Naturschutzgebiet „Lipowy Obrożyska-Wald“ und die Burgruinen in Muszyna, was sie nicht nur zu einem Natur- sondern auch zu einem historischen Abenteuer macht. Für Radfahrer ist die Velo Krynica-Route ideal, etwa 12 km lang, die von Krynica über Powroźnik nach Muszyna führt. Die Strecke ist komfortabel, vom Autoverkehr getrennt, was sie auch für Familien mit Kindern sicher macht. In Krynica gibt es Fahrradverleihe, auch für E-Bikes, die das Überwinden von Steigungen erleichtern.",
+                    "2": "Poprad-Rafting - Natur und Aktivität - Der durch Muszyna fließende Fluss Poprad ist ein ausgezeichneter Ort für Kajak- oder Schlauchbootfahrten. Eine Fahrt von Muszyna nach Żegiestów (ca. 10 km) dauert etwa 2 Stunden und ist sanft, ideal für Anfänger und Familien. Die malerische Landschaft des Popradtals, bewaldete Hügel und die ruhige Strömung machen dies zu einem unvergesslichen Abenteuer. Organisatoren wie lokale Firmen in Muszyna stellen Ausrüstung und Rücktransport bereit, was Komfort und Sicherheit garantiert. Nach der Fahrt laden wir ein, den aktiven Tag in Muszyna fortzusetzen! Leihen Sie Fahrräder in einem der lokalen Verleihe wie Muszynova und entdecken Sie die reizvollen Radwege der Umgebung. Die beliebte Route von Muszyna nach Krynica verläuft entlang des Poprad und ermöglicht es, die Schönheit der beskidischen Landschaft zu genießen. Der Verleih Muszynova bietet sowohl traditionelle als auch elektrische Fahrräder, ideal für Komfort auf leicht hügeligem Gelände. Unterwegs können Sie in Muszyna anhalten, um sich in den Sinnesgärten zu entspannen oder lokale Spezialitäten in einer der regionalen Gaststätten zu probieren."
+                },
+                "alt": {
+                    "1": "Hala Konieczna",
+                    "2": "Wielki-Wasserfall",
+                    "3": "Kapelle unter Jaworzynka",
+                    "4": "Teufelsstein auf der Jaworzyna Krynicka"
+                },
+                "cta": {
+                    "header": "Plane ein aktives Wochenende im Beskid Sądecki",
+                    "text": "Möchtest du Entspannung mit Aktivität an der frischen Luft verbinden? Der Beskid Sądecki ist der ideale Ort für einen Wochenendausflug. Nutze den Verleih Muszynova, entdecke malerische Wander- und Radwege und erlebe ein unvergessliches Poprad-Rafting. Zögere nicht – buche deine aktive Erholung noch heute!",
+                    "button": "Jetzt buchen"
+                }
+            },
+            "5": {
+                "title": "Squash – Sport mit Klasse. Lerne seine Geschichte kennen und warum es sich lohnt, es zu versuchen",
+                "text": "Wusstest du, dass Squash einer der schnellsten und intensivsten Rückschlag-Sportarten der Welt ist? Ein Spiel, das heute mit modernem Lebensstil assoziiert wird, hat seine Wurzeln bereits im 19. Jahrhundert!",
+                "header2": "Warum eroberte Squash die Welt?",
+                "header3": "Kurze Geschichte des Squash",
+                "button": "Geschichte des Squash",
+                "meta": {
+                    "title": "Geschichte des Squash – woher kommt dieser dynamische Sport?",
+                    "description": "Lerne die faszinierende Geschichte des Squash kennen – von britischen Schulen zu weltweiten Courts. Erfahre, wie dieser elitäre Sport populär wurde und warum es sich lohnt, ihn zu versuchen!"
+                },
+                "list": {
+                    "1": "Anfänge in England – Squash entstand in elitären britischen Schulen (u.a. Harrow School) um 1830, als Schüler bemerkten, dass der Ball sich nach dem Aufprall an der Wand „quetscht“ (squash) – daher der Name.",
+                    "2": "Entwicklung der Disziplin – Mit der Zeit gewann Squash in Sportclubs weltweit an Popularität, besonders in englischsprachigen Ländern.",
+                    "3": "Internationale Anerkennung – Im 20. Jahrhundert entstanden die ersten Verbände (z.B. World Squash Federation), und Squash wurde ein Profisport.",
+                    "4": "Wenig Platz, viel Action – Zum Spielen benötigt man einen kleinen Court, die Intensität und das Tempo sind wirklich hoch.",
+                    "5": "Sport für Berufstätige – Ideal für ein schnelles, effektives Training nach der Arbeit – 30 Minuten reichen, um richtig müde zu werden!",
+                    "6": "Zugänglichkeit – Einfache Regeln, leichte Erlernbarkeit auf Amateurniveau, gleichzeitig enorme taktische Tiefe.",
+                    "7": "Squash in Zahlen (für Kuriositätenfans): Über 20 Millionen Spieler weltweit. In einem Profimatch kann ein Spieler in 45 Minuten bis zu 5 km laufen. Ein Squashball erreicht Geschwindigkeiten von bis zu 270 km/h!",
+                    "8": "Warum lohnt es sich, Squash in Muszynova zu spielen? Moderne Courts mit ausgezeichneter Beleuchtung und Belüftung. Möglichkeit für Freizeitspiele oder Anmeldung zu Unterricht mit Trainer. Verfügbarkeit von Schlägern und Bällen vor Ort – komm, spiel, verliebe dich!"
+                },
+                "alt": {
+                    "1": "Professioneller Saal mit zertifizierten Squash-Maßen",
+                    "2": "Squash-Saal mit Schläger und Ball im Hintergrund",
+                    "3": "Schläger und Ball auf dem Squash-Saal",
+                    "4": "Squash-Saal mit Schläger und Ball"
+                },
+                "cta": {
+                    "header": "Spiele Squash in Muszynova",
+                    "text": "Moderne Courts, großartige Bedingungen und Ausrüstungsverleih vor Ort – egal ob du Freizeit spielst oder etwas Neues ausprobieren möchtest, Muszynova ist der ideale Ort für einen sportlichen Reset!",
+                    "button": "Buche einen Court in Muszynova"
+                }
+            },
+            "6": {
+                "title": "Mit dem Rad durch Muszyna",
+                "text": "Gibt es etwas Besseres als die Verbindung von aktiver Erholung mit Berglandschaften, Kurortflair und einem Hauch von Abenteuer? Wenn du dir einen Tag voller Bewegung, frischer Luft und schöner Ausblicke wünschst, ist eine Radtour durch die Umgebung von Muszyna ein Volltreffer. Und das Beste? Alles beginnt hier – im Fahrradverleih Muszynova, von wo aus du stressfrei und mit perfekt angepasster Ausrüstung aufbrechen kannst.",
+                "header2": "Warum lohnt es sich, Muszyna mit dem Rad zu erkunden?",
+                "header3": "TOP 3 Radwege von Muszyna aus",
+                "button": "Entdecke Muszyna mit dem Rad",
+                "meta": {
+                    "title": "Mit dem Rad durch Muszyna – Routen, Aussichten und der Verleih Muszynova",
+                    "description": "Lerne die schönsten Radwege in der Umgebung von Muszynas kennen und nutze den Verleih Muszynova – perfekte Ausrüstung, Hilfe bei der Routenplanung und aktive Erholung ohne Stress."
+                },
+                "list": {
+                    "1": "1. Muszyna-Touristische Runde Länge: ca. 30 km Schwierigkeit: mittel Zeit: ca. 4 Stunden Die Route führt durch die Täler von Muszynka und des Szczawny Potok, streift zahlreiche Aussichtspunkte und malerische Dörfer. Der ideale Vorschlag für eine halbtägige Tour für Leute mit grundlegender Kondition.",
+                    "2": "2. Karpaten-Radweg (Abschnitt Leluchów–Wierchomla) Länge: ca. 25 km Schwierigkeit: leicht Zeit: 2–3 Stunden Malerische Route entlang des Popradtals – großartig für Familien und Anfänger. Entlang des Weges warten Rastpunkte und mehrere Mineralwasserquellen.",
+                    "3": "3. Velo Krynica – von Krynica-Zdrój nach Muszyna Länge: ca. 11 km Schwierigkeit: sehr leicht Dieser bequeme, asphaltierte Weg ist ideal für Anfänger. Du kannst die Route in Krynica beginnen und in Muszyna beenden, z.B. mit dem Zug zurückfahren oder eine Runde über Powroźnik machen.",
+                    "4": "Fahrradverleih Muszynova – starte ohne unnötiges Gepäck! Kein eigenes Fahrrad? Oder willst du es nicht in den Urlaub mitnehmen? Muszynova bietet einen voll ausgestatteten Fahrradverleih direkt am Sport- und Freizeitpark. Eine bequeme Lösung für jeden – Touristen, Kurgäste, Familien mit Kindern oder MTB-Enthusiasten. Im Angebot: Trekkingräder, Mountainbikes und Kinderfahrräder Kindersitze, Helme und Zubehör Karten von Radwegen und Hilfe bei der Routenplanung Günstige Preise: stunden- oder tageweise Ausleihe Regelmäßig gewartete und an die Körpergröße angepasste Fahrräder",
+                    "5": "Rad-Entdeckungen – was siehst du unterwegs? Sinnesgärten und Biblische Gärten Holzkirche St. Jakob in Powroźnik (UNESCO) Burgruinen in Muszyna und Aussichtsplattformen Malerische Mineralwasserquellen Stege über den Poprad, Wiesen, Wälder und Flüsse Eine ausgezeichnete Möglichkeit, gesunde Anstrengung mit dem Kennenlernen der Region zu verbinden – ohne Hetze, nah an der Natur."
+                },
+                "alt": {
+                    "1": "Viele Fahrräder vor dem Freizeit- und Sportpark Muszynova in Muszyna"
+                },
+                "cta": {
+                    "header": "Dein Radabenteuer beginnt in Muszynova",
+                    "text": "Kein Fahrrad? Wir haben's! Der Verleih Muszynova bietet moderne Fahrräder und alles, was du für die Tour brauchst – bequem, sicher und mit Spaß. Entdecke den Beskid Sądecki aus dem Sattel!",
+                    "button": "Leihe ein Fahrrad in Muszynova"
+                }
+            },
+            "7": {
+                "title": "Tauche ein in die Gesundheit – Muszynas Mineralwässer",
+                "text": "Muszyna ist nicht nur malerische Landschaften und Bergwege – es ist auch eine Quelle von Gesundheit, die direkt aus der Natur fließt. Die Mineralwässer aus den hiesigen Quellen sind für ihre außergewöhnlichen gesundheitsfördernden Eigenschaften bekannt, und ihr regelmäßiger Verzehr stärkt die Immunität, verbessert die Verdauung und wirkt sich positiv auf das Nervensystem aus. Ein Spaziergang durch den Kurpark mit einer Tasse frischen Wassers in der Hand ist ein wahres Vergnügen, das gleichzeitig den Körper stärkt.",
+                "header2": "Warum ist Muszynas Wasser natürliche Medizin?",
+                "header3": "TOP 3 Mineralwasserquellen in Muszyna",
+                "button": "Lerne die Kraft von Muszynas Wasser kennen",
+                "meta": {
+                    "title": "Muszynas Mineralwässer – natürliche Gesundheitsquelle | Muszynova",
+                    "description": "Entdecke die gesundheitlichen Eigenschaften der Mineralwässer aus Muszyna. Finde heraus, welche Quellen einen Besuch wert sind und wie sie Immunität, Verdauung und Wohlbefinden unterstützen. Willkommen in Muszynova!"
+                },
+                "list": {
+                    "1": "1. Milusia-Quelle Lage: Kurpark, neben der Trinkhalle Antoni Wasser: mittelmineralisiert, mit hohem Magnesium- und Calciumgehalt. Ideal für Gestresste und Übermüdete. Milder, leicht salziger Geschmack.",
+                    "2": "2. Grunwald-Quelle Lage: Ulica Ogrodowa, unterer Teil des Parks Zapopradzie Wasser: niedrig mineralisiert, unterstützt den Stoffwechsel und wirkt harntreibend. Oft gewählt von Personen bei Entgiftungskuren.",
+                    "3": "3. Józef-Quelle Lage: Bei den Sinnesgärten Wasser: hoch mineralisiert, empfohlen bei Mineralstoffmangel, Anämie und Herzproblemen. Ausdrucksstarker, leicht eisenhaltiger Geschmack.",
+                    "4": "Wasser direkt aus der Natur – Gesundheit umsonst Beim Spazierengehen durch Muszyna stößt man alle paar Schritte auf Mineralwasservorkommen. Trinkhallen und Quellen sind kostenlos zugänglich, und jedes Wasser hat eine andere Zusammensetzung und Geschmack. Du kannst selbst diejenige wählen, die am besten zu deinen Bedürfnissen passt – du brauchst nur eine Flasche und den Willen, es zu probieren.",
+                    "5": "Zusätzliche Vorteile: natürliche Kur ohne Rezept Unterstützung der Behandlung von Bluthochdruck und Diabetes positiver Einfluss auf Darm-, Magen- und Nierenfunktion entspannendes Klima des Kurparks ideale Ergänzung zu Spaziergängen und körperlicher Aktivität"
+                },
+                "alt": {
+                    "1": "Mineralwässer Antoni in Muszyna"
+                },
+                "cta": {
+                    "header": "Entdecke die Gesundheitsquelle im Herzen der Beskiden",
+                    "text": "Du musst nicht weit suchen, um für deine Gesundheit zu sorgen. In Muszyna hast du alles in Reichweite – natürliche Quellen, saubere Luft und Kurortflair. Komm zu Muszynova, trink Wasser aus der Quelle, ein bisschen deinen Lieblingssport, und du wirst den Unterschied spüren!",
+                    "button": "Probier die Mineralwässer aus Muszyna"
+                }
+            },
+            "8": {
+                "title": "Die Magie von Muszyna – lokale Legenden und Geschichten aus dem Popradtal",
+                "text": "Muszyna ist nicht nur ein Kurort mit schönen Landschaften und Mineralwässern – es ist auch ein Ort voller alter Erzählungen, Geheimnisse und Legenden, die von Generation zu Generation weitergegeben werden. Im Schatten der Berge und im Rauschen des Poprad verbergen sich Geschichten, die diesem Ort besonderen Charme verleihen. Lerne mit uns die bekanntesten lokalen Legenden kennen, die seit Jahren die Fantasie von Einheimischen und Touristen beflügeln.",
+                "header2": "Bewacht der Geist der Fürstin noch immer die Burgruinen?",
+                "header3": "TOP 3 Legenden aus Muszyna, die es wert sind, gekannt zu werden",
+                "button": "Entdecke die Geheimnisse von Muszyna",
+                "meta": {
+                    "title": "Lokale Legenden und Geschichten von Muszyna | Blog Muszynova",
+                    "description": "Lerne die geheimnisvollen Geschichten aus Muszyna kennen – von der Weißen Frau bis zu verwunsenen Schätzen. Entdecke die Magie der Region durch Legenden und lokale Geschichten im Blog von Muszynova."
+                },
+                "list": {
+                    "1": "1. Legende von der Weißen Frau der Burg in Muszyna Vor langer Zeit lebte eine Fürstin auf der Burg, die tragisch starb, während sie ihr Volk verteidigte. Man sagt, dass man bis heute in mondhellen Nächten die Weiße Frau zwischen den Ruinen wandeln sehen kann, die alte Geheimnisse und in den Kellern versteckte Schätze bewacht.",
+                    "2": "2. Verzauberter Schatz unter dem Malnik Berg Der Legende nach wurde in einer der Höhlen unter dem Malnik ein riesiger Schatz versteckt – Gold, das einem Räuberhauptmann gehörte. Aber nur derjenige, der ein reines Herz und gute Absichten hat, kann ihn finden. Andere hören nur das Echo geheimnisvoller Stimmen und kehren niemals auf demselben Weg zurück.",
+                    "3": "3. Quelle der Verliebten in den Sinnesgärten Einer lokalen Erzählung zufolge traf sich vor langer Zeit ein verliebtes Paar heimlich an der Quelle im Tal. Obwohl ihre Liebe verboten war, schworen sie sich an dem Quellwasser Treue. Heute glauben viele, dass ein Trunk aus dieser Quelle Glück in der Liebe bringt.",
+                    "4": "Magische Orte mit Seele Muszyna ist voll von symbolischen Orten: alten Kapellen, Steinen mit Legenden, Quellen mit „Kraft“. Beim Spazierengehen lohnt es sich, die Einheimischen zu fragen – sie kennen diese Geschichten am besten und teilen sie gerne.",
+                    "5": "Warum lohnt es sich, lokale Legenden zu kennen? Weil sie einem Ort Seele verleihen. Beim Spazierengehen durch Muszyna wird plötzlich alles tiefer – jeder Weg kann eine Geschichte bergen, jeder Baum Zeuge der Vergangenheit sein. Eine großartige Möglichkeit, Erholung mit der Entdeckung der regionalen Kultur zu verbinden."
+                },
+                "alt": {
+                    "1": "Burg in Muszyna im Sonnenlicht"
+                },
+                "cta": {
+                    "header": "Lerne Muszyna durch Legenden und Geschichten kennen",
+                    "text": "Tauche ein in die außergewöhnliche Welt von Sagen, Geistern und geheimnisvollen Orten. Komm nach Muszyna, spaziere durch die Burgruinen, besuche die Quelle der Verliebten und spüre die Magie, die seit Jahrhunderten Menschen in dieses Tal zieht.",
+                    "button": "Entdecke die Legenden von Muszyna mit eigenen Augen"
+                }
+            },
+            "9": {
+                "title": "Was gibt es in Krynica-Zdrój zu sehen? 15 beste Attraktionen, die du 2025 kennen musst",
+                "text": "Krynica-Zdrój ist nicht nur der berühmteste polnische Kurort, es ist eine wahre Perle des Beskid Sądecki, die zu jeder Jahreszeit begeistert. Bergluft, Heilwässer, eine lebendige Promenade, Skipisten und Aussichten, die atemberaubend sind – deshalb kommen jedes Jahr über eine Million Touristen hierher. Wir haben für Sie eine aktuelle Liste von 15 Orten zusammengestellt, die Sie unbedingt sehen müssen. Und wenn Sie die ideale Ausgangsbasis suchen – am Ende verraten wir, wo Sie an der besten Lage in Krynica übernachten können!",
+                "header2": "Die schönsten Orte und Attraktionen von Krynica-Zdrój",
+                "header3": "Warum ist Krynica-Zdrój immer noch Nummer 1 in den polnischen Bergen?",
+                "button": "Was kann man in Krynica-Zdrój tun?",
+                "meta": {
+                    "title": "15 beste Attraktionen von Krynica-Zdrój 2025 – was ist sehenswert?",
+                    "description": "Aktuelle TOP-15-Liste der Attraktionen von Krynica-Zdrój: Jaworzyna, Sankostrada, Trinkhalle, neue Radwege VeloKrynica und vieles mehr. Der perfekte Plan für Wochenende und längeren Urlaub."
+                },
+                "list": {
+                    "1": "1. Jaworzyna Krynicka (1114 m) + Gondelbahn – Pflichtprogramm! Die moderne 7,7 km lange Bahn befördert in 7 Minuten auf den Gipfel. Oben: 360°-Aussichtsplattform (man sieht die Tatra!), Restaurant, Spazierwege und im Winter die besten Skipisten der Region.",
+                    "2": "2. Sankostrada auf dem Góra Krzyżowa – die längste ganzjährige Rodelbahn Polens (3000 m Abfahrt!). Garantierte Emotionen für Kinder und Erwachsene – funktioniert sogar bei Regen dank speziellem System.",
+                    "3": "3. Promenade und Haupttrinkhalle – das Herz von Krynica. Schöne Architektur, Konzerte, Cafés mit Flair und die Möglichkeit, direkt aus der Quelle der berühmten Wässer zu trinken: Zuber, Słotwinka, Jan, Tadeusz.",
+                    "4": "4. Góra Parkowa mit Schienen-Seilbahn (aus dem Jahr 1937!) – technisches Denkmal. Auf dem Gipfel: Rajskie Ślizgawki (Rutschbahn), Spielplatz, Kletterpark und Aussichtspunkt.",
+                    "5": "5. Rajskie Ślizgawki – Neuheit 2024/2025 – 4 Abfahrtsstrecken (darunter eine 800-Meter-Strecke!). Idealer Spaß für Familien, ganzjährig geöffnet.",
+                    "6": "6. Spielzeugmuseum „Baśń“ – über 5000 Exponate aus aller Welt. Von alten Puppen bis zu Lego-Steinen aus den 60ern – Kinder toben, Erwachsene kehren in die Kindheit zurück.",
+                    "7": "7. Museum von Nikifor Krynicki – Pflicht für Liebhaber naiver Kunst. Werke des berühmten lemkischen Malerprimitivisten in der schönen Villa „Romanówka“.",
+                    "8": "8. Liebesbänke und Pump Room mit Live-Musik – abends verwandelt sich die Promenade in den romantischsten Ort der Berge. Konzerte, Wein und Flair wie in den 30ern.",
+                    "9": "9. Radwege VeloKrynica – 12 km neuer asphaltierter Strecke von Krynica nach Muszyna entlang des Baches. Ideal für Familien, Roller und Inlineskater.",
+                    "10": "10. Skipisten Słotwiny Arena – moderner und weniger überlaufen als Jaworzyna. 10 km Pisten, 6er-Sessellift, Snowpark und nächtliches Fahren bei Beleuchtung.",
+                    "11": "11. Gesundheits- und Entspannungszentrum im Hotel Czarny Potok **** – Thermalbecken mit Schwefelwasser, Saunabereich, Salzgrotte und Moorbehandlungen. Bestes Spa in Krynica.",
+                    "12": "12. Pumptrack-Strecke und Enduro-Wege auf dem Góra Krzyżowa – kostenlose Strecke für Radfahrer und neues Enduro-Netz (von grün bis schwarz).",
+                    "13": "13. Krynica-Baumweg – neuer Lehrpfad im Wald mit Tafeln über Bäume und riesigen Insektenskulpturen. Super für Kinder.",
+                    "14": "14. Lemko Trail – Route der lemkischen Kultur: Holzkirchen in Tylicz, Powroźnik (UNESCO) und Mochnaczka – 30 Autominuten von Krynica entfernt.",
+                    "15": "15. Krynica-Markt und Events 2025 – Wirtschaftsforum, Jan-Kiepura-Festival, Lauffestival, Silvester auf der Piste – prüfe den Kalender, denn immer ist etwas los!"
+                },
+                "alt": {
+                    "1": "Gondelbahn auf die Jaworzyna Krynicka im Winter"
+                },
+                "cta": {
+                    "header": "Krynica hinter dir? Zeit für Muszynova!",
+                    "text": "Nur 10 km von Krynica entfernt – der größte Freizeit- und Sportpark im Beskid Sądecki! Squash, Sporthalle, Fahrräder, Fitnessstudio, Spielzimmer, Kletterwand, Bowling und leckeres Essen an einem Ort. Du zahlst nur für die gewählten Attraktionen. Die Kinder werden vor Freude ausrasten, und ihr könnt endlich entspannen ;)",
+                    "button": "Auf nach Muszynova!"
+                }
+            },
+            "10": {
+                "title": "Auf den Spuren der Ikonen: Entdecke die Holzkirchen mit dem Rad von Muszynova aus!",
+                "text": "Der Beskid Sądecki ist nicht nur Berge und Mineralwässer, sondern auch ein außergewöhnliches Kulturerbe der Lemken. Der beste Weg, um den Zauber dieser Region zu spüren und ihre schönsten Denkmäler zu sehen, ist eine Radtour! Abseits des Hauptverkehrs, durch malerische Täler, gelangst du zu geheimnisvollen hölzernen Holzkirchen, von denen eine in der UNESCO-Liste steht. Der Muszynova Park ist deine ideale Ausgangsbasis – steig aufs Rad und begib dich auf den Weg!",
+                "header2": "Die schönsten Holzkirchen nahe Muszyna und Krynica",
+                "header3": "Warum ist die Kirchenroute am besten mit dem Rad zu bewältigen?",
+                "button": "Leihe ein Fahrrad in Muszynova!",
+                "meta": {
+                    "title": "Mit dem Rad auf die Kirchenroute UNESCO – Powroźnik, Szczawnik und die Umgebung von Muszyna",
+                    "description": "Die interessantesten lemkischen Holzkirchen im Popradtal. Sieh, wie du mit dem Rad von Muszynova nach Powroźnik (UNESCO) und Szczawnik kommst. Ideale Route für Familien."
+                },
+                "list": {
+                    "1": "1. Holzkirche in Powroźnik (UNESCO) – Pflichtpunkt der Tour! Nur 6 km von Muszyna entfernt, eines der ältesten und wertvollsten Objekte hölzerner Sakralarchitektur in Polen, eingetragen in die UNESCO-Welterbeliste. Sieh den originalen Ikonostas aus dem 18. Jh.",
+                    "2": "2. Holzkirche in Szczawnik – Malerisch im Tal eines Baches gelegen, etwa 10 km von Muszyna. Besticht durch schlichte Form und harmonische Einbettung in die Berglandschaft. Idealer Ort für einen Moment der Besinnung und Pause auf dem Weg.",
+                    "3": "3. Holzkirche in Krynica-Zdrój (Hl. Apostel Peter und Paul) – Wenn du die Route bis Krynica verlängerst (entlang der VeloKrynica!), besuche diesen schönen Sakralbau vom Ende des 19. Jh. Etwas neuer, aber ihr Inneres und der geschnitzte Ikonostas beeindrucken enorm.",
+                    "4": "4. Holzkirche in Tylicz (Hl. Kosmas und Damian) – Option für ausdauernde Radfahrer. Etwas weiter entfernt, aber wegen des reichen Inneren und der charakteristischen Drei-Turm-Konstruktion sehenswert.",
+                    "5": "5. Mit dem Rad, nicht mit dem Auto – Warum? Ruhige Straßen und Wege (wie VeloKrynica) minimieren den Autoverkehr. Du kannst jederzeit anhalten, um die Aussicht zu genießen und die Bergluft zu spüren. Auch familienfreundlich!",
+                    "6": "6. Verleih Muszynova Park – Kein Fahrrad? Kein Problem! Bei uns findest du Mountainbikes, Trekkingräder, die dich mühelos zu jeder Kirche auf dem beskidischen Hügel bringen. Wir verleihen auch Kindersitze und Helme!",
+                    "7": "7. Regeneration nach der Tour – Nach der Rückkehr zu Muszynova erwartet dich volle Entspannung! Regeneriere deine Muskeln oder iss eine verdiente Mahlzeit im Restaurant."
+                },
+                "alt": {
+                    "1": "Fahrrad geparkt vor einer lemkischen Holzkirche"
+                },
+                "cta": {
+                    "header": "Bereit für ein historisches Abenteuer auf zwei Rädern?",
+                    "text": "Plane deine Tour noch heute! Eine Fahrradreservierung bei Muszynova garantiert funktionierende Ausrüstung und eine gelungene Fahrt. Entdecke die Geheimnisse des Popradtals im besten Stil – aktiv und naturverbunden.",
+                    "button": "Prüfe das Fahrradangebot"
+                }
+            }
+        }
+    },
+    "park": {
+        "header": "Freizeit- und Sportpark",
+        "text": "Aktivität bedeutet für uns Vielfalt. Damit jeder Fun daraus zieht, seine Zeit gut verbringt, so wie er es mag, unabhängig vom Kenntnisstand oder der Sportart. Wir sind vorbereitet auf Unterhaltung und Schweißtreiben. Für Groß und Klein, Amateure und Profis. Professionelle Geräte, moderne Einrichtungen in schönen Räumlichkeiten – all das erwartet dich in Muszynova. Und du entdeckst!",
+        "button": "Mehr Lesen",
+        "header2": "Was zeichnet uns aus?",
+        "alt": {
+            "1": "Freizeit- und Sportpark Muszynova von außen vor schöner Naturkulisse"
+        },
+        "active": {
+            "header": "Aktiv, gesund, mit einem Lächeln",
+            "text1": "Suchst du einen Ort, der <strong>Unterhaltung, Sport und Entspannung</strong> in einem bietet? Der <strong>Freizeit- und Sportpark Muszynova</strong> ist ein Raum, der für Menschen jeden Alters geschaffen wurde – Familien mit Kindern, Liebhaber von Mannschaftssportarten, Bergabenteuer-Enthusiasten und denen, die einen aktiven Lebensstil schätzen.",
+            "text2": "Es ist der ideale Ort sowohl für tägliches Training, Wochenendausflüge als auch längere Aufenthalte im malerischen <strong>Muszyna</strong> – einem bekannten Kurort im Herzen des Beskid Sądecki. Der Park verbindet moderne technologische und sportliche Lösungen mit natürlicher Umgebung – alles, um Komfort und vielfältige Aktivitäten zu gewährleisten.",
+            "text3": "Hier findest du u.a. eine <strong>Sporthalle</strong> mit professionellem Bodenbelag, eine <strong>Kletterwand, Fitnessstudio, Fitnessraum, Mini-Bowling, Kinderspielraum, Squash- und Tischtennis-Courts</strong> sowie eine <strong>VR-Zone</strong> und Multimedia. Für Outdoor-Fans haben wir einen <strong>Fahrradverleih</strong> vorbereitet.",
+            "text4": "In <strong>Muszynova</strong> setzen wir auf <strong>Aktivität ohne Einschränkungen</strong> – unabhängig vom Alter, Kenntnisstand oder bevorzugter Bewegungsform. Mit uns verbindest du Vergnügen mit Sorge um Gesundheit, Kondition und Wohlbefinden.",
+            "header2": "Warum lohnt sich ein Besuch?",
+            "list": {
+                "1": "Moderne Sport- und Freizeitinfrastruktur",
+                "2": "Ausgezeichnete Lage im Kurort Muszyna",
+                "3": "Attraktionen für Kinder, Jugendliche und Erwachsene",
+                "4": "Zonen für Entspannung, Freizeit und intensives Training",
+                "5": "Professionelle und sichere Ausrüstung",
+                "6": "Möglichkeit zur Organisation von Events, Turnieren und Kursen mit Trainer"
+            }
+        },
+        "cards": {
+            "text": "Muszyna ist ein bekannter und beliebter Kurort, der sich in den letzten Jahren äußerst dynamisch entwickelt und Touristen aus aller Welt anzieht. Dieser malerische Kurort, gelegen im Schutzgebiet des Beskid Sądecki, bezaubert mit Natur sowie vielen Attraktionen, zu denen u.a. Sinnesgärten, jahrhundertealte Denkmäler, Berg- und Radwanderwege sowie Mineralwasserquellen gehören.",
+            "card1": {
+                "header": "Sporthalle",
+                "text": "mit zertifizierter, mehrschichtiger Sportbodenoberfläche Gerflor Teraflex. Wir laden zum Spielen von Mannschaftssportarten ein: Hallenfußball, Volleyball, Basketball, Handball sowie Badminton und Gymnastik.",
+                "button": "Sporthalle"
+            },
+            "card2": {
+                "header": "Mini-Bowling",
+                "text": "ausgestattet mit zwei Bahnen. Im Bowlingraum haben wir auch eine Entspannungszone für wartende Spieler eingerichtet.",
+                "button": "Mini-Bowling"
+            },
+            "card3": {
+                "header": "Kletterwand",
+                "text": "sowohl für Amateure als auch Profis vorgesehen. Unsere Konstruktion ist ein moderner Raum mit geometrischen Blöcken und Vorsprüngen von 90 m² Fläche. Die Abmessungen der Wand erlauben die gleichzeitige Nutzung durch drei Personen. Besitzt 6 obere Sicherungspunkte, 18 individuelle Sicherungspunkte.",
+                "button": "Kletterwand"
+            },
+            "card4": {
+                "header": "Kinderspieleraum",
+                "text": "ausgestattet mit einer Spielkonstruktion, in der zahlreiche Attraktionen auf Kinder warten: Labyrinthe, Tunnel, Leitern, Rutsche, Bällchenbad. Zudem wurde im Spieleraum eine Kleinkindzone mit weichen Sitzsäcken, Bällchenbad sowie manipulativen und sensorischen Tafeln eingerichtet, die den Jüngsten sowohl Spiel als auch Lernen ermöglichen.",
+                "button": "Spieleraum"
+            },
+            "card5": {
+                "header": "Squash-Saal",
+                "text": "gemäß den Richtlinien der WSF (World Squash Federation) ausgeführt. Die Courts wurden so vorbereitet, dass sowohl Mannschaftswettbewerb als auch Entspannung durch individuelles Training möglich sind.",
+                "button": "Squash"
+            },
+            "card6": {
+                "header": "Fahrradverleih",
+                "text": "mit umfassendem Sortiment an Fahrrädern und Zubehör für Kinder und Erwachsene, die Zeit an der frischen Luft bevorzugen. Hier findest du Herren-, Damen- und Kinderfahrräder sowie notwendige Ausrüstung für sicheres Fahren.",
+                "button": "Fahrradverleih"
+            },
+            "card7": {
+                "header": "Tischtennis-Saal",
+                "text": "ausgestattet mit zwei Tischen für die Lieblingssportart von Groß und Klein, das beliebte Pingpong. Attraktion für verschiedene Altersgruppen.",
+                "button": "Spieleraum"
+            },
+            "card8": {
+                "header": "Fitnessstudio",
+                "text": "ermöglicht ein umfassendes Zirkeltraining. Hier findest du hochwertige Ausrüstung – zertifiziert und sicher für Nutzer. Die Cardio-Zone bietet Laufbänder, elektromagnetische Trainingsräder, Rudergeräte, elektromagnetische Ellipsentrainer, Stepper.",
+                "button": "Fitnessstudio"
+            },
+            "card9": {
+                "header": "Fitness-Saal",
+                "text": "Der Fitness-Saal ermöglicht ein umfassendes Zirkel- und Cardio-Training. Ausgestattet mit Laufbändern, elektromagnetischen Trainingsrädern, Rudergeräten, elektromagnetischen Ellipsentrainern sowie Steppern – alles für deine Kondition und Gesundheit.",
+                "button": "Fitness"
+            },
+            "card10": {
+                "header": "Multimediasaal",
+                "text": "Ausgestattet mit einer PlayStation-Konsole und einem Virtual-Reality-System (VR), ist der Multimediasaal ein Ort, an dem Spieler in faszinierende virtuelle Welten eintauchen können. Egal, ob man dynamische Actionspiele oder explorative VR-Abenteuer bevorzugt, unser Saal ermöglicht volle Wahlfreiheit der Unterhaltung.",
+                "button": "Multimediasaal"
+            }
+        }
+    },
+    "gym": {
+        "header": "Fitnessstudio",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Wenn du effektiv deine Kondition verbessern und mit Unterstützung qualifizierter Trainer Form erreichen möchtest, ist unser Fitnessstudio in Muszyna der ideale Ort für dich.",
+        "text2": "Hier findest du hochwertige Ausrüstung – zertifiziert und sicher für Nutzer. Je nach Trainingsplan und Vorlieben stehen eine Zone für freie Gewichte, eine Gerätezone und eine Cardio-Zone zur Verfügung.",
+        "button": "Karte kaufen",
+        "alt": {
+            "1": "Sportgeräte im Fitnessstudio Muszynova",
+            "2": "Laufbänder sowie Ellipsentrainer und Stepper",
+            "3": "Hanteln unterschiedlichen Gewichts",
+            "4": "Rudergeräte im Fitnessstudio"
+        },
+        "cards": {
+            "header": "Fitnessstudio",
+            "text": "Wir bieten Zugang zu modernen Geräten, beschäftigen aber auch erfahrene Trainer, die bereit sind, einen Trainingsplan speziell auf deine Bedürfnisse zuzuschneiden. Dank dieses personalisierten Ansatzes und dem Fachwissen unseres Personals erreichst du mühelos gewünschte Ergebnisse. Wir glauben, dass wir gemeinsam einen Plan erstellen können, der deine Erwartungen erfüllt und dir Motivation für systematisches Training und einen gesunden Lebensstil gibt.",
+            "card1": {
+                "header": "Beratung",
+                "text": "Wenn du nicht weißt, wie du anfangen sollst: Unsere erfahrenen Trainer führen mit dir eine Beratung durch, analysieren genau deine Ziele, Trainingshistorie und eventuelle körperliche Einschränkungen. Sie zeigen dir, wie du alle verfügbaren Geräte richtig nutzt.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Trainingsplan",
+                "text": "Trainer können für dich einen personalisierten Trainingsplan erstellen, angepasst an deine individuellen Bedürfnisse und Ziele. Sie gewährleisten einen umfassenden Ansatz, berücksichtigen sowohl deine aktuellen Fähigkeiten als auch Fitness-Aspirationen, damit du optimale Ergebnisse erzielst.",
+                "button": "Gruppenkurse"
+            },
+            "card3": {
+                "header": "Personal Training",
+                "text": "Wir bieten auch Personal Training an, bei dem der Trainer persönlich erklärt, wie jede Übung korrekt ausgeführt wird. Dank diesem personalisierten Ansatz wird das Training noch effektiver, und du erhältst detaillierte Hinweise zu Technik, Intensität und Progression.",
+                "button": "Über Uns"
+            }
+        }
+    },
+    "fitness": {
+        "header": "Fitness",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Fitnesskurse im Park Muszynova wurden mit Blick auf Gesundheit, gute Kondition und Freude an körperlicher Aktivität geschaffen. Unabhängig vom Kenntnisstand, Alter oder Trainingsziel haben wir für jeden etwas.",
+        "text2": "Unsere Instruktoren sind bereit, dich durch verschiedene Aktivitätsformen zu führen, von energiegeladenen Kursen mit hoher Intensität bis zu statischen, entspannenden Pilates-Sessions.",
+        "button": "Gruppenkurse",
+        "alt": {
+            "1": "Grüne Bälle und Matten im Fitnessraum mit Spiegeln in Muszyna",
+            "2": "Fitnesskurs mit Trainer auf Matten",
+            "3": "Gummibälle für Übungen",
+            "4": "Fitnesskurs mit Teilnehmern jeden Alters"
+        },
+        "cards": {
+            "header": "Fitnesskurse",
+            "text": "Fitnessinstruktoren bieten uns Trainings an, die sich in Intensität, Einsatz von zusätzlichem Gewicht oder anderem Equipment unterscheiden. Die Art des Trainings können wir je nachdem, ob wir unsere Ausdauer verbessern oder uns auf Muskelaufbau und Kraftsteigerung konzentrieren möchten, selbst wählen. Neben Kalorienverbrennung und allgemeiner Kräftigung ist Fitness vor allem Spaß!",
+            "card1": {
+                "header": "Kids-Kurse",
+                "text": "Wir laden die Kleinsten ein, gemeinsam Freude an Bewegung und gesundem Lebensstil in Muszynova zu entdecken. Unsere Kurse für Kinder entwickeln die körperliche Fitness und bilden positive Gewohnheiten, die für ihre Gesundheit und gute Kondition in der Zukunft vorteilhaft sein werden.",
+                "button": "Spieleraum"
+            },
+            "card2": {
+                "header": "Kurse für Erwachsene",
+                "text": "Für unsere erwachsenen Teilnehmer haben wir in Muszynova vielfältige und auf verschiedene Kenntnisstufen angepasste Fitnesskurse vorbereitet, die helfen, gute körperliche Form zu erhalten, aber auch zu Momenten der Entspannung und Flucht vom Alltagsstress werden...",
+                "button": "Preise"
+            },
+            "card3": {
+                "header": "Individuelles Training",
+                "text": "Unsere erfahrenen Personal Trainer arbeiten mit jedem Kunden, passen den Trainingsplan an individuelle Bedürfnisse, Fähigkeiten und Ambitionen an. Individuelles Training ermöglicht Fokus auf einen konkreten Bereich wie Kraftverbesserung, Gewichtsreduktion, Flexibilitätssteigerung oder allgemeine Fitnessverbesserung.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "sportshall": {
+        "header": "Sporthalle",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Unsere Sporthalle ist ein Ort, an dem Sport zur Leidenschaft wird und Bewegung ein Weg zu Gesundheit und Fähigkeitsentwicklung ist. Ein Raum, der ausgezeichnete Bedingungen für verschiedene Sportarten bietet, aber auch zu aktivem Lebensstil und gemeinsamem Wettbewerb inspiriert.",
+        "text2": "Die Sporthalle ist ein Objekt mit einem Spielfeld, das als Basketball-, Volleyball-, Badminton- oder Handballfeld fungieren kann. Ein Ort, der vor Energie pulsiert und ausgezeichnete Bedingungen für Sportler wie Amateure schafft.",
+        "button": "Kontakt",
+        "alt": {
+            "1": "Sporthalle mit Netz, Anzeigetafeln, Kletterwand in Muszyna",
+            "2": "Volleyballnetz vor Kletterwand",
+            "3": "Zwei Tischtennistische",
+            "4": "Menschen, die freizeitmäßig Volleyball spielen"
+        },
+        "cards": {
+            "header": "Sporthalle",
+            "text": "In Muszynova laden wir herzlich ein, unsere Sporthalle zu nutzen, wo Bewegung zum Vergnügen wird und Sport nicht nur körperliche Aktivität, sondern gemeinsame Leidenschaft ist. Schließ dich uns an und entdecke die Freude an Bewegung!",
+            "card1": {
+                "header": "Hallenmiete",
+                "text": "Die Miete unserer Sporthalle garantiert professionelle Infrastruktur, flexible Terminplanung und Unterstützung erfahrener Mitarbeiter. Wir sorgen dafür, dass jedes Event in freundlicher Atmosphäre unter Einhaltung hoher Sicherheits- und Komfortstandards stattfindet.",
+                "button": "Preise"
+            },
+            "card2": {
+                "header": "Mannschaftsspiele",
+                "text": "Unsere Halle ist für verschiedene Sportarten wie Basketball, Volleyball, Handball, Badminton angepasst. Die Flexibilität des Raums ermöglicht die Anpassung der Halle an konkrete Bedürfnisse, sodass wir verschiedenen Erwartungen gerecht werden können.",
+                "button": "Galerie"
+            },
+            "card3": {
+                "header": "Angebot für Schulen",
+                "text": "Unsere Sporthalle wurde mit Blick auf die Unterstützung körperlicher Aktivität und gesunden Lebensstils unter Schülern geschaffen. Es besteht die Möglichkeit, die Halle für Schul- oder außerschulische Aktivitäten zu mieten.",
+                "button": "Über Uns"
+            }
+        }
+    },
+    "minibowling": {
+        "header": "Mini-Bowling",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Mini-Bowling ist eine großartige Unterhaltungsform, die sowohl Kindern als auch Erwachsenen Freude bringt. Kleinere Kegel, kürzere Distanz, aber die gleiche Portion Spaß – all das erwartet Bowling-Enthusiasten in unserem Freizeitzentrum.",
+        "text2": "Mini-Bowling erfordert keine besonderen Fähigkeiten, was es für jeden zugänglich macht. Auch eine tolle Option, um Zeit mit Freunden oder Familie zu verbringen, und zu gesundem Wettbewerb und gemeinsamer Unterhaltung anregt.",
+        "button": "Buchen",
+        "alt": {
+            "1": "Mädchen spielen Mini-Bowling in Muszynova",
+            "2": "Zwei Bowlingbahnen in Muszyna",
+            "3": "Bowlingkugeln bereit zum Spiel",
+            "4": "Zwei grün beleuchtete Bowlingbahnen"
+        },
+        "cards": {
+            "header": "Mini-Bowling",
+            "text": "In Muszynova laden wir herzlich in unser modernes Bowlingcenter ein, wo ausgezeichnete Atmosphäre, moderne Einrichtungen und enthusiastisches Personal ideale Bedingungen für Freude an diesem klassischen und gleichzeitig aufregenden Spiel schaffen. Möge jeder Wurf Anlass zu Lächeln und guter Unterhaltung sein!",
+            "card1": {
+                "header": "Bowling für Kinder",
+                "text": "Bowling ist nicht nur ein Spiel für Erwachsene, sondern auch eine großartige Unterhaltungsform für die Kleinsten. Bunte Kegel ziehen die Aufmerksamkeit der Kinder auf sich und schaffen dabei eine dynamische und fröhliche Atmosphäre. Ein großartiger Spaß und eine Möglichkeit, motorische Fähigkeiten, Präzision und Zusammenarbeit mit Gleichaltrigen zu entwickeln.",
+                "button": "Galerie"
+            },
+            "card2": {
+                "header": "Geburtstage",
+                "text": "Bowling ist eine ausgezeichnete Möglichkeit, eine aktive Party zu organisieren, die sowohl Kleinkinder als auch ältere Gäste zufriedenstellt.",
+                "button": "Kontakt"
+            },
+            "card3": {
+                "header": "Gruppen",
+                "text": "Wir bieten die Möglichkeit, dynamische Gruppenaktivitäten zu organisieren. Eine ausgezeichnete Option für Firmen, Schulen oder Freundesgruppen, die eine attraktive und integrative Art der Zeitgestaltung suchen.",
+                "button": "Restaurant"
+            }
+        }
+    },
+    "climbingwall": {
+        "header": "Kletterwand",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Die Kletterwand ist eine ideale Aktivität, die ganzjährig verfügbar ist. Inspiriert zum Erreichen neuer Höhen und zum Überwinden eigener Grenzen.",
+        "text2": "Unsere Kletterwand bietet unvergessliche Erfahrungen für Kletterer mit unterschiedlichem Kenntnisstand, sowohl für diejenigen, die ihr Kletterabenteuer beginnen, als auch für erfahrene Enthusiasten.",
+        "button": "Buchen",
+        "alt": {
+            "1": "Kletterwand mit farbigen Elementen in Muszyna",
+            "2": "Mädchen klettert an der Kletterwand in Muszynova"
+        },
+        "cards": {
+            "header": "Kletterwand",
+            "text": "Sicherheit hat bei uns Priorität. Solide Wandkonstruktion und professionelle Sicherungen sorgen dafür, dass sich jeder Kletterer auf das Erreichen weiterer Meter konzentrieren kann, ohne sich um seine Sicherheit sorgen zu müssen. Unsere Kletterwand bietet verschiedene Routen, angepasst an die Fähigkeiten und Erfahrung jedes Kletterers.",
+            "card1": {
+                "header": "Gruppenkurse",
+                "text": "Wir laden zur Teilnahme an unseren Gruppenkursen an der Kletterwand ein. Unsere Kurse sind mit Blick auf verschiedene Kenntnisstufen geschaffen, angepasst an die Fähigkeiten und Erfahrung jedes Teilnehmers.",
+                "button": "Gruppenkurse"
+            },
+            "card2": {
+                "header": "Individuelle Kurse",
+                "text": "Unsere erfahrenen Instruktoren passen das Kursprogramm an deinen Kenntnisstand, individuelle Ziele und Lerntempo an. Dadurch kannst du dich auf konkrete Aspekte des Kletterns konzentrieren, die für dich am wichtigsten sind. Auch ideal für diejenigen, die Privatsphäre schätzen und sich auf ihren eigenen Fortschritt konzentrieren möchten.",
+                "button": "Preise"
+            },
+            "card3": {
+                "header": "Angebot für Schulen und Gruppen",
+                "text": "Für Schulen bieten wir lehrreiche Kurse, bei denen Schüler unter Aufsicht erfahrener Instruktoren Kletterfähigkeiten erwerben können. Eine ausgezeichnete Gelegenheit, körperliche Fitness zu entwickeln, Teamwork-Fähigkeiten zu formen und Selbstvertrauen aufzubauen.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "playground": {
+        "header": "Spieleraum",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Der Spieleraum für Kinder ist ein Raum, speziell für die Kleinsten geschaffen, damit sie in sicherer Umgebung spielen und aktiv Zeit verbringen können. In einem solchen Raum haben Kinder Zugang zu verschiedenen Attraktionen, die ihnen Freude und Unterhaltung bieten",
+        "text2": "Sie können kreative Aktivitäten und andere Formen der Unterhaltung nutzen. Im Spieleraum wird darauf geachtet, dass sich jedes Kind wohlfühlt und die Möglichkeit zur Interaktion mit anderen Gleichaltrigen hat. Ein ausgezeichneter Ort, an dem Kleinkinder soziale Fähigkeiten entwickeln, mit anderen teilen und in der Gruppe zusammenarbeiten können.",
+        "button": "Über Uns",
+        "alt": {
+            "1": "Spielzeug, Tisch, Stühle im Spieleraum in Muszyna",
+            "2": "Hindernisparcours für Kinder",
+            "3": "Spielmatte mit Spielzeug für Kinder",
+            "4": "Buntes Spielzeug für Kinder"
+        },
+        "cards": {
+            "header": "Du trainierst und dein Kind spielt unter Aufsicht unserer Betreuer.",
+            "text": "Organisiere einen Geburtstag in Muszynova. Wir gewährleisten ausgezeichnete Bedingungen und bieten eine Reihe von Attraktionen, um diesen Tag noch außergewöhnlicher zu gestalten. Zur Verfügung stehen geräumige Räume, ideal für die Organisation einer Geburtstagsfeier, thematische Dekorationen sowie Animateurinnen. Für die Kleinsten bieten wir Animationen, Spiele und Wettbewerbe. Für ältere Kinder haben wir ein reichhaltiges Angebot an Attraktionen wie Mini-Bowling, Multimediasaal oder Spielzone.",
+            "card1": {
+                "header": "Betreuung",
+                "text": "Während du dich auf intensives Training konzentrierst, bieten wir sicheren und freudigen Spielspaß für dein Kind. In einer speziell angepassten Spielzone kann dein Kind unter Aufsicht eines Betreuers alle Attraktionen nutzen und ausgiebig spielen. Wir sorgen dafür, dass jedes Kind sich wohlfühlt und aktiv Zeit in sicherer Umgebung verbringen kann.",
+                "button": "Kontakt"
+            },
+            "card2": {
+                "header": "Animateurinnen",
+                "text": "Unsere Animateurinnen sorgen dafür, dass die Zeit der Kleinen voller Lächeln ist. Wir organisieren kreative Spiele, Wettbewerbe und Bastelaktivitäten, angepasst an Alter und Interessen der Kinder. Sicherheit und Wohlbefinden der Kinder haben für uns Priorität, daher kannst du sicher sein, dass dein Kind unter ständiger Aufsicht qualifizierter Fachkräfte steht, die auf jedes Detail achten, um einen Tag voller positiver Eindrücke und Freude zu organisieren.",
+                "button": "Restaurant ansehen"
+            },
+            "card3": {
+                "header": "Klettergerüst",
+                "text": "Wir sind ein neuer Ort in unserer Region, der ein modernes Klettergerüst für Kinder bietet. Ein speziell geschaffener Raum, in dem eure Kleinen durch Interaktion mit altersgerechten Elementen entdecken, spielen und ihre Fähigkeiten entwickeln können. Unsere innovative Konzeption des Klettergerüsts garantiert, dass Kinder eine einzigartige Gelegenheit haben, neue Fähigkeiten spielerisch in sicherer und freundlicher Umgebung zu erwerben.",
+                "button": "Galerie"
+            }
+        }
+    },
+    "squash": {
+        "header": "Squash",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Unser Squash-Saal ist ein Ort, an dem Enthusiasten dieses dynamischen Sports alles finden, was sie für ein aufregendes Spiel benötigen.",
+        "text2": "Ausgestattet mit einem professionellen Court, ist unser Saal sowohl für erfahrene Spieler als auch für diejenigen geschaffen, die gerade ihr Squash-Abenteuer beginnen. Komm, tauche ein in das intensive Tempo des Squash-Spiels und erlebe unvergessliche Emotionen!",
+        "button": "Preise",
+        "alt": {
+            "1": "Professioneller Saal mit zertifizierten Squash-Maßen",
+            "2": "Squash-Saal mit Schläger und Ball im Hintergrund",
+            "3": "Schläger und Ball auf dem Squash-Saal",
+            "4": "Squash-Saal mit Schläger und Ball"
+        },
+        "cards": {
+            "header": "Squash",
+            "text": "Nimm die Herausforderung an und versuche dich im Squash – einer dynamischen und immer beliebteren Sportart, die aus dem Tennis stammt. Ein intensives Spiel, das Adrenalin liefert, aber auch Beweglichkeit und Kondition verbessert. Nicht nur ein effektives Konditionstraining, sondern auch eine ausgezeichnete Gelegenheit, viele Kalorien zu verbrennen. Beim Squash-Spielen hast du nicht nur Spaß, sondern sorgst aktiv für deine Gesundheit und körperliche Fitness.",
+            "card1": {
+                "header": "Einzige in der Umgebung",
+                "text": "Ein außergewöhnlicher Squash-Saal, der unvergessliche Eindrücke bietet. Der einzige seiner Art in Muszyna und Umgebung!",
+                "button": "Über Uns"
+            },
+            "card2": {
+                "header": "Online-Buchung",
+                "text": "Buche deinen Squash-Court bequem online mit nur wenigen Klicks und spare Zeit.",
+                "button": "Buchen"
+            },
+            "card3": {
+                "header": "7 Tage die Woche",
+                "text": "Wir laden ein, unseren Squash-Saal 7 Tage die Woche zu nutzen. Ruf an unter 509 445 000 oder buche online.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "bikerental": {
+        "header": "Fahrradverleih",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Unser Fahrradverleih ist der ideale Ort für Liebhaber von Aktivitäten an der frischen Luft. Wir bieten eine breite Auswahl an Fahrrädern – von Stadt- bis Mountainbikes – für Kinder und Erwachsene.",
+        "text2": "Leihe ein Fahrrad und entdecke die malerischen Routen von Muszyna und Umgebung, und genieße die Naturschönheit. Eine großartige Art der aktiven Erholung für jeden, unabhängig von Erfahrung!",
+        "button": "Preise",
+        "alt": {
+            "1": "Viele Fahrräder vor dem Freizeit- und Sportpark Muszynova in Muszyna",
+            "2": "Rezeption mit bequemer Couch vor Treppen in Muszynova"
+        },
+        "cards": {
+            "header": "Fahrradverleih",
+            "text": "In Muszynova bieten wir moderne Fahrräder in ausgezeichnetem Zustand, angepasst an verschiedene Routen und Bedürfnisse. Leih ein Fahrrad und begib dich auf Abenteuer – von gemütlichen Touren bis zu anspruchsvollen Bergpfaden. Nicht nur eine Aktivitätsart, sondern auch eine Gelegenheit, die Region auf ökologische Weise zu erkunden!",
+            "card1": {
+                "header": "Lokale Routen",
+                "text": "Entdecke Muszyna und Umgebung mit dem Rad – wir empfehlen die besten Routen für Anfänger und fortgeschrittene Radfahrer!",
+                "button": "Über Uns"
+            },
+            "card2": {
+                "header": "Breite Auswahl",
+                "text": "Leih das für dich ideale Fahrrad – wir haben Stadt-, Mountain-, Kinderfahrräder und Zubehör wie Helme oder Kindersitze.",
+                "button": "Preise"
+            },
+            "card3": {
+                "header": "7 Tage die Woche",
+                "text": "Unser Verleih ist 7 Tage die Woche geöffnet. Ruf an unter 509 445 000 und begib dich auf ein Radabenteuer!",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "gameroom": {
+        "header": "Spieleraum",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Im Park Muszynova wollten wir einen Ort schaffen, wo du zusammen mit deinen Freunden wettbewerben und Spaß haben kannst. Für Liebhaber von Strategie und Präzision bieten wir einen professionellen Billardtisch sowie Tischtennistische, an denen du deine Konzentrationsfähigkeit oder Hand-Auge-Koordination verbessern kannst. Zusätzlich haben wir für diejenigen, die schnelle und aufregende Spiele schätzen, einen Kickertisch und Air Hockey vorbereitet.",
+        "text2": "Freundliche Atmosphäre, moderne Ausstattung und ausgezeichnete Unterhaltung sorgen dafür, dass die in Muszynova verbrachte Zeit nicht nur aktiv, sondern auch äußerst angenehm sein wird. Wir laden ein, die faszinierende Welt auf nOvo zu entdecken.",
+        "button": "Über Uns",
+        "alt": {
+            "1": "Tisch für Tipp-Kick und im Hintergrund Kickertisch sowie Tischtennistisch",
+            "2": "Heller Raum mit Kickern und Tipp-Kick",
+            "3": "Kicker",
+            "4": "Billardtisch im Spieleraum in Muszynova"
+        },
+        "cards": {
+            "header": "Spieleraum",
+            "text": "In unserem Spieleraum findest du Attraktionen, die unvergessliche Momente sowohl alleine als auch mit Freunden oder Familie bieten. Ein professioneller Billardtisch ermöglicht Wettbewerb und Verbesserung deiner Fähigkeiten und schafft eine Atmosphäre sportlicher Leidenschaft. Kickertische und Air Hockey versetzen Spieler in eine Welt von Emotionen und schneller Action. In Muszynova legen wir Wert nicht nur auf körperliche Aktivität, sondern auch auf ganzheitliches Vergnügen der in unserem Freizeitzentrum verbrachten Zeit. Wir laden ein, die faszinierende Welt der Spiele und Unterhaltung in Muszynova zu entdecken!",
+            "card1": {
+                "header": "Billiard",
+                "text": "Billiard ist ausgezeichneter Spaß, aber auch eine großartige Möglichkeit, Konzentration, Präzision und strategische Planungsfähigkeiten zu entwickeln. Das Spiel ermöglicht den Aufbau von Strategie und Taktik. Unabhängig vom Kenntnisstand ist Billard für alle zugänglich und kann sowohl Amateure als auch Profis begeistern.",
+                "button": "Galerie"
+            },
+            "card2": {
+                "header": "Kicker",
+                "text": "Kicker verbindet perfekt Elemente von Wettbewerb und Spaß und macht jede Partie zu einem unvergesslichen Erlebnis für alle Teilnehmer.",
+                "button": "Preise"
+            },
+            "card3": {
+                "header": "Tipp-Kick",
+                "text": "Tipp-Kick, auch bekannt als Air Hockey, ist ein elektrisierendes Spiel, das den Wettbewerb auf eine flache Tischoberfläche verlegt. Gespielt mit speziellen Scheiben und Griffen, bietet es schnelles Tempo, reflexives Spiel und emotionale Duelle.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "multimediaroom": {
+        "header": "Multimediasaal",
+        "header2": "Was zeichnet uns aus?",
+        "text1": "Das Herz unseres Multimediasaals bildet die neueste PlayStation, wo wir Zugang zu den besten Spielen und Unterhaltungen für Konsolenfans bieten.",
+        "text2": "Von aufregenden Abenteuern bis zu emotionalen Sportspielen findet jeder etwas für sich. Und das alles auf bequemen Sitzsäcken, die ideale Bedingungen zum Eintauchen in die Welt der virtuellen Unterhaltung schaffen.",
+        "button": "Über Uns",
+        "alt": {
+            "1": "Junge hält Playstation-5-Controller in der Hand",
+            "2": "Junge sitzt vor Fernseher und spielt Sportspiel auf Spielkonsole"
+        },
+        "cards": {
+            "header": "Multimediasaal",
+            "text": "Ausgestattet mit einer PlayStation-Konsole und einem Virtual-Reality-System (VR) ist der Multimediasaal ein Ort, an dem Spieler in faszinierende virtuelle Welten eintauchen können. Egal, ob man dynamische Actionspiele oder explorative VR-Abenteuer bevorzugt, unser Saal ermöglicht volle Wahlfreiheit der Unterhaltung.",
+            "card1": {
+                "header": "PlayStation",
+                "text": "Wir laden dich in unseren modernen Multimediasaal ein, wo die Welt der PlayStation zu einem echten Abenteuer wird! Auf dich warten die neuesten Spiele, unvergessliche Emotionen und unvergleichliche Erlebnisse in der Welt der virtuellen Unterhaltung.",
+                "button": "Galerie"
+            },
+            "card2": {
+                "header": "VR",
+                "text": "Wir laden dich ein, eine neue Dimension der Unterhaltung in unserem außergewöhnlichen Multimediasaal mit Virtual Reality (VR) zu entdecken. Ein Ort, an dem die Grenzen der Realität mit Fantasie verschmelzen und unvergessliche Erfahrungen schaffen.",
+                "button": "Preise"
+            },
+            "card3": {
+                "header": "Geburtstage",
+                "text": "Plane einen außergewöhnlichen Geburtstag in unserem fantastischen Multimediasaal, wo jeder Moment zu einem unvergesslichen Abenteuer wird! Du musst dich nicht um die Organisation kümmern – unser Team kümmert sich um jedes Detail, damit du dich ausschließlich auf das Genießen des Augenblicks konzentrieren kannst.",
+                "button": "Kontakt"
+            }
+        }
+    },
+    "restaurantpage": {
+        "header": "Restaurant Muszynova",
+        "header2": "Hier lernst du die Speisekarte kennen",
+        "header3": "Muszynova ist eine gute Wahl!",
+        "text1": "Im Restaurant Muszynova entdecken wir beskidische Geschmäcker in moderner Interpretation. Unsere Speisekarte bietet sorgfältig ausgewählte, gesunde und leichte Gerichte, zubereitet aus lokalen Zutaten. Eine kurze, aber durchdachte Karte mit regionalen Akzenten ermöglicht es, den Reichtum der beskidischen Küche besser kennenzulernen.",
+        "text2": "Wir setzen auf Einfachheit, Geschmack und Qualität – ohne Kompromisse. Suchst du ein leichtes Mittagessen, ein Familienessen oder etwas Leckeres für den Abend? Bei uns findet jeder etwas für sich: Kinder, Jugendliche, Erwachsene. Wir haben etwas für Liebhaber von Klassikern und modernen Interpretationen – auch für Pizzafans in gesünderer Version. Wir laden nicht nur zum Essen ein – es ist ein Ort für Treffen, Entspannung und gute Unterhaltung. Oder vielleicht einen Drink oder hausgemachten Dessert zum Ausklang des Tages? In Muszynova kümmern wir uns um deinen Geschmack und deine Zeit.",
+        "button": "Speisekarte",
+        "button2": "Getränkekarte",
+        "button4": "Kindermenü",
+        "button3": "Restaurant-Galerie ansehen",
+        "alt": {
+            "1": "Restaurantraum Muszynova mit stimmungsvoller Beleuchtung",
+            "2": "Spezialität des Küchenchefs Muszynova"
+        },
+        "cards": {
+            "card1": {
+                "header": "Feiern, Jubiläen, Treffen",
+                "text": "Restaurant Muszynova – entdecke Geschmäcker, aber habe auch guten Fun. Wir sorgen für die perfekte Kombination, gute Zeit, gute Gesellschaft, am richtigen Ort. Wir bieten komfortable Räumlichkeiten für die Organisation von Feiern und Events – Familientreffen und gesellige Runden, Jubiläen und Jahrestage, Firmenbankette, Teambuilding, Kommunionen und Hochzeiten organisiere mit uns. Entdecke nova Qualität.",
+                "button": "Über Uns"
+            },
+            "card2": {
+                "header": "Shows, Ausstellungen, Messen",
+                "text": "Wir verfügen über komfortable zwei Säle mit einer Gesamtfläche von über 250 m². In beiden Sälen können zwei unabhängige Veranstaltungen stattfinden. Zusätzlich steht uns noch die Sporthalle zur Verfügung, auf der wir Sportevents, aber auch Ausstellungen, Shows, Messen oder Konzerte organisieren. Ein Ort, den du entdecken kannst.",
+                "button": "Galerie"
+            },
+            "card3": {
+                "header": "Konferenzen, Geschäftstreffen",
+                "text": "Geschäftskunden laden wir zur Organisation von Konferenzen ein. Neben dem Restaurant haben wir den Saal Nova – modern und klimatisiert. Hier befindet sich ein Projektor, der ein Bild von bis zu 15 m² Fläche projiziert. Die Ausstattung verfügt über vollprofessionelle Audio-Video-Verkabelung, was eine schnelle und reibungslose Installation mit externen Geräten ermöglicht. Komfortabel, modern.",
+                "button": "Kontakt"
+            },
+            "card4": {
+                "header": "Gesunde beskidische Küche – nahe Nowy Sącz",
+                "text": "Muszynova ist ein Restaurant, das auf Gesundheit und Leichtigkeit setzt. Unsere Speisekarte bietet frische, lokale Zutaten und regionale Inspirationen, die sowohl Einwohner von Muszyna als auch Gäste aus Nowy Sącz und Umgebung zufriedenstellen. Komm, probiere gesunde Gerichte und spüre das beskidische Flair in komfortablen Räumlichkeiten.",
+                "button": "Anfahrt"
+            },
+            "card5": {
+                "header": "Familienessen und Kindermenü",
+                "text": "In Muszynova kümmern wir uns um ganze Familien. Unser Kindermenü verbindet gesunde Zutaten mit leckeren Geschmäckern, die die Kleinsten lieben werden. Komfortable und freundliche Räumlichkeiten sorgen dafür, dass Familien aus Nowy Sącz und Umgebung uns gerne für gemeinsame Mahlzeiten besuchen.",
+                "button": "Menü kennenlernen"
+            },
+            "card6": {
+                "header": "Außergewöhnliche Abende mit Drink und Musik",
+                "text": "Faszinierende Raumgestaltung, Loft-Flair, stimmungsvolle Beleuchtung und komfortable Bedingungen sorgen dafür, dass man in Muszynova länger bleiben möchte. Ein idealer Raum für Treffen bei Kaffee, romantische Abende oder einfach – Momente der Entspannung bei gutem Essen.",
+                "button": "Park"
+            }
+        }
+    },
+    "pricing": {
+        "header": "Preise",
+        "alt": "Preisliste des Freizeit- und Sportparks Muszynova in Muszyna",
+        "button": "Angebot für Senioren",
+        "button2": "Angebot für Schulen"
+    },
+    "groupclasses": {
+        "header": "Gruppenkurse",
+        "alt": "Kurskalender Muszynova"
+    },
+    "gallery": {
+        "header": "Galerie",
+        "restaurant": "Restaurant",
+        "header2": "Restaurant-Galerie",
+        "park": "Park",
+        "header3": "Park-Galerie",
+        "alt": {
+            "1": "Objekt Muszynova aus der Vogelperspektive",
+            "2": "Speisekarte auf Tisch im Restaurant Muszynova platziert"
+        }
+    },
+    "contact": {
+        "header": "Kontaktiere uns!",
+        "alt": "Visitenkarte des Freizeit- und Sportparks Muszynova mit Informationen",
+        "cards": {
+            "card1": {
+                "header": "Adresse",
+                "text1": "33-370 Muszyna Złockie 77c",
+                "text2": "Eigentümer des Objekts ist:",
+                "text3": "Handelsunternehmen Mikulec",
+                "text4": "Steuernummer 7341518138",
+                "button": "Über Uns"
+            },
+            "card2": {
+                "header": "Rezeption",
+                "text1": "biuro@muszynova.pl",
+                "text2": "+48 509 445 000 Park Muszynova",
+                "text3": "+48 509 825 000 Restaurant Muszynova",
+                "button": "Galerie"
+            },
+            "card3": {
+                "header": "Gruppenreservierungen, Anlassfeiern",
+                "text1": "Bartosz Lemański, Manager",
+                "text2": "manager@muszynova.pl",
+                "text3": "tel: +48 509 027 000",
+                "button": "Gruppenkurse"
+            },
+            "card4": {
+                "header": "Restaurant Muszynova",
+                "text1": "Öffnungszeiten",
+                "text2": "Sonntag - Donnerstag",
+                "text3": "Freitag - Samstag",
+                "text4": "Die Küche nimmt Bestellungen bis 15 Minuten vor Schließung entgegen",
+                "button": "Restaurant"
+            },
+            "card5": {
+                "header": "Park Muszynova",
+                "text1": "Öffnungszeiten",
+                "text2": "Sonntag - Donnerstag",
+                "text3": "Freitag - Samstag",
+                "button": "Park"
+            },
+            "card6": {
+                "header": "Fitnessstudio",
+                "text1": "Öffnungszeiten",
+                "text2": "Montag - Freitag",
+                "hours": "Geöffnet zu den Parköffnungszeiten",
+                "hours2": "Sowie für Inhaber aktiver Monatskarten mit Clubkarten – Hintereingang von der Parkplatzseite.",
+                "button": "Fitnessstudio"
+            }
+        },
+        "form": {
+            "header": "Kontaktformular",
+            "label1": "Vor- und Nachname",
+            "label2": "Deine E-Mail",
+            "label3": "Deine Nachricht",
+            "placeholder1": "Gib deinen Vor- und Nachnamen ein",
+            "placeholder2": "Gib deine E-Mail ein",
+            "placeholder3": "Schreibe eine Nachricht...",
+            "button": "Nachricht senden",
+            "sending": "Wird gesendet...",
+            "message1": "Vielen Dank für das Absenden des Formulars!",
+            "message2": "Wir werden versuchen, so schnell wie möglich zu antworten.",
+            "error": "Bitte fülle alle erforderlichen Felder aus.",
+            "error2": "Bitte bestätige, dass du kein Roboter bist, bevor du absendest."
+        }
+    },
+    "partners": {
+        "title": "Unsere Partner",
+        "muszyna": {
+            "header": "Stadt und Kurortgemeinde Muszyna",
+            "text": "Muszyna besitzt den Status eines Kurorts mit zahlreichen Bohrungen und Abfüllanlagen für Mineralwässer. Es gibt dort Mineralwasser-Trinkhallen, Kur-Sanatorien, Schwimmbäder und Parks."
+        },
+        "academy": {
+            "header": "Akademie Top Kids Muszyna",
+            "text": "Eine vollprofessionelle Fußballakademie mit eigener, erweiterter Sportbasis."
+        },
+        "muks": {
+            "header": "Muks Mineralni Krynica-Zdrój",
+            "text": "Zusammenarbeit mit Sportbehörden, staatlichen, kommunalen und Verbandsstellen, um Mitgliedern geeignete Bedingungen für Sportausübung zu gewährleisten"
+        },
+        "alpina": {
+            "header": "Alpina Sport & Spa",
+            "text": "Das Sport- und Erholungszentrum ALPINA SPORT ist ein Ort, an dem du dich <strong>ausruhst und Kräfte</strong> für weiteres Lernen und Arbeiten regenerierst."
+        },
+        "galicya": {
+            "header": "Unterkünfte Galicya Krynica Zdrój",
+            "text": "Das OSW „GALICYA“ ist der ideale Ort für Familienurlaub, kurze Wochenendaufenthalte sowie Geschäftstreffen und Dienstreisen. Ein kürzlich modernisiertes Hotel- und Konferenzobjekt, das Standards erfüllt und für Menschen mit eingeschränkter Mobilität angepasst ist."
+        },
+        "kolejarz": {
+            "header": "Ferienhaus Kolejarz Muszyna Złockie",
+            "text": "Die Lage des Zentrums in einer der schönsten Regionen Polens zusammen mit komfortabler Unterkunftsbasis und reichhaltigem Sport- und Freizeitangebot."
+        },
+        "hospital": {
+            "header": "20. Militärkur- und Rehabilitationskrankenhaus",
+            "text": "Das Objekt 20. Militärkur- und Rehabilitationskrankenhaus SPZOZ in Krynica-Zdrój befindet sich in Krynica-Zdrój. Entfernung wichtiger Orte vom Objekt: Burgruinen in Muszyna – 12 km, Bahnhof Wierchomla – 33 km."
+        },
+        "artur": {
+            "header": "Artur Ziółko",
+            "text": "Erfolg ist die Summe kleiner Anstrengungen, die Tag für Tag wiederholt werden. Lass diesen Tag den ersten auf dem Weg zur Erreichung großer Ziele sein."
+        },
+        "activ": {
+            "header": "Activ & Vital Urogynäkologische Physiotherapie",
+            "text": "Die Praxis Activ&Vital entstand mit Blick auf Frauen in jeder Lebensphase, von schmerzhafter Menstruation über Therapie rund um die Geburt bis hin zu Prävention und Behandlung von Störungen des Beckenbodens."
+        },
+        "relaks": {
+            "header": "Entspannungshaus „Auf dem Hügel“",
+            "text": "Das Entspannungshaus „Auf dem Hügel“ in Muszyna <strong>ist der ideale Ort für Erholung in kurörtlicher Kulisse</strong>. Wir bieten außergewöhnliche Attraktionen, die Entspannung und Regeneration in Ruhe und Frieden gewährleisten."
+        },
+        "revita": {
+            "header": "Sanatorium Revita",
+            "text": "Gelegen im wunderschönen Tal von Muszyna, bildet das Sanatorium Revita eine ideale Verbindung von Naturruhe mit der heilenden Kraft der hiesigen Mineralwässer."
+        },
+        "aquapark": {
+            "header": "Aquapark Lipany",
+            "text": "Aquapark Lipany ist der neueste Thermalwasserpark in der Slowakei und der einzige in den Bergen gelegene – in der Stadt Lipany. Der Wasserpark liegt zwischen Poprad und Prešov, nur 22 km von der polnischen Grenze und 40 km von Krynica-Zdrój entfernt."
+        },
+        "krynica": {
+            "header": "Krynica-Zdrój",
+            "text": "Die Stadt liegt im <strong>Beskid Sądecki</strong>, im Tal des Baches <strong>Kryniczanka</strong> und seiner Nebenflüsse. Krynica wird von den Hügeln des <strong>Góry Parkowej, Krzyżowej, Jasiennika</strong> umgeben. Die Stadt liegt im Gebiet des <strong>Poprad-Landschaftsparks</strong> und bildet eine Ausgangsbasis für Wanderungen in die umliegenden Berge."
+        },
+        "hotel": {
+            "header": "Hotel Muszyna ***",
+            "text": "Das Hotel Muszyna*** entstand 2010 im malerischen Tal von Muszyna-Złockie, im Herzen des Beskid Sądecki, <strong>umgeben von wunderschönen Landschaften des Poprad-Landschaftsparks</strong>"
+        }
+    },
+    "reviews": {
+        "header": "zufriedene Kunden! Bewertung ",
+        "header2": "Über",
+        "text": "Willkommen in Muszynova – einem Ort, wo Eleganz auf hervorragenden Geschmack trifft. Genieße leckere Gerichte, von saftigen Burgern bis zu edlen Tartars und süßen Desserts, begleitet von erfrischenden Drinks. Unser freundlicher Service und die ruhige Atmosphäre sorgen dafür, dass jeder Besuch ein Moment der Entspannung und des Vergnügens wird. Verbringe einen schönen Nachmittag mit Liebsten und entdecke, warum unsere Gäste für mehr zurückkehren!",
+        "cards": {
+            "1": {
+                "name": "Mariolka Pyrz",
+                "text": "Sehr elegantes Restaurant. Leckeres Tatar, sehr gute Pizzen, sehr gute Desserts. Sehr angenehme Entspannung. Empfehle 👍"
+            },
+            "2": {
+                "name": "Amelia",
+                "text": "Der Service war freundlich und immer lächelnd, was eine nette Atmosphäre schuf. Der Ort ist ruhig, ideal zur Entspannung. Der Burger war köstlich und saftig, und der Aperol erfrischend und gut komponiert"
+            },
+            "3": {
+                "name": "Beata Sękowska",
+                "text": "Super Ort, um einen schönen Nachmittag mit Freunden zu verbringen. Sehr gute Drinks. Angenehmer Service"
+            },
+            "4": {
+                "name": "AK K.",
+                "text": "Schöner und neuer Spieleraum für kleine und mittlere Kinder, es gibt sogar einen Raum zum Füttern und Wickeltische! Super preislich und schön innen"
+            },
+            "5": {
+                "name": "bolek lolek",
+                "text": "Köstliches Schnitzel. Generell sehr gepflegter und sauberer Ort. Kletterwand, Spieleraum für Kinder, Spieleraum alles neu"
+            },
+            "6": {
+                "name": "Monika Sam",
+                "text": "Super neuer Ort, nette Leute, sehr freundlicher Service, sauber im ganzen Gebäude. Fitnessstudio super ausgestattet und hilfsbereite Trainer. Empfehle herzlich. 🤩🤩🤩🤩🤩🤩"
+            },
+            "7": {
+                "name": "Magda Thomas",
+                "text": "Die neueste lokale Perle. Sehr nette, freundliche Atmosphäre. Professioneller Service, tolle Trainer. Interessantes Angebot und erschwingliche Preise. Es lohnt sich, regelmäßig zu besuchen."
+            }
+        }
+    },
+    "metadata": {
+        "homepage": {
+            "title": "Muszynova - Freizeit- und Sportpark und Restaurant in Muszyna",
+            "description": "Entdecke Muszynova – einen Freizeit- und Sportpark mit Fitnessstudio, Kletterwand, Squash und mehr. Iss gesund im Restaurant Muszynova mit beskidischen Geschmäckern!"
+        },
+        "contact": {
+            "title": "Muszynova - Kontakt - Park und Restaurant in Muszyna",
+            "description": "Kontaktiere Muszynova! Freizeit- und Sportpark und Restaurant in Muszyna – ul. Złockie 77c, Tel. +48 509 445 000, biuro@muszynova.pl."
+        },
+        "aboutus": {
+            "title": "Über Uns - Muszynova in Muszyna",
+            "description": "Lerne Muszynova kennen – einen modernen Freizeit- und Sportpark und ein Restaurant in Muszyna. Wir bieten Sport, Unterhaltung und beskidische Geschmäcker für jeden!"
+        },
+        "park": {
+            "title": "Freizeit- und Sportpark Muszynova - Aktivität in Muszyna",
+            "description": "Freizeit- und Sportpark Muszynova in Muszyna – Fitnessstudio, Fitness, Squash, Fahrräder, Sporthalle, Spieleraum. Unterhaltung und Sport für jeden!"
+        },
+        "gym": {
+            "title": "Fitnessstudio Muszynova - Training und Karten in Muszyna",
+            "description": "Fitnessstudio Muszynova in Muszyna – moderne Ausstattung, Personal Trainer, Trainingspläne und Karten. Verbessere deine Kondition und erreiche Fitnessziele!"
+        },
+        "fitness": {
+            "title": "Fitness Muszynova - Kurse in Muszyna",
+            "description": "Fitness in Muszynova – Kurse für Kinder und Erwachsene in Muszyna. Personal Training, Gruppenkurse, Pilates – verbessere deine Kondition und genieße Bewegung!"
+        },
+        "squash": {
+            "title": "Squash Muszynova - Court in Muszyna",
+            "description": "Squash in Muszynova – der einzige professionelle Court in Muszyna. Spiele 7 Tage die Woche, buche online, verbessere deine Kondition und genieße dynamisches Spiel!"
+        },
+        "multimediaroom": {
+            "title": "Multimediasaal Muszynova – Moderne Unterhaltung in Muszyna",
+            "description": "Entdecke den modernen Multimediasaal in Muszynova! Interaktive Spiele, Virtual Reality und unvergessliche Unterhaltung für die ganze Familie. Finde heraus, was auf dich wartet!"
+        },
+        "gameroom": {
+            "title": "Spieleraum Muszynova - Unterhaltung in Muszyna",
+            "description": "Spieleraum Muszynova in Muszyna – Billard, Kicker, Tipp-Kick, Tischtennis für jeden. Aktive Unterhaltung, Wettbewerb und Spaß – besuche uns!"
+        },
+        "climbingwall": {
+            "title": "Kletterwand Muszynova",
+            "description": "Kletterwand Muszynova in Muszyna – sichere Gruppenkurse, individuelle Kurse, für Schulen. Klettern für Kinder und Erwachsene auf jedem Niveau!"
+        },
+        "minibowling": {
+            "title": "Mini-Bowling Muszynova - Muszyna",
+            "description": "Mini-Bowling Muszynova in Muszyna – Spaß für Kinder, Erwachsene, Gruppen. Geburtstage, Teambuilding, Bowling in freundlicher Atmosphäre – probier uns aus!"
+        },
+        "playroom": {
+            "title": "Spieleraum Muszynova - Muszyna",
+            "description": "Spieleraum Muszynova in Muszyna – für Kinder: Klettergerüst, Animationen, Geburtstage, Spiele. Sichere Betreuung während des Trainings der Eltern – Freude und Entwicklung!"
+        },
+        "bikerental": {
+            "title": "Fahrradverleih Muszynova",
+            "description": "Fahrradverleih Muszynova in Muszyna – Fahrräder für jeden, Routen in der Umgebung, 7 Tage die Woche. Entdecke die Region aktiv – prüfe die Preise!"
+        },
+        "sportshall": {
+            "title": "Sporthalle Muszynova - Muszyna",
+            "description": "Sporthalle Muszynova in Muszyna – Miete, Mannschaftsspiele: Basketball, Volleyball, Badminton. Angebot für Schulen und Sportenthusiasten!"
+        },
+        "restaurant": {
+            "title": "Restaurant Muszynova - Geschmäcker des Beskid in Muszyna",
+            "description": "Restaurant Muszynova in Muszyna – regionale beskidische Küche, Pizza, Getränke, Feiern, Konferenzen. Lecker und modern – besuche uns!"
+        },
+        "pricing": {
+            "title": "Preisliste des Freizeit- und Sportparks - Muszynova",
+            "description": "Lerne die aktuellen Preise für Dienstleistungen und Produkte von Muszynova kennen. Prüfe Details und wähle das beste Angebot für dich!"
+        },
+        "groupclasses": {
+            "title": "Gruppenkurse Muszynova - Muszyna",
+            "description": "Gruppenkurse in Muszynova – Fitness, Klettern, Squash und mehr in Muszyna. Schließe dich Gruppentrainings an und genieße Aktivität im Team!"
+        },
+        "gallery": {
+            "title": "Galerie - Muszynova",
+            "description": "Willkommen in der Galerie von Muszynova! Sieh Fotos des Parks und Restaurants, die die Schönheit und das besondere Flair unseres Ortes zeigen."
+        },
+        "parkgallery": {
+            "title": "Galerie des Freizeit- und Sportparks - Muszynova",
+            "description": "Willkommen in der Galerie des Freizeit- und Sportparks Muszynova. Sieh Flächen für aktive Erholung, Sportattraktionen und Naturschönheit!"
+        },
+        "restaurantgallery": {
+            "title": "Restaurant-Galerie - Muszynova",
+            "description": "Entdecke die Fotogalerie des Restaurants Muszynova. Sieh außergewöhnliche, elegante Innenräume, appetitliche mit Leidenschaft zubereitete Gerichte sowie die einzigartige Atmosphäre, die Gäste begeistert und jeden Besuch unvergesslich macht!"
+        },
+        "partners": {
+            "title": "Unsere Partner | Muszyna, Krynica-Zdrój und mehr",
+            "description": "Lerne unsere Partner kennen: Kurorte, Hotels, Sportakademien und Attraktionen in Muszyna, Krynica-Zdrój und Umgebung des Beskid Sądecki."
+        },
+        "blog": {
+            "title": "Blog - Muszynova",
+            "description": "Entdecke die neuesten Beiträge im Blog von Muszynova – Inspirationen, Tipps und Reiseführer für Personen, die einen Urlaub in Muszyna und Umgebung planen."
+        },
+        "dofinansowanie": {
+            "title": "EU-Förderung – Freizeit- und Sportpark Muszyna",
+            "description": "Moderner Freizeit- und Sportpark in Muszyna, realisiert mit EU-Förderung. Die Investition unterstützt die Entwicklung des Tourismus und des kurörtlichen Angebots der Region."
+        },
+        "polityka-cookies": {
+            "title": "Unsere Cookie-Richtlinie Muszynova",
+            "description": "Erfahre, wie wir Cookies auf muszynova.pl verwenden, um dir das beste Erlebnis zu bieten, Inhalte zu personalisieren und Verkehr auf der Website zu analysieren. Prüfe, wie du Cookie-Einstellungen verwalten kannst!"
+        }
+    },
+    "notfound": {
+        "title": "404 - Seite nicht gefunden",
+        "text": "PS: Oft passiert das bei einem Tippfehler in der URL oder wenn die Seite ihre Adresse zu einer etwas anderen geändert hat...",
+        "button": "Startseite"
+    },
+    "error": {
+        "title": "Etwas ist schiefgelaufen!",
+        "text": "Entschuldigung, es ist ein Problem aufgetreten. Versuche es später erneut oder kontaktiere uns, wenn das Problem weiterhin besteht.",
+        "button": "Erneut versuchen"
+    },
+    "polityka-cookies": {
+        "header": "Cookie-Richtlinie",
+        "text": "Auf der Seite verwenden wir Cookies, um das beste Nutzererlebnis zu gewährleisten, die Funktionalität der Seite zu unterstützen, Verkehr zu analysieren und personalisierte Werbung zu liefern. Nachstehend erklären wir, welche Cookies wir verwenden, zu welchem Zweck und wie du sie verwalten kannst.",
+        "which": {
+            "header": "Welche Cookies verwenden wir?",
+            "list": {
+                "essential": {
+                    "header": "Notwendige Cookies",
+                    "text": "Ermöglichen das Funktionieren der Seite, z.B. speichern deine Spracheinstellungen (über Next-Intl) oder ermöglichen die Nutzung von Online-Buchungsfunktionen. Diese Cookies sind notwendig und erfordern nicht deine Zustimmung."
+                },
+                "analytics": {
+                    "header": "Analytische Cookies",
+                    "text": "Diese Cookies werden nur nach deiner Zustimmung über den Cookie-Banner aktiviert.",
+                    "items": {
+                        "ga4": "Google Analytics 4 (über Google Tag Manager): Wir verwenden es zur Analyse des Verkehrs auf der Seite, z.B. Besucherzahl, auf der Seite verbrachte Zeit oder Besucherquellen. Daten werden an Google (USA) zur Optimierung der Seite und Verbesserung ihrer Nutzbarkeit übermittelt."
+                    }
+                },
+                "advertising": {
+                    "header": "Werbe-Cookies",
+                    "text": "Diese Cookies werden nur nach deiner Zustimmung über den Cookie-Banner aktiviert.",
+                    "items": {
+                        "googleAds": "Google Ads (über Google Tag Manager): Wir verwenden es zur Lieferung personalisierter Werbung, z.B. Remarketing, basierend auf deinem Verhalten auf der Seite. Daten werden an Google (USA) zur Optimierung von Werbekampagnen übermittelt."
+                    }
+                }
+            }
+        },
+        "additional": {
+            "header": "Zusätzliche Tools",
+            "text": "Wir verwenden Google Search Console, das keine Cookies verwendet, aber uns hilft, die Leistung der Seite in Google-Suchergebnissen zu überwachen, z.B. Suchbegriffe zu analysieren und SEO zu verbessern."
+        },
+        "how": {
+            "header": "Wie verwalte ich Cookies?",
+            "text": "Beim ersten Besuch auf unserer Seite zeigen wir einen Cookie-Banner, der dir erlaubt:",
+            "list": {
+                "acceptAll": "Alle Cookies zu akzeptieren, einschließlich analytischer (Google Analytics 4) und Werbe-Cookies (Google Ads).",
+                "rejectNonEssential": "Analytische und Werbe-Cookies abzulehnen, was bedeutet, dass wir weder Google Analytics 4 noch Google Ads zur Verfolgung deiner Aktivität verwenden werden.",
+                "customize": "Einstellungen anzupassen, indem du wählst, welchen Cookie-Kategorien du zustimmst (z.B. nur Werbung oder nur analytisch).",
+                "manage": "Deine Präferenzen werden im Browserspeicher (`localStorage`) gespeichert und bei späteren Besuchen angewendet. Du kannst deine Einstellungen jederzeit ändern, indem du Cookies in den Browsereinstellungen löschst."
+            },
+            "browsers": {
+                "text": "Du kannst Cookies auch in den Einstellungen deines Browsers verwalten. Hier Anleitungen für gängige Browser:",
+                "links": {
+                    "chrome": "[Google Chrome](https://support.google.com/chrome/answer/95647)",
+                    "firefox": "[Firefox](https://support.mozilla.org/pl/kb/usuwanie-ciasteczek)",
+                    "safari": "[Safari](https://support.apple.com/pl-pl/guide/safari/sfri11471/mac)",
+                    "edge": "[Microsoft Edge](https://support.microsoft.com/pl-pl/microsoft-edge/usuwanie-plik%C3%B3w-cookie-w-przegl%C4%85darce-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)"
+                }
+            }
+        },
+        "howlong": {
+            "header": "Wie lange speichern wir Cookies?",
+            "text": "Die Speicherdauer von Cookies hängt von ihrer Art ab:",
+            "list": {
+                "essential": "Notwendige Cookies: Läuft normalerweise am Ende der Sitzung oder nach kurzer Zeit ab (z.B. einige Tage).",
+                "analytics": "Analytische Cookies: Können bis zu 2 Jahre gespeichert werden (z.B. Google Analytics 4).",
+                "advertising": "Werbe-Cookies: Können bis zu 2 Jahre gespeichert werden (z.B. Google Ads)."
+            }
+        },
+        "transfer": {
+            "header": "Datenübermittlung in Drittländer",
+            "text": "Daten, die durch Google Analytics 4, Google Ads (über Google Tag Manager) gesammelt werden, werden in die USA übermittelt. Die Datenübermittlung entspricht den GDPR-Anforderungen, basierend auf Standardvertragsklauseln (SCC) oder anderen genehmigten Datenschutzmechanismen. Weitere Informationen findest du in den Datenschutzrichtlinien:",
+            "links": {
+                "google": "[Google Datenschutzrichtlinie](https://policies.google.com/privacy)",
+                "microsoft": "[Microsoft Datenschutzrichtlinie](https://privacy.microsoft.com/pl-pl/privacystatement)"
+            }
+        },
+        "change": {
+            "header": "Wie ändere ich die Zustimmungseinstellungen?",
+            "text": "Wenn du deine Cookie-Präferenzen ändern möchtest, lösche Cookies in den Browsereinstellungen, was beim nächsten Besuch erneutes Anzeigen des Cookie-Banners bewirkt."
+        },
+        "contact": {
+            "header": "Kontakt",
+            "text": "Wenn du Fragen zu unserer Cookie-Richtlinie oder Datenverarbeitung hast, kontaktiere uns:"
+        },
+        "banner": {
+            "header": "Zustimmung zu Cookies",
+            "text": "Hallo! Wir verwenden Cookies (z.B. Google Analytics, Google Ads), um deinen Besuch auf triotravel.pl noch besser zu machen – von Personalisierung bis Verkehrsanalyse. Du hast volle Kontrolle über die Einstellungen!",
+            "link": "Mehr erfahren",
+            "buttons": {
+                "acceptAll": "Alles akzeptieren",
+                "customize": "Anpassen",
+                "rejectAll": "Ablehnen"
+            },
+            "settings": {
+                "header": "Cookie-Einstellungen",
+                "text": "Du kannst wählen, welche Cookies du akzeptieren möchtest. Notwendige Cookies sind immer aktiv, damit die Seite korrekt funktioniert.",
+                "essential": {
+                    "label": "Notwendige Cookies (immer aktiv)",
+                    "description": "Gewährleisten das Funktionieren der Seite, z.B. Speichern der Sprache."
+                },
+                "analytics": {
+                    "label": "Analytische Cookies",
+                    "description": "Helfen uns, Verkehr zu analysieren und UX zu verbessern (z.B. Google Analytics)."
+                },
+                "advertising": {
+                    "label": "Werbe-Cookies",
+                    "description": "Ermöglichen Personalisierung von Werbung (z.B. Google Ads)."
+                },
+                "buttons": {
+                    "save": "Einstellungen speichern",
+                    "cancel": "Abbrechen"
+                }
+            }
+        }
+    }
+}
