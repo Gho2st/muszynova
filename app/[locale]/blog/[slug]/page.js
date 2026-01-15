@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }) {
         </div>
       )}
 
-      <div className="pt-8 px-[9%] 2xl:px-[13%]">
+      <div className="pt-8 px-[4%] 2xl:px-[13%]">
         <section className="py-8 2xl:py-20">
           <div>
             <LineHeader text={data.subtitle} layout="left" />
