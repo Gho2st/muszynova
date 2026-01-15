@@ -83,7 +83,7 @@ export default function Reviews() {
             {reviews.map((review, index) => (
               <div key={index} className="h-full p-4">
                 {/* KARTA OPINII */}
-                <div className="group relative bg-white p-8 rounded-3xl shadow-sm border border-gray-100 h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-customGold/20">
+                <div className="group relative bg-white p-4 rounded-3xl shadow-sm border border-gray-100 h-full flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-customGold/20">
                   {/* Dekoracyjny cudzysłów w tle */}
                   <FaQuoteRight className="absolute top-6 right-6 text-gray-100 text-5xl transition-colors group-hover:text-customGold/10" />
 
