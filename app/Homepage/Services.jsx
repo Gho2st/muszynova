@@ -21,7 +21,7 @@ export default function Services({ t }) {
       <div className="grid xl:grid-cols-2 xl:p-10 gap-10">
         {/* card 1 */}
         <div className="bg-white p-6 xl:p-10">
-          <h3 className="text-3xl xl:text-4xl font-bold text-center mb-16">
+          <h3 className="text-3xl 2xl:text-4xl font-bold text-center mb-16">
             {t("cards.1.header")}
           </h3>
           <ul className="my-10 text-xl xl:text-2xl font-medium">
@@ -53,7 +53,7 @@ export default function Services({ t }) {
         </div>
         {/* card 2 */}
         <div className="bg-white p-6 xl:p-10">
-          <h3 className="text-3xl xl:text-4xl font-bold text-center mb-16">
+          <h3 className="text-3xl 2xl:text-4xl font-bold text-center mb-16">
             {t("cards.2.header")}
           </h3>
           <ul className="my-10 text-xl xl:text-2xl font-medium">
@@ -85,7 +85,7 @@ export default function Services({ t }) {
         </div>
         {/* card 3 */}
         <div className="bg-white p-6 xl:p-10">
-          <h3 className="text-3xl xl:text-4xl font-bold text-center mb-16">
+          <h3 className="text-3xl 2xl:text-4xl font-bold text-center mb-16">
             {t("cards.3.header")}
           </h3>
           <ul className="my-10 text-xl xl:text-2xl font-medium">
@@ -109,7 +109,7 @@ export default function Services({ t }) {
         </div>
         {/* card 4 */}
         <div className="bg-white p-6 xl:p-10">
-          <h3 className="text-3xl xl:text-4xl font-bold text-center mb-16">
+          <h3 className="text-3xl 2xl:text-4xl font-bold text-center mb-16">
             {t("cards.4.header")}
           </h3>
           <ul className="my-10 text-xl xl:text-2xl font-medium">

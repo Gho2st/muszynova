@@ -55,12 +55,12 @@ export default function RecentPosts({ blogPosts, layout = "column", locale }) {
                 <span className="text-sm text-gray-500 font-medium block mb-3">
                   {formattedDate}
                 </span>
-                <h4 className="text-xl font-semibold mb-3">
+                <h4 className="2xl:text-xl font-semibold mb-3">
                   {post.title || "No Title"}
                 </h4>
                 <Link
                   href={post.slug ? `/blog/${post.slug}` : `/blog`}
-                  className="inline-block text-gray-500 hover:text-red-500 transition-colors duration-200"
+                  className="inline-block text-gray-500 text-sm hover:text-red-500 transition-colors duration-200"
                 >
                   {t("button")}
                 </Link>

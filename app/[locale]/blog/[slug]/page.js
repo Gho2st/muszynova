@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }) {
           <div>
             <LineHeader text={data.subtitle} layout="left" />
             <p
-              className="text-lg xl:text-xl leading-relaxed my-10 xl:my-16  text-center"
+              className="text-lg 2xl:text-xl leading-relaxed my-10 xl:my-16  text-center"
               dangerouslySetInnerHTML={{ __html: data.contentPart1 }}
             />
           </div>

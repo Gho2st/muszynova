@@ -20,7 +20,7 @@ export default function BackgroundList({
           {text}
         </p>
       )}
-      <ul className={`xl:text-lg flex flex-col gap-8 ${textColor}`}>
+      <ul className={`2xl:text-lg flex flex-col gap-8 ${textColor}`}>
         {items.map((item, index) => (
           <li className="" key={index}>
             {item}
