@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion"; 
-import { FaPlay, FaCompass } from "react-icons/fa"; 
+import { motion, AnimatePresence } from "framer-motion";
+import { FaPlay, FaCompass } from "react-icons/fa";
 
 const VirtualTour = () => {
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
@@ -62,7 +62,7 @@ const VirtualTour = () => {
                     <FaPlay className="w-8 h-8 ml-2 text-white drop-shadow-md" />
                   </motion.div>
 
-                  <h3 className="text-2xl font-bold tracking-wide drop-shadow-lg">
+                  <h3 className="text-2xl text-center font-bold tracking-wide drop-shadow-lg">
                     {t("button")}
                   </h3>
                   <span className="text-sm text-gray-200 mt-2 font-medium tracking-wider uppercase opacity-80">
@@ -86,11 +86,6 @@ const VirtualTour = () => {
                   allowFullScreen
                   loading="lazy"
                 />
-                <div className="absolute top-4 right-4 pointer-events-none">
-                  <span className="bg-black/50 backdrop-blur text-white text-[10px] px-2 py-1 rounded border border-white/10">
-                    Interaktywny spacer
-                  </span>
-                </div>
               </motion.div>
             )}
           </AnimatePresence>

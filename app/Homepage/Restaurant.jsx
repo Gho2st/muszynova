@@ -114,11 +114,6 @@ export default function Restaurant() {
                 priority
               />
             </motion.div>
-
-            {/* Badge "Polecane" (Opcjonalnie) */}
-            <div className="absolute bottom-0 right-10 bg-white text-[#C4966C] font-bold text-xs px-3 py-1 rounded-full shadow-lg transform rotate-12">
-              Nasz Hit
-            </div>
           </div>
 
           {/* PRAWA KOLUMNA */}

@@ -36,7 +36,6 @@ export async function generateMetadata({ params }) {
 
 export default function Page() {
   const t = useTranslations("restaurantpage");
-  const r = useTranslations("restaurant");
   return (
     <>
       <div className="grid xl:grid-cols-2">
@@ -81,7 +80,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Restaurant t={r} />
+      <Restaurant />
       <section className="px-6 xl:px-44 py-20">
         <h2 className="text-4xl xl:text-5xl font-bold text-center mb-10">
           {t("header3")}
