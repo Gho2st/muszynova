@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const { locale } = resolvedParams;
   const t = await getTranslations({ locale, namespace: "metadata.homepage" });
 
-  const defaultLocale = "pl"; // Ustaw domyślny język
+  const defaultLocale = "pl";
   const canonicalUrl =
     locale === defaultLocale
       ? "https://muszynova.pl"
@@ -31,21 +31,15 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Home() {
-  const thero = useTranslations("hero");
-  const tabout = useTranslations("about");
-  const tblog = useTranslations("blog");
-  const tservices = useTranslations("services");
-  const trestaurant = useTranslations("restaurant");
-
   return (
     <>
-      <Hero t={thero} />
-      <About t={tabout} />
+      <Hero />
+      <About />
       <FacebookPosts />
-      <Services t={tservices} />
+      <Services />
       <Reviews />
-      <Restaurant t={trestaurant} />
-      <Blog t={tblog} />
+      <Restaurant />
+      <Blog />
       <VirtualTour />
     </>
   );

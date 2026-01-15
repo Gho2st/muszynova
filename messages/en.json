@@ -60,32 +60,35 @@
         "button": "Client Zone"
     },
     "footer": {
-        "header": "Let’s Talk!",
+        "header": "Let's talk!",
+        "text": "We are creating a place where sport meets relaxation. The perfect space for families, couples and everyone looking for a moment of rest.",
         "info": {
-            "info1": {
-                "address": "Address",
-                "text": "Muszyna, Złockie 77c St., 33-370"
-            },
-            "info2": {
-                "address": "Phone",
-                "text": "+48 509 445 000"
-            },
-            "info3": {
-                "address": "Email",
-                "text": "biuro@muszynova.pl"
-            },
-            "info4": {
-                "address": "Opening Hours",
-                "text": "See"
-            }
+            "header": "Contact",
+            "address": "Address",
+            "phone": "Phone"
         },
-        "social": "Our Social Media"
+        "hours": {
+            "header": "Opening Hours",
+            "1": "Park / Facility",
+            "2": "Gym (rear entrance)",
+            "3": "Restaurant",
+            "button": "Get in touch"
+        },
+        "eu": {
+            "header": "co-financing",
+            "text": "European Union"
+        },
+        "links": {
+            "1": "Privacy Policy",
+            "2": "Contact"
+        }
     },
     "hero": {
         "welcome": "Welcome to Muszynova! Food & Fun to discover on"
     },
     "about": {
         "header": "Sport and Fun for young and old at a nOvy level",
+        "kicker": "About the park",
         "alt": {
             "1": "Sports Hall"
         },
@@ -174,7 +177,10 @@
     },
     "virtualtour": {
         "header": "Virtual Tour",
-        "button": "Load Virtual Tour"
+        "subheader": "See us online",
+        "description": "Discover our attractions without leaving home. Take a virtual walk through the park and plan your visit down to the smallest detail.",
+        "button": "Load virtual tour",
+        "button2": "Click to start"
     },
     "aboutus": {
         "header": "What is",
@@ -222,6 +228,7 @@
     },
     "blog": {
         "header": "Read more on our",
+        "more": "Discover more",
         "link": "blog",
         "header2": "Our Blog",
         "searchPlaceholder": "Search articles...",
@@ -1120,8 +1127,10 @@
         }
     },
     "reviews": {
-        "header": "satisfied customers! Rating ",
-        "header2": "Over",
+        "header": "What our ",
+        "header2": "guests say?",
+        "google": "Google Rating",
+        "opinion": "Verified review",
         "text": "Welcome to Muszynova – a place where elegance meets exquisite taste. Enjoy delicious dishes, from juicy burgers to exquisite tartares and sweet desserts, paired with refreshing drinks. Our polite service and calm atmosphere will make every visit a moment of relaxation and pleasure. Spend a lovely afternoon with your loved ones and discover why our guests keep coming back for more!",
         "cards": {
             "1": {

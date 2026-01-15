@@ -1,6 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import SalesButton from "../Buttons/SalesButton";
@@ -13,30 +18,23 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [isParkDropdownOpen, setIsParkDropdownOpen] = useState(false);
   const [timeoutId, setTimeoutId] = useState(null);
+
+  // Logika widoczności nawigacji
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const scrollThreshold = 95;
-  const hideDelay = 5;
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    // Pokaż, jeśli jesteśmy na samej górze (< 100px) LUB scrollujemy w górę
+    if (latest < 100 || latest < previous) {
+      setIsVisible(true);
+    } else if (latest > 100 && latest > previous) {
+      // Ukryj, jeśli scrollujemy w dół i nie jesteśmy na górze
+      setIsVisible(false);
+    }
+  });
+
   const t = useTranslations("nav");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      if (scrollY < scrollThreshold) {
-        setIsVisible(true);
-      } else if (scrollY > lastScrollY + hideDelay) {
-        setIsVisible(false);
-      } else if (scrollY < lastScrollY - hideDelay) {
-        setIsVisible(true);
-      }
-      setLastScrollY(scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
 
   const handleMenuToggle = () => setIsOpen((prev) => !prev);
   const handleParkDropdownToggle = () => setIsParkDropdownOpen((prev) => !prev);
@@ -51,22 +49,49 @@ export default function Nav() {
     setTimeoutId(id);
   };
 
+  // Blokada scrollowania body, gdy menu mobilne jest otwarte
   useEffect(() => {
-    document.body.classList.toggle("overflow-hidden", isOpen);
-    return () => document.body.classList.remove("overflow-hidden");
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
   }, [isOpen]);
 
+  // Warianty animacji dla kontenera menu (Stagger Effect)
   const menuVariants = {
     open: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+        when: "beforeChildren",
+        staggerChildren: 0.08, // Opóźnienie między elementami
+      },
     },
     closed: {
       opacity: 0,
       x: "-100%",
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+        when: "afterChildren",
+      },
     },
+  };
+
+  // Warianty dla pojedynczych elementów menu mobilnego
+  const itemVariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", stiffness: 300, damping: 24 },
+    },
+    closed: { y: 20, opacity: 0 },
   };
 
   const dropdownVariants = {
@@ -98,15 +123,19 @@ export default function Nav() {
 
   return (
     <nav className="relative">
-      {/* Top Bar */}
-      <div
-        className={`fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-1 2xl:py-4 xl:px-8 bg-black transition-transform duration-500 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        }`}
+      {/* Top Bar - Glassmorphism */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 z-50 mx-auto flex w-full items-center justify-between px-6 xl:py-1 2xl:py-4 xl:px-8 bg-black/90 backdrop-blur-md border-b border-white/10 shadow-lg"
+        initial={{ y: 0 }}
+        animate={{ y: isVisible ? 0 : "-100%" }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
       >
         {/* Lewa strona: Logo Muszynova i Logo UE */}
-        <div className="flex items-center">
-          <Link href="/" className="relative h-24 w-24">
+        <div className="flex items-center gap-1">
+          <Link
+            href="/"
+            className="relative h-24 w-24 hover:opacity-90 transition-opacity"
+          >
             <Image
               src="/Muszynova-mobile-logo.webp"
               fill
@@ -116,8 +145,8 @@ export default function Nav() {
               priority
             />
           </Link>
-          <Link href={'/dofinansowanie'}>
-            <div className="hidden xl:block relative h-12 w-24">
+          <Link href={"/dofinansowanie"}>
+            <div className="hidden xl:block relative h-12 w-24 hover:opacity-90 transition-opacity">
               <Image
                 src="/unia.webp"
                 fill
@@ -128,32 +157,29 @@ export default function Nav() {
           </Link>
         </div>
 
-        {/* Prawa strona: Nawigacja, LocaleSwitcher, SalesButton, Hamburger */}
-        <div className="flex items-center gap-6">
-          {/* Desktop Navigation */}
-          <div className="hidden items-center font-light text-white xl:flex xl:gap-4 2xl:gap-6">
+        {/* Prawa strona: Nawigacja Desktop */}
+        <div className="flex items-center gap-4">
+          <div className="hidden items-center font-light text-white xl:flex xl:gap-1 2xl:gap-4">
             <NavLink href="/o-nas">{t("links.link1")}</NavLink>
             <NavLink href="/blog">{t("links.link8")}</NavLink>
 
-            {/* Park Dropdown */}
+            {/* Park Dropdown Desktop */}
             <div
               className="group relative"
               onMouseEnter={openParkDropdown}
               onMouseLeave={closeParkDropdown}
             >
-              <div className="flex items-center">
-                <NavLink href="/park">{t("links.park")}</NavLink>
-                <button
-                  onClick={handleParkDropdownToggle}
-                  className="ml-1 focus:outline-none"
-                  aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
-                >
-                  <IoIosArrowDown
-                    className={`transition-transform duration-300 ${
-                      isParkDropdownOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+              <div className="flex items-center cursor-pointer">
+                <NavLink href="/park">
+                  <span className="flex items-center gap-1">
+                    {t("links.park")}
+                    <IoIosArrowDown
+                      className={`transition-transform duration-300 text-xs ${
+                        isParkDropdownOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </span>
+                </NavLink>
               </div>
               <AnimatePresence>
                 {isParkDropdownOpen && (
@@ -162,20 +188,20 @@ export default function Nav() {
                     initial="closed"
                     animate="open"
                     exit="closed"
-                    className="absolute left-0 top-full mt-2 w-60 rounded-md bg-black text-white shadow-lg"
-                    onMouseEnter={openParkDropdown}
-                    onMouseLeave={closeParkDropdown}
+                    className="absolute left-0 top-full mt-0 w-64 rounded-b-md bg-black/95 backdrop-blur-xl border border-white/10 text-white shadow-2xl overflow-hidden"
                   >
-                    {parkItems.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block px-4 py-2 hover:bg-gray-800"
-                        onClick={() => setIsParkDropdownOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
+                    <div className="py-2">
+                      {parkItems.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block px-4 py-3 text-sm hover:bg-white/10 hover:text-[#C4966C] transition-colors"
+                          onClick={() => setIsParkDropdownOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -187,35 +213,35 @@ export default function Nav() {
             <NavLink href="/galeria">{t("links.link5")}</NavLink>
             <NavLink href="/partnerzy">{t("links.link7")}</NavLink>
             <NavLink href="/kontakt">{t("links.link6")}</NavLink>
-            <LocaleSwitcher />
-            <SalesButton
-              text={t("button")}
-              link="https://muszynova.oos.pl/customer/login"
-            />
+
+            <div className="ml-2 flex items-center gap-4">
+              <LocaleSwitcher />
+              <SalesButton
+                text={t("button")}
+                link="https://muszynova.oos.pl/customer/login"
+              />
+            </div>
           </div>
 
-          {/* Hamburger Button (Mobile) */}
-          <div
-            className={`flex items-center gap-5 xl:hidden ${
-              isOpen ? "open" : ""
-            }`}
-          >
+          {/* Mobile Controls */}
+          <div className="flex items-center gap-5 xl:hidden">
             <LocaleSwitcher />
             <button
-              className="hamburger"
+              className="hamburger z-50 relative"
               onClick={handleMenuToggle}
               aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
               aria-expanded={isOpen}
             >
-              <span className="hamburger-top" />
-              <span className="hamburger-middle" />
-              <span className="hamburger-bottom" />
+              {/* Upewnij się, że masz CSS dla klasy .hamburger, .hamburger-top itp. zdefiniowany globalnie lub użyj tu tailwinda bezpośrednio */}
+              <span className={`hamburger-top ${isOpen ? "open" : ""}`} />
+              <span className={`hamburger-middle ${isOpen ? "open" : ""}`} />
+              <span className={`hamburger-bottom ${isOpen ? "open" : ""}`} />
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Fullscreen */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -223,27 +249,31 @@ export default function Nav() {
             initial="closed"
             animate="open"
             exit="closed"
-            className="fixed inset-0 z-40 bg-white text-black overflow-y-auto mt-16"
+            className="fixed inset-0 z-40 bg-white text-black overflow-y-auto"
           >
-            <div className="pt-20 px-10 pb-6 flex flex-col text-sm font-medium min-h-screen">
-              <Link
-                href="/o-nas"
-                className="border-b border-gray-300 py-3"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link1")}
-              </Link>
+            <div className="pt-28 px-8 pb-10 flex flex-col text-lg font-medium min-h-screen">
+              <motion.div variants={itemVariants}>
+                <Link
+                  href="/o-nas"
+                  className="block border-b border-gray-100 py-4 hover:text-[#C4966C] transition-colors"
+                  onClick={handleMenuToggle}
+                >
+                  {t("links.link1")}
+                </Link>
+              </motion.div>
 
               {/* Mobile Park Dropdown */}
-              <div className="w-full">
+              <motion.div
+                variants={itemVariants}
+                className="w-full border-b border-gray-100"
+              >
                 <button
                   onClick={handleParkDropdownToggle}
-                  className="flex w-full hover:text-[#C4966C] border-b border-gray-300 py-3"
-                  aria-label="Rozwiń menu Parku Rekreacyjno-Sportowego"
+                  className="flex w-full justify-between items-center py-4 hover:text-[#C4966C] transition-colors"
                 >
                   {t("links.park")}
                   <IoIosArrowDown
-                    className={`ml-2 transition-transform duration-300 ${
+                    className={`transition-transform duration-300 ${
                       isParkDropdownOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -255,13 +285,13 @@ export default function Nav() {
                       initial="closed"
                       animate="open"
                       exit="closed"
-                      className="mt-3 pl-4 text-black"
+                      className="overflow-hidden bg-gray-50 rounded-lg mb-2"
                     >
                       {parkItems.map((item) => (
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="block border-b border-gray-300 py-3"
+                          className="block px-4 py-3 text-base text-gray-600 hover:text-[#C4966C] border-b border-gray-100 last:border-0"
                           onClick={() => {
                             handleMenuToggle();
                             setIsParkDropdownOpen(false);
@@ -273,59 +303,31 @@ export default function Nav() {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </motion.div>
 
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/restauracja"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link2")}
-              </Link>
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/cennik"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link3")}
-              </Link>
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/zajecia-grupowe"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link4")}
-              </Link>
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/galeria"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link5")}
-              </Link>
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/blog"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link8")}
-              </Link>
+              {[
+                { href: "/restauracja", label: t("links.link2") },
+                { href: "/cennik", label: t("links.link3") },
+                { href: "/zajecia-grupowe", label: t("links.link4") },
+                { href: "/galeria", label: t("links.link5") },
+                { href: "/blog", label: t("links.link8") },
+                { href: "/partnerzy", label: t("links.link7") },
+                { href: "/kontakt", label: t("links.link6") },
+              ].map((link) => (
+                <motion.div variants={itemVariants} key={link.href}>
+                  <Link
+                    className="block border-b border-gray-100 py-4 hover:text-[#C4966C] transition-colors"
+                    href={link.href}
+                    onClick={handleMenuToggle}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
 
-              <Link
-                className="border-b border-gray-300 py-3"
-                href="/partnerzy"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link7")}
-              </Link>
-              <Link
-                className="border-b border-gray-300 py-3 mb-6"
-                href="/kontakt"
-                onClick={handleMenuToggle}
-              >
-                {t("links.link6")}
-              </Link>
-              <SalesButton2 text={t("button")} link="/" />
+              <motion.div variants={itemVariants} className="mt-8">
+                <SalesButton2 text={t("button")} link="/" />
+              </motion.div>
             </div>
           </motion.div>
         )}
@@ -334,13 +336,18 @@ export default function Nav() {
   );
 }
 
+// Ulepszony komponent NavLink z animowanym podkreśleniem
 function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="whitespace-nowrap transition-colors duration-300 hover:text-[#C4966C]"
+      className="group relative px-3 py-4 flex items-center justify-center overflow-hidden"
     >
-      {children}
+      <span className="relative z-10 transition-colors duration-300 group-hover:text-[#C4966C]">
+        {children}
+      </span>
+      {/* Animowana linia */}
+      <span className="absolute bottom-2 left-0 h-[1px] w-full origin-right scale-x-0 bg-[#C4966C] transition-transform duration-300 ease-out group-hover:origin-left group-hover:scale-x-100" />
     </Link>
   );
 }

@@ -1,119 +1,152 @@
+"use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
-export default function Restaurant({ t }) {
+const MenuItem = ({ img, title, desc, align = "left", className = "" }) => {
   return (
-    <section className="bg-[#C4966C] px-6 xl:px-44 py-16 xl:py-20 text-white overflow-x-hidden">
-      <h2 className="text-4xl xl:text-5xl text-center font-extrabold text-white mb-6">
-        {t("header")}
-      </h2>
-      <div className="text-white text-center xl:w-4/5 mx-auto">
-        <p className="text-lg xl:text-xl font-semibold mb-6">{t("header2")}</p>
-        <p className="font-light xl:text-lg">{t("text")}</p>
+    <div
+      className={`flex items-center gap-4 lg:gap-6 ${
+        align === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
+      } flex-col text-center lg:text-left ${className}`}
+    >
+      {/* IKONA W BĄBELKU */}
+      <div className="relative flex-shrink-0 w-20 h-20 xl:w-24 xl:h-24 bg-white rounded-full p-4 shadow-xl shadow-black/10 flex items-center justify-center transform transition-transform duration-300 hover:scale-110">
+        <Image
+          src={img}
+          width={80}
+          height={80}
+          alt={title}
+          className="object-contain w-full h-full"
+        />
       </div>
-      <div className="grid lg:grid-cols-3 mt-24 gap-16 ">
-        {/* left container */}
-        <div className="lg:text-right flex flex-col gap-16">
-          {/* lokalne skladniki */}
-          <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
-              <Image
-                src={"/restauracja/mleko-ser.webp"}
-                width={100}
-                height={100}
-                alt="Mleko i ser"
-              />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item1.header")}
-              </h3>
-            </div>
-            <p className="font-light mt-5 ">{t("items.item1.text")}</p>
+
+      {/* TEKST */}
+      <div
+        className={`flex flex-col ${
+          align === "left" ? "lg:text-left" : "lg:text-right"
+        } text-center`}
+      >
+        <h3 className="text-xl font-bold leading-tight mb-2 text-white drop-shadow-sm">
+          {title}
+        </h3>
+        <p className="text-sm xl:text-base font-medium text-white/90 leading-relaxed max-w-xs mx-auto lg:mx-0">
+          {desc}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default function Restaurant() {
+  const t = useTranslations("restaurant");
+
+  return (
+    <section className="relative bg-[#C4966C] py-20 xl:py-28 overflow-hidden">
+      <div
+        className="absolute inset-0 opacity-10 pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(#fff 1px, transparent 1px)",
+          backgroundSize: "30px 30px",
+        }}
+      ></div>
+
+      <div className="relative z-10 container mx-auto px-6 xl:px-12">
+        {/* NAGŁÓWEK */}
+        <div className="text-center max-w-3xl mx-auto mb-16 xl:mb-24">
+          <span className="text-xs font-bold tracking-[0.2em] text-white/80 uppercase mb-4 block">
+            Smaki Natury
+          </span>
+          <h2 className="text-4xl xl:text-6xl font-extrabold text-white mb-8 tracking-tight drop-shadow-md">
+            {t("header")}
+          </h2>
+          <div className="text-white text-lg xl:text-xl font-medium space-y-4 leading-relaxed">
+            <p className="font-bold">{t("header2")}</p>
+            <p className="font-light opacity-90">{t("text")}</p>
           </div>
-          {/* dzieciece smaki */}
-          <div>
-            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
+        </div>
+
+        {/* GŁÓWNY UKŁAD 3 KOLUMN */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-0 items-center">
+          {/* LEWA KOLUMNA */}
+          <div className="flex flex-col gap-12 xl:gap-20 order-2 lg:order-1">
+            {/* Item 1 - Przesunięty w stronę środka */}
+            <MenuItem
+              img="/restauracja/mleko-ser.webp"
+              title={t("items.item1.header")}
+              desc={t("items.item1.text")}
+              align="right" // Ikona bliżej środka
+              className="lg:translate-x-8 xl:translate-x-12"
+            />
+            {/* Item 2 - Standardowy */}
+            <MenuItem
+              img="/restauracja/lody.webp"
+              title={t("items.item2.header")}
+              desc={t("items.item2.text")}
+              align="right"
+              className="lg:-translate-x-4" // Lekkie cofnięcie dla łuku
+            />
+            {/* Item 3 - Przesunięty w stronę środka */}
+            <MenuItem
+              img="/restauracja/5gwiazdek.webp"
+              title={t("items.item3.header")}
+              desc={t("items.item3.text")}
+              align="right"
+              className="lg:translate-x-8 xl:translate-x-12"
+            />
+          </div>
+
+          {/* ŚRODEK - TALERZ (CENTRALNY) */}
+          <div className="order-1 lg:order-2 flex justify-center relative my-8 lg:my-0">
+            {/* Dekoracyjny okrąg pod talerzem */}
+            <div className="absolute inset-0 bg-white/10 rounded-full blur-2xl transform scale-90"></div>
+
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 100, repeat: Infinity, ease: "linear" }} // Bardzo wolny obrót talerza
+              className="relative w-64 h-64 md:w-80 md:h-80 xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden shadow-2xl shadow-black/20 border-4 border-white/20"
+            >
               <Image
-                src={"/restauracja/lody.webp"}
-                width={100}
-                height={100}
+                src="/restauracja/salatka-2.webp"
+                fill
+                className="object-cover"
                 alt={t("alt.1")}
+                priority
               />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item2.header")}
-              </h3>
+            </motion.div>
+
+            {/* Badge "Polecane" (Opcjonalnie) */}
+            <div className="absolute bottom-0 right-10 bg-white text-[#C4966C] font-bold text-xs px-3 py-1 rounded-full shadow-lg transform rotate-12">
+              Nasz Hit
             </div>
-            <p className="font-light mt-5 ">{t("items.item2.text")}</p>
           </div>
-          {/* NOve standardy */}
-          <div className="xl:translate-x-[4rem]">
-            <div className="flex items-center lg:justify-end gap-3 md:gap-5 xl:gap-10">
-              <Image
-                src={"/restauracja/5gwiazdek.webp"}
-                width={100}
-                height={100}
-                alt="5 gwiazdek"
-              />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item3.header")}
-              </h3>
-            </div>
-            <p className="font-light mt-5 ">{t("items.item3.text")}</p>
-          </div>
-        </div>
-        <div className="flex justify-center items-center">
-          <Image
-            src="/restauracja/salatka-2.webp"
-            width={100}
-            height={100}
-            layout="responsive"
-            alt={t("alt.1")}
-          />
-        </div>
-        {/* PRAWO */}
-        <div className="text-right flex flex-col gap-16">
-          {/* zdrowszy wybor */}
-          <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 xl:gap-10">
-              <Image
-                src={"/restauracja/pizza.webp"}
-                width={100}
-                height={100}
-                alt="Kawałek pizzy"
-              />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item4.header")}
-              </h3>
-            </div>
-            <p className="font-light mt-5 ">{t("items.item4.text")}</p>
-          </div>
-          {/* dla doroslych */}
-          <div>
-            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 x,:gal-10">
-              <Image
-                src={"/restauracja/kawa.webp"}
-                width={100}
-                height={100}
-                alt="Kawa z bitą śmietaną"
-              />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item5.header")}
-              </h3>
-            </div>
-            <p className="font-light mt-5 ">{t("items.item5.text")}</p>
-          </div>
-          {/* imprezy okolicznosciowe*/}
-          <div className="xl:translate-x-[-4rem]">
-            <div className="flex items-center flex-row-reverse gap-3 md:gap-5 xl:gap-10">
-              <Image
-                src={"/restauracja/tort.webp"}
-                width={100}
-                height={100}
-                alt="Porcja pysznego tortu"
-              />
-              <h3 className="text-xl md:text-3xl font-semibold">
-                {t("items.item6.header")}
-              </h3>
-            </div>
-            <p className="font-light mt-5 ">{t("items.item6.text")}</p>
+
+          {/* PRAWA KOLUMNA */}
+          <div className="flex flex-col gap-12 xl:gap-20 order-3 lg:order-3">
+            {/* Item 4 - Przesunięty w stronę środka */}
+            <MenuItem
+              img="/restauracja/pizza.webp"
+              title={t("items.item4.header")}
+              desc={t("items.item4.text")}
+              align="left" // Ikona bliżej środka
+              className="lg:-translate-x-8 xl:-translate-x-12"
+            />
+            {/* Item 5 - Standardowy */}
+            <MenuItem
+              img="/restauracja/kawa.webp"
+              title={t("items.item5.header")}
+              desc={t("items.item5.text")}
+              align="left"
+              className="lg:translate-x-4"
+            />
+            {/* Item 6 - Przesunięty w stronę środka */}
+            <MenuItem
+              img="/restauracja/tort.webp"
+              title={t("items.item6.header")}
+              desc={t("items.item6.text")}
+              align="left"
+              className="lg:-translate-x-8 xl:-translate-x-12"
+            />
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion"; 
+import { FaPlay, FaCompass } from "react-icons/fa"; 
 
 const VirtualTour = () => {
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
@@ -11,42 +13,87 @@ const VirtualTour = () => {
   };
 
   return (
-    <section id="virtual-tour" className="px-6 xl:px-44 py-16 xl:py-20">
-      <h2 className="text-4xl xl:text-6xl font-extrabold mb-16 xl:mb-24 text-center">
-        {t("header")}
-      </h2>
-      <div className="relative h-[430px] lg:h-[600px] xl:h-[750px]">
-        {/* Background with overlay */}
-        <div
-          className="absolute inset-0 bg-gray-200"
-          style={{
-            backgroundImage: "url('/virtual.webp')",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* Dark overlay - adjust opacity with bg-black/[0.5] */}
-          <div className="absolute inset-0 bg-black/50"></div>
+    <section
+      id="virtual-tour"
+      className="py-20 xl:py-28 bg-white overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-8">
+        <div className="flex flex-col items-center text-center mb-12 xl:mb-16">
+          <span className="flex items-center gap-2 text-sm font-bold tracking-widest text-customGold uppercase mb-3">
+            <FaCompass className="animate-pulse" />{" "}
+            {t("subheader") || "Odkryj Park"}{" "}
+          </span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight">
+            {t("header")}
+          </h2>
+          <p className="mt-4 text-gray-500 max-w-2xl">
+            {t("description") ||
+              "Przespaceruj się po naszych alejkach bez wychodzenia z domu. Poczuj klimat Muszyny online."}
+          </p>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 h-full w-full flex items-center justify-center">
-          {isIframeLoaded ? (
-            <iframe
-              src="/virtual-tour/index.html"
-              className="h-full w-full"
-              title={t("header")}
-              loading="lazy"
-            />
-          ) : (
-            <button
-              onClick={handleLoadIframe}
-              className="text-lg font-medium whitespace-nowrap flex justify-center items-center gap-2 p-4 bg-customGold cursor-pointer text-white clip-custom hover:clip-reverse transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-            >
-              {t("button")}
-            </button>
-          )}
+        <div className="relative w-full h-[500px] lg:h-[700px] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-gray-200 border border-gray-100 group bg-gray-900">
+          <AnimatePresence mode="wait">
+            {!isIframeLoaded ? (
+              <motion.div
+                key="preview"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0, transition: { duration: 0.5 } }}
+                className="absolute inset-0 z-10 cursor-pointer"
+                onClick={handleLoadIframe}
+              >
+                {/* Tło z efektem Zoom na hover */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                  style={{ backgroundImage: "url('/virtual.webp')" }}
+                />
+
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-500 backdrop-blur-[2px]" />
+
+                {/* Centralny Przycisk "Start" */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+                  {/* Kółko z ikoną Play (Glassmorphism) */}
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-24 h-24 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(255,255,255,0.3)] group-hover:bg-customGold/90 group-hover:border-transparent transition-all duration-300"
+                  >
+                    <FaPlay className="w-8 h-8 ml-2 text-white drop-shadow-md" />
+                  </motion.div>
+
+                  <h3 className="text-2xl font-bold tracking-wide drop-shadow-lg">
+                    {t("button")}
+                  </h3>
+                  <span className="text-sm text-gray-200 mt-2 font-medium tracking-wider uppercase opacity-80">
+                    {t("button2")}
+                  </span>
+                </div>
+              </motion.div>
+            ) : (
+              /* STAN 2: IFRAME (ZAŁADOWANY) */
+              <motion.div
+                key="iframe"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="h-full w-full bg-gray-100 relative z-20"
+              >
+                <iframe
+                  src="/virtual-tour/index.html"
+                  className="h-full w-full border-0"
+                  title={t("header")}
+                  allowFullScreen
+                  loading="lazy"
+                />
+                <div className="absolute top-4 right-4 pointer-events-none">
+                  <span className="bg-black/50 backdrop-blur text-white text-[10px] px-2 py-1 rounded border border-white/10">
+                    Interaktywny spacer
+                  </span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>

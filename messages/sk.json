@@ -60,32 +60,35 @@
         "button": "Klientska zóna"
     },
     "footer": {
-        "header": "Poďme sa porozprávať!",
+        "header": "Porozprávajme sa!",
+        "text": "Vytvárame miesto, kde sa šport stretáva s relaxom. Ideálny priestor pre rodiny, páry a všetkých, ktorí hľadajú oddych.",
         "info": {
-            "info1": {
-                "address": "Adresa",
-                "text": "Muszyna ul. Złockie 77c, 33-370"
-            },
-            "info2": {
-                "address": "Telefón",
-                "text": "+48 509 445 000"
-            },
-            "info3": {
-                "address": "Email",
-                "text": "biuro@muszynova.pl"
-            },
-            "info4": {
-                "address": "Otváracie hodiny",
-                "text": "Zobraziť"
-            }
+            "header": "Kontakt",
+            "address": "Adresa",
+            "phone": "Telefón"
         },
-        "social": "Naše sociálne siete"
+        "hours": {
+            "header": "Otváracie hodiny",
+            "1": "Park / Areál",
+            "2": "Posilňovňa (zadný vchod)",
+            "3": "Reštaurácia",
+            "button": "Kontaktujte nás"
+        },
+        "eu": {
+            "header": "spolufinancovanie",
+            "text": "Európska únia"
+        },
+        "links": {
+            "1": "Zásady ochrany osobných údajov",
+            "2": "Kontakt"
+        }
     },
     "hero": {
         "welcome": "Vitaj v Muszynova! Food & Fun na objavovanie na"
     },
     "about": {
         "header": "Šport a zábava pre malých aj veľkých na nOvej úrovni",
+        "kicker": "O našom parku",
         "alt": {
             "1": "Športová hala"
         },
@@ -174,7 +177,10 @@
     },
     "virtualtour": {
         "header": "Virtuálna prehliadka",
-        "button": "Načítať virtuálnu prehliadku"
+        "subheader": "Pozrite si nás online",
+        "description": " spoznajte naše atrakcie bez toho, aby ste opustili domov. Prejdite sa virtuálne po parku a naplánujte si návštevu do najmenších detailov.",
+        "button": "Načítať virtuálnu prehliadku",
+        "button2": "Kliknite pre spustenie"
     },
     "aboutus": {
         "header": "Čo je",
@@ -222,6 +228,7 @@
     },
     "blog": {
         "header": "Čítajte viac na našom",
+        "more": "Objavte viac",
         "link": "blogu",
         "header2": "Náš blog",
         "searchPlaceholder": "Hľadať články...",
@@ -1120,8 +1127,10 @@
         }
     },
     "reviews": {
-        "header": "spokojní zákazníci! Hodnotenie ",
-        "header2": "Viac ako",
+        "header": "Čo o nás hovoria ",
+        "header2": "hostia?",
+        "google": "Hodnotenie Google",
+        "opinion": "Overená recenzia",
         "text": "Vitajte v Muszynovej – mieste, kde sa elegancia stretáva s vynikajúcou chuťou. Užite si chutné jedlá, od šťavnatých burgerov po vynikajúce tatary a sladké dezerty, spolu s osviežujúcimi nápojmi. Naša zdvorilá obsluha a pokojná atmosféra zabezpečia, že každá návšteva bude chvíľou relaxu a potešenia. Strávte príjemné popoludnie so svojimi blízkymi a objavte, prečo sa naši hostia vracajú po viac!",
         "cards": {
             "1": {

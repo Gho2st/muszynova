@@ -61,31 +61,34 @@
     },
     "footer": {
         "header": "Porozmawiajmy!",
+        "text": "Tworzymy miejsce, w którym sport spotyka się z relaksem. Idealna przestrzeń dla rodzin, par i wszystkich szukających wytchnienia.",
         "info": {
-            "info1": {
-                "address": "Adres",
-                "text": "Muszyna ul. Złockie 77c, 33-370"
-            },
-            "info2": {
-                "address": "Telefon",
-                "text": "+48 509 445 000"
-            },
-            "info3": {
-                "address": "Email",
-                "text": "biuro@muszynova.pl"
-            },
-            "info4": {
-                "address": "Godziny Otwarcia",
-                "text": "Zobacz"
-            }
+            "header": "Kontakt",
+            "address": "Adres",
+            "phone": "Telefon"
         },
-        "social": "Nasze Social Media"
+        "hours": {
+            "header": "Godziny otwarcia",
+            "1": "Park / Obiekt",
+            "2": "Siłownia (tylne wejście)",
+            "3": "Restauracja",
+            "button": "Skontaktuj się"
+        },
+        "eu": {
+            "header": "dofinansowanie",
+            "text": "Unia Europejska"
+        },
+        "links": {
+            "1": "Polityka Prywatności",
+            "2": "Kontakt"
+        }
     },
     "hero": {
         "welcome": "Witaj w Muszynova! Food & Fun do odkrycia na"
     },
     "about": {
         "header": "Sport i Fun dla małych i dużych na nOvym poziomie",
+        "kicker": "O naszym parku",
         "alt": {
             "1": "Hala Sportowa"
         },
@@ -174,7 +177,10 @@
     },
     "virtualtour": {
         "header": "Wirtualny Spacer",
-        "button": "Załaduj wirtualny spacer"
+        "subheader": "Zobacz nas online",
+        "description": "Poznaj nasze atrakcje bez wychodzenia z domu. Przespaceruj się wirtualnie po parku i zaplanuj swoją wizytę w najdrobniejszych szczegółach.",
+        "button": "Załaduj wirtualny spacer",
+        "button2": "Kliknij, aby rozpocząć"
     },
     "aboutus": {
         "header": "Czym jest",
@@ -222,6 +228,7 @@
     },
     "blog": {
         "header": "Poczytaj więcej na naszym",
+        "more": "Odkryj więcej",
         "link": "blogu",
         "header2": "Nasz Blog",
         "searchPlaceholder": "Szukaj artykułów...",
@@ -1120,8 +1127,10 @@
         }
     },
     "reviews": {
-        "header": "zadowolonych klientów! Ocena ",
-        "header2": "Ponad",
+        "header": "Co mówią o nas ",
+        "header2": "Goście?",
+        "google": "Ocena Google",
+        "opinion": "Zweryfikowania opinia",
         "text": "Zapraszamy do Muszynovej – miejsca, gdzie elegancja spotyka się z wyśmienitym smakiem. Delektuj się pysznymi daniami, od soczystych burgerów po wykwintne tatary i słodkie desery, w towarzystwie orzeźwiających drinków. Nasza uprzejma obsługa i spokojna atmosfera sprawią, że każda wizyta będzie chwilą relaksu i przyjemności. Spędź miłe popołudnie z bliskimi i odkryj, dlaczego nasi goście wracają po więcej!",
         "cards": {
             "1": {
