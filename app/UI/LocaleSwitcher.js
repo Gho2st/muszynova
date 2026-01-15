@@ -21,6 +21,7 @@ export default function LocaleSwitcher() {
     en: "GB",
     ua: "UA",
     sk: "SK",
+    de: "DE",
   };
 
   return (
