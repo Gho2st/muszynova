@@ -2,13 +2,14 @@
 import { motion } from "framer-motion";
 
 export default function BackgroundList({ title, items, text, className = "" }) {
+  // Warianty animacji
   const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.6,
         ease: "easeOut",
         when: "beforeChildren",
         staggerChildren: 0.1,
@@ -17,8 +18,8 @@ export default function BackgroundList({ title, items, text, className = "" }) {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 10 }, // Zmiana: wjazd delikatnie z dołu, bardziej naturalne dla listy
-    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, x: -10 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
   };
 
   return (
@@ -28,45 +29,54 @@ export default function BackgroundList({ title, items, text, className = "" }) {
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
       className={`
-        relative flex flex-col w-full max-w-3xl mx-auto 
-        my-8 md:my-12
-        bg-white rounded-2xl shadow-sm border border-gray-100
+        relative flex flex-col w-full max-w-3xl xl:max-w-4xl mx-auto 
+        my-12 md:my-20
+        bg-white rounded-3xl 
+        shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] 
         overflow-hidden
         ${className}
       `}
     >
-      {/* Opcjonalny złoty akcent na górze - jeśli nie pasuje, usuń tę linijkę */}
-      <div className="h-1 w-full bg-customGold/80" />
+      {/* Dekoracyjny pasek na górze (kolor złoty z poprzednich przykładów) */}
+      <div className="h-2 w-full bg-[#C4966C]" />
 
-      <div className="p-6 md:px-10 md:py-8 text-center">
-        <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4 tracking-tight">
+      <div className="p-8 md:p-12 text-center">
+        {/* Nagłówek */}
+        <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 tracking-tight">
           {title}
         </h3>
 
+        {/* Opcjonalny opis */}
         {text && (
-          <p className="mb-6 md:mb-8 text-base md:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto">
+          <p className="mb-10 text-base md:text-lg text-gray-500 font-light leading-relaxed max-w-xl mx-auto">
             {text}
           </p>
         )}
 
-        {/* Zmiana: Lista wycentrowana, bez kafelków */}
-        <ul className="flex flex-col text-center">
+        {/* Lista */}
+        <ul className="flex flex-col space-y-2">
           {items.map((item, index) => (
             <motion.li
               key={index}
               variants={itemVariants}
-              // STYL ELEMENTU LISTY:
-              // py-3 md:py-4 -> optymalne odstępy pionowe na mobile i desktop
-              // border-b border-gray-100 -> bardzo delikatna linia oddzielająca
-              // last:border-0 -> ostatni element bez linii
               className="
-                py-3 md:py-4
-                border-b border-gray-100 last:border-0
-                text-slate-700 font-medium text-base md:text-lg leading-snug
+                group
+                relative
+                flex items-center justify-start md:justify-center
+                p-4 rounded-xl
+                transition-colors duration-300
+                hover:bg-gray-50
               "
             >
-              {/* Po prostu tekst, bez żadnych ikon */}
-              {item}
+              {/* Ozdobny punktator (bullet point) */}
+              <span className="hidden md:inline-block mr-3 text-[#C4966C] text-xl transform group-hover:scale-125 transition-transform duration-300">
+                ❖
+              </span>
+
+              {/* Tekst elementu */}
+              <span className="text-gray-700 font-medium text-lg text-left md:text-center w-full md:w-auto">
+                {item}
+              </span>
             </motion.li>
           ))}
         </ul>
