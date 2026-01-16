@@ -3,22 +3,43 @@ import { useState, useEffect } from "react";
 import { FaFacebook, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
-// 1. Komponent Skeleton (Szkielet ładowania)
+// Warianty animacji dla kontenera (siatki)
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // Każde dziecko pojawi się 0.2s po poprzednim
+    },
+  },
+};
+
+// Warianty animacji dla pojedynczego posta
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 }, // Start: niewidoczny, przesunięty w dół
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 50, damping: 15 }, // Sprężysty ruch
+  },
+};
+
 const PostSkeleton = () => (
-  <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 h-full flex flex-col">
-    <div className="h-64 w-full bg-gray-200 animate-pulse" /> {/* Obrazek */}
-    <div className="p-6 flex-1 flex flex-col gap-3">
-      <div className="h-4 w-1/3 bg-gray-200 animate-pulse rounded" />{" "}
-      {/* Data */}
-      <div className="h-4 w-full bg-gray-200 animate-pulse rounded" />{" "}
-      {/* Tekst linia 1 */}
-      <div className="h-4 w-5/6 bg-gray-200 animate-pulse rounded" />{" "}
-      {/* Tekst linia 2 */}
-      <div className="h-4 w-4/6 bg-gray-200 animate-pulse rounded" />{" "}
-      {/* Tekst linia 3 */}
-      <div className="mt-auto h-8 w-32 bg-gray-200 animate-pulse rounded-full" />{" "}
-      {/* Przycisk */}
+  <div className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 h-full flex flex-col">
+    <div className="h-64 xl:h-72 w-full bg-gray-200 animate-pulse" />
+    <div className="p-6 flex-1 flex flex-col gap-4">
+      <div className="h-4 w-1/3 bg-gray-200 animate-pulse rounded" />
+      <div className="space-y-2">
+        <div className="h-4 w-full bg-gray-200 animate-pulse rounded" />
+        <div className="h-4 w-5/6 bg-gray-200 animate-pulse rounded" />
+        <div className="h-4 w-4/6 bg-gray-200 animate-pulse rounded" />
+      </div>
+      <div className="mt-auto pt-4 flex justify-between items-center">
+        <div className="h-4 w-24 bg-gray-200 animate-pulse rounded" />
+        <div className="h-10 w-10 bg-gray-200 animate-pulse rounded-full" />
+      </div>
     </div>
   </div>
 );
@@ -30,7 +51,7 @@ export default function FacebookPosts() {
 
   useEffect(() => {
     async function fetchPosts() {
-      const timestamp = Date.now(); // Date.now() jest szybsze i czyystsze
+      const timestamp = Date.now();
       try {
         const res = await fetch(`/api/facebook/${timestamp}`, {
           headers: { "Cache-Control": "no-cache" },
@@ -48,16 +69,25 @@ export default function FacebookPosts() {
 
   return (
     <section className="py-16 xl:py-24 px-4 xl:px-20 2xl:px-44 bg-[#F8F9FA]">
-      {/* NAGŁÓWEK */}
-      <div className="flex flex-col items-center text-center mb-12 xl:mb-16">
-        <div className="bg-[#1877F2]/10 p-3 rounded-full mb-4">
+      {/* NAGŁÓWEK - Animacja wejścia */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col items-center text-center mb-12 xl:mb-16"
+      >
+        <motion.div
+          whileHover={{ rotate: 15, scale: 1.1 }}
+          className="bg-[#1877F2]/10 p-3 rounded-full mb-4 cursor-pointer"
+        >
           <FaFacebook className="text-[#1877F2] text-3xl" />
-        </div>
+        </motion.div>
+
         <h2 className="text-3xl xl:text-5xl font-bold text-gray-900 mb-6">
           {t("header")}{" "}
           <span className="text-[#1877F2] relative whitespace-nowrap">
             {t("span")}
-            {/* Ozdobne podkreślenie */}
             <svg
               className="absolute w-full h-3 -bottom-1 left-0 text-[#1877F2]/20"
               viewBox="0 0 100 10"
@@ -74,21 +104,27 @@ export default function FacebookPosts() {
           {t("header2")}
         </h2>
 
-        <a
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           href="https://www.facebook.com/Parkmuszynova/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-2 bg-[#1877F2] text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-[#1464C9] hover:shadow-lg hover:shadow-blue-500/30"
+          className="group inline-flex items-center gap-2 bg-[#1877F2] text-white px-6 py-3 rounded-full font-medium shadow-md shadow-blue-500/20"
         >
           <span>{t("cta")}</span>
           <FaExternalLinkAlt className="text-sm transition-transform group-hover:translate-x-1" />
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
 
       {/* GRID POSTÓW */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
+      <motion.div
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {isLoading ? (
-          // Wyświetlamy 3 szkielety podczas ładowania
           <>
             <PostSkeleton />
             <PostSkeleton />
@@ -100,16 +136,12 @@ export default function FacebookPosts() {
           </div>
         ) : (
           posts.slice(0, 3).map((post) => {
-            // Limitujemy do 3 postów dla estetyki siatki
             const imageUrl =
               post.attachments?.data?.[0]?.media?.image?.src ?? null;
-            // Bezpieczniejsze parsowanie ID (czasem API FB zwraca dziwne formaty)
             const ids = post.id.split("_");
             const pageId = ids[0];
             const postId = ids[1] || ids[0];
             const postUrl = `https://www.facebook.com/${pageId}/posts/${postId}`;
-
-            // Formatowanie daty
             const date = new Date(post.created_time).toLocaleDateString(
               "pl-PL",
               {
@@ -120,12 +152,14 @@ export default function FacebookPosts() {
             );
 
             return (
-              <article
+              <motion.article
                 key={post.id}
-                className="group flex flex-col bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-gray-200/50 transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                variants={cardVariants}
+                whileHover={{ y: -10 }}
+                className="group flex flex-col bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 h-full"
               >
                 {/* OBRAZEK */}
-                <div className="relative w-full h-64 xl:h-72 overflow-hidden bg-gray-100">
+                <div className="relative w-full h-64 xl:h-72 2xl:h-96  overflow-hidden bg-gray-100">
                   {imageUrl ? (
                     <Image
                       src={imageUrl}
@@ -138,15 +172,18 @@ export default function FacebookPosts() {
                       <FaFacebook size={48} />
                     </div>
                   )}
-                  {/* Badge FB w rogu zdjęcia */}
-                  <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md z-10">
-                    <FaFacebook className="text-[#1877F2]" />
-                  </div>
+
+                  {/* Badge FB - dodajemy małą animację pulse na hover */}
+                  <motion.div
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md z-10 text-[#1877F2]"
+                  >
+                    <FaFacebook />
+                  </motion.div>
                 </div>
 
                 {/* TREŚĆ */}
                 <div className="p-6 xl:p-8 flex-1 flex flex-col">
-                  {/* Data */}
                   <span className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 block">
                     {date}
                   </span>
@@ -155,28 +192,33 @@ export default function FacebookPosts() {
                     {post.message || t("error2")}
                   </p>
 
-                  {/* Footer karty */}
                   <div className="mt-auto pt-4 border-t border-gray-50 flex justify-between items-center">
-                    <span className="text-sm text-gray-400 group-hover:text-[#1877F2] transition-colors">
+                    <span className="text-sm text-gray-400 group-hover:text-[#1877F2] transition-colors font-medium">
                       Park Muszynova
                     </span>
 
-                    <a
+                    <motion.a
                       href={postUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-[#1877F2] group-hover:bg-[#1877F2] group-hover:text-white transition-all duration-300"
+                      whileHover={{
+                        scale: 1.1,
+                        backgroundColor: "#1877F2",
+                        color: "#fff",
+                      }}
+                      whileTap={{ scale: 0.9 }}
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-[#1877F2] transition-colors duration-300"
                       aria-label={t("cta2")}
                     >
                       <FaExternalLinkAlt size={12} />
-                    </a>
+                    </motion.a>
                   </div>
                 </div>
-              </article>
+              </motion.article>
             );
           })
         )}
-      </div>
+      </motion.div>
     </section>
   );
 }

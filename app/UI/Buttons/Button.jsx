@@ -2,18 +2,26 @@ import { Link } from "@/i18n/routing";
 
 export default function Button({
   text,
-  bgColor = "bg-[#C4966C]", // Kolor tła
-  textColor = "text-white", // Kolor tekstu
+  bgColor = "bg-[#C4966C]",
+  textColor = "text-white",
   link,
 }) {
   return (
     <div>
       <Link
-        className={` ${textColor} text-lg font-medium  flex justify-center items-center gap-2 p-4 clip-custom hover:clip-reverse ${bgColor} 
-          transition-all duration-300 transform hover:scale-105 hover:shadow-lg`} // Animacja i efekty na hover
+        className={`
+          ${textColor} 
+          font-medium 
+          flex justify-center items-center gap-2 
+          clip-custom hover:clip-reverse 
+          ${bgColor} 
+          transition-all duration-300 transform hover:scale-105 hover:shadow-lg
+          text-base sm:text-lg      
+          p-3 sm:p-4             
+        `}
         href={link}
       >
-        <button>{text}</button>
+        <span>{text}</span>
       </Link>
     </div>
   );

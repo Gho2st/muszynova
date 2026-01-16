@@ -3,9 +3,22 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
-const MenuItem = ({ img, title, desc, align = "left", className = "" }) => {
+// Zmieniamy zwykły div na motion.div i dodajemy prop 'delay'
+const MenuItem = ({
+  img,
+  title,
+  desc,
+  align = "left",
+  className = "",
+  delay = 0,
+}) => {
   return (
-    <div
+    <motion.div
+      // Animacja wejścia
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }} // Animacja wykona się raz, gdy element wejdzie w widok
+      transition={{ duration: 0.5, delay: delay, ease: "easeOut" }}
       className={`flex items-center gap-4 lg:gap-6 ${
         align === "left" ? "lg:flex-row" : "lg:flex-row-reverse"
       } flex-col text-center lg:text-left ${className}`}
@@ -34,7 +47,7 @@ const MenuItem = ({ img, title, desc, align = "left", className = "" }) => {
           {desc}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -52,8 +65,14 @@ export default function Restaurant() {
       ></div>
 
       <div className="relative z-10 container mx-auto px-6 xl:px-12">
-        {/* NAGŁÓWEK */}
-        <div className="text-center max-w-3xl mx-auto mb-16 xl:mb-24">
+        {/* NAGŁÓWEK - Animacja wejścia od dołu */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-3xl mx-auto mb-16 xl:mb-24"
+        >
           <span className="text-xs font-bold tracking-[0.2em] text-white/80 uppercase mb-4 block">
             Smaki Natury
           </span>
@@ -64,35 +83,35 @@ export default function Restaurant() {
             <p className="font-bold">{t("header2")}</p>
             <p className="font-light opacity-90">{t("text")}</p>
           </div>
-        </div>
+        </motion.div>
 
         {/* GŁÓWNY UKŁAD 3 KOLUMN */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-0 items-center">
           {/* LEWA KOLUMNA */}
           <div className="flex flex-col gap-12 xl:gap-20 order-2 lg:order-1">
-            {/* Item 1 - Przesunięty w stronę środka */}
             <MenuItem
               img="/restauracja/mleko-ser.webp"
               title={t("items.item1.header")}
               desc={t("items.item1.text")}
-              align="right" // Ikona bliżej środka
+              align="right"
               className="lg:translate-x-8 xl:translate-x-12"
+              delay={0.1} // Pierwszy element
             />
-            {/* Item 2 - Standardowy */}
             <MenuItem
               img="/restauracja/lody.webp"
               title={t("items.item2.header")}
               desc={t("items.item2.text")}
               align="right"
-              className="lg:-translate-x-4" // Lekkie cofnięcie dla łuku
+              className="lg:-translate-x-4"
+              delay={0.2} // Drugi element (nieco później)
             />
-            {/* Item 3 - Przesunięty w stronę środka */}
             <MenuItem
               img="/restauracja/5gwiazdek.webp"
               title={t("items.item3.header")}
               desc={t("items.item3.text")}
               align="right"
               className="lg:translate-x-8 xl:translate-x-12"
+              delay={0.3} // Trzeci element
             />
           </div>
 
@@ -101,46 +120,55 @@ export default function Restaurant() {
             {/* Dekoracyjny okrąg pod talerzem */}
             <div className="absolute inset-0 bg-white/10 rounded-full blur-2xl transform scale-90"></div>
 
+            {/* Zewnetrzny motion.div do animacji WEJŚCIA (Zoom + Fade) */}
             <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 100, repeat: Infinity, ease: "linear" }} // Bardzo wolny obrót talerza
-              className="relative w-64 h-64 md:w-80 md:h-80 xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden shadow-2xl shadow-black/20 border-4 border-white/20"
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <Image
-                src="/restauracja/salatka-2.webp"
-                fill
-                className="object-cover"
-                alt={t("alt.1")}
-                priority
-              />
+              {/* Wewnętrzny motion.div do animacji OBROTU (Ciągła pętla) */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 100, repeat: Infinity, ease: "linear" }}
+                className="relative w-64 h-64 md:w-80 md:h-80 xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden shadow-2xl shadow-black/20 border-4 border-white/20"
+              >
+                <Image
+                  src="/restauracja/salatka-2.webp"
+                  fill
+                  className="object-cover"
+                  alt={t("alt.1")}
+                  priority
+                />
+              </motion.div>
             </motion.div>
           </div>
 
           {/* PRAWA KOLUMNA */}
           <div className="flex flex-col gap-12 xl:gap-20 order-3 lg:order-3">
-            {/* Item 4 - Przesunięty w stronę środka */}
             <MenuItem
               img="/restauracja/pizza.webp"
               title={t("items.item4.header")}
               desc={t("items.item4.text")}
-              align="left" // Ikona bliżej środka
+              align="left"
               className="lg:-translate-x-8 xl:-translate-x-12"
+              delay={0.1} // Start równo z lewą kolumną
             />
-            {/* Item 5 - Standardowy */}
             <MenuItem
               img="/restauracja/kawa.webp"
               title={t("items.item5.header")}
               desc={t("items.item5.text")}
               align="left"
               className="lg:translate-x-4"
+              delay={0.2}
             />
-            {/* Item 6 - Przesunięty w stronę środka */}
             <MenuItem
               img="/restauracja/tort.webp"
               title={t("items.item6.header")}
               desc={t("items.item6.text")}
               align="left"
               className="lg:-translate-x-8 xl:-translate-x-12"
+              delay={0.3}
             />
           </div>
         </div>

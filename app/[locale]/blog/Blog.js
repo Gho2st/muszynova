@@ -37,11 +37,27 @@ export default function Blog({ locale }) {
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
+  // 👇 ZMIANA TUTAJ: Inteligentne przewijanie zamiast scrollIntoView
   useEffect(() => {
     if (articlesRef.current) {
-      articlesRef.current.scrollIntoView({ behavior: "smooth" });
+      // 1. Obliczamy pozycję elementu względem góry dokumentu
+      const elementPosition =
+        articlesRef.current.getBoundingClientRect().top + window.scrollY;
+
+      // 2. Ustalamy margines (np. 150px), żeby nie kleiło się do samej góry (miejsce na Header menu)
+      const offset = 150;
+      const targetPosition = elementPosition - offset;
+
+      // 3. Przewijamy TYLKO wtedy, gdy użytkownik jest niżej niż początek listy
+      // Dzięki temu strona nie skacze, jeśli jesteś na górze
+      if (window.scrollY > targetPosition) {
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
     }
-  }, [currentPage]);
+  }, [currentPage]); // Uruchamia się przy zmianie strony
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
@@ -76,7 +92,10 @@ export default function Blog({ locale }) {
               type="text"
               placeholder={t("searchPlaceholder")}
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setCurrentPage(1); // Resetuj na stronę 1 przy szukaniu
+              }}
               className="w-full p-4 pl-12 text-gray-700 bg-gray-100 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-300 cursor-text"
             />
             <span
@@ -92,6 +111,7 @@ export default function Blog({ locale }) {
         <div className="flex flex-col lg:flex-row gap-16 py-16">
           {/* Artykuły */}
           <div className="w-4/4 lg:w-2/3 2xl:w-3/4">
+            {/* REF przypisany do nagłówka listy */}
             <div ref={articlesRef}>
               <LineHeader text={t("header3")} />
             </div>
