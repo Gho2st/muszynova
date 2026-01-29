@@ -8,7 +8,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import MenuButton from "@/app/UI/Buttons/MenuButton";
+import MenuButtons from "./MenuButtons";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -74,9 +74,7 @@ export default function Page() {
             {t("header2")}
           </h2>
           <div className="flex flex-col gap-10 justify-center items-center mt-20">
-            <MenuButton text={t("button")} link="/menu.pdf" />
-            <MenuButton text={t("button4")} link="/menu-dzieciece.pdf" />
-            <MenuButton text={t("button2")} link="/karta-alkoholi.pdf" />
+            <MenuButtons />
           </div>
         </div>
       </div>
