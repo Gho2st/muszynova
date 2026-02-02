@@ -69,8 +69,8 @@ export default function Park() {
 
       {/* seo text */}
 
-      <section className="bg-white px-6 xl:px-24 py-16 pt-0 md:pt-16 text-gray-800">
-        <div className="mx-auto">
+      <section className="bg-white px-6 xl:px-24 py-16 pt-0 md:pt-16 text-gray-800 ">
+        <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl xl:text-5xl font-bold text-center text-customGold mb-12">
             {t("active.header")}
           </h2>
