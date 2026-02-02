@@ -9,7 +9,6 @@ export default function About() {
 
   return (
     <section className="relative py-20 xl:py-32 px-6 overflow-hidden bg-white">
-      {/* Dekoracyjne tło (opcjonalne kropki dla tekstury) */}
       <div className="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none">
         <Image src="/dots.svg" width={200} height={200} alt="" />{" "}
       </div>
@@ -35,14 +34,11 @@ export default function About() {
                 />
               </div>
 
-              {/* Dekoracyjna ramka pod spodem (Offset Border) */}
               <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-[#C4966C]/30 rounded-[2.5rem] -z-10 hidden md:block"></div>
 
-              {/* Opcjonalny "Badge" / Naklejka na zdjęciu */}
               <div className="absolute -bottom-8 -left-4 md:bottom-8 md:-left-8 bg-white p-4 md:p-6 rounded-2xl shadow-xl animate-float hidden sm:block">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 md:w-12 md:h-12 bg-[#C4966C]/10 rounded-full flex items-center justify-center text-[#C4966C]">
-                    {/* Ikona liścia lub serca */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -57,7 +53,7 @@ export default function About() {
                       Muszynova
                     </p>
                     <p className="text-sm md:text-base font-bold text-gray-900">
-                      Natura i Relaks
+                      {t("nature")}
                     </p>
                   </div>
                 </div>
@@ -65,7 +61,6 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* KOLUMNA 2: TREŚĆ */}
           <div className="w-full lg:w-1/2">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -73,7 +68,6 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              {/* Kicker (Mały napis nad nagłówkiem) */}
               <span className="inline-block py-1 px-3 rounded-full bg-[#C4966C]/10 text-[#C4966C] text-xs font-bold tracking-widest uppercase mb-4">
                 {t("kicker")}
               </span>
@@ -82,19 +76,25 @@ export default function About() {
                 {t("header")}
               </h1>
 
-              {/* Ozdobna linia */}
               <div className="w-20 h-1 bg-[#C4966C] mb-8 rounded-full"></div>
 
               <p className="text-gray-600 text-base xl:text-lg leading-relaxed font-normal mb-10">
                 {t("text")}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-row  gap-4">
                 <Button
                   text={t("button")}
                   bgColor="bg-[#C4966C]"
                   textColor="text-white"
-                  link="/#virtual-tour"
+                  link="https://muszynova.oos.pl/customer/login"
+                  className="shadow-lg hover:shadow-xl transition-shadow"
+                />
+                <Button
+                  text={t("button2")}
+                  bgColor="bg-[#C4966C]"
+                  textColor="text-white"
+                  link="/cennik"
                   className="shadow-lg hover:shadow-xl transition-shadow"
                 />
               </div>

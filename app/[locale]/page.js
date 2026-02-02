@@ -35,10 +35,10 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <FacebookPosts />
       <Services />
-      <Reviews />
       <Restaurant />
+      <FacebookPosts />
+      <Reviews />
       <Blog />
       <VirtualTour />
     </>

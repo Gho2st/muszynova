@@ -89,10 +89,12 @@
     "about": {
         "header": "Sport i Fun dla małych i dużych na nOvym poziomie",
         "kicker": "O naszym parku",
+        "nature": "Natura i Relaks",
         "alt": {
             "1": "Hala Sportowa"
         },
-        "button": "Wirtualny Spacer",
+        "button": "Zarezerwuj atrakcję!",
+        "button2": "Cennik",
         "text": "Czy istnieje obiekt, w którym każdy może być sobą i spędzać czas tak, jak lubi? Taka myśl przyświecała nam, gdy projektowaliśmy Muszynova. Aby każdy czuł się komfortowo. Z myślą o najmłodszych, nastolatkach i dorosłych, rodzinach i singlach, przyjezdnych i mieszkańcach oraz grupach zorganizowanych powstał nasz Park Rekreacyjno – Sportowy. Otwieramy drzwi do rozrywki i aktywności na nowym poziomie jakości."
     },
     "facebook": {
@@ -106,7 +108,7 @@
         "cta2": "Zobacz całość na Facebooku"
     },
     "services": {
-        "header": "Nasze Strefy Sportowe i Relaksacyjne",
+        "header": "Nasze Strefy Aktywności",
         "cards": {
             "button": "Odkrywam",
             "1": {
