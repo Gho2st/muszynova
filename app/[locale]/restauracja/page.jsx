@@ -41,12 +41,13 @@ export default function Page() {
       <div className="grid xl:grid-cols-2">
         <div className="px-6 xl:p-16 pt-16 xl:pt-20 2xl:pt-32">
           <h1 className="text-4xl xl:text-5xl font-bold">{t("header")}</h1>
-          <p className="mb-10 xl:mb-0 mt-10">
+          <p className="mb-10 mt-10">
             {t("text1")}
             <br></br>
             <br></br>
             {t("text2")}
           </p>
+       
         </div>
         <div>
           <Image
@@ -85,6 +86,7 @@ export default function Page() {
         </h2>
         <div className="flex justify-center mb-16">
           <Button text={t("button3")} link={"/galeria/restauracja"} />
+          
         </div>
         <div className="grid xl:grid-cols-3 gap-10">
           <Card
