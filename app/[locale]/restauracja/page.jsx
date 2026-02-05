@@ -47,7 +47,6 @@ export default function Page() {
             <br></br>
             {t("text2")}
           </p>
-       
         </div>
         <div>
           <Image
@@ -86,7 +85,6 @@ export default function Page() {
         </h2>
         <div className="flex justify-center mb-16">
           <Button text={t("button3")} link={"/galeria/restauracja"} />
-          
         </div>
         <div className="grid xl:grid-cols-3 gap-10">
           <Card
@@ -95,6 +93,7 @@ export default function Page() {
             buttonText={t("cards.card1.button")}
             link="/o-nas"
             text={t("cards.card1.text")}
+            isWesele="true"
           />
 
           <Card
@@ -103,6 +102,7 @@ export default function Page() {
             buttonText={t("cards.card2.button")}
             link="/galeria"
             text={t("cards.card2.text")}
+            isWesele="true"
           />
           <Card
             icon={<FaPeopleGroup />}
@@ -110,6 +110,7 @@ export default function Page() {
             buttonText={t("cards.card3.button")}
             link="/kontakt"
             text={t("cards.card3.text")}
+            isWesele="true"
           />
           <Card
             icon={<FaPeopleGroup />}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Button from "./Buttons/Button";
@@ -10,18 +10,15 @@ export default function Card({
   text,
   buttonText,
   link,
+  isWesele = false, // Nowy prop
 }) {
-  // Parsowanie tekstu zoptymalizowane za pomocą useMemo
   const parsedContent = useMemo(() => {
-    // Dzielimy tekst na linie i usuwamy puste
     const lines = text.split("<br />").filter((line) => line.trim() !== "");
 
     return lines.map((line, index) => {
-      // Regex szukający formatu: +48 123 456 789
       const phoneRegex = /(\+48 \d{3} \d{3} \d{3})/;
       const parts = line.split(phoneRegex);
 
-      // Jeśli linia nie zawiera numeru, parts ma długość 1
       if (parts.length === 1) {
         return (
           <span key={index} className="block mb-1">
@@ -30,7 +27,6 @@ export default function Card({
         );
       }
 
-      // Jeśli zawiera numer, mapujemy części
       return (
         <span key={index} className="block mb-1">
           {parts.map((part, i) => {
@@ -53,7 +49,6 @@ export default function Card({
     });
   }, [text]);
 
-  // Konfiguracja animacji
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -74,8 +69,9 @@ export default function Card({
       initial="hidden"
       whileInView="visible"
       whileHover="hover"
-      viewport={{ once: true, margin: "-50px" }} // Animacja odpali się raz, gdy element wejdzie w widok
-      className={`flex flex-col justify-between ${bgColor} p-8 h-full rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300`}
+      viewport={{ once: true, margin: "-50px" }}
+      // Dodano klase "relative", aby logo w rogu trzymało się krawędzi karty
+      className={`relative flex flex-col justify-between ${bgColor} p-8 h-full rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300`}
     >
       {/* Ikona */}
       <div className="p-3 w-fit rounded-full text-5xl text-black bg-white flex items-center justify-center shadow-sm">
@@ -96,6 +92,32 @@ export default function Card({
       <div className="mt-8 flex justify-start">
         <Button text={buttonText} link={link} />
       </div>
+
+      {/* Logo Wesele z Klasą */}
+      {/* Logo Wesele z Klasą z wezwaniem do działania */}
+      {isWesele && (
+        <div className="absolute bottom-4 right-4 flex flex-col items-end group">
+          {/* Tekst zachęty - pojawia się subtelnie nad logiem */}
+          <span className="text-[10px] uppercase tracking-widest text-white/70 mb-1 font-semibold group-hover:text-white transition-colors">
+            Zapytaj o termin na:
+          </span>
+
+          <div className="max-w-[130px] md:max-w-[160px] opacity-90 hover:opacity-100 transition-all transform hover:scale-105">
+            <a
+              href="https://www.weselezklasa.pl/ogloszenia-weselne/muszynova-park-i-restauracja,61583/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Wyślij zapytanie o wesele w Muszynova"
+            >
+              <img
+                src="https://www.weselezklasa.pl/banery/Weselezklasa/button230x50bordowetlo.png"
+                alt="Profil Muszynova na Wesele z Klasą"
+                className="w-full h-auto rounded-md shadow-md border border-white/10"
+              />
+            </a>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }

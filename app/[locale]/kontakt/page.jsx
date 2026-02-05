@@ -81,15 +81,16 @@ export default function Contact() {
                 t("cards.card3.text3"),
               ].join(" <br /> ")}
             />
-            <Card2
+            <Card
               link="/restauracja"
               icon={<IoPizzaOutline />}
               title={t("cards.card4.header")}
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card4.button")}
               text="pon-nd: 12:00-21:00"
+              isWesele="true"
             />
-            <Card2
+            <Card
               link="/park"
               icon={<MdOutlineSportsCricket />}
               title={t("cards.card5.header")}
