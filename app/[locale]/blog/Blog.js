@@ -17,18 +17,19 @@ export default function Blog({ locale }) {
   const articlesRef = useRef(null);
 
   // 🔹 Połączenie metadanych (blogPosts) z tłumaczeniami
-  const mergedPosts = blogPosts.map((post) => ({
-    ...post,
-    title: t(`blogPosts.${post.id}.title`),
-    subtitle: t(`blogPosts.${post.id}.header2`),
-    contentPart1: t(`blogPosts.${post.id}.text`),
-  }));
-
+  const mergedPosts = blogPosts
+    .map((post) => ({
+      ...post,
+      title: t(`blogPosts.${post.id}.title`),
+      subtitle: t(`blogPosts.${post.id}.header2`),
+      contentPart1: t(`blogPosts.${post.id}.text`),
+    }))
+    .toReversed();
   // 🔹 Filtrowanie wyszukiwania
   const filteredPosts = mergedPosts.filter(
     (post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.subtitle.toLowerCase().includes(searchTerm.toLowerCase())
+      post.subtitle.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // 🔹 Paginacja
