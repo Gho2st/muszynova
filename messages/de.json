@@ -945,6 +945,9 @@
         "button2": "Getränkekarte",
         "button4": "Kindermenü",
         "button3": "Restaurant-Galerie ansehen",
+        "wesele": {
+            "text": "Fragen Sie nach dem Termin für:"
+        },
         "alt": {
             "1": "Restaurantraum Muszynova mit stimmungsvoller Beleuchtung",
             "2": "Spezialität des Küchenchefs Muszynova"

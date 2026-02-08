@@ -11,6 +11,7 @@ export default function Card({
   buttonText,
   link,
   isWesele = false, // Nowy prop
+  weseleText,
 }) {
   const parsedContent = useMemo(() => {
     const lines = text.split("<br />").filter((line) => line.trim() !== "");
@@ -99,7 +100,7 @@ export default function Card({
         <div className="absolute bottom-4 right-4 flex flex-col items-end group">
           {/* Tekst zachęty - pojawia się subtelnie nad logiem */}
           <span className="text-[10px] uppercase tracking-widest text-white/70 mb-1 font-semibold group-hover:text-white transition-colors">
-            Zapytaj o termin na:
+            {weseleText}
           </span>
 
           <div className="max-w-[130px] md:max-w-[160px] opacity-90 hover:opacity-100 transition-all transform hover:scale-105">

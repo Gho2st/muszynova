@@ -945,6 +945,9 @@
         "button2": "Drinks Menu",
         "button3": "View Restaurant Gallery",
         "button4": "Children's Menu",
+        "wesele": {
+            "text": "Ask about the date for:"
+        },
         "alt": {
             "1": "Muszynova restaurant hall with atmospheric lighting",
             "2": "Signature dish of Muszynova's head chef"

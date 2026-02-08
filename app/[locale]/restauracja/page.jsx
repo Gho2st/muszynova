@@ -94,6 +94,7 @@ export default function Page() {
             link="/o-nas"
             text={t("cards.card1.text")}
             isWesele="true"
+            weseleText={t("wesele.text")}
           />
 
           <Card
@@ -103,6 +104,7 @@ export default function Page() {
             link="/galeria"
             text={t("cards.card2.text")}
             isWesele="true"
+            weseleText={t("wesele.text")}
           />
           <Card
             icon={<FaPeopleGroup />}
@@ -111,6 +113,7 @@ export default function Page() {
             link="/kontakt"
             text={t("cards.card3.text")}
             isWesele="true"
+            weseleText={t("wesele.text")}
           />
           <Card
             icon={<FaPeopleGroup />}
