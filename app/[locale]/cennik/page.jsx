@@ -95,11 +95,7 @@ export default function PricingPage() {
     <>
       <Header text={t("header")} />
       <section className="py-12 sm:py-16 xl:py-20 bg-white text-gray-900">
-        {/* Przyciski do pobierania PDF */}
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-12 sm:mb-16">
-          <ButtonGreen text={t("button")} link="/seniorzy.pdf" />
-          <ButtonGreen text={t("button2")} link="/szkoly-przedszkola.pdf" />
-        </div>
+   
 
         <div className={CONTAINER_STYLES}>
           {/* Sekcja Active Sport */}
@@ -307,10 +303,6 @@ export default function PricingPage() {
             <p>
               <strong>RABAT:</strong> 10 zł za kontynuację karnetów
             </p>
-            <p>
-              <strong>RABAT:</strong> 10 % dla Klubowiczów posiadających kartę
-              MUSZYNOVA
-            </p>
             <ul className="list-disc pl-6 space-y-2 sm:space-y-1">
               <li>
                 Czas wszystkich atrakcji liczony jest z chwilą wejścia na
@@ -339,6 +331,9 @@ export default function PricingPage() {
               <li>
                 Limit osób na zajęcia grupowe - 10, Dopłata za każdą osobę +15
                 zł, Dopłata za dodatkowego operatora
+              </li>
+                 <li>
+                Na jednym torze do kręgli może grać jednorazowo maksymalnie 8 osób.
               </li>
             </ul>
           </div>
