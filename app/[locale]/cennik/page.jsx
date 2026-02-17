@@ -322,16 +322,13 @@ export default function PricingPage() {
               </li>
               <li>
                 Zajęcia fitness odbywają się według ustalonego harmonogramu -
-                minimum 4 os
+                minimum 6 os
               </li>
               <li>
                 Zajęcia na ściance (indywidualnie i sekcja) odbywają się według
-                ustalonego harmonogramu - minimum 2 os
+                ustalonego harmonogramu - minimum 4 os
               </li>
-              <li>
-                Limit osób na zajęcia grupowe - 10, Dopłata za każdą osobę +15
-                zł, Dopłata za dodatkowego operatora
-              </li>
+    
                  <li>
                 Na jednym torze do kręgli może grać jednorazowo maksymalnie 8 osób.
               </li>
