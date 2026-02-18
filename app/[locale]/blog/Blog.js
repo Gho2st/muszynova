@@ -38,7 +38,6 @@ export default function Blog({ locale }) {
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
-  // 👇 ZMIANA TUTAJ: Inteligentne przewijanie zamiast scrollIntoView
   useEffect(() => {
     if (articlesRef.current) {
       // 1. Obliczamy pozycję elementu względem góry dokumentu
@@ -50,7 +49,6 @@ export default function Blog({ locale }) {
       const targetPosition = elementPosition - offset;
 
       // 3. Przewijamy TYLKO wtedy, gdy użytkownik jest niżej niż początek listy
-      // Dzięki temu strona nie skacze, jeśli jesteś na górze
       if (window.scrollY > targetPosition) {
         window.scrollTo({
           top: targetPosition,
