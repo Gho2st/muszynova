@@ -986,10 +986,81 @@
         }
     },
     "pricing": {
-        "header": "Preise",
-        "alt": "Preisliste des Freizeit- und Sportparks Muszynova in Muszyna",
-        "button": "Angebot für Senioren",
-        "button2": "Angebot für Schulen"
+        "header": "Preisliste",
+        "info": {
+            "1": "RABATT: 10 PLN bei Verlängerung des Abonnements",
+            "2": "Die Zeit aller Attraktionen wird ab dem Betreten des jeweiligen Raums berechnet und inkludiert die Zeit zum Umziehen",
+            "3": "Die Kletterwand ist an bestimmten Tagen und zu festgelegten Zeiten laut Zeitplan geöffnet",
+            "4": "Alle Zeit-Abonnements sind personengebunden und nicht übertragbar",
+            "5": "Mehrfachkarten (Mengen-Abonnements) können von verschiedenen Personen genutzt werden",
+            "6": "Einmalige Gebühr für die Ausstellung der MUSZYNOVA Clubkarte - 20 PLN",
+            "7": "Fitnesskurse finden nach festem Zeitplan statt - Mindestteilnehmerzahl: 6 Personen",
+            "8": "Kletterwand-Aktivitäten (Einzel- und Sektionstraining) finden nach festem Zeitplan statt - Mindestteilnehmerzahl: 4 Personen",
+            "9": "Pro Bowlingbahn können maximal 8 Personen gleichzeitig spielen."
+        },
+        "sports": {
+            "activity": "Leistung",
+            "time": "Zeit",
+            "hall": {
+                "1": "Sporthalle",
+                "2": "Teamsport",
+                "3": "Badminton / Tennis"
+            },
+            "climbingwall": {
+                "1": "Kletterwand",
+                "2": "5er-Karte für beliebige Kurse",
+                "3": "Gruppenkurse mit Trainer"
+            },
+            "squash": {
+                "1": "Einzelkarte",
+                "2": "5er-Karte"
+            },
+            "bikes": {
+                "1": "Fahrradverleih",
+                "2": "Mountainbike + Ausrüstung"
+            },
+            "kids": {
+                "1": "Spielzimmer + Multimediaraum",
+                "2": "Eintrittskarte",
+                "3": "5er-Karte (je 1 Std.)",
+                "4": "Unbegrenzt"
+            },
+            "games": {
+                "1": "Spieleraum",
+                "2": "Billard",
+                "3": "Tischtennis",
+                "4": "Air Hockey",
+                "5": "Tischfußball (Kicker)",
+                "6": "Spieleraum - Exklusivmiete"
+            },
+            "bowling": {
+                "1": "Mini-Bowling",
+                "2": "1 Bahn",
+                "3": "5er-Karte (je 1 Std.)",
+                "4": "2 Std. (oder 2 Bahnen * 1 Std.)"
+            },
+            "fitness": {
+                "gym": "Fitnessstudio",
+                "1": "Einzelkarte",
+                "2": "5er-Karte OPEN",
+                "3": "Vormittags-Abonnement",
+                "4": "Monats-Abonnement OPEN",
+                "5": "Schüler/Studenten/Senioren OPEN Abonnement",
+                "6": "unbegrenzt",
+                "7": "3 x / Woche",
+                "8": "5-Eintritte-Karte"
+            },
+            "rental": {
+                "header": "Verleih",
+                "1": "Ball (Mannschaftsspiele)",
+                "2": "Badminton-Set",
+                "3": "Tischtennis-Set",
+                "4": "Squashball",
+                "5": "Squashschläger",
+                "6": "Squash-Set",
+                "7": "Kletterschuhe"
+            }
+        }
     },
     "groupclasses": {
         "header": "Gruppenkurse",

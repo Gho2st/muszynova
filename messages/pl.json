@@ -987,9 +987,80 @@
     },
     "pricing": {
         "header": "Cennik",
-        "alt": "Cennik Parku Rekreacyjno Sportowego Muszynova w Muszynie",
-        "button": "Oferta dla Seniorów",
-        "button2": "Oferta dla szkół"
+        "info": {
+            "1": "RABAT: 10 zł za kontynuację karnetów",
+            "2": "Czas wszystkich atrakcji liczony jest z chwilą wejścia na konkretną salę i uwzględnia czas na przebranie",
+            "3": "Ścianka wspinaczkowa otwarta jest w określonych dniach i godzinach uwzględnionych w harmonogramie",
+            "4": "Wszystkie karnety czasowe są imienne i nie ma możliwości wymiennego korzystania",
+            "5": "Karnety ilościowe mogą być używane przez różne osoby",
+            "6": "Jednorazowa opłata za wydanie karty klubowej MUSZYNOVA - 20 zł",
+            "7": "Zajęcia fitness odbywają się według ustalonego harmonogramu - minimum 6 os",
+            "8": "Zajęcia na ściance (indywidualnie i sekcja) odbywają się według ustalonego harmonogramu - minimum 4 os",
+            "9": "Na jednym torze do kręgli może grać jednorazowo maksymalnie 8 osób."
+        },
+        "sports": {
+            "activity": "usługa",
+            "time": "Czas",
+            "hall": {
+                "1": "Hala sportowa",
+                "2": "Sporty drużynowe",
+                "3": "Badminton / Tenis"
+            },
+            "climbingwall": {
+                "1": "Ścianka wspinaczkowa",
+                "2": "Karnet 5x na dowolne zajęcia",
+                "3": "Zajęcia grupowe z operatorem"
+            },
+            "squash": {
+                "1": "Bilet",
+                "2": "Karnet 5x"
+            },
+            "bikes": {
+                "1": "Wypożyczalnia rowerów",
+                "2": "Rower górski + osprzęt"
+            },
+            "kids": {
+                "1": "Sala zabaw + Sala multimedialna",
+                "2": "Bilet wstępu",
+                "3": "Karnet 5 wejść po 1 h",
+                "4": "Bez limitu"
+            },
+            "games": {
+                "1": "Sala gier",
+                "2": "Bilard",
+                "3": "Tenis stołowy",
+                "4": "Air Hockey",
+                "5": "Piłkarzyki",
+                "6": "Sala gier - wyłączność"
+            },
+            "bowling": {
+                "1": "Mini kręgielnia",
+                "2": " 1 tor",
+                "3": "Karnet 5 wejść po 1 h",
+                "4": "2 h (lub 2 tory * 1 h)"
+            },
+            "fitness": {
+                "gym": "Siłownia",
+                "1": "Bilet jednorazowy",
+                "2": "Karnet 5x OPEN",
+                "3": "Karnet poranny",
+                "4": "Karnet miesięczny OPEN",
+                "5": "Karnet uczeń/student/senior OPEN",
+                "6": "bez limitów",
+                "7": "3 x / tydzień",
+                "8": "Karnet 5 wejść"
+            },
+            "rental": {
+                "header": "Wypożyczalnia",
+                "1": " Piłka (gry zespołowe)",
+                "2": "Komplet do badmintona",
+                "3": "Komplet do tenisa stołowego",
+                "4": "Piłka do Squash",
+                "5": "Rakieta do Squash",
+                "6": "Komplet do Squash",
+                "7": "Buty wspinaczkowe"
+            }
+        }
     },
     "groupclasses": {
         "header": "Zajęcia Grupowe",

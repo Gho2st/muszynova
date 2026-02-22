@@ -987,9 +987,80 @@
     },
     "pricing": {
         "header": "Cenník",
-        "alt": "Cenník Rekreačno-športového parku Muszynova v Muszyna",
-        "button": "Ponuka pre seniorov",
-        "button2": "Ponuka pre školy"
+        "info": {
+            "1": "ZĽAVA: 10 € za predĺženie permanentiek",
+            "2": "Čas všetkých atrakcií sa počíta od momentu vstupu do konkrétnej sály a zahŕňa aj čas na prezlečenie",
+            "3": "Lezecká stena je otvorená v určených dňoch a hodinách podľa harmonogramu",
+            "4": "Všetky časové permanentky sú neprenosné (na meno) a nie je možné ich vzájomne zamieňať",
+            "5": "Množstevné permanentky (na počet vstupov) môžu využívať rôzne osoby",
+            "6": "Jednorazový poplatok za vystavenie klubovej karty MUSZYNOVA - 20 zł",
+            "7": "Fitness tréningy prebiehajú podľa stanoveného harmonogramu - minimálne 6 osôb",
+            "8": "Aktivity na stene (individuálne a sekcie) prebiehajú podľa stanoveného harmonogramu - minimálne 4 osoby",
+            "9": "Na jednej bowlingovej dráhe môže naraz hrať maximálne 8 osôb."
+        },
+        "sports": {
+            "activity": "služba",
+            "time": "Čas",
+            "hall": {
+                "1": "Športová hala",
+                "2": "Tímové športy",
+                "3": "Badminton / Tenis"
+            },
+            "climbingwall": {
+                "1": "Lezecká stena",
+                "2": "Permanentka na 5 vstupov na ľubovoľné hodiny",
+                "3": "Skupinové lekcie s inštruktorom"
+            },
+            "squash": {
+                "1": "Vstupenka",
+                "2": "Permanentka na 5 vstupov"
+            },
+            "bikes": {
+                "1": "Požičovňa bicyklov",
+                "2": "Horský bicykel + výstroj"
+            },
+            "kids": {
+                "1": "Detský kútik + Multimediálna sála",
+                "2": "Vstupné",
+                "3": "Permanentka na 5 vstupov po 1 hod.",
+                "4": "Bez limitu"
+            },
+            "games": {
+                "1": "Herňa",
+                "2": "Biliard",
+                "3": "Stolný tenis",
+                "4": "Air Hockey",
+                "5": "Stolný futbal",
+                "6": "Herňa - exkluzívny prenájom"
+            },
+            "bowling": {
+                "1": "Mini bowling",
+                "2": "1 dráha",
+                "3": "Permanentka na 5 vstupov po 1 hod.",
+                "4": "2 hod. (alebo 2 dráhy * 1 hod.)"
+            },
+            "fitness": {
+                "gym": "Posilňovňa",
+                "1": "Jednorazový vstup",
+                "2": "Permanentka 5x OPEN",
+                "3": "Ranná permanentka",
+                "4": "Mesačná permanentka OPEN",
+                "5": "Permanentka študent/senior OPEN",
+                "6": "bez limitov",
+                "7": "3 x týždenne",
+                "8": "Permanentka na 5 vstupov"
+            },
+            "rental": {
+                "header": "Požičovňa",
+                "1": "Lopta (tímové hry)",
+                "2": "Badmintonový set",
+                "3": "Set na stolný tenis",
+                "4": "Squashová loptička",
+                "5": "Squashová raketa",
+                "6": "Squashový set",
+                "7": "Lezecká obuv"
+            }
+        }
     },
     "groupclasses": {
         "header": "Skupinové aktivity",

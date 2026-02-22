@@ -986,10 +986,81 @@
         }
     },
     "pricing": {
-        "header": "Pricing",
-        "alt": "Price list of Muszynova Recreational and Sports Park in Muszyna",
-        "button": "Offer for Seniors",
-        "button2": "Offer for Schools"
+        "header": "Price List",
+        "info": {
+            "1": "DISCOUNT: 10 PLN for pass renewals",
+            "2": "The duration of all attractions starts from the moment of entry to a specific hall and includes changing time",
+            "3": "The climbing wall is open on specific days and hours as indicated in the schedule",
+            "4": "All time-based passes are personal and non-transferable",
+            "5": "Quantity-based passes can be shared among different people",
+            "6": "One-time fee for issuing the MUSZYNOVA club card - 20 PLN",
+            "7": "Fitness classes take place according to the set schedule - minimum of 6 participants",
+            "8": "Climbing wall activities (individual and group sections) take place according to the set schedule - minimum of 4 participants",
+            "9": "A maximum of 8 people can play on a single bowling lane at a time."
+        },
+        "sports": {
+            "activity": "service",
+            "time": "Time",
+            "hall": {
+                "1": "Sports Hall",
+                "2": "Team Sports",
+                "3": "Badminton / Tennis"
+            },
+            "climbingwall": {
+                "1": "Climbing Wall",
+                "2": "5-entry pass for any classes",
+                "3": "Group classes with an instructor"
+            },
+            "squash": {
+                "1": "Single Ticket",
+                "2": "5-entry Pass"
+            },
+            "bikes": {
+                "1": "Bike Rental",
+                "2": "Mountain Bike + equipment"
+            },
+            "kids": {
+                "1": "Playroom + Multimedia Room",
+                "2": "Entry Ticket",
+                "3": "5-entry pass (1 hour each)",
+                "4": "No limit"
+            },
+            "games": {
+                "1": "Games Room",
+                "2": "Billiards",
+                "3": "Table Tennis",
+                "4": "Air Hockey",
+                "5": "Table Football",
+                "6": "Games Room - exclusive use"
+            },
+            "bowling": {
+                "1": "Mini Bowling",
+                "2": "1 Lane",
+                "3": "5-entry pass (1 hour each)",
+                "4": "2 hours (or 2 lanes * 1 hour)"
+            },
+            "fitness": {
+                "gym": "Gym",
+                "1": "Single Entry Ticket",
+                "2": "5-entry OPEN Pass",
+                "3": "Morning Pass",
+                "4": "Monthly OPEN Pass",
+                "5": "Student/Senior OPEN Pass",
+                "6": "unlimited",
+                "7": "3 times / week",
+                "8": "5-entry Pass"
+            },
+            "rental": {
+                "header": "Equipment Rental",
+                "1": "Ball (team games)",
+                "2": "Badminton Set",
+                "3": "Table Tennis Set",
+                "4": "Squash Ball",
+                "5": "Squash Racket",
+                "6": "Squash Set",
+                "7": "Climbing Shoes"
+            }
+        }
     },
     "groupclasses": {
         "header": "Group Classes",
