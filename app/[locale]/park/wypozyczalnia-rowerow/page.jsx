@@ -18,8 +18,7 @@ export async function generateMetadata({ params }) {
     namespace: "metadata.bikerental",
   });
 
-  const path = routing.pathnames["/park/wypozyczalnia-rowerow"][locale]; // Pobieramy ścieżkę dla języka
-  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const path = routing.pathnames["/park/wypozyczalnia-rowerow"][locale];
   const canonicalUrl =
     locale === "pl"
       ? `https://muszynova.pl${path}`
@@ -47,8 +46,9 @@ export default function Wypozyczalnia() {
             <br></br>
             {t("text2")}
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex gap-4">
             <Button text={t("button")} link={"/cennik"} />
+            <Button text={t("button2")} link={"/kontakt"} />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">

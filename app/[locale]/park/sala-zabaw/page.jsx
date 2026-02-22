@@ -48,8 +48,9 @@ export default function Sala() {
             <br></br>
             {t("text2")}
           </p>
-          <div className="mt-10">
-            <Button text={t("button")} link="/o-nas" />
+          <div className="mt-10 flex gap-4">
+            <Button text={t("button")} link="/cennik" />
+            <Button text={t("button2")} link="/kontakt" />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">

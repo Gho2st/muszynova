@@ -547,6 +547,7 @@
         "header": "Recreational-Sports Park",
         "text": "For us, activity means variety. So that everyone can enjoy it, spend their time well, however they like, regardless of skill level or sports discipline. We’re ready for both fun and intense workouts – for the young and old, amateurs and professionals. Professional equipment, modern facilities in a beautiful interior – all of this awaits you at Muszynova. Come and discover!",
         "button": "Read More",
+        "button2": "Book online",
         "header2": "What Makes Us Unique?",
         "alt": {
             "1": "Muszynova Recreational and Sports Park from the outside against a beautiful natural backdrop"
@@ -627,6 +628,7 @@
         "text1": "If you want to effectively improve your fitness and achieve your goals with the support of qualified staff, our gym in Muszyna is the perfect place for you.",
         "text2": "You’ll find high-quality equipment – certified and safe for users. Depending on your training plan and preferences, we offer a free weights zone, a machines zone, and a cardio zone.",
         "button": "Purchase a Pass",
+        "button2": "Pricing",
         "alt": {
             "1": "Sports equipment at Muszynova gym",
             "2": "Treadmills, ellipticals and step machines",
@@ -659,6 +661,7 @@
         "text1": "Fitness classes at Muszynova Park were created with health, good condition, and the joy of physical activity in mind. Regardless of your skill level, age, or training goals, we have something for everyone.",
         "text2": "Our instructors are ready to guide you through various forms of activity, from high-intensity, energetic sessions to static, relaxing Pilates classes.",
         "button": "Group Classes",
+        "button2": "Book online",
         "alt": {
             "1": "Green exercise balls and mats in a mirrored fitness room in Muszyna",
             "2": "Fitness class with an instructor on mats",
@@ -691,6 +694,7 @@
         "text1": "Our sports hall is a place where sport becomes a passion, and movement is a way to promote health and develop skills. It’s a space that offers excellent conditions for practicing various sports disciplines while inspiring an active lifestyle and friendly competition.",
         "text2": "The sports hall is a facility with a court that can serve as a basketball, volleyball, badminton, or handball court. It’s a vibrant place that creates ideal conditions for both professional athletes and sports enthusiasts.",
         "button": "Contact",
+        "button2": "Book online",
         "alt": {
             "1": "Sports hall with volleyball net, scoreboards and climbing wall in Muszyna",
             "2": "Volleyball net with climbing wall in the background",
@@ -754,7 +758,8 @@
         "header2": "What Makes Us Unique?",
         "text1": "The climbing wall is a perfect year-round activity. It inspires you to reach new heights and overcome your own limitations.",
         "text2": "Our climbing wall offers unforgettable experiences for climbers of all skill levels, from those just starting their climbing journey to seasoned enthusiasts.",
-        "button": "Book Now",
+        "button": "Pricing",
+        "button2": "Contact",
         "alt": {
             "1": "Climbing wall with colorful elements in Muszyna",
             "2": "Girl climbing on the climbing wall in Muszynova"
@@ -784,7 +789,8 @@
         "header2": "What Makes Us Unique?",
         "text1": "The children’s playroom is a space designed especially for the little ones, allowing them to play and spend active time in a safe environment. In this room, children have access to a variety of attractions that bring them joy and fun.",
         "text2": "They can enjoy creative activities and other forms of entertainment. The playroom ensures that every child feels comfortable and has the opportunity to interact with their peers. It’s a perfect place where kids can develop their social skills, share with others, and collaborate in a group.",
-        "button": "About Us",
+        "button": "Pricing",
+        "button2": "Contact",
         "alt": {
             "1": "Toys, table, and chairs in the playroom in Muszyna",
             "2": "Obstacle course for children",
@@ -817,6 +823,7 @@
         "text1": "Our squash court is a place where enthusiasts of this dynamic sport will find everything they need for an exciting game.",
         "text2": "Equipped with a professional court, our space is designed for both experienced players and those just starting their squash journey. Come, dive into the fast-paced game of squash, and experience unforgettable emotions!",
         "button": "Pricing",
+        "button2": "Book online",
         "alt": {
             "1": "Professional squash court with certified dimensions",
             "2": "Squash court with a racket and ball in the foreground",
@@ -849,6 +856,7 @@
         "text1": "Our bike rental is the perfect spot for outdoor activity enthusiasts. We offer a wide selection of bikes – from city to mountain models – for both children and adults.",
         "text2": "Rent a bike and explore the picturesque trails of Muszyna and its surroundings, enjoying the beauty of nature. It’s a great way to stay active and enjoy leisure time, regardless of your experience!",
         "button": "Pricing",
+        "button2": "Contact",
         "alt": {
             "1": "Numerous bicycles with Muszynova Recreational and Sports Park in the background in Muszyna",
             "2": "Reception area with a comfortable couch against the staircase backdrop in Muszynova"
@@ -878,7 +886,8 @@
         "header2": "What Makes Us Unique?",
         "text1": "At Muszynova Park, we wanted to create a place where you can compete and have fun with your friends. For fans of strategy and precision, we offer a professional billiards table and table tennis tables where you can improve your concentration and hand-eye coordination skills. Additionally, for those who enjoy fast-paced and thrilling games, we’ve prepared a foosball table and an air hockey table.",
         "text2": "A friendly atmosphere, modern equipment, and excellent entertainment ensure that the time spent at Muszynova is not only active but also incredibly enjoyable. We invite you to discover the fascinating world in a new way.",
-        "button": "O Nas",
+        "button": "Pricing",
+        "button2": "Book online",
         "alt": {
             "1": "Flick football table with table football and ping pong table in the background",
             "2": "Bright room with table football and flick football game",
@@ -910,7 +919,8 @@
         "header2": "What Makes Us Unique?",
         "text1": "The heart of our multimedia room is the latest PlayStation, where we provide access to the best games and entertainment for console gaming fans.",
         "text2": "From thrilling adventures to exciting sports matches, there’s something for everyone. All of this can be enjoyed on comfortable bean bags, creating the perfect setting to immerse yourself in the world of virtual entertainment.",
-        "button": "About Us",
+        "button": "Pricing",
+        "button2": "Contact",
         "alt": {
             "1": "Boy holding a PlayStation 5 controller in his hand",
             "2": "Boy sitting in front of a TV playing a sports game on a gaming console"

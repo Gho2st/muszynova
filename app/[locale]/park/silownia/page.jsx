@@ -18,8 +18,7 @@ export async function generateMetadata({ params }) {
     namespace: "metadata.gym",
   });
 
-  const path = routing.pathnames["/park/silownia"][locale]; // Pobieramy ścieżkę dla języka
-  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const path = routing.pathnames["/park/silownia"][locale];
   const canonicalUrl =
     locale === "pl"
       ? `https://muszynova.pl${path}`
@@ -38,18 +37,18 @@ export default function Silownia() {
 
   return (
     <>
-      {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mt-10">
             {t("text1")} <br></br> <br></br> {t("text2")}
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex gap-4">
             <Button
-              link="https://muszynova.oos.pl/customer/login"
+              link="https://muszynova.oos.pl/buyCarnet"
               text={t("button")}
             />
+            <Button link="/cennik" text={t("button2")} />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">

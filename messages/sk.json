@@ -547,6 +547,7 @@
         "header": "Rekreačno-športový park",
         "text": "Aktivita je pre nás rozmanitosť. Tak, aby si z nej každý mohol vziať zábavu, dobre stráviť čas, ako má rád, bez ohľadu na úroveň pokročilosti či športovú disciplínu. Sme pripravení na zábavu aj na poriadny tréning. Pre malých aj veľkých, amatérov aj profesionálov. Profesionálne vybavenie, moderné zázemie v krásnom interiéri – to všetko na vás čaká v Muszynova. A vy objavujte!",
         "button": "Čítať viac",
+        "button2": "Rezervovať online",
         "header2": "Čím sa odlišujeme?",
         "alt": {
             "1": "Rekreačno-športový park Muszynova zvonka s krásnym prírodným pozadím"
@@ -627,6 +628,7 @@
         "text1": "Ak túžite efektívne zlepšiť svoju kondíciu a dosiahnuť formu s podporou kvalifikovaného tímu, naša posilňovňa v Muszyne je pre vás ideálnym miestom.",
         "text2": "Nájdete tu vysokokvalitné vybavenie – certifikované a bezpečné pre používateľov. Podľa vášho tréningového plánu a preferencií je k dispozícii zóna s voľnými činkami, zóna so strojmi a kardio zóna.",
         "button": "Kúpiť permanentku",
+        "button2": "Cenník",
         "alt": {
             "1": "Športové vybavenie v posilňovni Muszynova",
             "2": "Bežacie pásy, orbitreky a stepery",
@@ -659,6 +661,7 @@
         "text1": "Fitness aktivity v Parku Muszynova boli vytvorené s ohľadom na zdravie, dobrú kondíciu a radosť z fyzickej aktivity. Bez ohľadu na úroveň pokročilosti, vek či tréningový cieľ, máme niečo pre každého.",
         "text2": "Naši inštruktori sú pripravení viesť vás cez rôzne formy aktivity, od energických vysoko intenzívnych cvičení až po statické, relaxačné pilatesové lekcie.",
         "button": "Skupinové aktivity",
+        "button2": "Rezervovať online",
         "alt": {
             "1": "Zelené cvičebné lopty a podložky v posilňovni so zrkadlami v Muszyna",
             "2": "Fitness hodina s inštruktorom na podložkách",
@@ -691,6 +694,7 @@
         "text1": "Naša športová hala je miesto, kde sa šport stáva vášňou a pohyb je spôsobom na zdravie a rozvoj zručností. Je to priestor, ktorý ponúka výborné podmienky na rôzne športové disciplíny, ale zároveň inšpiruje k aktívnemu životnému štýlu a tímovej súťaži.",
         "text2": "Športová hala je objekt s ihriskom, ktoré môže slúžiť ako ihrisko na basketbal, volejbal, bedminton či hádzanú. Je to miesto plné energie, ktoré vytvára ideálne podmienky pre profesionálnych športovcov aj amatérov.",
         "button": "Kontakt",
+        "button2": "Rezervovať online",
         "alt": {
             "1": "Športová hala s volejbalovou sieťou, výsledkovými tabuľami a lezeckou stenou v Muszyna",
             "2": "Volejbalová sieť s lezeckou stenou v pozadí",
@@ -754,7 +758,8 @@
         "header2": "Čím sa odlišujeme?",
         "text1": "Lezecká stena je ideálnou aktivitou dostupnou celoročne. Inšpiruje k zdolávaniu nových výšok a prekonávaniu vlastných limitov.",
         "text2": "Naša lezecká stena ponúka nezabudnuteľné zážitky pre lezcov rôznych úrovní pokročilosti, od tých, ktorí začínajú svoje dobrodružstvo s lezením, až po skúsených nadšencov.",
-        "button": "Rezervovať",
+        "button": "Cenník",
+        "button2": "Kontakt",
         "alt": {
             "1": "Lezecká stena s farebnými prvkami v Muszyna",
             "2": "Dievčatko lezie na lezeckej stene v Muszynova"
@@ -784,7 +789,8 @@
         "header2": "Čím sa odlišujeme?",
         "text1": "Detská herňa je priestor vytvorený špeciálne pre najmenších, aby sa mohli hrať a aktívne tráviť čas v bezpečnom prostredí. V takejto herni majú deti prístup k rôznym atrakciám, ktoré im prinášajú radosť a zábavu.",
         "text2": "Môžu využívať kreatívne aktivity a iné formy zábavy. V detskej herni dbáme na to, aby sa každé dieťa cítilo pohodlne a malo príležitosť na interakciu s rovesníkmi. Je to ideálne miesto, kde môžu malí rozvíjať svoje sociálne zručnosti, zdieľať s ostatnými a spolupracovať v skupine.",
-        "button": "O nás",
+        "button": "Cenník",
+        "button2": "Kontakt",
         "alt": {
             "1": "Hračky, stôl a stoličky v detskej herni v Muszyna",
             "2": "Prekážková dráha pre deti",
@@ -817,6 +823,7 @@
         "text1": "Naša squashová miestnosť je miesto, kde nadšenci tohto dynamického športu nájdu všetko, čo potrebujú na vzrušujúcu hru.",
         "text2": "Vybavená profesionálnym kurtom, naša miestnosť je vytvorená pre skúsených hráčov aj pre tých, ktorí s squashom iba začínajú. Príďte, ponorte sa do intenzívneho tempa hry v squashi a zažite nezabudnuteľné emócie!",
         "button": "Cenník",
+        "button2": "Rezervovať online",
         "alt": {
             "1": "Profesionálny squashový kurt s certifikovanými rozmermi",
             "2": "Squashový kurt s raketou a loptičkou v popredí",
@@ -849,6 +856,7 @@
         "text1": "Naša požičovňa bicyklov je ideálnym miestom pre milovníkov aktivity na čerstvom vzduchu. Ponúkame široký výber bicyklov – od mestských po horské – pre deti aj dospelých.",
         "text2": "Požičajte si bicykel a objavujte malebné trasy Muszyny a okolia, užívajúc si krásu prírody. Je to skvelý spôsob aktívneho oddychu pre každého, bez ohľadu na skúsenosti!",
         "button": "Cenník",
+        "button2": "Kontakt",
         "alt": {
             "1": "Početné bicykle s Rekreačno-športovým parkom Muszynova v pozadí v Muszyna",
             "2": "Recepcia s pohodlnou pohovkou na pozadí schodiska v Muszynova"
@@ -878,7 +886,8 @@
         "header2": "Čím sa odlišujeme?",
         "text1": "V Parku Muszynova sme chceli vytvoriť miesto, kde môžete spolu s priateľmi súťažiť a dobre sa baviť. Pre milovníkov stratégie a presnosti ponúkame profesionálny biliardový stôl a stoly na stolný tenis, kde si môžete zlepšiť koncentráciu a vizuálno-motorickú koordináciu. Navyše, pre tých, ktorí obľubujú rýchle a vzrušujúce hry, sme pripravili stôl na stolný futbal a air hockey.",
         "text2": "Priateľská atmosféra, moderné vybavenie a výborná zábava zabezpečia, že čas strávený v Muszynova bude nielen aktívny, ale aj mimoriadne príjemný. Pozývame vás objavovať fascinujúci svet na nOvo.",
-        "button": "O nás",
+        "button": "Cenník",
+        "button2": "Rezervovať online",
         "alt": {
             "1": "Stôl na cymbergaj s futbalovým stolom a stolným tenisom v pozadí",
             "2": "Jasná miestnosť s futbalovým stolom a cymbergajom",
@@ -910,7 +919,8 @@
         "header2": "Čím sa odlišujeme?",
         "text1": "Srdcom našej multimediálnej miestnosti je najnovší PlayStation, kde poskytujeme prístup k najlepším hrám a zábave pre fanúšikov konzolového hrania.",
         "text2": "Od vzrušujúcich dobrodružstiev po napínavé športové zápasy – každý si tu nájde niečo pre seba. A to všetko na pohodlných sedacích vakoch, ktoré vytvárajú ideálne podmienky na ponorenie sa do sveta virtuálnej zábavy.",
-        "button": "O nás",
+        "button": "Cenník",
+        "button2": "Kontakt",
         "alt": {
             "1": "Chlapec držiaci v ruke ovládač k PlayStation 5",
             "2": "Chlapec sediaci pred televízorom hrajúci športovú hru na hernej konzole"

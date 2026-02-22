@@ -547,6 +547,7 @@
         "header": "Park rekreacyjno-sportowy",
         "text": "Aktywność to dla nas różnorodność. Tak, aby każdy czerpał z niej fun, dobrze spędzał czas, tak jak lubi, niezależnie od poziomu zaawansowania, czy też dyscypliny sportowej. Jesteśmy przygotowani na rozrywkę, jak i wyciskanie siódmych potów. Przez małych i dużych, amatorów i zawodowców. Profesjonalne sprzęty, nowoczesne zaplecze w pięknym wnętrzu – to wszystko czeka na Ciebie w Muszynova. A Ty odkrywaj!",
         "button": "Czytaj Więcej",
+        "button2": "Zarezerwuj online",
         "header2": "Co nas wyróżnia?",
         "alt": {
             "1": "Park Rekreacyjno Sportowy Muszynova z zewnątrz na tle pięknej natury"
@@ -560,7 +561,7 @@
             "header2": "Dlaczego warto nas odwiedzić?",
             "list": {
                 "1": "Nowoczesna infrastruktura sportowo-rekreacyjna",
-                "2": "Doskonała lokalizacja w uzdrowiskowej Muszynie",
+                "2": "Doskonała lokalizacja w Muszynie",
                 "3": "Atrakcje dla dzieci, młodzieży i dorosłych",
                 "4": "Strefy relaksu, rekreacji i intensywnego treningu",
                 "5": "Profesjonalny i bezpieczny sprzęt",
@@ -568,45 +569,45 @@
             }
         },
         "cards": {
-            "text": "Muszyna to znana i lubiana miejscowość uzdrowiskowa, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
+            "text": "Muszyna to znana i lubiana miejscowość, która w ostatnich latach rozwija się niezwykle dynamicznie, przyciągając turystów z różnych stron świata. To urokliwe Uzdrowisko położone w otulinie Beskidu Sądeckiego zachwyca przyrodą, a także wieloma atrakcjami, do których należą m.in ogrody sensoryczne, wieloletnie zabytki, szlaki górskie oraz rowerowe a także źródła wody mineralnej.",
             "card1": {
                 "header": "Hala Sportowa",
-                "text": "z certyfikowaną, wielowarstwową nawierzchnią sportową Gerflor Teraflex. Zapraszamy do gry w sporty zespołowe: piłkę nożną halową, siatkówkę, koszykówkę, piłkę ręczną oraz badmintona, a także gimnastykę.",
+                "text": "Certyfikowana, wielowarstwowa nawierzchnia sportowa Gerflor Teraflex. Zapraszamy do gry w sporty zespołowe: piłkę nożną halową, siatkówkę, koszykówkę, piłkę ręczną oraz badmintona, a także gimnastykę.",
                 "button": "Hala Sportowa"
             },
             "card2": {
                 "header": "Mini kręgielnia",
-                "text": "wyposażona w dwa tory do gry. W pomieszczeniu kręgielni zadbaliśmy również o strefę relaksu dla użytkowników oczekujących na rozpoczęcie gry.",
+                "text": "Wyposażona w dwa tory do gry. W pomieszczeniu kręgielni zadbaliśmy również o strefę relaksu dla użytkowników oczekujących na rozpoczęcie gry.",
                 "button": "Mini kręgielnia"
             },
             "card3": {
                 "header": "Ścianka wspinaczkowa",
-                "text": "przewidziana zarówno dla amatorów, jak i profesjonalistów. Nasza konstrukcja to nowoczesna przestrzeń z bryłami geometrycznymi i uwypukleniami o powierzchni 90 m². Gabaryty ścianki pozwalają na korzystanie z niej trzech osób równocześnie. Posiada 6 punktów asekuracji górnej, 18 punktów asekuracji indywidualnej.",
+                "text": "Przewidziana zarówno dla amatorów, jak i profesjonalistów. Nasza konstrukcja to nowoczesna przestrzeń z bryłami geometrycznymi i uwypukleniami o powierzchni 90 m². Gabaryty ścianki pozwalają na korzystanie z niej trzech osób równocześnie. Posiada 6 punktów asekuracji górnej, 18 punktów asekuracji indywidualnej.",
                 "button": "Ścianka wspinaczkowa"
             },
             "card4": {
                 "header": "Sala zabaw dla dzieci",
-                "text": "wyposażona w konstrukcje zabawową, w której na dzieci czekają liczne atrakcje: labirynty, tunele, drabinki, zjeżdżalnia, piłeczki. Ponadto w sali zabaw wydzielona została strefa malucha zaopatrzona w miękkie pufy, basen z kulkami oraz tablice manipulacyjno – sensoryczne pozwalające najmłodszym zarówno na zabawę jak i naukę.",
+                "text": "Wyposażona w konstrukcje zabawową, w której na dzieci czekają liczne atrakcje: labirynty, tunele, drabinki, zjeżdżalnia, piłeczki. Ponadto w sali zabaw wydzielona została strefa malucha zaopatrzona w miękkie pufy, basen z kulkami oraz tablice manipulacyjno – sensoryczne pozwalające najmłodszym zarówno na zabawę jak i naukę.",
                 "button": "Sala Zabaw"
             },
             "card5": {
                 "header": "Sala do squasha",
-                "text": "wykonaną zgodnie z wytycznymi WSF (Światowa Federacja Squasha). Korty zostały przygotowane w sposób pozwalający zarówno na zespołową rywalizację jak również na relaks poprzez trening indywidualny.",
+                "text": "Wykonana zgodnie z wytycznymi WSF (Światowa Federacja Squasha). Korty zostały przygotowane w sposób pozwalający zarówno na zespołową rywalizację jak również na relaks poprzez trening indywidualny.",
                 "button": "Squash"
             },
             "card6": {
                 "header": "Wypożyczalnia rowerów",
-                "text": "z przekrojowym zestawem rowerów oraz akcesoriów dla dzieci i dorosłych preferujących spędzanie czasu na świeżym powietrzu. Znajdziesz w niej rowery męskie, damskie i dziecięce, a także osprzęt niezbędny do bezpiecznej jazdy.",
+                "text": "Przekrojowy zestaw rowerów oraz akcesoriów dla dzieci i dorosłych preferujących spędzanie czasu na świeżym powietrzu. Znajdziesz w niej rowery męskie, damskie i dziecięce, a także osprzęt niezbędny do bezpiecznej jazdy.",
                 "button": "Wypożyczalnia rowerów"
             },
             "card7": {
                 "header": "Sala do tenisa stołowego",
-                "text": "wyposażonego w dwa stoły do ulubionej dyscypliny małych i dużych, czyli popularnej gry w ping ponga. Atrakcja przeznaczona jest dla osób w różnym przedziale wiekowym.",
+                "text": "Wyposażona w dwa stoły do ulubionej dyscypliny małych i dużych, czyli popularnej gry w ping ponga. Atrakcja przeznaczona jest dla osób w różnym przedziale wiekowym.",
                 "button": "Sala Gier"
             },
             "card8": {
                 "header": "Siłownia",
-                "text": "pozwala na przeprowadzenie kompleksowego treningu obwodowego. Znajdziesz w niej wysokiej jakości sprzęt – atestowany i bezpieczny dla użytkowników. Strefa cardio to bieżnie, rowery treningowe elektromagnetyczne, ergometry wioślarskie, orbitreki elektromagnetyczne, steppery.",
+                "text": "Pozwala na przeprowadzenie kompleksowego treningu obwodowego. Znajdziesz w niej wysokiej jakości sprzęt – atestowany i bezpieczny dla użytkowników. Strefa cardio to bieżnie, rowery treningowe elektromagnetyczne, ergometry wioślarskie, orbitreki elektromagnetyczne, steppery.",
                 "button": "Siłownia"
             },
             "card9": {
@@ -627,6 +628,7 @@
         "text1": "Jeżeli pragniesz skutecznie poprawić swoją kondycję i osiągnąć formę przy wsparciu wykwalifikowanej kadry, to nasza siłownia w Muszynie jest idealnym miejscem dla Ciebie.",
         "text2": "Znajdziesz w niej wysokiej jakości sprzęt – atestowany i bezpieczny dla użytkowników. W zależności od planu treningowego i upodobań dostępna jest strefa wolnych ciężarów, strefa z maszynami oraz strefa cardio.",
         "button": "Zakup Karnetu",
+        "button2": "Cennik",
         "alt": {
             "1": "Sprzęt sportowy na siłowni Muszynova",
             "2": "Bieżnie  oraz orbitreki i schodki",
@@ -659,6 +661,7 @@
         "text1": "Zajęcia fitness w Parku Muszynova zostały stworzone z myślą o zdrowiu, dobrej kondycji i radości z aktywności fizycznej. Bez względu na poziom zaawansowania, wiek czy cel treningowy, mamy coś dla każdego.",
         "text2": "Nasi instruktorzy są gotowi poprowadzić Cię przez różnorodne formy aktywności, począwszy od energetycznych zajęć o wysokiej intensywności po statyczne, relaksujące sesje pilatesu.",
         "button": "Zajęcia Grupowe",
+        "button2": "Zarezerwuj online",
         "alt": {
             "1": "Zielone piłki i maty do ćwiczeń na sali fitness z lustrami w Muszynie",
             "2": "Zajęcia fitness z instruktorem na matach",
@@ -691,6 +694,7 @@
         "text1": "Nasza hala sportowa to miejsce, gdzie sport staje się pasją, a ruch to sposób na zdrowie i rozwijanie umiejętności. To przestrzeń, która oferuje doskonałe warunki do uprawiania różnorodnych dyscyplin sportowych, ale także inspiruje do aktywnego trybu życia i wspólnej rywalizacji.",
         "text2": "Hala sportowa jest obiektem, który posiada boisko mogące spełniać funkcje, boiska do koszykówki, siatkówki, badmintona czy piłki ręcznej. To miejsce, które tętni energią i stwarza doskonałe warunki dla zawodników, jak i amatorów sportu.",
         "button": "Kontakt",
+        "button2": "Zarezerwuj online",
         "alt": {
             "1": "Hala sportowa z siatką, licznikami , ścianką wspinaczkową w Muszynie",
             "2": "Siatka do siatkówki na tle ścianki wspinaczkowej",
@@ -754,7 +758,8 @@
         "header2": "Co nas wyróżnia?",
         "text1": "Ścianka wspinaczkowa to idealna aktywność dostępna przez cały rok. Inspiruje do zdobywania nowych wysokości i pokonywania własnych ograniczeń.",
         "text2": "Nasza ścianka wspinaczkowa oferuje niezapomniane doświadczenia dla wspinaczy o różnym stopniu zaawansowania, zarówno dla tych, którzy zaczynają swoją przygodę ze wspinaczką, jak i dla doświadczonych entuzjastów.",
-        "button": "Zarezerwuj",
+        "button": "Cennik",
+        "button2": "Kontakt",
         "alt": {
             "1": "Ścianka wspinaczkowa z kolorowymi elementami w Muszynie",
             "2": "Dziewczynka wspinająca się na ściance wspinaczkowej w Muszynova"
@@ -784,7 +789,8 @@
         "header2": "Co nas wyróżnia?",
         "text1": "Sala zabaw dla dzieci to przestrzeń stworzona specjalnie dla najmłodszych, aby mogły się bawić i spędzać aktywnie czas w bezpiecznym otoczeniu. W takiej sali dzieci mają dostęp do różnorodnych atrakcji, które zapewniają im radość i zabawę",
         "text2": "Mogą korzystać z kreatywnych zajęć oraz innych form rozrywki. W sali zabaw dba się o to, aby każde dziecko czuło się komfortowo i miało możliwość interakcji z innymi rówieśnikami. To doskonałe miejsce, gdzie maluchy mogą rozwijać swoje umiejętności społeczne, dzielić się z innymi oraz współpracować w grupie.",
-        "button": "O Nas",
+        "button": "Cennik",
+        "button2": "Kontakt",
         "alt": {
             "1": "Zabawki, stół, krzesła w sali zabaw w Muszynie",
             "2": "Tor przeszkód dla dzieci",
@@ -817,6 +823,7 @@
         "text1": "Nasza sala squash to miejsce, gdzie pasjonaci tego dynamicznego sportu znajdą wszystko, czego potrzebują do ekscytującej rozgrywki.",
         "text2": "Wyposażona w profesjonalny kort, nasza sala stworzona jest zarówno dla doświadczonych graczy, jak i dla tych, którzy dopiero zaczynają swoją przygodę ze squashem. Przyjdź, zanurz się w intensywnym tempie gry w squash’a i doświadczaj niezapomnianych emocji!",
         "button": "Cennik",
+        "button2": "Zarezerwuj online",
         "alt": {
             "1": "Profesjonalna sala o certyfikowanych wymiarach do Squasha",
             "2": "Sala do Squasha na tle z rakietą i piłeczką",
@@ -849,6 +856,7 @@
         "text1": "Nasza wypożyczalnia rowerów to idealne miejsce dla miłośników aktywności na świeżym powietrzu. Oferujemy szeroki wybór rowerów – od miejskich po górskie – dla dzieci i dorosłych.",
         "text2": "Wypożycz rower i odkrywaj malownicze trasy Muszyny i okolic, ciesząc się pięknem natury. To świetny sposób na aktywny wypoczynek dla każdego, niezależnie od doświadczenia!",
         "button": "Cennik",
+        "button2": "Kontakt",
         "alt": {
             "1": "Wiele rowerów na tle Parku Rekreacyjno Sportowego Muszynova w Muszynie",
             "2": "Recepcja z wygodną kanapą na tle schodów w Muszynova"
@@ -878,7 +886,8 @@
         "header2": "Co nas wyróżnia?",
         "text1": "W Parku Muszynova pragnęliśmy stworzyć miejsce gdzie razem ze swoimi przyjaciółmi, możecie rywalizować i dobrze się bawić. Dla miłośników strategii i precyzji oferujemy profesjonalny stół bilardowy oraz stoły do tenisa stołowego, na których możecie poprawić swoje umiejętności koncentracji czy koordynacji wzrokowo-ruchowej. Dodatkowo, dla tych, którzy cenią szybkie i emocjonujące rozgrywki, przygotowaliśmy stół do piłkarzyków i air hockey’a.",
         "text2": "Przyjazna atmosfera, nowoczesne wyposażenie i doskonała rozrywka sprawią, że czas spędzony w Muszynova będzie nie tylko aktywny, ale także niezwykle przyjemny. Zapraszamy do odkrywania fascynującego świata na noVo.",
-        "button": "About Us",
+        "button": "Cennik",
+        "button2": "Zarezerwuj online",
         "alt": {
             "1": "Stół do Cymbergaja a w tle piłkarzyki oraz stół do tenisa stołowego",
             "2": "Jasne pomieszczenie z piłkarzykami i cymbergajem",
@@ -910,7 +919,8 @@
         "header2": "Co nas wyróżnia?",
         "text1": "Serce naszej sali multimedialnej stanowi najnowsze PlayStation, gdzie zapewniamy dostęp do najlepszych gier i rozrywek dla fanów konsolowej zabawy.",
         "text2": "Od ekscytujących przygód po emocjonujące rozgrywki sportowe, każdy znajdzie coś dla siebie. A to wszystko na wygodnych pufach, które stwarzają idealne warunki do zanurzenia się w świat wirtualnej rozrywki.",
-        "button": "O Nas",
+        "button": "Cennik",
+        "button2": "Kontakt",
         "alt": {
             "1": "Chłopiec trzymający w ręku pada do playstation 5",
             "2": "Chłopiec siedzący przed telewizorem grający w grę sportową na konsoli do gier"

@@ -47,8 +47,12 @@ export default function Squash() {
             <br></br> <br></br>
             {t("text2")}
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex gap-4">
             <Button text={t("button")} link={"/cennik"} />
+            <Button
+              text={t("button2")}
+              link={"https://muszynova.oos.pl/reservations"}
+            />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
@@ -114,11 +118,10 @@ export default function Squash() {
         </div>
         <section className="grid md:grid-cols-2 pt-20 gap-10">
           <div className="relative w-full h-132">
-            {/* Stała wysokość i pełna szerokość */}
             <Image
               src="/park/squash/s1.webp"
-              layout="fill" // Wypełnia kontener rodzica
-              objectFit="cover" // Przycina obraz, aby wypełnić kontener
+              layout="fill"
+              objectFit="cover"
               alt={t("alt.1")}
             />
           </div>

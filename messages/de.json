@@ -547,6 +547,7 @@
         "header": "Freizeit- und Sportpark",
         "text": "Aktivität bedeutet für uns Vielfalt. Damit jeder Fun daraus zieht, seine Zeit gut verbringt, so wie er es mag, unabhängig vom Kenntnisstand oder der Sportart. Wir sind vorbereitet auf Unterhaltung und Schweißtreiben. Für Groß und Klein, Amateure und Profis. Professionelle Geräte, moderne Einrichtungen in schönen Räumlichkeiten – all das erwartet dich in Muszynova. Und du entdeckst!",
         "button": "Mehr Lesen",
+        "button2": "Online buchen",
         "header2": "Was zeichnet uns aus?",
         "alt": {
             "1": "Freizeit- und Sportpark Muszynova von außen vor schöner Naturkulisse"
@@ -627,6 +628,7 @@
         "text1": "Wenn du effektiv deine Kondition verbessern und mit Unterstützung qualifizierter Trainer Form erreichen möchtest, ist unser Fitnessstudio in Muszyna der ideale Ort für dich.",
         "text2": "Hier findest du hochwertige Ausrüstung – zertifiziert und sicher für Nutzer. Je nach Trainingsplan und Vorlieben stehen eine Zone für freie Gewichte, eine Gerätezone und eine Cardio-Zone zur Verfügung.",
         "button": "Karte kaufen",
+        "button2": "Preisliste",
         "alt": {
             "1": "Sportgeräte im Fitnessstudio Muszynova",
             "2": "Laufbänder sowie Ellipsentrainer und Stepper",
@@ -659,6 +661,7 @@
         "text1": "Fitnesskurse im Park Muszynova wurden mit Blick auf Gesundheit, gute Kondition und Freude an körperlicher Aktivität geschaffen. Unabhängig vom Kenntnisstand, Alter oder Trainingsziel haben wir für jeden etwas.",
         "text2": "Unsere Instruktoren sind bereit, dich durch verschiedene Aktivitätsformen zu führen, von energiegeladenen Kursen mit hoher Intensität bis zu statischen, entspannenden Pilates-Sessions.",
         "button": "Gruppenkurse",
+        "button2": "Online buchen",
         "alt": {
             "1": "Grüne Bälle und Matten im Fitnessraum mit Spiegeln in Muszyna",
             "2": "Fitnesskurs mit Trainer auf Matten",
@@ -691,6 +694,7 @@
         "text1": "Unsere Sporthalle ist ein Ort, an dem Sport zur Leidenschaft wird und Bewegung ein Weg zu Gesundheit und Fähigkeitsentwicklung ist. Ein Raum, der ausgezeichnete Bedingungen für verschiedene Sportarten bietet, aber auch zu aktivem Lebensstil und gemeinsamem Wettbewerb inspiriert.",
         "text2": "Die Sporthalle ist ein Objekt mit einem Spielfeld, das als Basketball-, Volleyball-, Badminton- oder Handballfeld fungieren kann. Ein Ort, der vor Energie pulsiert und ausgezeichnete Bedingungen für Sportler wie Amateure schafft.",
         "button": "Kontakt",
+        "button2": "Online buchen",
         "alt": {
             "1": "Sporthalle mit Netz, Anzeigetafeln, Kletterwand in Muszyna",
             "2": "Volleyballnetz vor Kletterwand",
@@ -754,7 +758,8 @@
         "header2": "Was zeichnet uns aus?",
         "text1": "Die Kletterwand ist eine ideale Aktivität, die ganzjährig verfügbar ist. Inspiriert zum Erreichen neuer Höhen und zum Überwinden eigener Grenzen.",
         "text2": "Unsere Kletterwand bietet unvergessliche Erfahrungen für Kletterer mit unterschiedlichem Kenntnisstand, sowohl für diejenigen, die ihr Kletterabenteuer beginnen, als auch für erfahrene Enthusiasten.",
-        "button": "Buchen",
+        "button": "Preisliste",
+        "button2": "Kontakt",
         "alt": {
             "1": "Kletterwand mit farbigen Elementen in Muszyna",
             "2": "Mädchen klettert an der Kletterwand in Muszynova"
@@ -784,7 +789,8 @@
         "header2": "Was zeichnet uns aus?",
         "text1": "Der Spieleraum für Kinder ist ein Raum, speziell für die Kleinsten geschaffen, damit sie in sicherer Umgebung spielen und aktiv Zeit verbringen können. In einem solchen Raum haben Kinder Zugang zu verschiedenen Attraktionen, die ihnen Freude und Unterhaltung bieten",
         "text2": "Sie können kreative Aktivitäten und andere Formen der Unterhaltung nutzen. Im Spieleraum wird darauf geachtet, dass sich jedes Kind wohlfühlt und die Möglichkeit zur Interaktion mit anderen Gleichaltrigen hat. Ein ausgezeichneter Ort, an dem Kleinkinder soziale Fähigkeiten entwickeln, mit anderen teilen und in der Gruppe zusammenarbeiten können.",
-        "button": "Über Uns",
+        "button": "Preisliste",
+        "button2": "Kontakt",
         "alt": {
             "1": "Spielzeug, Tisch, Stühle im Spieleraum in Muszyna",
             "2": "Hindernisparcours für Kinder",
@@ -817,6 +823,7 @@
         "text1": "Unser Squash-Saal ist ein Ort, an dem Enthusiasten dieses dynamischen Sports alles finden, was sie für ein aufregendes Spiel benötigen.",
         "text2": "Ausgestattet mit einem professionellen Court, ist unser Saal sowohl für erfahrene Spieler als auch für diejenigen geschaffen, die gerade ihr Squash-Abenteuer beginnen. Komm, tauche ein in das intensive Tempo des Squash-Spiels und erlebe unvergessliche Emotionen!",
         "button": "Preise",
+        "button2": "Online buchen",
         "alt": {
             "1": "Professioneller Saal mit zertifizierten Squash-Maßen",
             "2": "Squash-Saal mit Schläger und Ball im Hintergrund",
@@ -849,6 +856,7 @@
         "text1": "Unser Fahrradverleih ist der ideale Ort für Liebhaber von Aktivitäten an der frischen Luft. Wir bieten eine breite Auswahl an Fahrrädern – von Stadt- bis Mountainbikes – für Kinder und Erwachsene.",
         "text2": "Leihe ein Fahrrad und entdecke die malerischen Routen von Muszyna und Umgebung, und genieße die Naturschönheit. Eine großartige Art der aktiven Erholung für jeden, unabhängig von Erfahrung!",
         "button": "Preise",
+        "button2": "Kontakt",
         "alt": {
             "1": "Viele Fahrräder vor dem Freizeit- und Sportpark Muszynova in Muszyna",
             "2": "Rezeption mit bequemer Couch vor Treppen in Muszynova"
@@ -878,7 +886,8 @@
         "header2": "Was zeichnet uns aus?",
         "text1": "Im Park Muszynova wollten wir einen Ort schaffen, wo du zusammen mit deinen Freunden wettbewerben und Spaß haben kannst. Für Liebhaber von Strategie und Präzision bieten wir einen professionellen Billardtisch sowie Tischtennistische, an denen du deine Konzentrationsfähigkeit oder Hand-Auge-Koordination verbessern kannst. Zusätzlich haben wir für diejenigen, die schnelle und aufregende Spiele schätzen, einen Kickertisch und Air Hockey vorbereitet.",
         "text2": "Freundliche Atmosphäre, moderne Ausstattung und ausgezeichnete Unterhaltung sorgen dafür, dass die in Muszynova verbrachte Zeit nicht nur aktiv, sondern auch äußerst angenehm sein wird. Wir laden ein, die faszinierende Welt auf nOvo zu entdecken.",
-        "button": "Über Uns",
+        "button": "Preisliste",
+        "button2": "Online buchen",
         "alt": {
             "1": "Tisch für Tipp-Kick und im Hintergrund Kickertisch sowie Tischtennistisch",
             "2": "Heller Raum mit Kickern und Tipp-Kick",
@@ -910,7 +919,8 @@
         "header2": "Was zeichnet uns aus?",
         "text1": "Das Herz unseres Multimediasaals bildet die neueste PlayStation, wo wir Zugang zu den besten Spielen und Unterhaltungen für Konsolenfans bieten.",
         "text2": "Von aufregenden Abenteuern bis zu emotionalen Sportspielen findet jeder etwas für sich. Und das alles auf bequemen Sitzsäcken, die ideale Bedingungen zum Eintauchen in die Welt der virtuellen Unterhaltung schaffen.",
-        "button": "Über Uns",
+        "button": "Preisliste",
+        "button2": "Kontakt",
         "alt": {
             "1": "Junge hält Playstation-5-Controller in der Hand",
             "2": "Junge sitzt vor Fernseher und spielt Sportspiel auf Spielkonsole"

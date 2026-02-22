@@ -18,8 +18,7 @@ export async function generateMetadata({ params }) {
     namespace: "metadata.gameroom",
   });
 
-  const path = routing.pathnames["/park/sala-gier"][locale]; // Pobieramy ścieżkę dla języka
-  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const path = routing.pathnames["/park/sala-gier"][locale];
   const canonicalUrl =
     locale === "pl"
       ? `https://muszynova.pl${path}`
@@ -45,8 +44,12 @@ export default function Gry() {
             {t("text1")}
             <br></br> <br></br> {t("text2")}
           </p>
-          <div className="mt-10">
-            <Button text={t("button")} link="/o-nas" />
+          <div className="mt-10 flex gap-4">
+            <Button text={t("button")} link="/cennik" />
+            <Button
+              text={t("button2")}
+              link="https://muszynova.oos.pl/reservations"
+            />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">

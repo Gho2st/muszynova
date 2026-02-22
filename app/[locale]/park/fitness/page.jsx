@@ -47,8 +47,9 @@ export default function Fitness() {
             {t("text1")} <br></br>
             <br></br> {t("text2")}
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex gap-4">
             <Button text={t("button")} link="/zajecia-grupowe" />
+            <Button text={t("button2")} link="https://muszynova.oos.pl/reservations" />
           </div>
         </div>
         <div className="mt-16 xl:mt-0 xl:w-2/3">

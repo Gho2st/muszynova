@@ -44,11 +44,9 @@ export default function Scianka() {
           <p className="mt-10">
             {t("text1")} <br></br> <br></br> {t("text2")}
           </p>
-          <div className="mt-10">
-            <Button
-              text={t("button")}
-              link={"https://muszynova.oos.pl/reservations"}
-            />
+          <div className="mt-10 flex gap-4">
+            <Button text={t("button")} link={"cennik"} />
+            <Button text={t("button2")} link={"/kontakt"} />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">

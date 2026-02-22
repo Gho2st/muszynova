@@ -2,8 +2,6 @@ import Hero from "../Homepage/Hero";
 import About from "../Homepage/About";
 import Services from "../Homepage/Services";
 import Restaurant from "../Homepage/Restaurant";
-import { useTranslations } from "next-intl";
-import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import VirtualTour from "../Homepage/VirtualTour";
 import Reviews from "../Homepage/Reviews";

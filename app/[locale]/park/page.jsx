@@ -13,10 +13,9 @@ import { TbBowling } from "react-icons/tb";
 import Card from "../../UI/Card";
 import { useTranslations } from "next-intl";
 import { FaPlaystation } from "react-icons/fa";
-
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { MdCheckCircle } from "react-icons/md"; // dodaj na górze pliku
+import { MdCheckCircle } from "react-icons/md";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -26,8 +25,7 @@ export async function generateMetadata({ params }) {
     namespace: "metadata.park",
   });
 
-  const path = routing.pathnames["/park"][locale]; // Pobieramy ścieżkę dla języka
-  // Jeśli locale to 'pl', pomijamy prefix języka, w przeciwnym razie go dodajemy
+  const path = routing.pathnames["/park"][locale];
   const canonicalUrl =
     locale === "pl"
       ? `https://muszynova.pl${path}`
@@ -47,13 +45,16 @@ export default function Park() {
 
   return (
     <>
-      {/* hero */}
       <div className="flex flex-col xl:flex-row gap-10 py-16 xl:py-20">
         <div className="xl:w-2/5 px-6 xl:p-16 ">
           <h1 className="text-4xl xl:text-6xl font-bold">{t("header")}</h1>
           <p className="mt-10 xl:text-lg">{t("text")}</p>
-          <div className="mt-10">
+          <div className="mt-10 flex gap-4">
             <Button text={t("button")} link="/o-nas" />
+            <Button
+              text={t("button2")}
+              link="https://muszynova.oos.pl/reservations"
+            />
           </div>
         </div>
         <div className="xl:w-3/5 flex justify-center items-center">
