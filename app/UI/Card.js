@@ -95,10 +95,8 @@ export default function Card({
       </div>
 
       {/* Logo Wesele z Klasą */}
-      {/* Logo Wesele z Klasą z wezwaniem do działania */}
       {isWesele && (
-        <div className="absolute bottom-4 right-4 flex flex-col items-end group">
-          {/* Tekst zachęty - pojawia się subtelnie nad logiem */}
+        <div className="absolute top-4 right-4 flex flex-col items-end group">
           <span className="text-[10px] uppercase tracking-widest text-white/70 mb-1 font-semibold group-hover:text-white transition-colors">
             {weseleText}
           </span>

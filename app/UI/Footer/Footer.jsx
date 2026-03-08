@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 
-// Ikony
 import {
   FaFacebookF,
   FaInstagram,
@@ -22,14 +21,34 @@ export default function Footer() {
   const [isGymOpen, setIsGymOpen] = useState(false);
   const [isRestaurantOpen, setIsRestaurantOpen] = useState(false);
 
+  // Dodajemy stan, aby wiedzieć, czy mamy marzec
+  const [isMarch, setIsMarch] = useState(false);
+
   const t = useTranslations("footer");
 
   const checkStatuses = () => {
-    const hour = new Date().getHours();
+    const now = new Date();
+    const hour = now.getHours();
+    const month = now.getMonth(); // 0 = styczeń, 2 = marzec
+    const day = now.getDay(); // 0 = niedziela, 5 = piątek, 6 = sobota
 
     setIsParkOpen(hour >= 11 && hour < 21);
     setIsGymOpen(hour >= 8 && hour < 21);
-    setIsRestaurantOpen(hour >= 12 && hour < 21);
+
+    // Sprawdzamy czy to marzec i ustawiamy flagę dla UI
+    const currentlyMarch = month === 2;
+    setIsMarch(currentlyMarch);
+
+    const isRestaurantHours = hour >= 12 && hour < 21;
+
+    if (currentlyMarch) {
+      // W marcu restauracja jest otwarta tylko Pt, Sb, Nd
+      const isWeekend = day === 0 || day === 5 || day === 6;
+      setIsRestaurantOpen(isWeekend && isRestaurantHours);
+    } else {
+      // Poza marcem - normalne sprawdzanie godzin
+      setIsRestaurantOpen(isRestaurantHours);
+    }
   };
 
   useEffect(() => {
@@ -181,16 +200,27 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between py-2.5">
-                <span className="text-gray-300"> {t("hours.3")}</span>
-                <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/15">
-                  <FaCircle
-                    className={`w-2.5 h-2.5 ${
-                      isRestaurantOpen ? "text-green-500" : "text-red-500"
-                    }`}
-                  />
-                  <span className="font-medium">12:00 – 21:00</span>
+              {/* ZMIENIONA SEKCJA RESTAURACJI */}
+              <div className="flex flex-col py-2.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-300"> {t("hours.3")}</span>
+                  <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/15">
+                    <FaCircle
+                      className={`w-2.5 h-2.5 ${
+                        isRestaurantOpen ? "text-green-500" : "text-red-500"
+                      }`}
+                    />
+                    <span className="font-medium">
+                      {isMarch ? "12:00 – 21:00 (Pt-Nd)" : "12:00 – 21:00"}
+                    </span>
+                  </div>
                 </div>
+                {/* Komunikat o tymczasowych zmianach w marcu */}
+                {isMarch && (
+                  <span className="text-[11px] text-customGold mt-2 text-right">
+                    *Tymczasowo w marcu czynne tylko w weekendy
+                  </span>
+                )}
               </div>
             </div>
 
