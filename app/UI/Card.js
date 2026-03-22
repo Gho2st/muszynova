@@ -10,7 +10,7 @@ export default function Card({
   text,
   buttonText,
   link,
-  isWesele = false, // Nowy prop
+  isWesele = false,
   weseleText,
 }) {
   const parsedContent = useMemo(() => {
@@ -71,7 +71,6 @@ export default function Card({
       whileInView="visible"
       whileHover="hover"
       viewport={{ once: true, margin: "-50px" }}
-      // Dodano klase "relative", aby logo w rogu trzymało się krawędzi karty
       className={`relative flex flex-col justify-between ${bgColor} p-8 h-full rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300`}
     >
       {/* Ikona */}

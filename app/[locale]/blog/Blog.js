@@ -8,6 +8,7 @@ import Favourite from "@/app/UI/Blog/Favourite";
 import RecentPosts from "@/app/UI/Blog/RecentPosts";
 import LineHeader from "@/app/UI/LineHeader";
 import { blogPosts } from "@/app/data/blogData";
+import { useMemo } from "react";
 
 export default function Blog({ locale }) {
   const t = useTranslations("blog");
@@ -16,21 +17,32 @@ export default function Blog({ locale }) {
   const postsPerPage = 9;
   const articlesRef = useRef(null);
 
-  // 🔹 Połączenie metadanych (blogPosts) z tłumaczeniami
-  const mergedPosts = blogPosts
-    .map((post) => ({
-      ...post,
-      title: t(`blogPosts.${post.id}.title`),
-      subtitle: t(`blogPosts.${post.id}.header2`),
-      contentPart1: t(`blogPosts.${post.id}.text`),
-    }))
-    .toReversed();
+  // 🔹 Połączenie metadanych z tłumaczeniami i poprawne sortowanie po dacie
+  const mergedPosts = useMemo(() => {
+    const getTimestamp = (dateString) => {
+      if (!dateString) return 0; // Zabezpieczenie na wypadek braku daty
+      const [day, month, year] = dateString.split("-");
+      return new Date(year, month - 1, day).getTime();
+    };
+
+    return [...blogPosts]
+      .map((post) => ({
+        ...post,
+        title: t(`blogPosts.${post.id}.title`),
+        subtitle: t(`blogPosts.${post.id}.header2`),
+        contentPart1: t(`blogPosts.${post.id}.text`),
+      }))
+      .sort((a, b) => getTimestamp(b.date) - getTimestamp(a.date));
+  }, [t]); // Przepeliczy się ponownie tylko gdy zmieni się język (t)
+
   // 🔹 Filtrowanie wyszukiwania
-  const filteredPosts = mergedPosts.filter(
-    (post) =>
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.subtitle.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const filteredPosts = useMemo(() => {
+    return mergedPosts.filter(
+      (post) =>
+        post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        post.subtitle.toLowerCase().includes(searchTerm.toLowerCase()),
+    );
+  }, [mergedPosts, searchTerm]); // Przeliczy się tylko przy zmianie wyszukiwania lub języka
 
   // 🔹 Paginacja
   const indexOfLastPost = currentPage * postsPerPage;
@@ -79,9 +91,8 @@ export default function Blog({ locale }) {
       <Header text={t("header2")} />
 
       <section className="pb-8 px-[4%] 2xl:pb-20 bg-white">
-        {/* Opis */}
         <p className="text-center max-w-3xl mx-auto mt-6 md:mt-10 text-lg xl:text-xl text-gray-600">
-          {t("text")}
+          {t("text")} 
         </p>
 
         {/* Pole wyszukiwania */}

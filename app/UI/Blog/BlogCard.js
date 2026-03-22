@@ -56,7 +56,7 @@ export default function BlogCard({ post, index = 0 }) {
         </div>
 
         {/* BODY */}
-        <h3 className="text-xl xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2 leading-tight group-hover:text-customGold transition-colors duration-300">
+        <h3 className="text-xl 2xl:text-2xl font-bold text-gray-900 mb-3 line-clamp-2 leading-tight group-hover:text-customGold transition-colors duration-300">
           {title}
         </h3>
 
