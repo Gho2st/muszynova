@@ -6,7 +6,7 @@ export default function SalesButton(props) {
     <div>
       <button>
         <Link
-          className="text-black text-lg font-medium whitespace-nowrap flex justify-center items-center gap-2 bg-white p-4 clip-custom hover:clip-reverse transition-all duration-300 transform hover:scale-105"
+          className="text-black 2xl:text-lg font-medium whitespace-nowrap flex justify-center items-center gap-2 bg-white p-4 clip-custom hover:clip-reverse transition-all duration-300 transform hover:scale-105"
           href="https://muszynova.oos.pl/customer/login"
         >
           <FaShoppingBasket className="text-[#C4966C]" />

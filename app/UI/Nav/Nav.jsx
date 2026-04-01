@@ -146,7 +146,7 @@ export default function Nav() {
             />
           </Link>
           <Link href={"/dofinansowanie"}>
-            <div className="hidden xl:block relative h-12 w-24 hover:opacity-90 transition-opacity">
+            <div className="hidden xl:block relative h-12 w-16 hover:opacity-90 transition-opacity">
               <Image
                 src="/unia.webp"
                 fill
@@ -159,7 +159,7 @@ export default function Nav() {
 
         {/* Prawa strona: Nawigacja Desktop */}
         <div className="flex items-center gap-4">
-          <div className="hidden items-center font-light text-white xl:flex xl:gap-1 2xl:gap-4">
+          <div className="hidden items-center font-light text-sm 2xl:text-base text-white xl:flex 2xl:gap-4">
             <NavLink href="/o-nas">{t("links.link1")}</NavLink>
             <NavLink href="/blog">{t("links.link8")}</NavLink>
 
