@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Header from "@/app/UI/Header";
+import Cards from "./Cards";
 
 const TABLE_HEADER_STYLES =
   "hidden sm:grid grid-cols-4 bg-gray-100 text-gray-700 font-semibold text-sm sm:text-base py-3 px-4 rounded-t-lg";
@@ -43,9 +44,20 @@ export default function PricingPage() {
   );
 
   // Komponent wiersza tabeli
-  const PricingRow = ({ name, time, weekday, weekend, price }) => (
+  const PricingRow = ({ name, time, weekday, weekend, price, comment }) => (
     <div className={ROW_STYLES}>
-      <div className="font-medium text-gray-900 sm:font-normal">{name}</div>
+      <div className="font-medium text-gray-900 sm:font-normal">
+        {name}
+        {/* Warunkowe renderowanie komentarza */}
+
+        {comment && (
+          <div>
+            <span className="ml-2 mt-1 text-xs text-gray-500 italic block whitespace-pre-line">
+              {comment}
+            </span>
+          </div>
+        )}
+      </div>
       <div className="text-gray-600">
         <span className="sm:hidden font-medium">{t("sports.time")} </span>
         {time}
@@ -86,6 +98,7 @@ export default function PricingPage() {
   return (
     <>
       <Header text={t("header")} />
+      <Cards />
       <section className="py-12 sm:py-16 xl:py-20 bg-white text-gray-900">
         <div className={CONTAINER_STYLES}>
           {/* Sekcja Active Sport */}
@@ -94,8 +107,8 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.hall.2")}
               time="1 h"
-              weekday="120 zł"
-              weekend="140 zł"
+              weekday="130 zł"
+              weekend="150 zł"
             />
             <PricingRow
               name={t("sports.hall.3")}
@@ -107,11 +120,16 @@ export default function PricingPage() {
             <SubSection title={t("sports.climbingwall.1")} />
             <PricingRow
               name={t("sports.climbingwall.2")}
+              time="1,5h"
+              price="50 zł"
+            />
+            <PricingRow
+              name={t("sports.climbingwall.3")}
               time="5x"
               price="200 zł"
             />
             <PricingRow
-              name={t("sports.climbingwall.3")}
+              name={t("sports.climbingwall.4")}
               time="1 h"
               price="250 zł"
             />
@@ -120,41 +138,44 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.squash.1")}
               time="1 h"
-              weekday="50 zł"
-              weekend="55 zł"
+              weekday="55 zł"
+              weekend="60 zł"
             />
             <PricingRow
               name={t("sports.squash.2")}
               time="5 × 1 h"
-              price="220 zł"
+              price="240 zł"
             />
 
             <SubSection title={t("sports.bikes.1")} />
-            <PricingRow name={t("sports.bikes.2")} time="4 h" price="30 zł" />
-            <PricingRow name={t("sports.bikes.2")} time="24 h" price="50 zł" />
+            <PricingRow name={t("sports.bikes.2")} time="4 h" price="35 zł" />
+            <PricingRow name={t("sports.bikes.2")} time="24 h" price="60 zł" />
             <PricingRow name={t("sports.bikes.2")} time="7d" price="250 zł" />
           </Section>
 
           {/* Sekcja Kids & Fun */}
           <Section title="Kids & Fun">
             <SubSection title={t("sports.kids.1")} />
+            <p className="text-xs ml-4 py-1 text-gray-500">
+              {t("sports.kids.comment")}
+            </p>
             <PricingRow
               name={t("sports.kids.2")}
               time="0,5 h"
-              weekday="15 zł"
-              weekend="20 zł"
+              weekday="17 zł"
+              weekend="22 zł"
             />
             <PricingRow
               name={t("sports.kids.2")}
               time="1 h"
-              weekday="25 zł"
-              weekend="30 zł"
+              weekday="30 zł"
+              weekend="35 zł"
             />
             <PricingRow
               name={t("sports.kids.2")}
               time="2 h"
-              weekday="35 zł"
-              weekend="40 zł"
+              weekday="40 zł"
+              weekend="50 zł"
             />
             <PricingRow
               name={t("sports.kids.2")}
@@ -165,39 +186,39 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.kids.3")}
               time="5x 1 h"
-              weekday="100 zł"
-              weekend="115 zł"
+              weekday="120 zł"
+              weekend="130 zł"
             />
 
             <SubSection title={t("sports.games.1")} />
             <PricingRow
               name={t("sports.games.2")}
               time="1 h"
-              weekday="30 zł"
-              weekend="35 zł"
+              weekday="35 zł"
+              weekend="40 zł"
             />
             <PricingRow
               name={t("sports.games.3")}
-              time="1 h"
-              weekday="20 zł"
-              weekend="25 zł"
+              time="0,5 h"
+              weekday="12 zł"
+              weekend="15 zł"
             />
             <PricingRow
               name={t("sports.games.4")}
-              time="15 min"
-              weekday="12 zł"
-              weekend="13 zł"
+              time="0,5 h"
+              weekday="18 zł"
+              weekend="20 zł"
             />
             <PricingRow
               name={t("sports.games.5")}
-              time="15 min"
-              weekday="12 zł"
-              weekend="13 zł"
+              time="0,5 h"
+              weekday="18 zł"
+              weekend="20 zł"
             />
             <PricingRow
               name={t("sports.games.6")}
               time="1 h"
-              weekday="150 zł"
+              weekday="160 zł"
               weekend="170 zł"
             />
 
@@ -205,19 +226,19 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.bowling.2")}
               time="1 h"
-              weekday="45 zł"
-              weekend="55 zł"
+              weekday="50 zł"
+              weekend="60 zł"
             />
             <PricingRow
               name={t("sports.bowling.2")}
               time={t("sports.bowling.4")}
-              weekday="80 zł"
-              weekend="100 zł"
+              weekday="90 zł"
+              weekend="110 zł"
             />
             <PricingRow
               name={t("sports.bowling.3")}
               time="5 * 1 h"
-              price="210 zł"
+              price="230 zł"
             />
           </Section>
 
@@ -227,45 +248,59 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.fitness.1")}
               time="11:00 – 21:00"
-              weekday="15 zł"
-              weekend="20 zł"
+              weekday="25 zł"
+              weekend="30 zł"
             />
             <PricingRow
               name={t("sports.fitness.2")}
               time="08:00 – 21:00"
-              price="59 zł"
+              price="69 zł"
             />
             <PricingRow
               name={t("sports.fitness.3")}
               time="08:00 – 11:00"
-              price="69 zł"
+              price="79 zł"
+            />
+
+            <PricingRow
+              name={t("sports.fitness.5")}
+              time={t("sports.fitness.6")}
+              price="119 zł"
             />
             <PricingRow
               name={t("sports.fitness.4")}
               time={t("sports.fitness.6")}
-              price="129 zł"
+              price="139 zł"
+              comment={t("sports.fitness.comment")}
             />
+
+            <p className="text-gray-500 text-xs ml-4 my-2">
+              {t("sports.fitness.comment2")}
+            </p>
+
             <PricingRow
-              name={t("sports.fitness.5")}
-              time={t("sports.fitness.6")}
-              price="109 zł"
+              name={t("sports.fitness.9")}
+              time="1 h"
+              price="150 zł"
             />
 
             <SubSection title="Fitness" />
             <PricingRow
               name={t("sports.fitness.1")}
               time="1 h"
-              price="20 zł dzieci / 30 zł dorośli"
+              price={t("sports.fitness.price")}
             />
             <PricingRow
               name={t("sports.fitness.8")}
               time="5 ×"
-              price="80 zł dzieci / 135 zł dorośli"
+              price={t("sports.fitness.price2")}
+              comment={t("sports.fitness.comment3")}
             />
             <PricingRow
-              name="OPEN"
-              time={t("sports.fitness.7")}
-              price="199 zł"
+              name={t("sports.fitness.10")}
+              time="12x"
+              price="249 zł"
+              comment={t("sports.fitness.comment4")}
             />
           </Section>
 
@@ -288,7 +323,7 @@ export default function PricingPage() {
           <div className="text-sm sm:text-base text-gray-600 mt-10 space-y-3 sm:space-y-2">
             <p>{t("info.1")}</p>
             <ul className="list-disc pl-6 space-y-2 sm:space-y-1">
-              {[...Array(8)].map((_, i) => (
+              {[...Array(10)].map((_, i) => (
                 <li key={i}>{t(`info.${i + 2}`)}</li>
               ))}
             </ul>

@@ -997,51 +997,57 @@
     },
     "pricing": {
         "header": "Preisliste",
+        "text": "Wir organisieren Events,\n Partys, Kindergeburtstage,\n Themenkurse\n sowie Sportturniere und Wettbewerbe.",
         "info": {
-            "1": "RABATT: 10 PLN bei Verlängerung des Abonnements",
-            "2": "Die Zeit aller Attraktionen wird ab dem Betreten des jeweiligen Raums berechnet und inkludiert die Zeit zum Umziehen",
-            "3": "Die Kletterwand ist an bestimmten Tagen und zu festgelegten Zeiten laut Zeitplan geöffnet",
-            "4": "Alle Zeit-Abonnements sind personengebunden und nicht übertragbar",
-            "5": "Mehrfachkarten (Mengen-Abonnements) können von verschiedenen Personen genutzt werden",
+            "1": "Hinweise und Informationen",
+            "2": "Die Zeit aller Attraktionen wird ab dem Betreten des jeweiligen Raumes gerechnet und beinhaltet die Zeit zum Umziehen.",
+            "3": "Die Kletterwand ist an bestimmten Tagen und zu im Zeitplan festgelegten Zeiten geöffnet.",
+            "4": "Alle Zeitkarten sind personengebunden und nicht auf andere Personen übertragbar.",
+            "5": "Mehrfachkarten können nur von einer Person genutzt werden (Gültigkeit: 30 Tage ab Kaufdatum).",
             "6": "Einmalige Gebühr für die Ausstellung der MUSZYNOVA Clubkarte - 20 PLN",
-            "7": "Fitnesskurse finden nach festem Zeitplan statt - Mindestteilnehmerzahl: 6 Personen",
-            "8": "Kletterwand-Aktivitäten (Einzel- und Sektionstraining) finden nach festem Zeitplan statt - Mindestteilnehmerzahl: 4 Personen",
-            "9": "Pro Bowlingbahn können maximal 8 Personen gleichzeitig spielen."
+            "7": "Fitnesskurse finden nach einem festen Zeitplan statt – ohne Mindestteilnehmerzahl.",
+            "8": "Reservierungen müssen mindestens 24 Stunden im Voraus storniert werden, andernfalls gilt der Eintritt als verbraucht.",
+            "9": "Kletterkurse (Sektionen) finden nach einem festen Zeitplan statt – mindestens 4 Personen.",
+            "10": "Die Kletterwand wird von einem Betreuer bedient – maximal 10 Personen.",
+            "11": "Auf einer Bowlingbahn können maximal 8 Personen gleichzeitig spielen.",
+            "12": "Andere Sonderangebote sind nicht mit Rabatten kombinierbar."
         },
         "sports": {
             "activity": "Leistung",
             "time": "Zeit",
             "hall": {
                 "1": "Sporthalle",
-                "2": "Teamsport",
+                "2": "Mannschaftssport",
                 "3": "Badminton / Tennis"
             },
             "climbingwall": {
                 "1": "Kletterwand",
-                "2": "5er-Karte für beliebige Kurse",
-                "3": "Gruppenkurse mit Trainer"
+                "2": "Klettersektion mit Trainer",
+                "3": "5er-Karte für beliebige Kurse",
+                "4": "Gruppenunterricht mit Betreuer"
             },
             "squash": {
-                "1": "Einzelkarte",
+                "1": "Einzelticket",
                 "2": "5er-Karte"
             },
             "bikes": {
                 "1": "Fahrradverleih",
-                "2": "Mountainbike + Ausrüstung"
+                "2": "Mountainbike + Zubehör"
             },
             "kids": {
                 "1": "Spielzimmer + Multimediaraum",
                 "2": "Eintrittskarte",
                 "3": "5er-Karte (je 1 Std.)",
-                "4": "Unbegrenzt"
+                "4": "Unbegrenzt",
+                "comment": "Kinder bis zum vollendeten 1. Lebensjahr nutzen das Spielzimmer kostenlos, sofern ein Ticket für mindestens ein älteres Kind erworben wird."
             },
             "games": {
-                "1": "Spieleraum",
+                "1": "Spielzimmer",
                 "2": "Billard",
                 "3": "Tischtennis",
-                "4": "Air Hockey",
-                "5": "Tischfußball (Kicker)",
-                "6": "Spieleraum - Exklusivmiete"
+                "4": "Air-Hockey",
+                "5": "Tischfußball",
+                "6": "Spielzimmer - Exklusivnutzung"
             },
             "bowling": {
                 "1": "Mini-Bowling",
@@ -1051,14 +1057,22 @@
             },
             "fitness": {
                 "gym": "Fitnessstudio",
-                "1": "Einzelkarte",
+                "1": "Einzelticket",
                 "2": "5er-Karte OPEN",
-                "3": "Vormittags-Abonnement",
-                "4": "Monats-Abonnement OPEN",
-                "5": "Schüler/Studenten/Senioren OPEN Abonnement",
+                "3": "Vormittagskarte",
+                "4": "Monatskarte OPEN",
+                "5": "Ermäßigte Karte OPEN (Schüler/Studenten/Senioren)",
                 "6": "unbegrenzt",
-                "7": "3 x / Woche",
-                "8": "5-Eintritte-Karte"
+                "7": "3x / Woche",
+                "8": "5er-Karte",
+                "9": "Personal Training",
+                "10": "12er-Karte",
+                "price": "30 PLN Kinder / 35 PLN Erwachsene",
+                "price2": "120 PLN Kinder / 150 PLN Erwachsene",
+                "comment": "*1x pro Woche Kaffee oder Tee gratis (Di-Do, 15:00-20:00)",
+                "comment2": "*Beim Kauf weiterer Abonnements:\n Nächstes Abo - 5% Rabatt,\n Nach 12 Monaten Fortsetzung - 10%,\n Nach 24 Monaten - 15%.\n Der Rabatt wird auf den aktuellen Preis der folgenden Abonnements berechnet.",
+                "comment3": "RABATTE für die ununterbrochene Fortsetzung der 5er-Karte:\n Über 3 Monate - 10 PLN,\n Über 6 Monate - 15 PLN,\n Über 12 Monate - 20 PLN.\n Online-Kursreservierung inkl. Ticketkauf - zusätzliche 20 PLN Rabatt.",
+                "comment4": "1x pro Woche Kaffee oder Tee gratis (Di-Do, 15:00-20:00)\n GRATIS Eintritt ins Fitnessstudio beim Kauf eines Abonnements\n RABATTE für die ununterbrochene Fortsetzung der 12er-Karte:\n Über 3 Monate - 15 PLN,\n Über 6 Monate - 20 PLN,\n Über 12 Monate - 30 PLN.\n Online-Kursreservierung inkl. Ticketkauf - zusätzliche 30 PLN Rabatt."
             },
             "rental": {
                 "header": "Verleih",

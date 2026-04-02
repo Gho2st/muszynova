@@ -997,16 +997,20 @@
     },
     "pricing": {
         "header": "Cennik",
+        "text": "Organizujemy eventy,\n imprezy, urodziny dla dzieci,\n zajęcia tematyczne\n oraz turnieje i zawody sportowe.",
         "info": {
-            "1": "RABAT: 10 zł za kontynuację karnetów",
+            "1": "Uwagi i informacje",
             "2": "Czas wszystkich atrakcji liczony jest z chwilą wejścia na konkretną salę i uwzględnia czas na przebranie",
             "3": "Ścianka wspinaczkowa otwarta jest w określonych dniach i godzinach uwzględnionych w harmonogramie",
             "4": "Wszystkie karnety czasowe są imienne i nie ma możliwości wymiennego korzystania",
-            "5": "Karnety ilościowe mogą być używane przez różne osoby",
+            "5": "Karnety ilościowe mogą być używane tylko przez jedną osobę (ważność: 30 dni od daty zakupu).",
             "6": "Jednorazowa opłata za wydanie karty klubowej MUSZYNOVA - 20 zł",
-            "7": "Zajęcia fitness odbywają się według ustalonego harmonogramu - minimum 6 os",
-            "8": "Zajęcia na ściance (indywidualnie i sekcja) odbywają się według ustalonego harmonogramu - minimum 4 os",
-            "9": "Na jednym torze do kręgli może grać jednorazowo maksymalnie 8 osób."
+            "7": "Zajęcia fitness odbywają się według ustalonego harmonogramu - bez minimalnej liczby uczestników.",
+            "8": "Nieodwołanie rezerwacji min. 24h przez rozpoczęciem oznacza uznanie wejścia za zrealizowane.",
+            "9": "Zajęcia na ściance (sekcja) odbywają się według ustalonego harmonogramu - minimum 4 os",
+            "10": "Ścianka obługiwana jest przez jednego operatora - maksymalnie do 10 osób.",
+            "11": "Na jednym torze do kręgli może grać jednorazowo maksymalnie 8 osób.",
+            "12": "Inne promocje nie łączą się z rabatami."
         },
         "sports": {
             "activity": "usługa",
@@ -1018,8 +1022,9 @@
             },
             "climbingwall": {
                 "1": "Ścianka wspinaczkowa",
-                "2": "Karnet 5x na dowolne zajęcia",
-                "3": "Zajęcia grupowe z operatorem"
+                "2": "Sekcja wspinaczkowa z instruktorem",
+                "3": "Karnet 5x na dowolne zajęcia",
+                "4": "Zajęcia grupowe z operatorem"
             },
             "squash": {
                 "1": "Bilet",
@@ -1033,7 +1038,8 @@
                 "1": "Sala zabaw + Sala multimedialna",
                 "2": "Bilet wstępu",
                 "3": "Karnet 5 wejść po 1 h",
-                "4": "Bez limitu"
+                "4": "Bez limitu",
+                "comment": "Dzieci do ukończenia 1 roku życia korzystają z sali zabaw bezpłatnie, pod warunkiem zakupu biletu dla co najmniej jednego starszego dziecka."
             },
             "games": {
                 "1": "Sala gier",
@@ -1058,7 +1064,15 @@
                 "5": "Karnet uczeń/student/senior OPEN",
                 "6": "bez limitów",
                 "7": "3 x / tydzień",
-                "8": "Karnet 5 wejść"
+                "8": "Karnet 5 wejść",
+                "9": "Trening personalny",
+                "10": "Karnet 12 wejść",
+                "price": "30 zł dzieci / 35 zł dorośli",
+                "price2": "120 zł dzieci / 150 zł dorośli",
+                "comment": "*1x w tygodniu kawa lub herbata gratis (wt-czw, 15:00-20:00)",
+                "comment2": "*przy zakupie kolejnych karnetów:\n przy następnym karnecie - 5% zniżki,\n po 12 miesiącach kontynuacji - 10%,\n a po 24 miesiącach - 15%.\n Rabat naliczany jest od obowiązującego cennika kolejnych karnetów.",
+                "comment3": "RABATY za nieprzerwaną kontynuację karnetu 5 wejść: \n przez 3 miesiące - 10 zł,\n przez 6 miesięcy 15 zł,\n przez 12 miesięcy - 20 zł.\n Rezerwacje zajęć online wraz zakupem biletu online dodatkowy rabat - 20 zł.",
+                "comment4": "1x w tygodniu kawa lub herbata gratis (wt-czw, 15:00-20:00) \n Przy zakupie karnetu wstęp na siłownię GRATIS \n RABATY za nieprzerwaną kontynuację karnetu 12 wejść: \n przez 3 miesiące - 15 zł,\n przez 6 miesięcy - 20 zł,\n przez 12 miesięcy - 30 zł. \n Rezerwacje zajęć online wraz z zakupem biletu online dodatkowy rabat - 30 zł."
             },
             "rental": {
                 "header": "Wypożyczalnia",

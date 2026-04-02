@@ -997,16 +997,20 @@
     },
     "pricing": {
         "header": "Cenník",
+        "text": "Organizujeme eventy,\n párty, detské oslavy narodenín,\n tematické hodiny\n ako aj športové turnaje a preteky.",
         "info": {
-            "1": "ZĽAVA: 10 € za predĺženie permanentiek",
-            "2": "Čas všetkých atrakcií sa počíta od momentu vstupu do konkrétnej sály a zahŕňa aj čas na prezlečenie",
-            "3": "Lezecká stena je otvorená v určených dňoch a hodinách podľa harmonogramu",
-            "4": "Všetky časové permanentky sú neprenosné (na meno) a nie je možné ich vzájomne zamieňať",
-            "5": "Množstevné permanentky (na počet vstupov) môžu využívať rôzne osoby",
-            "6": "Jednorazový poplatok za vystavenie klubovej karty MUSZYNOVA - 20 zł",
-            "7": "Fitness tréningy prebiehajú podľa stanoveného harmonogramu - minimálne 6 osôb",
-            "8": "Aktivity na stene (individuálne a sekcie) prebiehajú podľa stanoveného harmonogramu - minimálne 4 osoby",
-            "9": "Na jednej bowlingovej dráhe môže naraz hrať maximálne 8 osôb."
+            "1": "Poznámky a informácie",
+            "2": "Čas všetkých atrakcií sa počíta od momentu vstupu do konkrétnej sály a zahŕňa aj čas na prezlečenie.",
+            "3": "Horolezecká stena je otvorená v určených dňoch a hodinách podľa harmonogramu.",
+            "4": "Všetky časové permanentky sú neprenosné (na meno) a nemôžu ich využívať iné osoby.",
+            "5": "Vstupové permanentky môže využívať iba jedna osoba (platnosť: 30 dní od dátumu zakúpenia).",
+            "6": "Jednorazový poplatok za vydanie klubovej karty MUSZYNOVA – 20 PLN",
+            "7": "Fitness tréningy prebiehajú podľa stanoveného harmonogramu – bez minimálneho počtu účastníkov.",
+            "8": "Zrušenie rezervácie menej ako 24 hodín pred začiatkom znamená, že vstup sa považuje za vyčerpaný.",
+            "9": "Tréningy na stene (sekcia) prebiehajú podľa stanoveného harmonogramu – minimálne 4 osoby.",
+            "10": "Horolezeckú stenu obsluhuje jeden inštruktor – maximálne pre 10 osôb.",
+            "11": "Na jednej bowlingovej dráhe môže naraz hrať maximálne 8 osôb.",
+            "12": "Iné akcie nie je možné kombinovať so zľavami."
         },
         "sports": {
             "activity": "služba",
@@ -1017,13 +1021,14 @@
                 "3": "Badminton / Tenis"
             },
             "climbingwall": {
-                "1": "Lezecká stena",
-                "2": "Permanentka na 5 vstupov na ľubovoľné hodiny",
-                "3": "Skupinové lekcie s inštruktorom"
+                "1": "Horolezecká stena",
+                "2": "Horolezecký kurz s inštruktorom",
+                "3": "Permanentka 5 vstupov na ľubovoľné hodiny",
+                "4": "Skupinové cvičenia s inštruktorom"
             },
             "squash": {
                 "1": "Vstupenka",
-                "2": "Permanentka na 5 vstupov"
+                "2": "Permanentka 5 vstupov"
             },
             "bikes": {
                 "1": "Požičovňa bicyklov",
@@ -1032,33 +1037,42 @@
             "kids": {
                 "1": "Detský kútik + Multimediálna sála",
                 "2": "Vstupné",
-                "3": "Permanentka na 5 vstupov po 1 hod.",
-                "4": "Bez limitu"
+                "3": "Permanentka 5 vstupov po 1 h",
+                "4": "Bez limitu",
+                "comment": "Deti do dovŕšenia 1 roku života využívajú detský kútik bezplatne, pod podmienkou zakúpenia vstupenky pre minimálne jedno staršie dieťa."
             },
             "games": {
-                "1": "Herňa",
+                "1": "Herná zóna",
                 "2": "Biliard",
                 "3": "Stolný tenis",
                 "4": "Air Hockey",
                 "5": "Stolný futbal",
-                "6": "Herňa - exkluzívny prenájom"
+                "6": "Herná zóna – exkluzívny prenájom"
             },
             "bowling": {
                 "1": "Mini bowling",
                 "2": "1 dráha",
-                "3": "Permanentka na 5 vstupov po 1 hod.",
-                "4": "2 hod. (alebo 2 dráhy * 1 hod.)"
+                "3": "Permanentka 5 vstupov po 1 h",
+                "4": "2 h (alebo 2 dráhy * 1 h)"
             },
             "fitness": {
                 "gym": "Posilňovňa",
                 "1": "Jednorazový vstup",
-                "2": "Permanentka 5x OPEN",
+                "2": "Permanentka 5 vstupov OPEN",
                 "3": "Ranná permanentka",
                 "4": "Mesačná permanentka OPEN",
                 "5": "Permanentka študent/senior OPEN",
                 "6": "bez limitov",
-                "7": "3 x týždenne",
-                "8": "Permanentka na 5 vstupov"
+                "7": "3x / týždenne",
+                "8": "Permanentka 5 vstupov",
+                "9": "Personálny tréning",
+                "10": "Permanentka 12 vstupov",
+                "price": "30 PLN deti / 35 PLN dospelí",
+                "price2": "120 PLN deti / 150 PLN dospelí",
+                "comment": "*1x týždenne káva alebo čaj zadarmo (Ut-Št, 15:00-20:00)",
+                "comment2": "*Pri kúpe ďalších permanentiek:\n Nasledujúca permanentka - 5% zľava,\n Po 12 mesiacoch pokračovania - 10%,\n Po 24 mesiacoch - 15%.\n Zľava sa vypočítava z platného cenníka nasledujúcich permanentiek.",
+                "comment3": "ZĽAVY za nepretržité pokračovanie 5-vstupovej permanentky:\n Počas 3 mesiacov - 10 PLN,\n Počas 6 mesiacov - 15 PLN,\n Počas 12 mesiacov - 20 PLN.\n Rezervácia lekcií online spolu s kúpou lístka online - dodatočná zľava 20 PLN.",
+                "comment4": "1x týždenne káva alebo čaj zadarmo (Ut-Št, 15:00-20:00)\n Pri kúpe permanentky vstup do posilňovne ZADARMO\n ZĽAVY za nepretržité pokračovanie 12-vstupovej permanentky:\n Počas 3 mesiacov - 15 PLN,\n Počas 6 mesiacov - 20 PLN,\n Počas 12 mesiacov - 30 PLN.\n Rezervácia lekcií online spolu s kúpou lístka online - dodatočná zľava 30 PLN."
             },
             "rental": {
                 "header": "Požičovňa",
