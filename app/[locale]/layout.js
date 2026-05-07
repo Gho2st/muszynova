@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
 import FacebookPixel from "../UI/FacebookPixel";
+import Modal from "../UI/Modal";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default async function LocaleLayout({ children, params }) {
           <Nav />
           <CookieConsent />
           <FacebookPixel />
+          <Modal />
           <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>

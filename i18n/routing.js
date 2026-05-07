@@ -248,6 +248,12 @@ export const routing = defineRouting({
       ua: "/fayliv-cookie",
       de: "/cookie-richtlinie",
     },
+    "/restauracja/rezerwacja": {
+      pl: "/restauracja/rezerwacja",
+    },
+    "/restauracja/admin": {
+      pl: "/restauracja/admin",
+    },
   },
 });
 

@@ -86,7 +86,7 @@ export default function Page() {
         <div className="flex justify-center mb-16">
           <Button text={t("button3")} link={"/galeria/restauracja"} />
         </div>
-        <div className="grid xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 2xl:grid-cols-3 gap-10">
           <Card
             icon={<BiSolidParty />}
             title={t("cards.card1.header")}
