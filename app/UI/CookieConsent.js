@@ -72,7 +72,7 @@ const CookieConsent = () => {
 
   // Sprawdzenie zapisanej zgody przy starcie
   useEffect(() => {
-    const storedConsent = localStorage.getItem("consent");
+    const storedConsent = localStorage.getItem("consent_v2");
     if (storedConsent) {
       const parsed = JSON.parse(storedConsent);
       setConsent(parsed);
@@ -91,7 +91,7 @@ const CookieConsent = () => {
 
   const saveConsent = (newConsent) => {
     setConsent(newConsent);
-    localStorage.setItem("consent", JSON.stringify(newConsent));
+    localStorage.setItem("consent_v2", JSON.stringify(newConsent));
 
     // 1. Aktualizuj Google Consent Mode (GTM/Ads/Analytics)
     updateGtagConsent(newConsent);
