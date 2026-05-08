@@ -15,8 +15,8 @@ export async function generateMetadata({ params }) {
   const path = routing.pathnames["/polityka-cookies"][locale];
   const canonicalUrl =
     locale === "pl"
-      ? `https://triotravel.pl${path}`
-      : `https://triotravel.pl/${locale}${path}`;
+      ? `https://muszynova.pl${path}`
+      : `https://muszynova.pl/${locale}${path}`;
 
   return {
     title: t("title"),
@@ -31,10 +31,10 @@ export default function PolitykaCookies() {
   const t = useTranslations("polityka-cookies");
   const tWhich = useTranslations("polityka-cookies.which.list");
   const tAnalytics = useTranslations(
-    "polityka-cookies.which.list.analytics.items"
+    "polityka-cookies.which.list.analytics.items",
   );
   const tAdvertising = useTranslations(
-    "polityka-cookies.which.list.advertising.items"
+    "polityka-cookies.which.list.advertising.items",
   );
   const tHow = useTranslations("polityka-cookies.how.list");
   const tBrowsers = useTranslations("polityka-cookies.how.browsers.links");
@@ -192,21 +192,21 @@ export default function PolitykaCookies() {
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>
               <Link
-                href="mailto:biuro@triotravel.eu"
+                href="mailto:biuro@muszynova.pl"
                 className="text-blue-600 hover:underline"
               >
-                biuro@triotravel.eu
+                biuro@muszynova.pl
               </Link>
             </li>
             <li>
               <Link
-                href="tel:+48881201205"
+                href="tel:+48509445000"
                 className="text-blue-600 hover:underline"
               >
                 +48 881 201 205
               </Link>
             </li>
-            <li>ul. Kościuszki 23A, 34-500 Zakopane</li>
+            <li>Muszyna ul. Złockie 77c, 33-370</li>
           </ul>
         </section>
       </div>

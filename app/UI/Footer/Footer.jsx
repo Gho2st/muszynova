@@ -234,7 +234,7 @@ export default function Footer() {
             <span>© {new Date().getFullYear()} Muszynova</span>
             <div className="flex gap-6">
               <Link
-                href="/polityka-prywatnosci"
+                href="/polityka-cookies"
                 className="hover:text-white transition-colors"
               >
                 {t("links.1")}
