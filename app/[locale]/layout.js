@@ -7,15 +7,16 @@ import Footer from "../UI/Footer/Footer";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
-import FacebookPixel from "../UI/FacebookPixel";
 import Modal from "../UI/Modal";
+import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const font = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
+
 export const metadata = {
-  // Open Graph
   openGraph: {
     type: "website",
     url: "https://muszynova.pl/",
@@ -29,7 +30,6 @@ export const metadata = {
 };
 
 export default async function LocaleLayout({ children, params }) {
-  // Upewnij się, że `params` jest obiektem, a nie Promise
   const locale = (await params).locale;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -40,14 +40,29 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale}>
+      <head>
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'wait_for_update': 500
+            });
+          `}
+        </Script>
+      </head>
       <body className={`${font.className} pt-24`}>
         <NextIntlClientProvider messages={messages}>
           <Nav />
           <CookieConsent />
-          <FacebookPixel />
           <Modal />
           <main>{children}</main>
           <Footer />
+          <GoogleTagManager gtmId="GTM-TR69S642" />
         </NextIntlClientProvider>
       </body>
     </html>
