@@ -49,7 +49,7 @@ export default function Modal() {
             Restauracja zarezerwowana
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Informujemy, że <strong>10 i 17 maja</strong> nasza restauracja jest
+            Informujemy, że <strong>10 i 11 maja</strong> nasza restauracja jest
             zarezerwowana na wydarzenie okolicznościowe i nie będzie dostępna
             dla gości z zewnątrz.
           </p>
