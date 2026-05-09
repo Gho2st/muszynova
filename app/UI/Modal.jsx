@@ -54,7 +54,7 @@ export default function Modal() {
             dla gości z zewnątrz.
           </p>
           <p className="text-sm text-gray-500 mb-6">
-            Przepraszamy za niedogodności i zapraszamy w innym terminie.
+            Dodatkowo poniedziałki w maju restauracja zamknięta. <br/> Przepraszamy za niedogodności i zapraszamy w innym terminie.
           </p>
 
           <button
