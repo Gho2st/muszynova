@@ -241,13 +241,13 @@
         "text": "Bývame tu, poznáme každý kút a radi sa delíme o to najlepšie v Beskide Sądeckom. Nájdete tu nápady na výlety, miestne zaujímavosti, sezónne inšpirácie z reštaurácií a všetko, čo sa vám bude hodiť pred cestou do Muszyny.",
         "button": "Čítať ďalej",
         "main": "Domov",
-"new": "Najnovšie príspevky",
-"all": "Zobraziť všetky",
-"back": "Späť na blog",
-"team": {
-    "1": "Muszynova Team",
-    "2": "Bývame tu, poznáme každý kút"
-},
+        "new": "Najnovšie príspevky",
+        "all": "Zobraziť všetky",
+        "back": "Späť na blog",
+        "team": {
+            "1": "Muszynova Team",
+            "2": "Bývame tu, poznáme každý kút"
+        },
         "recentPosts": {
             "header": "Posledné príspevky",
             "button": "Čítať ďalej...",
