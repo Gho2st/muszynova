@@ -213,7 +213,7 @@ export async function POST(req) {
             "x-api-key": process.env.ANTHROPIC_API_KEY,
           },
           body: JSON.stringify({
-            model: "claude-sonnet-4-5",
+            model: "claude-haiku-4-5",
             max_tokens: 3500,
             tools: [TRANSLATION_TOOL],
             tool_choice: { type: "tool", name: "translation" },
