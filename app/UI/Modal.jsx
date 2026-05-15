@@ -46,17 +46,12 @@ export default function Modal() {
             id="restaurant-modal-title"
             className="text-2xl font-semibold text-gray-900 mb-3"
           >
-            Restauracja zarezerwowana
+            Informacja
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Informujemy, że <strong>10 i 17 maja</strong> nasza restauracja jest
-            zarezerwowana na wydarzenie okolicznościowe i nie będzie dostępna
-            dla gości z zewnątrz.
+            W Maju restauracja czynna wtorek-niedziela 12:00 - 21:00
           </p>
-          <p className="text-sm text-gray-500 mb-6">
-            Przepraszamy za niedogodności i zapraszamy w innym terminie.
-          </p>
-
+        
           <button
             onClick={handleClose}
             className="w-full cursor-pointer bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors"
