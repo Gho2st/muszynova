@@ -505,37 +505,6 @@ function BlogForm({ post, onBack }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-[11px] uppercase tracking-widest text-gray-400 mb-1.5">
-              URL przycisku głównego
-            </label>
-            <input
-              type="text"
-              value={form.ctaPrimaryUrl}
-              onChange={(e) =>
-                setForm((f) => ({ ...f, ctaPrimaryUrl: e.target.value }))
-              }
-              placeholder="/park lub https://..."
-              className={fieldClass}
-            />
-          </div>
-          <div>
-            <label className="block text-[11px] uppercase tracking-widest text-gray-400 mb-1.5">
-              URL przycisku drugiego
-            </label>
-            <input
-              type="text"
-              value={form.ctaSecondaryUrl}
-              onChange={(e) =>
-                setForm((f) => ({ ...f, ctaSecondaryUrl: e.target.value }))
-              }
-              placeholder="/restauracja lub https://..."
-              className={fieldClass}
-            />
-          </div>
-        </div>
-
         {/* Treść per język */}
         <div>
           <div className="flex items-center justify-between mb-3 gap-3 flex-wrap">
@@ -731,6 +700,36 @@ function BlogForm({ post, onBack }) {
                 placeholder="np. Zarezerwuj stolik"
                 className={fieldClass}
               />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-[11px] uppercase tracking-widest text-gray-400 mb-1.5">
+                  URL przycisku 1
+                </label>
+                <input
+                  type="text"
+                  value={form.ctaPrimaryUrl}
+                  onChange={(e) =>
+                    setForm((f) => ({ ...f, ctaPrimaryUrl: e.target.value }))
+                  }
+                  placeholder="/park lub https://..."
+                  className={fieldClass}
+                />
+              </div>
+              <div>
+                <label className="block text-[11px] uppercase tracking-widest text-gray-400 mb-1.5">
+                  URL przycisku 2
+                </label>
+                <input
+                  type="text"
+                  value={form.ctaSecondaryUrl}
+                  onChange={(e) =>
+                    setForm((f) => ({ ...f, ctaSecondaryUrl: e.target.value }))
+                  }
+                  placeholder="/restauracja lub https://..."
+                  className={fieldClass}
+                />
+              </div>
             </div>
           </div>
         </div>
