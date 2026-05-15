@@ -229,318 +229,34 @@
         "button": "Rezervujte teraz"
     },
     "blog": {
-        "header": "Čítajte viac na našom",
-        "more": "Objavte viac",
-        "link": "blogu",
-        "header2": "Náš blog",
+        "header": "Muszyna z prvej ruky",
+        "header2": "Muszynova Blog",
         "searchPlaceholder": "Hľadať články...",
-        "noArticlesFound": "Neboli nájdené žiadne články zodpovedajúce vyhľadávaniu.",
+        "noArticlesFound": "Nenašli sa žiadne články zodpovedajúce vyhľadávaniu.",
         "previousButton": "Predchádzajúca",
         "nextButton": "Nasledujúca",
-        "readMoreButton": "Čítaj viac",
+        "readMoreButton": "Čítať ďalej",
+        "noImage": "Žiadna fotografia",
         "header3": "Naše články",
-        "text": "Objavte Muszynu nanovo s Muszynovou! Náš blog je miesto, kde zdieľame inšpirácie, lokálne zaujímavosti, tipy na aktívny oddych a najnovšie udalosti z Rekreačno-športového parku Muszynova. Spoznajte Muszynu zvnútra – očami nadšencov prírody, športu a beskydskej pohostinnosti.",
-        "button": "Čítaj viac",
+        "text": "Bývame tu, poznáme každý kút a radi sa delíme o to najlepšie v Beskide Sądeckom. Nájdete tu nápady na výlety, miestne zaujímavosti, sezónne inšpirácie z reštaurácií a všetko, čo sa vám bude hodiť pred cestou do Muszyny.",
+        "button": "Čítať ďalej",
+        "main": "Domov",
+"new": "Najnovšie príspevky",
+"all": "Zobraziť všetky",
+"back": "Späť na blog",
+"team": {
+    "1": "Muszynova Team",
+    "2": "Bývame tu, poznáme každý kút"
+},
         "recentPosts": {
-            "header": "Najnovšie príspevky",
-            "button": "Čítaj viac...",
-            "error": "Nie sú k dispozícii žiadne články"
+            "header": "Posledné príspevky",
+            "button": "Čítať ďalej...",
+            "error": "Žiadne dostupné články"
         },
         "favourites": {
-            "header": "Odporúčané",
-            "button": "Čítaj viac...",
-            "error": "Nie sú k dispozícii žiadne články"
-        },
-        "blogPosts": {
-            "1": {
-                "title": "Čo vidieť v Muszyne? 10 najlepších atrakcií",
-                "text": "Muszyna, malebné kúpeľné mestečko v Beskydoch Sądeckých, ležiace v údolí Popradu, je ideálnym miestom na oddych pre milovníkov prírody, histórie a aktívneho trávenia času. Známe liečivými minerálnymi vodami, bohatou históriou a krásnymi krajinami láka turistov celý rok. Pripravili sme pre vás zoznam 10 najlepších atrakcií, vďaka ktorým sa do tohto miesta zamilujete. A na záver vás pozývame do nášho Rekreačno-športového parku Muszynova, kde na vás čaká množstvo zábavy!",
-                "header2": "Príroda a relax v Muszyne",
-                "header3": "Prečo sa oplatí navštíviť Muszynu?",
-                "button": "Čo vidieť v Muszyne?",
-                "meta": {
-                    "title": "Top 10 najlepších atrakcií v Muszyne",
-                    "description": "Spoznajte 10 najzaujímavejších atrakcií Muszyny – od tematických záhrad až po historické hrady. Ideálny zoznam na každé ročné obdobie."
-                },
-                "list": {
-                    "1": "1. Zmyslové záhrady (Záhrady zmyslov) – najväčšia atrakcia Muszyny na svahoch Suchej Góry. Rozdelené na zóny zdravia, vôní, zvukov, chuti a hmatu ponúkajú terapeutické zážitky pre všetky zmysly. Prechádzka medzi voňavými bylinkami, šumiaceimi potokmi a farebnými rastlinami je ideálny spôsob relaxu. Na vrchole sa nachádza vyhliadková veža s panoramatickým výhľadom na Beskydy Sądecké a za pekného počasia aj na Tatry.",
-                    "2": "2. Biblické záhrady – Pri kostole sv. Jozefa sa nachádzajú Biblické záhrady – miesto na rozjímanie a pokoj. Navrhnuté s ohľadom na meditáciu, kreatívne prezentujú biblické scény, napr. jazierko pripomínajúce Mojžiša či figovník symbolizujúci raj. Vstup je bezplatný a vedľa sa nachádza prameň minerálnej vody „Maryja“.",
-                    "3": "3. Zrúcaniny hradu (vrch Baszta) – Zrúcaniny stredovekého hradu na vrchu Baszta patria k najstarším pamiatkam Muszyny. Postavený v 14. storočí slúžil ako pevnosť Muszynského štátu. Hoci zostali len fragmenty múrov, odtiaľto je nádherný výhľad na údolie Popradu. V máji sa tu konajú májové pobožnosti pri soche Panny Márie.",
-                    "4": "4. Regionálne múzeum Muszynského štátu – V zrekonštruovanej krčme zo 17. storočia sa nachádza múzeum, ktoré približuje históriu Muszyny, kultúru Lemkov a dejiny Muszynského štátu. Nájdete tu exponáty týkajúce sa obchodu s vínom, remesiel a lokálnych tradícií.",
-                    "5": "5. Kostol sv. Jozefa Ženicha Panny Márie – Barokový kostol z prelomu 17. a 18. storočia je perlou architektúry Muszyny. Vo vnútri sa nachádza gotická socha Panny Márie s dieťaťom a renesančné tabernákulum. Vedľa kostola stojí historický múr a zvonica z roku 1803.",
-                    "6": "6. Kúpeľný park Zapopradzie – ideálne miesto pre rodiny a ľudí hľadajúcich oddych. Nachádzajú sa tu vonkajšie bazény, klzisko (v zime), skatepark a chodníky na prechádzky.",
-                    "7": "7. Pijalnia minerálnych vôd – Muszyna je známa vodami ako „Muszynianka“. V pijalniach ako „Milusia“ či „Cechini“ si môžete vychutnať vody s liečivými vlastnosťami.",
-                    "8": "8. Turistické a cyklistické trasy – Muszyna je rajom pre milovníkov aktívneho oddychu. Pešie trasy napr. na Jaworzynu Krynicku a cyklistické trasy v Beskydoch Sądeckých ponúkajú úchvatné výhľady.",
-                    "9": "9. Splavy na Poprade – Rieka Poprad je ideálna na horské kajakovanie alebo rafting. Splavy rôznej náročnosti – od rodinných po extrémne – zaručujú nezabudnuteľné zážitky.",
-                    "10": "10. Vyhliadková veža na vrchu Malnik – Otvorená v roku 2023, 40-metrová veža na vrchu Malnik je novou atrakciou Muszyny. Ponúka nádherné výhľady na Beskydy Sądecké a okolité pohoria."
-                },
-                "alt": {
-                    "1": "Ľudia na horskom chodníku v Muszyne",
-                    "2": "Krásny výhľad na hory v Muszyne",
-                    "3": "Tabule s informáciami o trasách",
-                    "4": "Mapa turistických trás v Muszyne a Krynici"
-                },
-                "cta": {
-                    "header": "Spoznajte Muszynu s Muszynovou",
-                    "text": "Chcete skutočne pocítiť atmosféru Muszyny? Po návšteve atrakcií zavítajte do Rekreačno-športového parku Muszynova – čakajú na vás bicykle, squash, posilňovňa, atrakcie pre deti a regionálna kuchyňa. Všetko na jednom mieste!",
-                    "button": "Pozrite si ponuku Muszynova"
-                }
-            },
-            "2": {
-                "title": "Najlepšie turistické trasy v Muszyne – objavte Beskydy Sądecké",
-                "text": "Muszyna, ležiaca v srdci Beskýd Sądeckých, je ideálnou základňou pre milovníkov horských túr. Obklopená malebnými údoliami Popradu, lesmi a vrcholmi ponúka trasy rôznej náročnosti – od prechádzkových pre rodiny až po náročné okruhy pre skúsených turistov. Nižšie uvádzame najlepšie trasy v okolí Muszyny, ktoré vám umožnia objaviť krásu tohto regiónu. Na záver vás pozývame do Rekreačno-športového parku Muszynova, kde po túre čaká aktívny relax a regionálne chute!",
-                "header2": "Prečo je Muszyna rajom pre turistov?",
-                "header3": "Najlepšie turistické trasy v Muszyne",
-                "button": "Najlepšie trasy",
-                "meta": {
-                    "title": "Najlepšie turistické trasy v Muszyne",
-                    "description": "Pozrite si najlepšie turistické trasy v Muszyne – návrhy peších trás, výhľadové a rodinné. Pre začiatočníkov aj pokročilých."
-                },
-                "list": {
-                    "1": "1. Trasa na vrch Malnik – vyhliadkový bod pre každého Dĺžka: cca 4,5 km (okruh) Čas: cca 1,5 h Náročnosť: Ľahká Popis: Vrch Malnik (726 m n.m.) patrí k najlepším vyhliadkovým bodom v Muszyne, ideálny pre začiatočníkov a rodiny. Žltá trasa začína v centre Muszyny, vedie popri starom židovskom cintoríne a stúpa na vrchol, kde v roku 2023 otvorili 40-metrovú vyhliadkovú vežu. Z veže je panoráma Beskýd Sądeckých a za dobrého počasia aj Tatier.",
-                    "2": "2. Trasa na Jaworzynu Krynicku – klasika Beskýd Sądeckých Dĺžka: cca 9 km (z Muszyny cez Złockie na vrchol) Čas: cca 3–4 h jednosmerne Náročnosť: Stredná/Náročná Popis: Zelená trasa z Muszyny cez Złockie na Jaworzynu Krynicku (1114 m n.m.) je povinnou zastávkou pre milovníkov hôr. Po ceste míňate pijalňu vôd „Cechini“ a cerkvu sv. Demetra v Złockom. Trasa vedie lesmi a lúkami, na vrchole čaká chata PTTK a výhľady na Tatry, Pieniny a Beskyd Niski.",
-                    "3": "3. Okruh „Szlak Sadzonego Jaja“ – prechádzka s históriou Dĺžka: cca 8 km (okruh) Čas: cca 2,5–3 h Náročnosť: Ľahká Popis: Táto malebná trasa z Muszyny do Złockieho, nazývaná „Szlak Sadzonego Jaja“, vedie cez Koziejówke (636 m n.m.) a táborisko Złockie. Ideálna pre rodiny, spája prírodu s históriou Lemkov.",
-                    "4": "4. Trasa do Bacówky nad Wierchomlou – výhľady a idyla Dĺžka: cca 2,5 km (z Wierchomle Małej) Čas: cca 1 h jednosmerne Náročnosť: Ľahká Popis: Čierna trasa z Wierchomle Małej (cca 10 km od Muszyny) do Bacówky nad Wierchomlou je krátka, ale veľmi malebná, najmä pre rodiny s deťmi.",
-                    "5": "5. Prírodná cesta k Czarnej Młake – skrytý poklad Dĺžka: cca 4 km (okruh z Powroźnika) Čas: cca 1,5–2 h Náročnosť: Ľahká Popis: Czarna Młaka je unikátne zosuvné jazierko chránené ako prírodná pamiatka. Žltá trasa z Powroźnika (cca 5 km od Muszyny) vedie lesom, čo ju robí ideálnou na horúce dni."
-                },
-                "alt": {
-                    "1": "Hrad v Muszyne s vežou a vyhliadkou",
-                    "2": "Biblické záhrady v Muszyne",
-                    "3": "Splav na Poprade",
-                    "4": "Námestie v Muszyne"
-                },
-                "cta": {
-                    "header": "Vyrazte na trasu s Muszynovou",
-                    "text": "Plánujete horský výlet? Začnite v Muszynovej – požičajte si bicykel, využite mapy, naplánujte trasu a po návrate sa zrelaxujte v našom parku. Aktívny oddych začína pohodlne a bez stresu.",
-                    "button": "Požičajte si vybavenie a vyrazte!"
-                }
-            },
-            "3": {
-                "title": "Ako stráviť víkend v Muszyne? Plán na ideálny výlet",
-                "text": "Muszyna, čarovné kúpeľné mestečko v Beskydoch Sądeckých, je skvelým miestom na víkendový výlet. Leží v údolí Popradu a ponúka spojenie relaxu, aktivít v prírode, bohatej histórie a regionálnych chutí. Pripravili sme pre vás plán na ideálny víkend v Muszyne, ktorý vám umožní objaviť najväčšie atrakcie mesta a okolia. Na dezert vás pozývame do nášho Rekreačno-športového parku Muszynova, kde na vás čaká množstvo zábavy!",
-                "header2": "Prečo Muszyna na víkend?",
-                "header3": "Najlepšie turistické trasy v Muszyne",
-                "button": "Strávte víkend",
-                "meta": {
-                    "title": "Ako stráviť víkend v Muszyne",
-                    "description": "Naplánujte si ideálny víkend v Muszyne – atrakcie, aktivity a lokálne chute, vďaka ktorým si toto miesto zamilujete."
-                },
-                "list": {
-                    "1": "Deň 1: Relax a história – Začnite víkend prechádzkou Zmyslovými záhradami na svahoch Suchej Góry, kde sa zrelaxujete medzi voňavými bylinkami a potokmi s výhľadom z vyhliadkovej veže. Potom navštívte zrúcaniny stredovekého hradu na vrchu Baszta. Obed v Karczme nad Popradem – ochutnajte pirohy s bryndzou alebo pstruha. Potom Biblické záhrady pri kostole sv. Jozefa a pijalňa „Milusia“. Deň ukončite prechádzkou v Kúpeľnom parku Zapopradzie a večerou v reštaurácii Muszynova.",
-                    "2": "Deň 2: Príroda a aktivita – Druhý deň začnite túrou na vrch Malnik s vyhliadkovou vežou z roku 2023. Potom rodinný splav na Poprade. Obed v Gospodzie u Krakowiaka v Złockom, návšteva Regionálneho múzea a centrum mesta. Víkend ukončite v parku Muszynova – volejbal, lezecká stena, bicykle, posilňovňa alebo detské ihrisko."
-                },
-                "alt": {
-                    "1": "Nápis I Love Muszyna",
-                    "2": "Biblické záhrady",
-                    "3": "Unikátna hlavná ulica v Muszyne",
-                    "4": "Výhľad na hrad v Muszyne"
-                },
-                "cta": {
-                    "header": "Víkend plný atrakcií? Len s Muszynovou",
-                    "text": "Naplánujte si nezabudnuteľný víkend s pomocou Muszynovej! Ponúkame bicykle, squash, rodinné atrakcie a chutnú kuchyňu na jednom mieste. Uľahčujeme aktívny oddych – priamo v Muszyne.",
-                    "button": "Naplánujte si víkend s Muszynovou"
-                }
-            },
-            "4": {
-                "title": "Aktívny oddych v Beskydoch Sądeckých",
-                "text": "Okolie Muszyny a Krynice-Zdrój je miesto, kde sa príroda stretáva s kultúrou a aktívny oddych sa prelína s relaxom. Splav Popradom, cyklistická jazda po trase Velo Krynica alebo prechádzka po promenáde v Krynici sú len niektoré z možností, ktoré tento región ponúka. Navštívte Muszynu, využite požičovňu bicyklov Muszynova a objavte Beskydy Sądecké na vlastnú päsť!",
-                "header2": "Prečo Muszyna na víkend?",
-                "header3": "Okolie Muszyny a Krynice je rajom pre milovníkov aktivity",
-                "button": "Aktívny oddych",
-                "meta": {
-                    "title": "Aktívny oddych v Muszyne a Krynici-Zdrój – Beskydy Sądecké",
-                    "description": "Objavte čaro Beskýd Sądeckých! Splavy Popradom, cyklistické trasy Velo Krynica, túry po horách a relax v Muszyne. Ideálne miesto na víkend plný aktivity a prírody."
-                },
-                "list": {
-                    "1": "Turistické a cyklistické trasy – Beskydy Sądecké ponúkajú množstvo trás rôznej náročnosti. Z Muszyny sa oplatí zelená trasa na Jaworzynu Krynicku (1114 m n.m.) s panorámou Beskýd a za pekného počasia aj Tatier. Pre cyklistov je ideálna trasa Velo Krynica (cca 12 km) z Krynice cez Powroźnik do Muszyny – bezpečná aj pre rodiny s deťmi.",
-                    "2": "Splavy Popradom – Rieka Poprad je výborná na kajakovanie alebo rafting. Splav z Muszyny do Żegiestówa (cca 10 km) trvá približne 2 hodiny a je vhodný pre začiatočníkov aj rodiny. Po splave pokračujte v aktívnom dni – požičajte si bicykle v Muszynovej a objavte okolie."
-                },
-                "alt": {
-                    "1": "Lúka Konieczna",
-                    "2": "Vodopád Wielki",
-                    "3": "Kaplnka pod Jaworzynkou",
-                    "4": "Diablov kameň na Jaworzyne Krynickej"
-                },
-                "cta": {
-                    "header": "Naplánujte si aktívny víkend v Beskydoch Sądeckých",
-                    "text": "Chcete spojiť relax s aktivitou na čerstvom vzduchu? Beskydy Sądecké sú ideálnym miestom na víkendový výlet. Využite požičovňu Muszynova, objavte malebné pešie a cyklistické trasy a zažite nezabudnuteľný splav Popradom.",
-                    "button": "Rezervujte si teraz"
-                }
-            },
-            "5": {
-                "title": "Squash – šport s triedou. Spoznajte jeho históriu a prečo ho vyskúšať",
-                "text": "Vedeli ste, že squash patrí medzi najrýchlejšie a najintenzívnejšie raketové športy na svete? Hra, ktorá sa dnes spája s moderným životným štýlom, má korene ešte v 19. storočí!",
-                "header2": "Prečo squash dobyl svet?",
-                "header3": "Krátka história squasha",
-                "button": "História squasha",
-                "meta": {
-                    "title": "História squasha – odkiaľ pochádza tento dynamický šport?",
-                    "description": "Spoznajte fascinujúcu históriu squasha – od britských škôl až po svetové kurty. Zistite, ako si tento elitný šport získal popularitu a prečo ho treba vyskúšať!"
-                },
-                "list": {
-                    "1": "Začiatky v Anglicku – squash vznikol okolo roku 1830 v elitných britských školách (napr. Harrow School), keď študenti zistili, že loptička sa po údere o stenu „squashuje“ (splošťuje) – odtiaľ názov.",
-                    "2": "Rozvoj disciplíny – postupne získaval popularitu v športových kluboch po celom svete, najmä v anglo-saských krajinách.",
-                    "3": "Medzinárodné uznanie – v 20. storočí vznikli prvé federácie (napr. World Squash Federation) a squash sa stal profesionálnym športom.",
-                    "4": "Málo miesta, veľa akcie – na hru stačí malý kurt, no intenzita a tempo sú naozaj vysoké.",
-                    "5": "Šport pre zaneprázdnených – ideálny na rýchly a efektívny tréning po práci – stačí 30 minút na poriadne vyčerpanie!",
-                    "6": "Dostupnosť – jednoduché pravidlá, ľahké učenie na amatérskej úrovni, no zároveň obrovská taktická hĺbka.",
-                    "7": "Squash v číslach: Viac ako 20 miliónov hráčov na svete. V profesionálnom zápase hráč môže prebehnúť až 5 km za 45 minút. Loptička dosahuje rýchlosť až 270 km/h!",
-                    "8": "Prečo hrať squash v Muszynovej? Moderné kurty s výborným osvetlením a ventiláciou. Možnosť rekreačnej hry alebo lekcií s inštruktorom. Rakety a loptičky k dispozícii na mieste – príďte, zahrajte si a zamilujte sa!"
-                },
-                "alt": {
-                    "1": "Profesionálny squashový kurt s certifikovanými rozmermi",
-                    "2": "Squashový kurt s raketou a loptičkou v pozadí",
-                    "3": "Raketa a loptička na squashovom kurte",
-                    "4": "Squashový kurt s raketou a loptičkou"
-                },
-                "cta": {
-                    "header": "Zahrajte si squash v Muszynovej",
-                    "text": "Moderné kurty, skvelé podmienky a požičovňa vybavenia na mieste – či už hráte rekreačne, alebo chcete vyskúšať niečo nové, Muszynova je ideálnym miestom na športový reset!",
-                    "button": "Rezervujte si kurt v Muszynovej"
-                }
-            },
-            "6": {
-                "title": "Na bicykli cez Muszynu",
-                "text": "Existuje niečo lepšie ako spojenie aktívneho oddychu s horskými krajinami, kúpeľnou atmosférou a štipkou dobrodružstva? Ak snívate o dni plnom pohybu, čerstvého vzduchu a krásnych výhľadov, cyklistický výlet po okolí Muszyny je presne to pravé. A najlepšie? Všetko začína tu – v požičovni bicyklov Muszynova, odkiaľ vyrazíte bez stresu s dokonale prispôsobeným vybavením.",
-                "header2": "Prečo objavovať Muszynu na bicykli?",
-                "header3": "TOP 3 cyklistické trasy z Muszyny",
-                "button": "Objavujte Muszynu na bicykli",
-                "meta": {
-                    "title": "Na bicykli cez Muszynu – trasy, výhľady a požičovňa Muszynova",
-                    "description": "Spoznajte najkrajšie cyklistické trasy v okolí Muszyny a využite požičovňu Muszynova – perfektné vybavenie, pomoc s plánovaním trasy a aktívny oddych bez stresu."
-                },
-                "list": {
-                    "1": "1. Turistický okruh Muszyna Dĺžka: cca 30 km Úroveň: stredná Čas: cca 4 hodiny Trasa vedie údoliami Muszynky a Szczawneho Potoku, dotkne sa mnohých vyhliadkových bodov a malebných dedín.",
-                    "2": "2. Karpatská cyklistická cesta (úsek Leluchów–Wierchomla) Dĺžka: cca 25 km Úroveň: ľahká Čas: 2–3 hodiny Malebná trasa popri údolí Popradu – výborná pre rodiny a začiatočníkov.",
-                    "3": "3. Velo Krynica – z Krynice-Zdrój do Muszyny Dĺžka: cca 11 km Úroveň: veľmi ľahká Pohodlná asfaltová cesta – ideálna pre začiatočníkov.",
-                    "4": "Požičovňa bicyklov Muszynova – vyrazte bez vlastného vybavenia! Nemáte vlastný bicykel? Nechcete ho brať na dovolenku? Muszynova ponúka plne vybavenú požičovňu priamo pri Rekreačno-športovom parku.",
-                    "5": "Cyklistické objavy – čo uvidíte po ceste? Zmyslové a Biblické záhrady, cerkvu sv. Jakuba v Powroźniku (UNESCO), zrúcaniny hradu, pramene minerálnych vôd, lávky nad Popradom, lúky, lesy a rieky."
-                },
-                "alt": {
-                    "1": "Mnoho bicyklov pred Rekreačno-športovým parkom Muszynova v Muszyne"
-                },
-                "cta": {
-                    "header": "Vaše cyklistické dobrodružstvo začína v Muszynovej",
-                    "text": "Nemáte bicykel? Máme ho za vás! Požičovňa Muszynova ponúka moderné bicykle a všetko, čo potrebujete na trasu – pohodlne, bezpečne a so zábavou. Objavte Beskydy Sądecké zo sedla!",
-                    "button": "Požičajte si bicykel v Muszynovej"
-                }
-            },
-            "7": {
-                "title": "Ponorte sa do zdravia – minerálne vody z Muszyny",
-                "text": "Muszyna nie je len o malebných krajinách a horských trasách – je aj zdrojom zdravia priamo z prírody. Minerálne vody z tunajších prameňov sú známe výnimočnými liečivými vlastnosťami, pravidelné pitie posilňuje imunitu, zlepšuje trávenie a priaznivo pôsobí na nervový systém. Prechádzka Kúpeľným parkom s pohárom čerstvej vody v ruke je skutočným pôžitkom, ktorý zároveň posilňuje organizmus.",
-                "header2": "Prečo je muszynská voda prírodným liekom?",
-                "header3": "TOP 3 pramene minerálnych vôd v Muszyne",
-                "button": "Spoznajte silu muszynskej vody",
-                "meta": {
-                    "title": "Minerálne vody z Muszyny – prírodný zdroj zdravia | Muszynova",
-                    "description": "Objavte zdravotné vlastnosti minerálnych vôd z Muszyny. Zistite, ktoré pramene stojí za to navštíviť a ako podporujú imunitu, trávenie a dobrú pohodu. Vitajte v Muszynovej!"
-                },
-                "list": {
-                    "1": "1. Prameň Milusia Poloha: Kúpeľný park, vedľa pijalnia Antoni Voda: stredne mineralizovaná, s vysokým obsahom horčíka a vápnika. Ideálna pre stresovaných a unavených ľudí.",
-                    "2": "2. Prameň Grunwald Poloha: ul. Ogrodowa, dolná časť parku Zapopradzie Voda: nízko mineralizovaná, podporuje metabolizmus a má močopudné účinky.",
-                    "3": "3. Prameň Józef Poloha: pri Zmyslových záhradách Voda: vysoko mineralizovaná, odporúčaná pri nedostatku minerálov, anémii a srdcových problémoch.",
-                    "4": "Voda priamo z prírody – zdravie zadarmo Pri prechádzkach po Muszyne narazíte na vývery minerálnych vôd na každom kroku. Pijalnia a pramene sú bezplatné, každá voda má iný obsah a chuť.",
-                    "5": "Dodatočné výhody: prírodná liečba bez receptu, pomoc pri hypertenzii a cukrovke, pozitívny vplyv na črevá, žalúdok a obličky, relaxačná atmosféra Kúpeľného parku"
-                },
-                "alt": {
-                    "1": "Minerálna voda Antoni v Muszyne"
-                },
-                "cta": {
-                    "header": "Objavte zdroj zdravia v srdci Beskýd",
-                    "text": "Nemusíte chodiť ďaleko, aby ste sa starali o zdravie. V Muszyne máte všetko na dosah ruky – prírodné pramene, čistý vzduch a kúpeľné podnebie. Príďte do Muszynovej, napite sa vody z prameňa, trochu obľúbeného športu a pocítite rozdiel!",
-                    "button": "Vyskúšajte minerálne vody z Muszyny"
-                }
-            },
-            "8": {
-                "title": "Mágia Muszyny – lokálne legendy a príbehy z údolia Popradu",
-                "text": "Muszyna nie je len kúpeľmi s krásnymi krajinami a minerálnymi vodami – je aj miestom plným starých príbehov, tajomstiev a legiend odovzdávaných z generácie na generáciu. V tieni hôr a šumení Popradu sa skrývajú historky, ktoré dodávajú tomuto miestu výnimočný šarm. Spoznajte s nami najznámejšie lokálne legendy, ktoré už roky rozpaľujú fantáziu obyvateľov aj turistov.",
-                "header2": "Stráži duch kněžny stále zrúcaniny hradu?",
-                "header3": "TOP 3 legendy z Muszyny, ktoré treba poznať",
-                "button": "Objavte tajomstvá Muszyny",
-                "meta": {
-                    "title": "Lokálne legendy a historky Muszyny | Blog Muszynova",
-                    "description": "Spoznajte tajuplné príbehy Muszyny – od Bielej dámy po zakliate poklady. Zažite mágiu regiónu cez legendy a lokálne historky na blogu Muszynova."
-                },
-                "list": {
-                    "1": "1. Legenda o Bielej dáme z hradu v Muszyne Kedysi dávno na hrade žila kněžna, ktorá tragicky zahynula pri obrane svojho ľudu. Hovorí sa, že v mesačných nociach ju možno ešte stále vidieť prechádzať sa po zrúcaninách a strážiť staré tajomstvá a poklady ukryté v podzemí.",
-                    "2": "2. Zakliaty poklad pod vrchom Malnik Legenda hovorí, že v jednej z jaskýň pod Malnikom je ukrytý obrovský poklad – zlato, ktoré patrilo zbojníckemu náčelníkovi. Nájde ho však len ten, kto má čisté srdce a dobré úmysly.",
-                    "3": "3. Prameň zamilovaných v Zmyslových záhradách Podľa lokálnej povesti sa kedysi dávno pri prameni v údolí tajne stretávali dvaja zaľúbenci. Ich láska bola zakázaná, no prisahali si vernosť pri pramenitej vode. Dnes mnohí veria, že napitie sa z tohto miesta prinesie šťastie v láske.",
-                    "4": "Magické miesta s dušou Muszyna je plná symbolických miest: staré kaplnky, kamene s legendami, pramene s „silou“. Pri prechádzkach sa oplatí pýtať domácich – oni tieto príbehy poznajú najlepšie a radi sa o ne podelia.",
-                    "5": "Prečo poznať lokálne legendy? Lebo dávajú miestu dušu. Pri prechádzkach po Muszyne sa zrazu všetko stáva hlbším – každá cestička môže skrývať príbeh, každý strom môže byť svedkom histórie."
-                },
-                "alt": {
-                    "1": "Hrad v Muszyne v slnečnom svetle"
-                },
-                "cta": {
-                    "header": "Spoznajte Muszynu cez legendy a príbehy",
-                    "text": "Ponorte sa do výnimočného sveta povestí, duchov a tajuplných miest. Príďte do Muszyny, prejdite sa po zrúcaninách hradu, navštívte prameň zamilovaných a pocítite mágiu, ktorá už stáročia priťahuje ľudí do tohto údolia.",
-                    "button": "Objavte legendy Muszyny na vlastné oči"
-                }
-            },
-            "9": {
-                "title": "Čo vidieť v Krynica-Zdrój? 15 najlepších atrakcií, ktoré musíte poznať",
-                "text": "Krynica-Zdrój nie je len najznámejšie poľské kúpele, je to skutočná perla Beskidu Sądeckého, ktorá očarí v každom ročnom období. Horský vzduch, liečivé minerálne pramene, živá promenáda, lyžiarske svahy a výhľady, pri ktorých sa tají dych – preto sem každý rok príde viac ako milión turistov. Pripravili sme pre vás aktuálny zoznam 15 miest, ktoré určite musíte vidieť. A ak hľadáte ideálnu základňu – na konci vám poradíme, kde sa ubytovať na najlepšom mieste v Kryniei!",
-                "header2": "Najkrajšie miesta a atrakcie Krynice-Zdrój",
-                "header3": "Prečo je Krynica-Zdrój stále jednotkou v poľských horách?",
-                "button": "Čo robiť v Krynica-Zdrój?",
-                "meta": {
-                    "title": "15 najlepších atrakcií Krynice-Zdrój – čo sa oplatí vidieť?",
-                    "description": "Aktuálny rebríček TOP 15 atrakcií Krynice-Zdrój: Jaworzyna Krynicka, Sankostrada, Hlavná pijalňa, nové cyklistické trasy VeloKrynica a oveľa viac. Ideálny plán na víkend aj dlhšiu dovolenku."
-                },
-                "list": {
-                    "1": "1. Jaworzyna Krynicka (1114 m) + gondola – povinná zastávka! Moderná 7,7 km dlhá gondola vás vyvezie na vrchol za 7 minút. Hore: 360° vyhliadková terasa (vidno aj Tatry!), reštaurácia, turistické chodníky a v zime najlepšie lyžiarske trate v regióne.",
-                    "2": "2. Sankostrada na vrchu Krzyżowa – najdlhšia celoročná sánkarská dráha v Poľsku (3 000 m zjazdu!). Adrenalín zaručený pre deti aj dospelých – funguje aj v daždi vďaka špeciálnemu systému.",
-                    "3": "3. Promenáda a Hlavná pijalňa – srdce Krynice. Nádherná architektúra, koncerty, útulné kaviarne a možnosť napiť sa slávnych minerálok priamo zo zdroja: Zuber, Słotwinka, Jan, Tadeusz.",
-                    "4": "4. Vrch Parkowa s historickou pozemnou lanovkou (z roku 1937!) – technická pamiatka. Hore: Rajské šmykľavky, detské ihrisko, lanový park a vyhliadka.",
-                    "5": "5. Rajské šmykľavky – novinka – 4 zjazdové dráhy (vrátane jednej 800 m dlhej!). Perfektná zábava pre rodiny, otvorené celý rok.",
-                    "6": "6. Múzeum hračiek „Baśń“ – vyše 5 000 exponátov z celého sveta. Od starých bábik po Lego z 60. rokov – deti šalejú, dospelí sa vracajú do detstva.",
-                    "7": "7. Múzeum Nikifora Krynického – povinnosť pre milovníkov naivného umenia. Diela slávneho lemkovského primitivistu v krásnej vile „Romanówka“.",
-                    "8": "8. Lavičky lásky a pijalňa so živou hudbou – večer sa promenáda mení na najromantickejšie miesto v horách. Koncerty, svetielka, víno a atmosféra ako z 30. rokov.",
-                    "9": "9. Cyklistické trasy VeloKrynica – 12 km novej asfaltovej cesty z Krynice do Muszyny popri potoku. Ideálne pre rodiny, kolobežky aj korčule.",
-                    "10": "10. Lyžiarske svahy Słotwiny Arena – modernejšie a menej preplnené než Jaworzyna. 10 km tratí, 6-sedačková lanovka, snowpark a večerné lyžovanie pri osvetlení.",
-                    "11": "11. Centrum zdravia a relaxu v Hoteli Czarny Potok **** – termálne bazény so sírnou vodou, saunový svet, soľná jaskyňa a rašelinové procedúry. Najlepšie kúpele v Kryniei.",
-                    "12": "12. Pumptrack a enduro trate na vrchu Krzyżowa – bezplatný pumptrack pre cyklistov a nová sieť enduro tratí (od zelených po čierne).",
-                    "13": "13. Krynická cesta stromov – nová náučná lesná cesta s tabuľami o stromoch a obrovskými sochami hmyzu. Super pre deti.",
-                    "14": "14. Lemkovská cesta – chodník lemkovskej kultúry: drevené cerkvi v Tyliczi, Powroźniku (UNESCO) a Mochnaczke – 30 min autom od Krynice.",
-                    "15": "15. Krynický jarmok a podujatia – Ekonomické fórum, Festival Jana Kiepuru, Bežecký festival, Silvestrovská párty na svahu – pozrite si kalendár, vždy sa niečo deje!"
-                },
-                "alt": {
-                    "1": "Gondola na Jaworzynu Krynicku v zime"
-                },
-                "cta": {
-                    "header": "Krynica hotová? Čas na Muszynova!",
-                    "text": "Len 10 km od Krynice – najväčší rekreačno-športový park v Beskide Sądeckom! Squash, športová hala, bicykle, posilňovňa, detský kútik, lezecká stena, bowling a výborné jedlo na jednom mieste. Platíte len za vybrané atrakcie. Deti budú nadšené a vy si konečne oddýchnete ;)",
-                    "button": "Ideme do Muszynova!"
-                }
-            },
-            "10": {
-                "title": "Po Stopách Ikon: Objavte Drevené Gréckokatolícke Chrámy na Bicykli s Muszynova!",
-                "text": "Sądecký Beskyd nie sú len hory a minerálne pramene, ale aj výnimočné kultúrne dedičstvo Lemkov. Najlepší spôsob, ako pocítiť čaro tohto regiónu a vidieť jeho najkrajšie pamiatky, je cyklovýlet! Ďaleko od hlavného ruchu, malebnými dolinami sa dostanete k tajomným dreveným chrámom, z ktorých jeden je zapísaný na zozname UNESCO. Muszynova Park je vaša ideálna základňa – nasadnite na bicykel a vyrazte na trať!",
-                "header2": "Najkrajšie Drevené Chrámy v Okolí Muszyny a Krynice",
-                "header3": "Prečo Prejsť Trasu Chrámov Najlepšie na Bicykli?",
-                "button": "Požičajte si Bicykel v Muszynova!",
-                "meta": {
-                    "title": "Na Bicykli po UNESCO Trase Chrámov – Powroźnik, Szczawnik a Okolie Muszyny",
-                    "description": "Najzaujímavejšie lemkovské chrámy v údolí Popradu. Pozrite sa, ako sa na bicykli dostať z Muszynovej do Powroźnika (UNESCO) a Szczawnika. Ideálna trasa pre rodiny."
-                },
-                "list": {
-                    "1": "1. Chrám v Powroźniku (UNESCO) – Povinná zastávka! Len 6 km od Muszyny, jeden z najstarších a najcennejších objektov drevenej sakrálnej architektúry v Poľsku, zapísaný na Zozname svetového dedičstva UNESCO. Obdivujte originálny ikonostas z 18. storočia.",
-                    "2": "2. Chrám v Szczawniku – Malebne položený v údolí potoka, asi 10 km od Muszyny. Vyniká jednoduchosťou tvaru a harmonickým začlenením do horskej krajiny. Ideálne miesto na chvíľu zamyslenia a prestávku na trase.",
-                    "3": "3. Chrám v Krynica-Zdrój (sv. apoštolov Petra a Pavla) – Ak si trasu predĺžite až do Krynice (po VeloKrynica!), navštívte tento krásny chrám z konca 19. storočia. Je o niečo novší, no jeho interiér a vyrezávaný ikonostas urobia veľký dojem.",
-                    "4": "4. Chrám v Tyliczi (sv. Kozmu a Damiána) – Možnosť pre vytrvalejších cyklistov. Je trochu ďalej, ale stojí za to kvôli bohato zdobenému interiéru a charakteristickej trojvežovej konštrukcii.",
-                    "5": "5. Na bicykli, nie autom – Prečo? Tiché cesty a cyklotrasy (ako VeloKrynica) znamenajú minimálnu premávku. Môžete sa kdekoľvek zastaviť, vychutnať si výhľady a nadýchať horského vzduchu. Je to aj vhodné pre rodiny!",
-                    "6": "6. Požičovňa bicyklov Muszynova Park – Nemáte vlastný bicykel? Žiadny problém! Ponúkame horské a trekingové bicykle, s ktorými bez námahy vyjdete ku každému chrámu na beskydských kopcoch. Požičiavame aj detské sedačky a prilby!",
-                    "7": "7. Regenerácia po výlete – Po návrate do Muszynovej na vás čaká plný oddych! Zregenerujte svaly alebo si doprajte zaslúžené jedlo v reštaurácii."
-                },
-                "alt": {
-                    "1": "Bicykel zaparkovaný pri lemkovskom drevenom chráme"
-                },
-                "cta": {
-                    "header": "Pripravený na Historické Dobrodružstvo na Dvoch Kolesách?",
-                    "text": "Naplánujte si výlet už dnes! Rezervácia bicykla v Muszynova je zárukou spoľahlivého vybavenia a vydareného výletu. Objavte tajomstvá údolia Popradu tým najlepším spôsobom – aktívne a blízko prírody.",
-                    "button": "Pozrite si ponuku bicyklov"
-                }
-            }
+            "header": "Vybrané",
+            "button": "Čítať ďalej...",
+            "error": "Žiadne dostupné články"
         }
     },
     "park": {

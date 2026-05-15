@@ -108,3 +108,48 @@ model Reservation {
   @@index([status])
   @@map("reservations")
 }
+
+model Post {
+  id              Int               @id @default(autoincrement())
+  coverImage      String?
+  status          String            @default("draft")
+  publishedAt     DateTime?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  // CTA - URLs (wspólne dla wszystkich języków)
+  ctaPrimaryUrl   String?
+  ctaSecondaryUrl String?
+  translations    PostTranslation[]
+}
+
+model PostTranslation {
+  id      Int     @id @default(autoincrement())
+  locale  String
+  slug    String
+  title   String
+  excerpt String?
+  content String
+
+  ctaTitle          String?
+  ctaDescription    String?
+  ctaPrimaryLabel   String?
+  ctaSecondaryLabel String?
+
+  // Hash źródła PL z którego powstało to tłumaczenie
+  // (oddzielnie per pole, żeby tłumaczyć selektywnie)
+  sourceHashTitle   String?
+  sourceHashExcerpt String?
+  sourceHashContent String?
+  sourceHashCta     String? // wspólny dla 4 pól CTA
+
+  postId Int
+  post   Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([postId, locale])
+  @@unique([locale, slug])
+  @@index([postId])
+  @@map("post_translations")
+}

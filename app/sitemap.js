@@ -1,5 +1,46 @@
-export default function sitemap() {
-  const baseUrl = "https://muszynova.pl";
+import prisma from "@/lib/prisma";
+
+const baseUrl = "https://muszynova.pl";
+
+const LOCALE_PATHS = {
+  en: "en",
+  sk: "sk",
+  ua: "ua",
+  de: "de",
+};
+
+export default async function sitemap() {
+  const posts = await prisma.post.findMany({
+    where: { status: "published" },
+    include: { translations: true },
+    orderBy: { publishedAt: "desc" },
+  });
+
+  const blogPostEntries = posts.flatMap((post) => {
+    // każde tłumaczenie = osobny wpis w sitemapie (bo każde ma swój URL)
+    const plTranslation = post.translations.find((t) => t.locale === "pl");
+    if (!plTranslation) return [];
+
+    const languages = {
+      "x-default": `${baseUrl}/blog/${plTranslation.slug}`,
+    };
+
+    post.translations.forEach((t) => {
+      if (t.locale === "pl") return;
+      if (LOCALE_PATHS[t.locale]) {
+        languages[t.locale] =
+          `${baseUrl}/${LOCALE_PATHS[t.locale]}/blog/${t.slug}`;
+      }
+    });
+
+    return [
+      {
+        url: `${baseUrl}/blog/${plTranslation.slug}`,
+        lastModified: post.updatedAt ?? post.publishedAt ?? new Date(),
+        alternates: { languages },
+      },
+    ];
+  });
 
   return [
     {
@@ -7,6 +48,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}`,
           en: `${baseUrl}/en`,
           sk: `${baseUrl}/sk`,
           ua: `${baseUrl}/ua`,
@@ -19,6 +61,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/o-nas`,
           en: `${baseUrl}/en/about-us`,
           sk: `${baseUrl}/sk/o-nas`,
           ua: `${baseUrl}/ua/pro-nas`,
@@ -31,6 +74,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park`,
           en: `${baseUrl}/en/park`,
           sk: `${baseUrl}/sk/park`,
           ua: `${baseUrl}/ua/park`,
@@ -43,6 +87,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/silownia`,
           en: `${baseUrl}/en/park/gym`,
           sk: `${baseUrl}/sk/park/posilnovna`,
           ua: `${baseUrl}/ua/park/trenazhernyi-zal`,
@@ -55,6 +100,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/fitness`,
           en: `${baseUrl}/en/park/fitness`,
           sk: `${baseUrl}/sk/park/fitness`,
           ua: `${baseUrl}/ua/park/fitnes`,
@@ -67,6 +113,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/hala-sportowa`,
           en: `${baseUrl}/en/park/sports-hall`,
           sk: `${baseUrl}/sk/park/sportova-hala`,
           ua: `${baseUrl}/ua/park/sportyvnyi-zal`,
@@ -75,10 +122,11 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/pl/park/mini-kregielnia`,
+      url: `${baseUrl}/park/mini-kregielnia`,
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/mini-kregielnia`,
           en: `${baseUrl}/en/park/mini-bowling`,
           sk: `${baseUrl}/sk/park/mini-kugeľna`,
           ua: `${baseUrl}/ua/park/mini-boulinh`,
@@ -91,6 +139,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/scianka-wspinaczkowa`,
           en: `${baseUrl}/en/park/climbing-wall`,
           sk: `${baseUrl}/sk/park/lezecka-stena`,
           ua: `${baseUrl}/ua/park/skeledrom`,
@@ -103,6 +152,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/sala-zabaw`,
           en: `${baseUrl}/en/park/playroom`,
           sk: `${baseUrl}/sk/park/herna-pre-deti`,
           ua: `${baseUrl}/ua/park/dytiacha-ihrova-kimnata`,
@@ -115,6 +165,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/squash`,
           en: `${baseUrl}/en/park/squash`,
           sk: `${baseUrl}/sk/park/squash`,
           ua: `${baseUrl}/ua/park/skvosh`,
@@ -127,6 +178,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/wypozyczalnia-rowerow`,
           en: `${baseUrl}/en/park/bike-rental`,
           sk: `${baseUrl}/sk/park/požičovňa-bicyklov`,
           ua: `${baseUrl}/ua/park/prokat-velosypediv`,
@@ -139,6 +191,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/sala-gier`,
           en: `${baseUrl}/en/park/game-room`,
           sk: `${baseUrl}/sk/park/herna`,
           ua: `${baseUrl}/ua/park/ihrova-zala`,
@@ -151,6 +204,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/park/sala-multimedialna`,
           en: `${baseUrl}/en/park/multimedia-room`,
           sk: `${baseUrl}/sk/park/multimedialna-miestnosť`,
           ua: `${baseUrl}/ua/park/multymediyna-zala`,
@@ -163,6 +217,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/galeria`,
           en: `${baseUrl}/en/gallery`,
           sk: `${baseUrl}/sk/galeria`,
           ua: `${baseUrl}/ua/halereya`,
@@ -175,6 +230,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/galeria/park`,
           en: `${baseUrl}/en/gallery/park`,
           sk: `${baseUrl}/sk/galeria/park`,
           ua: `${baseUrl}/ua/halereya/park`,
@@ -187,6 +243,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/galeria/restauracja`,
           en: `${baseUrl}/en/gallery/restaurant`,
           sk: `${baseUrl}/sk/galeria/restauracia`,
           ua: `${baseUrl}/ua/halereya/restoran`,
@@ -199,6 +256,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/restauracja`,
           en: `${baseUrl}/en/restaurant`,
           sk: `${baseUrl}/sk/restauracia`,
           ua: `${baseUrl}/ua/restoran`,
@@ -211,6 +269,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/cennik`,
           en: `${baseUrl}/en/pricing`,
           sk: `${baseUrl}/sk/cennik`,
           ua: `${baseUrl}/ua/tsiny`,
@@ -223,6 +282,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/zajecia-grupowe`,
           en: `${baseUrl}/en/group-classes`,
           sk: `${baseUrl}/sk/skupinove-aktivity`,
           ua: `${baseUrl}/ua/hrupovi-zanyattya`,
@@ -235,6 +295,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/kontakt`,
           en: `${baseUrl}/en/contact`,
           sk: `${baseUrl}/sk/kontakt`,
           ua: `${baseUrl}/ua/kontakty`,
@@ -247,6 +308,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/partnerzy`,
           en: `${baseUrl}/en/partners`,
           sk: `${baseUrl}/sk/partneri`,
           ua: `${baseUrl}/ua/partneri`,
@@ -259,6 +321,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/dofinansowanie`,
           en: `${baseUrl}/en/funding`,
           sk: `${baseUrl}/sk/financovanie`,
           ua: `${baseUrl}/ua/finansuvannia`,
@@ -271,6 +334,7 @@ export default function sitemap() {
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/blog`,
           en: `${baseUrl}/en/blog`,
           sk: `${baseUrl}/sk/blog`,
           ua: `${baseUrl}/ua/blog`,
@@ -279,136 +343,18 @@ export default function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/blog/muszyna-10-najlepszych-atrakcji`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/muszyna-10-best-attractions`,
-          sk: `${baseUrl}/sk/blog/muszyna-10-najlepsich-atrakcii`,
-          ua: `${baseUrl}/ua/blog/mushyna-10-naikrashchykh-atraktsii`,
-          de: `${baseUrl}/de/blog/muszyna-10-beste-attraktionen`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/muszyna-najlepsze-szlaki-turystyczne`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/muszyna-best-hiking-trails`,
-          sk: `${baseUrl}/sk/blog/muszyna-najlepsie-turisticke-trasy`,
-          ua: `${baseUrl}/ua/blog/mushyna-naikrashchi-turystychni-marshruty`,
-          de: `${baseUrl}/de/blog/muszyna-beste-wanderwege`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/jak-spedzic-weekend-w-muszynie`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/how-to-spend-a-weekend-in-muszyna`,
-          sk: `${baseUrl}/sk/blog/ako-stravit-vikend-v-musyne`,
-          ua: `${baseUrl}/ua/blog/iak-provesty-vykhidni-v-mushyni`,
-          de: `${baseUrl}/de/blog/wie-man-ein-wochenende-in-muszyna-verbringt`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/aktywny-wypoczynek-w-beskidzie-sadeckim`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/active-holiday-in-beskid-sadecki`,
-          sk: `${baseUrl}/sk/blog/aktivna-dovolenka-v-beskydach-sadeckych`,
-          ua: `${baseUrl}/ua/blog/aktyvnyi-vidpochynok-v-beskydi-sadetskomu`,
-          de: `${baseUrl}/de/blog/aktive-erholung-im-beskid-sadecki`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/historia-squasha`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/history-of-squash`,
-          sk: `${baseUrl}/sk/blog/historia-squasha`,
-          ua: `${baseUrl}/ua/blog/istoriia-skvoshu`,
-          de: `${baseUrl}/de/blog/geschichte-des-squash`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/rowerem-przez-muszyne`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/cycling-through-muszyna`,
-          sk: `${baseUrl}/sk/blog/na-bicykli-cez-muszynu`,
-          ua: `${baseUrl}/ua/blog/na-velosypedi-cherez-muzhynu`,
-          de: `${baseUrl}/de/blog/mit-dem-rad-durch-muszyna`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/muszyna-wody-mineralne`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/mineral-waters-of-muszyna`,
-          sk: `${baseUrl}/sk/blog/mineralne-vody-v-muszyni`,
-          ua: `${baseUrl}/ua/blog/mineralni-vody-u-muzhyni`,
-          de: `${baseUrl}/de/blog/mineralwaesser-von-muszyna`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/lokalne-legendy-i-historie`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/local-legends-and-stories`,
-          sk: `${baseUrl}/sk/blog/miestne-legendy-a-príbehy`,
-          ua: `${baseUrl}/ua/blog/mistsevi-lehendy-ta-istoriyi`,
-          de: `${baseUrl}/de/blog/lokale-legenden-und-geschichten`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/krynica-15-najlepszych-atrakcji`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/krynica-zdroj-15-best-attractions`,
-          sk: `${baseUrl}/sk/blog/krynica-15-najlepsich-atrakcii`,
-          ua: `${baseUrl}/ua/blog/krynytsya-15-naikrashchykh-atraktsii`,
-          de: `${baseUrl}/de/blog/krynica-zdroj-15-beste-attraktionen`,
-        },
-      },
-    },
-    {
-      url: `${baseUrl}/blog/odkryj-drewniane-cerkwie-rowerem-w-muszynie`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${baseUrl}/en/blog/discover-wooden-churches-by-bike-in-muszyna`,
-          sk: `${baseUrl}/sk/blog/objavte-drevene-chramy-na-bicykli-v-muszyna`,
-          ua: `${baseUrl}/ua/blog/vidkryi-dereviani-tserkvy-na-velosypedi-v-mushyni`,
-          de: `${baseUrl}/de/blog/entdecken-sie-holzkirchen-mit-dem-rad-in-muszyna`,
-        },
-      },
-    },
-    {
       url: `${baseUrl}/polityka-cookies`,
       lastModified: new Date(),
       alternates: {
         languages: {
+          "x-default": `${baseUrl}/polityka-cookies`,
           en: `${baseUrl}/en/cookie-policy`,
-          sk: `${baseUrl}/sk/pravidla-cookies`,
+          sk: `${baseUrl}/sk/prawidla-cookies`,
           ua: `${baseUrl}/ua/fayliv-cookie`,
           de: `${baseUrl}/de/cookie-richtlinie`,
         },
       },
     },
+    ...blogPostEntries,
   ];
 }

@@ -10,6 +10,7 @@ import CookieConsent from "../UI/CookieConsent";
 import Modal from "../UI/Modal";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { ToastContainer } from "react-toastify";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -57,9 +58,21 @@ export default async function LocaleLayout({ children, params }) {
       </head>
       <body className={`${font.className} pt-24`}>
         <NextIntlClientProvider messages={messages}>
+          <ToastContainer
+            position="top-right"
+            autoClose={4000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
           <Nav />
           <CookieConsent />
-          <Modal />
+          {/* <Modal /> */}
           <main>{children}</main>
           <Footer />
           <GoogleTagManager gtmId="GTM-TR69S642" />

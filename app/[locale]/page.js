@@ -5,7 +5,6 @@ import Restaurant from "../Homepage/Restaurant";
 import { getTranslations } from "next-intl/server";
 import VirtualTour from "../Homepage/VirtualTour";
 import Reviews from "../Homepage/Reviews";
-import Blog from "../Homepage/Blog";
 import FacebookPosts from "../Homepage/FacebookPosts";
 
 export async function generateMetadata({ params }) {
@@ -37,7 +36,6 @@ export default function Home() {
       <Restaurant />
       <FacebookPosts />
       <Reviews />
-      <Blog />
       <VirtualTour />
     </>
   );

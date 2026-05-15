@@ -251,7 +251,7 @@ export default function Nav() {
             exit="closed"
             className="fixed inset-0 z-40 bg-white text-black overflow-y-auto"
           >
-            <div className="pt-28 px-8 pb-10 flex flex-col text-lg font-medium min-h-screen">
+            <div className="pt-28 px-8 pb-10 flex flex-col text-sm font-medium min-h-screen">
               <motion.div variants={itemVariants}>
                 <Link
                   href="/o-nas"
@@ -269,7 +269,7 @@ export default function Nav() {
               >
                 <button
                   onClick={handleParkDropdownToggle}
-                  className="flex w-full justify-between items-center py-4 hover:text-[#C4966C] transition-colors"
+                  className="flex w-full justify-between items-center py-2 hover:text-[#C4966C] transition-colors"
                 >
                   {t("links.park")}
                   <IoIosArrowDown
@@ -325,7 +325,7 @@ export default function Nav() {
                 </motion.div>
               ))}
 
-              <motion.div variants={itemVariants} className="mt-8">
+              <motion.div variants={itemVariants} className="mt-4">
                 <SalesButton2 text={t("button")} link="/" />
               </motion.div>
             </div>

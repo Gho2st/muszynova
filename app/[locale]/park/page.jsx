@@ -157,7 +157,7 @@ export default function Park() {
             <h3 className="text-4xl font-semibold">Muszyna</h3>
             <p className="mt-10">{t("cards.text")}</p>
           </div>
-          <div className="xl:w-3/4 grid xl:grid-cols-3 gap-5 text-white">
+          <div className="xl:w-3/4 grid xl:grid-cols-2  gap-5 text-white">
             <Card
               icon={<CiLocationOn />}
               title={t("cards.card1.header")}
@@ -174,6 +174,10 @@ export default function Park() {
               bgColor="bg-black"
               text={t("cards.card2.text")}
             />
+          </div>
+        </div>
+        <div className="flex flex-col-reverse xl:flex-row mt-10">
+          <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 gap-5 text-white">
             <Card
               icon={<PiWall />}
               title={t("cards.card3.header")}
@@ -182,10 +186,6 @@ export default function Park() {
               bgColor="bg-black"
               text={t("cards.card3.text")}
             />
-          </div>
-        </div>
-        <div className="flex flex-col-reverse xl:flex-row mt-10">
-          <div className="grid xl:grid-cols-4 gap-5 text-white">
             <Card
               icon={<GiKidSlide />}
               title={t("cards.card4.header")}

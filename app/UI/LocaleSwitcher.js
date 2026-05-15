@@ -12,7 +12,13 @@ export default function LocaleSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
 
   function changeLocale(nextLocale) {
-    router.replace({ pathname }, { locale: nextLocale });
+    // jeśli jesteśmy na wpisie bloga - kieruj na listę bloga w nowym języku
+    // (bo slugi mogą się różnić między językami)
+    if (/^\/blog\/[^/]+/.test(pathname)) {
+      router.replace({ pathname: "/blog" }, { locale: nextLocale });
+    } else {
+      router.replace({ pathname }, { locale: nextLocale });
+    }
     setIsOpen(false);
   }
 

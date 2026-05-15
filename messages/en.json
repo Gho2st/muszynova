@@ -229,318 +229,34 @@
         "button": "Book now"
     },
     "blog": {
-        "header": "Read more on our",
-        "more": "Discover more",
-        "link": "blog",
-        "header2": "Our Blog",
+        "header": "Muszyna Firsthand",
+        "header2": "Muszynova Blog",
         "searchPlaceholder": "Search articles...",
-        "noArticlesFound": "No articles matching the search were found.",
+        "noArticlesFound": "No articles found matching your search.",
         "previousButton": "Previous",
         "nextButton": "Next",
         "readMoreButton": "Read more",
+        "noImage": "No image",
         "header3": "Our Articles",
-        "text": "Discover Muszyna in a new way with Muszynova! Our blog is the place where we share inspiration, local curiosities, ideas for active leisure, and the latest events from the Muszynova Recreational and Sports Park. Get to know Muszyna from the inside – through the eyes of nature, sports, and Beskid hospitality enthusiasts.",
+        "text": "We live here, we know every corner and love sharing the best of the Beskid Sądecki. You will find trip ideas, local curiosities, seasonal inspirations from restaurants and everything useful before your trip to Muszyna.",
         "button": "Read more",
+        "main": "Home",
+        "new": "Latest posts",
+        "all": "View all",
+        "back": "Back to blog",
+        "team": {
+            "1": "Muszynova Team",
+            "2": "We live here, we know every corner"
+        },
         "recentPosts": {
-            "header": "Latest Posts",
+            "header": "Recent Posts",
             "button": "Read more...",
-            "error": "No articles available"
+            "error": "No available articles"
         },
         "favourites": {
             "header": "Featured",
             "button": "Read more...",
-            "error": "No articles available"
-        },
-        "blogPosts": {
-            "1": {
-                "title": "What to see in Muszyna? Top 10 attractions",
-                "text": "Muszyna, a picturesque spa town in the Beskid Sądecki, nestled in the Poprad Valley, is the perfect place to relax for lovers of nature, history, and active leisure. Known for its healing mineral waters, rich history, and beautiful landscapes, it attracts tourists all year round. We’ve prepared a list of the 10 best attractions that will make you fall in love with this place. And at the end, we invite you to visit our Muszynova Recreational and Sports Park, where plenty of entertainment awaits!",
-                "header2": "Nature and relaxation in Muszyna",
-                "header3": "Why visit Muszyna?",
-                "button": "What to see in Muszyna?",
-                "meta": {
-                    "title": "Top 10 best attractions in Muszyna",
-                    "description": "Discover the 10 most interesting attractions in Muszyna – from themed gardens to historic castles. The perfect list for any season."
-                },
-                "list": {
-                    "1": "1. Sensory Gardens (Gardens of the Senses) – Muszyna’s biggest attraction, located on the slopes of Sucha Góra. Divided into zones of health, scents, sounds, taste, and touch, they offer therapeutic experiences for all senses. Strolling among fragrant herbs, murmuring streams, and colorful plants is the perfect way to relax. At the top, there’s a viewing tower with a panoramic view of the Beskid Sądecki and the Tatra Mountains on clear days.",
-                    "2": "2. Biblical Gardens – Located next to the Church of St. Joseph the Betrothed, the Biblical Gardens are a place of reflection and peace. Designed for meditation, they present scenes from the Bible in creative ways (e.g., a pond reminiscent of Moses or a fig tree symbolizing paradise). Entry is free, and nearby you’ll find the “Maryja” mineral spring.",
-                    "3": "3. Castle Ruins (Baszta Hill) – The ruins of a medieval castle on Baszta Hill are one of Muszyna’s oldest landmarks. Built in the 14th century, it served as a fortress of the Muszyna State. Though only fragments of walls remain, the site offers a beautiful view of the Poprad Valley. In May, prayer services are held here at the statue of the Virgin Mary.",
-                    "4": "4. Regional Museum of the Muszyna State – Housed in a reconstructed 17th-century inn, the museum introduces the history of Muszyna, Lemko culture, and the Muszyna State. You’ll find exhibits related to wine trade, crafts, and local traditions. A great place to learn about the region’s rich past.",
-                    "5": "5. Church of St. Joseph the Betrothed – This Baroque church from the turn of the 17th and 18th centuries is a gem of Muszyna’s architecture. Inside, there is a Gothic statue of the Virgin Mary with Child and a Renaissance tabernacle. Next to the church, don’t miss the historic wall and the 1803 bell tower.",
-                    "6": "6. Zapopradzie Spa Park – Perfect for families and those seeking relaxation. It features outdoor pools, an ice rink (in winter), a skatepark, and walking paths. This recreational hub is lively all year round.",
-                    "7": "7. Mineral Water Pump Rooms – Muszyna is famous for its mineral waters like “Muszynianka”. Pump rooms such as “Milusia” or “Cechini” let you taste healing waters. An essential part of any spa visit, combining health with pleasure.",
-                    "8": "8. Hiking and Cycling Trails – Muszyna is a paradise for active leisure lovers. Hiking trails (e.g., to Jaworzyna Krynicka) and cycling routes in the Beskid Sądecki offer breathtaking views. Popular cycling routes can be found around Złockie.",
-                    "9": "9. Poprad River Rafting – The Poprad River is perfect for mountain kayaking or rafting. Pontoon trips of varying difficulty – from family-friendly to extreme – provide unforgettable thrills. Great for adrenaline seekers.",
-                    "10": "10. Viewing Tower on Malnik Hill – Opened in 2023, this 40-metre tower on Malnik Hill is Muszyna’s newest attraction. It offers spectacular views of the Beskid Sądecki and surrounding mountain ranges. Perfect for a short trip and landscape admiration."
-                },
-                "alt": {
-                    "1": "People on a mountain trail in Muszyna",
-                    "2": "Beautiful mountain view in Muszyna",
-                    "3": "Trail information signs",
-                    "4": "Map of tourist trails in Muszyna and Krynica"
-                },
-                "cta": {
-                    "header": "Experience Muszyna with Muszynova",
-                    "text": "Want to truly feel the atmosphere of Muszyna? After exploring the attractions, head to the Muszynova Recreational and Sports Park – bikes, squash, gym, children’s attractions, and regional cuisine await. All in one place!",
-                    "button": "Check out Muszynova’s offer"
-                }
-            },
-            "2": {
-                "title": "The best hiking trails in Muszyna – discover the Beskid Sądecki",
-                "text": "Muszyna, located in the heart of the Beskid Sądecki, is an ideal base for mountain hiking enthusiasts. Surrounded by picturesque Poprad valleys, forests, and peaks, it offers trails of varying difficulty – from easy family walks to challenging loops for experienced hikers. Below are the best trails around Muszyna that will let you discover the beauty of the region. At the end, we invite you to the Muszynova Recreational and Sports Park for active relaxation and regional flavors after your hike!",
-                "header2": "Why is Muszyna a paradise for hikers?",
-                "header3": "The best hiking trails in Muszyna",
-                "button": "Best trails",
-                "meta": {
-                    "title": "Best Hiking Trails in Muszyna",
-                    "description": "Check out the best hiking trails in Muszyna – scenic, family-friendly, and challenging routes. For beginners and advanced hikers alike."
-                },
-                "list": {
-                    "1": "1. Malnik Hill Trail – a viewpoint for everyone Length: approx. 4.5 km (loop) Time: approx. 1.5 h Difficulty: Easy Description: Malnik Hill (726 m a.s.l.) is one of the best viewpoints in Muszyna, perfect for beginners and families. The yellow trail starts in the center of Muszyna, passes the old Jewish cemetery, and climbs to the summit, where a 40-metre viewing tower opened in 2023. The tower offers a panorama of the Beskid Sądecki, and on clear days even the Tatra Mountains. The route is short, well-marked, and has gentle ascents.",
-                    "2": "2. Trail to Jaworzyna Krynicka – a classic of the Beskid Sądecki Length: approx. 9 km (from Muszyna via Złockie to the summit) Time: approx. 3–4 h one way Difficulty: Medium/Demanding Description: The green trail from Muszyna through Złockie to Jaworzyna Krynicka (1114 m a.s.l.) is a must for mountain lovers. Along the way, you pass the “Cechini” mineral water pump room and the St. Demetrius church in Złockie (part of the Wooden Architecture Route). The trail goes through forests and meadows, and at the top awaits a PTTK shelter and views of the Tatras, Pieniny, and Beskid Niski. Less experienced hikers can shorten the route by using the gondola from Krynica-Zdrój.",
-                    "3": "3. “Sadzona Jaja” Loop Trail – a walk with history Length: approx. 8 km (loop) Time: approx. 2.5–3 h Difficulty: Easy Description: This scenic route from Muszyna to Złockie, known as the “Sadzona Jaja Trail”, passes through Koziejówka (636 m a.s.l.) and the Złockie Tent Base. It starts at 21 Stycznia Street, passes the St. Anna spring, and climbs the ridge. Along the way, you’ll see the Lipowy Las Obrożyska nature reserve and the St. Demetrius church in Złockie. Perfect for families, combining nature with Lemko history.",
-                    "4": "4. Trail to Bacówka nad Wierchomlą – views and tranquility Length: approx. 2.5 km (from Wierchomla Mała, one way) Time: approx. 1 h one way Difficulty: Easy Description: The black trail from Wierchomla Mała (about 10 km from Muszyna) to Bacówka nad Wierchomlą is short but extremely picturesque, especially recommended for families with children. From the meadow near the shelter, there are views of the Tatras, Pieniny, and Radziejowa Range. The shelter is famous for its cozy atmosphere and delicious regional dishes. You can drive to the ski lift to shorten the route.",
-                    "5": "5. Nature trail to Czarna Młaka – a hidden gem Length: approx. 4 km (loop from Powroźnik) Time: approx. 1.5–2 h Difficulty: Easy Description: Czarna Młaka, located on the slopes of Czarne Garby, is a unique landslide lake protected as a natural monument. The yellow trail from Powroźnik (about 5 km from Muszyna) runs through the forest, making it ideal on hot days. On site, there are viewing platforms and a gazebo. A peaceful, rarely crowded route, perfect for those seeking silence and contact with nature."
-                },
-                "alt": {
-                    "1": "Castle in Muszyna with tower and viewpoint",
-                    "2": "Biblical Gardens in Muszyna",
-                    "3": "Poprad River rafting",
-                    "4": "Market square in Muszyna"
-                },
-                "cta": {
-                    "header": "Hit the trail with Muszynova",
-                    "text": "Planning a mountain adventure? Start at Muszynova – rent a bike, use our maps, plan your route, and relax in our park when you return. Active leisure starts comfortably and stress-free with us.",
-                    "button": "Rent equipment and go!"
-                }
-            },
-            "3": {
-                "title": "How to spend a weekend in Muszyna? Plan for the perfect getaway",
-                "text": "Muszyna, a charming spa town in the Beskid Sądecki, is a fantastic destination for a weekend trip. Located in the Poprad Valley, it offers a blend of relaxation, outdoor activities, rich history, and regional flavors. We’ve put together the perfect weekend plan in Muszyna to help you discover the city’s biggest attractions and surroundings. And for dessert, we invite you to our Muszynova Recreational and Sports Park, where plenty of fun awaits! Here’s a two-day itinerary full of impressions.",
-                "header2": "Why Muszyna for a weekend?",
-                "header3": "The best hiking trails in Muszyna",
-                "button": "Spend the weekend",
-                "meta": {
-                    "title": "How to spend a weekend in Muszyna",
-                    "description": "Plan the perfect weekend in Muszyna – attractions, activities, and local flavors that will make you fall in love with the place."
-                },
-                "list": {
-                    "1": "Day 1: Relaxation and history – Start your weekend with a walk through the Sensory Gardens on the slopes of Sucha Góra, where you’ll relax among fragrant herbs and streams while admiring the Beskid Sądecki from the viewing tower. Then visit the medieval castle ruins on Baszta Hill, offering a view of the Poprad Valley. Have lunch at Karczma nad Popradem, trying dumplings with bryndza or trout. Afterward, head to the Biblical Gardens at St. Joseph’s Church to quietly admire Bible-inspired arrangements and taste water from the “Maryja” spring. Stop by the “Milusia” pump room to sample healing “Muszynianka”. End the day with a walk in Zapopradzie Spa Park, full of paths and ponds, and have dinner at Restauracja Muszynova with regional specialties.",
-                    "2": "Day 2: Nature and activity – Begin the second day with a hike up Malnik Hill, where an easy trail leads to the 2023 viewing tower with a panorama of the Beskid Sądecki. Then experience adventure on a family-friendly Poprad pontoon rafting trip organized by Poprad Rafting. After rafting, have lunch at Gospoda u Krakowiaka in Złockie, tasting Lemko żurek or homemade dishes. Next, visit the Regional Museum in the 17th-century inn to learn about Muszyna’s history and Lemko culture. Spend some time in the town center shopping for souvenirs or having coffee at Cafe Muszyna. Finish the weekend at the Muszynova Recreational and Sports Park – play volleyball, try the climbing wall, rent a bike, or work out at the gym. Kids will love the playground with mazes and slides. Dinner at the park’s restaurant with regional dishes."
-                },
-                "alt": {
-                    "1": "I Love Muszyna sign",
-                    "2": "Biblical Gardens",
-                    "3": "Unique main street in Muszyna",
-                    "4": "View of the castle in Muszyna"
-                },
-                "cta": {
-                    "header": "A weekend full of attractions? Only with Muszynova",
-                    "text": "Plan an unforgettable weekend with Muszynova’s help! We offer bikes, squash, family attractions, and delicious cuisine all in one place. We make active leisure easy – right in Muszyna.",
-                    "button": "Plan your weekend with Muszynova"
-                }
-            },
-            "4": {
-                "title": "Active leisure in the Beskid Sądecki",
-                "text": "The area around Muszyna and Krynica-Zdrój is where nature meets culture, and active leisure blends with relaxation. Rafting down the Poprad, a bike ride on the Velo Krynica trail, or a stroll along Krynica’s promenade are just some of the possibilities this region offers. Visit Muszyna, take advantage of the Muszynova bike rental, and explore the Beskid Sądecki on your own!",
-                "header2": "Why Muszyna for a weekend?",
-                "header3": "The surroundings of Muszyna and Krynica are a paradise for activity lovers",
-                "button": "Active leisure",
-                "meta": {
-                    "title": "Active leisure in Muszyna and Krynica-Zdrój – Beskid Sądecki",
-                    "description": "Discover the charms of the Beskid Sądecki! Poprad rafting, Velo Krynica cycling routes, mountain hikes, and relaxation in Muszyna. The perfect place for a weekend full of activity and nature."
-                },
-                "list": {
-                    "1": "Hiking and cycling trails – Relaxation and history – The Beskid Sądecki offers countless trails of varying difficulty. From Muszyna, it’s worth taking the green trail to Jaworzyna Krynicka (1114 m a.s.l.), which offers breathtaking panoramas of the Beskids and even the Tatras on clear days. The route passes through the “Las Lipowy Obrożyska” reserve and the castle ruins in Muszyna, making it both a nature and historical adventure. For cyclists, the Velo Krynica trail (about 12 km) from Krynica through Powroźnik to Muszyna is ideal. The route is comfortable, separated from car traffic, and safe for families with children. Bike rentals, including electric ones, are available in Krynica to make climbing easier.",
-                    "2": "Poprad River rafting – Nature and activity – The Poprad River flowing through Muszyna is perfect for kayaking or pontoon rafting. A trip from Muszyna to Żegiestów (about 10 km) takes around 2 hours and is gentle, making it ideal for beginners and families. The picturesque landscapes of the Poprad Valley, wooded hills, and calm river current create an unforgettable adventure. Local rafting organizers provide equipment and return transport for comfort and safety. After rafting, we encourage you to continue your active day in Muszyna! Rent bikes at Muszynova and explore the charming cycling routes in the area. The popular route from Muszyna to Krynica runs along the Poprad and lets you enjoy the beauty of the Beskid landscapes. Muszynova rental offers both traditional and electric bikes – perfect for those seeking comfort on slightly hilly terrain. Along the way, you can stop in Muszyna to relax in the Sensory Gardens or taste local specialties in one of the regional inns."
-                },
-                "alt": {
-                    "1": "Konieczna Meadow",
-                    "2": "Wielki Waterfall",
-                    "3": "Chapel under Jaworzynka",
-                    "4": "Devil’s Stone on Jaworzyna Krynicka"
-                },
-                "cta": {
-                    "header": "Plan an active weekend in the Beskid Sądecki",
-                    "text": "Want to combine relaxation with outdoor activity? The Beskid Sądecki is the perfect place for a weekend getaway. Use Muszynova rental, explore scenic hiking and cycling trails, and experience an unforgettable Poprad rafting trip. Don’t wait – book your active leisure today!",
-                    "button": "Book now"
-                }
-            },
-            "5": {
-                "title": "Squash – a sport with class. Learn its history and why you should try it",
-                "text": "Did you know that squash is one of the fastest and most intense racket sports in the world? A game now associated with a modern lifestyle has its roots in the 19th century!",
-                "header2": "Why has squash conquered the world?",
-                "header3": "A brief history of squash",
-                "button": "History of squash",
-                "meta": {
-                    "title": "The history of squash – where did this dynamic sport come from?",
-                    "description": "Discover the fascinating history of squash – from British schools to world courts. Learn how this elite sport gained popularity and why you should try it!"
-                },
-                "list": {
-                    "1": "Origins in England – squash was born around 1830 in elite British schools (e.g., Harrow School) when students noticed the ball “squashed” (flattened) against the wall – hence the name.",
-                    "2": "Development of the discipline – over time, squash gained popularity in sports clubs worldwide, especially in English-speaking countries.",
-                    "3": "International recognition – in the 20th century, the first federations (e.g., World Squash Federation) were established, and squash became a professional sport.",
-                    "4": "Little space, lots of action – the game requires only a small court, but the intensity and pace are extremely high.",
-                    "5": "Sport for busy people – perfect for a quick, effective workout after work – 30 minutes is enough to get a proper workout!",
-                    "6": "Accessibility – simple rules, easy to learn at an amateur level, yet with huge tactical depth.",
-                    "7": "Squash by numbers (for trivia fans): Over 20 million players worldwide. In a professional match, a player can run up to 5 km in 45 minutes. A squash ball can reach speeds of up to 270 km/h!",
-                    "8": "Why play squash at Muszynova? Modern courts with excellent lighting and ventilation. Option for recreational play or lessons with an instructor. Rackets and balls available on site – just come, play, and fall in love!"
-                },
-                "alt": {
-                    "1": "Professional squash court with certified dimensions",
-                    "2": "Squash court with racket and ball in the background",
-                    "3": "Racket and ball on the squash court",
-                    "4": "Squash court with racket and ball"
-                },
-                "cta": {
-                    "header": "Play squash at Muszynova",
-                    "text": "Modern courts, great conditions, and equipment rental on site – whether you play recreationally or want to try something new, Muszynova is the perfect place for a sports reset!",
-                    "button": "Book a court at Muszynova"
-                }
-            },
-            "6": {
-                "title": "By bike through Muszyna",
-                "text": "Is there anything better than combining active leisure with mountain landscapes, a spa atmosphere, and a touch of adventure? If you dream of a day full of movement, fresh air, and beautiful views, a cycling trip around Muszyna is a bullseye. And the best part? It all starts here – at the Muszynova bike rental, where you’ll set off stress-free with perfectly fitted equipment.",
-                "header2": "Why explore Muszyna by bike?",
-                "header3": "TOP 3 cycling routes from Muszyna",
-                "button": "Discover Muszyna by bike",
-                "meta": {
-                    "title": "By bike through Muszyna – routes, views, and Muszynova rental",
-                    "description": "Discover the most beautiful cycling routes around Muszyna and use Muszynova rental – perfect equipment, route planning help, and stress-free active leisure."
-                },
-                "list": {
-                    "1": "1. Muszyna Tourist Loop Length: approx. 30 km Difficulty: medium Time: approx. 4 hours The route runs through the valleys of Muszynka and Szczawny Potok, passing numerous viewpoints and charming villages. Perfect for a half-day trip for those with basic fitness.",
-                    "2": "2. Carpathian Cycling Route (Leluchów–Wierchomla section) Length: approx. 25 km Difficulty: easy Time: 2–3 hours A scenic route along the Poprad Valley – great for families and beginners. Rest stops and several mineral springs await along the way.",
-                    "3": "3. Velo Krynica – from Krynica-Zdrój to Muszyna Length: approx. 11 km Difficulty: very easy This comfortable asphalt path is ideal for beginner cyclists. You can start in Krynica and finish in Muszyna, returning by train or making a loop via Powroźnik.",
-                    "4": "Muszynova Bike Rental – ride without your own gear! No bike of your own? Don’t want to bring it on vacation? Muszynova offers a fully equipped rental right next to the Recreational and Sports Park. A convenient solution for everyone – tourists, spa guests, families with children, or MTB enthusiasts. We offer: trekking bikes, mountain bikes, child seats, helmets, and accessories, route maps and help with planning, attractive prices (hourly or full-day rental), regularly serviced bikes fitted to your height.",
-                    "5": "Cycling discoveries – what will you see along the way? Sensory Gardens and Biblical Gardens, St. James Church in Powroźnik (UNESCO), castle ruins in Muszyna and viewing platforms, picturesque mineral springs, footbridges over the Poprad, meadows, forests, and rivers. A great way to combine healthy exercise with exploring the region – at your own pace, close to nature."
-                },
-                "alt": {
-                    "1": "Many bikes in front of Muszynova Recreational and Sports Park in Muszyna"
-                },
-                "cta": {
-                    "header": "Your cycling adventure starts at Muszynova",
-                    "text": "Don’t have a bike? We’ve got you covered! Muszynova rental offers modern bikes and everything you need to hit the trail – comfortably, safely, and with fun. Discover the Beskid Sądecki from the saddle!",
-                    "button": "Rent a bike at Muszynova"
-                }
-            },
-            "7": {
-                "title": "Immerse yourself in health – Muszyna’s mineral waters",
-                "text": "Muszyna is not only picturesque landscapes and mountain trails – it’s also a source of health straight from nature. The mineral waters from local springs are known for their exceptional health properties; regular consumption boosts immunity, improves digestion, and benefits the nervous system. Strolling through the Spa Park with a cup of fresh water is a true pleasure that also strengthens the body.",
-                "header2": "Why is Muszyna water a natural remedy?",
-                "header3": "TOP 3 mineral water springs in Muszyna",
-                "button": "Discover the power of Muszyna water",
-                "meta": {
-                    "title": "Muszyna mineral waters – a natural source of health | Muszynova",
-                    "description": "Discover the health benefits of Muszyna’s mineral waters. Find out which springs to visit and how they support immunity, digestion, and well-being. Welcome to Muszynova!"
-                },
-                "list": {
-                    "1": "1. Milusia Spring Location: Spa Park, next to the Antoni Pump Room Water: medium-mineralized, high in magnesium and calcium. Ideal for stressed and tired people. Mild, slightly salty taste.",
-                    "2": "2. Grunwald Spring Location: Ogrodowa Street, lower part of Zapopradzie Park Water: low-mineralized, aids metabolism and has diuretic effects. Often chosen by those on cleansing diets.",
-                    "3": "3. Józef Spring Location: near the Sensory Gardens Water: highly mineralized, recommended for mineral deficiencies, anemia, and heart issues. Distinct, slightly iron-like taste.",
-                    "4": "Water straight from nature – health for free While walking around Muszyna, you’ll come across mineral water intakes at every turn. Pump rooms and springs are free to use, and each water has a different composition and taste. You can choose the one that best suits your needs – just bring a bottle and the desire to try.",
-                    "5": "Additional benefits: natural treatment without prescription, helps with hypertension and diabetes, positive effect on intestines, stomach, and kidneys, relaxing atmosphere of the Spa Park, perfect complement to walks and physical activity"
-                },
-                "alt": {
-                    "1": "Antoni mineral water in Muszyna"
-                },
-                "cta": {
-                    "header": "Discover the source of health in the heart of the Beskids",
-                    "text": "You don’t have to go far to take care of your health. In Muszyna, everything is within reach – natural springs, clean air, and a spa climate. Come to Muszynova, drink water from the spring, enjoy your favorite sport, and feel the difference!",
-                    "button": "Try Muszyna’s mineral waters"
-                }
-            },
-            "8": {
-                "title": "The magic of Muszyna – local legends and tales from the Poprad Valley",
-                "text": "Muszyna is not only a spa with beautiful landscapes and mineral waters – it’s also a place full of old stories, mysteries, and legends passed down through generations. In the shadow of the mountains and the murmur of the Poprad lie tales that add extraordinary charm to this place. Join us to discover the most famous local legends that have long ignited the imagination of residents and tourists alike.",
-                "header2": "Does the princess’s ghost still guard the castle ruins?",
-                "header3": "TOP 3 legends from Muszyna you should know",
-                "button": "Uncover Muszyna’s mysteries",
-                "meta": {
-                    "title": "Local legends and stories of Muszyna | Muszynova Blog",
-                    "description": "Discover the mysterious tales of Muszyna – from the White Lady to enchanted treasures. Experience the region’s magic through legends and local stories on the Muszynova blog."
-                },
-                "list": {
-                    "1": "1. The legend of the White Lady of Muszyna Castle Long ago, a princess lived in the castle who died tragically defending her people. It is said that on moonlit nights you can still see the White Lady walking among the ruins, guarding ancient secrets and treasures hidden in the underground.",
-                    "2": "2. The enchanted treasure under Malnik Hill Legend has it that a huge treasure – gold belonging to a bandit leader – is hidden in one of the caves under Malnik. But only someone with a pure heart and good intentions will be able to find it. Others hear only the echo of mysterious voices and never return the same way.",
-                    "3": "3. The Lovers’ Spring in the Sensory Gardens According to local lore, long ago a pair of lovers secretly met at a spring in the valley. Though their love was forbidden, they swore fidelity by the spring water. Today, many believe that drinking from this place brings happiness in love.",
-                    "4": "Magical places with soul Muszyna is full of symbolic sites: old chapels, legendary stones, springs with “power”. While walking around, it’s worth asking the locals – they know these stories best and love to share them.",
-                    "5": "Why know local legends? Because they give a place soul. Walking through Muszyna, everything suddenly becomes deeper – every path may hide a story, every tree may have witnessed history. It’s a great way to combine relaxation with discovering the region’s culture."
-                },
-                "alt": {
-                    "1": "Castle in Muszyna in sunlight"
-                },
-                "cta": {
-                    "header": "Experience Muszyna through legends and tales",
-                    "text": "Immerse yourself in the extraordinary world of folklore, ghosts, and mysterious places. Come to Muszyna, walk among the castle ruins, visit the lovers’ spring, and feel the magic that has drawn people to this valley for centuries.",
-                    "button": "Discover Muszyna’s legends with your own eyes"
-                }
-            },
-            "9": {
-                "title": "What to See in Krynica-Zdrój? 15 Best Attractions You Must Know!",
-                "text": "Krynica-Zdrój is not only Poland's most famous spa town, it is a true gem of the Beskid Sądecki mountains that enchants visitors in every season. Mountain air, healing mineral waters, a lively promenade, ski slopes, and breathtaking views – that's why over a million tourists come here every year. We've prepared an up-to-date list of 15 must-see places for you. And if you're looking for the perfect base – at the end we suggest where to stay in the best location in Krynica!",
-                "header2": "The Most Beautiful Places and Attractions in Krynica-Zdrój",
-                "header3": "Why is Krynica-Zdrój still number 1 in the Polish mountains?",
-                "button": "What to Do in Krynica-Zdrój?",
-                "meta": {
-                    "title": "15 Best Attractions in Krynica-Zdró – What is Worth Seeing?",
-                    "description": "Current TOP 15 attractions in Krynica-Zdrój: Jaworzyna Krynicka, Sankostrada, Main Pump Room, new VeloKrynica cycling paths and much more. The perfect plan for a weekend or longer holiday."
-                },
-                "list": {
-                    "1": "1. Jaworzyna Krynicka (1114 m) + gondola lift – an absolute must-see! A modern 7.7 km gondola takes you to the summit in just 7 minutes. At the top: 360° viewing platform (you can even see the Tatra Mountains!), restaurant, walking trails, and in winter the best ski slopes in the region.",
-                    "2": "2. Sankostrada on Góra Krzyżowa – the longest year-round sled track in Poland (3000 m of descent!). Guaranteed thrills for kids and adults – it even operates in the rain thanks to a special system.",
-                    "3": "3. The Promenade and Main Pump Room – the heart of Krynica. Beautiful architecture, concerts, atmospheric cafés, and the chance to drink famous mineral waters straight from the source: Zuber, Słotwinka, Jan, Tadeusz.",
-                    "4": "4. Góra Parkowa with historic funicular railway (from 1937!) – a technical monument. At the top: Paradise Slides (gravity slide), playground, rope park, and viewpoint.",
-                    "5": "5. Paradise Slides – new – 4 sliding tracks (including one 800 m long!). Perfect family fun, open all year round.",
-                    "6": "6. „Baśń” Toy Museum – over 5,000 exhibits from around the world. From antique dolls to 1960s Lego sets – kids go wild, adults return to their childhood.",
-                    "7": "7. Nikifor Krynicki Museum – a must for fans of naïve art. Works by the famous Lemko primitive painter in the beautiful „Romanówka” villa.",
-                    "8": "8. Love Benches and Pump Room with live music – in the evening the promenade becomes the most romantic place in the mountains. Concerts, twinkling lights, wine, and an atmosphere straight out of the 1930s.",
-                    "9": "9. VeloKrynica cycling routes – 12 km of new asphalt trail from Krynica to Muszyna along the stream. Perfect for families, scooters, and rollerblades.",
-                    "10": "10. Słotwiny Arena ski slopes – more modern and less crowded than Jaworzyna. 10 km of runs, 6-person chairlift, snowpark, and night skiing under floodlights.",
-                    "11": "11. Health & Relaxation Centre at Hotel Czarny Potok **** – thermal pools with sulphuric water, sauna zone, salt cave, and peat treatments. The best spa in Krynica.",
-                    "12": "12. Pumptrack and enduro trails on Góra Krzyżowa – free pumptrack for cyclists and a new network of enduro trails (from green to black).",
-                    "13": "13. Krynica Tree Trail – new educational forest path with information boards about trees and huge insect sculptures. Great for children.",
-                    "14": "14. Lemko Trail – a trail of Lemko culture: wooden churches in Tylicz, Powroźnik (UNESCO), and Mochnaczka – just 30 minutes by car from Krynica.",
-                    "15": "15. Krynica Fair and events – Economic Forum, Jan Kiepura Festival, Running Festival, New Year’s Eve on the slope – check the calendar because something is always happening!"
-                },
-                "alt": {
-                    "1": "Gondola lift to Jaworzyna Krynicka in winter"
-                },
-                "cta": {
-                    "header": "Done with Krynica? Time for Muszynova!",
-                    "text": "Only 10 km from Krynica – the largest recreational and sports park in the Beskid Sądecki! Squash, sports hall, bikes, gym, playroom, climbing wall, bowling, and delicious food all in one place. You only pay for the attractions you choose. The kids will go crazy with joy, and you’ll finally get to relax ;)",
-                    "button": "Let’s go to Muszynova!"
-                }
-            },
-            "10": {
-                "title": "Follow the Trail of Icons: Discover Wooden Lemko Churches by Bike with Muszynova!",
-                "text": "The Beskid Sądecki is not only mountains and mineral waters, but also the extraordinary cultural heritage of the Lemko people. The best way to feel the magic of this region and see its most beautiful monuments is a cycling trip! Far from the main traffic, along picturesque valleys, you’ll reach mysterious wooden Greek Catholic churches – one of which is on the UNESCO World Heritage List. Muszynova Park is your perfect base – hop on a bike and hit the trail!",
-                "header2": "The Most Beautiful Wooden Churches Near Muszyna and Krynica",
-                "header3": "Why Explore the Church Trail by Bike?",
-                "button": "Rent a Bike at Muszynova!",
-                "meta": {
-                    "title": "By Bike Along the UNESCO Church Trail – Powroźnik, Szczawnik and the Muszyna Area",
-                    "description": "The most interesting Lemko churches in the Poprad Valley. See how to cycle from Muszynova to Powroźnik (UNESCO) and Szczawnik. A perfect family-friendly route."
-                },
-                "list": {
-                    "1": "1. Church in Powroźnik (UNESCO) – A must-see on the trip! Only 6 km from Muszyna, one of the oldest and most valuable examples of wooden sacral architecture in Poland, inscribed on the UNESCO World Heritage List. Admire the original 18th-century iconostasis.",
-                    "2": "2. Church in Szczawnik – Picturesquely situated in a stream valley, about 10 km from Muszyna. It stands out with its simple form and harmonious integration into the mountain landscape. Perfect spot for a moment of reflection and a break on the trail.",
-                    "3": "3. Church in Krynica-Zdrój (St. Apostles Peter and Paul) – If you extend your route to Krynica (along the VeloKrynica trail!), visit this beautiful late-19th-century temple. Slightly newer, but its interior and carved iconostasis are truly impressive.",
-                    "4": "4. Church in Tylicz (St. Cosmas and Damian) – An option for more endurance cyclists. A bit farther away, but worth seeing for its rich interior and characteristic three-tower structure.",
-                    "5": "5. By bike, not by car – Why? Quiet roads and paths (such as VeloKrynica) mean minimal car traffic. You can stop anywhere to enjoy the views and breathe the mountain air. It’s also family-friendly!",
-                    "6": "6. Muszynova Park Bike Rental – Don’t have a bike? No problem! We offer mountain and trekking bikes that will effortlessly take you to every church on the Beskid hills. We also rent child seats and helmets!",
-                    "7": "7. Recovery after the trip – When you return to Muszynova, full relaxation awaits! Recover your muscles or enjoy a well-deserved meal at the Restaurant."
-                },
-                "alt": {
-                    "1": "Bicycle parked next to a Lemko wooden church"
-                },
-                "cta": {
-                    "header": "Ready for a Historical Adventure on Two Wheels?",
-                    "text": "Plan your trip today! Booking a bike at Muszynova guarantees reliable equipment and a successful adventure. Discover the secrets of the Poprad Valley in the best possible way – active and close to nature.",
-                    "button": "Check our bike offer"
-                }
-            }
+            "error": "No available articles"
         }
     },
     "park": {

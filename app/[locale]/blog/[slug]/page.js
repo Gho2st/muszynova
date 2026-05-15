@@ -1,148 +1,341 @@
-import { notFound } from "next/navigation";
 import Image from "next/image";
-import Header from "@/app/UI/Header";
-import LineHeader from "@/app/UI/LineHeader";
-import CtaLink from "@/app/UI/CtaLink";
-import RecentPosts from "@/app/UI/Blog/RecentPosts";
-import BackgroundList from "@/app/UI/BackgroundList";
-import Gallery from "@/app/UI/Slider";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import prisma from "@/lib/prisma";
 import { getTranslations } from "next-intl/server";
-import { blogPosts } from "@/app/data/blogData";
-import { routing } from "@/i18n/routing";
+
+async function getPost(slug, locale) {
+  const translation = await prisma.postTranslation.findFirst({
+    where: { slug, locale, post: { status: "published" } },
+    include: { post: true },
+  });
+
+  if (!translation) return null;
+  return {
+    id: translation.post.id,
+    slug: translation.slug,
+    title: translation.title,
+    excerpt: translation.excerpt,
+    content: translation.content,
+    coverImage: translation.post.coverImage,
+    publishedAt: translation.post.publishedAt,
+    createdAt: translation.post.createdAt,
+    updatedAt: translation.updatedAt,
+    ctaTitle: translation.ctaTitle,
+    ctaDescription: translation.ctaDescription,
+    ctaPrimaryLabel: translation.ctaPrimaryLabel,
+    ctaSecondaryLabel: translation.ctaSecondaryLabel,
+    ctaPrimaryUrl: translation.post.ctaPrimaryUrl,
+    ctaSecondaryUrl: translation.post.ctaSecondaryUrl,
+  };
+}
+
+async function getAllTranslationsForPost(slug, locale) {
+  const translation = await prisma.postTranslation.findFirst({
+    where: { slug, locale, post: { status: "published" } },
+    include: {
+      post: {
+        include: { translations: { select: { locale: true, slug: true } } },
+      },
+    },
+  });
+  return translation?.post.translations ?? [];
+}
+
+async function getLatestPosts(currentSlug, locale, limit = 3) {
+  const translations = await prisma.postTranslation.findMany({
+    where: {
+      locale,
+      slug: { not: currentSlug },
+      post: { status: "published" },
+    },
+    include: { post: true },
+    orderBy: { post: { publishedAt: "desc" } },
+    take: limit,
+  });
+
+  return translations.map((t) => ({
+    id: t.post.id,
+    slug: t.slug,
+    title: t.title,
+    excerpt: t.excerpt,
+    coverImage: t.post.coverImage,
+    publishedAt: t.post.publishedAt,
+  }));
+}
+
+function calculateReadingTime(html) {
+  const text = html.replace(/<[^>]+>/g, " ");
+  const words = text.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
-
-  const post = blogPosts.find((p) => p.slug === slug);
+  const currentLocale = locale || "pl";
+  const post = await getPost(slug, currentLocale);
   if (!post) return {};
 
-  const t = await getTranslations({ locale, namespace: "blog.blogPosts" });
+  const allTranslations = await getAllTranslationsForPost(slug, currentLocale);
+  const languages = { "x-default": `/blog/${post.slug}` };
+  allTranslations.forEach((t) => {
+    if (t.locale === "pl") languages["pl"] = `/blog/${t.slug}`;
+    else languages[t.locale] = `/${t.locale}/blog/${t.slug}`;
+  });
 
-  // bierzemy ścieżkę DLA KONKRETNEGO SLUGA
-  const localizedPath = routing.pathnames[`/blog/${slug}`]?.[locale];
-
-  // Budujemy canonical URL
-  const canonicalUrl =
-    locale === "pl"
-      ? `https://muszynova.pl${localizedPath}`
-      : `https://muszynova.pl/${locale}${localizedPath}`;
+  const canonical =
+    currentLocale === "pl"
+      ? `/blog/${post.slug}`
+      : `/${currentLocale}/blog/${post.slug}`;
 
   return {
-    title: t(`${post.id}.meta.title`),
-    description: t(`${post.id}.meta.description`),
-    alternates: {
-      canonical: canonicalUrl,
+    title: `${post.title} | Blog Muszynova`,
+    description: post.excerpt || "",
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || "",
+      images: post.coverImage ? [post.coverImage] : [],
+      type: "article",
     },
+    alternates: { canonical, languages },
   };
 }
 
 export default async function BlogPostPage({ params }) {
   const { slug, locale } = await params;
-  const post = blogPosts.find((p) => p.slug === slug);
-  if (!post) return notFound();
+  const currentLocale = locale || "pl";
+  const t = await getTranslations({ locale: currentLocale, namespace: "blog" });
+  const post = await getPost(slug, currentLocale);
+  if (!post) notFound();
 
-  const t = await getTranslations({ locale, namespace: "blog.blogPosts" });
+  const prefix = currentLocale === "pl" ? "" : `/${currentLocale}`;
+  const latest = await getLatestPosts(slug, currentLocale);
+  const readingTime = calculateReadingTime(post.content);
 
-  const altTranslations = t.raw(`${post.id}.alt`);
-  const listTranslations = t.raw(`${post.id}.list`);
-
-  const images = altTranslations
-    ? Object.keys(altTranslations)
-        .map((key) => ({
-          url: `/blog/${post.id}/${key}.webp`,
-          alt: String(altTranslations[key]).trim(),
-        }))
-        .sort((a, b) => {
-          // sortujemy po numerze pliku: 1.webp, 2.webp, 3.webp...
-          const numA = parseInt(a.url.match(/\/(\d+)\.webp$/)?.[1] || "0", 10);
-          const numB = parseInt(b.url.match(/\/(\d+)\.webp$/)?.[1] || "0", 10);
-          return numA - numB;
-        })
-    : [];
-
-  const mainImage = images[0] || null;
-  const hasGallery = images.length > 1;
-
-  const backgroundListItems = listTranslations
-    ? Object.values(listTranslations)
-        .map(String)
-        .map((item) => item.trim())
-        .filter((item) => item.length > 0)
-    : [];
-
-  // Dane tekstowe
-  const data = {
-    title: t(`${post.id}.title`),
-    subtitle: t(`${post.id}.header2`),
-    subtitle2: t(`${post.id}.header3`),
-    contentPart1: t(`${post.id}.text`),
-    cta: {
-      button: t(`${post.id}.cta.button`),
-      header: t(`${post.id}.cta.header`),
-      text: t(`${post.id}.cta.text`),
-    },
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt || "",
+    image: post.coverImage || "",
+    datePublished: post.publishedAt || post.createdAt,
+    dateModified: post.updatedAt,
+    author: { "@type": "Organization", name: "Muszynova" },
+    publisher: { "@type": "Organization", name: "Muszynova" },
   };
 
   return (
     <>
-      <Header text={data.title} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
-      {/* Główne zdjęcie – zawsze pierwsze */}
-      {mainImage && (
-        <div className="flex md:w-3/4 mx-auto justify-center md:mt-16 h-[700px] ">
-          <Image
-            src={mainImage.url}
-            width={1200}
-            height={800}
-            alt={mainImage.alt}
-            priority
-            className="object-cover"
-          />
-        </div>
-      )}
+      <article className="max-w-3xl mx-auto px-6 py-16 lg:py-24">
+        {/* Breadcrumb */}
+        <nav className="text-xs uppercase tracking-widest text-gray-400 mb-6 flex items-center gap-2 flex-wrap">
+          <Link
+            href={`${prefix}/`}
+            className="hover:text-green-600 transition-colors"
+          >
+            {t("main")}
+          </Link>
+          <span className="text-gray-300">›</span>
+          <Link
+            href={`${prefix}/blog`}
+            className="hover:text-green-600 transition-colors"
+          >
+            Blog
+          </Link>
+          <span className="text-gray-300">›</span>
+          <span className="text-gray-600 truncate max-w-[200px]">
+            {post.title}
+          </span>
+        </nav>
 
-      <div className="pt-8 px-[4%] 2xl:px-[13%]">
-        <section className="py-8 2xl:py-20">
-          <div>
-            <LineHeader text={data.subtitle} layout="left" />
-            <p
-              className="text-lg 2xl:text-xl leading-relaxed my-10 xl:my-16  text-center"
-              dangerouslySetInnerHTML={{ __html: data.contentPart1 }}
-            />
+        {/* Nagłówek */}
+        <header className="mb-10">
+          <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-gray-400 mb-4 flex-wrap">
+            {post.publishedAt && (
+              <span>
+                {new Date(post.publishedAt).toLocaleDateString(
+                  currentLocale === "pl" ? "pl-PL" : currentLocale,
+                  { day: "numeric", month: "long", year: "numeric" },
+                )}
+              </span>
+            )}
+            <span className="w-1 h-1 rounded-full bg-gray-300" />
+            <span>{readingTime} min</span>
           </div>
 
-          {backgroundListItems.length > 0 && (
-            <BackgroundList
-              title={data.subtitle2}
-              items={backgroundListItems}
-            />
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-tight mb-4">
+            {post.title}
+          </h1>
+
+          {post.excerpt && (
+            <p className="text-lg text-gray-500 leading-relaxed border-l-2 border-red-200 pl-4 italic">
+              {post.excerpt}
+            </p>
           )}
+        </header>
 
-          <CtaLink
-            link="/park"
-            button={data.cta.button}
-            header={data.cta.header}
-            text={data.cta.text}
-          />
-
-          <div className="mt-16">
-            <RecentPosts
-              blogPosts={blogPosts.map((p) => ({
-                ...p,
-                title: t(`${p.id}.title`),
-              }))}
-              layout="row"
+        {/* Zdjęcie główne */}
+        {post.coverImage && (
+          <div className="aspect-[16/9] bg-gray-100 rounded-2xl overflow-hidden mb-12 relative">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+              priority
             />
           </div>
-        </section>
-      </div>
+        )}
 
-      {/* Galeria – TYLKO gdy jest więcej niż 1 zdjęcie */}
-      {hasGallery && (
-        <div className="py-16 bg-gray-50">
-          <Gallery images={images} />
+        {/* Treść */}
+        <div
+          className="text-gray-700 text-lg
+            [&_h2]:text-2xl [&_h2]:font-medium [&_h2]:text-gray-900 [&_h2]:mt-12 [&_h2]:mb-5
+            [&_h3]:text-xl [&_h3]:font-medium [&_h3]:text-gray-900 [&_h3]:mt-10 [&_h3]:mb-4
+
+            [&_p]:my-6 [&_p]:leading-[1.8]
+
+            [&_a]:text-red-700 [&_a]:underline hover:[&_a]:text-red-800
+            [&_strong]:text-gray-900 [&_strong]:font-medium
+
+            [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:my-6 [&_ul]:space-y-2
+            [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-6 [&_ol]:space-y-2
+            [&_li]:leading-[1.7] [&_li]:pl-2
+            [&_li::marker]:text-gray-400 [&_li::marker]:font-medium
+            [&_ul_ul]:list-[circle] [&_ul_ul]:mt-2 [&_ul_ul]:mb-0
+            [&_ol_ol]:list-[lower-alpha] [&_ol_ol]:mt-2 [&_ol_ol]:mb-0
+
+            [&_blockquote]:border-l-2 [&_blockquote]:border-red-200 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-gray-500 [&_blockquote]:my-8
+            [&_img]:rounded-xl [&_img]:my-8 [&_img]:max-w-full
+            [&_hr]:border-gray-200 [&_hr]:my-12
+            [&_code]:bg-gray-100 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm [&_code]:font-mono"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+
+        {/* CTA */}
+        {post.ctaTitle && (
+          <div className="my-16 bg-gradient-to-br from-green-900 to-green-800 rounded-2xl p-8 lg:p-10 text-green-50">
+            <p className="text-xs uppercase tracking-widest text-green-300 mb-3">
+              Muszynova
+            </p>
+            <h3 className="text-2xl lg:text-3xl font-light mb-3 leading-tight">
+              {post.ctaTitle}
+            </h3>
+            {post.ctaDescription && (
+              <p className="text-green-100 mb-6 leading-relaxed max-w-xl">
+                {post.ctaDescription}
+              </p>
+            )}
+            <div className="flex flex-wrap gap-3">
+              {post.ctaPrimaryUrl && post.ctaPrimaryLabel && (
+                <Link
+                  href={
+                    post.ctaPrimaryUrl.startsWith("http")
+                      ? post.ctaPrimaryUrl
+                      : `${prefix}${post.ctaPrimaryUrl}`
+                  }
+                  className="inline-flex items-center gap-2 bg-green-50 text-green-900 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-white transition-colors"
+                >
+                  {post.ctaPrimaryLabel} <span>→</span>
+                </Link>
+              )}
+              {post.ctaSecondaryUrl && post.ctaSecondaryLabel && (
+                <Link
+                  href={
+                    post.ctaSecondaryUrl.startsWith("http")
+                      ? post.ctaSecondaryUrl
+                      : `${prefix}${post.ctaSecondaryUrl}`
+                  }
+                  className="inline-flex items-center gap-2 border border-green-700 text-green-50 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
+                >
+                  {post.ctaSecondaryLabel}
+                </Link>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Autor */}
+        <div className="flex items-center gap-4 py-6 border-t border-b border-gray-100 my-8">
+          <div className="w-12 h-12 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-sm font-medium shrink-0">
+            MZ
+          </div>
+          <div>
+            <p className="text-sm font-medium text-gray-900">{t("team.1")}</p>
+            <p className="text-xs text-gray-500 mt-0.5">{t("team.2")}</p>
+          </div>
         </div>
-      )}
+
+        {/* Najnowsze wpisy */}
+        {latest.length > 0 && (
+          <div className="mt-12">
+            <div className="flex items-center justify-between mb-5">
+              <p className="text-xs uppercase tracking-widest text-gray-400">
+                {t("new")}
+              </p>
+              <Link
+                href={`${prefix}/blog`}
+                className="text-xs uppercase tracking-widest text-gold-700 hover:text-gold-800 transition-colors"
+              >
+                {t("all")}
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {latest.map((p) => (
+                <Link
+                  key={p.id}
+                  href={`${prefix}/blog/${p.slug}`}
+                  className="group flex flex-col bg-white border border-gray-100 rounded-xl overflow-hidden hover:border-gray-200 transition-colors"
+                >
+                  <div className="aspect-[16/10] bg-gray-100 relative">
+                    {p.coverImage && (
+                      <Image
+                        src={p.coverImage}
+                        alt={p.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    )}
+                  </div>
+                  <div className="p-4">
+                    {p.publishedAt && (
+                      <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-2">
+                        {new Date(p.publishedAt).toLocaleDateString(
+                          currentLocale === "pl" ? "pl-PL" : currentLocale,
+                          { day: "numeric", month: "long", year: "numeric" },
+                        )}
+                      </p>
+                    )}
+                    <h4 className="text-sm font-medium text-gray-900 group-hover:text-gold-700 transition-colors leading-snug">
+                      {p.title}
+                    </h4>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Powrót */}
+        <div className="mt-12 pt-8 border-t border-gray-100">
+          <Link
+            href={`${prefix}/blog`}
+            className="group inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors"
+          >
+            <span className="group-hover:-translate-x-1 transition-transform">
+              ←
+            </span>
+            {t("back")}
+          </Link>
+        </div>
+      </article>
     </>
   );
 }
