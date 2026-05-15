@@ -36,16 +36,6 @@ export default async function middleware(request) {
     }
   }
 
-  // /restauracja/admin - zostawiam Twoje stare basic auth jeśli chcesz
-  // (jeśli nie, usuń ten blok)
-  const isRestauracjaAdmin = /^(\/[a-z]{2})?\/restauracja\/admin(\/|$)/.test(
-    pathname,
-  );
-  if (isRestauracjaAdmin) {
-    const authResponse = basicAuth(request);
-    if (authResponse) return authResponse;
-  }
-
   return intlMiddleware(request);
 }
 

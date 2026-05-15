@@ -1,42 +1,46 @@
 import { NextResponse } from "next/server";
+import { generateObject, generateText } from "ai";
+import { z } from "zod";
 import prisma from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
+import { deepseekChat } from "@/lib/deepseek";
 
 const LOCALES = { en: "English", sk: "Slovak", ua: "Ukrainian", de: "German" };
 
-const TRANSLATION_TOOL = {
-  name: "translation",
-  description: "Submit the translated blog post fields",
-  input_schema: {
-    type: "object",
-    properties: {
-      title: { type: "string", description: "Translated title" },
-      slug: {
-        type: "string",
-        description: `SEO URL slug in target language: 3-6 words, lowercase, hyphens, no diacritics, no stop-words, main keyword.`,
-      },
-      excerpt: { type: "string", description: "Translated excerpt" },
-      content: {
-        type: "string",
-        description: "Translated content - keep HTML tags intact",
-      },
-      ctaTitle: { type: "string", description: "Translated CTA title" },
-      ctaDescription: {
-        type: "string",
-        description: "Translated CTA description",
-      },
-      ctaPrimaryLabel: {
-        type: "string",
-        description: "Translated primary button label",
-      },
-      ctaSecondaryLabel: {
-        type: "string",
-        description: "Translated secondary button label",
-      },
-    },
-  },
-};
+function buildSchema(requestedFields) {
+  const shape = {};
+  if (requestedFields.includes("title")) {
+    shape.title = z.string().describe("Translated title");
+  }
+  if (requestedFields.includes("slug")) {
+    shape.slug = z
+      .string()
+      .describe(
+        "SEO URL slug in target language: 3-6 words, lowercase, hyphens, no diacritics, no stop-words, main keyword.",
+      );
+  }
+  if (requestedFields.includes("excerpt")) {
+    shape.excerpt = z.string().describe("Translated excerpt");
+  }
+  if (requestedFields.includes("ctaTitle")) {
+    shape.ctaTitle = z.string().describe("Translated CTA title");
+  }
+  if (requestedFields.includes("ctaDescription")) {
+    shape.ctaDescription = z.string().describe("Translated CTA description");
+  }
+  if (requestedFields.includes("ctaPrimaryLabel")) {
+    shape.ctaPrimaryLabel = z
+      .string()
+      .describe("Translated primary button label");
+  }
+  if (requestedFields.includes("ctaSecondaryLabel")) {
+    shape.ctaSecondaryLabel = z
+      .string()
+      .describe("Translated secondary button label");
+  }
+  return z.object(shape);
+}
 
 function sanitizeSlug(s) {
   return (s || "")
@@ -48,13 +52,35 @@ function sanitizeSlug(s) {
     .replace(/^-|-$/g, "");
 }
 
+function repairJsonText({ text }) {
+  if (!text) return text;
+  let cleaned = text
+    .replace(/^\s*```(?:json)?\s*/i, "")
+    .replace(/\s*```\s*$/i, "")
+    .trim();
+  const first = cleaned.indexOf("{");
+  const last = cleaned.lastIndexOf("}");
+  if (first !== -1 && last !== -1 && last > first) {
+    cleaned = cleaned.slice(first, last + 1);
+  }
+  return cleaned;
+}
+
+function stripCodeFences(text) {
+  if (!text) return "";
+  return text
+    .replace(/^\s*```(?:html|json)?\s*/i, "")
+    .replace(/\s*```\s*$/i, "")
+    .trim();
+}
+
 export async function POST(req) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
-  if (!process.env.ANTHROPIC_API_KEY)
+  if (!process.env.DEEPSEEK_API_KEY)
     return NextResponse.json(
-      { error: "Brak klucza ANTHROPIC_API_KEY w .env" },
+      { error: "Brak klucza DEEPSEEK_API_KEY w .env" },
       { status: 500 },
     );
 
@@ -69,8 +95,8 @@ export async function POST(req) {
   }
 
   const {
-    postId, // jeśli edycja, ID istniejącego posta
-    force = false, // wymuś pełne tłumaczenie
+    postId,
+    force = false,
     title,
     excerpt,
     content,
@@ -130,7 +156,6 @@ export async function POST(req) {
         const fieldsToTranslate = {};
 
         if (force || !existing) {
-          // brak istniejącego tłumaczenia lub wymuszenie → tłumacz wszystko
           fieldsToTranslate.title = true;
           fieldsToTranslate.excerpt = true;
           fieldsToTranslate.content = true;
@@ -155,7 +180,6 @@ export async function POST(req) {
             existing.sourceHashCta !== currentHashes.cta;
         }
 
-        // nic do tłumaczenia → zwróć istniejące tłumaczenie bez wywołania API
         const anyToTranslate = Object.values(fieldsToTranslate).some(Boolean);
         if (!anyToTranslate) {
           skipped[locale] = "Wszystkie pola aktualne";
@@ -173,31 +197,18 @@ export async function POST(req) {
           return;
         }
 
-        // przygotuj zawartość do tłumaczenia — tylko zmienione pola
-        const partsToSend = [];
-        if (fieldsToTranslate.title) partsToSend.push(`Title: ${title}`);
-        if (fieldsToTranslate.excerpt)
-          partsToSend.push(`Excerpt: ${excerpt || "(none)"}`);
-        if (fieldsToTranslate.content) partsToSend.push(`Content:\n${content}`);
-        if (fieldsToTranslate.cta) {
-          partsToSend.push(
-            `CTA Title: ${ctaTitle || "(none)"}`,
-            `CTA Description: ${ctaDescription || "(none)"}`,
-            `CTA Primary Button: ${ctaPrimaryLabel || "(none)"}`,
-            `CTA Secondary Button: ${ctaSecondaryLabel || "(none)"}`,
-          );
-        }
-
-        // slug zawsze tłumaczymy gdy zmienia się tytuł (bo zależy od tytułu)
+        // slug zawsze tłumaczymy gdy zmienia się tytuł
         const needSlug = fieldsToTranslate.title;
 
-        const requestedFields = [];
-        if (fieldsToTranslate.title) requestedFields.push("title");
-        if (needSlug) requestedFields.push("slug");
-        if (fieldsToTranslate.excerpt) requestedFields.push("excerpt");
-        if (fieldsToTranslate.content) requestedFields.push("content");
+        // ============================================================
+        // CALL 1: krótkie pola przez generateObject (z schemą)
+        // ============================================================
+        const shortRequestedFields = [];
+        if (fieldsToTranslate.title) shortRequestedFields.push("title");
+        if (needSlug) shortRequestedFields.push("slug");
+        if (fieldsToTranslate.excerpt) shortRequestedFields.push("excerpt");
         if (fieldsToTranslate.cta) {
-          requestedFields.push(
+          shortRequestedFields.push(
             "ctaTitle",
             "ctaDescription",
             "ctaPrimaryLabel",
@@ -205,67 +216,125 @@ export async function POST(req) {
           );
         }
 
-        const response = await fetch("https://api.anthropic.com/v1/messages", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "anthropic-version": "2023-06-01",
-            "x-api-key": process.env.ANTHROPIC_API_KEY,
-          },
-          body: JSON.stringify({
-            model: "claude-haiku-4-5",
-            max_tokens: 3500,
-            tools: [TRANSLATION_TOOL],
-            tool_choice: { type: "tool", name: "translation" },
-            system: `Translate the given blog post fields from Polish to ${language}. Keep HTML tags intact. For slug: SEO-optimized 3-6 word URL slug in ${language}. Submit only these fields using the tool: ${requestedFields.join(", ")}.`,
-            messages: [
-              {
-                role: "user",
-                content: partsToSend.join("\n\n"),
-              },
-            ],
-          }),
-        });
+        let shortFieldsResult = {};
 
-        if (!response.ok) {
-          const errBody = await response.json().catch(() => ({}));
-          throw new Error(errBody?.error?.message || `HTTP ${response.status}`);
+        if (shortRequestedFields.length > 0) {
+          const shortParts = [];
+          if (fieldsToTranslate.title) shortParts.push(`Title: ${title}`);
+          if (fieldsToTranslate.excerpt)
+            shortParts.push(`Excerpt: ${excerpt || "(none)"}`);
+          if (fieldsToTranslate.cta) {
+            shortParts.push(
+              `CTA Title: ${ctaTitle || "(none)"}`,
+              `CTA Description: ${ctaDescription || "(none)"}`,
+              `CTA Primary Button: ${ctaPrimaryLabel || "(none)"}`,
+              `CTA Secondary Button: ${ctaSecondaryLabel || "(none)"}`,
+            );
+          }
+
+          const shortSchema = buildSchema(shortRequestedFields);
+
+          // Eskalacja parametrów przy retry — DeepSeek bywa kapryśny
+          // dla nielacińskich i aglutynacyjnych języków (ar, hu).
+          const callShortFields = (attempt = 1) =>
+            generateObject({
+              model: deepseekChat,
+              mode: "json",
+              schema: shortSchema,
+              maxTokens: attempt === 1 ? 2000 : 4000,
+              temperature: attempt === 1 ? 0.2 : 0,
+              experimental_repairText: repairJsonText,
+              system: `You are a professional translator. Translate the given Polish blog fields to ${language}.
+
+CRITICAL OUTPUT RULES:
+- Output MUST be a single valid JSON object, nothing else.
+- No markdown code fences. No commentary before or after.
+- Escape all double quotes inside string values as \\".
+- For slug: SEO 3-6 words, lowercase, hyphens, ASCII only (transliterate from ${language} if needed).
+
+Required keys (exactly these, nothing else): ${shortRequestedFields.join(", ")}.`,
+              prompt: shortParts.join("\n\n"),
+            });
+
+          try {
+            const { object } = await callShortFields(1);
+            shortFieldsResult = object;
+          } catch (firstErr) {
+            console.warn(
+              `[translate] retry short fields dla locale ${locale} po błędzie:`,
+              firstErr.message,
+            );
+            const { object } = await callShortFields(2);
+            shortFieldsResult = object;
+          }
         }
 
-        const data = await response.json();
-        if (data.error)
-          throw new Error(data.error.message || "Błąd API Anthropic");
+        // ============================================================
+        // CALL 2: content jako czysty tekst (HTML) przez generateText
+        // To eliminuje problemy z escapowaniem cudzysłowów w HTML
+        // i pozwala na duży maxTokens bez ryzyka uciętego JSON-a.
+        // ============================================================
+        let translatedContent = "";
 
-        const toolUse = data.content?.find((c) => c.type === "tool_use");
-        if (!toolUse?.input) throw new Error("Brak tool_use w odpowiedzi");
+        if (fieldsToTranslate.content) {
+          const callContent = (attempt = 1) =>
+            generateText({
+              model: deepseekChat,
+              maxTokens: attempt === 1 ? 8000 : 12000,
+              temperature: attempt === 1 ? 0.2 : 0,
+              system: `You are a professional translator. Translate the following Polish HTML content to ${language}.
 
-        const parsed = toolUse.input;
+CRITICAL RULES:
+- Keep ALL HTML tags, attributes, and structure completely intact and unchanged.
+- Translate only the visible text content between tags.
+- Do NOT add any preamble, commentary, or markdown code fences.
+- Do NOT wrap the output in \`\`\`html or any other fences.
+- Return ONLY the translated HTML, starting directly with the first tag or text.`,
+              prompt: content,
+            });
 
-        // złóż wynik: zmienione pola z AI + niezmienione z istniejącego tłumaczenia
+          try {
+            const { text } = await callContent(1);
+            translatedContent = stripCodeFences(text);
+          } catch (firstErr) {
+            console.warn(
+              `[translate] retry content dla locale ${locale} po błędzie:`,
+              firstErr.message,
+            );
+            const { text } = await callContent(2);
+            translatedContent = stripCodeFences(text);
+          }
+        }
+
+        // ============================================================
+        // Złóż wynik: zmienione pola z AI + niezmienione z istniejącego
+        // ============================================================
         results[locale] = {
           title: fieldsToTranslate.title
-            ? parsed.title || ""
+            ? shortFieldsResult.title || ""
             : existing?.title || "",
-          slug: needSlug ? sanitizeSlug(parsed.slug) : existing?.slug || "",
+          slug: needSlug
+            ? sanitizeSlug(shortFieldsResult.slug)
+            : existing?.slug || "",
           excerpt: fieldsToTranslate.excerpt
-            ? parsed.excerpt || ""
+            ? shortFieldsResult.excerpt || ""
             : existing?.excerpt || "",
           content: fieldsToTranslate.content
-            ? parsed.content || ""
+            ? translatedContent
             : existing?.content || "",
           ctaTitle: fieldsToTranslate.cta
-            ? parsed.ctaTitle || ""
+            ? shortFieldsResult.ctaTitle || ""
             : existing?.ctaTitle || "",
           ctaDescription: fieldsToTranslate.cta
-            ? parsed.ctaDescription || ""
+            ? shortFieldsResult.ctaDescription || ""
             : existing?.ctaDescription || "",
           ctaPrimaryLabel: fieldsToTranslate.cta
-            ? parsed.ctaPrimaryLabel || ""
+            ? shortFieldsResult.ctaPrimaryLabel || ""
             : existing?.ctaPrimaryLabel || "",
           ctaSecondaryLabel: fieldsToTranslate.cta
-            ? parsed.ctaSecondaryLabel || ""
+            ? shortFieldsResult.ctaSecondaryLabel || ""
             : existing?.ctaSecondaryLabel || "",
-          _hashes: currentHashes, // wyślemy je do frontu razem z wynikiem
+          _hashes: currentHashes,
           _translatedFields: Object.entries(fieldsToTranslate)
             .filter(([, v]) => v)
             .map(([k]) => k),
@@ -287,7 +356,7 @@ export async function POST(req) {
     }),
   );
 
-  const hasAnyResult = Object.values(results).some((r) => r.title);
+  const hasAnyResult = Object.values(results).some((r) => r.title || r.content);
   if (!hasAnyResult && Object.keys(skipped).length === 0) {
     return NextResponse.json(
       { error: "Tłumaczenie nie powiodło się dla żadnego języka", errors },

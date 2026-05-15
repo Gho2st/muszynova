@@ -28,7 +28,7 @@ export default function LoginPage() {
       <div>
         <Header text="Zaloguj się do panelu" />
       </div>
-      <form onSubmit={handleSubmit} className="max-w-sm mx-auto p-6 space-y-4">
+      <form onSubmit={handleSubmit} className="max-w-sm mx-auto p-6 space-y-4 py-24">
         <input
           value={login}
           onChange={(e) => setLogin(e.target.value)}
