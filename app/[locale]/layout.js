@@ -72,7 +72,7 @@ export default async function LocaleLayout({ children, params }) {
           />
           <Nav />
           <CookieConsent />
-          {/* <Modal /> */}
+          <Modal />
           <main>{children}</main>
           <Footer />
           <GoogleTagManager gtmId="GTM-TR69S642" />

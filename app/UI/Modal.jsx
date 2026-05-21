@@ -7,7 +7,7 @@ export default function Modal() {
   useEffect(() => {
     // Modal pokazuje się tylko do końca dnia 17 maja 2026
     const now = new Date();
-    const endDate = new Date("2026-05-18T00:00:00");
+    const endDate = new Date("2026-05-31T00:00:00");
 
     if (now < endDate) {
       setIsOpen(true);
@@ -48,10 +48,13 @@ export default function Modal() {
           >
             Informacja
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-gray-600 mb-2 leading-relaxed">
             W Maju restauracja czynna wtorek-niedziela 12:00 - 21:00
           </p>
-        
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            W dniu 27.05 restauracja nieczynna.
+          </p>
+
           <button
             onClick={handleClose}
             className="w-full cursor-pointer bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors"
