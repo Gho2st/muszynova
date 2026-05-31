@@ -14,14 +14,13 @@ export default function MenuButtons({ className = "" }) {
     menuItems = [
       { text: t("button"), link: "/menu.pdf" },
       { text: t("button4"), link: "/menu-dzieciece.pdf" },
-      { text: t("button2"), link: "/karta-alkoholi.pdf" },
     ];
   } else if (locale === "en") {
-    menuItems = [{ text: t("button"), link: "/menu-eng.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
   } else if (locale === "sk") {
-    menuItems = [{ text: t("button"), link: "/menu-sk.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
   } else {
-    menuItems = [{ text: t("button"), link: "/menu-eng.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
   }
 
   return (
