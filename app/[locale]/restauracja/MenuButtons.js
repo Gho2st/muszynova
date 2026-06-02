@@ -11,16 +11,13 @@ export default function MenuButtons({ className = "" }) {
   let menuItems = [];
 
   if (locale === "pl") {
-    menuItems = [
-      { text: t("button"), link: "/menu.pdf" },
-      { text: t("button4"), link: "/menu-dzieciece.pdf" },
-    ];
+    menuItems = [{ text: t("button"), link: "/menu-pl.pdf" }];
   } else if (locale === "en") {
-    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu-en.pdf" }];
   } else if (locale === "sk") {
-    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu-sk.pdf" }];
   } else {
-    menuItems = [{ text: t("button"), link: "/menu.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu-eng.pdf" }];
   }
 
   return (

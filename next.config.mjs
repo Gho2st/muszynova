@@ -9,6 +9,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: "/menu.pdf", destination: "/menu", permanent: false },
       {
         source: "/park-rekreacyjno-sportowy",
         destination: "/park",
