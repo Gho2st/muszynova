@@ -1,5 +1,5 @@
 // lib/restaurant.ts
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "./prisma-restaurant";
 import { ApiError } from "./api-error";
 
 /**
@@ -10,7 +10,7 @@ export async function getRestaurant() {
   const id = process.env.RESTAURANT_ID;
   if (!id) throw new ApiError("RESTAURANT_ID nie jest ustawione w .env", 500);
 
-  const restaurant = await prisma.restaurant.findUnique({ where: { id } });
+  const restaurant = await prismaRestaurant.restaurant.findUnique({ where: { id } });
   if (!restaurant) throw new ApiError("Restauracja nie istnieje", 500);
 
   return restaurant;
