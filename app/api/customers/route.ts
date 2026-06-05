@@ -1,6 +1,6 @@
 // app/api/customers/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { handleApiError } from "@/lib/api-error";
 import { createCustomerSchema } from "@/lib/validators";
 
@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
     const email = searchParams.get("email");
     const name = searchParams.get("name");
 
-    const customers = await prisma.customer.findMany({
+    const customers = await prismaRestaurant.customer.findMany({
       where: {
         ...(email ? { email: { contains: email, mode: "insensitive" } } : {}),
         ...(name ? { name: { contains: name, mode: "insensitive" } } : {}),
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const data = createCustomerSchema.parse(body);
-    const customer = await prisma.customer.create({ data });
+    const customer = await prismaRestaurant.customer.create({ data });
     return NextResponse.json(customer, { status: 201 });
   } catch (error) {
     return handleApiError(error);

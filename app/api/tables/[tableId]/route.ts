@@ -1,6 +1,6 @@
 // app/api/tables/[tableId]/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { updateTableSchema } from "@/lib/validators";
@@ -16,7 +16,7 @@ export async function PATCH(
     const body = await request.json();
     const data = updateTableSchema.parse(body);
 
-    const table = await prisma.table.update({
+    const table = await prismaRestaurant.table.update({
       where: { id: tableId, restaurantId },
       data,
     });
@@ -36,7 +36,7 @@ export async function DELETE(
     const restaurantId = getRestaurantId();
     const { tableId } = await params;
 
-    const activeReservations = await prisma.reservation.count({
+    const activeReservations = await prismaRestaurant.reservation.count({
       where: {
         tableId,
         status: { in: ["PENDING", "CONFIRMED"] },
@@ -50,7 +50,7 @@ export async function DELETE(
       );
     }
 
-    await prisma.table.delete({ where: { id: tableId, restaurantId } });
+    await prismaRestaurant.table.delete({ where: { id: tableId, restaurantId } });
     return new NextResponse(null, { status: 204 });
   } catch (error) {
     return handleApiError(error);

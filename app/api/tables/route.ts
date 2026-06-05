@@ -1,6 +1,6 @@
 // app/api/tables/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { createTableSchema } from "@/lib/validators";
@@ -10,7 +10,7 @@ export async function GET() {
   try {
     const restaurantId = getRestaurantId();
 
-    const tables = await prisma.table.findMany({
+    const tables = await prismaRestaurant.table.findMany({
       where: { restaurantId },
       orderBy: { number: "asc" },
     });
@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = createTableSchema.parse(body);
 
-    const table = await prisma.table.create({
+    const table = await prismaRestaurant.table.create({
       data: { ...data, restaurantId },
     });
 

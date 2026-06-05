@@ -1,6 +1,6 @@
 // app/api/availability/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurant } from "@/lib/restaurant";
 import { availabilityQuerySchema } from "@/lib/validators";
@@ -31,7 +31,7 @@ export async function GET(request: NextRequest) {
       restaurant.defaultReservationDuration,
     );
 
-    const tables = await prisma.table.findMany({
+    const tables = await prismaRestaurant.table.findMany({
       where: {
         restaurantId: restaurant.id,
         isActive: true,
@@ -45,7 +45,7 @@ export async function GET(request: NextRequest) {
     const dayStart = new Date(`${query.date}T00:00:00.000Z`);
     const dayEnd = new Date(`${query.date}T23:59:59.999Z`);
 
-    const reservations = await prisma.reservation.findMany({
+    const reservations = await prismaRestaurant.reservation.findMany({
       where: {
         restaurantId: restaurant.id,
         status: { in: ["PENDING", "CONFIRMED"] },

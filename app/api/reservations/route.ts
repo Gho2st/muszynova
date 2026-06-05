@@ -1,6 +1,6 @@
 // app/api/reservations/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurant, getRestaurantId } from "@/lib/restaurant";
 import { createReservationSchema } from "@/lib/validators";
@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
       where.startTime = { gte: dayStart, lte: dayEnd };
     }
 
-    const reservations = await prisma.reservation.findMany({
+    const reservations = await prismaRestaurant.reservation.findMany({
       where,
       orderBy: { startTime: "asc" },
       include: {
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
 
     // Sprawdź stolik jeśli podany
     if (data.tableId) {
-      const table = await prisma.table.findUnique({
+      const table = await prismaRestaurant.table.findUnique({
         where: { id: data.tableId, restaurantId: restaurant.id },
       });
 
@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
         );
       }
 
-      const conflict = await prisma.reservation.findFirst({
+      const conflict = await prismaRestaurant.reservation.findFirst({
         where: {
           tableId: data.tableId,
           status: { in: ["PENDING", "CONFIRMED"] },
@@ -111,7 +111,7 @@ export async function POST(request: NextRequest) {
     // Upsert klienta po emailu
     let customerId = data.customerId;
     if (!customerId && data.customerData) {
-      const customer = await prisma.customer.upsert({
+      const customer = await prismaRestaurant.customer.upsert({
         where: { email: data.customerData.email },
         update: {
           name: data.customerData.name,
@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
 
     if (!customerId) throw new ApiError("Brak danych klienta", 400);
 
-    const reservation = await prisma.reservation.create({
+    const reservation = await prismaRestaurant.reservation.create({
       data: {
         restaurantId: restaurant.id,
         customerId,

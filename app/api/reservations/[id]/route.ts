@@ -1,6 +1,6 @@
 // app/api/reservations/[id]/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { updateReservationSchema } from "@/lib/validators";
@@ -15,7 +15,7 @@ export async function GET(
     const restaurantId = getRestaurantId();
     const { id } = await params;
 
-    const reservation = await prisma.reservation.findUnique({
+    const reservation = await prismaRestaurant.reservation.findUnique({
       where: { id, restaurantId },
       include: { customer: true, table: true },
     });
@@ -38,7 +38,7 @@ export async function PATCH(
     const body = await request.json();
     const data = updateReservationSchema.parse(body);
 
-    const existing = await prisma.reservation.findUnique({
+    const existing = await prismaRestaurant.reservation.findUnique({
       where: { id, restaurantId },
       include: { customer: true, table: true },
     });
@@ -57,7 +57,7 @@ export async function PATCH(
 
     // Sprawdź konflikt jeśli zmieniamy stolik
     if (data.tableId && data.tableId !== existing.tableId) {
-      const conflict = await prisma.reservation.findFirst({
+      const conflict = await prismaRestaurant.reservation.findFirst({
         where: {
           id: { not: id },
           tableId: data.tableId,
@@ -75,7 +75,7 @@ export async function PATCH(
     if (data.status === "CONFIRMED") updateData.confirmedAt = new Date();
     if (data.status === "CANCELLED") updateData.cancelledAt = new Date();
 
-    const reservation = await prisma.reservation.update({
+    const reservation = await prismaRestaurant.reservation.update({
       where: { id },
       data: updateData,
       include: { customer: true, table: true },

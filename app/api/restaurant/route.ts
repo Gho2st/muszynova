@@ -1,6 +1,6 @@
 // app/api/restaurant/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { handleApiError } from "@/lib/api-error";
 import { getRestaurant } from "@/lib/restaurant";
 import { updateRestaurantSchema } from "@/lib/validators";
@@ -22,7 +22,7 @@ export async function PATCH(request: NextRequest) {
     const body = await request.json();
     const data = updateRestaurantSchema.parse(body);
 
-    const updated = await prisma.restaurant.update({
+    const updated = await prismaRestaurant.restaurant.update({
       where: { id: restaurant.id },
       data,
     });
