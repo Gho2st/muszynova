@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
@@ -11,10 +11,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations({ locale, namespace: "metadata.blog" });
 
   const path = routing.pathnames["/blog"][locale];
+  const base = `https://${process.env.SITE_DOMAIN}`;
   const canonicalUrl =
-    locale === "pl"
-      ? `https://muszynova.pl${path}`
-      : `https://muszynova.pl/${locale}${path}`;
+    locale === "pl" ? `${base}${path}` : `${base}/${locale}${path}`;
 
   return {
     title: t("title"),
@@ -26,23 +25,23 @@ export async function generateMetadata({ params }) {
 async function getPosts(locale, page = 1) {
   const skip = (page - 1) * PER_PAGE;
 
+  const where = {
+    locale,
+    post: {
+      status: "published",
+      site: { domain: process.env.SITE_DOMAIN },
+    },
+  };
+
   const [translations, total] = await Promise.all([
     prisma.postTranslation.findMany({
-      where: {
-        locale,
-        post: { status: "published" },
-      },
+      where,
       include: { post: true },
       orderBy: { post: { publishedAt: "desc" } },
       skip,
       take: PER_PAGE,
     }),
-    prisma.postTranslation.count({
-      where: {
-        locale,
-        post: { status: "published" },
-      },
-    }),
+    prisma.postTranslation.count({ where }),
   ]);
 
   return {

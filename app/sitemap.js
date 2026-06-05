@@ -11,7 +11,7 @@ const LOCALE_PATHS = {
 
 export default async function sitemap() {
   const posts = await prisma.post.findMany({
-    where: { status: "published" },
+    where: { status: "published", site: { domain: process.env.SITE_DOMAIN } },
     include: { translations: true },
     orderBy: { publishedAt: "desc" },
   });

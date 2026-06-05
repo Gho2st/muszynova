@@ -1,14 +1,26 @@
 import { NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
+
+const SITE_DOMAIN = process.env.SITE_DOMAIN;
+
+// Zwraca id bieżącego site (z SITE_DOMAIN) albo null, jeśli nie skonfigurowano.
+async function getSiteId() {
+  const site = await prisma.site.findUnique({
+    where: { domain: SITE_DOMAIN },
+    select: { id: true },
+  });
+  return site?.id ?? null;
+}
 
 export async function GET() {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
   const posts = await prisma.post.findMany({
+    where: { site: { domain: SITE_DOMAIN } }, // tylko wpisy tego site
     orderBy: { createdAt: "desc" },
     include: { translations: true },
   });
@@ -19,6 +31,13 @@ export async function GET() {
 export async function POST(req) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
+  const siteId = await getSiteId();
+  if (!siteId)
+    return NextResponse.json(
+      { error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.` },
+      { status: 500 },
+    );
 
   const body = await req.json();
   const {
@@ -58,6 +77,7 @@ export async function POST(req) {
   try {
     const post = await prisma.post.create({
       data: {
+        siteId, // ← FK do Site
         coverImage: coverImage || null,
         status: status || "draft",
         ctaPrimaryUrl: ctaPrimaryUrl || null,
@@ -72,6 +92,7 @@ export async function POST(req) {
           create: Object.entries(translations)
             .filter(([, t]) => t.title && t.content && t.slug)
             .map(([locale, t]) => ({
+              siteId, // ← scalar NOT NULL na PostTranslation
               locale,
               slug: t.slug,
               title: t.title,

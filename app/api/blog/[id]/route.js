@@ -1,8 +1,18 @@
 import { NextResponse } from "next/server";
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
+
+const SITE_DOMAIN = process.env.SITE_DOMAIN;
+
+async function getSiteId() {
+  const site = await prisma.site.findUnique({
+    where: { domain: SITE_DOMAIN },
+    select: { id: true },
+  });
+  return site?.id ?? null;
+}
 
 export async function GET(req, { params }) {
   if (!(await requireAdmin()))
@@ -10,8 +20,9 @@ export async function GET(req, { params }) {
 
   const { id } = await params;
 
-  const post = await prisma.post.findUnique({
-    where: { id: parseInt(id) },
+  // findFirst + filtr na site: post z innego site zwróci 404, a nie cudze dane
+  const post = await prisma.post.findFirst({
+    where: { id: parseInt(id), site: { domain: SITE_DOMAIN } },
     include: { translations: true },
   });
 
@@ -24,7 +35,24 @@ export async function PUT(req, { params }) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
+  const siteId = await getSiteId();
+  if (!siteId)
+    return NextResponse.json(
+      { error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.` },
+      { status: 500 },
+    );
+
   const { id } = await params;
+  const postId = parseInt(id);
+
+  // Sprawdź, że post należy do tego site — zanim cokolwiek zmienimy
+  const owned = await prisma.post.findFirst({
+    where: { id: postId, siteId },
+    select: { id: true },
+  });
+  if (!owned)
+    return NextResponse.json({ error: "Nie znaleziono" }, { status: 404 });
+
   const body = await req.json();
   const {
     coverImage,
@@ -62,7 +90,7 @@ export async function PUT(req, { params }) {
 
   try {
     const post = await prisma.post.update({
-      where: { id: parseInt(id) },
+      where: { id: postId },
       data: {
         coverImage: coverImage || null,
         status,
@@ -96,6 +124,7 @@ export async function PUT(req, { params }) {
               ...sourceHashes,
             },
             create: {
+              siteId, // ← scalar NOT NULL na PostTranslation
               postId: post.id,
               locale,
               slug: t.slug,
@@ -144,16 +173,18 @@ export async function DELETE(req, { params }) {
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
   const { id } = await params;
+  const postId = parseInt(id);
 
-  const post = await prisma.post.findUnique({
-    where: { id: parseInt(id) },
+  // findFirst + filtr na site: nie da się usunąć cudzego wpisu
+  const post = await prisma.post.findFirst({
+    where: { id: postId, site: { domain: SITE_DOMAIN } },
     include: { translations: { select: { locale: true, slug: true } } },
   });
 
   if (!post)
     return NextResponse.json({ error: "Nie znaleziono" }, { status: 404 });
 
-  await prisma.post.delete({ where: { id: parseInt(id) } });
+  await prisma.post.delete({ where: { id: postId } });
 
   revalidatePath("/blog");
   post.translations.forEach((t) => {

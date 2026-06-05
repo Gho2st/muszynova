@@ -1,26 +1,15 @@
-// lib/prisma.ts
-import { PrismaClient } from "@prisma/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
-
-const connectionString = process.env.DATABASE_URL;
-
-if (!connectionString) {
-  throw new Error(
-    "❌ DATABASE_URL nie jest zdefiniowana! Sprawdź plik .env i czy Next.js go ładuje.",
-  );
-}
-
-const adapter = new PrismaNeon({ connectionString });
+import { PrismaClient } from "../generated/prisma/client"; // ← ścieżka z output, NIE @prisma/client
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
 };
 
-export const prisma =
-  globalForPrisma.prisma ??
-  new PrismaClient({
-    adapter,
-  });
+const adapter = new PrismaNeon({
+  connectionString: process.env.DATABASE_URL, // POOLED (...-pooler...)
+});
+
+export const prisma = globalForPrisma.prisma ?? new PrismaClient({ adapter });
 
 if (process.env.NODE_ENV !== "production") {
   globalForPrisma.prisma = prisma;

@@ -6,7 +6,13 @@ import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
 import { deepseekChat } from "@/lib/deepseek";
 
-const LOCALES = { en: "English", sk: "Slovak", ua: "Ukrainian", de: "German" };
+const LOCALES = {
+  ar: "Arabic",
+  de: "German",
+  en: "English",
+  es: "Spanish",
+  hu: "Hungarian",
+};
 
 function buildSchema(requestedFields) {
   const shape = {};

@@ -4,9 +4,15 @@ import { notFound } from "next/navigation";
 import prisma from "@/lib/prisma";
 import { getTranslations } from "next-intl/server";
 
+const DOMAIN = process.env.SITE_DOMAIN;
+
 async function getPost(slug, locale) {
   const translation = await prisma.postTranslation.findFirst({
-    where: { slug, locale, post: { status: "published" } },
+    where: {
+      slug,
+      locale,
+      post: { status: "published", site: { domain: DOMAIN } },
+    },
     include: { post: true },
   });
 
