@@ -13,7 +13,7 @@ export default function MenuButtons({ className = "" }) {
   if (locale === "pl") {
     menuItems = [{ text: t("button"), link: "/menu-pl.pdf" }];
   } else if (locale === "en") {
-    menuItems = [{ text: t("button"), link: "/menu-en.pdf" }];
+    menuItems = [{ text: t("button"), link: "/menu-eng.pdf" }];
   } else if (locale === "sk") {
     menuItems = [{ text: t("button"), link: "/menu-sk.pdf" }];
   } else {
