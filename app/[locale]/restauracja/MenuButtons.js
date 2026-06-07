@@ -10,6 +10,7 @@ export default function MenuButtons({ className = "" }) {
 
   let menuItems = [];
 
+  // linki zalezne od locale
   if (locale === "pl") {
     menuItems = [{ text: t("button"), link: "/menu-pl.pdf" }];
   } else if (locale === "en") {
