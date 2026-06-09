@@ -5,7 +5,6 @@ export default function Modal() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Modal pokazuje się tylko do końca dnia 17 maja 2026
     const now = new Date();
     const endDate = new Date("2026-05-31T00:00:00");
 
@@ -49,10 +48,10 @@ export default function Modal() {
             Informacja
           </h2>
           <p className="text-gray-600 mb-2 leading-relaxed">
-            W Maju restauracja czynna wtorek-niedziela 12:00 - 21:00
+            16-17 czerwiec 2026 restauracja nieczynna.
           </p>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            W dniu 27.05 restauracja nieczynna.
+            Przepraszamy za utrudnienia.
           </p>
 
           <button
