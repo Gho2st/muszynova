@@ -6,7 +6,7 @@ export default function Modal() {
 
   useEffect(() => {
     const now = new Date();
-    const endDate = new Date("2026-05-31T00:00:00");
+    const endDate = new Date("2026-08-31T00:00:00");
 
     if (now < endDate) {
       setIsOpen(true);
