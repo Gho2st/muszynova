@@ -1,4 +1,4 @@
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 
 const baseUrl = "https://muszynova.pl";
 
@@ -11,7 +11,10 @@ const LOCALE_PATHS = {
 
 export default async function sitemap() {
   const posts = await prisma.post.findMany({
-    where: { status: "published", site: { domain: process.env.SITE_DOMAIN } },
+    where: {
+      status: "published",
+      site: { domain: process.env.SITE_DOMAIN },
+    },
     include: { translations: true },
     orderBy: { publishedAt: "desc" },
   });
@@ -23,6 +26,7 @@ export default async function sitemap() {
 
     const languages = {
       "x-default": `${baseUrl}/blog/${plTranslation.slug}`,
+      pl: `${baseUrl}/blog/${plTranslation.slug}`,
     };
 
     post.translations.forEach((t) => {
@@ -330,19 +334,6 @@ export default async function sitemap() {
       },
     },
     {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          "x-default": `${baseUrl}/blog`,
-          en: `${baseUrl}/en/blog`,
-          sk: `${baseUrl}/sk/blog`,
-          ua: `${baseUrl}/ua/blog`,
-          de: `${baseUrl}/de/blog`,
-        },
-      },
-    },
-    {
       url: `${baseUrl}/polityka-cookies`,
       lastModified: new Date(),
       alternates: {
@@ -355,6 +346,20 @@ export default async function sitemap() {
         },
       },
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          "x-default": `${baseUrl}/blog`,
+          en: `${baseUrl}/en/blog`,
+          sk: `${baseUrl}/sk/blog`,
+          ua: `${baseUrl}/ua/blog`,
+          de: `${baseUrl}/de/blog`,
+        },
+      },
+    },
+
     ...blogPostEntries,
   ];
 }
