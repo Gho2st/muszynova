@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
 
 const SITE_DOMAIN = process.env.SITE_DOMAIN;
 
-// Zwraca id bieżącego site (z SITE_DOMAIN) albo null, jeśli nie skonfigurowano.
-async function getSiteId() {
+async function getSiteId(prisma) {
   const site = await prisma.site.findUnique({
     where: { domain: SITE_DOMAIN },
     select: { id: true },
@@ -15,12 +14,24 @@ async function getSiteId() {
   return site?.id ?? null;
 }
 
+function revalidatePost(translations = []) {
+  revalidatePath("/blog", "page");
+  revalidatePath("/[locale]/blog", "page");
+  revalidateTag("blog");
+
+  translations.forEach((t) => {
+    const prefix = t.locale === "pl" ? "" : `/${t.locale}`;
+    revalidatePath(`${prefix}/blog/${t.slug}`, "page");
+    revalidatePath(`/blog/${t.slug}`, "page");
+  });
+}
+
 export async function GET() {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
   const posts = await prisma.post.findMany({
-    where: { site: { domain: SITE_DOMAIN } }, // tylko wpisy tego site
+    where: { site: { domain: SITE_DOMAIN } },
     orderBy: { createdAt: "desc" },
     include: { translations: true },
   });
@@ -32,12 +43,15 @@ export async function POST(req) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
-  const siteId = await getSiteId();
-  if (!siteId)
+  const siteId = await getSiteId(prisma);
+  if (!siteId) {
     return NextResponse.json(
-      { error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.` },
+      {
+        error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.`,
+      },
       { status: 500 },
     );
+  }
 
   const body = await req.json();
   const {
@@ -60,7 +74,6 @@ export async function POST(req) {
     );
   }
 
-  // hashe źródła PL — wspólne dla wszystkich tłumaczeń
   const pl = translations.pl;
   const sourceHashes = {
     sourceHashTitle: hash(pl.title),
@@ -77,7 +90,7 @@ export async function POST(req) {
   try {
     const post = await prisma.post.create({
       data: {
-        siteId, // ← FK do Site
+        siteId,
         coverImage: coverImage || null,
         status: status || "draft",
         ctaPrimaryUrl: ctaPrimaryUrl || null,
@@ -92,7 +105,7 @@ export async function POST(req) {
           create: Object.entries(translations)
             .filter(([, t]) => t.title && t.content && t.slug)
             .map(([locale, t]) => ({
-              siteId, // ← scalar NOT NULL na PostTranslation
+              siteId,
               locale,
               slug: t.slug,
               title: t.title,
@@ -109,11 +122,7 @@ export async function POST(req) {
       include: { translations: true },
     });
 
-    revalidatePath("/blog");
-    post.translations.forEach((t) => {
-      const prefix = t.locale === "pl" ? "" : `/${t.locale}`;
-      revalidatePath(`${prefix}/blog/${t.slug}`);
-    });
+    revalidatePost(post.translations);
 
     return NextResponse.json(post, { status: 201 });
   } catch (err) {

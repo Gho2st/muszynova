@@ -1,12 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import prisma from "@/lib/prisma";
 import { getTranslations } from "next-intl/server";
+import { prisma } from "@/lib/prisma";
+import { cache } from "react";
 
 const DOMAIN = process.env.SITE_DOMAIN;
 
-async function getPost(slug, locale) {
+export const revalidate = 86400; // 24h
+
+const getPost = cache(async (slug, locale) => {
+  console.log(
+    `📡 [${new Date().toISOString()}] DB HIT wpis — ${locale}/${slug}`,
+  );
+
   const translation = await prisma.postTranslation.findFirst({
     where: {
       slug,
@@ -17,6 +24,7 @@ async function getPost(slug, locale) {
   });
 
   if (!translation) return null;
+
   return {
     id: translation.post.id,
     slug: translation.slug,
@@ -34,11 +42,15 @@ async function getPost(slug, locale) {
     ctaPrimaryUrl: translation.post.ctaPrimaryUrl,
     ctaSecondaryUrl: translation.post.ctaSecondaryUrl,
   };
-}
+});
 
-async function getAllTranslationsForPost(slug, locale) {
+const getAllTranslationsForPost = cache(async (slug, locale) => {
   const translation = await prisma.postTranslation.findFirst({
-    where: { slug, locale, post: { status: "published" } },
+    where: {
+      slug,
+      locale,
+      post: { status: "published", site: { domain: DOMAIN } },
+    },
     include: {
       post: {
         include: { translations: { select: { locale: true, slug: true } } },
@@ -46,14 +58,14 @@ async function getAllTranslationsForPost(slug, locale) {
     },
   });
   return translation?.post.translations ?? [];
-}
+});
 
-async function getLatestPosts(currentSlug, locale, limit = 3) {
+const getLatestPosts = cache(async (currentSlug, locale, limit = 3) => {
   const translations = await prisma.postTranslation.findMany({
     where: {
       locale,
       slug: { not: currentSlug },
-      post: { status: "published" },
+      post: { status: "published", site: { domain: DOMAIN } },
     },
     include: { post: true },
     orderBy: { post: { publishedAt: "desc" } },
@@ -68,7 +80,7 @@ async function getLatestPosts(currentSlug, locale, limit = 3) {
     coverImage: t.post.coverImage,
     publishedAt: t.post.publishedAt,
   }));
-}
+});
 
 function calculateReadingTime(html) {
   const text = html.replace(/<[^>]+>/g, " ");
@@ -95,7 +107,7 @@ export async function generateMetadata({ params }) {
       : `/${currentLocale}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | Blog Muszynova`,
+    title: `${post.title} | Blog TrioTravel`,
     description: post.excerpt || "",
     openGraph: {
       title: post.title,
@@ -126,8 +138,8 @@ export default async function BlogPostPage({ params }) {
     image: post.coverImage || "",
     datePublished: post.publishedAt || post.createdAt,
     dateModified: post.updatedAt,
-    author: { "@type": "Organization", name: "Muszynova" },
-    publisher: { "@type": "Organization", name: "Muszynova" },
+    author: { "@type": "Organization", name: "TrioTravel" },
+    publisher: { "@type": "Organization", name: "TrioTravel" },
   };
 
   return (
@@ -270,7 +282,7 @@ export default async function BlogPostPage({ params }) {
         {/* Autor */}
         <div className="flex items-center gap-4 py-6 border-t border-b border-gray-100 my-8">
           <div className="w-12 h-12 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-sm font-medium shrink-0">
-            MZ
+            TT
           </div>
           <div>
             <p className="text-sm font-medium text-gray-900">{t("team.1")}</p>

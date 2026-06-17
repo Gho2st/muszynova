@@ -1,24 +1,22 @@
 import { NextResponse } from "next/server";
-import { generateObject, generateText } from "ai";
-import { z } from "zod";
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
+import { generateObject, generateText } from "ai";
+import { z } from "zod";
 import { deepseekChat } from "@/lib/deepseek";
 
 const LOCALES = {
-  ar: "Arabic",
-  de: "German",
+  uk: "Ukrainian",
+  sk: "Slovak",
   en: "English",
-  es: "Spanish",
-  hu: "Hungarian",
+  de: "German",
 };
 
 function buildSchema(requestedFields) {
   const shape = {};
-  if (requestedFields.includes("title")) {
+  if (requestedFields.includes("title"))
     shape.title = z.string().describe("Translated title");
-  }
   if (requestedFields.includes("slug")) {
     shape.slug = z
       .string()
@@ -26,25 +24,20 @@ function buildSchema(requestedFields) {
         "SEO URL slug in target language: 3-6 words, lowercase, hyphens, no diacritics, no stop-words, main keyword.",
       );
   }
-  if (requestedFields.includes("excerpt")) {
+  if (requestedFields.includes("excerpt"))
     shape.excerpt = z.string().describe("Translated excerpt");
-  }
-  if (requestedFields.includes("ctaTitle")) {
+  if (requestedFields.includes("ctaTitle"))
     shape.ctaTitle = z.string().describe("Translated CTA title");
-  }
-  if (requestedFields.includes("ctaDescription")) {
+  if (requestedFields.includes("ctaDescription"))
     shape.ctaDescription = z.string().describe("Translated CTA description");
-  }
-  if (requestedFields.includes("ctaPrimaryLabel")) {
+  if (requestedFields.includes("ctaPrimaryLabel"))
     shape.ctaPrimaryLabel = z
       .string()
       .describe("Translated primary button label");
-  }
-  if (requestedFields.includes("ctaSecondaryLabel")) {
+  if (requestedFields.includes("ctaSecondaryLabel"))
     shape.ctaSecondaryLabel = z
       .string()
       .describe("Translated secondary button label");
-  }
   return z.object(shape);
 }
 
@@ -81,14 +74,16 @@ function stripCodeFences(text) {
 }
 
 export async function POST(req) {
-  if (!(await requireAdmin()))
+  if (!(await requireAdmin())) {
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+  }
 
-  if (!process.env.DEEPSEEK_API_KEY)
+  if (!process.env.DEEPSEEK_API_KEY) {
     return NextResponse.json(
-      { error: "Brak klucza DEEPSEEK_API_KEY w .env" },
+      { error: "Brak klucza DEEPSEEK_API_KEY" },
       { status: 500 },
     );
+  }
 
   let body;
   try {
@@ -112,13 +107,13 @@ export async function POST(req) {
     ctaSecondaryLabel,
   } = body;
 
-  if (!title || !content)
+  if (!title || !content) {
     return NextResponse.json(
       { error: "Brakuje tytułu lub treści" },
       { status: 400 },
     );
+  }
 
-  // hash aktualnych pól PL
   const currentHashes = {
     title: hash(title),
     excerpt: hash(excerpt || ""),
@@ -126,7 +121,6 @@ export async function POST(req) {
     cta: hashCta(ctaTitle, ctaDescription, ctaPrimaryLabel, ctaSecondaryLabel),
   };
 
-  // pobierz istniejące tłumaczenia (do porównania hashów)
   let existingTranslations = [];
   if (postId && !force) {
     existingTranslations = await prisma.postTranslation.findMany({
@@ -158,7 +152,6 @@ export async function POST(req) {
       try {
         const existing = existingTranslations.find((t) => t.locale === locale);
 
-        // zdecyduj które pola wymagają tłumaczenia
         const fieldsToTranslate = {};
 
         if (force || !existing) {
@@ -203,12 +196,9 @@ export async function POST(req) {
           return;
         }
 
-        // slug zawsze tłumaczymy gdy zmienia się tytuł
         const needSlug = fieldsToTranslate.title;
 
-        // ============================================================
-        // CALL 1: krótkie pola przez generateObject (z schemą)
-        // ============================================================
+        // Short fields (title, slug, excerpt, cta)
         const shortRequestedFields = [];
         if (fieldsToTranslate.title) shortRequestedFields.push("title");
         if (needSlug) shortRequestedFields.push("slug");
@@ -240,8 +230,6 @@ export async function POST(req) {
 
           const shortSchema = buildSchema(shortRequestedFields);
 
-          // Eskalacja parametrów przy retry — DeepSeek bywa kapryśny
-          // dla nielacińskich i aglutynacyjnych języków (ar, hu).
           const callShortFields = (attempt = 1) =>
             generateObject({
               model: deepseekChat,
@@ -254,11 +242,8 @@ export async function POST(req) {
 
 CRITICAL OUTPUT RULES:
 - Output MUST be a single valid JSON object, nothing else.
-- No markdown code fences. No commentary before or after.
-- Escape all double quotes inside string values as \\".
-- For slug: SEO 3-6 words, lowercase, hyphens, ASCII only (transliterate from ${language} if needed).
-
-Required keys (exactly these, nothing else): ${shortRequestedFields.join(", ")}.`,
+- No markdown code fences.
+- Required keys: ${shortRequestedFields.join(", ")}.`,
               prompt: shortParts.join("\n\n"),
             });
 
@@ -266,22 +251,14 @@ Required keys (exactly these, nothing else): ${shortRequestedFields.join(", ")}.
             const { object } = await callShortFields(1);
             shortFieldsResult = object;
           } catch (firstErr) {
-            console.warn(
-              `[translate] retry short fields dla locale ${locale} po błędzie:`,
-              firstErr.message,
-            );
+            console.warn(`[translate] retry short fields ${locale}`);
             const { object } = await callShortFields(2);
             shortFieldsResult = object;
           }
         }
 
-        // ============================================================
-        // CALL 2: content jako czysty tekst (HTML) przez generateText
-        // To eliminuje problemy z escapowaniem cudzysłowów w HTML
-        // i pozwala na duży maxTokens bez ryzyka uciętego JSON-a.
-        // ============================================================
+        // Content (HTML)
         let translatedContent = "";
-
         if (fieldsToTranslate.content) {
           const callContent = (attempt = 1) =>
             generateText({
@@ -291,11 +268,9 @@ Required keys (exactly these, nothing else): ${shortRequestedFields.join(", ")}.
               system: `You are a professional translator. Translate the following Polish HTML content to ${language}.
 
 CRITICAL RULES:
-- Keep ALL HTML tags, attributes, and structure completely intact and unchanged.
-- Translate only the visible text content between tags.
-- Do NOT add any preamble, commentary, or markdown code fences.
-- Do NOT wrap the output in \`\`\`html or any other fences.
-- Return ONLY the translated HTML, starting directly with the first tag or text.`,
+- Keep ALL HTML tags intact.
+- Translate only the visible text.
+- Return ONLY the translated HTML.`,
               prompt: content,
             });
 
@@ -303,18 +278,12 @@ CRITICAL RULES:
             const { text } = await callContent(1);
             translatedContent = stripCodeFences(text);
           } catch (firstErr) {
-            console.warn(
-              `[translate] retry content dla locale ${locale} po błędzie:`,
-              firstErr.message,
-            );
+            console.warn(`[translate] retry content ${locale}`);
             const { text } = await callContent(2);
             translatedContent = stripCodeFences(text);
           }
         }
 
-        // ============================================================
-        // Złóż wynik: zmienione pola z AI + niezmienione z istniejącego
-        // ============================================================
         results[locale] = {
           title: fieldsToTranslate.title
             ? shortFieldsResult.title || ""
@@ -346,7 +315,7 @@ CRITICAL RULES:
             .map(([k]) => k),
         };
       } catch (err) {
-        console.error(`[translate] Błąd dla locale ${locale}:`, err.message);
+        console.error(`[translate] Błąd dla ${locale}:`, err.message);
         errors[locale] = err.message;
         results[locale] = {
           title: "",
@@ -361,14 +330,6 @@ CRITICAL RULES:
       }
     }),
   );
-
-  const hasAnyResult = Object.values(results).some((r) => r.title || r.content);
-  if (!hasAnyResult && Object.keys(skipped).length === 0) {
-    return NextResponse.json(
-      { error: "Tłumaczenie nie powiodło się dla żadnego języka", errors },
-      { status: 502 },
-    );
-  }
 
   return NextResponse.json({
     results,

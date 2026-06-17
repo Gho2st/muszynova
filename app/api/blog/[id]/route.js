@@ -1,17 +1,30 @@
 import { NextResponse } from "next/server";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { prisma } from "@/lib/prisma";
-import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
 
 const SITE_DOMAIN = process.env.SITE_DOMAIN;
 
-async function getSiteId() {
+async function getSiteId(prisma) {
   const site = await prisma.site.findUnique({
     where: { domain: SITE_DOMAIN },
     select: { id: true },
   });
   return site?.id ?? null;
+}
+
+// Natychmiastowa rewalidacja po zmianie (żeby admin dodając post, użytkownik od razu go widział)
+function revalidatePost(translations) {
+  revalidatePath("/blog");
+  revalidateTag("blog");
+
+  if (translations?.length) {
+    translations.forEach((t) => {
+      const prefix = t.locale === "pl" ? "" : `/${t.locale}`;
+      revalidatePath(`${prefix}/blog/${t.slug}`);
+    });
+  }
 }
 
 export async function GET(req, { params }) {
@@ -20,7 +33,6 @@ export async function GET(req, { params }) {
 
   const { id } = await params;
 
-  // findFirst + filtr na site: post z innego site zwróci 404, a nie cudze dane
   const post = await prisma.post.findFirst({
     where: { id: parseInt(id), site: { domain: SITE_DOMAIN } },
     include: { translations: true },
@@ -28,6 +40,7 @@ export async function GET(req, { params }) {
 
   if (!post)
     return NextResponse.json({ error: "Nie znaleziono" }, { status: 404 });
+
   return NextResponse.json(post);
 }
 
@@ -35,17 +48,17 @@ export async function PUT(req, { params }) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
-  const siteId = await getSiteId();
-  if (!siteId)
+  const siteId = await getSiteId(prisma);
+  if (!siteId) {
     return NextResponse.json(
-      { error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.` },
+      { error: `Brak Site dla domeny "${SITE_DOMAIN}"` },
       { status: 500 },
     );
+  }
 
   const { id } = await params;
   const postId = parseInt(id);
 
-  // Sprawdź, że post należy do tego site — zanim cokolwiek zmienimy
   const owned = await prisma.post.findFirst({
     where: { id: postId, siteId },
     select: { id: true },
@@ -74,7 +87,6 @@ export async function PUT(req, { params }) {
     );
   }
 
-  // hashe źródła PL — to z czego zostały zrobione tłumaczenia
   const pl = translations.pl;
   const sourceHashes = {
     sourceHashTitle: hash(pl.title),
@@ -124,7 +136,7 @@ export async function PUT(req, { params }) {
               ...sourceHashes,
             },
             create: {
-              siteId, // ← scalar NOT NULL na PostTranslation
+              siteId,
               postId: post.id,
               locale,
               slug: t.slug,
@@ -141,27 +153,20 @@ export async function PUT(req, { params }) {
         ),
     );
 
-    revalidatePath("/blog");
-    Object.entries(translations).forEach(([locale, t]) => {
-      if (!t.slug) return;
-      const prefix = locale === "pl" ? "" : `/${locale}`;
-      revalidatePath(`${prefix}/blog/${t.slug}`);
-    });
+    revalidatePost(post.translations || []); // ← natychmiastowe odświeżenie
 
     const updatedPost = await prisma.post.findUnique({
       where: { id: post.id },
       include: { translations: true },
     });
+
     return NextResponse.json(updatedPost);
   } catch (err) {
     if (err.code === "P2002") {
       return NextResponse.json(
-        { error: "Slug już istnieje w jednym z języków. Wybierz inny." },
+        { error: "Slug już istnieje w jednym z języków" },
         { status: 409 },
       );
-    }
-    if (err.code === "P2025") {
-      return NextResponse.json({ error: "Nie znaleziono" }, { status: 404 });
     }
     console.error("[PUT /api/blog/[id]]", err);
     return NextResponse.json({ error: "Błąd zapisu" }, { status: 500 });
@@ -175,7 +180,6 @@ export async function DELETE(req, { params }) {
   const { id } = await params;
   const postId = parseInt(id);
 
-  // findFirst + filtr na site: nie da się usunąć cudzego wpisu
   const post = await prisma.post.findFirst({
     where: { id: postId, site: { domain: SITE_DOMAIN } },
     include: { translations: { select: { locale: true, slug: true } } },
@@ -186,11 +190,7 @@ export async function DELETE(req, { params }) {
 
   await prisma.post.delete({ where: { id: postId } });
 
-  revalidatePath("/blog");
-  post.translations.forEach((t) => {
-    const prefix = t.locale === "pl" ? "" : `/${t.locale}`;
-    revalidatePath(`${prefix}/blog/${t.slug}`);
-  });
+  revalidatePost(post.translations); // ← natychmiastowe odświeżenie
 
   return NextResponse.json({ success: true });
 }

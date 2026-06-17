@@ -15,9 +15,10 @@ import RichEditor from "@/app/UI/Blog/RichEditor";
 const LOCALES = [
   { code: "pl", label: "Polski", flag: "🇵🇱" },
   { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "sk", label: "Slovenčina", flag: "🇸🇰" },
-  { code: "ua", label: "Українська", flag: "🇺🇦" },
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "hu", label: "Magyar", flag: "🇭🇺" },
+  { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "ar", label: "العربية", flag: "🇸🇦" },
 ];
 
 function generateSlug(title) {
@@ -75,10 +76,18 @@ function BlogList({ onNew, onEdit }) {
 
   const fetchPosts = async () => {
     setLoading(true);
-    const res = await fetch("/api/blog");
-    const data = await res.json();
-    setPosts(Array.isArray(data) ? data : []);
-    setLoading(false);
+    try {
+      const res = await fetch("/api/blog", {
+        cache: "no-store",
+        next: { revalidate: 0 },
+      });
+      const data = await res.json();
+      setPosts(Array.isArray(data) ? data : []);
+    } catch (err) {
+      toast.error("Błąd pobierania listy");
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
