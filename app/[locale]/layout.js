@@ -7,7 +7,7 @@ import Footer from "../UI/Footer/Footer";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
-import Modal from "../UI/Modal";
+// import Modal from "../UI/Modal";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { ToastContainer } from "react-toastify";
@@ -72,7 +72,7 @@ export default async function LocaleLayout({ children, params }) {
           />
           <Nav />
           <CookieConsent />
-          <Modal />
+          {/* <Modal /> */}
           <main>{children}</main>
           <Footer />
           <GoogleTagManager gtmId="GTM-TR69S642" />
