@@ -16,20 +16,26 @@ import {
 import { IoLogoGoogle, IoIosArrowUp } from "react-icons/io";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   const [showArrow, setShowArrow] = useState(false);
   const [isParkOpen, setIsParkOpen] = useState(false);
   const [isGymOpen, setIsGymOpen] = useState(false);
   const [isRestaurantOpen, setIsRestaurantOpen] = useState(false);
-
-  const t = useTranslations("footer");
+  const [restaurantHours, setRestaurantHours] = useState("12:00 – 21:00");
 
   const checkStatuses = () => {
     const now = new Date();
     const hour = now.getHours();
+    const day = now.getDay(); // 0 = niedziela ... 5 = piątek, 6 = sobota
+
+    const isWeekend = day === 5 || day === 6;
+    const restaurantClose = isWeekend ? 23 : 21;
 
     setIsParkOpen(hour >= 11 && hour < 21);
     setIsGymOpen(hour >= 8 && hour < 21);
-    setIsRestaurantOpen(hour >= 12 && hour < 21);
+    setIsRestaurantOpen(hour >= 12 && hour < restaurantClose);
+    setRestaurantHours(isWeekend ? "12:00 – 23:00" : "12:00 – 21:00");
   };
 
   useEffect(() => {
@@ -68,7 +74,6 @@ export default function Footer() {
     <footer className="bg-customGreen text-white pt-16 pb-8 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 mb-16">
-          {/* MARKA */}
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight">{t("header")}</h2>
             <p className="text-gray-400 leading-relaxed text-sm max-w-sm">
@@ -181,7 +186,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex flex-col py-2.5">
+              <div className="flex flex-col py-2.5 gap-2">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-300"> {t("hours.3")}</span>
                   <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/15">
@@ -190,8 +195,12 @@ export default function Footer() {
                         isRestaurantOpen ? "text-green-500" : "text-red-500"
                       }`}
                     />
-                    <span className="font-medium">12:00 – 21:00</span>
+                    <span className="font-medium">{restaurantHours}</span>
                   </div>
+                </div>
+                <div className="flex flex-col gap-1 text-xs text-gray-400 pl-1">
+                  <span>Pt – Sob: 12:00 – 23:00</span>
+                  <span>Pozostałe dni: 12:00 – 21:00</span>
                 </div>
               </div>
             </div>
