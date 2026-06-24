@@ -36,7 +36,6 @@ export type PostSumAggregateOutputType = {
 
 export type PostMinAggregateOutputType = {
   id: number | null
-  siteId: string | null
   coverImage: string | null
   status: string | null
   publishedAt: Date | null
@@ -48,7 +47,6 @@ export type PostMinAggregateOutputType = {
 
 export type PostMaxAggregateOutputType = {
   id: number | null
-  siteId: string | null
   coverImage: string | null
   status: string | null
   publishedAt: Date | null
@@ -60,7 +58,6 @@ export type PostMaxAggregateOutputType = {
 
 export type PostCountAggregateOutputType = {
   id: number
-  siteId: number
   coverImage: number
   status: number
   publishedAt: number
@@ -82,7 +79,6 @@ export type PostSumAggregateInputType = {
 
 export type PostMinAggregateInputType = {
   id?: true
-  siteId?: true
   coverImage?: true
   status?: true
   publishedAt?: true
@@ -94,7 +90,6 @@ export type PostMinAggregateInputType = {
 
 export type PostMaxAggregateInputType = {
   id?: true
-  siteId?: true
   coverImage?: true
   status?: true
   publishedAt?: true
@@ -106,7 +101,6 @@ export type PostMaxAggregateInputType = {
 
 export type PostCountAggregateInputType = {
   id?: true
-  siteId?: true
   coverImage?: true
   status?: true
   publishedAt?: true
@@ -205,7 +199,6 @@ export type PostGroupByArgs<ExtArgs extends runtime.Types.Extensions.InternalArg
 
 export type PostGroupByOutputType = {
   id: number
-  siteId: string
   coverImage: string | null
   status: string
   publishedAt: Date | null
@@ -240,7 +233,6 @@ export type PostWhereInput = {
   OR?: Prisma.PostWhereInput[]
   NOT?: Prisma.PostWhereInput | Prisma.PostWhereInput[]
   id?: Prisma.IntFilter<"Post"> | number
-  siteId?: Prisma.StringFilter<"Post"> | string
   coverImage?: Prisma.StringNullableFilter<"Post"> | string | null
   status?: Prisma.StringFilter<"Post"> | string
   publishedAt?: Prisma.DateTimeNullableFilter<"Post"> | Date | string | null
@@ -248,13 +240,11 @@ export type PostWhereInput = {
   updatedAt?: Prisma.DateTimeFilter<"Post"> | Date | string
   ctaPrimaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
   ctaSecondaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
-  site?: Prisma.XOR<Prisma.SiteScalarRelationFilter, Prisma.SiteWhereInput>
   translations?: Prisma.PostTranslationListRelationFilter
 }
 
 export type PostOrderByWithRelationInput = {
   id?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   coverImage?: Prisma.SortOrderInput | Prisma.SortOrder
   status?: Prisma.SortOrder
   publishedAt?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -262,7 +252,6 @@ export type PostOrderByWithRelationInput = {
   updatedAt?: Prisma.SortOrder
   ctaPrimaryUrl?: Prisma.SortOrderInput | Prisma.SortOrder
   ctaSecondaryUrl?: Prisma.SortOrderInput | Prisma.SortOrder
-  site?: Prisma.SiteOrderByWithRelationInput
   translations?: Prisma.PostTranslationOrderByRelationAggregateInput
 }
 
@@ -271,7 +260,6 @@ export type PostWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.PostWhereInput | Prisma.PostWhereInput[]
   OR?: Prisma.PostWhereInput[]
   NOT?: Prisma.PostWhereInput | Prisma.PostWhereInput[]
-  siteId?: Prisma.StringFilter<"Post"> | string
   coverImage?: Prisma.StringNullableFilter<"Post"> | string | null
   status?: Prisma.StringFilter<"Post"> | string
   publishedAt?: Prisma.DateTimeNullableFilter<"Post"> | Date | string | null
@@ -279,13 +267,11 @@ export type PostWhereUniqueInput = Prisma.AtLeast<{
   updatedAt?: Prisma.DateTimeFilter<"Post"> | Date | string
   ctaPrimaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
   ctaSecondaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
-  site?: Prisma.XOR<Prisma.SiteScalarRelationFilter, Prisma.SiteWhereInput>
   translations?: Prisma.PostTranslationListRelationFilter
 }, "id">
 
 export type PostOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   coverImage?: Prisma.SortOrderInput | Prisma.SortOrder
   status?: Prisma.SortOrder
   publishedAt?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -305,7 +291,6 @@ export type PostScalarWhereWithAggregatesInput = {
   OR?: Prisma.PostScalarWhereWithAggregatesInput[]
   NOT?: Prisma.PostScalarWhereWithAggregatesInput | Prisma.PostScalarWhereWithAggregatesInput[]
   id?: Prisma.IntWithAggregatesFilter<"Post"> | number
-  siteId?: Prisma.StringWithAggregatesFilter<"Post"> | string
   coverImage?: Prisma.StringNullableWithAggregatesFilter<"Post"> | string | null
   status?: Prisma.StringWithAggregatesFilter<"Post"> | string
   publishedAt?: Prisma.DateTimeNullableWithAggregatesFilter<"Post"> | Date | string | null
@@ -323,13 +308,11 @@ export type PostCreateInput = {
   updatedAt?: Date | string
   ctaPrimaryUrl?: string | null
   ctaSecondaryUrl?: string | null
-  site: Prisma.SiteCreateNestedOneWithoutPostsInput
   translations?: Prisma.PostTranslationCreateNestedManyWithoutPostInput
 }
 
 export type PostUncheckedCreateInput = {
   id?: number
-  siteId: string
   coverImage?: string | null
   status?: string
   publishedAt?: Date | string | null
@@ -348,13 +331,11 @@ export type PostUpdateInput = {
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   ctaPrimaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  site?: Prisma.SiteUpdateOneRequiredWithoutPostsNestedInput
   translations?: Prisma.PostTranslationUpdateManyWithoutPostNestedInput
 }
 
 export type PostUncheckedUpdateInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   publishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
@@ -367,7 +348,6 @@ export type PostUncheckedUpdateInput = {
 
 export type PostCreateManyInput = {
   id?: number
-  siteId: string
   coverImage?: string | null
   status?: string
   publishedAt?: Date | string | null
@@ -389,7 +369,6 @@ export type PostUpdateManyMutationInput = {
 
 export type PostUncheckedUpdateManyInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
   publishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
@@ -399,19 +378,8 @@ export type PostUncheckedUpdateManyInput = {
   ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
 }
 
-export type PostListRelationFilter = {
-  every?: Prisma.PostWhereInput
-  some?: Prisma.PostWhereInput
-  none?: Prisma.PostWhereInput
-}
-
-export type PostOrderByRelationAggregateInput = {
-  _count?: Prisma.SortOrder
-}
-
 export type PostCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   coverImage?: Prisma.SortOrder
   status?: Prisma.SortOrder
   publishedAt?: Prisma.SortOrder
@@ -427,7 +395,6 @@ export type PostAvgOrderByAggregateInput = {
 
 export type PostMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   coverImage?: Prisma.SortOrder
   status?: Prisma.SortOrder
   publishedAt?: Prisma.SortOrder
@@ -439,7 +406,6 @@ export type PostMaxOrderByAggregateInput = {
 
 export type PostMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   coverImage?: Prisma.SortOrder
   status?: Prisma.SortOrder
   publishedAt?: Prisma.SortOrder
@@ -458,54 +424,20 @@ export type PostScalarRelationFilter = {
   isNot?: Prisma.PostWhereInput
 }
 
-export type PostCreateNestedManyWithoutSiteInput = {
-  create?: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput> | Prisma.PostCreateWithoutSiteInput[] | Prisma.PostUncheckedCreateWithoutSiteInput[]
-  connectOrCreate?: Prisma.PostCreateOrConnectWithoutSiteInput | Prisma.PostCreateOrConnectWithoutSiteInput[]
-  createMany?: Prisma.PostCreateManySiteInputEnvelope
-  connect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-}
-
-export type PostUncheckedCreateNestedManyWithoutSiteInput = {
-  create?: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput> | Prisma.PostCreateWithoutSiteInput[] | Prisma.PostUncheckedCreateWithoutSiteInput[]
-  connectOrCreate?: Prisma.PostCreateOrConnectWithoutSiteInput | Prisma.PostCreateOrConnectWithoutSiteInput[]
-  createMany?: Prisma.PostCreateManySiteInputEnvelope
-  connect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-}
-
-export type PostUpdateManyWithoutSiteNestedInput = {
-  create?: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput> | Prisma.PostCreateWithoutSiteInput[] | Prisma.PostUncheckedCreateWithoutSiteInput[]
-  connectOrCreate?: Prisma.PostCreateOrConnectWithoutSiteInput | Prisma.PostCreateOrConnectWithoutSiteInput[]
-  upsert?: Prisma.PostUpsertWithWhereUniqueWithoutSiteInput | Prisma.PostUpsertWithWhereUniqueWithoutSiteInput[]
-  createMany?: Prisma.PostCreateManySiteInputEnvelope
-  set?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  disconnect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  delete?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  connect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  update?: Prisma.PostUpdateWithWhereUniqueWithoutSiteInput | Prisma.PostUpdateWithWhereUniqueWithoutSiteInput[]
-  updateMany?: Prisma.PostUpdateManyWithWhereWithoutSiteInput | Prisma.PostUpdateManyWithWhereWithoutSiteInput[]
-  deleteMany?: Prisma.PostScalarWhereInput | Prisma.PostScalarWhereInput[]
-}
-
-export type PostUncheckedUpdateManyWithoutSiteNestedInput = {
-  create?: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput> | Prisma.PostCreateWithoutSiteInput[] | Prisma.PostUncheckedCreateWithoutSiteInput[]
-  connectOrCreate?: Prisma.PostCreateOrConnectWithoutSiteInput | Prisma.PostCreateOrConnectWithoutSiteInput[]
-  upsert?: Prisma.PostUpsertWithWhereUniqueWithoutSiteInput | Prisma.PostUpsertWithWhereUniqueWithoutSiteInput[]
-  createMany?: Prisma.PostCreateManySiteInputEnvelope
-  set?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  disconnect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  delete?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  connect?: Prisma.PostWhereUniqueInput | Prisma.PostWhereUniqueInput[]
-  update?: Prisma.PostUpdateWithWhereUniqueWithoutSiteInput | Prisma.PostUpdateWithWhereUniqueWithoutSiteInput[]
-  updateMany?: Prisma.PostUpdateManyWithWhereWithoutSiteInput | Prisma.PostUpdateManyWithWhereWithoutSiteInput[]
-  deleteMany?: Prisma.PostScalarWhereInput | Prisma.PostScalarWhereInput[]
-}
-
 export type NullableStringFieldUpdateOperationsInput = {
   set?: string | null
 }
 
+export type StringFieldUpdateOperationsInput = {
+  set?: string
+}
+
 export type NullableDateTimeFieldUpdateOperationsInput = {
   set?: Date | string | null
+}
+
+export type DateTimeFieldUpdateOperationsInput = {
+  set?: Date | string
 }
 
 export type IntFieldUpdateOperationsInput = {
@@ -530,70 +462,6 @@ export type PostUpdateOneRequiredWithoutTranslationsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.PostUpdateToOneWithWhereWithoutTranslationsInput, Prisma.PostUpdateWithoutTranslationsInput>, Prisma.PostUncheckedUpdateWithoutTranslationsInput>
 }
 
-export type PostCreateWithoutSiteInput = {
-  coverImage?: string | null
-  status?: string
-  publishedAt?: Date | string | null
-  createdAt?: Date | string
-  updatedAt?: Date | string
-  ctaPrimaryUrl?: string | null
-  ctaSecondaryUrl?: string | null
-  translations?: Prisma.PostTranslationCreateNestedManyWithoutPostInput
-}
-
-export type PostUncheckedCreateWithoutSiteInput = {
-  id?: number
-  coverImage?: string | null
-  status?: string
-  publishedAt?: Date | string | null
-  createdAt?: Date | string
-  updatedAt?: Date | string
-  ctaPrimaryUrl?: string | null
-  ctaSecondaryUrl?: string | null
-  translations?: Prisma.PostTranslationUncheckedCreateNestedManyWithoutPostInput
-}
-
-export type PostCreateOrConnectWithoutSiteInput = {
-  where: Prisma.PostWhereUniqueInput
-  create: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput>
-}
-
-export type PostCreateManySiteInputEnvelope = {
-  data: Prisma.PostCreateManySiteInput | Prisma.PostCreateManySiteInput[]
-  skipDuplicates?: boolean
-}
-
-export type PostUpsertWithWhereUniqueWithoutSiteInput = {
-  where: Prisma.PostWhereUniqueInput
-  update: Prisma.XOR<Prisma.PostUpdateWithoutSiteInput, Prisma.PostUncheckedUpdateWithoutSiteInput>
-  create: Prisma.XOR<Prisma.PostCreateWithoutSiteInput, Prisma.PostUncheckedCreateWithoutSiteInput>
-}
-
-export type PostUpdateWithWhereUniqueWithoutSiteInput = {
-  where: Prisma.PostWhereUniqueInput
-  data: Prisma.XOR<Prisma.PostUpdateWithoutSiteInput, Prisma.PostUncheckedUpdateWithoutSiteInput>
-}
-
-export type PostUpdateManyWithWhereWithoutSiteInput = {
-  where: Prisma.PostScalarWhereInput
-  data: Prisma.XOR<Prisma.PostUpdateManyMutationInput, Prisma.PostUncheckedUpdateManyWithoutSiteInput>
-}
-
-export type PostScalarWhereInput = {
-  AND?: Prisma.PostScalarWhereInput | Prisma.PostScalarWhereInput[]
-  OR?: Prisma.PostScalarWhereInput[]
-  NOT?: Prisma.PostScalarWhereInput | Prisma.PostScalarWhereInput[]
-  id?: Prisma.IntFilter<"Post"> | number
-  siteId?: Prisma.StringFilter<"Post"> | string
-  coverImage?: Prisma.StringNullableFilter<"Post"> | string | null
-  status?: Prisma.StringFilter<"Post"> | string
-  publishedAt?: Prisma.DateTimeNullableFilter<"Post"> | Date | string | null
-  createdAt?: Prisma.DateTimeFilter<"Post"> | Date | string
-  updatedAt?: Prisma.DateTimeFilter<"Post"> | Date | string
-  ctaPrimaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
-  ctaSecondaryUrl?: Prisma.StringNullableFilter<"Post"> | string | null
-}
-
 export type PostCreateWithoutTranslationsInput = {
   coverImage?: string | null
   status?: string
@@ -602,12 +470,10 @@ export type PostCreateWithoutTranslationsInput = {
   updatedAt?: Date | string
   ctaPrimaryUrl?: string | null
   ctaSecondaryUrl?: string | null
-  site: Prisma.SiteCreateNestedOneWithoutPostsInput
 }
 
 export type PostUncheckedCreateWithoutTranslationsInput = {
   id?: number
-  siteId: string
   coverImage?: string | null
   status?: string
   publishedAt?: Date | string | null
@@ -641,56 +507,9 @@ export type PostUpdateWithoutTranslationsInput = {
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   ctaPrimaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  site?: Prisma.SiteUpdateOneRequiredWithoutPostsNestedInput
 }
 
 export type PostUncheckedUpdateWithoutTranslationsInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
-  coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  status?: Prisma.StringFieldUpdateOperationsInput | string
-  publishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  ctaPrimaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-}
-
-export type PostCreateManySiteInput = {
-  id?: number
-  coverImage?: string | null
-  status?: string
-  publishedAt?: Date | string | null
-  createdAt?: Date | string
-  updatedAt?: Date | string
-  ctaPrimaryUrl?: string | null
-  ctaSecondaryUrl?: string | null
-}
-
-export type PostUpdateWithoutSiteInput = {
-  coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  status?: Prisma.StringFieldUpdateOperationsInput | string
-  publishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  ctaPrimaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  translations?: Prisma.PostTranslationUpdateManyWithoutPostNestedInput
-}
-
-export type PostUncheckedUpdateWithoutSiteInput = {
-  id?: Prisma.IntFieldUpdateOperationsInput | number
-  coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  status?: Prisma.StringFieldUpdateOperationsInput | string
-  publishedAt?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  ctaPrimaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  ctaSecondaryUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  translations?: Prisma.PostTranslationUncheckedUpdateManyWithoutPostNestedInput
-}
-
-export type PostUncheckedUpdateManyWithoutSiteInput = {
   id?: Prisma.IntFieldUpdateOperationsInput | number
   coverImage?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   status?: Prisma.StringFieldUpdateOperationsInput | string
@@ -734,7 +553,6 @@ export type PostCountOutputTypeCountTranslationsArgs<ExtArgs extends runtime.Typ
 
 export type PostSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  siteId?: boolean
   coverImage?: boolean
   status?: boolean
   publishedAt?: boolean
@@ -742,14 +560,12 @@ export type PostSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   updatedAt?: boolean
   ctaPrimaryUrl?: boolean
   ctaSecondaryUrl?: boolean
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
   translations?: boolean | Prisma.Post$translationsArgs<ExtArgs>
   _count?: boolean | Prisma.PostCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["post"]>
 
 export type PostSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  siteId?: boolean
   coverImage?: boolean
   status?: boolean
   publishedAt?: boolean
@@ -757,12 +573,10 @@ export type PostSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   updatedAt?: boolean
   ctaPrimaryUrl?: boolean
   ctaSecondaryUrl?: boolean
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["post"]>
 
 export type PostSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  siteId?: boolean
   coverImage?: boolean
   status?: boolean
   publishedAt?: boolean
@@ -770,12 +584,10 @@ export type PostSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   updatedAt?: boolean
   ctaPrimaryUrl?: boolean
   ctaSecondaryUrl?: boolean
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["post"]>
 
 export type PostSelectScalar = {
   id?: boolean
-  siteId?: boolean
   coverImage?: boolean
   status?: boolean
   publishedAt?: boolean
@@ -785,28 +597,21 @@ export type PostSelectScalar = {
   ctaSecondaryUrl?: boolean
 }
 
-export type PostOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "siteId" | "coverImage" | "status" | "publishedAt" | "createdAt" | "updatedAt" | "ctaPrimaryUrl" | "ctaSecondaryUrl", ExtArgs["result"]["post"]>
+export type PostOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "coverImage" | "status" | "publishedAt" | "createdAt" | "updatedAt" | "ctaPrimaryUrl" | "ctaSecondaryUrl", ExtArgs["result"]["post"]>
 export type PostInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
   translations?: boolean | Prisma.Post$translationsArgs<ExtArgs>
   _count?: boolean | Prisma.PostCountOutputTypeDefaultArgs<ExtArgs>
 }
-export type PostIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
-}
-export type PostIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  site?: boolean | Prisma.SiteDefaultArgs<ExtArgs>
-}
+export type PostIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
+export type PostIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {}
 
 export type $PostPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Post"
   objects: {
-    site: Prisma.$SitePayload<ExtArgs>
     translations: Prisma.$PostTranslationPayload<ExtArgs>[]
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: number
-    siteId: string
     coverImage: string | null
     status: string
     publishedAt: Date | null
@@ -1208,7 +1013,6 @@ readonly fields: PostFieldRefs;
  */
 export interface Prisma__PostClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
-  site<T extends Prisma.SiteDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.SiteDefaultArgs<ExtArgs>>): Prisma.Prisma__SiteClient<runtime.Types.Result.GetResult<Prisma.$SitePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   translations<T extends Prisma.Post$translationsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Post$translationsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$PostTranslationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
@@ -1240,7 +1044,6 @@ export interface Prisma__PostClient<T, Null = never, ExtArgs extends runtime.Typ
  */
 export interface PostFieldRefs {
   readonly id: Prisma.FieldRef<"Post", 'Int'>
-  readonly siteId: Prisma.FieldRef<"Post", 'String'>
   readonly coverImage: Prisma.FieldRef<"Post", 'String'>
   readonly status: Prisma.FieldRef<"Post", 'String'>
   readonly publishedAt: Prisma.FieldRef<"Post", 'DateTime'>
@@ -1502,10 +1305,6 @@ export type PostCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Extensions
    */
   data: Prisma.PostCreateManyInput | Prisma.PostCreateManyInput[]
   skipDuplicates?: boolean
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.PostIncludeCreateManyAndReturn<ExtArgs> | null
 }
 
 /**
@@ -1576,10 +1375,6 @@ export type PostUpdateManyAndReturnArgs<ExtArgs extends runtime.Types.Extensions
    * Limit how many Posts to update.
    */
   limit?: number
-  /**
-   * Choose, which related nodes to fetch as well
-   */
-  include?: Prisma.PostIncludeUpdateManyAndReturn<ExtArgs> | null
 }
 
 /**

@@ -5,11 +5,12 @@ import { hash, hashCta } from "@/lib/contentHash";
 import { generateObject, generateText } from "ai";
 import { z } from "zod";
 import { deepseekChat } from "@/lib/deepseek";
+import { ua } from "zod/v4/locales";
 
 const LOCALES = {
-  uk: "Ukrainian",
-  sk: "Slovak",
   en: "English",
+  sk: "Slovak",
+  ua: "Ukrainian",
   de: "German",
 };
 

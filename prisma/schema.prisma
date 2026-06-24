@@ -9,22 +9,8 @@ datasource db {
   provider = "postgresql"
 }
 
-model Site {
-  id             String   @id @default(cuid())
-  domain         String   @unique
-  name           String
-  isMultilingual Boolean  @default(false)
-  defaultLocale  String   @default("pl")
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
-
-  posts Post[]
-}
-
 model Post {
-  id     Int    @id @default(autoincrement())
-  siteId String
-  site   Site   @relation(fields: [siteId], references: [id], onDelete: Cascade)
+  id Int @id @default(autoincrement())
 
   coverImage  String?
   status      String    @default("draft")
@@ -60,14 +46,11 @@ model PostTranslation {
   postId Int
   post   Post @relation(fields: [postId], references: [id], onDelete: Cascade)
 
-  siteId String
-
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@unique([postId, locale])
-  @@unique([locale, slug, siteId])
-  @@index([siteId])
-  @@index([siteId, locale])
+  @@unique([locale, slug])
+  @@index([locale])
   @@map("post_translations")
 }

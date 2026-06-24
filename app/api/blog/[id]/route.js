@@ -4,17 +4,6 @@ import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
 
-const SITE_DOMAIN = process.env.SITE_DOMAIN;
-
-async function getSiteId(prisma) {
-  const site = await prisma.site.findUnique({
-    where: { domain: SITE_DOMAIN },
-    select: { id: true },
-  });
-  return site?.id ?? null;
-}
-
-// Natychmiastowa rewalidacja po zmianie (żeby admin dodając post, użytkownik od razu go widział)
 function revalidatePost(translations) {
   revalidatePath("/blog");
   revalidateTag("blog");
@@ -33,8 +22,8 @@ export async function GET(req, { params }) {
 
   const { id } = await params;
 
-  const post = await prisma.post.findFirst({
-    where: { id: parseInt(id), site: { domain: SITE_DOMAIN } },
+  const post = await prisma.post.findUnique({
+    where: { id: parseInt(id) },
     include: { translations: true },
   });
 
@@ -48,19 +37,11 @@ export async function PUT(req, { params }) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
-  const siteId = await getSiteId(prisma);
-  if (!siteId) {
-    return NextResponse.json(
-      { error: `Brak Site dla domeny "${SITE_DOMAIN}"` },
-      { status: 500 },
-    );
-  }
-
   const { id } = await params;
   const postId = parseInt(id);
 
-  const owned = await prisma.post.findFirst({
-    where: { id: postId, siteId },
+  const owned = await prisma.post.findUnique({
+    where: { id: postId },
     select: { id: true },
   });
   if (!owned)
@@ -136,7 +117,6 @@ export async function PUT(req, { params }) {
               ...sourceHashes,
             },
             create: {
-              siteId,
               postId: post.id,
               locale,
               slug: t.slug,
@@ -153,7 +133,7 @@ export async function PUT(req, { params }) {
         ),
     );
 
-    revalidatePost(post.translations || []); // ← natychmiastowe odświeżenie
+    revalidatePost(post.translations || []);
 
     const updatedPost = await prisma.post.findUnique({
       where: { id: post.id },
@@ -180,8 +160,8 @@ export async function DELETE(req, { params }) {
   const { id } = await params;
   const postId = parseInt(id);
 
-  const post = await prisma.post.findFirst({
-    where: { id: postId, site: { domain: SITE_DOMAIN } },
+  const post = await prisma.post.findUnique({
+    where: { id: postId },
     include: { translations: { select: { locale: true, slug: true } } },
   });
 
@@ -190,7 +170,7 @@ export async function DELETE(req, { params }) {
 
   await prisma.post.delete({ where: { id: postId } });
 
-  revalidatePost(post.translations); // ← natychmiastowe odświeżenie
+  revalidatePost(post.translations);
 
   return NextResponse.json({ success: true });
 }

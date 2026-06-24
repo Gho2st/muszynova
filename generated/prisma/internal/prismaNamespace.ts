@@ -384,7 +384,6 @@ type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRe
 
 
 export const ModelName = {
-  Site: 'Site',
   Post: 'Post',
   PostTranslation: 'PostTranslation'
 } as const
@@ -402,84 +401,10 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "site" | "post" | "postTranslation"
+    modelProps: "post" | "postTranslation"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
-    Site: {
-      payload: Prisma.$SitePayload<ExtArgs>
-      fields: Prisma.SiteFieldRefs
-      operations: {
-        findUnique: {
-          args: Prisma.SiteFindUniqueArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload> | null
-        }
-        findUniqueOrThrow: {
-          args: Prisma.SiteFindUniqueOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        findFirst: {
-          args: Prisma.SiteFindFirstArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload> | null
-        }
-        findFirstOrThrow: {
-          args: Prisma.SiteFindFirstOrThrowArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        findMany: {
-          args: Prisma.SiteFindManyArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>[]
-        }
-        create: {
-          args: Prisma.SiteCreateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        createMany: {
-          args: Prisma.SiteCreateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        createManyAndReturn: {
-          args: Prisma.SiteCreateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>[]
-        }
-        delete: {
-          args: Prisma.SiteDeleteArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        update: {
-          args: Prisma.SiteUpdateArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        deleteMany: {
-          args: Prisma.SiteDeleteManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateMany: {
-          args: Prisma.SiteUpdateManyArgs<ExtArgs>
-          result: BatchPayload
-        }
-        updateManyAndReturn: {
-          args: Prisma.SiteUpdateManyAndReturnArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>[]
-        }
-        upsert: {
-          args: Prisma.SiteUpsertArgs<ExtArgs>
-          result: runtime.Types.Utils.PayloadToResult<Prisma.$SitePayload>
-        }
-        aggregate: {
-          args: Prisma.SiteAggregateArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.AggregateSite>
-        }
-        groupBy: {
-          args: Prisma.SiteGroupByArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.SiteGroupByOutputType>[]
-        }
-        count: {
-          args: Prisma.SiteCountArgs<ExtArgs>
-          result: runtime.Types.Utils.Optional<Prisma.SiteCountAggregateOutputType> | number
-        }
-      }
-    }
     Post: {
       payload: Prisma.$PostPayload<ExtArgs>
       fields: Prisma.PostFieldRefs
@@ -667,22 +592,8 @@ export const TransactionIsolationLevel = runtime.makeStrictEnum({
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-export const SiteScalarFieldEnum = {
-  id: 'id',
-  domain: 'domain',
-  name: 'name',
-  isMultilingual: 'isMultilingual',
-  defaultLocale: 'defaultLocale',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-} as const
-
-export type SiteScalarFieldEnum = (typeof SiteScalarFieldEnum)[keyof typeof SiteScalarFieldEnum]
-
-
 export const PostScalarFieldEnum = {
   id: 'id',
-  siteId: 'siteId',
   coverImage: 'coverImage',
   status: 'status',
   publishedAt: 'publishedAt',
@@ -711,7 +622,6 @@ export const PostTranslationScalarFieldEnum = {
   sourceHashContent: 'sourceHashContent',
   sourceHashCta: 'sourceHashCta',
   postId: 'postId',
-  siteId: 'siteId',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
@@ -750,6 +660,20 @@ export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
 
 /**
+ * Reference to a field of type 'Int'
+ */
+export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
+    
+
+
+/**
+ * Reference to a field of type 'Int[]'
+ */
+export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+    
+
+
+/**
  * Reference to a field of type 'String'
  */
 export type StringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String'>
@@ -764,13 +688,6 @@ export type ListStringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaMod
 
 
 /**
- * Reference to a field of type 'Boolean'
- */
-export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
-    
-
-
-/**
  * Reference to a field of type 'DateTime'
  */
 export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
@@ -781,20 +698,6 @@ export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel
  * Reference to a field of type 'DateTime[]'
  */
 export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
-    
-
-
-/**
- * Reference to a field of type 'Int'
- */
-export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
-    
-
-
-/**
- * Reference to a field of type 'Int[]'
- */
-export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
     
 
 
@@ -921,7 +824,6 @@ export type PrismaClientOptions = ({
   queryPlanCacheMaxSize?: number
 }
 export type GlobalOmitConfig = {
-  site?: Prisma.SiteOmit
   post?: Prisma.PostOmit
   postTranslation?: Prisma.PostTranslationOmit
 }

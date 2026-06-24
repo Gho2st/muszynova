@@ -1,14 +1,10 @@
 import "dotenv/config";
 import { Client } from "pg";
 import { PrismaNeon } from "@prisma/adapter-neon";
-import { PrismaClient } from "../generated/prisma/client"; // dopasuj do output
+import { PrismaClient } from "../generated/prisma/client";
 
-const SITE = {
-  domain: "muszynova.pl",
-  name: "Muszynova",
-  isMultilingual: true,
-  defaultLocale: "pl",
-};
+// siteId muszynovej w STAREJ (wielostronnej) bazie
+const OLD_SITE_ID = "cmq0oz5y60000sv9kxau85zq5";
 
 async function main() {
   const old = new Client({
@@ -21,29 +17,25 @@ async function main() {
   });
   const prisma = new PrismaClient({ adapter });
 
-  // 1. Site
-  const site = await prisma.site.upsert({
-    where: { domain: SITE.domain },
-    update: {},
-    create: SITE,
-  });
-  console.log("Site id:", site.id);
-
-  // 2. PELNE czyszczenie danych muszynova.
-  //    Najpierw tlumaczenia po siteId (lapie tez osierocone z poprzednich prob),
-  //    potem posty po siteId.
-  const delT = await prisma.postTranslation.deleteMany({
-    where: { siteId: site.id },
-  });
-  const delP = await prisma.post.deleteMany({ where: { siteId: site.id } });
+  // 1. Wyczysc nowa baze (ma tylko muszynove, wiec kasujemy wszystko)
+  const delT = await prisma.postTranslation.deleteMany({});
+  const delP = await prisma.post.deleteMany({});
   console.log(
-    `Wyczyszczono: ${delP.count} postow, ${delT.count} tlumaczen (w tym osierocone)`,
+    `Wyczyszczono nowa baze: ${delP.count} postow, ${delT.count} tlumaczen`,
   );
 
-  // 3. Wczytaj ze starej bazy
-  const { rows: posts } = await old.query(`SELECT * FROM "Post" ORDER BY id`);
+  // 2. Wczytaj ze starej bazy TYLKO posty muszynovej (filtr po siteId)
+  const { rows: posts } = await old.query(
+    `SELECT * FROM "Post" WHERE "siteId" = $1 ORDER BY id`,
+    [OLD_SITE_ID],
+  );
   const { rows: trans } = await old.query(
-    `SELECT * FROM post_translations ORDER BY id`,
+    `SELECT * FROM post_translations WHERE "siteId" = $1 ORDER BY id`,
+    [OLD_SITE_ID],
+  );
+
+  console.log(
+    `Ze starej bazy: ${posts.length} postow, ${trans.length} tlumaczen`,
   );
 
   const transByPost = new Map();
@@ -52,7 +44,7 @@ async function main() {
     transByPost.get(t.postId).push(t);
   }
 
-  // Deduplikacja slugow w obrebie (locale): przy kolizji dopisujemy -2, -3, ...
+  // Deduplikacja slugow w obrebie (locale)
   const usedSlugs = new Set();
   const dedupeSlug = (locale, slug) => {
     const base = slug || "post";
@@ -73,7 +65,6 @@ async function main() {
   for (const p of posts) {
     const newPost = await prisma.post.create({
       data: {
-        siteId: site.id,
         coverImage: p.coverImage,
         status: p.status,
         publishedAt: p.publishedAt,
@@ -88,7 +79,6 @@ async function main() {
               renamed.push(`${t.locale}: "${t.slug}" -> "${finalSlug}"`);
             }
             return {
-              siteId: site.id,
               locale: t.locale,
               slug: finalSlug,
               title: t.title,
@@ -112,11 +102,12 @@ async function main() {
     });
     postCount++;
     transCount += newPost.translations.length;
+    const plTitle =
+      newPost.translations.find((t) => t.locale === "pl")?.title ?? newPost.id;
+    console.log(`  + ${plTitle} (${newPost.translations.length} tlumaczen)`);
   }
 
-  console.log(
-    `Przeniesiono: ${postCount} postow (ze starych ${posts.length}), ${transCount} tlumaczen (ze starych ${trans.length})`,
-  );
+  console.log(`\nPrzeniesiono: ${postCount} postow, ${transCount} tlumaczen`);
 
   if (renamed.length) {
     console.log("\nZmienione slugi (kolizje) - popraw w panelu jesli trzeba:");

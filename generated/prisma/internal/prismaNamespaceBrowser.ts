@@ -51,7 +51,6 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
-  Site: 'Site',
   Post: 'Post',
   PostTranslation: 'PostTranslation'
 } as const
@@ -72,22 +71,8 @@ export const TransactionIsolationLevel = runtime.makeStrictEnum({
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-export const SiteScalarFieldEnum = {
-  id: 'id',
-  domain: 'domain',
-  name: 'name',
-  isMultilingual: 'isMultilingual',
-  defaultLocale: 'defaultLocale',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-} as const
-
-export type SiteScalarFieldEnum = (typeof SiteScalarFieldEnum)[keyof typeof SiteScalarFieldEnum]
-
-
 export const PostScalarFieldEnum = {
   id: 'id',
-  siteId: 'siteId',
   coverImage: 'coverImage',
   status: 'status',
   publishedAt: 'publishedAt',
@@ -116,7 +101,6 @@ export const PostTranslationScalarFieldEnum = {
   sourceHashContent: 'sourceHashContent',
   sourceHashCta: 'sourceHashCta',
   postId: 'postId',
-  siteId: 'siteId',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const

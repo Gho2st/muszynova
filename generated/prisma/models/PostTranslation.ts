@@ -52,7 +52,6 @@ export type PostTranslationMinAggregateOutputType = {
   sourceHashContent: string | null
   sourceHashCta: string | null
   postId: number | null
-  siteId: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -73,7 +72,6 @@ export type PostTranslationMaxAggregateOutputType = {
   sourceHashContent: string | null
   sourceHashCta: string | null
   postId: number | null
-  siteId: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -94,7 +92,6 @@ export type PostTranslationCountAggregateOutputType = {
   sourceHashContent: number
   sourceHashCta: number
   postId: number
-  siteId: number
   createdAt: number
   updatedAt: number
   _all: number
@@ -127,7 +124,6 @@ export type PostTranslationMinAggregateInputType = {
   sourceHashContent?: true
   sourceHashCta?: true
   postId?: true
-  siteId?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -148,7 +144,6 @@ export type PostTranslationMaxAggregateInputType = {
   sourceHashContent?: true
   sourceHashCta?: true
   postId?: true
-  siteId?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -169,7 +164,6 @@ export type PostTranslationCountAggregateInputType = {
   sourceHashContent?: true
   sourceHashCta?: true
   postId?: true
-  siteId?: true
   createdAt?: true
   updatedAt?: true
   _all?: true
@@ -277,7 +271,6 @@ export type PostTranslationGroupByOutputType = {
   sourceHashContent: string | null
   sourceHashCta: string | null
   postId: number
-  siteId: string
   createdAt: Date
   updatedAt: Date
   _count: PostTranslationCountAggregateOutputType | null
@@ -321,7 +314,6 @@ export type PostTranslationWhereInput = {
   sourceHashContent?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   sourceHashCta?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   postId?: Prisma.IntFilter<"PostTranslation"> | number
-  siteId?: Prisma.StringFilter<"PostTranslation"> | string
   createdAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
   post?: Prisma.XOR<Prisma.PostScalarRelationFilter, Prisma.PostWhereInput>
@@ -343,7 +335,6 @@ export type PostTranslationOrderByWithRelationInput = {
   sourceHashContent?: Prisma.SortOrderInput | Prisma.SortOrder
   sourceHashCta?: Prisma.SortOrderInput | Prisma.SortOrder
   postId?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   post?: Prisma.PostOrderByWithRelationInput
@@ -352,7 +343,7 @@ export type PostTranslationOrderByWithRelationInput = {
 export type PostTranslationWhereUniqueInput = Prisma.AtLeast<{
   id?: number
   postId_locale?: Prisma.PostTranslationPostIdLocaleCompoundUniqueInput
-  locale_slug_siteId?: Prisma.PostTranslationLocaleSlugSiteIdCompoundUniqueInput
+  locale_slug?: Prisma.PostTranslationLocaleSlugCompoundUniqueInput
   AND?: Prisma.PostTranslationWhereInput | Prisma.PostTranslationWhereInput[]
   OR?: Prisma.PostTranslationWhereInput[]
   NOT?: Prisma.PostTranslationWhereInput | Prisma.PostTranslationWhereInput[]
@@ -370,11 +361,10 @@ export type PostTranslationWhereUniqueInput = Prisma.AtLeast<{
   sourceHashContent?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   sourceHashCta?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   postId?: Prisma.IntFilter<"PostTranslation"> | number
-  siteId?: Prisma.StringFilter<"PostTranslation"> | string
   createdAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
   post?: Prisma.XOR<Prisma.PostScalarRelationFilter, Prisma.PostWhereInput>
-}, "id" | "postId_locale" | "locale_slug_siteId">
+}, "id" | "postId_locale" | "locale_slug">
 
 export type PostTranslationOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
@@ -392,7 +382,6 @@ export type PostTranslationOrderByWithAggregationInput = {
   sourceHashContent?: Prisma.SortOrderInput | Prisma.SortOrder
   sourceHashCta?: Prisma.SortOrderInput | Prisma.SortOrder
   postId?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   _count?: Prisma.PostTranslationCountOrderByAggregateInput
@@ -421,7 +410,6 @@ export type PostTranslationScalarWhereWithAggregatesInput = {
   sourceHashContent?: Prisma.StringNullableWithAggregatesFilter<"PostTranslation"> | string | null
   sourceHashCta?: Prisma.StringNullableWithAggregatesFilter<"PostTranslation"> | string | null
   postId?: Prisma.IntWithAggregatesFilter<"PostTranslation"> | number
-  siteId?: Prisma.StringWithAggregatesFilter<"PostTranslation"> | string
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"PostTranslation"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"PostTranslation"> | Date | string
 }
@@ -440,7 +428,6 @@ export type PostTranslationCreateInput = {
   sourceHashExcerpt?: string | null
   sourceHashContent?: string | null
   sourceHashCta?: string | null
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
   post: Prisma.PostCreateNestedOneWithoutTranslationsInput
@@ -462,7 +449,6 @@ export type PostTranslationUncheckedCreateInput = {
   sourceHashContent?: string | null
   sourceHashCta?: string | null
   postId: number
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -481,7 +467,6 @@ export type PostTranslationUpdateInput = {
   sourceHashExcerpt?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   post?: Prisma.PostUpdateOneRequiredWithoutTranslationsNestedInput
@@ -503,7 +488,6 @@ export type PostTranslationUncheckedUpdateInput = {
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   postId?: Prisma.IntFieldUpdateOperationsInput | number
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -524,7 +508,6 @@ export type PostTranslationCreateManyInput = {
   sourceHashContent?: string | null
   sourceHashCta?: string | null
   postId: number
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -543,7 +526,6 @@ export type PostTranslationUpdateManyMutationInput = {
   sourceHashExcerpt?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -564,7 +546,6 @@ export type PostTranslationUncheckedUpdateManyInput = {
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   postId?: Prisma.IntFieldUpdateOperationsInput | number
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -584,10 +565,9 @@ export type PostTranslationPostIdLocaleCompoundUniqueInput = {
   locale: string
 }
 
-export type PostTranslationLocaleSlugSiteIdCompoundUniqueInput = {
+export type PostTranslationLocaleSlugCompoundUniqueInput = {
   locale: string
   slug: string
-  siteId: string
 }
 
 export type PostTranslationCountOrderByAggregateInput = {
@@ -606,7 +586,6 @@ export type PostTranslationCountOrderByAggregateInput = {
   sourceHashContent?: Prisma.SortOrder
   sourceHashCta?: Prisma.SortOrder
   postId?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -632,7 +611,6 @@ export type PostTranslationMaxOrderByAggregateInput = {
   sourceHashContent?: Prisma.SortOrder
   sourceHashCta?: Prisma.SortOrder
   postId?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -653,7 +631,6 @@ export type PostTranslationMinOrderByAggregateInput = {
   sourceHashContent?: Prisma.SortOrder
   sourceHashCta?: Prisma.SortOrder
   postId?: Prisma.SortOrder
-  siteId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -719,7 +696,6 @@ export type PostTranslationCreateWithoutPostInput = {
   sourceHashExcerpt?: string | null
   sourceHashContent?: string | null
   sourceHashCta?: string | null
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -739,7 +715,6 @@ export type PostTranslationUncheckedCreateWithoutPostInput = {
   sourceHashExcerpt?: string | null
   sourceHashContent?: string | null
   sourceHashCta?: string | null
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -789,7 +764,6 @@ export type PostTranslationScalarWhereInput = {
   sourceHashContent?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   sourceHashCta?: Prisma.StringNullableFilter<"PostTranslation"> | string | null
   postId?: Prisma.IntFilter<"PostTranslation"> | number
-  siteId?: Prisma.StringFilter<"PostTranslation"> | string
   createdAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"PostTranslation"> | Date | string
 }
@@ -809,7 +783,6 @@ export type PostTranslationCreateManyPostInput = {
   sourceHashExcerpt?: string | null
   sourceHashContent?: string | null
   sourceHashCta?: string | null
-  siteId: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -828,7 +801,6 @@ export type PostTranslationUpdateWithoutPostInput = {
   sourceHashExcerpt?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -848,7 +820,6 @@ export type PostTranslationUncheckedUpdateWithoutPostInput = {
   sourceHashExcerpt?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -868,7 +839,6 @@ export type PostTranslationUncheckedUpdateManyWithoutPostInput = {
   sourceHashExcerpt?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashContent?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   sourceHashCta?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
-  siteId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -891,7 +861,6 @@ export type PostTranslationSelect<ExtArgs extends runtime.Types.Extensions.Inter
   sourceHashContent?: boolean
   sourceHashCta?: boolean
   postId?: boolean
-  siteId?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   post?: boolean | Prisma.PostDefaultArgs<ExtArgs>
@@ -913,7 +882,6 @@ export type PostTranslationSelectCreateManyAndReturn<ExtArgs extends runtime.Typ
   sourceHashContent?: boolean
   sourceHashCta?: boolean
   postId?: boolean
-  siteId?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   post?: boolean | Prisma.PostDefaultArgs<ExtArgs>
@@ -935,7 +903,6 @@ export type PostTranslationSelectUpdateManyAndReturn<ExtArgs extends runtime.Typ
   sourceHashContent?: boolean
   sourceHashCta?: boolean
   postId?: boolean
-  siteId?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   post?: boolean | Prisma.PostDefaultArgs<ExtArgs>
@@ -957,12 +924,11 @@ export type PostTranslationSelectScalar = {
   sourceHashContent?: boolean
   sourceHashCta?: boolean
   postId?: boolean
-  siteId?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type PostTranslationOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "locale" | "slug" | "title" | "excerpt" | "content" | "ctaTitle" | "ctaDescription" | "ctaPrimaryLabel" | "ctaSecondaryLabel" | "sourceHashTitle" | "sourceHashExcerpt" | "sourceHashContent" | "sourceHashCta" | "postId" | "siteId" | "createdAt" | "updatedAt", ExtArgs["result"]["postTranslation"]>
+export type PostTranslationOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "locale" | "slug" | "title" | "excerpt" | "content" | "ctaTitle" | "ctaDescription" | "ctaPrimaryLabel" | "ctaSecondaryLabel" | "sourceHashTitle" | "sourceHashExcerpt" | "sourceHashContent" | "sourceHashCta" | "postId" | "createdAt" | "updatedAt", ExtArgs["result"]["postTranslation"]>
 export type PostTranslationInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   post?: boolean | Prisma.PostDefaultArgs<ExtArgs>
 }
@@ -994,7 +960,6 @@ export type $PostTranslationPayload<ExtArgs extends runtime.Types.Extensions.Int
     sourceHashContent: string | null
     sourceHashCta: string | null
     postId: number
-    siteId: string
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["postTranslation"]>
@@ -1436,7 +1401,6 @@ export interface PostTranslationFieldRefs {
   readonly sourceHashContent: Prisma.FieldRef<"PostTranslation", 'String'>
   readonly sourceHashCta: Prisma.FieldRef<"PostTranslation", 'String'>
   readonly postId: Prisma.FieldRef<"PostTranslation", 'Int'>
-  readonly siteId: Prisma.FieldRef<"PostTranslation", 'String'>
   readonly createdAt: Prisma.FieldRef<"PostTranslation", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"PostTranslation", 'DateTime'>
 }

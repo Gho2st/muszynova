@@ -4,16 +4,6 @@ import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/auth";
 import { hash, hashCta } from "@/lib/contentHash";
 
-const SITE_DOMAIN = process.env.SITE_DOMAIN;
-
-async function getSiteId(prisma) {
-  const site = await prisma.site.findUnique({
-    where: { domain: SITE_DOMAIN },
-    select: { id: true },
-  });
-  return site?.id ?? null;
-}
-
 function revalidatePost(translations = []) {
   revalidatePath("/blog", "page");
   revalidatePath("/[locale]/blog", "page");
@@ -31,7 +21,6 @@ export async function GET() {
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
 
   const posts = await prisma.post.findMany({
-    where: { site: { domain: SITE_DOMAIN } },
     orderBy: { createdAt: "desc" },
     include: { translations: true },
   });
@@ -42,16 +31,6 @@ export async function GET() {
 export async function POST(req) {
   if (!(await requireAdmin()))
     return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
-
-  const siteId = await getSiteId(prisma);
-  if (!siteId) {
-    return NextResponse.json(
-      {
-        error: `Brak Site dla domeny "${SITE_DOMAIN}". Sprawdź SITE_DOMAIN.`,
-      },
-      { status: 500 },
-    );
-  }
 
   const body = await req.json();
   const {
@@ -90,7 +69,6 @@ export async function POST(req) {
   try {
     const post = await prisma.post.create({
       data: {
-        siteId,
         coverImage: coverImage || null,
         status: status || "draft",
         ctaPrimaryUrl: ctaPrimaryUrl || null,
@@ -105,7 +83,6 @@ export async function POST(req) {
           create: Object.entries(translations)
             .filter(([, t]) => t.title && t.content && t.slug)
             .map(([locale, t]) => ({
-              siteId,
               locale,
               slug: t.slug,
               title: t.title,

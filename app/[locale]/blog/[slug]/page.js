@@ -5,8 +5,6 @@ import { getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { cache } from "react";
 
-const DOMAIN = process.env.SITE_DOMAIN;
-
 export const revalidate = 86400; // 24h
 
 const getPost = cache(async (slug, locale) => {
@@ -18,7 +16,7 @@ const getPost = cache(async (slug, locale) => {
     where: {
       slug,
       locale,
-      post: { status: "published", site: { domain: DOMAIN } },
+      post: { status: "published" },
     },
     include: { post: true },
   });
@@ -49,7 +47,7 @@ const getAllTranslationsForPost = cache(async (slug, locale) => {
     where: {
       slug,
       locale,
-      post: { status: "published", site: { domain: DOMAIN } },
+      post: { status: "published" },
     },
     include: {
       post: {
@@ -65,7 +63,7 @@ const getLatestPosts = cache(async (currentSlug, locale, limit = 3) => {
     where: {
       locale,
       slug: { not: currentSlug },
-      post: { status: "published", site: { domain: DOMAIN } },
+      post: { status: "published" },
     },
     include: { post: true },
     orderBy: { post: { publishedAt: "desc" } },

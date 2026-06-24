@@ -17,7 +17,7 @@ const getPosts = unstable_cache(
     const skip = (page - 1) * PER_PAGE;
     const where = {
       locale,
-      post: { status: "published", site: { domain: process.env.SITE_DOMAIN } },
+      post: { status: "published" },
     };
     const [translations, total] = await Promise.all([
       prisma.postTranslation.findMany({
