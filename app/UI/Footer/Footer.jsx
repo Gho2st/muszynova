@@ -22,7 +22,7 @@ export default function Footer() {
   const [isParkOpen, setIsParkOpen] = useState(false);
   const [isGymOpen, setIsGymOpen] = useState(false);
   const [isRestaurantOpen, setIsRestaurantOpen] = useState(false);
-  const [restaurantHours, setRestaurantHours] = useState("12:00 – 21:00");
+  const [restaurantHours, setRestaurantHours] = useState("12:00 – 22:00");
 
   const checkStatuses = () => {
     const now = new Date();
@@ -30,12 +30,12 @@ export default function Footer() {
     const day = now.getDay(); // 0 = niedziela ... 5 = piątek, 6 = sobota
 
     const isWeekend = day === 5 || day === 6;
-    const restaurantClose = isWeekend ? 23 : 21;
+    const restaurantClose = isWeekend ? 23 : 22;
 
     setIsParkOpen(hour >= 11 && hour < 21);
     setIsGymOpen(hour >= 8 && hour < 21);
     setIsRestaurantOpen(hour >= 12 && hour < restaurantClose);
-    setRestaurantHours(isWeekend ? "12:00 – 23:00" : "12:00 – 21:00");
+    setRestaurantHours(isWeekend ? "12:00 – 23:00" : "12:00 – 22:00");
   };
 
   useEffect(() => {
