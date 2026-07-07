@@ -1,7 +1,7 @@
 // lib/api-error.ts
 import { NextResponse } from "next/server";
 import { ZodError } from "zod";
-import { Prisma } from "@prisma/client";
+import { Prisma } from "../generated/prisma/client";
 
 export class ApiError extends Error {
   constructor(
