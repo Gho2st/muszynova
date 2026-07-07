@@ -87,7 +87,7 @@ export default function Contact() {
               title={t("cards.card4.header")}
               hours={t("cards.card5.text1")}
               buttonText={t("cards.card4.button")}
-              text="nd-czw: 12:00-21:00
+              text="nd-czw: 12:00-22:00
                pt-sob: 12:00-23:00"
               isWesele="true"
             />
