@@ -113,8 +113,8 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.hall.3")}
               time="1 h"
-              weekday="50 zł"
-              weekend="60 zł"
+              weekday="60 zł"
+              weekend="70 zł"
             />
 
             <SubSection title={t("sports.climbingwall.1")} />
@@ -247,15 +247,18 @@ export default function PricingPage() {
             <SubSection title={t("sports.fitness.gym")} />
             <PricingRow
               name={t("sports.fitness.1")}
-              time="11:00 – 21:00"
+              time="1x"
               weekday="25 zł"
               weekend="30 zł"
             />
-            <PricingRow
-              name={t("sports.fitness.2")}
-              time="08:00 – 21:00"
-              price="69 zł"
-            />
+            <PricingRow name={t("sports.fitness.2")} time="5x" price="69 zł" />
+
+            <p className="text-xs ml-4 my-2 mt-6 text-green-800">
+              Możliwe wejście w godzinach 8:00 - 21:00 tylnym wejściem od strony
+              parkingu dla posiadaczy aktywnego karnetu i karty klubowicza
+              Muszynova (płatna 20zł).
+            </p>
+
             <PricingRow
               name={t("sports.fitness.3")}
               time="08:00 – 11:00"
@@ -311,7 +314,7 @@ export default function PricingPage() {
             <PricingRow name={t("sports.rental.3")} time="1 h" price="5 zł" />
             <PricingRow name={t("sports.rental.4")} time="1 h" price="5 zł" />
             <PricingRow name={t("sports.rental.5")} time="1 h" price="5 zł" />
-            <PricingRow name={t("sports.rental.6")} time="1 h" price="10 zł" />
+            <PricingRow name={t("sports.rental.6")} time="1 h" price="15 zł" />
             <PricingRow
               name={t("sports.rental.7")}
               time="1,5 h"

@@ -33,7 +33,7 @@ export default function Footer() {
     const restaurantClose = isFriSat ? 23 : 22; // pt/sob do 23, reszta do 22
 
     setIsParkOpen(hour >= 11 && hour < 21);
-    setIsGymOpen(hour >= 8 && hour < 21);
+    setIsGymOpen(hour >= 11 && hour < 21);
     setIsRestaurantOpen(hour >= 12 && hour < restaurantClose);
     setRestaurantHours(isFriSat ? "12:00 – 23:00" : "12:00 – 22:00");
   };
@@ -174,15 +174,25 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between py-2.5 border-b border-white/10">
-                <span className="text-gray-300"> {t("hours.2")}</span>
-                <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/15">
-                  <FaCircle
-                    className={`w-2.5 h-2.5 ${
-                      isGymOpen ? "text-green-500" : "text-red-500"
-                    }`}
-                  />
-                  <span className="font-medium">8:00 – 21:00</span>
+              <div className="flex flex-col py-2.5 gap-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-300"> {t("hours.2")}</span>
+                  <div className="flex items-center gap-2.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/15">
+                    <FaCircle
+                      className={`w-2.5 h-2.5 ${
+                        isGymOpen ? "text-green-500" : "text-red-500"
+                      }`}
+                    />
+                    <span className="font-medium">11:00 - 21:00</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1 text-xs text-gray-400 pl-1">
+                  <span>Czynna w godzinach otwarcia parku</span>
+                  <span>
+                    Oraz dla posiadaczy aktywnych karnetów wraz z kartami
+                    klubowymi - tylnym wejściem od strony parkingu:
+                    Poniedziałek - Piątek: 8:00 - 11:00
+                  </span>
                 </div>
               </div>
 
