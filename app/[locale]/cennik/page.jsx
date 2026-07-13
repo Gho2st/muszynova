@@ -254,9 +254,7 @@ export default function PricingPage() {
             <PricingRow name={t("sports.fitness.2")} time="5x" price="69 zł" />
 
             <p className="text-xs ml-4 my-2 mt-6 text-green-800">
-              Możliwe wejście w godzinach 8:00 - 21:00 tylnym wejściem od strony
-              parkingu dla posiadaczy aktywnego karnetu i karty klubowicza
-              Muszynova (płatna 20zł).
+             {t("sports.fitness.info")}
             </p>
 
             <PricingRow

@@ -774,7 +774,8 @@
             "fitness": {
                 "gym": "Gym",
                 "1": "Single Entry Ticket",
-                "2": "5-entry OPEN Pass",
+                "2": "5-entry OPEN",
+                "info": "Entry is possible between 8:00 AM and 9:00 PM through the rear entrance from the parking lot side for holders of an active membership and a Muszynova club card (fee: 20 PLN).",
                 "3": "Morning Pass",
                 "4": "Monthly OPEN Pass",
                 "5": "Student/Senior OPEN Pass",
