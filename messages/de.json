@@ -71,7 +71,7 @@
             "header": "Öffnungszeiten",
             "1": "Park / Anlage",
             "2": "Fitnessstudio",
-            "info2": "Geöffnet während der Öffnungszeiten des Parks. Sowie für Inhaber aktiver Dauerkarten zusammen mit Clubkarten - über den Hintereingang von der Parkplatzseite aus: Montag - Freitag: 8:00 - 11:00",
+            "info2": "Geöffnet während der Öffnungszeiten des Parks. Sowie für Inhaber aktiver Dauerkarten zusammen mit Clubkarten - über den Hintereingang von der Parkplatzseite aus: 8:00 - 11:00",
             "3": "Restaurant",
             "button": "Kontaktieren Sie uns"
         },
@@ -776,7 +776,7 @@
                 "gym": "Fitnessstudio",
                 "1": "Einzelticket",
                 "2": "5er-Karte OPEN",
-                "info": "Der Zutritt ist zwischen 8:00 und 21:00 Uhr durch den Hintereingang auf der Parkplatzseite für Inhaber eines aktiven Abonnements und einer Muszynova-Clubkarte (Gebühr: 20 PLN) möglich.",
+                "info": "Der Zutritt ist zwischen 8:00 und 11:00 Uhr durch den Hintereingang auf der Parkplatzseite für Inhaber eines aktiven Abonnements und einer Muszynova-Clubkarte (Gebühr: 20 PLN) möglich.",
                 "3": "Vormittagskarte",
                 "4": "Monatskarte OPEN",
                 "5": "Ermäßigte Karte OPEN (Schüler/Studenten/Senioren)",

@@ -71,7 +71,7 @@
             "header": "Opening Hours",
             "1": "Park / Facility",
             "2": "Gym",
-            "info2": "Open during park opening hours. And for active pass holders with club cards - via the back entrance from the parking lot side: Monday - Friday: 8:00 - 11:00",
+            "info2": "Open during park opening hours. And for active pass holders with club cards - via the back entrance from the parking lot side: 8:00 - 11:00",
             "3": "Restaurant",
             "button": "Get in touch"
         },
@@ -776,7 +776,7 @@
                 "gym": "Gym",
                 "1": "Single Entry Ticket",
                 "2": "5-entry OPEN",
-                "info": "Entry is possible between 8:00 AM and 9:00 PM through the rear entrance from the parking lot side for holders of an active membership and a Muszynova club card (fee: 20 PLN).",
+                "info": "Entry is possible between 8:00 AM and 11:00 AM through the rear entrance from the parking lot side for holders of an active membership and a Muszynova club card (fee: 20 PLN).",
                 "3": "Morning Pass",
                 "4": "Monthly OPEN Pass",
                 "5": "Student/Senior OPEN Pass",

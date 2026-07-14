@@ -253,13 +253,13 @@ export default function PricingPage() {
             />
             <PricingRow name={t("sports.fitness.2")} time="5x" price="69 zł" />
 
-            <p className="text-xs ml-4 my-2 mt-6 text-green-800">
-             {t("sports.fitness.info")}
+            <p className="text-base ml-4 my-2 mt-6 text-green-800">
+              {t("sports.fitness.info")}
             </p>
 
             <PricingRow
               name={t("sports.fitness.3")}
-              time="08:00 – 11:00"
+              time={`${t("sports.fitness.6")} (08:00 – 11:00)`}
               price="79 zł"
             />
 

@@ -71,7 +71,7 @@
             "header": "Otváracie hodiny",
             "1": "Park / Areál",
             "2": "Posilňovňa",
-            "info2": "Otvorené počas otváracích hodín parku. A pre držiteľov aktívnych permanentiek spolu s klubovými kartami - cez zadný vchod zo strany parkoviska: Pondelok - Piatok: 8:00 - 11:00",
+            "info2": "Otvorené počas otváracích hodín parku. A pre držiteľov aktívnych permanentiek spolu s klubovými kartami - cez zadný vchod zo strany parkoviska: 8:00 - 11:00",
             "3": "Reštaurácia",
             "button": "Kontaktujte nás"
         },
@@ -776,7 +776,7 @@
                 "gym": "Posilňovňa",
                 "1": "Jednorazový vstup",
                 "2": "Permanentka 5 vstupov OPEN",
-                "info": "Vstup je možný od 8:00 do 21:00 cez zadný vchod od parkoviska pre držiteľov aktívnej permanentky a klubovej karty Muszynova (poplatok 20 PLN).",
+                "info": "Vstup je možný od 8:00 do 11:00 cez zadný vchod od parkoviska pre držiteľov aktívnej permanentky a klubovej karty Muszynova (poplatok 20 PLN).",
                 "3": "Ranná permanentka",
                 "4": "Mesačná permanentka OPEN",
                 "5": "Permanentka študent/senior OPEN",
