@@ -187,12 +187,7 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 text-xs text-gray-400 pl-1">
-                  <span>Czynna w godzinach otwarcia parku</span>
-                  <span>
-                    Oraz dla posiadaczy aktywnych karnetów wraz z kartami
-                    klubowymi - tylnym wejściem od strony parkingu:
-                    Poniedziałek - Piątek: 8:00 - 11:00
-                  </span>
+                  <span>{t("hours.info2")}</span>
                 </div>
               </div>
 
@@ -210,7 +205,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-1 text-xs text-gray-400 pl-1">
                   <span>Pt – Sob: 12:00 – 23:00</span>
-                  <span>Pozostałe dni: 12:00 – 22:00</span>
+                  <span>Nd - Czw: 12:00 – 22:00</span>
                 </div>
               </div>
             </div>
