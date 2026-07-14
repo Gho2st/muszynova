@@ -238,7 +238,7 @@ export default function PricingPage() {
             <PricingRow
               name={t("sports.bowling.3")}
               time="5 * 1 h"
-              price="230 zł"
+              price="240 zł"
             />
           </Section>
 
