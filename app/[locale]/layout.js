@@ -5,9 +5,8 @@ import "../globals.css";
 import Nav from "../UI/Nav/Nav";
 import Footer from "../UI/Footer/Footer";
 import { notFound } from "next/navigation";
-import { getMessages } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import CookieConsent from "../UI/CookieConsent";
-// import Modal from "../UI/Modal";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { ToastContainer } from "react-toastify";
@@ -16,6 +15,10 @@ const font = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export const metadata = {
   openGraph: {
@@ -31,13 +34,15 @@ export const metadata = {
 };
 
 export default async function LocaleLayout({ children, params }) {
-  const locale = (await params).locale;
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  setRequestLocale(locale);
+
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
@@ -57,7 +62,7 @@ export default async function LocaleLayout({ children, params }) {
         </Script>
       </head>
       <body className={`${font.className} pt-24`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <ToastContainer
             position="top-right"
             autoClose={4000}
@@ -72,7 +77,6 @@ export default async function LocaleLayout({ children, params }) {
           />
           <Nav />
           <CookieConsent />
-          {/* <Modal /> */}
           <main>{children}</main>
           <Footer />
           <GoogleTagManager gtmId="GTM-TR69S642" />

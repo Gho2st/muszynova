@@ -1,50 +1,44 @@
 import { prisma } from "@/lib/prisma";
+import { routing } from "@/i18n/routing";
 
 const baseUrl = "https://muszynova.pl";
 
-const LOCALE_PATHS = {
-  en: "en",
-  sk: "sk",
-  ua: "ua",
-  de: "de",
-};
+export const revalidate = 86400;
 
 export default async function sitemap() {
   const posts = await prisma.post.findMany({
-    where: {
-      status: "published",
-    },
+    where: { status: "published" },
     include: { translations: true },
     orderBy: { publishedAt: "desc" },
   });
 
+  const postUrl = (locale, slug) =>
+    locale === routing.defaultLocale
+      ? `${baseUrl}/blog/${slug}`
+      : `${baseUrl}/${locale}/blog/${slug}`;
+
   const blogPostEntries = posts.flatMap((post) => {
-    // każde tłumaczenie = osobny wpis w sitemapie (bo każde ma swój URL)
-    const plTranslation = post.translations.find((t) => t.locale === "pl");
-    if (!plTranslation) return [];
+    const valid = post.translations.filter((t) =>
+      routing.locales.includes(t.locale),
+    );
+    if (valid.length === 0) return [];
 
-    const languages = {
-      "x-default": `${baseUrl}/blog/${plTranslation.slug}`,
-      pl: `${baseUrl}/blog/${plTranslation.slug}`,
-    };
+    const fallback =
+      valid.find((t) => t.locale === routing.defaultLocale) ?? valid[0];
 
-    post.translations.forEach((t) => {
-      if (t.locale === "pl") return;
-      if (LOCALE_PATHS[t.locale]) {
-        languages[t.locale] =
-          `${baseUrl}/${LOCALE_PATHS[t.locale]}/blog/${t.slug}`;
-      }
+    const languages = {};
+    valid.forEach((t) => {
+      languages[t.locale] = postUrl(t.locale, t.slug);
     });
+    languages["x-default"] = postUrl(fallback.locale, fallback.slug);
 
-    return [
-      {
-        url: `${baseUrl}/blog/${plTranslation.slug}`,
-        lastModified: post.updatedAt ?? post.publishedAt ?? new Date(),
-        alternates: { languages },
-      },
-    ];
+    return valid.map((t) => ({
+      url: postUrl(t.locale, t.slug),
+      lastModified:
+        t.updatedAt ?? post.updatedAt ?? post.publishedAt ?? new Date(),
+      alternates: { languages },
+    }));
   });
-
   return [
     {
       url: `${baseUrl}`,

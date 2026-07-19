@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/prisma";
 import { cache } from "react";
 
 export const revalidate = 86400; // 24h
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const rows = await prisma.postTranslation.findMany({
+    where: { post: { status: "published" } },
+    select: { slug: true, locale: true },
+  });
+  return rows.map(({ locale, slug }) => ({ locale, slug }));
+}
 
 const getPost = cache(async (slug, locale) => {
   console.log(
@@ -89,6 +98,8 @@ function calculateReadingTime(html) {
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
   const currentLocale = locale || "pl";
+  setRequestLocale(currentLocale);
+
   const post = await getPost(slug, currentLocale);
   if (!post) return {};
 
@@ -105,7 +116,7 @@ export async function generateMetadata({ params }) {
       : `/${currentLocale}/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | Blog TrioTravel`,
+    title: `${post.title} | Blog Muszynova`,
     description: post.excerpt || "",
     openGraph: {
       title: post.title,
@@ -120,6 +131,8 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const { slug, locale } = await params;
   const currentLocale = locale || "pl";
+  setRequestLocale(currentLocale);
+
   const t = await getTranslations({ locale: currentLocale, namespace: "blog" });
   const post = await getPost(slug, currentLocale);
   if (!post) notFound();
@@ -136,8 +149,8 @@ export default async function BlogPostPage({ params }) {
     image: post.coverImage || "",
     datePublished: post.publishedAt || post.createdAt,
     dateModified: post.updatedAt,
-    author: { "@type": "Organization", name: "TrioTravel" },
-    publisher: { "@type": "Organization", name: "TrioTravel" },
+    author: { "@type": "Organization", name: "Muszynova" },
+    publisher: { "@type": "Organization", name: "Muszynova" },
   };
 
   return (
@@ -280,7 +293,7 @@ export default async function BlogPostPage({ params }) {
         {/* Autor */}
         <div className="flex items-center gap-4 py-6 border-t border-b border-gray-100 my-8">
           <div className="w-12 h-12 rounded-full bg-red-100 text-red-700 flex items-center justify-center text-sm font-medium shrink-0">
-            TT
+            M
           </div>
           <div>
             <p className="text-sm font-medium text-gray-900">{t("team.1")}</p>
