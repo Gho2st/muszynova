@@ -6,7 +6,7 @@ export default function Modal() {
 
   useEffect(() => {
     const now = new Date();
-    const endDate = new Date("2026-08-31T00:00:00");
+    const endDate = new Date("2026-11-02T00:00:00");
 
     if (now < endDate) {
       setIsOpen(true);
@@ -48,7 +48,7 @@ export default function Modal() {
             Informacja
           </h2>
           <p className="text-gray-600 mb-2 leading-relaxed">
-            16-17 czerwiec 2026 restauracja nieczynna.
+            1 listopada 2026 park i restauracja nieczynne.
           </p>
           <p className="text-gray-600 mb-6 leading-relaxed">
             Przepraszamy za utrudnienia.
