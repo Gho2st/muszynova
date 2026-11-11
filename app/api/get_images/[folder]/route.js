@@ -5,6 +5,12 @@ import { NextResponse } from "next/server";
 export async function GET(req, { params }) {
   const resolvedParams = await params;
   const { folder } = resolvedParams; // Pobranie nazwy folderu z URL
+
+  // Tylko prosta nazwa folderu, bez "..", "/" itp.
+  if (!/^[\w-]+$/.test(folder)) {
+    return NextResponse.json({ error: "Folder nie istnieje" }, { status: 404 });
+  }
+
   const imagesDir = path.join(process.cwd(), "public/galeria", folder);
 
   try {
@@ -30,7 +36,7 @@ export async function GET(req, { params }) {
     return NextResponse.json(images, { status: 200 });
   } catch (error) {
     return NextResponse.json(
-      { error: "Wystąpił błąd serwera", details: error.message },
+      { error: "Wystąpił błąd serwera" },
       { status: 500 }
     );
   }

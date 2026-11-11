@@ -1,13 +1,15 @@
 // app/api/availability/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { prismaRestaurant } from "@/lib/prisma-restaurant";
-import { ApiError, handleApiError } from "@/lib/api-error";
+import { handleApiError } from "@/lib/api-error";
 import { getRestaurant } from "@/lib/restaurant";
 import { availabilityQuerySchema } from "@/lib/validators";
-import { generateDaySlots, calcEndTime } from "@/lib/slots";
+import { generateDaySlots, calcEndTime, getDayHours } from "@/lib/slots";
+import { addDays, localToUtc, todayLocal } from "@/lib/time";
 
 /**
  * GET /api/availability?date=2026-04-25&partySize=4
+ * date i godziny slotów są w czasie polskim
  */
 export async function GET(request: NextRequest) {
   try {
@@ -20,13 +22,35 @@ export async function GET(request: NextRequest) {
       tableId: searchParams.get("tableId") ?? undefined,
     });
 
-    if (!restaurant.openingTime || !restaurant.closingTime) {
-      throw new ApiError("Restauracja nie ma ustawionych godzin otwarcia", 400);
+    const empty = (reason: string) =>
+      NextResponse.json({
+        date: query.date,
+        partySize: query.partySize,
+        closed: true,
+        reason,
+        slots: [],
+      });
+
+    if (
+      query.date < todayLocal() ||
+      query.date > addDays(todayLocal(), restaurant.maxAdvanceDays)
+    ) {
+      return empty("Ten termin jest poza zakresem rezerwacji online");
+    }
+
+    const hours = getDayHours(restaurant, query.date);
+    if (!hours) {
+      const closedDay = restaurant.closedDays.find((d) => d.date === query.date);
+      return empty(
+        closedDay?.reason
+          ? `W tym dniu restauracja jest nieczynna (${closedDay.reason})`
+          : "W tym dniu restauracja jest nieczynna",
+      );
     }
 
     const slotTimes = generateDaySlots(
-      restaurant.openingTime,
-      restaurant.closingTime,
+      hours.openTime,
+      hours.closeTime,
       restaurant.slotDuration,
       restaurant.defaultReservationDuration,
     );
@@ -42,37 +66,40 @@ export async function GET(request: NextRequest) {
       orderBy: [{ capacity: "asc" }, { number: "asc" }],
     });
 
-    const dayStart = new Date(`${query.date}T00:00:00.000Z`);
-    const dayEnd = new Date(`${query.date}T23:59:59.999Z`);
+    const dayStart = localToUtc(query.date, "00:00");
+    const dayEnd = localToUtc(addDays(query.date, 1), "00:00");
 
     const reservations = await prismaRestaurant.reservation.findMany({
       where: {
         restaurantId: restaurant.id,
         status: { in: ["PENDING", "CONFIRMED"] },
-        startTime: { lte: dayEnd },
-        endTime: { gte: dayStart },
+        startTime: { lt: dayEnd },
+        endTime: { gt: dayStart },
       },
       select: { tableId: true, startTime: true, endTime: true },
     });
 
+    const minStart = Date.now() + restaurant.minAdvanceMinutes * 60 * 1000;
+
     const slots = slotTimes.map((time) => {
-      const [hours, minutes] = time.split(":").map(Number);
-      const slotStart = new Date(`${query.date}T00:00:00.000Z`);
-      slotStart.setUTCHours(hours, minutes, 0, 0);
+      const slotStart = localToUtc(query.date, time);
       const slotEnd = calcEndTime(
         slotStart,
         restaurant.defaultReservationDuration,
       );
 
-      const availableTables = tables.filter((table) => {
-        const isOccupied = reservations.some(
-          (r) =>
-            r.tableId === table.id &&
-            r.startTime < slotEnd &&
-            r.endTime > slotStart,
-        );
-        return !isOccupied;
-      });
+      const availableTables =
+        slotStart.getTime() < minStart
+          ? []
+          : tables.filter(
+              (table) =>
+                !reservations.some(
+                  (r) =>
+                    r.tableId === table.id &&
+                    r.startTime < slotEnd &&
+                    r.endTime > slotStart,
+                ),
+            );
 
       return {
         time,
@@ -91,6 +118,9 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({
       date: query.date,
       partySize: query.partySize,
+      closed: false,
+      openTime: hours.openTime,
+      closeTime: hours.closeTime,
       reservationDuration: restaurant.defaultReservationDuration,
       slots,
     });

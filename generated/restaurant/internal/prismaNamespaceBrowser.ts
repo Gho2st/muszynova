@@ -52,6 +52,8 @@ export const AnyNull = runtime.AnyNull
 
 export const ModelName = {
   Restaurant: 'Restaurant',
+  OpeningHours: 'OpeningHours',
+  ClosedDay: 'ClosedDay',
   Table: 'Table',
   Customer: 'Customer',
   Reservation: 'Reservation'
@@ -79,15 +81,36 @@ export const RestaurantScalarFieldEnum = {
   address: 'address',
   phone: 'phone',
   email: 'email',
-  openingTime: 'openingTime',
-  closingTime: 'closingTime',
   defaultReservationDuration: 'defaultReservationDuration',
   slotDuration: 'slotDuration',
+  minAdvanceMinutes: 'minAdvanceMinutes',
+  maxAdvanceDays: 'maxAdvanceDays',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
 
 export type RestaurantScalarFieldEnum = (typeof RestaurantScalarFieldEnum)[keyof typeof RestaurantScalarFieldEnum]
+
+
+export const OpeningHoursScalarFieldEnum = {
+  id: 'id',
+  weekday: 'weekday',
+  openTime: 'openTime',
+  closeTime: 'closeTime',
+  restaurantId: 'restaurantId'
+} as const
+
+export type OpeningHoursScalarFieldEnum = (typeof OpeningHoursScalarFieldEnum)[keyof typeof OpeningHoursScalarFieldEnum]
+
+
+export const ClosedDayScalarFieldEnum = {
+  id: 'id',
+  date: 'date',
+  reason: 'reason',
+  restaurantId: 'restaurantId'
+} as const
+
+export type ClosedDayScalarFieldEnum = (typeof ClosedDayScalarFieldEnum)[keyof typeof ClosedDayScalarFieldEnum]
 
 
 export const TableScalarFieldEnum = {

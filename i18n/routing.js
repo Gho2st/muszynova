@@ -184,8 +184,8 @@ export const routing = defineRouting({
     "/restauracja/rezerwacja": {
       pl: "/restauracja/rezerwacja",
     },
-    "/restauracja/admin": {
-      pl: "/restauracja/admin",
+    "/admin/restauracja": {
+      pl: "/admin/restauracja",
     },
   },
 });

@@ -28,17 +28,47 @@ model Restaurant {
     address                    String
     phone                      String?
     email                      String?
-    openingTime                String?
-    closingTime                String?
     defaultReservationDuration Int      @default(90)
     slotDuration               Int      @default(30)
+    // Najwcześniej X minut przed wizytą / najdalej Y dni do przodu
+    minAdvanceMinutes          Int      @default(120)
+    maxAdvanceDays             Int      @default(60)
     createdAt                  DateTime @default(now())
     updatedAt                  DateTime @updatedAt
 
     tables       Table[]
     reservations Reservation[]
+    openingHours OpeningHours[]
+    closedDays   ClosedDay[]
 
     @@map("restaurants")
+}
+
+// Godziny otwarcia na dzień tygodnia (czas lokalny Europe/Warsaw)
+model OpeningHours {
+    id        String  @id @default(cuid())
+    weekday   Int // 0 = niedziela ... 6 = sobota (jak Date.getDay())
+    openTime  String? // "HH:MM", null = nieczynne
+    closeTime String? // "HH:MM"
+
+    restaurantId String
+    restaurant   Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+
+    @@unique([restaurantId, weekday])
+    @@map("opening_hours")
+}
+
+// Pojedyncze dni zamknięte (np. święta)
+model ClosedDay {
+    id     String  @id @default(cuid())
+    date   String // "YYYY-MM-DD", czas lokalny
+    reason String?
+
+    restaurantId String
+    restaurant   Restaurant @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+
+    @@unique([restaurantId, date])
+    @@map("closed_days")
 }
 
 model Table {

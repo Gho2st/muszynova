@@ -47,6 +47,16 @@ export { Prisma }
  */
 export type Restaurant = Prisma.RestaurantModel
 /**
+ * Model OpeningHours
+ * 
+ */
+export type OpeningHours = Prisma.OpeningHoursModel
+/**
+ * Model ClosedDay
+ * 
+ */
+export type ClosedDay = Prisma.ClosedDayModel
+/**
  * Model Table
  * 
  */

@@ -29,6 +29,19 @@ export function handleApiError(error: unknown): NextResponse {
     );
   }
 
+  // Konflikt równoległych transakcji zgłoszony przez adapter Neon
+  if (
+    error instanceof Error &&
+    error.name === "DriverAdapterError" &&
+    (error.cause as { kind?: string } | undefined)?.kind ===
+      "TransactionWriteConflict"
+  ) {
+    return NextResponse.json(
+      { error: "Termin został właśnie zajęty, spróbuj ponownie" },
+      { status: 409 },
+    );
+  }
+
   if (error instanceof Prisma.PrismaClientKnownRequestError) {
     // Naruszenie unikalności (np. duplikat numeru stolika)
     if (error.code === "P2002") {
@@ -40,6 +53,13 @@ export function handleApiError(error: unknown): NextResponse {
     // Rekord nie istnieje
     if (error.code === "P2025") {
       return NextResponse.json({ error: "Nie znaleziono" }, { status: 404 });
+    }
+    // Konflikt równoległych transakcji (np. dwie rezerwacje naraz)
+    if (error.code === "P2034") {
+      return NextResponse.json(
+        { error: "Termin został właśnie zajęty, spróbuj ponownie" },
+        { status: 409 },
+      );
     }
     // Naruszenie klucza obcego (np. nieistniejący customerId / tableId)
     if (error.code === "P2003") {

@@ -1,10 +1,15 @@
 // app/api/reservations/[id]/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { updateReservationSchema } from "@/lib/validators";
-import { sendReservationConfirmation } from "@/lib/mailer";
+import {
+  reservationEmailData,
+  sendReservationCancelled,
+  sendReservationConfirmation,
+} from "@/lib/mailer";
+import { requireAdmin } from "@/lib/auth";
 
 // GET /api/reservations/[id]
 export async function GET(
@@ -12,6 +17,9 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> },
 ) {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
     const { id } = await params;
 
@@ -33,6 +41,9 @@ export async function PATCH(
   { params }: { params: Promise<{ id: string }> },
 ) {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
     const { id } = await params;
     const body = await request.json();
@@ -55,8 +66,19 @@ export async function PATCH(
       }
     }
 
-    // Sprawdź konflikt jeśli zmieniamy stolik
+    // Sprawdź stolik i konflikt jeśli zmieniamy stolik
     if (data.tableId && data.tableId !== existing.tableId) {
+      const table = await prismaRestaurant.table.findUnique({
+        where: { id: data.tableId, restaurantId },
+      });
+      if (!table) throw new ApiError("Stolik nie istnieje", 404);
+      if (table.capacity < existing.partySize) {
+        throw new ApiError(
+          `Stolik nr ${table.number} jest za mały (do ${table.capacity} os.)`,
+          400,
+        );
+      }
+
       const conflict = await prismaRestaurant.reservation.findFirst({
         where: {
           id: { not: id },
@@ -81,33 +103,20 @@ export async function PATCH(
       include: { customer: true, table: true },
     });
 
-    // Wyślij email potwierdzający gdy admin zatwierdzi rezerwację
-    if (data.status === "CONFIRMED") {
-      const date = new Date(reservation.startTime).toLocaleDateString("pl-PL", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-        timeZone: "UTC",
-      });
-      const time = new Date(reservation.startTime).toLocaleTimeString("pl-PL", {
-        hour: "2-digit",
-        minute: "2-digit",
-        timeZone: "UTC",
-      });
-
-      // Nie blokujemy response — email idzie asynchronicznie
-      sendReservationConfirmation({
-        customerName: reservation.customer.name,
-        customerEmail: reservation.customer.email,
-        date,
-        time,
-        partySize: reservation.partySize,
-        tableNumber: reservation.table?.number,
-        tableLocation: reservation.table?.location,
-        notes: reservation.notes,
-      }).catch((err) => {
-        console.error("Błąd wysyłki emaila potwierdzającego:", err);
-      });
+    // Mail do gościa po zatwierdzeniu / odwołaniu (po wysłaniu odpowiedzi)
+    const send =
+      data.status === "CONFIRMED"
+        ? sendReservationConfirmation
+        : data.status === "CANCELLED"
+          ? sendReservationCancelled
+          : null;
+    if (send) {
+      const emailData = reservationEmailData(reservation);
+      after(() =>
+        send(emailData).catch((err) => {
+          console.error("Błąd wysyłki emaila do gościa:", err);
+        }),
+      );
     }
 
     return NextResponse.json(reservation);

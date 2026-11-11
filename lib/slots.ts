@@ -1,43 +1,113 @@
 // lib/slots.ts
 import { ApiError } from "./api-error";
+import { addDays, todayLocal, utcToLocal, weekdayOf } from "./time";
 
-/**
- * Sprawdza czy dana godzina jest poprawnym slotem dla restauracji.
- * Np. slotDuration=30 oznacza tylko :00 i :30 są dozwolone.
- */
-export function validateSlot(date: Date, slotDuration: number): void {
-  const minutes = date.getUTCMinutes();
-  if (minutes % slotDuration !== 0) {
-    throw new ApiError(
-      `Rezerwacja musi zaczynać się o pełnym slocie co ${slotDuration} minut (np. 18:00, 18:30)`,
-      400,
-    );
-  }
+type OpeningHoursRow = {
+  weekday: number;
+  openTime: string | null;
+  closeTime: string | null;
+};
+
+type RestaurantWithHours = {
+  slotDuration: number;
+  defaultReservationDuration: number;
+  minAdvanceMinutes: number;
+  maxAdvanceDays: number;
+  openingHours: OpeningHoursRow[];
+  closedDays: { date: string; reason?: string | null }[];
+};
+
+export function timeToMinutes(time: string): number {
+  const [h, m] = time.split(":").map(Number);
+  return h * 60 + m;
+}
+
+export function minutesToTime(minutes: number): string {
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
 }
 
 /**
- * Sprawdza czy godzina rezerwacji mieści się w godzinach otwarcia.
- * openingTime / closingTime w formacie "HH:MM"
+ * Godziny otwarcia w danym dniu ("YYYY-MM-DD", czas lokalny)
+ * albo null, jeśli restauracja jest wtedy nieczynna.
  */
-export function validateOpeningHours(
+export function getDayHours(
+  restaurant: RestaurantWithHours,
+  date: string,
+): { openTime: string; closeTime: string } | null {
+  if (restaurant.closedDays.some((d) => d.date === date)) return null;
+
+  const row = restaurant.openingHours.find((h) => h.weekday === weekdayOf(date));
+  if (!row?.openTime || !row?.closeTime) return null;
+
+  return { openTime: row.openTime, closeTime: row.closeTime };
+}
+
+/**
+ * Lista slotów "HH:MM" na dany dzień. Ostatni slot kończy się przed zamknięciem.
+ */
+export function generateDaySlots(
+  openingTime: string,
+  closingTime: string,
+  slotDuration: number,
+  reservationDuration: number,
+): string[] {
+  const openMinutes = timeToMinutes(openingTime);
+  const lastStart = timeToMinutes(closingTime) - reservationDuration;
+
+  const slots: string[] = [];
+  for (let m = openMinutes; m <= lastStart; m += slotDuration) {
+    slots.push(minutesToTime(m));
+  }
+  return slots;
+}
+
+/**
+ * Sprawdza, czy rezerwacja od startTime mieści się w godzinach otwarcia,
+ * zaczyna się o pełnym slocie i (dla gości) w dozwolonym wyprzedzeniu.
+ */
+export function validateReservationTime(
+  restaurant: RestaurantWithHours,
   startTime: Date,
-  endTime: Date,
-  openingTime: string | null,
-  closingTime: string | null,
+  { skipAdvanceCheck = false } = {},
 ): void {
-  if (!openingTime || !closingTime) return;
+  const local = utcToLocal(startTime);
 
-  const [openH, openM] = openingTime.split(":").map(Number);
-  const [closeH, closeM] = closingTime.split(":").map(Number);
+  if (startTime < new Date()) {
+    throw new ApiError("Nie można rezerwować w przeszłości", 400);
+  }
 
-  const startMinutes = startTime.getUTCHours() * 60 + startTime.getUTCMinutes();
-  const endMinutes = endTime.getUTCHours() * 60 + endTime.getUTCMinutes();
-  const openMinutes = openH * 60 + openM;
-  const closeMinutes = closeH * 60 + closeM;
+  if (!skipAdvanceCheck) {
+    const minStart = Date.now() + restaurant.minAdvanceMinutes * 60 * 1000;
+    if (startTime.getTime() < minStart) {
+      throw new ApiError(
+        `Rezerwacji trzeba dokonać co najmniej ${restaurant.minAdvanceMinutes} minut wcześniej`,
+        400,
+      );
+    }
+    if (local.date > addDays(todayLocal(), restaurant.maxAdvanceDays)) {
+      throw new ApiError(
+        `Można rezerwować najwyżej ${restaurant.maxAdvanceDays} dni do przodu`,
+        400,
+      );
+    }
+  }
 
-  if (startMinutes < openMinutes || endMinutes > closeMinutes) {
+  const hours = getDayHours(restaurant, local.date);
+  if (!hours) {
+    throw new ApiError("W tym dniu restauracja jest nieczynna", 400);
+  }
+
+  const slots = generateDaySlots(
+    hours.openTime,
+    hours.closeTime,
+    restaurant.slotDuration,
+    restaurant.defaultReservationDuration,
+  );
+  if (!slots.includes(local.time)) {
     throw new ApiError(
-      `Rezerwacja musi mieścić się w godzinach otwarcia (${openingTime}–${closingTime})`,
+      `Wybierz godzinę między ${slots[0] ?? hours.openTime} a ${slots.at(-1) ?? hours.openTime} (co ${restaurant.slotDuration} min)`,
       400,
     );
   }
@@ -48,30 +118,4 @@ export function validateOpeningHours(
  */
 export function calcEndTime(startTime: Date, durationMinutes: number): Date {
   return new Date(startTime.getTime() + durationMinutes * 60 * 1000);
-}
-
-/**
- * Generuje listę slotów na dany dzień dla restauracji.
- * Zwraca tablicę stringów "HH:MM".
- */
-export function generateDaySlots(
-  openingTime: string,
-  closingTime: string,
-  slotDuration: number,
-  reservationDuration: number,
-): string[] {
-  const [openH, openM] = openingTime.split(":").map(Number);
-  const [closeH, closeM] = closingTime.split(":").map(Number);
-
-  const openMinutes = openH * 60 + openM;
-  // Ostatni slot musi się skończyć przed zamknięciem
-  const closeMinutes = closeH * 60 + closeM - reservationDuration;
-
-  const slots: string[] = [];
-  for (let m = openMinutes; m <= closeMinutes; m += slotDuration) {
-    const h = Math.floor(m / 60);
-    const min = m % 60;
-    slots.push(`${String(h).padStart(2, "0")}:${String(min).padStart(2, "0")}`);
-  }
-  return slots;
 }

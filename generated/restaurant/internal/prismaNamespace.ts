@@ -385,6 +385,8 @@ type FieldRefInputType<Model, FieldType> = Model extends never ? never : FieldRe
 
 export const ModelName = {
   Restaurant: 'Restaurant',
+  OpeningHours: 'OpeningHours',
+  ClosedDay: 'ClosedDay',
   Table: 'Table',
   Customer: 'Customer',
   Reservation: 'Reservation'
@@ -403,7 +405,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "restaurant" | "table" | "customer" | "reservation"
+    modelProps: "restaurant" | "openingHours" | "closedDay" | "table" | "customer" | "reservation"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -478,6 +480,154 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         count: {
           args: Prisma.RestaurantCountArgs<ExtArgs>
           result: runtime.Types.Utils.Optional<Prisma.RestaurantCountAggregateOutputType> | number
+        }
+      }
+    }
+    OpeningHours: {
+      payload: Prisma.$OpeningHoursPayload<ExtArgs>
+      fields: Prisma.OpeningHoursFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.OpeningHoursFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.OpeningHoursFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        findFirst: {
+          args: Prisma.OpeningHoursFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.OpeningHoursFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        findMany: {
+          args: Prisma.OpeningHoursFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>[]
+        }
+        create: {
+          args: Prisma.OpeningHoursCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        createMany: {
+          args: Prisma.OpeningHoursCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.OpeningHoursCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>[]
+        }
+        delete: {
+          args: Prisma.OpeningHoursDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        update: {
+          args: Prisma.OpeningHoursUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        deleteMany: {
+          args: Prisma.OpeningHoursDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.OpeningHoursUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.OpeningHoursUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>[]
+        }
+        upsert: {
+          args: Prisma.OpeningHoursUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$OpeningHoursPayload>
+        }
+        aggregate: {
+          args: Prisma.OpeningHoursAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateOpeningHours>
+        }
+        groupBy: {
+          args: Prisma.OpeningHoursGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.OpeningHoursGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.OpeningHoursCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.OpeningHoursCountAggregateOutputType> | number
+        }
+      }
+    }
+    ClosedDay: {
+      payload: Prisma.$ClosedDayPayload<ExtArgs>
+      fields: Prisma.ClosedDayFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.ClosedDayFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.ClosedDayFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        findFirst: {
+          args: Prisma.ClosedDayFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.ClosedDayFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        findMany: {
+          args: Prisma.ClosedDayFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>[]
+        }
+        create: {
+          args: Prisma.ClosedDayCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        createMany: {
+          args: Prisma.ClosedDayCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.ClosedDayCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>[]
+        }
+        delete: {
+          args: Prisma.ClosedDayDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        update: {
+          args: Prisma.ClosedDayUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        deleteMany: {
+          args: Prisma.ClosedDayDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.ClosedDayUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.ClosedDayUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>[]
+        }
+        upsert: {
+          args: Prisma.ClosedDayUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$ClosedDayPayload>
+        }
+        aggregate: {
+          args: Prisma.ClosedDayAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregateClosedDay>
+        }
+        groupBy: {
+          args: Prisma.ClosedDayGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ClosedDayGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.ClosedDayCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.ClosedDayCountAggregateOutputType> | number
         }
       }
     }
@@ -748,15 +898,36 @@ export const RestaurantScalarFieldEnum = {
   address: 'address',
   phone: 'phone',
   email: 'email',
-  openingTime: 'openingTime',
-  closingTime: 'closingTime',
   defaultReservationDuration: 'defaultReservationDuration',
   slotDuration: 'slotDuration',
+  minAdvanceMinutes: 'minAdvanceMinutes',
+  maxAdvanceDays: 'maxAdvanceDays',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
 
 export type RestaurantScalarFieldEnum = (typeof RestaurantScalarFieldEnum)[keyof typeof RestaurantScalarFieldEnum]
+
+
+export const OpeningHoursScalarFieldEnum = {
+  id: 'id',
+  weekday: 'weekday',
+  openTime: 'openTime',
+  closeTime: 'closeTime',
+  restaurantId: 'restaurantId'
+} as const
+
+export type OpeningHoursScalarFieldEnum = (typeof OpeningHoursScalarFieldEnum)[keyof typeof OpeningHoursScalarFieldEnum]
+
+
+export const ClosedDayScalarFieldEnum = {
+  id: 'id',
+  date: 'date',
+  reason: 'reason',
+  restaurantId: 'restaurantId'
+} as const
+
+export type ClosedDayScalarFieldEnum = (typeof ClosedDayScalarFieldEnum)[keyof typeof ClosedDayScalarFieldEnum]
 
 
 export const TableScalarFieldEnum = {
@@ -1039,6 +1210,8 @@ export type PrismaClientOptions = ({
 }
 export type GlobalOmitConfig = {
   restaurant?: Prisma.RestaurantOmit
+  openingHours?: Prisma.OpeningHoursOmit
+  closedDay?: Prisma.ClosedDayOmit
   table?: Prisma.TableOmit
   customer?: Prisma.CustomerOmit
   reservation?: Prisma.ReservationOmit

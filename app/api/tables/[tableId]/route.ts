@@ -4,6 +4,7 @@ import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { ApiError, handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { updateTableSchema } from "@/lib/validators";
+import { requireAdmin } from "@/lib/auth";
 
 // PATCH /api/tables/[tableId]
 export async function PATCH(
@@ -11,6 +12,9 @@ export async function PATCH(
   { params }: { params: Promise<{ tableId: string }> },
 ) {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
     const { tableId } = await params;
     const body = await request.json();
@@ -33,6 +37,9 @@ export async function DELETE(
   { params }: { params: Promise<{ tableId: string }> },
 ) {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
     const { tableId } = await params;
 

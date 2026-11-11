@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 // Funkcja walidacji pól formularza :)
 function validateFields(fields) {
@@ -8,8 +9,21 @@ function validateFields(fields) {
   );
 }
 
+// Escapowanie danych z formularza przed wstawieniem do HTML
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 // Funkcja tworząca HTML wiadomości e-mail
-function createEmailTemplate({ text, fullName, email }) {
+function createEmailTemplate(fields) {
+  const text = escapeHtml(fields.text).replace(/\n/g, "<br>");
+  const fullName = escapeHtml(fields.fullName);
+  const email = escapeHtml(fields.email);
   return `
     <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4;">
       <div style="max-width: 600px; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
@@ -31,29 +45,9 @@ function createEmailTemplate({ text, fullName, email }) {
   `;
 }
 
-// Funkcja weryfikująca token reCAPTCHA
-async function verifyRecaptcha(token) {
-  const secret = process.env.RECAPTCHA_SECRET_KEY; // Secret Key reCAPTCHA
-  const response = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret,
-        response: token,
-      }),
-    },
-  );
-
-  const data = await response.json();
-  return data.success;
-}
-
 export async function POST(request) {
   try {
     const { text, fullName, email, recaptchaToken } = await request.json();
-    console.log("Otrzymane dane:", { text, fullName, email, recaptchaToken });
 
     // Sprawdzenie, czy wszystkie pola są wypełnione
     const fields = {
@@ -62,7 +56,6 @@ export async function POST(request) {
       email,
     };
     if (!validateFields(fields)) {
-      console.log("Błąd walidacji pól:", fields); // Logowanie błędu walidacji
       return NextResponse.json(
         { message: "Uzupełnij wymagane pola" },
         { status: 400 },
@@ -71,7 +64,6 @@ export async function POST(request) {
 
     // Weryfikacja reCAPTCHA
     const recaptchaValid = await verifyRecaptcha(recaptchaToken);
-    console.log("Weryfikacja reCAPTCHA:", recaptchaValid); // Sprawdzamy wynik weryfikacji
     if (!recaptchaValid) {
       console.error("Nieudana weryfikacja reCAPTCHA"); // Dodaj logowanie
       return NextResponse.json(
@@ -85,7 +77,7 @@ export async function POST(request) {
       service: "gmail",
       host: "smtp.gmail.com",
       port: 465,
-      secure: "true",
+      secure: true,
       auth: {
         user: "biosite.praca@gmail.com",
         pass: process.env.NODEMAILER_PW,
@@ -110,7 +102,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Error przy wysyłaniu wiadomości:", error);
     return NextResponse.json(
-      { message: "Nieudana próba wysłania wiadomości", error: error.message },
+      { message: "Nieudana próba wysłania wiadomości" },
       { status: 500 },
     );
   }

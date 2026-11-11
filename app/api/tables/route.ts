@@ -4,10 +4,14 @@ import { prismaRestaurant } from "@/lib/prisma-restaurant";
 import { handleApiError } from "@/lib/api-error";
 import { getRestaurantId } from "@/lib/restaurant";
 import { createTableSchema } from "@/lib/validators";
+import { requireAdmin } from "@/lib/auth";
 
 // GET /api/tables
 export async function GET() {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
 
     const tables = await prismaRestaurant.table.findMany({
@@ -24,6 +28,9 @@ export async function GET() {
 // POST /api/tables
 export async function POST(request: NextRequest) {
   try {
+    if (!(await requireAdmin()))
+      return NextResponse.json({ error: "Brak dostępu" }, { status: 401 });
+
     const restaurantId = getRestaurantId();
     const body = await request.json();
     const data = createTableSchema.parse(body);

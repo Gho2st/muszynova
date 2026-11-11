@@ -11,10 +11,6 @@ export async function POST(req) {
       )
     : "";
 
-  console.log("Login OK:", login === process.env.ADMIN_LOGIN);
-  console.log("Hash len:", hash.length);
-  console.log("Match:", hash ? await bcrypt.compare(password, hash) : false);
-
   if (
     login !== process.env.ADMIN_LOGIN ||
     !hash ||
