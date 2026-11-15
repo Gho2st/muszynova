@@ -107,7 +107,7 @@ export default function Contact() {
               text={[
                 t("cards.card6.hours"),
                 t("cards.card6.hours2") + ": ",
-                t("cards.card6.text2") + ": 8:00 - 11:00",
+                "8:00 - 11:00",
               ].join(" <br /> ")}
             />
           </div>
