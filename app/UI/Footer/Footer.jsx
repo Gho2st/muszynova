@@ -22,20 +22,14 @@ export default function Footer() {
   const [isParkOpen, setIsParkOpen] = useState(false);
   const [isGymOpen, setIsGymOpen] = useState(false);
   const [isRestaurantOpen, setIsRestaurantOpen] = useState(false);
-  const [restaurantHours, setRestaurantHours] = useState("12:00 – 22:00");
 
   const checkStatuses = () => {
     const now = new Date();
     const hour = now.getHours();
-    const day = now.getDay(); // 0 = niedziela ... 5 = piątek, 6 = sobota
-
-    const isFriSat = day === 5 || day === 6;
-    const restaurantClose = isFriSat ? 22 : 21; // pt/sob do 22, reszta do 21
 
     setIsParkOpen(hour >= 11 && hour < 21);
     setIsGymOpen(hour >= 11 && hour < 21);
-    setIsRestaurantOpen(hour >= 12 && hour < restaurantClose);
-    setRestaurantHours(isFriSat ? "12:00 – 22:00" : "12:00 – 21:00");
+    setIsRestaurantOpen(hour >= 12 && hour < 21);
   };
 
   useEffect(() => {
@@ -200,12 +194,11 @@ export default function Footer() {
                         isRestaurantOpen ? "text-green-500" : "text-red-500"
                       }`}
                     />
-                    <span className="font-medium">{restaurantHours}</span>
+                    <span className="font-medium">12:00 – 21:00</span>
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 text-xs text-gray-400 pl-1">
-                  <span>Pt – Sob: 12:00 – 22:00</span>
-                  <span>Nd - Czw: 12:00 – 21:00</span>
+                  <span>Pn – Nd: 12:00 – 21:00</span>
                 </div>
               </div>
             </div>

@@ -8,11 +8,11 @@ config({ path: ".env.local" });
 // Import dynamiczny (w main), żeby klient Prismy widział zmienne z .env
 let prisma: typeof import("../lib/prisma-restaurant").prismaRestaurant;
 
-// 0 = niedziela ... 6 = sobota; pt i sob do 22, reszta do 21
+// 0 = niedziela ... 6 = sobota; codziennie 12–21
 const OPENING_HOURS = [0, 1, 2, 3, 4, 5, 6].map((weekday) => ({
   weekday,
   openTime: "12:00",
-  closeTime: weekday === 5 || weekday === 6 ? "22:00" : "21:00",
+  closeTime: "21:00",
 }));
 
 async function main() {
